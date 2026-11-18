@@ -71,7 +71,10 @@ export function ConsultationClient({ initialId }: Props) {
   }
 
   async function fetchConsultTicket(): Promise<string> {
-    const res = await fetch("/api/consult/ticket", { method: "POST" });
+    const res = await fetch("/api/consult/ticket", {
+      method: "POST",
+      credentials: "same-origin",
+    });
     const data = (await res.json()) as { ticket?: string; error?: string };
     if (!res.ok || !data.ticket) {
       throw new Error(data.error || "Impossible d’obtenir un jeton d’analyse.");
@@ -104,6 +107,7 @@ export function ConsultationClient({ initialId }: Props) {
       const ticket = await fetchConsultTicket();
       const res = await fetch("/api/consult", {
         method: "POST",
+        credentials: "same-origin",
         headers: {
           "Content-Type": "application/json",
           "X-Consult-Ticket": ticket,
@@ -168,6 +172,7 @@ export function ConsultationClient({ initialId }: Props) {
       const ticket = await fetchConsultTicket();
       const res = await fetch("/api/consult", {
         method: "POST",
+        credentials: "same-origin",
         headers: {
           "Content-Type": "application/json",
           "X-Consult-Ticket": ticket,

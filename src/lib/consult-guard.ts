@@ -1,25 +1,16 @@
 import { createHmac, randomBytes, timingSafeEqual } from "crypto";
+import { sql } from "@/lib/db";
 
-/** Strict per-IP / global budgets (in-memory per instance). */
+/** Shared (DB-backed) per-IP / global budgets. */
 const TICKET_LIMIT_PER_IP = 8;
 const TICKET_WINDOW_MS = 60 * 60 * 1000; // 1h
 const CONSULT_LIMIT_PER_IP = 5;
 const CONSULT_WINDOW_MS = 60 * 60 * 1000; // 1h
 const CONSULT_DAILY_PER_IP = 20;
 const GLOBAL_CONSULT_DAILY = 250;
-const TICKET_TTL_MS = 3 * 60 * 1000; // 3 min, single-use
+const TICKET_TTL_MS = 3 * 60 * 1000; // 3 min
 
-type Counter = { count: number; resetAt: number };
-type Daily = { count: number; day: string };
-
-const ticketBuckets = new Map<string, Counter>();
-const consultBuckets = new Map<string, Counter>();
-const consultDaily = new Map<string, Daily>();
-let globalDaily: Daily = { count: 0, day: utcDay() };
-
-function utcDay(): string {
-  return new Date().toISOString().slice(0, 10);
-}
+export const CONSULT_SID_COOKIE = "medecin_consult_sid";
 
 type GlobalSecret = typeof globalThis & { __medecinConsultHmac?: string };
 
@@ -38,65 +29,60 @@ function getSigningSecret(): string {
   return g.__medecinConsultHmac;
 }
 
-function pruneMap<T extends { resetAt?: number } | number>(
-  map: Map<string, T>,
-  now: number,
-  getExpiry: (v: T) => number,
-) {
-  if (map.size < 500) return;
-  for (const [k, v] of map) {
-    if (getExpiry(v) <= now) map.delete(k);
-  }
+function utcDay(): string {
+  return new Date().toISOString().slice(0, 10);
 }
 
-function bumpWindow(
-  map: Map<string, Counter>,
-  key: string,
-  limit: number,
-  windowMs: number,
-): boolean {
-  const now = Date.now();
-  pruneMap(map, now, (v) => v.resetAt);
-  const entry = map.get(key);
-  if (!entry || now > entry.resetAt) {
-    map.set(key, { count: 1, resetAt: now + windowMs });
-    return true;
-  }
-  if (entry.count >= limit) return false;
-  entry.count += 1;
-  return true;
+function normalizeIp(raw: string): string {
+  return raw.replace(/^::ffff:/i, "").trim();
 }
 
-function bumpDaily(map: Map<string, Daily>, key: string, limit: number): boolean {
-  const day = utcDay();
-  const entry = map.get(key);
-  if (!entry || entry.day !== day) {
-    map.set(key, { count: 1, day });
-    return true;
-  }
-  if (entry.count >= limit) return false;
-  entry.count += 1;
-  return true;
-}
-
-function bumpGlobalDaily(limit: number): boolean {
-  const day = utcDay();
-  if (globalDaily.day !== day) {
-    globalDaily = { count: 1, day };
-    return true;
-  }
-  if (globalDaily.count >= limit) return false;
-  globalDaily.count += 1;
-  return true;
-}
-
+/**
+ * Trusted client IP for rate limits / ticket binding.
+ * Prefer platform `x-real-ip`. Never trust the first X-Forwarded-For hop
+ * (client-spoofable); use only the last hop (closest to the edge).
+ */
 export function clientIp(req: Request): string {
-  const raw =
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    req.headers.get("x-real-ip")?.trim() ||
-    "anon";
-  // Normalize IPv4-mapped IPv6 so ticket mint/verify agree.
-  return raw.replace(/^::ffff:/i, "");
+  const realIp = req.headers.get("x-real-ip")?.trim();
+  if (realIp && !realIp.includes(",")) {
+    return normalizeIp(realIp) || "anon";
+  }
+
+  const xff = req.headers.get("x-forwarded-for");
+  if (xff) {
+    const parts = xff
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+    const last = parts[parts.length - 1];
+    if (last) return normalizeIp(last) || "anon";
+  }
+
+  return "anon";
+}
+
+export function readConsultSid(req: Request): string | null {
+  const cookie = req.headers.get("cookie") || "";
+  const match = cookie.match(
+    new RegExp(`(?:^|;\\s*)${CONSULT_SID_COOKIE}=([^;]+)`),
+  );
+  if (!match?.[1]) return null;
+  try {
+    return decodeURIComponent(match[1]);
+  } catch {
+    return null;
+  }
+}
+
+export function sidCookieHeader(sid: string): string {
+  const maxAge = 60 * 60; // 1h
+  const secure =
+    process.env.NODE_ENV === "production" ||
+    Boolean(process.env.CURSOR_APP_ID) ||
+    Boolean(process.env.VERCEL)
+      ? "; Secure"
+      : "";
+  return `${CONSULT_SID_COOKIE}=${encodeURIComponent(sid)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${maxAge}${secure}`;
 }
 
 /** Require same-origin browser navigation / fetch. */
@@ -126,29 +112,79 @@ export function assertSameOrigin(req: Request): string | null {
     }
   }
 
-  // Non-browser clients without Origin/Referer are rejected.
   return "Requête non autorisée.";
 }
 
-export function allowTicketIssue(ip: string): boolean {
-  return bumpWindow(ticketBuckets, ip, TICKET_LIMIT_PER_IP, TICKET_WINDOW_MS);
+async function bumpCounter(
+  bucketKey: string,
+  limit: number,
+  windowMs: number,
+): Promise<boolean> {
+  const resetAt = new Date(Date.now() + windowMs).toISOString();
+  const rows = await sql<{ count: number }>(
+    `INSERT INTO rate_counters (bucket_key, count, reset_at)
+     VALUES ($1, 1, $2::timestamptz)
+     ON CONFLICT (bucket_key) DO UPDATE
+     SET
+       count = CASE
+         WHEN rate_counters.reset_at <= now() THEN 1
+         ELSE rate_counters.count + 1
+       END,
+       reset_at = CASE
+         WHEN rate_counters.reset_at <= now() THEN EXCLUDED.reset_at
+         ELSE rate_counters.reset_at
+       END
+     RETURNING count`,
+    [bucketKey, resetAt],
+  );
+  const count = Number(rows[0]?.count ?? 0);
+  return count <= limit;
 }
 
-export function allowConsult(ip: string): string | null {
-  if (!bumpWindow(consultBuckets, ip, CONSULT_LIMIT_PER_IP, CONSULT_WINDOW_MS)) {
+export async function allowTicketIssue(ip: string): Promise<boolean> {
+  return bumpCounter(`ticket:ip:${ip}`, TICKET_LIMIT_PER_IP, TICKET_WINDOW_MS);
+}
+
+export async function allowConsult(ip: string, sid: string): Promise<string | null> {
+  if (
+    !(await bumpCounter(`consult:ip:${ip}`, CONSULT_LIMIT_PER_IP, CONSULT_WINDOW_MS))
+  ) {
     return "Trop de requêtes. Réessayez plus tard.";
   }
-  if (!bumpDaily(consultDaily, ip, CONSULT_DAILY_PER_IP)) {
+  if (
+    !(await bumpCounter(
+      `consult:sid:${sid}`,
+      CONSULT_LIMIT_PER_IP,
+      CONSULT_WINDOW_MS,
+    ))
+  ) {
+    return "Trop de requêtes. Réessayez plus tard.";
+  }
+  if (
+    !(await bumpCounter(
+      `consult:day:ip:${ip}:${utcDay()}`,
+      CONSULT_DAILY_PER_IP,
+      24 * 60 * 60 * 1000,
+    ))
+  ) {
     return "Limite quotidienne atteinte. Réessayez demain.";
   }
-  if (!bumpGlobalDaily(GLOBAL_CONSULT_DAILY)) {
+  if (
+    !(await bumpCounter(
+      `consult:global:${utcDay()}`,
+      GLOBAL_CONSULT_DAILY,
+      24 * 60 * 60 * 1000,
+    ))
+  ) {
     return "Service temporairement saturé. Réessayez plus tard.";
   }
   return null;
 }
 
 function sign(payload: string): string {
-  return createHmac("sha256", getSigningSecret()).update(payload).digest("base64url");
+  return createHmac("sha256", getSigningSecret())
+    .update(payload)
+    .digest("base64url");
 }
 
 function safeEqual(a: string, b: string): boolean {
@@ -159,23 +195,32 @@ function safeEqual(a: string, b: string): boolean {
 }
 
 /**
- * Mint a short-lived HMAC ticket bound to the client IP.
- * Stateless (works across serverless isolates); replay window is TICKET_TTL_MS,
- * with consult rate limits as the primary abuse brake.
- * Format: base64url(id|expiresAt|ip).signature  (avoid "." inside IPs).
+ * Mint a short-lived HMAC ticket bound to IP + browser sid.
+ * Format: base64url(id|expiresAt|ip|sid).signature
  */
-export function mintTicket(ip: string): { ticket: string; expiresAt: number } {
-  const id = randomBytes(16).toString("base64url");
+export function mintTicket(
+  ip: string,
+  sid: string,
+): { ticket: string; expiresAt: number; ticketId: string } {
+  const ticketId = randomBytes(16).toString("base64url");
   const expiresAt = Date.now() + TICKET_TTL_MS;
-  const body = Buffer.from(`${id}|${expiresAt}|${ip}`, "utf8").toString(
-    "base64url",
-  );
+  const body = Buffer.from(
+    `${ticketId}|${expiresAt}|${ip}|${sid}`,
+    "utf8",
+  ).toString("base64url");
   const ticket = `${body}.${sign(body)}`;
-  return { ticket, expiresAt };
+  return { ticket, expiresAt, ticketId };
 }
 
-/** Verify ticket. Returns error message or null if ok. */
-export function consumeTicket(ticket: string | null, ip: string): string | null {
+/**
+ * Verify HMAC + IP/sid binding, then atomically mark ticket used in DB
+ * (true single-use across instances).
+ */
+export async function consumeTicket(
+  ticket: string | null,
+  ip: string,
+  sid: string,
+): Promise<string | null> {
   if (!ticket || ticket.length > 512) return "Jeton manquant ou invalide.";
   const dot = ticket.lastIndexOf(".");
   if (dot <= 0) return "Jeton invalide.";
@@ -191,13 +236,28 @@ export function consumeTicket(ticket: string | null, ip: string): string | null 
     return "Jeton invalide.";
   }
   const parts = decoded.split("|");
-  if (parts.length !== 3) return "Jeton invalide.";
-  const [, expStr, ticketIp] = parts;
+  if (parts.length !== 4) return "Jeton invalide.";
+  const [ticketId, expStr, ticketIp, ticketSid] = parts;
+  if (!ticketId) return "Jeton invalide.";
   const expiresAt = Number(expStr);
   if (!Number.isFinite(expiresAt) || Date.now() > expiresAt) {
     return "Jeton expiré. Rechargez la page.";
   }
-  if (ticketIp !== ip) return "Jeton invalide.";
+  if (ticketIp !== ip || ticketSid !== sid) return "Jeton invalide.";
+
+  // Opportunistic cleanup of expired rows (best-effort).
+  void sql(`DELETE FROM used_tickets WHERE expires_at < now()`).catch(() => {});
+
+  const inserted = await sql<{ ticket_id: string }>(
+    `INSERT INTO used_tickets (ticket_id, expires_at)
+     VALUES ($1, to_timestamp($2 / 1000.0))
+     ON CONFLICT (ticket_id) DO NOTHING
+     RETURNING ticket_id`,
+    [ticketId, expiresAt],
+  );
+  if (!inserted[0]?.ticket_id) {
+    return "Jeton déjà utilisé.";
+  }
   return null;
 }
 

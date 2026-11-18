@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
+import { randomBytes } from "crypto";
 import {
   allowTicketIssue,
   assertSameOrigin,
   clientIp,
   mintTicket,
+  readConsultSid,
+  sidCookieHeader,
 } from "@/lib/consult-guard";
 
 export async function POST(req: Request) {
@@ -13,15 +16,22 @@ export async function POST(req: Request) {
   }
 
   const ip = clientIp(req);
-  if (!allowTicketIssue(ip)) {
+  if (!(await allowTicketIssue(ip))) {
     return NextResponse.json(
       { error: "Trop de demandes. Réessayez plus tard." },
       { status: 429 },
     );
   }
 
-  const { ticket, expiresAt } = mintTicket(ip);
-  return NextResponse.json({ ticket, expiresAt });
+  const existingSid = readConsultSid(req);
+  const sid = existingSid || randomBytes(16).toString("base64url");
+  const { ticket, expiresAt } = mintTicket(ip, sid);
+
+  const res = NextResponse.json({ ticket, expiresAt });
+  if (!existingSid) {
+    res.headers.append("Set-Cookie", sidCookieHeader(sid));
+  }
+  return res;
 }
 
 export async function GET() {

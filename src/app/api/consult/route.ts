@@ -7,6 +7,7 @@ import {
   assertSameOrigin,
   clientIp,
   consumeTicket,
+  readConsultSid,
 } from "@/lib/consult-guard";
 import type { ConsultRequest } from "@/lib/types";
 
@@ -32,15 +33,23 @@ export async function POST(req: Request) {
   }
 
   const ip = clientIp(req);
+  const sid = readConsultSid(req);
+  if (!sid) {
+    return NextResponse.json(
+      { error: "Session manquante. Rechargez la page." },
+      { status: 401 },
+    );
+  }
+
   const ticket =
     req.headers.get("x-consult-ticket") ||
     req.headers.get("X-Consult-Ticket");
-  const ticketErr = consumeTicket(ticket, ip);
+  const ticketErr = await consumeTicket(ticket, ip, sid);
   if (ticketErr) {
     return NextResponse.json({ error: ticketErr }, { status: 401 });
   }
 
-  const limitErr = allowConsult(ip);
+  const limitErr = await allowConsult(ip, sid);
   if (limitErr) {
     return NextResponse.json({ error: limitErr }, { status: 429 });
   }
