@@ -1,0 +1,102 @@
+{
+  "id": "norovirus",
+  "category": "gi",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "norovirus",
+      "vomiting bug",
+      "winter vomiting"
+    ],
+    "fr": [
+      "norovirus",
+      "gastro virus",
+      "virus vomissements hiver"
+    ],
+    "he": [
+      "נורווירוס",
+      "באג הקאות",
+      "וירוס הקאות חורף"
+    ],
+    "ru": [
+      "норовирус",
+      "желудочный вирус",
+      "зимняя рвота"
+    ]
+  },
+  "titles": {
+    "en": "Norovirus (vomiting bug)",
+    "fr": "Norovirus",
+    "he": "נורווירוס",
+    "ru": "Норовирус"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Norovirus causes sudden vomiting and diarrhoea and spreads easily. NHS: fluids, rest, strict hand hygiene; stay home until 48 hours after symptoms stop. Seek help for dehydration or high-risk groups. No specific antiviral — do not invent treatments.",
+      "seeDoctorIf": [
+        "Dehydration signs",
+        "Cannot keep any fluids down",
+        "Infant, elderly, or immunocompromised with severe symptoms"
+      ],
+      "selfCare": [
+        "Small sips of fluid; wash hands with soap; stay off work/school until 48h after last symptom"
+      ],
+      "doNot": [
+        "Do not invent antivirals",
+        "Do not visit hospitals/care homes while symptomatic if avoidable"
+      ]
+    },
+    "fr": {
+      "summary": "Le norovirus provoque vomissements/diarrhée brutaux et se transmet facilement. Hydratation, hygiène ; rester isolé 48 h après la fin des symptômes. Pas d'antiviral inventé.",
+      "seeDoctorIf": [
+        "Signes de déshydratation",
+        "Impossible de boire",
+        "Terrain fragile"
+      ],
+      "selfCare": [
+        "Petites gorgées ; lavage des mains ; isolement 48 h après guérison"
+      ],
+      "doNot": [
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "נורווירוס גורם להקאות ושלשול פתאומיים ומידבק. נוזלים, היגיינה; בידוד עד 48 שעות אחרי סיום תסמינים. אין אנטי-ויראלי מומצא.",
+      "seeDoctorIf": [
+        "סימני התייבשות",
+        "לא מצליח לשתות",
+        "אוכלוסייה בסיכון"
+      ],
+      "selfCare": [
+        "לגימות; שטיפת ידיים; בידוד 48 שעות אחרי"
+      ],
+      "doNot": [
+        "אין אנטי-ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Норовирус даёт внезапную рвоту/понос и легко передаётся. Жидкость, гигиена; изоляция 48 ч после симптомов. Противовирусные не выдумывать.",
+      "seeDoctorIf": [
+        "Признаки обезвоживания",
+        "Нельзя пить",
+        "Группы риска"
+      ],
+      "selfCare": [
+        "Маленькие глотки; мытьё рук; изоляция 48 ч после"
+      ],
+      "doNot": [
+        "Не изобретать противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-norovirus",
+      "name": "NHS — Norovirus (vomiting bug)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/norovirus/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

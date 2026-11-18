@@ -1,0 +1,98 @@
+{
+  "id": "rheumatoid-arthritis",
+  "category": "rheum",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "rheumatoid arthritis",
+      "RA flare",
+      "morning joint stiffness hands",
+      "symmetric joint swelling"
+    ],
+    "fr": [
+      "polyarthrite rhumatoïde",
+      "poussée de PR",
+      "raideur matinale articulations",
+      "gonflement articulaire symétrique"
+    ],
+    "he": [
+      "דלקת מפרקים שגרונית",
+      "התלקחות RA",
+      "נוקשות בוקר במפרקים",
+      "נפיחות מפרקים דו-צדדית"
+    ],
+    "ru": [
+      "ревматоидный артрит",
+      "обострение РА",
+      "утренняя скованность суставов",
+      "симметричный отёк суставов"
+    ]
+  },
+  "titles": {
+    "en": "Rheumatoid arthritis (orientation)",
+    "fr": "Polyarthrite rhumatoïde (orientation)",
+    "he": "דלקת מפרקים שגרונית (הכוונה)",
+    "ru": "Ревматоидный артрит (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "RA causes joint pain, swelling and stiffness (often hands/feet/wrists), frequently worse in the morning and sometimes symmetrical. Flares worsen symptoms. NHS: see a GP for assessment; long-term DMARDs/steroids are clinician-managed — never invent doses. Chest pain or sudden vision issues with known systemic disease need urgent pathways.",
+      "seeDoctorIf": [
+        "Persistent joint pain, swelling or morning stiffness lasting longer than typical osteoarthritis stiffness",
+        "Suspected RA flare",
+        "New chest pain or dry eyes with known RA — clinical review"
+      ],
+      "doNot": [
+        "Do not invent methotrexate, biologic, or steroid regimens",
+        "Do not stop DMARDs without clinical advice"
+      ]
+    },
+    "fr": {
+      "summary": "La PR provoque douleur, gonflement et raideur articulaire (souvent mains/pieds), parfois matinale et symétrique. Traitements de fond = médecin. Pas de doses inventées.",
+      "seeDoctorIf": [
+        "Douleur/gonflement/raideur matinale persistants",
+        "Poussée suspectée"
+      ],
+      "doNot": [
+        "Pas de méthotrexate/biologiques/corticoïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "RA גורמת לכאב, נפיחות ונוקשות מפרקים (לרוב ידיים/רגליים), לעיתים בבוקר ובאופן סימטרי. טיפולים ארוכי טווח — רופא. אין מינונים מומצאים.",
+      "seeDoctorIf": [
+        "כאב/נפיחות/נוקשות בוקר מתמשכים",
+        "חשד להתלקחות"
+      ],
+      "doNot": [
+        "אין מתוטרקסט/ביולוגיים/סטרואידים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "РА даёт боль, отёк и скованность суставов (часто кисти/стопы), нередко утром и симметрично. Базисная терапия — у врача. Дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Стойкая боль/отёк/утренняя скованность",
+        "Подозрение на обострение"
+      ],
+      "doNot": [
+        "Не изобретать метотрексат/биопрепараты/стероиды"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-rheumatoid-arthritis",
+      "name": "NHS — Rheumatoid arthritis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-ra-symptoms",
+      "name": "NHS — Rheumatoid arthritis symptoms",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

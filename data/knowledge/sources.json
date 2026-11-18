@@ -291,6 +291,13 @@
       ]
     },
     {
+      "id": "nhs-acute-pancreatitis",
+      "name": "NHS — Acute pancreatitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/acute-pancreatitis/",
+      "topics": []
+    },
+    {
       "id": "nhs-alcohol-use",
       "name": "NHS — Alcohol-use disorder",
       "org": "NHS",
@@ -388,10 +395,24 @@
       ]
     },
     {
+      "id": "nhs-chlamydia",
+      "name": "NHS — Chlamydia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chlamydia/",
+      "topics": []
+    },
+    {
       "id": "nhs-ckd",
       "name": "NHS — Chronic kidney disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/kidney-disease/",
+      "topics": []
+    },
+    {
+      "id": "nhs-cluster-headaches",
+      "name": "NHS — Cluster headaches",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cluster-headaches/",
       "topics": []
     },
     {
@@ -408,6 +429,13 @@
       "name": "NHS — Sudden confusion (delirium)",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/confusion/",
+      "topics": []
+    },
+    {
+      "id": "nhs-conjunctivitis",
+      "name": "NHS — Conjunctivitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/conjunctivitis/",
       "topics": []
     },
     {
@@ -480,6 +508,13 @@
       ]
     },
     {
+      "id": "nhs-diverticulitis",
+      "name": "NHS — Diverticular disease and diverticulitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+      "topics": []
+    },
+    {
       "id": "nhs-dvt",
       "name": "NHS — DVT",
       "org": "NHS",
@@ -512,10 +547,24 @@
       "topics": []
     },
     {
+      "id": "nhs-food-poisoning",
+      "name": "NHS — Food poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/food-poisoning/",
+      "topics": []
+    },
+    {
       "id": "nhs-gallstones",
       "name": "NHS — Gallstones",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/gallstones/",
+      "topics": []
+    },
+    {
+      "id": "nhs-gonorrhoea",
+      "name": "NHS — Gonorrhoea",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/gonorrhoea/",
       "topics": []
     },
     {
@@ -556,10 +605,24 @@
       "topics": []
     },
     {
+      "id": "nhs-heartburn-reflux",
+      "name": "NHS — Heartburn and acid reflux",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+      "topics": []
+    },
+    {
       "id": "nhs-heavy-periods",
       "name": "NHS — Heavy periods",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/heavy-periods/",
+      "topics": []
+    },
+    {
+      "id": "nhs-hepatitis-a",
+      "name": "NHS — Hepatitis A",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hepatitis-a/",
       "topics": []
     },
     {
@@ -623,6 +686,20 @@
       "topics": []
     },
     {
+      "id": "nhs-labyrinthitis",
+      "name": "NHS — Labyrinthitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/labyrinthitis/",
+      "topics": []
+    },
+    {
+      "id": "nhs-lyme",
+      "name": "NHS — Lyme disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/lyme-disease/",
+      "topics": []
+    },
+    {
       "id": "nhs-malaria",
       "name": "NHS — Malaria",
       "org": "NHS",
@@ -654,10 +731,31 @@
       "topics": []
     },
     {
+      "id": "nhs-migraine",
+      "name": "NHS — Migraine",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/migraine/",
+      "topics": []
+    },
+    {
       "id": "nhs-neck-pain",
       "name": "NHS — Neck pain and stiff neck",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/",
+      "topics": []
+    },
+    {
+      "id": "nhs-norovirus",
+      "name": "NHS — Norovirus (vomiting bug)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/norovirus/",
+      "topics": []
+    },
+    {
+      "id": "nhs-oral-thrush",
+      "name": "NHS — Oral thrush (mouth thrush)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/oral-thrush-mouth-thrush/",
       "topics": []
     },
     {
@@ -730,6 +828,20 @@
       "topics": []
     },
     {
+      "id": "nhs-ra-symptoms",
+      "name": "NHS — Rheumatoid arthritis symptoms",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+      "topics": []
+    },
+    {
+      "id": "nhs-rabies",
+      "name": "NHS — Rabies",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rabies/",
+      "topics": []
+    },
+    {
       "id": "nhs-rashes-children",
       "name": "NHS — Rashes in babies and children",
       "org": "NHS",
@@ -747,6 +859,27 @@
       "topics": [
         "eye"
       ]
+    },
+    {
+      "id": "nhs-rheumatoid-arthritis",
+      "name": "NHS — Rheumatoid arthritis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+      "topics": []
+    },
+    {
+      "id": "nhs-ringworm",
+      "name": "NHS — Ringworm",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ringworm/",
+      "topics": []
+    },
+    {
+      "id": "nhs-scabies",
+      "name": "NHS — Scabies",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/scabies/",
+      "topics": []
     },
     {
       "id": "nhs-scarlet-fever",
@@ -802,6 +935,20 @@
       "topics": [
         "stroke"
       ]
+    },
+    {
+      "id": "nhs-sunburn",
+      "name": "NHS — Sunburn",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sunburn/",
+      "topics": []
+    },
+    {
+      "id": "nhs-temporal-arteritis",
+      "name": "NHS — Temporal arteritis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/temporal-arteritis/",
+      "topics": []
     },
     {
       "id": "nhs-testicle-pain",

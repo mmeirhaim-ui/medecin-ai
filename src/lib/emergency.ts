@@ -192,6 +192,26 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   // COPD severe distress already covered by breath patterns; keep named cue
   /\bCOPD\s+(attack|exacerbation|flare)\b/i,
   /\bexacerbation\s+(de\s+)?BPCO\b/i,
+
+  // Rabies exposure
+  /\brabies\b/i,
+  /\brage\b/i,
+  /\bכלבת\b/u,
+  /\bбешенств/iu,
+
+  // Temporal arteritis / giant cell
+  /\btemporal\s+arteritis\b/i,
+  /\bgiant\s+cell\s+arteritis\b/i,
+  /\bart[ée]rite\s+temporale\b/i,
+  /\bmaladie\s+de\s+Horton\b/i,
+  /\bדלקת\s+עורקים\s+רקתית\b/u,
+  /\bвисочн\w*\s+артериит\b/iu,
+
+  // Acute pancreatitis
+  /\bpancreatitis\b/i,
+  /\bpancr[ée]atite\b/i,
+  /\bדלקת\s+לבלב\b/u,
+  /\bпанкреатит\b/iu,
 ];
 
 const NEGATION =

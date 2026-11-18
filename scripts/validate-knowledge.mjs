@@ -125,6 +125,13 @@ const cases = [
   { text: "scarlet fever sandpaper rash strawberry tongue", expect: "scarlet-fever" },
   { text: "gallstones pain under right ribs biliary", expect: "gallstones-biliary" },
   { text: "impetigo honey crusted sores", expect: "impetigo" },
+  { text: "rabies animal bite abroad bat scratch", expect: "rabies-exposure" },
+  { text: "temporal arteritis temple headache jaw pain vision", expect: "temporal-arteritis" },
+  { text: "migraine throbbing light sound aura zigzag", expect: "migraine" },
+  { text: "cluster headache pain around one eye watering", expect: "cluster-headache" },
+  { text: "acute pancreatitis severe upper abdominal pain to back", expect: "acute-pancreatitis" },
+  { text: "lyme disease tick bite bullseye rash", expect: "lyme-disease" },
+  { text: "how to use adrenaline auto injector EpiPen two pens", expect: "anaphylaxis-aftercare" },
 ];
 
 for (const c of cases) {

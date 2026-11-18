@@ -1,0 +1,102 @@
+{
+  "id": "sunburn",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "sunburn",
+      "burned in the sun",
+      "red hot skin after sun"
+    ],
+    "fr": [
+      "coup de soleil",
+      "brûlure solaire",
+      "peau rouge chaude après soleil"
+    ],
+    "he": [
+      "כוויות שמש",
+      "נשרף מהשמש",
+      "עור אדום חם אחרי שמש"
+    ],
+    "ru": [
+      "солнечный ожог",
+      "обгорел на солнце",
+      "красная горячая кожа после солнца"
+    ]
+  },
+  "titles": {
+    "en": "Sunburn",
+    "fr": "Coup de soleil",
+    "he": "כוויית שמש",
+    "ru": "Солнечный ожог"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sunburn: cool the skin, hydrate, moisturise, stay out of the sun. NHS: seek urgent help for blistering over large areas, severe pain, fever/chills, dizziness, or heat-illness signs (especially in children). Prevention with shade/SPF matters. No inventing steroid cream strengths.",
+      "seeDoctorIf": [
+        "Large areas of blistering",
+        "Severe pain",
+        "Fever, chills, dizziness, confusion with sun exposure"
+      ],
+      "selfCare": [
+        "Cool showers; fluids; emollient; stay indoors/shade; paracetamol/ibuprofen if suitable per label"
+      ],
+      "doNot": [
+        "Do not pop blisters",
+        "Do not invent potent topical steroids"
+      ]
+    },
+    "fr": {
+      "summary": "Coup de soleil : refroidir, hydrater, rester à l'ombre. Avis urgent si cloques étendues, douleur forte, fièvre, malaise. Pas de dermocorticoïdes inventés.",
+      "seeDoctorIf": [
+        "Cloques étendues",
+        "Douleur sévère",
+        "Fièvre / vertiges / confusion"
+      ],
+      "selfCare": [
+        "Douches tièdes ; boire ; émollient ; ombre"
+      ],
+      "doNot": [
+        "Ne pas percer les cloques"
+      ]
+    },
+    "he": {
+      "summary": "כוויית שמש: לקרר, לשתות, לחות, להישאר בצל. ייעוץ דחוף בשלפוחיות נרחבות, כאב חזק, חום, סחרחורת. אין סטרואידים מקומיים מומצאים.",
+      "seeDoctorIf": [
+        "שלפוחיות נרחבות",
+        "כאב חזק",
+        "חום / סחרחורת / בלבול"
+      ],
+      "selfCare": [
+        "מקלחת פושרת; שתייה; לחות; צל"
+      ],
+      "doNot": [
+        "לא לפוצץ שלפוחיות"
+      ]
+    },
+    "ru": {
+      "summary": "Солнечный ожог: охладить, пить, увлажнять, тень. Срочно при обширных пузырях, сильной боли, лихорадке, головокружении. Топические стероиды не выдумывать.",
+      "seeDoctorIf": [
+        "Обширные пузыри",
+        "Сильная боль",
+        "Лихорадка / головокружение / спутанность"
+      ],
+      "selfCare": [
+        "Прохладный душ; жидкость; эмолент; тень"
+      ],
+      "doNot": [
+        "Не вскрывать пузыри"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-sunburn",
+      "name": "NHS — Sunburn",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sunburn/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

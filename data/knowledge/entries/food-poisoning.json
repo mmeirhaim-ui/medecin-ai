@@ -1,0 +1,110 @@
+{
+  "id": "food-poisoning",
+  "category": "gi",
+  "urgencyDefault": "auto_soins",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "food poisoning",
+      "ate something bad vomiting diarrhoea",
+      "foodborne illness"
+    ],
+    "fr": [
+      "intoxication alimentaire",
+      "vomissements diarrhée après repas",
+      "toxi-infection alimentaire"
+    ],
+    "he": [
+      "הרעלת מזון",
+      "הקאות ושלשול אחרי אוכל",
+      "זיהום ממזון"
+    ],
+    "ru": [
+      "пищевое отравление",
+      "рвота и понос после еды",
+      "пищевая токсикоинфекция"
+    ]
+  },
+  "titles": {
+    "en": "Food poisoning",
+    "fr": "Intoxication alimentaire",
+    "he": "הרעלת מזון",
+    "ru": "Пищевое отравление"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Food poisoning usually causes vomiting and/or diarrhoea. NHS: rest, fluids in small sips; most improve in a few days. Urgent care for dehydration signs, blood in stool, high fever, severe pain, or vulnerability (infants, elderly, pregnant, immunocompromised). Antibiotics usually not needed — never invent them.",
+      "seeDoctorIf": [
+        "Symptoms lasting more than a few days",
+        "Blood in diarrhoea",
+        "High fever",
+        "Signs of dehydration",
+        "Infant, elderly, pregnant, or immunocompromised"
+      ],
+      "selfCare": [
+        "Small frequent sips of fluid; rest; hand hygiene; avoid preparing food for others while ill"
+      ],
+      "doNot": [
+        "Do not invent antibiotics",
+        "Do not give anti-diarrhoeals to children without advice"
+      ]
+    },
+    "fr": {
+      "summary": "L'intoxication alimentaire provoque vomissements/diarrhée. Repos, hydratation. Avis si déshydratation, sang, fièvre, terrain fragile. Pas d'antibiotiques inventés.",
+      "seeDoctorIf": [
+        "Persistance",
+        "Sang",
+        "Forte fièvre",
+        "Déshydratation",
+        "Nourrisson / âgé / grossesse / immunodépression"
+      ],
+      "selfCare": [
+        "Petites gorgées ; repos ; hygiène des mains"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "הרעלת מזון: הקאות ו/או שלשול. מנוחה, לגימות. ייעוץ בהתייבשות, דם, חום, או אוכלוסיות בסיכון. אין אנטיביוטיקה מומצאת.",
+      "seeDoctorIf": [
+        "נמשך מעבר לימים ספורים",
+        "דם",
+        "חום גבוה",
+        "התייבשות",
+        "תינוק / קשיש / הריון / דיכוי חיסוני"
+      ],
+      "selfCare": [
+        "לגימות קטנות; מנוחה; היגיינת ידיים"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Пищевое отравление: рвота и/или понос. Покой, глотки жидкости. Врач при обезвоживании, крови, лихорадке, группах риска. Антибиотики не выдумывать.",
+      "seeDoctorIf": [
+        "Длится дольше нескольких дней",
+        "Кровь",
+        "Высокая лихорадка",
+        "Обезвоживание",
+        "Младенец / пожилой / беременность / иммунодефицит"
+      ],
+      "selfCare": [
+        "Маленькие глотки; покой; гигиена рук"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-food-poisoning",
+      "name": "NHS — Food poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/food-poisoning/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
