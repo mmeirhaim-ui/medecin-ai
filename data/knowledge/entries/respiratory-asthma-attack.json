@@ -1,0 +1,141 @@
+{
+  "id": "respiratory-asthma-attack",
+  "category": "respiratory",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "asthma attack",
+      "asthma inhaler",
+      "wheezing severe",
+      "reliever inhaler",
+      "cannot breathe asthma"
+    ],
+    "fr": [
+      "crise d'asthme",
+      "asthme",
+      "inhalateur de secours",
+      "sifflements graves",
+      "bronchospasme"
+    ],
+    "he": [
+      "התקף אסתמה",
+      "אסתמה",
+      "משאף הצלה",
+      "צפצופים חזקים"
+    ],
+    "ru": [
+      "приступ астмы",
+      "астма",
+      "ингалятор",
+      "сильный свистящий хрип"
+    ]
+  },
+  "titles": {
+    "en": "Asthma attack / severe wheeze",
+    "fr": "Crise d'asthme / sifflements sévères",
+    "he": "התקף אסתמה / צפצופים חמורים",
+    "ru": "Приступ астмы / тяжёлое свистящее дыхание"
+  },
+  "guidance": {
+    "en": {
+      "summary": "An asthma attack with severe breathing difficulty can be life-threatening. Call emergency services if worse at any time, no inhaler, or no improvement after the maximum reliever dose (NHS framing: up to 10 puffs). Educational only — follow the person's asthma action plan; do not invent inhaler doses.",
+      "emergencyIf": [
+        "Feel worse at any time during an attack",
+        "No asthma inhaler available",
+        "No better after taking the maximum dose with a reliever inhaler (NHS: up to 10 puffs; if still not better after 10 minutes and ambulance not arrived, may use again up to same maximum while waiting)",
+        "Severe difficulty speaking, blue/grey lips or extreme distress"
+      ],
+      "seeDoctorIf": [
+        "Asthma symptoms not controlled, waking at night, or using reliever more often",
+        "After any asthma attack — see a clinician within ~2 days even if recovered (NHS)",
+        "Pregnant with worsening asthma symptoms"
+      ],
+      "selfCare": [
+        "Use the person's prescribed reliever as labeled / per their asthma action plan",
+        "Sit upright; keep calm; do not drive yourself if severely breathless"
+      ],
+      "doNot": [
+        "Do not invent steroid or inhaler regimens here",
+        "Do not stop prescribed asthma medicines in pregnancy without clinician advice (NHS)"
+      ]
+    },
+    "fr": {
+      "summary": "Une crise d'asthme avec détresse respiratoire peut être vitale. Appelez les secours si aggravation, pas d'inhalateur, ou pas d'amélioration après la dose maximale de secours (repère NHS : jusqu'à 10 bouffées). Pas de posologie inventée.",
+      "emergencyIf": [
+        "Aggravation à tout moment",
+        "Pas d'inhalateur disponible",
+        "Pas d'amélioration après la dose maximale de secours",
+        "Difficulté extrême à parler, lèvres bleues/grises"
+      ],
+      "seeDoctorIf": [
+        "Asthme mal contrôlé, réveils nocturnes, usage accru du secours",
+        "Après une crise — revoir un clinicien rapidement même si ça va mieux",
+        "Grossesse avec aggravation"
+      ],
+      "selfCare": [
+        "Suivre le plan d'action prescrit",
+        "Position assise ; ne pas conduire en détresse"
+      ],
+      "doNot": [
+        "Pas de schéma inhalatoire inventé ici"
+      ]
+    },
+    "he": {
+      "summary": "התקף אסתמה עם מצוקה נשימתית עלול לסכן חיים. פנו לחירום אם מחמיר, אין משאף, או אין שיפור אחרי מינון ההצלה המרבי לפי התוכנית. אין מינונים מומצאים כאן.",
+      "emergencyIf": [
+        "החמרה בכל רגע",
+        "אין משאף זמין",
+        "אין שיפור אחרי מינון ההצלה המרבי",
+        "קושי קיצוני בדיבור או שפתיים כחלחלות"
+      ],
+      "seeDoctorIf": [
+        "אסתמה לא מאוזנת או שימוש מוגבר במשאף הצלה",
+        "לאחר התקף — ביקור מעקב מהיר",
+        "הריון עם החמרה"
+      ],
+      "selfCare": [
+        "לפעול לפי תוכנית האסתמה שנרשמה"
+      ],
+      "doNot": [
+        "אין לשנות מינונים ללא ייעוץ"
+      ]
+    },
+    "ru": {
+      "summary": "Приступ астмы с тяжёлой одышкой может угрожать жизни. Вызывайте скорую при ухудшении, отсутствии ингалятора или отсутствии улучшения после максимальной дозы спасательного ингалятора. Здесь нет дозировок.",
+      "emergencyIf": [
+        "Ухудшение в любой момент",
+        "Нет ингалятора",
+        "Нет улучшения после максимальной дозы спасательного ингалятора",
+        "Крайне трудно говорить, синие/серые губы"
+      ],
+      "seeDoctorIf": [
+        "Плохой контроль астмы, ночные симптомы, частое использование спасательного ингалятора",
+        "После приступа — быстрый осмотр даже при улучшении",
+        "Беременность с ухудшением"
+      ],
+      "selfCare": [
+        "Следовать назначенному плану действий при астме"
+      ],
+      "doNot": [
+        "Не изобретать схемы ингаляторов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-asthma",
+      "name": "NHS — Asthma",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/asthma/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-asthma-pregnancy",
+      "name": "NHS — Asthma and pregnancy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/pregnancy/existing-health-conditions/asthma/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -109,6 +109,38 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\boverdose\b/i,
   /\bמנת\s+יתר\b/u,
   /\bпередозировк/iu,
+
+  // Clot / PE
+  /\bpulmonary\s+embolism\b/i,
+  /\bembolie\s+pulmonaire\b/i,
+  /\bdeep\s+vein\s+thrombosis\b/i,
+  /\bתסחיף\s+ריאתי\b/u,
+  /\bтромбоэмболи/iu,
+
+  // Heat stroke
+  /\bheat\s+stroke\b/i,
+  /\bcoup\s+de\s+chaleur\b/i,
+  /\bמכת\s+חום\b/u,
+  /\bтепловой\s+удар\b/iu,
+
+  // Testicular torsion cues
+  /\btesticular\s+torsion\b/i,
+  /\btorsion\s+(du\s+)?testicule\b/i,
+  /\bsudden\s+severe\s+testicle\s+pain\b/i,
+  /\bפיתול\s+אשך\b/u,
+  /\bперекрут\s+яичка\b/iu,
+
+  // Carbon monoxide
+  /\bcarbon\s+monoxide\b/i,
+  /\bmonoxyde\s+de\s+carbone\b/i,
+  /\bחד[\s-]?תחמוצת\s+הפחמן\b/u,
+  /\bугарный\s+газ\b/iu,
+
+  // Asthma attack
+  /\basthma\s+attack\b/i,
+  /\bcrise\s+d['']asthme\b/i,
+  /\bהתקף\s+אסתמה\b/u,
+  /\bприступ\s+астмы\b/iu,
 ];
 
 const NEGATION =

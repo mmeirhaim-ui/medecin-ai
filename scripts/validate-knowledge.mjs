@@ -99,6 +99,15 @@ const cases = [
   { text: "hot swollen painful skin on my leg", expect: "derm-rash-cellulitis" },
   { text: "fièvre chez mon bébé de 6 semaines", expectIncludes: "fever-adult-child" },
   { text: "anaphylaxie gonflement de la gorge", expect: "red-flags-anaphylaxis" },
+  { text: "asthma attack no inhaler", expect: "respiratory-asthma-attack" },
+  { text: "sudden severe testicle pain", expect: "testicular-pain" },
+  { text: "leg swelling one side and chest pain", expectIncludes: "clot-dvt-pe" },
+  { text: "carbon monoxide headache dizziness", expect: "poisoning-carbon-monoxide" },
+  { text: "heavy vaginal bleeding while pregnant and shoulder pain", expect: "pregnancy-bleeding" },
+  { text: "barking cough stridor child", expect: "peds-croup" },
+  { text: "heat stroke confusion hot skin", expect: "heat-illness" },
+  { text: "dental abscess swollen face hard to swallow", expectIncludes: "dental-abscess" },
+  { text: "fruity breath ketones diabetes vomiting", expect: "diabetes-sick-day-dka" },
 ];
 
 for (const c of cases) {

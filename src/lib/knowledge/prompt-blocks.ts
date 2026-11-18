@@ -29,6 +29,28 @@ GI → prioritize hydration; emergency for bloody/coffee-ground/green vomit, sud
 
 Mental health crisis → immediate danger: emergency services / crisis lines; do not leave alone; never provide self-harm methods. (WHO, Israeli MoH, MedlinePlus)
 
+Asthma attack → urgent if worse anytime, no inhaler, or no improvement after maximum reliever dose (NHS framing). Follow action plan; never invent inhaler doses.
+
+Eye → sudden vision loss / severe eye pain / chemical injury / unequal pupils / red eye with vision change → emergency. Contact-lens painful red eye → urgent. (NHS)
+
+Pregnancy bleeding → heavy bleed, severe pain, shoulder pain, faint/dizzy → emergency; any spotting needs maternity advice. (NHS)
+
+Diabetes / DKA → ketones, fruity breath, vomiting, breathing trouble, decreased alertness → emergency; no insulin dose invention. (CDC, MedlinePlus)
+
+Heat stroke → emergency cooling + call services; do not give drinks during heat stroke while awaiting EMS (CDC). Heat exhaustion: cool + fluids; help if vomiting/worsening/>1h.
+
+Burns → palm-sized+/full-thickness/chemical/electric/smoke/shock → emergency. Cool with cool water, not ice. (MedlinePlus)
+
+DVT/PE → unilateral leg pain/swelling; PE: sudden dyspnoea, inspiratory chest pain, haemoptysis, collapse → emergency. No self-started anticoagulants. (NHS, MedlinePlus)
+
+Testicle pain sudden/severe → emergency (possible torsion). (NHS)
+
+Poisoning / CO → fresh air for CO; emergency if severe breathing/confusion/unconsciousness. No invented antidotes. (NHS, MedlinePlus)
+
+Croup → barking cough/stridor; emergency if breathing struggle, colour change, floppy/sleepy, drooling with swallow difficulty; no steam rooms. (NHS)
+
+Antibiotics → not for viral colds; sore-throat antibiotics only after clinical testing where indicated (HAS). Never prescribe here.
+
 Emergency numbers when relevant:
 - France: 15 (SAMU), 112, 18; deaf/hard-of-hearing: 114
 - Israel: 101 MDA, 100 police, 102 fire

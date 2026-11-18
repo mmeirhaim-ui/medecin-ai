@@ -1,0 +1,116 @@
+{
+  "id": "hypertension-chest-cues",
+  "category": "cardio",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "high blood pressure symptoms",
+      "hypertension headache vision",
+      "BP crisis",
+      "very high blood pressure"
+    ],
+    "fr": [
+      "hypertension symptômes",
+      "tension très élevée",
+      "crise hypertensive",
+      "céphalée HTA vision"
+    ],
+    "he": [
+      "לחץ דם גבוה תסמינים",
+      "יתר לחץ דם",
+      "כאב ראש עם לחץ דם",
+      "משבר לחץ דם"
+    ],
+    "ru": [
+      "высокое давление симптомы",
+      "гипертония",
+      "гипертонический криз",
+      "головная боль при давлении"
+    ]
+  },
+  "titles": {
+    "en": "High blood pressure — concerning symptoms",
+    "fr": "Hypertension — symptômes inquiétants",
+    "he": "לחץ דם גבוה — תסמינים מדאיגים",
+    "ru": "Высокое давление — тревожные симптомы"
+  },
+  "guidance": {
+    "en": {
+      "summary": "High blood pressure usually has no symptoms and is found by measurement. Sudden ongoing chest pain with radiation/sweating/nausea/breathlessness is a possible heart attack — call emergency services (NHS). Frequent headaches/blurred vision warrant urgent advice. This tool does not adjust BP medicines.",
+      "emergencyIf": [
+        "Sudden chest pain/discomfort that does not go away (squeezing, pressure, burning)",
+        "Pain spreading to arm/neck/jaw/stomach/back",
+        "Chest pain with sweaty, sick, light-headed or short of breath"
+      ],
+      "seeDoctorIf": [
+        "Often headaches or blurred vision",
+        "Intermittent chest pain",
+        "Known hypertension with new concerning symptoms"
+      ],
+      "doNot": [
+        "Do not invent emergency BP drug doses",
+        "Do not ignore possible heart-attack chest pain"
+      ]
+    },
+    "fr": {
+      "summary": "L'HTA est souvent asymptomatique. Douleur thoracique persistante avec irradiation/sueurs/nausées/dyspnée = possible infarctus — secours. Céphalées/vision floue fréquentes = avis urgent. Pas d'ajustement thérapeutique ici.",
+      "emergencyIf": [
+        "Douleur thoracique soudaine qui ne passe pas",
+        "Irradiation bras/cou/mâchoire",
+        "Sueurs, nausées, dyspnée associées"
+      ],
+      "seeDoctorIf": [
+        "Céphalées ou vision floue fréquentes",
+        "Douleur thoracique intermittente"
+      ],
+      "doNot": [
+        "Pas de posologie antihypertensive d'urgence inventée"
+      ]
+    },
+    "he": {
+      "summary": "יתר לחץ דם לרוב ללא תסמינים. כאב חזה מתמשך עם הקרנה/הזעה/בחילה/קוצר נשימה — חשד להתקף לב. כאבי ראש/ראייה מטושטשת תכופים — ייעוץ דחוף. אין התאמת תרופות כאן.",
+      "emergencyIf": [
+        "כאב חזה פתאומי שלא חולף",
+        "הקרנה לזרוע/לסת",
+        "הזעה, בחילה, קוצר נשימה"
+      ],
+      "seeDoctorIf": [
+        "כאבי ראש או ראייה מטושטשת תכופים"
+      ],
+      "doNot": [
+        "אין מינון ללחץ דם כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Гипертония часто бессимптомна. Стойкая боль в груди с иррадиацией/потом/тошнотой/одышкой — возможный инфаркт. Частые головные боли/нечёткость зрения — срочный совет. Здесь нет коррекции лекарств.",
+      "emergencyIf": [
+        "Внезапная боль в груди, которая не проходит",
+        "Иррадиация в руку/шею/челюсть",
+        "Пот, тошнота, одышка"
+      ],
+      "seeDoctorIf": [
+        "Частые головные боли или нечёткость зрения"
+      ],
+      "doNot": [
+        "Не изобретать экстренные дозы гипотензивных"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hypertension",
+      "name": "NHS — High blood pressure",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-heart-attack",
+      "name": "NHS — Heart attack",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

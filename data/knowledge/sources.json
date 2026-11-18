@@ -5,224 +5,540 @@
       "name": "MedlinePlus — Recognizing medical emergencies",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/article/001927.htm",
-      "topics": ["emergency", "red-flags"]
+      "topics": [
+        "emergency",
+        "red-flags"
+      ]
     },
     {
       "id": "medlineplus-er-adult",
       "name": "MedlinePlus — When to use the emergency room (adult)",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/patientinstructions/000593.htm",
-      "topics": ["emergency"]
+      "topics": [
+        "emergency"
+      ]
     },
     {
       "id": "medlineplus-chest-pain",
       "name": "MedlinePlus — Chest pain",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/article/003079.htm",
-      "topics": ["cardio"]
+      "topics": [
+        "cardio"
+      ]
     },
     {
       "id": "medlineplus-stroke",
       "name": "MedlinePlus — Stroke",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/stroke.html",
-      "topics": ["stroke", "neuro"]
+      "topics": [
+        "stroke",
+        "neuro"
+      ]
     },
     {
       "id": "medlineplus-fever",
       "name": "MedlinePlus — Fever",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/article/003090.htm",
-      "topics": ["fever", "peds"]
+      "topics": [
+        "fever",
+        "peds"
+      ]
     },
     {
       "id": "cdc-cold",
       "name": "CDC — Manage common cold",
       "org": "CDC",
       "url": "https://www.cdc.gov/common-cold/treatment/",
-      "topics": ["respiratory"]
+      "topics": [
+        "respiratory"
+      ]
     },
     {
       "id": "cdc-sore-throat",
       "name": "CDC — Sore throat basics",
       "org": "CDC",
       "url": "https://www.cdc.gov/sore-throat/about/",
-      "topics": ["ent"]
+      "topics": [
+        "ent"
+      ]
     },
     {
       "id": "cdc-respiratory",
       "name": "CDC — About respiratory illnesses",
       "org": "CDC",
       "url": "https://www.cdc.gov/respiratory-viruses/about/index.html",
-      "topics": ["respiratory", "emergency"]
+      "topics": [
+        "respiratory",
+        "emergency"
+      ]
     },
     {
       "id": "cdc-flu-care",
       "name": "CDC — Flu: what to do if you get sick",
       "org": "CDC",
       "url": "https://www.cdc.gov/flu/takingcare/",
-      "topics": ["respiratory"]
+      "topics": [
+        "respiratory"
+      ]
     },
     {
       "id": "nhs-heart-attack",
       "name": "NHS — Heart attack",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/heart-attack/",
-      "topics": ["cardio"]
+      "topics": [
+        "cardio"
+      ]
     },
     {
       "id": "nhs-stroke",
       "name": "NHS — Stroke symptoms",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
-      "topics": ["stroke"]
+      "topics": [
+        "stroke"
+      ]
     },
     {
       "id": "nhs-anaphylaxis",
       "name": "NHS — Anaphylaxis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/anaphylaxis/",
-      "topics": ["allergy"]
+      "topics": [
+        "allergy"
+      ]
     },
     {
       "id": "nhs-sepsis",
       "name": "NHS — Sepsis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/sepsis/",
-      "topics": ["sepsis"]
+      "topics": [
+        "sepsis"
+      ]
     },
     {
       "id": "nhs-meningitis",
       "name": "NHS — Meningitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/meningitis/",
-      "topics": ["meningitis", "peds"]
+      "topics": [
+        "meningitis",
+        "peds"
+      ]
     },
     {
       "id": "nhs-cellulitis",
       "name": "NHS — Cellulitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/cellulitis/",
-      "topics": ["derm"]
+      "topics": [
+        "derm"
+      ]
     },
     {
       "id": "nhs-rashes-children",
       "name": "NHS — Rashes in babies and children",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/rashes-babies-and-children/",
-      "topics": ["derm", "peds"]
+      "topics": [
+        "derm",
+        "peds"
+      ]
     },
     {
       "id": "nhs-itchy-skin",
       "name": "NHS — Itchy skin",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/itchy-skin/",
-      "topics": ["derm"]
+      "topics": [
+        "derm"
+      ]
     },
     {
       "id": "nhs-diarrhoea-vomiting",
       "name": "NHS — Diarrhoea and vomiting",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/diarrhoea-and-vomiting/",
-      "topics": ["gi"]
+      "topics": [
+        "gi"
+      ]
     },
     {
       "id": "nhs-dehydration",
       "name": "NHS — Dehydration",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/dehydration/",
-      "topics": ["gi"]
+      "topics": [
+        "gi"
+      ]
     },
     {
       "id": "nhs-stomach-ache",
       "name": "NHS — Stomach ache",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/stomach-ache/",
-      "topics": ["gi"]
+      "topics": [
+        "gi"
+      ]
     },
     {
       "id": "nhs-appendicitis",
       "name": "NHS — Appendicitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/appendicitis/",
-      "topics": ["gi"]
+      "topics": [
+        "gi"
+      ]
     },
     {
       "id": "ameli-chest-pain",
       "name": "Ameli — Douleur thoracique / urgence",
       "org": "Assurance Maladie (France)",
       "url": "https://www.ameli.fr/assure/sante/themes/douleur-thoracique/reconnaitre-agit-urgence",
-      "topics": ["cardio"]
+      "topics": [
+        "cardio"
+      ]
     },
     {
       "id": "has-avc-alert",
       "name": "HAS — AVC signes d’alerte",
       "org": "Haute Autorité de Santé",
       "url": "https://www.has-sante.fr/jcms/p_3701212/fr/accident-vasculaire-cerebral-des-signes-d-alerte-a-votre-retour-a-domicile",
-      "topics": ["stroke"]
+      "topics": [
+        "stroke"
+      ]
     },
     {
       "id": "who-suicide-qa",
       "name": "WHO — Suicide Q&A",
       "org": "WHO",
       "url": "https://www.who.int/news-room/questions-and-answers/item/suicide",
-      "topics": ["mental-health"]
+      "topics": [
+        "mental-health"
+      ]
     },
     {
       "id": "who-depression",
       "name": "WHO — Depression fact sheet",
       "org": "WHO",
       "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
-      "topics": ["mental-health"]
+      "topics": [
+        "mental-health"
+      ]
     },
     {
       "id": "il-moh-fever",
       "name": "Israeli MoH — Fever in children",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/fever/high-temperature-and-fever/",
-      "topics": ["peds", "fever"]
+      "topics": [
+        "peds",
+        "fever"
+      ]
     },
     {
       "id": "il-moh-stomach",
       "name": "Israeli MoH — Stomach pain in children",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/digestive-system/stomach-ache/",
-      "topics": ["peds", "gi"]
+      "topics": [
+        "peds",
+        "gi"
+      ]
     },
     {
       "id": "il-moh-stroke",
       "name": "Israeli MoH — Stroke (older adults)",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/older-adult/keep-me-healthy/common-conditions/stroke/",
-      "topics": ["stroke"]
+      "topics": [
+        "stroke"
+      ]
     },
     {
       "id": "il-moh-mental-crisis",
       "name": "Israeli MoH — Mental health first aid / crisis",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/mental-health/therapy-rehabilitation/crisis-support/first-aid/",
-      "topics": ["mental-health"]
+      "topics": [
+        "mental-health"
+      ]
     },
     {
       "id": "il-moh-sob",
       "name": "Israeli MoH — Shortness of breath",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/older-adult/keep-me-healthy/common-concerns/shortness-of-breath/",
-      "topics": ["respiratory"]
+      "topics": [
+        "respiratory"
+      ]
     },
     {
       "id": "medlineplus-uti-adults",
       "name": "MedlinePlus — Urinary tract infection (adults)",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/article/000521.htm",
-      "topics": ["uro"]
+      "topics": [
+        "uro"
+      ]
     },
     {
       "id": "medlineplus-uti-overview",
       "name": "MedlinePlus — Urinary Tract Infections",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/urinarytractinfections.html",
-      "topics": ["uro"]
+      "topics": [
+        "uro"
+      ]
+    },
+    {
+      "id": "nhs-asthma",
+      "name": "NHS — Asthma",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/asthma/",
+      "topics": [
+        "respiratory"
+      ]
+    },
+    {
+      "id": "nhs-asthma-pregnancy",
+      "name": "NHS — Asthma and pregnancy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/pregnancy/existing-health-conditions/asthma/",
+      "topics": [
+        "respiratory",
+        "obgyn"
+      ]
+    },
+    {
+      "id": "nhs-red-eye",
+      "name": "NHS — Red eye",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/red-eye/",
+      "topics": [
+        "eye"
+      ]
+    },
+    {
+      "id": "nhs-vision-loss",
+      "name": "NHS — Vision loss",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vision-loss/",
+      "topics": [
+        "eye"
+      ]
+    },
+    {
+      "id": "nhs-pregnancy-bleeding",
+      "name": "NHS — Vaginal bleeding in pregnancy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/pregnancy/common-symptoms/vaginal-bleeding/",
+      "topics": [
+        "obgyn"
+      ]
+    },
+    {
+      "id": "cdc-diabetes-sick",
+      "name": "CDC — Managing sick days (diabetes)",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
+      "topics": [
+        "endocrine"
+      ]
+    },
+    {
+      "id": "medlineplus-dka",
+      "name": "MedlinePlus — Diabetic ketoacidosis",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/000320.htm",
+      "topics": [
+        "endocrine"
+      ]
+    },
+    {
+      "id": "cdc-heat-illnesses",
+      "name": "CDC/NIOSH — Heat-related illnesses",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/niosh/heat-stress/about/illnesses.html",
+      "topics": [
+        "environmental"
+      ]
+    },
+    {
+      "id": "cdc-heat-pdf",
+      "name": "CDC — Heat related illnesses tip sheet",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/disasters/extremeheat/pdf/Heat_Related_Illness.pdf",
+      "topics": [
+        "environmental"
+      ]
+    },
+    {
+      "id": "medlineplus-burns",
+      "name": "MedlinePlus — Burns",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/000030.htm",
+      "topics": [
+        "trauma"
+      ]
+    },
+    {
+      "id": "nhs-dvt",
+      "name": "NHS — DVT",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+      "topics": [
+        "cardio"
+      ]
+    },
+    {
+      "id": "nhs-pe",
+      "name": "NHS — Pulmonary embolism",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+      "topics": [
+        "cardio"
+      ]
+    },
+    {
+      "id": "medlineplus-dvt",
+      "name": "MedlinePlus — Deep Vein Thrombosis",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/deepveinthrombosis.html",
+      "topics": [
+        "cardio"
+      ]
+    },
+    {
+      "id": "medlineplus-pe",
+      "name": "MedlinePlus — Pulmonary Embolism",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/pulmonaryembolism.html",
+      "topics": [
+        "cardio"
+      ]
+    },
+    {
+      "id": "nhs-testicle-pain",
+      "name": "NHS — Testicle pain",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/testicle-pain/",
+      "topics": [
+        "uro"
+      ]
+    },
+    {
+      "id": "nhs-poisoning",
+      "name": "NHS — Poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/poisoning/",
+      "topics": [
+        "toxicology"
+      ]
+    },
+    {
+      "id": "nhs-co",
+      "name": "NHS — Carbon monoxide poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/carbon-monoxide-poisoning/",
+      "topics": [
+        "toxicology"
+      ]
+    },
+    {
+      "id": "medlineplus-co",
+      "name": "MedlinePlus — Carbon monoxide poisoning",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/002804.htm",
+      "topics": [
+        "toxicology"
+      ]
+    },
+    {
+      "id": "nhs-dental-abscess",
+      "name": "NHS — Dental abscess",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dental-abscess/",
+      "topics": [
+        "dental"
+      ]
+    },
+    {
+      "id": "medlineplus-nosebleed",
+      "name": "MedlinePlus — Nosebleed",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/003106.htm",
+      "topics": [
+        "ent"
+      ]
+    },
+    {
+      "id": "nhs-croup",
+      "name": "NHS — Croup",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/croup/",
+      "topics": [
+        "peds"
+      ]
+    },
+    {
+      "id": "nhs-child-colds",
+      "name": "NHS — Colds, coughs and ear infections in children",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/baby/health/colds-coughs-and-ear-infections-in-children/",
+      "topics": [
+        "peds"
+      ]
+    },
+    {
+      "id": "nhs-fainting",
+      "name": "NHS — Fainting",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/fainting/",
+      "topics": [
+        "cardio"
+      ]
+    },
+    {
+      "id": "has-allergy-messages",
+      "name": "HAS — Allergologie & immunologie (5 messages)",
+      "org": "HAS",
+      "url": "https://www.has-sante.fr/jcms/pprd_2974199/fr/allergologie-immunologie-5-messages-pour-des-soins-pertinents",
+      "topics": [
+        "allergy"
+      ]
+    },
+    {
+      "id": "has-angine-abx",
+      "name": "HAS — Angine aiguë / antibiothérapie",
+      "org": "HAS",
+      "url": "https://www.has-sante.fr/jcms/p_3529230/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-adulte",
+      "topics": [
+        "ent"
+      ]
+    },
+    {
+      "id": "has-abx-respiratory",
+      "name": "HAS — Mieux prescrire les antibiotiques",
+      "org": "HAS",
+      "url": "https://www.has-sante.fr/jcms/c_2723930/fr/mieux-prescrire-les-antibiotiques-pour-les-infections-respiratoires-hautes-et-les-infections-urinaires",
+      "topics": [
+        "general"
+      ]
+    },
+    {
+      "id": "nhs-hypertension",
+      "name": "NHS — High blood pressure",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+      "topics": [
+        "cardio"
+      ]
     }
   ]
 }

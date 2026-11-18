@@ -1,0 +1,147 @@
+{
+  "id": "clot-dvt-pe",
+  "category": "cardio",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "DVT",
+      "deep vein thrombosis",
+      "blood clot leg",
+      "pulmonary embolism",
+      "PE",
+      "leg swelling one side",
+      "coughing blood clot"
+    ],
+    "fr": [
+      "phlébite",
+      "TVP",
+      "thrombose veineuse",
+      "embolie pulmonaire",
+      "caillot jambe",
+      "gonflement une jambe",
+      "cracher du sang"
+    ],
+    "he": [
+      "פקקת ורידים",
+      "תסחיף ריאתי",
+      "קריש דם ברגל",
+      "נפיחות ברגל אחת",
+      "שיעול דם"
+    ],
+    "ru": [
+      "тромбоз вен",
+      "ТГВ",
+      "тромбоэмболия лёгочной артерии",
+      "ТЭЛА",
+      "отёк одной ноги",
+      "кашель с кровью"
+    ]
+  },
+  "titles": {
+    "en": "Possible DVT / pulmonary embolism",
+    "fr": "TVP / embolie pulmonaire possibles",
+    "he": "חשד לפקקת / תסחיף ריאתי",
+    "ru": "Возможны ТГВ / ТЭЛА"
+  },
+  "guidance": {
+    "en": {
+      "summary": "One-sided leg pain/swelling with colour change may be DVT. Sudden breathlessness, chest pain worse on breathing in, coughing blood, fast heartbeat or collapse may be PE — emergency. Not a diagnosis; anticoagulants are clinician-only.",
+      "emergencyIf": [
+        "DVT symptoms plus shortness of breath or chest pain",
+        "Sudden difficulty breathing",
+        "Chest/upper back pain",
+        "Very fast heartbeat",
+        "Passed out",
+        "Coughing up blood"
+      ],
+      "seeDoctorIf": [
+        "Throbbing pain/swelling in one leg (calf/thigh), colour change, swollen veins — seek care ASAP (NHS: DVT can be dangerous)"
+      ],
+      "doNot": [
+        "Do not start leftover blood thinners",
+        "Do not delay PE symptoms"
+      ]
+    },
+    "fr": {
+      "summary": "Douleur/gonflement d'une jambe peut évoquer une TVP. Dyspnée brutale, douleur thoracique inspiratoire, hémoptysie, tachycardie ou syncope peuvent évoquer une EP — urgence. Pas d'anticoagulants ici.",
+      "emergencyIf": [
+        "Signes de TVP + essoufflement ou douleur thoracique",
+        "Dyspnée soudaine",
+        "Douleur thorax/dos",
+        "Cœur très rapide",
+        "Syncope",
+        "Cracher du sang"
+      ],
+      "seeDoctorIf": [
+        "Douleur/gonflement unilatéral de jambe — avis rapide"
+      ],
+      "doNot": [
+        "Pas d'anticoagulants en automédication"
+      ]
+    },
+    "he": {
+      "summary": "כאב/נפיחות בצד אחד של הרגל עלולים להצביע על פקקת. קוצר נשימה פתאומי, כאב בחזה בהשראה, שיעול דם או התמוטטות — חירום. אין מדללי דם כאן.",
+      "emergencyIf": [
+        "סימני פקקת + קוצר נשימה או כאב חזה",
+        "קושי נשימה פתאומי",
+        "דופק מהיר מאוד",
+        "עילפון",
+        "שיעול דם"
+      ],
+      "seeDoctorIf": [
+        "כאב/נפיחות חד־צדדית ברגל — פנייה מהירה"
+      ],
+      "doNot": [
+        "לא לקחת מדללי דם ישנים"
+      ]
+    },
+    "ru": {
+      "summary": "Боль/отёк одной ноги могут быть ТГВ. Внезапная одышка, боль в груди на вдохе, кровохарканье, тахикардия или обморок могут быть ТЭЛА — неотложная помощь. Антикоагулянты только по назначению врача.",
+      "emergencyIf": [
+        "Симптомы ТГВ + одышка или боль в груди",
+        "Внезапная одышка",
+        "Боль в груди/верхней части спины",
+        "Очень частый пульс",
+        "Обморок",
+        "Кашель с кровью"
+      ],
+      "seeDoctorIf": [
+        "Односторонний отёк/боль в ноге — как можно скорее к врачу"
+      ],
+      "doNot": [
+        "Не принимайте «оставшиеся» антикоагулянты"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dvt",
+      "name": "NHS — DVT",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-pe",
+      "name": "NHS — Pulmonary embolism",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-dvt",
+      "name": "MedlinePlus — Deep Vein Thrombosis",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/deepveinthrombosis.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-pe",
+      "name": "MedlinePlus — Pulmonary Embolism",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/pulmonaryembolism.html",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

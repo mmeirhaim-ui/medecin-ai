@@ -1,0 +1,123 @@
+{
+  "id": "shingles-rash",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "shingles",
+      "herpes zoster",
+      "painful blistering rash one side",
+      "zoster"
+    ],
+    "fr": [
+      "zona",
+      "herpès zoster",
+      "éruption vésiculeuse douloureuse unilatérale"
+    ],
+    "he": [
+      "שלבקת חוגרת",
+      "זוסטר",
+      "פריחה שלפוחיתית כואבת בצד אחד"
+    ],
+    "ru": [
+      "опоясывающий лишай",
+      "герпес зостер",
+      "болезненная пузырьковая сыпь с одной стороны"
+    ]
+  },
+  "titles": {
+    "en": "Painful one-sided blistering rash (possible shingles)",
+    "fr": "Éruption vésiculeuse douloureuse unilatérale (zona possible)",
+    "he": "פריחה שלפוחיתית כואבת חד־צדדית (חשד לשלבקת חוגרת)",
+    "ru": "Односторонняя болезненная пузырьковая сыпь (возможен опоясывающий лишай)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "A painful blistering rash on one side of the body/face may be shingles and warrants prompt clinical review (antivirals are clinician decisions — never prescribed here). Eye involvement needs urgent care. Photo is not a diagnosis.",
+      "emergencyIf": [
+        "Rash near the eye with eye pain/vision change",
+        "Severe systemic illness or meningitis-like features",
+        "Immunocompromised with rapidly progressive rash"
+      ],
+      "seeDoctorIf": [
+        "Suspected shingles — seek care promptly",
+        "Painful unilateral blistering rash"
+      ],
+      "selfCare": [
+        "Avoid touching blister fluid; keep covered when possible"
+      ],
+      "doNot": [
+        "Do not invent antiviral doses",
+        "Do not diagnose from a photo alone"
+      ]
+    },
+    "fr": {
+      "summary": "Une éruption vésiculeuse douloureuse unilatérale peut être un zona — avis clinique rapide (antiviraux = décision médicale). Œil atteint = urgent.",
+      "emergencyIf": [
+        "Éruption près de l'œil avec douleur/trouble visuel",
+        "Maladie systémique grave",
+        "Immunodépression avec progression rapide"
+      ],
+      "seeDoctorIf": [
+        "Suspicion de zona — consulter rapidement"
+      ],
+      "selfCare": [
+        "Éviter le contact avec le liquide des vésicules"
+      ],
+      "doNot": [
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "פריחה שלפוחיתית כואבת בצד אחד עלולה להיות שלבקת חוגרת — פנייה מהירה (אנטי־ויראלי רק במרשם). מעורבות עין — דחוף.",
+      "emergencyIf": [
+        "פריחה ליד העין עם כאב/שינוי ראייה",
+        "מחלה כללית קשה",
+        "דיכוי חיסוני עם התקדמות מהירה"
+      ],
+      "seeDoctorIf": [
+        "חשד לשלבקת — פנייה מהירה"
+      ],
+      "selfCare": [
+        "להימנע ממגע בנוזל השלפוחיות"
+      ],
+      "doNot": [
+        "אין אנטי־ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Односторонняя болезненная пузырьковая сыпь может быть опоясывающим лишаем — быстрый осмотр. Поражение глаза — срочно. Противовирусные только по назначению.",
+      "emergencyIf": [
+        "Сыпь у глаза с болью/изменением зрения",
+        "Тяжёлое общее состояние",
+        "Иммунодефицит с быстрым прогрессом"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на зостер — быстро к врачу"
+      ],
+      "selfCare": [
+        "Избегать контакта с жидкостью пузырьков"
+      ],
+      "doNot": [
+        "Не назначайте себе противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-rashes-children",
+      "name": "NHS — Rashes in babies and children",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/rashes-babies-and-children/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
