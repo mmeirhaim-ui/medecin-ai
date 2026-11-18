@@ -1,0 +1,112 @@
+{
+  "id": "pregnancy-bleeding",
+  "category": "obgyn",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "vaginal bleeding",
+      "heavy vaginal bleeding",
+      "bleeding while pregnant",
+      "bleeding in pregnancy",
+      "spotting pregnant",
+      "ectopic",
+      "miscarriage bleeding",
+      "pregnancy shoulder pain"
+    ],
+    "fr": [
+      "saignement grossesse",
+      "saignement vaginal grossesse",
+      "spotting grossesse",
+      "grossesse extra-utérine",
+      "fausse couche",
+      "douleur épaule grossesse"
+    ],
+    "he": [
+      "דימום בהריון",
+      "דימום נרתיקי בהריון",
+      "הכתמה בהריון",
+      "הריון חוץ רחמי",
+      "הפלה",
+      "כאב כתף בהריון"
+    ],
+    "ru": [
+      "кровотечение при беременности",
+      "кровянистые выделения беременность",
+      "внематочная",
+      "выкидыш",
+      "боль в плече беременность"
+    ]
+  },
+  "titles": {
+    "en": "Vaginal bleeding in pregnancy",
+    "fr": "Saignement vaginal pendant la grossesse",
+    "he": "דימום נרתיקי בהריון",
+    "ru": "Вагинальное кровотечение при беременности"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Bleeding in pregnancy is not always serious but needs professional advice. Heavy bleeding, severe tummy pain, shoulder pain, fainting/dizziness, or loss of consciousness need emergency care (possible ectopic or other urgent causes). Educational only.",
+      "emergencyIf": [
+        "Pregnant with bleeding AND severe tummy pain, shoulder pain, feeling sick/faint/dizzy or loss of consciousness",
+        "Heavy bleeding soaking a pad soon after putting it on"
+      ],
+      "seeDoctorIf": [
+        "Any pregnancy bleeding/spotting — contact maternity/early pregnancy unit or urgent advice line",
+        "Light bleeding with mild pain, diarrhoea, or urinary/bowel pressure symptoms — still needs urgent maternity advice (NHS)"
+      ],
+      "doNot": [
+        "Do not wait if heavy bleeding or severe pain",
+        "Do not invent miscarriage/ectopic diagnoses"
+      ]
+    },
+    "fr": {
+      "summary": "Un saignement en grossesse n'est pas toujours grave mais nécessite un avis professionnel. Saignement abondant, douleur abdominale sévère, douleur d'épaule, malaise/vertiges = urgence. Contenu éducatif.",
+      "emergencyIf": [
+        "Grossesse + saignement avec douleur abdominale sévère, douleur d'épaule, malaise/vertiges/perte de connaissance",
+        "Saignement abondant qui imbibe rapidement une protection"
+      ],
+      "seeDoctorIf": [
+        "Tout saignement/spotting — contacter maternité / unité de grossesse précoce / ligne urgente"
+      ],
+      "doNot": [
+        "Ne retardez pas si abondant ou douleur sévère"
+      ]
+    },
+    "he": {
+      "summary": "דימום בהריון אינו תמיד מסוכן אך דורש ייעוץ מקצועי. דימום כבד, כאב בטן חזק, כאב כתף, סחרחורת/עילפון — חירום.",
+      "emergencyIf": [
+        "הריון עם דימום וכאב בטן חמור, כאב כתף, בחילה/סחרחורת/אובדן הכרה",
+        "דימום כבד שמספיג תחבושת במהירות"
+      ],
+      "seeDoctorIf": [
+        "כל דימום/הכתמה בהריון — פנייה ליחידת הריון/מיילדות"
+      ],
+      "doNot": [
+        "לא לדחות בדימום כבד או כאב חזק"
+      ]
+    },
+    "ru": {
+      "summary": "Кровотечение при беременности не всегда опасно, но требует профессиональной оценки. Обильное кровотечение, сильная боль в животе, боль в плече, обморок — неотложная помощь.",
+      "emergencyIf": [
+        "Беременность с кровотечением и сильной болью в животе, болью в плече, тошнотой/головокружением/потерей сознания",
+        "Обильное кровотечение, быстро пропитывающее прокладку"
+      ],
+      "seeDoctorIf": [
+        "Любые кровянистые выделения при беременности — к акушерской службе"
+      ],
+      "doNot": [
+        "Не откладывайте при обильном кровотечении"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pregnancy-bleeding",
+      "name": "NHS — Vaginal bleeding in pregnancy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/pregnancy/common-symptoms/vaginal-bleeding/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

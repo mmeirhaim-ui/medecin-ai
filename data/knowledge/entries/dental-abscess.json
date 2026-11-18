@@ -1,0 +1,127 @@
+{
+  "id": "dental-abscess",
+  "category": "dental",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "dental abscess",
+      "tooth abscess",
+      "gum abscess",
+      "swollen face tooth",
+      "severe toothache infection"
+    ],
+    "fr": [
+      "abcès dentaire",
+      "abcès gencive",
+      "dent infectée",
+      "visage gonflé dent",
+      "rage de dents infection"
+    ],
+    "he": [
+      "מורסה בשן",
+      "מורסה בחניכיים",
+      "שן מודלקת",
+      "פנים נפוחות משן",
+      "כאב שיניים חזק עם זיהום"
+    ],
+    "ru": [
+      "зубной абсцесс",
+      "абсцесс десны",
+      "флюс",
+      "отёк лица от зуба",
+      "сильная зубная боль инфекция"
+    ]
+  },
+  "titles": {
+    "en": "Dental abscess",
+    "fr": "Abcès dentaire",
+    "he": "מורסה דנטלית",
+    "ru": "Зубной абсцесс"
+  },
+  "guidance": {
+    "en": {
+      "summary": "A dental abscess needs urgent dentist care and will not go away alone. ER if hard to breathe/speak/swallow, eye swelling/vision problems, lots of mouth swelling, or hard to open the mouth. GPs usually cannot provide dental treatment (NHS). No antibiotic self-start.",
+      "emergencyIf": [
+        "Hard to breathe, speak or swallow",
+        "Swollen/painful eye or sudden eyesight problems",
+        "A lot of swelling in the mouth",
+        "Hard to open the mouth"
+      ],
+      "seeDoctorIf": [
+        "Think you have a dental abscess — urgent dentist / dental emergency pathway (not GP for dental treatment)"
+      ],
+      "selfCare": [
+        "Soft foods; soft toothbrush; avoid very hot/cold",
+        "OTC painkillers only as labeled — do not exceed dose"
+      ],
+      "doNot": [
+        "Do not expect it to resolve without dental care",
+        "Do not invent antibiotic doses"
+      ]
+    },
+    "fr": {
+      "summary": "Un abcès dentaire nécessite des soins dentaires urgents. Urgences si difficulté à respirer/parler/avaler, œil gonflé, gros gonflement buccal. Pas d'antibiotiques en automédication.",
+      "emergencyIf": [
+        "Difficile de respirer, parler ou avaler",
+        "Œil gonflé/douloureux ou trouble visuel",
+        "Gros gonflement buccal",
+        "Difficile d'ouvrir la bouche"
+      ],
+      "seeDoctorIf": [
+        "Suspicion d'abcès — dentiste urgent"
+      ],
+      "selfCare": [
+        "Aliments mous ; antalgiques OTC selon notice"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "מורסה דנטלית דורשת טיפול שיניים דחוף. חירום בקושי נשימה/דיבור/בליעה או נפיחות רבה בפה. אין אנטיביוטיקה עצמית.",
+      "emergencyIf": [
+        "קושי לנשום, לדבר או לבלוע",
+        "עין נפוחה/כואבת או בעיה בראייה",
+        "נפיחות רבה בפה",
+        "קושי לפתוח את הפה"
+      ],
+      "seeDoctorIf": [
+        "חשד למורסה — רופא שיניים דחוף"
+      ],
+      "selfCare": [
+        "מזון רך; משככי כאבים לפי העלון"
+      ],
+      "doNot": [
+        "לא לקחת אנטיביוטיקה ללא מרשם"
+      ]
+    },
+    "ru": {
+      "summary": "Зубной абсцесс требует срочной стоматологической помощи. Неотложка при затруднении дыхания/речи/глотания или сильном отёке рта. Антибиотики не начинать самостоятельно.",
+      "emergencyIf": [
+        "Трудно дышать, говорить или глотать",
+        "Отёк/боль глаза или проблемы со зрением",
+        "Сильный отёк во рту",
+        "Трудно открыть рот"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на абсцесс — срочно к стоматологу"
+      ],
+      "selfCare": [
+        "Мягкая пища; обезболивающие по инструкции"
+      ],
+      "doNot": [
+        "Не назначайте себе антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dental-abscess",
+      "name": "NHS — Dental abscess",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dental-abscess/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

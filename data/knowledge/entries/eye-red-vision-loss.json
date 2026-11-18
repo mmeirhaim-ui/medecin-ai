@@ -1,0 +1,138 @@
+{
+  "id": "eye-red-vision-loss",
+  "category": "eye",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "red eye",
+      "sudden vision loss",
+      "eye pain severe",
+      "flashing lights vision",
+      "chemical in eye",
+      "contact lens infection"
+    ],
+    "fr": [
+      "œil rouge",
+      "perte de vision soudaine",
+      "douleur oculaire sévère",
+      "éclairs visuels",
+      "produit chimique œil",
+      "lentilles infection"
+    ],
+    "he": [
+      "עין אדומה",
+      "אובדן ראייה פתאומי",
+      "כאב עין חזק",
+      "הבזקי אור",
+      "כימיקל בעין"
+    ],
+    "ru": [
+      "красный глаз",
+      "внезапная потеря зрения",
+      "сильная боль в глазу",
+      "вспышки перед глазами",
+      "химия в глазу"
+    ]
+  },
+  "titles": {
+    "en": "Red eye / sudden vision changes",
+    "fr": "Œil rouge / trouble visuel soudain",
+    "he": "עין אדומה / שינוי ראייה פתאומי",
+    "ru": "Красный глаз / внезапные изменения зрения"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Many red eyes are mild, but vision changes, severe pain, chemical injury, unequal pupils, or sudden vision loss need emergency care. Contact-lens wearers with a painful red eye need urgent assessment. Not a diagnosis.",
+      "emergencyIf": [
+        "Sudden inability to see from one or both eyes",
+        "Sudden severe eye pain",
+        "Red eye with vision changes (wavy lines, flashing, loss of vision), light pain, severe headache with sickness, very dark red eye, injury/foreign body, chemical splash, unequal pupils"
+      ],
+      "seeDoctorIf": [
+        "Baby <28 days with red eyes — urgent",
+        "Very painful red eye or red eye with contact lenses",
+        "Child under 2 with red eye; sticky discharge; eyelid problems lasting days"
+      ],
+      "selfCare": [
+        "If no pain, sight unaffected and not unwell: avoid rubbing; many mild cases improve in days",
+        "Do not drive to ER if vision is unsafe"
+      ],
+      "doNot": [
+        "Do not invent antibiotic eye drops",
+        "Do not delay chemical eye injuries"
+      ]
+    },
+    "fr": {
+      "summary": "Beaucoup d'yeux rouges sont bénins, mais trouble visuel, douleur intense, brûlure chimique, pupilles inégales ou perte de vision soudaine = urgence. Lentilles + œil rouge douloureux = avis urgent. Pas un diagnostic.",
+      "emergencyIf": [
+        "Perte de vision soudaine",
+        "Douleur oculaire sévère soudaine",
+        "Œil rouge avec trouble visuel, photophobie, céphalée + nausées, traumatisme, chimique, pupilles inégales"
+      ],
+      "seeDoctorIf": [
+        "Nourrisson < 28 jours avec yeux rouges",
+        "Œil rouge très douloureux ou avec lentilles",
+        "Enfant < 2 ans ; sécrétions ; problème de paupières persistant"
+      ],
+      "selfCare": [
+        "Sans douleur ni trouble visuel : éviter de frotter"
+      ],
+      "doNot": [
+        "Pas de collyre antibiotique inventé"
+      ]
+    },
+    "he": {
+      "summary": "עיניים אדומות רבות קלות, אך שינוי ראייה, כאב חזק, חומר כימי, אישונים לא שווים או אובדן ראייה פתאומי — חירום. עדשות מגע עם עין אדומה כואבת — הערכה דחופה.",
+      "emergencyIf": [
+        "אובדן ראייה פתאומי",
+        "כאב עין חמור פתאומי",
+        "עין אדומה עם שינוי ראייה, רגישות לאור, כאב ראש עם בחילה, חבלה, כימיקל, אישונים לא שווים"
+      ],
+      "seeDoctorIf": [
+        "תינוק מתחת ל־28 יום עם עיניים אדומות",
+        "עין אדומה כואבת מאוד או עם עדשות מגע"
+      ],
+      "selfCare": [
+        "בלי כאב ובלי הפרעת ראייה — להימנע משפשוף"
+      ],
+      "doNot": [
+        "אין טיפות אנטיביוטיקה מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Многие красные глаза неопасны, но изменения зрения, сильная боль, химический ожог, разный размер зрачков или внезапная потеря зрения — неотложная помощь. Контактные линзы + болезненный красный глаз — срочная оценка.",
+      "emergencyIf": [
+        "Внезапная невозможность видеть одним/обоими глазами",
+        "Внезапная сильная боль в глазу",
+        "Красный глаз с изменением зрения, светобоязнью, сильной головной болью с тошнотой, травмой, химией, разными зрачками"
+      ],
+      "seeDoctorIf": [
+        "Младенец <28 дней с красными глазами",
+        "Очень болезненный красный глаз или с контактными линзами"
+      ],
+      "selfCare": [
+        "Без боли и без нарушения зрения — не тереть глаз"
+      ],
+      "doNot": [
+        "Не назначайте глазные антибиотики самостоятельно"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-red-eye",
+      "name": "NHS — Red eye",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/red-eye/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-vision-loss",
+      "name": "NHS — Vision loss",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vision-loss/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

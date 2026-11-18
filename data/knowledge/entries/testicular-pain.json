@@ -1,0 +1,108 @@
+{
+  "id": "testicular-pain",
+  "category": "uro",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "testicle pain",
+      "testicular torsion",
+      "sudden ball pain",
+      "swollen testicle"
+    ],
+    "fr": [
+      "douleur testiculaire",
+      "torsion du testicule",
+      "douleur burale soudaine",
+      "testicule gonflé"
+    ],
+    "he": [
+      "כאב אשך",
+      "פיתול אשך",
+      "כאב פתאומי באשך",
+      "אשך נפוח"
+    ],
+    "ru": [
+      "боль в яичке",
+      "перекрут яичка",
+      "внезапная боль в яичке",
+      "отёк яичка"
+    ]
+  },
+  "titles": {
+    "en": "Sudden testicle pain (possible torsion)",
+    "fr": "Douleur testiculaire brutale (torsion possible)",
+    "he": "כאב אשך פתאומי (חשד לפיתול)",
+    "ru": "Внезапная боль в яичке (возможен перекрут)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sudden severe testicle pain can be torsion and needs hospital care immediately to save the testis. Do not wait it out. Educational NHS framing — not a diagnosis.",
+      "emergencyIf": [
+        "Sudden severe pain in a testicle",
+        "Testicle pain with nausea/vomiting or tummy pain",
+        "Pain lasting more than an hour or continuing at rest"
+      ],
+      "seeDoctorIf": [
+        "Aching/discomfort you are worried about",
+        "Lump, swelling, change in shape/feel, or one testicle becoming bigger"
+      ],
+      "doNot": [
+        "Do not try to self-diagnose",
+        "Do not delay sudden severe pain"
+      ]
+    },
+    "fr": {
+      "summary": "Une douleur testiculaire brutale peut être une torsion et nécessite les urgences immédiatement. Ne pas attendre. Contenu éducatif NHS.",
+      "emergencyIf": [
+        "Douleur brutale sévère",
+        "Douleur + nausées/vomissements ou douleur abdominale",
+        "Douleur > 1 h ou au repos"
+      ],
+      "seeDoctorIf": [
+        "Gêne inquiétante",
+        "Nodule, gonflement, changement de forme"
+      ],
+      "doNot": [
+        "Ne pas retarder"
+      ]
+    },
+    "he": {
+      "summary": "כאב אשך פתאומי חזק עלול להיות פיתול ודורש מיון מיידי. לא לחכות.",
+      "emergencyIf": [
+        "כאב פתאומי חמור",
+        "כאב עם בחילות/הקאות או כאב בטן",
+        "כאב מעל שעה או במנוחה"
+      ],
+      "seeDoctorIf": [
+        "גוש, נפיחות, שינוי בצורה"
+      ],
+      "doNot": [
+        "לא לדחות כאב פתאומי חזק"
+      ]
+    },
+    "ru": {
+      "summary": "Внезапная сильная боль в яичке может быть перекрутом и требует немедленной помощи в больнице. Не ждите.",
+      "emergencyIf": [
+        "Внезапная сильная боль",
+        "Боль с тошнотой/рвотой или болью в животе",
+        "Боль >1 часа или в покое"
+      ],
+      "seeDoctorIf": [
+        "Узелок, отёк, изменение формы"
+      ],
+      "doNot": [
+        "Не откладывайте"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-testicle-pain",
+      "name": "NHS — Testicle pain",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/testicle-pain/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

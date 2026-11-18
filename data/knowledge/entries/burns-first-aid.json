@@ -1,0 +1,142 @@
+{
+  "id": "burns-first-aid",
+  "category": "trauma",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "burn",
+      "scald",
+      "chemical burn",
+      "electrical burn",
+      "smoke inhalation burn"
+    ],
+    "fr": [
+      "brûlure",
+      "brûlure eau chaude",
+      "brûlure chimique",
+      "brûlure électrique",
+      "inhalation de fumée"
+    ],
+    "he": [
+      "כוויה",
+      "כוויית מים רותחים",
+      "כוויה כימית",
+      "כוויה חשמלית",
+      "שאיפת עשן"
+    ],
+    "ru": [
+      "ожог",
+      "ожог кипятком",
+      "химический ожог",
+      "электрический ожог",
+      "вдыхание дыма"
+    ]
+  },
+  "titles": {
+    "en": "Burns — first aid & when to seek care",
+    "fr": "Brûlures — premiers gestes et orientation",
+    "he": "כוויות — עזרה ראשונה ומתי לפנות",
+    "ru": "Ожоги — первая помощь и когда обращаться"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Cool minor burns with cool (not ice) water; cover with clean dressing. Large/full-thickness burns, chemical/electric burns, smoke inhalation, shock, or uncertain severity need emergency care. Children/older/immunocompromised should be seen promptly. Not a prescription guide.",
+      "emergencyIf": [
+        "Burn about palm-sized or larger",
+        "Severe/full-thickness burn or unsure how serious",
+        "Chemical or electrical burn",
+        "Signs of shock",
+        "Smoke inhalation",
+        "Suspected abuse"
+      ],
+      "seeDoctorIf": [
+        "Pain after 48 hours for minor burns",
+        "Infection signs: pus, fever, increasing pain, red streaks",
+        "Dehydration symptoms with a burn"
+      ],
+      "selfCare": [
+        "Cool water 5–30 minutes if skin unbroken; clean dry dressing",
+        "Do not break blisters",
+        "OTC pain relief only per label / pharmacist — no aspirin under 19 (MedlinePlus)"
+      ],
+      "doNot": [
+        "Do not use ice water",
+        "Do not invent burn ointment prescriptions",
+        "Do not delay airway concerns"
+      ]
+    },
+    "fr": {
+      "summary": "Refroidir les brûlures mineures à l'eau tiède/froide (pas glacée). Grandes brûlures, chimiques/électriques, inhalation de fumée, choc = urgence.",
+      "emergencyIf": [
+        "Brûlure ≥ paume ou épaisseur totale",
+        "Chimique/électrique",
+        "Choc",
+        "Inhalation de fumée"
+      ],
+      "seeDoctorIf": [
+        "Douleur > 48 h",
+        "Signes d'infection",
+        "Déshydratation"
+      ],
+      "selfCare": [
+        "Eau froide 5–30 min ; pansement propre",
+        "Ne pas percer les bulles"
+      ],
+      "doNot": [
+        "Pas de glace",
+        "Pas de crème prescrite inventée"
+      ]
+    },
+    "he": {
+      "summary": "לקרר כוויות קלות במים פושרים/קרים (לא קרח). כוויות גדולות, כימיות/חשמל, שאיפת עשן או הלם — חירום.",
+      "emergencyIf": [
+        "כוויה בגודל כף יד או יותר",
+        "כימית/חשמלית",
+        "הלם",
+        "שאיפת עשן"
+      ],
+      "seeDoctorIf": [
+        "כאב אחרי 48 שעות",
+        "סימני זיהום"
+      ],
+      "selfCare": [
+        "מים קרים 5–30 דקות; חבישה נקייה",
+        "לא לפוצץ שלפוחיות"
+      ],
+      "doNot": [
+        "לא להשתמש בקרח"
+      ]
+    },
+    "ru": {
+      "summary": "Охлаждайте лёгкие ожоги прохладной водой (не льдом). Большие/глубокие, химические/электрические ожоги, дым, шок — неотложная помощь.",
+      "emergencyIf": [
+        "Ожог размером с ладонь или больше",
+        "Глубокий ожог",
+        "Химический/электрический",
+        "Шок",
+        "Вдыхание дыма"
+      ],
+      "seeDoctorIf": [
+        "Боль >48 часов",
+        "Признаки инфекции"
+      ],
+      "selfCare": [
+        "Прохладная вода 5–30 мин; чистая повязка",
+        "Не вскрывать пузыри"
+      ],
+      "doNot": [
+        "Не использовать ледяную воду"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-burns",
+      "name": "MedlinePlus — Burns",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/000030.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

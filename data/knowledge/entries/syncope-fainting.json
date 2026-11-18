@@ -1,0 +1,131 @@
+{
+  "id": "syncope-fainting",
+  "category": "cardio",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "fainting",
+      "passed out",
+      "syncope",
+      "blackout faint"
+    ],
+    "fr": [
+      "évanouissement",
+      "syncope",
+      "malaise vagal",
+      "perte de connaissance brève"
+    ],
+    "he": [
+      "עילפון",
+      "סינקופה",
+      "התעלפות",
+      "אובדן הכרה קצר"
+    ],
+    "ru": [
+      "обморок",
+      "синкопе",
+      "потеря сознания краткая",
+      "потемнело в глазах"
+    ]
+  },
+  "titles": {
+    "en": "Fainting (syncope)",
+    "fr": "Évanouissement (syncope)",
+    "he": "עילפון (סינקופה)",
+    "ru": "Обморок (синкопе)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Fainting is often not serious but should be checked by a clinician. Call emergency services if not breathing, not waking within ~1 minute, incomplete recovery, speech/movement difficulty, chest pain/palpitations, seizure, injury, or fainting during exercise or while lying down (NHS).",
+      "emergencyIf": [
+        "Not breathing",
+        "Cannot be woken within about 1 minute",
+        "Not fully recovered or speech/movement difficulty",
+        "Chest pain or irregular/pounding heartbeat",
+        "Seriously hurt before/after",
+        "Seizure/shaking",
+        "Fainted while exercising",
+        "Fainted while lying down"
+      ],
+      "seeDoctorIf": [
+        "Any faint — see a GP/clinician to explore cause"
+      ],
+      "selfCare": [
+        "If feeling faint: lie down or sit with head between legs until better; rise slowly"
+      ],
+      "doNot": [
+        "Do not drive if regularly fainting until assessed"
+      ]
+    },
+    "fr": {
+      "summary": "Un évanouissement n'est souvent pas grave mais doit être évalué. Secours si ne respire pas, ne se réveille pas ~1 min, récupération incomplète, douleur thoracique, convulsion, effort ou allongé.",
+      "emergencyIf": [
+        "Ne respire pas",
+        "Ne se réveille pas en ~1 min",
+        "Récupération incomplète",
+        "Douleur thoracique / palpitations",
+        "Convulsion",
+        "Pendant l'effort ou allongé"
+      ],
+      "seeDoctorIf": [
+        "Tout évanouissement — avis médical"
+      ],
+      "selfCare": [
+        "S'allonger ou tête entre les genoux ; se relever lentement"
+      ],
+      "doNot": [
+        "Ne pas conduire si syncopes répétées non évaluées"
+      ]
+    },
+    "he": {
+      "summary": "עילפון לרוב אינו חמור אך דורש הערכה. חירום אם לא נושם, לא מתעורר תוך כדקה, התאוששות חלקית, כאב חזה, פרכוס, במאמץ או בשכיבה.",
+      "emergencyIf": [
+        "לא נושם",
+        "לא מתעורר תוך כדקה",
+        "התאוששות חלקית",
+        "כאב חזה / דפיקות",
+        "פרכוס",
+        "בזמן מאמץ או בשכיבה"
+      ],
+      "seeDoctorIf": [
+        "כל עילפון — ייעוץ רפואי"
+      ],
+      "selfCare": [
+        "לשכב או ראש בין הברכיים; לקום לאט"
+      ],
+      "doNot": [
+        "לא לנהוג בעילפונים חוזרים ללא הערכה"
+      ]
+    },
+    "ru": {
+      "summary": "Обморок часто не опасен, но требует оценки. Скорая если не дышит, не просыпается ~1 минуту, неполное восстановление, боль в груди, судороги, при нагрузке или лёжа.",
+      "emergencyIf": [
+        "Не дышит",
+        "Не просыпается около 1 минуты",
+        "Неполное восстановление",
+        "Боль в груди / сердцебиение",
+        "Судороги",
+        "При нагрузке или лёжа"
+      ],
+      "seeDoctorIf": [
+        "Любой обморок — к врачу"
+      ],
+      "selfCare": [
+        "Лечь или голову между коленями; вставать медленно"
+      ],
+      "doNot": [
+        "Не водить при повторных обмороках без оценки"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-fainting",
+      "name": "NHS — Fainting",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/fainting/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

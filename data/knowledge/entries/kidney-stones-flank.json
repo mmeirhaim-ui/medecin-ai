@@ -1,0 +1,134 @@
+{
+  "id": "kidney-stones-flank",
+  "category": "uro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "kidney stone",
+      "flank pain",
+      "renal colic",
+      "pain peeing blood",
+      "loin pain"
+    ],
+    "fr": [
+      "colique néphrétique",
+      "calcul rénal",
+      "douleur fosse lombaire",
+      "sang dans urine douleur"
+    ],
+    "he": [
+      "אבן בכליה",
+      "קוליק כלייתי",
+      "כאב מותני",
+      "דם בשתן עם כאב"
+    ],
+    "ru": [
+      "камень в почке",
+      "почечная колика",
+      "боль в боку",
+      "кровь в моче с болью"
+    ]
+  },
+  "titles": {
+    "en": "Flank pain / possible kidney stone",
+    "fr": "Douleur lombaire / colique néphrétique possible",
+    "he": "כאב מותני / חשד לאבן בכליה",
+    "ru": "Боль в боку / возможная почечная колика"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Wave-like severe flank pain with nausea can be renal colic; needs clinical assessment. Fever with flank pain may indicate kidney infection — urgent. Inability to urinate or shock-like features need emergency care. No opioid prescriptions here.",
+      "emergencyIf": [
+        "Flank/back pain with high fever, shaking chills, confusion",
+        "Inability to urinate with severe pain",
+        "Severe pain with shock-like features"
+      ],
+      "seeDoctorIf": [
+        "Severe flank pain, blood in urine, repeated vomiting",
+        "Known stones with uncontrolled pain"
+      ],
+      "selfCare": [
+        "Hydration unless clinician advised otherwise",
+        "Pharmacist advice on OTC pain relief when suitable"
+      ],
+      "doNot": [
+        "Do not invent opioid doses"
+      ]
+    },
+    "fr": {
+      "summary": "Douleur lombaire en vagues avec nausées peut évoquer une colique néphrétique. Fièvre + douleur lombaire peut évoquer une pyélonéphrite. Pas d'opioïdes ici.",
+      "emergencyIf": [
+        "Douleur lombaire + forte fièvre / frissons / confusion",
+        "Rétention urinaire douloureuse",
+        "Signes de choc"
+      ],
+      "seeDoctorIf": [
+        "Douleur lombaire sévère, hématurie, vomissements"
+      ],
+      "selfCare": [
+        "Hydratation si pas de contre-indication"
+      ],
+      "doNot": [
+        "Pas de posologie d'opioïdes"
+      ]
+    },
+    "he": {
+      "summary": "כאב מותני גלי עם בחילה עלול להיות קוליק כלייתי. חום עם כאב מותני עלול להיות זיהום כליה. אין אופיואידים כאן.",
+      "emergencyIf": [
+        "כאב מותני + חום גבוה / צמרמורות / בלבול",
+        "אי יכולת להשתין עם כאב",
+        "סימני הלם"
+      ],
+      "seeDoctorIf": [
+        "כאב מותני חזק, דם בשתן, הקאות"
+      ],
+      "selfCare": [
+        "שתייה אלא אם נאמר אחרת"
+      ],
+      "doNot": [
+        "אין מינון למשככי כאב חזקים"
+      ]
+    },
+    "ru": {
+      "summary": "Волнообразная боль в боку с тошнотой может быть почечной коликой. Лихорадка с болью в боку может быть пиелонефритом. Здесь нет опиоидов.",
+      "emergencyIf": [
+        "Боль в боку + высокая температура / озноб / спутанность",
+        "Задержка мочи с болью",
+        "Признаки шока"
+      ],
+      "seeDoctorIf": [
+        "Сильная боль в боку, кровь в моче, рвота"
+      ],
+      "selfCare": [
+        "Питьё, если нет иных указаний"
+      ],
+      "doNot": [
+        "Не изобретать дозы опиоидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-uti-adults",
+      "name": "MedlinePlus — Urinary tract infection (adults)",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/000521.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-sepsis",
+      "name": "NHS — Sepsis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-stomach-ache",
+      "name": "NHS — Stomach ache",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/stomach-ache/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
