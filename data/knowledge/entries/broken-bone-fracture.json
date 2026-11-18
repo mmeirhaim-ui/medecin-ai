@@ -1,0 +1,132 @@
+{
+  "id": "broken-bone-fracture",
+  "category": "ortho",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "broken bone",
+      "fracture",
+      "bone sticking out",
+      "cannot move arm after fall",
+      "deformed limb"
+    ],
+    "fr": [
+      "os cassé",
+      "fracture",
+      "os qui ressort",
+      "bras immobilisé après chute",
+      "membre déformé"
+    ],
+    "he": [
+      "שבר בעצם",
+      "עצם שבורה",
+      "עצם בולטת",
+      "לא מזיז יד אחרי נפילה",
+      "גפה מעוותת"
+    ],
+    "ru": [
+      "сломанная кость",
+      "перелом",
+      "кость торчит",
+      "не двигает рукой после падения",
+      "деформированная конечность"
+    ]
+  },
+  "titles": {
+    "en": "Suspected broken bone (fracture)",
+    "fr": "Suspicion de fracture",
+    "he": "חשד לשבר",
+    "ru": "Подозрение на перелом"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Suspected fractures need clinical assessment/imaging. NHS: emergency care for bone through skin, severe deformity, numbness, loss of colour, heavy bleeding, or inability to use the limb. Support the injury; do not push bones back. Educational only.",
+      "emergencyIf": [
+        "Bone piercing skin",
+        "Severe deformity",
+        "Numbness or blue/cold limb",
+        "Heavy bleeding",
+        "Cannot use limb after trauma",
+        "Suspected hip fracture in older adult"
+      ],
+      "seeDoctorIf": [
+        "Pain/swelling after injury that does not improve",
+        "Unsure if fractured"
+      ],
+      "selfCare": [
+        "Support/immobilize as comfortable; ice wrapped; elevation if possible"
+      ],
+      "doNot": [
+        "Do not try to realign the bone",
+        "Do not eat/drink if surgery may be needed until advised"
+      ]
+    },
+    "fr": {
+      "summary": "Une suspicion de fracture nécessite un avis/imagerie. Urgence si os exposé, déformation majeure, engourdissement, membre froid/bleu, saignement abondant.",
+      "emergencyIf": [
+        "Os exposé",
+        "Déformation sévère",
+        "Engourdissement ou membre bleu/froid",
+        "Saignement abondant",
+        "Impossibilité d'utiliser le membre"
+      ],
+      "seeDoctorIf": [
+        "Douleur/gonflement après trauma sans amélioration"
+      ],
+      "selfCare": [
+        "Soutenir ; glace enveloppée ; surélever"
+      ],
+      "doNot": [
+        "Ne pas réaligner soi-même"
+      ]
+    },
+    "he": {
+      "summary": "חשד לשבר דורש הערכה/דימות. חירום אם עצם חודרת עור, עיוות קשה, נימול, גפה כחולה/קרה, דימום כבד.",
+      "emergencyIf": [
+        "עצם חודרת עור",
+        "עיוות קשה",
+        "נימול או גפה כחולה/קרה",
+        "דימום כבד",
+        "לא יכול להשתמש בגפה"
+      ],
+      "seeDoctorIf": [
+        "כאב/נפיחות אחרי חבלה שלא משתפרים"
+      ],
+      "selfCare": [
+        "תמיכה; קרח עטוף; הרמה"
+      ],
+      "doNot": [
+        "לא ליישר עצם לבד"
+      ]
+    },
+    "ru": {
+      "summary": "Подозрение на перелом требует осмотра/снимка. Неотложка при кости через кожу, сильной деформации, онемении, синей/холодной конечности, обильном кровотечении.",
+      "emergencyIf": [
+        "Кость сквозь кожу",
+        "Сильная деформация",
+        "Онемение или синяя/холодная конечность",
+        "Обильное кровотечение",
+        "Нельзя пользоваться конечностью"
+      ],
+      "seeDoctorIf": [
+        "Боль/отёк после травмы без улучшения"
+      ],
+      "selfCare": [
+        "Поддерживать; лёд в ткани; приподнять"
+      ],
+      "doNot": [
+        "Не вправлять самостоятельно"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-broken-bone",
+      "name": "NHS — Broken bone (fracture)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/broken-bone/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "osteoporosis-falls-risk",
+  "category": "elderly",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "osteoporosis",
+      "fragile bones",
+      "bone density",
+      "fracture from fall elderly"
+    ],
+    "fr": [
+      "ostéoporose",
+      "os fragiles",
+      "densité osseuse",
+      "fracture après chute personne âgée"
+    ],
+    "he": [
+      "אוסטיאופורוזיס",
+      "עצמות שבירות",
+      "צפיפות עצם",
+      "שבר מנפילה בקשיש"
+    ],
+    "ru": [
+      "остеопороз",
+      "хрупкие кости",
+      "плотность кости",
+      "перелом от падения у пожилых"
+    ]
+  },
+  "titles": {
+    "en": "Osteoporosis / fragility fracture risk",
+    "fr": "Ostéoporose / risque de fracture de fragilité",
+    "he": "אוסטיאופורוזיס / סיכון לשבר שבריריות",
+    "ru": "Остеопороз / риск хрупкого перелома"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Osteoporosis weakens bones and raises fracture risk after falls. NHS: discuss risk factors, falls prevention, and treatments with a clinician. Acute fracture after a fall needs urgent assessment. No inventing bisphosphonate regimens.",
+      "emergencyIf": [
+        "Suspected hip/spine fracture after a fall (cannot weight-bear, severe back pain after fall, deformity)"
+      ],
+      "seeDoctorIf": [
+        "History of low-trauma fracture",
+        "Height loss, kyphosis, long-term steroids, early menopause — discuss bone health",
+        "Recurrent falls"
+      ],
+      "selfCare": [
+        "Falls prevention: good lighting, remove trip hazards, strength/balance exercise if advised",
+        "Adequate calcium/vitamin D via diet or clinician advice — not invented megadoses"
+      ],
+      "doNot": [
+        "Do not invent osteoporosis drug doses",
+        "Do not ignore inability to walk after a fall"
+      ]
+    },
+    "fr": {
+      "summary": "L'ostéoporose fragilise les os. Prévention des chutes et traitements = avis médical. Fracture après chute = évaluation urgente. Pas de bisphosphonates inventés.",
+      "emergencyIf": [
+        "Suspicion de fracture de hanche/rachis après chute"
+      ],
+      "seeDoctorIf": [
+        "Fracture à faible traumatisme",
+        "Chutes répétées",
+        "Facteurs de risque osseux"
+      ],
+      "selfCare": [
+        "Prévention des chutes ; activité d'équilibre si conseillée"
+      ],
+      "doNot": [
+        "Pas de doses d'anti-ostéoporotiques inventées"
+      ]
+    },
+    "he": {
+      "summary": "אוסטיאופורוזיס מחלישה עצמות. מניעת נפילות וטיפול — רופא. חשד לשבר אחרי נפילה — הערכה דחופה. אין ביספוספונטים מומצאים.",
+      "emergencyIf": [
+        "חשד לשבר ירך/עמוד שדרה אחרי נפילה"
+      ],
+      "seeDoctorIf": [
+        "שבר מטראומה קלה",
+        "נפילות חוזרות",
+        "גורמי סיכון לעצם"
+      ],
+      "selfCare": [
+        "מניעת נפילות; תרגילי שיווי משקל לפי ייעוץ"
+      ],
+      "doNot": [
+        "אין מינון תרופות לאוסטיאופורוזיס מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Остеопороз ослабляет кости. Профилактика падений и лечение — у врача. Подозрение на перелом после падения — срочно. Бисфосфонаты не выдумывать.",
+      "emergencyIf": [
+        "Подозрение на перелом бедра/позвоночника после падения"
+      ],
+      "seeDoctorIf": [
+        "Перелом при малой травме",
+        "Повторные падения",
+        "Факторы риска кости"
+      ],
+      "selfCare": [
+        "Профилактика падений; упражнения на баланс по совету"
+      ],
+      "doNot": [
+        "Не изобретать дозы препаратов от остеопороза"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-osteoporosis",
+      "name": "NHS — Osteoporosis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-falls",
+      "name": "NHS — Falls",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/falls/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

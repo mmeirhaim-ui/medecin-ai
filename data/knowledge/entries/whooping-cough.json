@@ -1,0 +1,116 @@
+{
+  "id": "whooping-cough",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "whooping cough",
+      "pertussis",
+      "whoop cough",
+      "coughing fits baby"
+    ],
+    "fr": [
+      "coqueluche",
+      "quintes de toux",
+      "toux qui coque",
+      "quintes nourrisson"
+    ],
+    "he": [
+      "שעלת",
+      "שיעול שעלת",
+      "התקפי שיעול בתינוק"
+    ],
+    "ru": [
+      "коклюш",
+      "приступообразный кашель",
+      "кашель у грудничка приступами"
+    ]
+  },
+  "titles": {
+    "en": "Whooping cough (pertussis)",
+    "fr": "Coqueluche",
+    "he": "שעלת",
+    "ru": "Коклюш"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Whooping cough spreads easily and can be serious in babies. NHS: urgent GP/111 for infants under 6 months with symptoms, worsening cough, or pregnancy contact; emergency care for blue/grey colour, hard breathing, chest pain, or seizures. Antibiotics timing is clinician-led.",
+      "emergencyIf": [
+        "Lips/tongue/face/skin blue or grey",
+        "Hard to breathe (shallow breathing)",
+        "Chest pain worse with breathing/cough",
+        "Seizures"
+      ],
+      "seeDoctorIf": [
+        "Baby under 6 months with whooping-cough symptoms",
+        "Very bad cough getting worse",
+        "Pregnant and exposed"
+      ],
+      "doNot": [
+        "Do not invent antibiotic courses",
+        "Do not delay care for infants"
+      ]
+    },
+    "fr": {
+      "summary": "La coqueluche peut être grave chez le nourrisson. Urgence si cyanose, détresse respiratoire, douleur thoracique, convulsions. Avis urgent <6 mois.",
+      "emergencyIf": [
+        "Lèvres/visage bleus ou gris",
+        "Respiration difficile",
+        "Douleur thoracique",
+        "Convulsions"
+      ],
+      "seeDoctorIf": [
+        "Nourrisson < 6 mois avec symptômes",
+        "Toux très forte qui empire",
+        "Grossesse et contact"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "שעלת עלולה להיות חמורה בתינוקות. חירום אם כחלחלות, קושי נשימה, כאב חזה, פרכוסים. ייעוץ דחוף מתחת לגיל 6 חודשים.",
+      "emergencyIf": [
+        "שפתיים/פנים כחולות או אפורות",
+        "קושי לנשום",
+        "כאב חזה",
+        "פרכוסים"
+      ],
+      "seeDoctorIf": [
+        "תינוק מתחת ל־6 חודשים עם תסמינים",
+        "שיעול חזק שמחמיר",
+        "הריון ומגע"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Коклюш опасен для младенцев. Неотложка при цианозе, затруднённом дыхании, боли в груди, судорогах. Срочно для <6 месяцев.",
+      "emergencyIf": [
+        "Губы/лицо синие или серые",
+        "Трудно дышать",
+        "Боль в груди",
+        "Судороги"
+      ],
+      "seeDoctorIf": [
+        "Младенец <6 мес с симптомами",
+        "Очень сильный ухудшающийся кашель",
+        "Беременность и контакт"
+      ],
+      "doNot": [
+        "Не изобретать курсы антибиотиков"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-whooping-cough",
+      "name": "NHS — Whooping cough",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/whooping-cough/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

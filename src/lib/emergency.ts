@@ -141,6 +141,40 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\bcrise\s+d['']asthme\b/i,
   /\bהתקף\s+אסתמה\b/u,
   /\bприступ\s+астмы\b/iu,
+
+  // Alcohol withdrawal / delirium tremens
+  /\balcohol\s+withdrawal\b/i,
+  /\bdelirium\s+tremens\b/i,
+  /\bsevrage\s+alcool\b/i,
+  /\bגמילה\s+מאלכוהול\b/u,
+  /\bабстиненц\w*\s+алкогол/iu,
+  /\bбелая\s+горячка\b/iu,
+
+  // Sudden confusion / delirium
+  /\bsudden\s+confusion\b/i,
+  /\bconfusion\s+soudaine\b/i,
+  /\bבלבול\s+פתאומי\b/u,
+  /\bвнезапн\w*\s+спутанност/iu,
+
+  // Ectopic pregnancy
+  /\bectopic\s+pregnancy\b/i,
+  /\bgrossesse\s+extra[\s-]?ut[ée]rine\b/i,
+  /\bהריון\s+חוץ[\s-]?רחמי\b/u,
+  /\bвнематочн\w*\s+беременност/iu,
+
+  // Malaria / post-travel fever
+  /\bmalaria\b/i,
+  /\bpaludisme\b/i,
+  /\bמלריה\b/u,
+  /\bмалярия\b/iu,
+  /\bfever\s+after\s+travel\b/i,
+  /\bfi[èe]vre\s+apr[èe]s\s+voyage\b/i,
+
+  // Head injury red flags (severe)
+  /\bhead\s+injury\b/i,
+  /\btraumatisme\s+cr[âa]nien\b/i,
+  /\bחבלת\s+ראש\b/u,
+  /\bтравма\s+головы\b/iu,
 ];
 
 const NEGATION =

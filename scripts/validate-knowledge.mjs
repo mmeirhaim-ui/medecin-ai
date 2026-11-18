@@ -108,6 +108,16 @@ const cases = [
   { text: "heat stroke confusion hot skin", expect: "heat-illness" },
   { text: "dental abscess swollen face hard to swallow", expectIncludes: "dental-abscess" },
   { text: "fruity breath ketones diabetes vomiting", expect: "diabetes-sick-day-dka" },
+  { text: "alcohol withdrawal shaking hallucinations", expect: "alcohol-withdrawal" },
+  { text: "sudden confusion elderly delirium", expect: "delirium-sudden-confusion" },
+  { text: "head injury concussion knocked out", expect: "head-injury-concussion" },
+  { text: "fever after travel malaria Africa", expect: "malaria-travel-fever" },
+  { text: "ectopic pregnancy one sided pain shoulder tip", expect: "ectopic-pregnancy" },
+  { text: "panic attack racing heart anxiety", expect: "panic-anxiety" },
+  { text: "whooping cough baby coughing fits", expect: "whooping-cough" },
+  { text: "broken bone deformed limb after fall", expect: "broken-bone-fracture" },
+  { text: "postmenopausal bleeding after menopause", expectIncludes: "menopause-postmenopausal-bleeding" },
+  { text: "pneumonia coughing yellow green mucus breathless", expect: "pneumonia-red-flags" },
 ];
 
 for (const c of cases) {
