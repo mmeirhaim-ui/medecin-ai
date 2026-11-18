@@ -1,0 +1,107 @@
+{
+  "id": "conjunctivitis",
+  "category": "eye",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "conjunctivitis",
+      "pink eye",
+      "sticky eyes discharge"
+    ],
+    "fr": [
+      "conjonctivite",
+      "œil rouge collant",
+      "yeux gluants"
+    ],
+    "he": [
+      "דלקת לחמית",
+      "עין ורודה",
+      "עיניים דביקות הפרשות"
+    ],
+    "ru": [
+      "конъюнктивит",
+      "красный глаз",
+      "слипшиеся глаза выделения"
+    ]
+  },
+  "titles": {
+    "en": "Conjunctivitis (pink eye)",
+    "fr": "Conjonctivite",
+    "he": "דלקת לחמית",
+    "ru": "Конъюнктивит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Conjunctivitis causes red, itchy or sticky eyes. NHS: often self-limiting; pharmacy advice; bathe lids with cooled boiled water; avoid contact lenses. See urgent care for severe pain, light sensitivity, vision change, or newborn eye infection. Do not invent antibiotic eye drops.",
+      "seeDoctorIf": [
+        "Symptoms not improving",
+        "Severe pain or photophobia",
+        "Vision change",
+        "Newborn with sticky/red eyes",
+        "Contact lens wearer with eye pain"
+      ],
+      "selfCare": [
+        "Clean lids; do not share towels; wash hands; avoid lenses until better"
+      ],
+      "doNot": [
+        "Do not invent antibiotic drop regimens",
+        "Do not ignore vision loss (see eye red-flag entry)"
+      ]
+    },
+    "fr": {
+      "summary": "La conjonctivite rend l'œil rouge/collant. Souvent bénin ; pharmacien. Avis urgent si douleur sévère, photophobie, baisse de vision, nouveau-né. Pas de collyres antibiotiques inventés.",
+      "seeDoctorIf": [
+        "Pas d'amélioration",
+        "Douleur sévère / photophobie",
+        "Baisse de vision",
+        "Nouveau-né"
+      ],
+      "selfCare": [
+        "Nettoyer les paupières ; ne pas partager les serviettes"
+      ],
+      "doNot": [
+        "Pas de collyres antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת לחמית: עין אדומה/דביקה. לרוב חולף; רוקח. ייעוץ דחוף בכאב חזק, רגישות לאור, ירידת ראייה, יילוד. אין טיפות אנטיביוטיקה מומצאות.",
+      "seeDoctorIf": [
+        "אין שיפור",
+        "כאב חזק / פוטופוביה",
+        "שינוי בראייה",
+        "יילוד"
+      ],
+      "selfCare": [
+        "ניקוי עפעפיים; לא לשתף מגבות"
+      ],
+      "doNot": [
+        "אין טיפות אנטיביוטיקה מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Конъюнктивит: красный/слипшийся глаз. Часто проходит; фармацевт. Срочно при сильной боли, светобоязни, снижении зрения, новорождённом. Капли-антибиотики не выдумывать.",
+      "seeDoctorIf": [
+        "Нет улучшения",
+        "Сильная боль / светобоязнь",
+        "Изменение зрения",
+        "Новорождённый"
+      ],
+      "selfCare": [
+        "Очищать веки; не делиться полотенцами"
+      ],
+      "doNot": [
+        "Не изобретать антибиотиковые капли"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-conjunctivitis",
+      "name": "NHS — Conjunctivitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

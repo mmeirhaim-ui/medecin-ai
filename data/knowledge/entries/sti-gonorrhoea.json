@@ -1,0 +1,96 @@
+{
+  "id": "sti-gonorrhoea",
+  "category": "sti",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "gonorrhoea",
+      "gonorrhea",
+      "the clap",
+      "STI pus discharge"
+    ],
+    "fr": [
+      "gonorrhée",
+      "blennorragie",
+      "chaude-pisse",
+      "écoulement IST"
+    ],
+    "he": [
+      "זיבה",
+      "גונוריאה",
+      "הפרשה מוגלתית STI"
+    ],
+    "ru": [
+      "гонорея",
+      "триппер",
+      "гнойные выделения ИППП"
+    ]
+  },
+  "titles": {
+    "en": "Gonorrhoea (STI orientation)",
+    "fr": "Gonorrhée (orientation IST)",
+    "he": "זיבה (הכוונה ל־STI)",
+    "ru": "Гонорея (ориентация по ИППП)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Gonorrhoea needs antibiotic treatment via sexual health services/GP. NHS urgent advice if suspected gonorrhoea with red/itchy/painful eyes or pus on lashes, fever, joint pain/swelling, or blotchy rash (possible disseminated infection). Avoid sex until treatment and clearance tests done. No invented antibiotic doses.",
+      "seeDoctorIf": [
+        "You or a partner think you might have gonorrhoea",
+        "Unprotected sex with concern",
+        "Pregnant with concern",
+        "Urgent: red/itchy/painful eyes or pus on lashes, fever, joint pain/swelling, or blotchy rash with suspected gonorrhoea"
+      ],
+      "doNot": [
+        "Do not invent antibiotic injection/tablet regimens",
+        "Do not resume sex until advised"
+      ]
+    },
+    "fr": {
+      "summary": "La gonorrhée nécessite des antibiotiques via filière IST. Avis urgent si yeux rouges/douloureux, fièvre, articulations, éruption. Pas de doses inventées.",
+      "seeDoctorIf": [
+        "Suspicion",
+        "Rapports sans protection",
+        "Grossesse avec inquiétude",
+        "Urgent : yeux rouges/douloureux, fièvre, articulations, éruption avec suspicion de gonorrhée"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "זיבה דורשת אנטיביוטיקה במסגרת בריאות מינית. ייעוץ דחוף אם עיניים אדומות/כואבות, חום, מפרקים, פריחה. אין מינון מומצא.",
+      "seeDoctorIf": [
+        "חשד",
+        "יחסי מין ללא קונדום",
+        "הריון עם חשש",
+        "דחוף: עיניים אדומות/כואבות, חום, כאבי מפרקים או פריחה עם חשד לזיבה"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Гонорея требует антибиотиков в ИППП-службе. Срочно при красных/болезненных глазах, лихорадке, суставах, сыпи. Дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Подозрение",
+        "Секс без презерватива",
+        "Беременность с беспокойством",
+        "Срочно: красные/болезненные глаза, лихорадка, суставы или сыпь при подозрении на гонорею"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-gonorrhoea",
+      "name": "NHS — Gonorrhoea",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/gonorrhoea/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sti-chlamydia",
+  "category": "sti",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "chlamydia",
+      "STI discharge burning pee",
+      "partner chlamydia"
+    ],
+    "fr": [
+      "chlamydia",
+      "IST brûlure en urinant",
+      "partenaire chlamydia"
+    ],
+    "he": [
+      "כלמידיה",
+      "זיבה צריבה במתן שתן",
+      "בן זוג כלמידיה"
+    ],
+    "ru": [
+      "хламидиоз",
+      "жжение при мочеиспускании ИППП",
+      "партнёр хламидии"
+    ]
+  },
+  "titles": {
+    "en": "Chlamydia (STI orientation)",
+    "fr": "Chlamydia (orientation IST)",
+    "he": "כלמידיה (הכוונה ל־STI)",
+    "ru": "Хламидиоз (ориентация по ИППП)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Chlamydia is a common STI treated with antibiotics. NHS: sexual health clinic or GP if you/partner may have it, unprotected sex, or pregnancy planning with concern. Avoid sex until you and partner finish treatment and tests clear. Untreated infection can lead to PID/infertility/testicular infection. No inventing antibiotic courses.",
+      "seeDoctorIf": [
+        "You or a partner think you might have chlamydia",
+        "Unprotected sex with concern",
+        "Pregnant or planning pregnancy with concern"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not resume sex until advised clear"
+      ]
+    },
+    "fr": {
+      "summary": "La chlamydia est une IST traitée par antibiotiques. Clinique/médecin si suspicion. Pas de rapports jusqu'à fin de traitement et tests négatifs. Pas de posologies inventées.",
+      "seeDoctorIf": [
+        "Suspicion chez vous ou un partenaire",
+        "Rapports sans protection",
+        "Grossesse / projet de grossesse"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "כלמידיה היא STI המטופלת באנטיביוטיקה. מרפאה/רופא בחשד. להימנע מיחסי מין עד סיום טיפול ובדיקות שליליות. אין מינון מומצא.",
+      "seeDoctorIf": [
+        "חשד אצלך או אצל בן/בת זוג",
+        "יחסי מין ללא קונדום",
+        "הריון / תכנון הריון"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Хламидиоз — ИППП, лечится антибиотиками. В клинику/к врачу при подозрении. Не заниматься сексом до конца лечения и отрицательных тестов. Дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Подозрение у вас или партнёра",
+        "Секс без презерватива",
+        "Беременность / планирование"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-chlamydia",
+      "name": "NHS — Chlamydia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chlamydia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

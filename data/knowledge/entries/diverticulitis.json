@@ -1,0 +1,109 @@
+{
+  "id": "diverticulitis",
+  "category": "gi",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "diverticulitis",
+      "lower left tummy pain fever",
+      "diverticular disease"
+    ],
+    "fr": [
+      "diverticulite",
+      "douleur bas ventre gauche fièvre",
+      "maladie diverticulaire"
+    ],
+    "he": [
+      "דיברטיקוליטיס",
+      "כאב בטן שמאל תחתון עם חום",
+      "מחלת דיברטיקולים"
+    ],
+    "ru": [
+      "дивертикулит",
+      "боль внизу слева с температурой",
+      "дивертикулярная болезнь"
+    ]
+  },
+  "titles": {
+    "en": "Diverticulitis cues",
+    "fr": "Diverticulite — orientation",
+    "he": "דיברטיקוליטיס — הכוונה",
+    "ru": "Дивертикулит — ориентиры"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Diverticulitis: severe constant tummy pain (often lower left), fever, bleeding or mucus from the bottom. NHS urgent advice for blood/mucus in stool, worsening pain, fever/shivers, persistent vomiting, diarrhoea >7 days or vomiting >2 days. Emergency for severe pain with vomiting/swollen tummy/inability to pass stool or wind, or heavy rectal bleeding. Antibiotics only if clinician decides — no invented courses.",
+      "emergencyIf": [
+        "Severe tummy pain with vomiting, swollen tummy, or cannot poo/fart",
+        "Heavy bleeding from the bottom"
+      ],
+      "seeDoctorIf": [
+        "Blood or mucus in stool",
+        "Worsening or persistent tummy pain",
+        "High temperature or shivery",
+        "Cannot keep fluids down"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Diverticulite : douleur constante (souvent bas-gauche), fièvre, sang/mucus. Avis urgent ; urgence si douleur sévère avec vomissements/abdomen ballonné/occlusion, ou saignement abondant. Pas d'antibiotiques inventés.",
+      "emergencyIf": [
+        "Douleur sévère avec vomissements, ballonnement, impossibilité d'émettre gaz/selles",
+        "Saignement abondant"
+      ],
+      "seeDoctorIf": [
+        "Sang ou mucus",
+        "Douleur qui empire",
+        "Fièvre",
+        "Vomissements persistants"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "דיברטיקוליטיס: כאב מתמשך (לרוב שמאל תחתון), חום, דם/ריר. ייעוץ דחוף; חירום בכאב חזק עם הקאות/נפיחות/חסימה או דימום כבד. אין אנטיביוטיקה מומצאת.",
+      "emergencyIf": [
+        "כאב חזק עם הקאות, בטן נפוחה, או אי יכולת להוציא גזים/צואה",
+        "דימום כבד"
+      ],
+      "seeDoctorIf": [
+        "דם או ריר",
+        "כאב מחמיר",
+        "חום",
+        "הקאות מתמשכות"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Дивертикулит: постоянная боль (часто слева внизу), лихорадка, кровь/слизь. Срочно; неотложка при сильной боли с рвотой/вздутием/непроходимостью или обильном кровотечении. Антибиотики не выдумывать.",
+      "emergencyIf": [
+        "Сильная боль с рвотой, вздутием или невозможностью отхождения газов/стула",
+        "Обильное кровотечение"
+      ],
+      "seeDoctorIf": [
+        "Кровь или слизь",
+        "Усиливающаяся боль",
+        "Лихорадка",
+        "Стойкая рвота"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-diverticulitis",
+      "name": "NHS — Diverticular disease and diverticulitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

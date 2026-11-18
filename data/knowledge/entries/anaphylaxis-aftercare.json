@@ -1,0 +1,118 @@
+{
+  "id": "anaphylaxis-aftercare",
+  "category": "allergy",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "adrenaline auto injector",
+      "EpiPen how to use",
+      "after anaphylaxis",
+      "two adrenaline pens"
+    ],
+    "fr": [
+      "stylo d'adrénaline",
+      "EpiPen utilisation",
+      "après anaphylaxie",
+      "deux stylos adrénaline"
+    ],
+    "he": [
+      "מזרק אדרנלין",
+      "אפיפן איך להשתמש",
+      "אחרי אנפילקסיס",
+      "שני מזרקי אדרנלין"
+    ],
+    "ru": [
+      "автоинъектор адреналина",
+      "ЭпиПен как использовать",
+      "после анафилаксии",
+      "два шприца адреналина"
+    ]
+  },
+  "titles": {
+    "en": "Anaphylaxis action / auto-injector cues",
+    "fr": "Conduite anaphylaxie / stylo d'adrénaline",
+    "he": "פעולה באנפילקסיס / מזרק אוטומטי",
+    "ru": "Действия при анафилаксии / автоинъектор"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Anaphylaxis is a life-threatening allergic reaction. NHS: use adrenaline auto-injector if available, call emergency services, lie down (left side if pregnant; sit up slowly only if needed to breathe), remove insect sting if present, second dose after 5 minutes if no improvement — do not stand/walk even if feeling better. After hospital care you should leave with two injectors and allergy specialist referral. This pack never invents dosing beyond device instructions on the injector.",
+      "emergencyIf": [
+        "Sudden lip/mouth/throat/tongue swelling",
+        "Struggling to breathe / wheeze / choking",
+        "Tight throat / cannot swallow",
+        "Blue/grey/pale skin or lips",
+        "Sudden confusion, drowsiness, dizziness, or unresponsive"
+      ],
+      "selfCare": [
+        "Follow the instructions printed on your prescribed auto-injector",
+        "Carry two devices once prescribed; seek allergy clinic follow-up"
+      ],
+      "doNot": [
+        "Do not stand or walk during/after a reaction until advised safe",
+        "Do not invent adrenaline doses beyond the device"
+      ]
+    },
+    "fr": {
+      "summary": "Anaphylaxie : utiliser le stylo d'adrénaline si disponible, appeler les secours, s'allonger, 2e dose après 5 min si pas d'amélioration. Sortir avec 2 stylos. Pas de doses inventées hors notice du dispositif.",
+      "emergencyIf": [
+        "Gonflement lèvres/gorge/langue",
+        "Détresse respiratoire",
+        "Gorge serrée",
+        "Cyanose",
+        "Confusion / syncope"
+      ],
+      "selfCare": [
+        "Suivre la notice du stylo prescrit ; en avoir deux"
+      ],
+      "doNot": [
+        "Ne pas se lever/marcher pendant la réaction",
+        "Pas de doses hors dispositif"
+      ]
+    },
+    "he": {
+      "summary": "אנפילקסיס: להשתמש במזרק אדרנלין אם יש, לקרוא לעזרה, לשכב, מנה שנייה אחרי 5 דקות אם אין שיפור. לצאת עם שני מזרקים. אין מינון מעבר להוראות המכשיר.",
+      "emergencyIf": [
+        "נפיחות שפתיים/גרון/לשון",
+        "קושי נשימה",
+        "גרון הדוק",
+        "כחלחלות",
+        "בלבול / עילפון"
+      ],
+      "selfCare": [
+        "לפי הוראות המזרק שנרשם; לשאת שניים"
+      ],
+      "doNot": [
+        "לא לעמוד/ללכת בזמן התגובה",
+        "אין מינון מעבר למכשיר"
+      ]
+    },
+    "ru": {
+      "summary": "Анафилаксия: использовать автоинъектор адреналина если есть, вызвать помощь, лечь, вторая доза через 5 мин если нет улучшения. Выписывают два устройства. Дозы вне инструкции устройства не выдумывать.",
+      "emergencyIf": [
+        "Отёк губ/горла/языка",
+        "Затруднённое дыхание",
+        "Сжатие в горле",
+        "Цианоз",
+        "Спутанность / обморок"
+      ],
+      "selfCare": [
+        "Следовать инструкции назначенного устройства; носить два"
+      ],
+      "doNot": [
+        "Не вставать/ходить во время реакции",
+        "Не изобретать дозы вне устройства"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-anaphylaxis",
+      "name": "NHS — Anaphylaxis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

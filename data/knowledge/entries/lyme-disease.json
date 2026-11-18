@@ -1,0 +1,99 @@
+{
+  "id": "lyme-disease",
+  "category": "infectious",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "lyme disease",
+      "tick bite bullseye",
+      "erythema migrans"
+    ],
+    "fr": [
+      "maladie de Lyme",
+      "piqûre de tique érythème migrant",
+      "tache en cible tique"
+    ],
+    "he": [
+      "ליים",
+      "עקיצת קרציה עיגול מטרה",
+      "אריתמה מיגרנס"
+    ],
+    "ru": [
+      "болезнь Лайма",
+      "укус клеща мишень",
+      "мигрирующая эритема"
+    ]
+  },
+  "titles": {
+    "en": "Lyme disease / tick bite rash",
+    "fr": "Maladie de Lyme / tique",
+    "he": "מחלת ליים / עקיצת קרציה",
+    "ru": "Болезнь Лайма / укус клеща"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Lyme disease can follow a tick bite. A spreading circular 'bull's-eye' rash (erythema migrans) and flu-like symptoms need GP/111 assessment. Antibiotics are clinician-prescribed — no invented courses. Remove ticks carefully; seek advice if rash or systemic symptoms develop.",
+      "seeDoctorIf": [
+        "Bull's-eye or spreading rash after tick exposure",
+        "Flu-like illness after a tick bite",
+        "Unsure how to remove an attached tick"
+      ],
+      "selfCare": [
+        "Remove ticks promptly with fine tweezers close to skin; clean the area; monitor for rash"
+      ],
+      "doNot": [
+        "Do not invent doxycycline or other antibiotic regimens",
+        "Do not squeeze the tick body"
+      ]
+    },
+    "fr": {
+      "summary": "La maladie de Lyme peut suivre une piqûre de tique. Érythème migrant / symptômes grippaux = avis médical. Antibiotiques = prescription. Pas de schémas inventés.",
+      "seeDoctorIf": [
+        "Érythème migrant après tique",
+        "Syndrome grippal après piqûre"
+      ],
+      "selfCare": [
+        "Retirer la tique rapidement à la pince fine"
+      ],
+      "doNot": [
+        "Pas de doxycycline inventée"
+      ]
+    },
+    "he": {
+      "summary": "ליים עלולה להופיע אחרי קרציה. פריחת מטרה מתפשטת ותסמינים דמויי שפעת — ייעוץ. אנטיביוטיקה — מרשם. אין מינון מומצא.",
+      "seeDoctorIf": [
+        "פריחת מטרה אחרי קרציה",
+        "מחלה דמוית שפעת אחרי עקיצה"
+      ],
+      "selfCare": [
+        "להסיר קרציה במהירות עם פינצטה דקה"
+      ],
+      "doNot": [
+        "אין דוקסיציקלין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Болезнь Лайма может быть после укуса клеща. Мигрирующая эритема / гриппоподобные симптомы — к врачу. Антибиотики по рецепту. Схемы не выдумывать.",
+      "seeDoctorIf": [
+        "Эритема-мишень после клеща",
+        "Гриппоподобное состояние после укуса"
+      ],
+      "selfCare": [
+        "Удалить клеща тонким пинцетом близко к коже"
+      ],
+      "doNot": [
+        "Не изобретать доксициклин"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-lyme",
+      "name": "NHS — Lyme disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/lyme-disease/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

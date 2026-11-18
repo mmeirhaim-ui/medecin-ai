@@ -1,0 +1,98 @@
+{
+  "id": "acute-pancreatitis",
+  "category": "gi",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "pancreatitis",
+      "severe upper abdominal pain to back",
+      "acute pancreatitis"
+    ],
+    "fr": [
+      "pancréatite",
+      "douleur épigastrique sévère vers le dos",
+      "pancréatite aiguë"
+    ],
+    "he": [
+      "דלקת לבלב",
+      "כאב בטן עליון חזק לגב",
+      "פנקריאטיטיס חדה"
+    ],
+    "ru": [
+      "панкреатит",
+      "сильная боль вверху живота в спину",
+      "острый панкреатит"
+    ]
+  },
+  "titles": {
+    "en": "Acute pancreatitis red flags",
+    "fr": "Pancréatite aiguë — alarmes",
+    "he": "דלקת לבלב חדה — דגלים",
+    "ru": "Острый панкреатит — красные флаги"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Acute pancreatitis often causes sudden severe upper tummy pain that may go through to the back, with nausea/vomiting. NHS: this can be serious — seek urgent/emergency care for severe persistent upper abdominal pain. Causes include gallstones and alcohol. Hospital care is required; no inventing enzyme or opioid regimens.",
+      "emergencyIf": [
+        "Sudden severe upper abdominal pain, especially radiating to the back",
+        "Severe pain with persistent vomiting and looking very unwell"
+      ],
+      "seeDoctorIf": [
+        "Upper abdominal pain that is severe or not settling"
+      ],
+      "doNot": [
+        "Do not invent painkiller or pancreatic enzyme doses",
+        "Do not drink alcohol with suspected pancreatitis"
+      ]
+    },
+    "fr": {
+      "summary": "La pancréatite aiguë provoque souvent une douleur épigastrique brutale irradiant au dos, avec nausées. Soins urgents/urgences. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Douleur épigastrique brutale sévère vers le dos",
+        "Douleur sévère avec vomissements et altération de l'état"
+      ],
+      "seeDoctorIf": [
+        "Douleur haute sévère ou qui ne cède pas"
+      ],
+      "doNot": [
+        "Pas d'antalgiques/enzymes inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת לבלב חדה: כאב בטן עליון פתאומי חזק שלעיתים מקרין לגב, עם בחילות. טיפול דחוף/חירום. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "כאב בטן עליון פתאומי חזק במיוחד לגב",
+        "כאב חזק עם הקאות ומראה חולני"
+      ],
+      "seeDoctorIf": [
+        "כאב בטן עליון חזק שלא חולף"
+      ],
+      "doNot": [
+        "אין משככי כאב/אנזימים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Острый панкреатит: внезапная сильная боль вверху живота, часто в спину, с тошнотой. Срочная/неотложная помощь. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Внезапная сильная боль вверху живота, особенно в спину",
+        "Сильная боль с рвотой и тяжёлым состоянием"
+      ],
+      "seeDoctorIf": [
+        "Сильная боль вверху живота без улучшения"
+      ],
+      "doNot": [
+        "Не изобретать дозы анальгетиков/ферментов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-acute-pancreatitis",
+      "name": "NHS — Acute pancreatitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/acute-pancreatitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "gerd-heartburn",
+  "category": "gi",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "heartburn",
+      "acid reflux",
+      "GORD",
+      "GERD burning chest"
+    ],
+    "fr": [
+      "brûlures d'estomac",
+      "reflux acide",
+      "RGO",
+      "pyrosis"
+    ],
+    "he": [
+      "צרבת",
+      "ריפלוקס",
+      "צריבה בחזה מחומצה",
+      "GORD"
+    ],
+    "ru": [
+      "изжога",
+      "кислотный рефлюкс",
+      "ГЭРБ",
+      "жжение за грудиной"
+    ]
+  },
+  "titles": {
+    "en": "Heartburn / acid reflux",
+    "fr": "Brûlures / reflux acide",
+    "he": "צרבת / ריפלוקס",
+    "ru": "Изжога / рефлюкс"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Heartburn is a burning chest feeling from acid rising. NHS self-care: smaller meals, avoid triggers, do not eat within 3–4h of bed, elevate if helpful; pharmacy antacids. See GP if frequent/persistent — PPIs are prescribed clinically. Chest pain that could be cardiac still needs emergency pathways (do not assume reflux).",
+      "emergencyIf": [
+        "Chest pain with heart-attack features (pressure, arm/jaw radiation, severe breathlessness, collapse)"
+      ],
+      "seeDoctorIf": [
+        "Frequent or persistent heartburn",
+        "Difficulty swallowing, unintentional weight loss, vomiting blood — urgent clinical review"
+      ],
+      "selfCare": [
+        "Smaller meals; avoid trigger foods; do not eat close to bedtime; ask pharmacist about antacids"
+      ],
+      "doNot": [
+        "Do not invent long-term PPI regimens",
+        "Do not ignore possible cardiac chest pain"
+      ]
+    },
+    "fr": {
+      "summary": "Le pyrosis vient du reflux acide. Mesures hygiéno-diététiques ; pharmacie. Médecin si fréquent. Douleur thoracique cardiaque = urgence. Pas d'IPP inventés au long cours.",
+      "emergencyIf": [
+        "Douleur thoracique avec signes d'infarctus"
+      ],
+      "seeDoctorIf": [
+        "Brûlures fréquentes",
+        "Dysphagie, amaigrissement, hématémèse"
+      ],
+      "selfCare": [
+        "Repas plus petits ; éviter déclencheurs ; pas de repas juste avant le coucher"
+      ],
+      "doNot": [
+        "Pas d'IPP au long cours inventés"
+      ]
+    },
+    "he": {
+      "summary": "צרבת מריפלוקס חומצה. ארוחות קטנות, הימנעות מטריגרים; בית מרקחת. רופא אם תכוף. כאב חזה לבבי — חירום. אין PPI מומצא ארוך טווח.",
+      "emergencyIf": [
+        "כאב חזה עם סימני התקף לב"
+      ],
+      "seeDoctorIf": [
+        "צרבת תכופה",
+        "קושי בבליעה, ירידה במשקל, הקאת דם"
+      ],
+      "selfCare": [
+        "ארוחות קטנות; להימנע מטריגרים; לא לאכול לפני שינה"
+      ],
+      "doNot": [
+        "אין PPI ארוך טווח מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Изжога от кислотного рефлюкса. Маленькие порции, избегать триггеров; аптека. Врач если часто. Кардиальная боль — неотложка. Длительные ИПП не выдумывать.",
+      "emergencyIf": [
+        "Боль в груди с признаками инфаркта"
+      ],
+      "seeDoctorIf": [
+        "Частая изжога",
+        "Дисфагия, похудение, кровавая рвота"
+      ],
+      "selfCare": [
+        "Меньшие порции; избегать триггеров; не есть перед сном"
+      ],
+      "doNot": [
+        "Не изобретать длительные схемы ИПП"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-heartburn-reflux",
+      "name": "NHS — Heartburn and acid reflux",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
