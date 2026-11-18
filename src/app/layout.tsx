@@ -17,11 +17,11 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Medcin AI — Orientation médicale assistée",
+  title: "Medecin AI — Orientation médicale assistée",
   description:
     "Décrivez vos symptômes, ajoutez des photos si besoin, et recevez une orientation prudente (pas un diagnostic). En français.",
   openGraph: {
-    title: "Medcin AI",
+    title: "Medecin AI",
     description:
       "Assistant d’orientation médicale : symptômes, photos, urgences.",
     locale: "fr_FR",

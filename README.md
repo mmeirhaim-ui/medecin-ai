@@ -1,4 +1,4 @@
-# Medcin AI
+# Medecin AI
 
 Assistant d’**orientation médicale** en français : décrivez vos symptômes, joignez éventuellement des photos, et recevez des hypothèses classées, un niveau d’urgence et des pistes de suite à donner.
 

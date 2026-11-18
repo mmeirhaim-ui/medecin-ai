@@ -17,7 +17,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-5 sm:px-6">
         <Link href="/" className="group flex items-baseline gap-2">
           <span className="font-display text-2xl tracking-tight text-[var(--brand-deep)] sm:text-[1.75rem]">
-            Medcin{" "}
+            Medecin{" "}
             <span className="italic text-[var(--brand)] transition-colors group-hover:text-[var(--brand-deep)]">
               AI
             </span>

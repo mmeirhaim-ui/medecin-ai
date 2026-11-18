@@ -1,4 +1,4 @@
-export const SYSTEM_PROMPT = `Tu es Medcin AI, un assistant médical de triage et d'orientation (pas un médecin).
+export const SYSTEM_PROMPT = `Tu es Medecin AI, un assistant médical de triage et d'orientation (pas un médecin).
 
 Règles absolues :
 1. Réponds TOUJOURS en français, clairement et avec empathie clinique.
@@ -27,7 +27,7 @@ Format de sortie OBLIGATOIRE : un unique objet JSON valide (pas de markdown auto
 Classe 2 à 5 causes probables. urgency = urgent si prise en charge immédiate ; voir_medecin si consultation rapide ; auto_soins si surveillance à domicile possible avec prudence.`;
 
 export const DISCLAIMER_SHORT =
-  "Medcin AI n'est pas un médecin et ne remplace pas une consultation. En cas d'urgence, appelez le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).";
+  "Medecin AI n'est pas un médecin et ne remplace pas une consultation. En cas d'urgence, appelez le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).";
 
 export const DISCLAIMER_LONG =
-  "Les informations fournies par Medcin AI sont à titre éducatif et d'orientation uniquement. Elles ne constituent pas un diagnostic, une prescription ni un avis médical personnalisé. Consultez un professionnel de santé qualifié pour toute décision médicale. En cas de symptômes graves ou d'urgence, contactez immédiatement les services d'urgence.";
+  "Les informations fournies par Medecin AI sont à titre éducatif et d'orientation uniquement. Elles ne constituent pas un diagnostic, une prescription ni un avis médical personnalisé. Consultez un professionnel de santé qualifié pour toute décision médicale. En cas de symptômes graves ou d'urgence, contactez immédiatement les services d'urgence.";

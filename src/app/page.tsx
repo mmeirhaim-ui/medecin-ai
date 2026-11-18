@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid min-h-[78vh] max-w-6xl items-center gap-10 px-4 pb-16 pt-6 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:pb-24 lg:pt-10">
           <div>
             <p className="animate-rise font-display text-5xl leading-[0.95] tracking-tight text-[var(--brand-deep)] sm:text-6xl md:text-7xl">
-              Medcin <span className="italic text-[var(--brand)]">AI</span>
+              Medecin <span className="italic text-[var(--brand)]">AI</span>
             </p>
             <h1 className="animate-rise-delay mt-6 max-w-xl font-display text-2xl font-medium leading-snug text-[var(--ink)] sm:text-3xl">
               Une orientation claire quand les symptômes inquiètent.

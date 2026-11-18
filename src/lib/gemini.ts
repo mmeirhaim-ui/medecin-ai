@@ -138,7 +138,7 @@ function buildUserParts(req: ConsultRequest): Part[] {
       ? `\n\nHistorique de la conversation :\n${req.history
           .map(
             (h) =>
-              `${h.role === "user" ? "Patient" : "Medcin AI"}: ${h.content}`,
+              `${h.role === "user" ? "Patient" : "Medecin AI"}: ${h.content}`,
           )
           .join("\n")}`
       : "";

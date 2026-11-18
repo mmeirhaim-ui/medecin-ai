@@ -299,7 +299,7 @@ export function ConsultationClient({ initialId }: Props) {
                   }`}
                 >
                   <p className="mb-1 text-[0.65rem] font-semibold uppercase tracking-wide opacity-70">
-                    {m.role === "user" ? "Vous" : "Medcin AI"}
+                    {m.role === "user" ? "Vous" : "Medecin AI"}
                   </p>
                   <p className="whitespace-pre-wrap">{m.content}</p>
                   {m.images && m.images.length > 0 && (
