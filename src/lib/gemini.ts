@@ -1,0 +1,261 @@
+import {
+  GoogleGenerativeAI,
+  SchemaType,
+  type GenerativeModel,
+  type Part,
+  type ResponseSchema,
+} from "@google/generative-ai";
+import { SYSTEM_PROMPT, DISCLAIMER_SHORT } from "./prompts";
+import { buildMockResponse } from "./mock";
+import { detectEmergency } from "./emergency";
+import type {
+  Assessment,
+  ConsultRequest,
+  LikelyCause,
+  UrgencyLevel,
+} from "./types";
+
+const RESPONSE_SCHEMA: ResponseSchema = {
+  type: SchemaType.OBJECT,
+  properties: {
+    summary: { type: SchemaType.STRING },
+    likelyCauses: {
+      type: SchemaType.ARRAY,
+      items: {
+        type: SchemaType.OBJECT,
+        properties: {
+          title: { type: SchemaType.STRING },
+          rank: { type: SchemaType.NUMBER },
+          rationale: { type: SchemaType.STRING },
+          confidence: { type: SchemaType.STRING },
+        },
+        required: ["title", "rank", "rationale", "confidence"],
+      },
+    },
+    urgency: { type: SchemaType.STRING },
+    clarifyingQuestions: {
+      type: SchemaType.ARRAY,
+      items: { type: SchemaType.STRING },
+    },
+    nextSteps: {
+      type: SchemaType.ARRAY,
+      items: { type: SchemaType.STRING },
+    },
+    needsExamOrLabs: {
+      type: SchemaType.ARRAY,
+      items: { type: SchemaType.STRING },
+    },
+    disclaimer: { type: SchemaType.STRING },
+    reply: { type: SchemaType.STRING },
+  },
+  required: [
+    "summary",
+    "likelyCauses",
+    "urgency",
+    "clarifyingQuestions",
+    "nextSteps",
+    "needsExamOrLabs",
+    "disclaimer",
+    "reply",
+  ],
+};
+
+export function getApiKey(): string | undefined {
+  return process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || undefined;
+}
+
+export function isMockMode(): boolean {
+  return !getApiKey();
+}
+
+function normalizeUrgency(value: unknown): UrgencyLevel {
+  const v = String(value ?? "").toLowerCase();
+  if (v.includes("urgent")) return "urgent";
+  if (v.includes("auto") || v.includes("self")) return "auto_soins";
+  return "voir_medecin";
+}
+
+function normalizeConfidence(value: unknown): LikelyCause["confidence"] {
+  const v = String(value ?? "").toLowerCase();
+  if (v.includes("élev") || v.includes("elev") || v.includes("high"))
+    return "élevée";
+  if (v.includes("moy") || v.includes("med")) return "moyenne";
+  return "faible";
+}
+
+function parseAssessment(raw: unknown): {
+  assessment: Assessment;
+  reply: string;
+} {
+  const obj = (raw ?? {}) as Record<string, unknown>;
+  const causesRaw = Array.isArray(obj.likelyCauses) ? obj.likelyCauses : [];
+  const likelyCauses: LikelyCause[] = causesRaw.map((c, i) => {
+    const item = (c ?? {}) as Record<string, unknown>;
+    return {
+      title: String(item.title ?? `Hypothèse ${i + 1}`),
+      rank: Number(item.rank ?? i + 1),
+      rationale: String(item.rationale ?? ""),
+      confidence: normalizeConfidence(item.confidence),
+    };
+  });
+
+  const assessment: Assessment = {
+    summary: String(obj.summary ?? ""),
+    likelyCauses,
+    urgency: normalizeUrgency(obj.urgency),
+    clarifyingQuestions: Array.isArray(obj.clarifyingQuestions)
+      ? obj.clarifyingQuestions.map(String)
+      : [],
+    nextSteps: Array.isArray(obj.nextSteps) ? obj.nextSteps.map(String) : [],
+    needsExamOrLabs: Array.isArray(obj.needsExamOrLabs)
+      ? obj.needsExamOrLabs.map(String)
+      : [],
+    disclaimer: String(obj.disclaimer || DISCLAIMER_SHORT),
+    mock: false,
+  };
+
+  const reply = String(obj.reply || assessment.summary);
+  return { assessment, reply };
+}
+
+function extractJson(text: string): unknown {
+  const trimmed = text.trim();
+  try {
+    return JSON.parse(trimmed);
+  } catch {
+    const start = trimmed.indexOf("{");
+    const end = trimmed.lastIndexOf("}");
+    if (start >= 0 && end > start) {
+      return JSON.parse(trimmed.slice(start, end + 1));
+    }
+    throw new Error("Réponse modèle non JSON");
+  }
+}
+
+function buildUserParts(req: ConsultRequest): Part[] {
+  const historyBlock =
+    req.history && req.history.length
+      ? `\n\nHistorique de la conversation :\n${req.history
+          .map(
+            (h) =>
+              `${h.role === "user" ? "Patient" : "Medcin AI"}: ${h.content}`,
+          )
+          .join("\n")}`
+      : "";
+
+  const followUp = req.message
+    ? `\n\nMessage de suivi du patient :\n${req.message}`
+    : "";
+
+  const text = `Symptômes / description initiale :\n${req.symptoms}${historyBlock}${followUp}\n\nRéponds strictement au format JSON demandé.`;
+
+  const parts: Part[] = [{ text }];
+
+  for (const img of req.images ?? []) {
+    parts.push({
+      inlineData: {
+        mimeType: img.mimeType,
+        data: img.data,
+      },
+    });
+  }
+
+  if (req.images?.length) {
+    parts.push({
+      text: `${req.images.length} image(s) clinique(s) jointe(s). Analyse-les avec prudence et indique les limites de l’interprétation photographique.`,
+    });
+  }
+
+  return parts;
+}
+
+function createModel(withGrounding: boolean): GenerativeModel {
+  const key = getApiKey();
+  if (!key) throw new Error("Missing API key");
+  const genAI = new GoogleGenerativeAI(key);
+
+  const base = {
+    model: process.env.GEMINI_MODEL || "gemini-2.0-flash",
+    systemInstruction: SYSTEM_PROMPT,
+    generationConfig: {
+      temperature: 0.4,
+      responseMimeType: "application/json" as const,
+      responseSchema: RESPONSE_SCHEMA,
+    },
+  };
+
+  if (withGrounding) {
+    return genAI.getGenerativeModel({
+      ...base,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      tools: [{ googleSearch: {} } as any],
+    });
+  }
+
+  return genAI.getGenerativeModel(base);
+}
+
+export async function runConsultation(req: ConsultRequest): Promise<{
+  assessment: Assessment;
+  reply: string;
+  emergencyDetected: boolean;
+  mock: boolean;
+}> {
+  const blob = [
+    req.symptoms,
+    req.message,
+    ...(req.history?.map((h) => h.content) ?? []),
+  ]
+    .filter(Boolean)
+    .join("\n");
+  const emergency = detectEmergency(blob);
+
+  if (isMockMode()) {
+    const mock = buildMockResponse(req);
+    return { ...mock, mock: true };
+  }
+
+  const parts = buildUserParts(req);
+
+  let grounded = false;
+  let textOut = "";
+
+  try {
+    const model = createModel(true);
+    const result = await model.generateContent({
+      contents: [{ role: "user", parts }],
+    });
+    textOut = result.response.text();
+    grounded = true;
+  } catch {
+    const model = createModel(false);
+    const result = await model.generateContent({
+      contents: [{ role: "user", parts }],
+    });
+    textOut = result.response.text();
+    grounded = false;
+  }
+
+  const parsed = parseAssessment(extractJson(textOut));
+  let { assessment, reply } = parsed;
+  assessment.grounded = grounded;
+  assessment.mock = false;
+
+  if (emergency.detected) {
+    assessment = {
+      ...assessment,
+      urgency: "urgent",
+    };
+    reply = `⚠️ Situation potentiellement urgente.\n\n${reply}\n\nAppelez immédiatement le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).`;
+  }
+
+  return {
+    assessment: {
+      ...assessment,
+      disclaimer: assessment.disclaimer || DISCLAIMER_SHORT,
+    },
+    reply,
+    emergencyDetected: emergency.detected,
+    mock: false,
+  };
+}
