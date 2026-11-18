@@ -1,0 +1,110 @@
+{
+  "id": "poisoning-overdose",
+  "category": "toxicology",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "poisoning",
+      "swallowed poison",
+      "overdose pills",
+      "ate something toxic"
+    ],
+    "fr": [
+      "intoxication",
+      "a avalé un poison",
+      "surdose médicaments",
+      "a mangé quelque chose de toxique"
+    ],
+    "he": [
+      "הרעלה",
+      "בלע רעל",
+      "מנת יתר כדורים",
+      "אכל משהו רעיל"
+    ],
+    "ru": [
+      "отравление",
+      "проглотил яд",
+      "передозировка таблеток",
+      "съел что-то токсичное"
+    ]
+  },
+  "titles": {
+    "en": "Poisoning / overdose — get help",
+    "fr": "Intoxication / surdose — agir",
+    "he": "הרעלה / מנת יתר — לפנות לעזרה",
+    "ru": "Отравление / передозировка — помощь"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Suspected poisoning or overdose needs urgent medical help. NHS: call emergency services; do not make the person vomit unless clinicians tell you to; take the substance packaging if safe. This pack never invents antidote doses (including for paracetamol). Also see carbon-monoxide and alcohol-poisoning entries when relevant.",
+      "emergencyIf": [
+        "Suspected poisoning or overdose",
+        "Unconscious, fitting, difficulty breathing after ingestion",
+        "Child who may have swallowed medicines/household chemicals"
+      ],
+      "seeDoctorIf": [
+        "Any uncertain ingestion — urgent advice line / emergency pathway"
+      ],
+      "doNot": [
+        "Do not induce vomiting unless told by clinicians",
+        "Do not invent antidote or charcoal regimens",
+        "Do not delay calling for help"
+      ]
+    },
+    "fr": {
+      "summary": "Toute suspicion d'intoxication/surdose = urgence. Ne pas faire vomir sauf avis. Pas d'antidotes inventés.",
+      "emergencyIf": [
+        "Suspicion d'intoxication ou surdose",
+        "Inconscient, convulsions, détresse après ingestion",
+        "Enfant ayant pu avaler médicaments/produits"
+      ],
+      "seeDoctorIf": [
+        "Toute ingestion incertaine"
+      ],
+      "doNot": [
+        "Ne pas faire vomir sans avis",
+        "Pas d'antidotes inventés"
+      ]
+    },
+    "he": {
+      "summary": "חשד להרעלה/מנת יתר — חירום. לא לגרום להקאה אלא אם נאמר. אין נוגדי רעל מומצאים.",
+      "emergencyIf": [
+        "חשד להרעלה או מנת יתר",
+        "מחוסר הכרה, פרכוס, קושי נשימה אחרי בליעה",
+        "ילד שעלול לבלוע תרופות/כימיקלים"
+      ],
+      "seeDoctorIf": [
+        "כל בליעה לא ברורה"
+      ],
+      "doNot": [
+        "לא לגרום להקאה בלי הוראה",
+        "אין נוגדי רעל מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Подозрение на отравление/передозировку — неотложка. Не вызывать рвоту без указания. Антидоты не выдумывать.",
+      "emergencyIf": [
+        "Подозрение на отравление или передозировку",
+        "Без сознания, судороги, одышка после приёма",
+        "Ребёнок мог проглотить лекарства/химикаты"
+      ],
+      "seeDoctorIf": [
+        "Любой неясный приём вещества"
+      ],
+      "doNot": [
+        "Не вызывать рвоту без указания",
+        "Не изобретать антидоты"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-poisoning",
+      "name": "NHS — Poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/poisoning/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

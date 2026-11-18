@@ -1,0 +1,97 @@
+{
+  "id": "tennis-elbow",
+  "category": "msk",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "tennis elbow",
+      "lateral elbow pain",
+      "pain outside elbow gripping"
+    ],
+    "fr": [
+      "tennis elbow",
+      "épicondylite",
+      "douleur extérieur du coude"
+    ],
+    "he": [
+      "מרפק טניס",
+      "כאב בצד החיצוני של המרפק"
+    ],
+    "ru": [
+      "локоть теннисиста",
+      "эпикондилит",
+      "боль снаружи локтя"
+    ]
+  },
+  "titles": {
+    "en": "Tennis elbow",
+    "fr": "Épicondylite (tennis elbow)",
+    "he": "מרפק טניס",
+    "ru": "Локоть теннисиста"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Tennis elbow causes pain on the outer elbow, worse with gripping. NHS: activity modification, pharmacy pain relief, physiotherapy pathways. See GP if not improving. Steroid injections/surgery are clinician decisions — no invented injection doses.",
+      "seeDoctorIf": [
+        "Pain lasting weeks despite rest/modification",
+        "Weakness or inability to use the arm",
+        "Sudden severe elbow trauma (different pathway)"
+      ],
+      "selfCare": [
+        "Reduce aggravating activities; ice wrapped; simple pain relief per label; ergonomic adjustments"
+      ],
+      "doNot": [
+        "Do not invent steroid injection regimens"
+      ]
+    },
+    "fr": {
+      "summary": "L'épicondylite fait mal à l'extérieur du coude. Adapter les activités ; kiné/médecin si persistant. Pas d'injections inventées.",
+      "seeDoctorIf": [
+        "Douleur prolongée",
+        "Faiblesse"
+      ],
+      "selfCare": [
+        "Réduire les gestes aggravants ; glace ; antalgiques selon notice"
+      ],
+      "doNot": [
+        "Pas d'injections de corticoïdes inventées"
+      ]
+    },
+    "he": {
+      "summary": "מרפק טניס: כאב בצד החיצוני, מחמיר באחיזה. שינוי פעילות; רופא אם נמשך. אין זריקות מומצאות.",
+      "seeDoctorIf": [
+        "כאב ממושך",
+        "חולשה"
+      ],
+      "selfCare": [
+        "להפחית מאמצים; קרח; משכך כאב לפי התווית"
+      ],
+      "doNot": [
+        "אין זריקות סטרואידים מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Эпикондилит: боль снаружи локтя, хуже при хвате. Изменить нагрузку; врач если длится. Инъекции не выдумывать.",
+      "seeDoctorIf": [
+        "Длительная боль",
+        "Слабость"
+      ],
+      "selfCare": [
+        "Снизить провоцирующие нагрузки; лёд; анальгетики по инструкции"
+      ],
+      "doNot": [
+        "Не изобретать инъекции стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-tennis-elbow",
+      "name": "NHS — Tennis elbow",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/tennis-elbow/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "cuts-grazes",
+  "category": "trauma",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "cut finger",
+      "graze",
+      "bleeding cut wound first aid"
+    ],
+    "fr": [
+      "coupure",
+      "écorchure",
+      "plaie qui saigne premiers soins"
+    ],
+    "he": [
+      "חתך",
+      "שפשוף",
+      "פצע מדמם עזרה ראשונה"
+    ],
+    "ru": [
+      "порез",
+      "ссадина",
+      "кровоточащая рана первая помощь"
+    ]
+  },
+  "titles": {
+    "en": "Cuts and grazes",
+    "fr": "Coupures et écorchures",
+    "he": "חתכים ושפשופים",
+    "ru": "Порезы и ссадины"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most small cuts/grazes: pressure to stop bleeding, clean with water, cover. NHS: urgent care for deep wounds, heavy bleeding that won't stop, gaping wounds needing stitches, animal bites, or signs of infection later. Tetanus status may matter — clinician decides.",
+      "emergencyIf": [
+        "Bleeding that will not stop with pressure",
+        "Deep wound with visible fat/muscle/bone",
+        "Arterial spurting bleeding",
+        "Wound with severe trauma / amputation"
+      ],
+      "seeDoctorIf": [
+        "Wound may need stitches",
+        "Animal/human bite",
+        "Increasing redness, pus, fever",
+        "Unsure about tetanus"
+      ],
+      "selfCare": [
+        "Firm pressure; clean with water; plaster/dressing; elevate if possible"
+      ],
+      "doNot": [
+        "Do not use hydrogen peroxide/alcohol routinely on wounds unless advised",
+        "Do not invent antibiotic regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Petites plaies : compression, nettoyer, couvrir. Urgence si saignement incontrôlable, plaie profonde. Médecin si points de suture, morsure, infection.",
+      "emergencyIf": [
+        "Saignement qui ne s'arrête pas",
+        "Plaie profonde",
+        "Saignement pulsatile"
+      ],
+      "seeDoctorIf": [
+        "Suture possible",
+        "Morsure",
+        "Infection"
+      ],
+      "selfCare": [
+        "Compression ; eau ; pansement"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "חתכים קטנים: לחץ, ניקוי, כיסוי. חירום בדימום שלא נעצר, פצע עמוק. רופא אם תפרים, נשיכה, זיהום.",
+      "emergencyIf": [
+        "דימום שלא נעצר",
+        "פצע עמוק",
+        "דימום פועם"
+      ],
+      "seeDoctorIf": [
+        "ייתכן שצריך תפרים",
+        "נשיכה",
+        "זיהום"
+      ],
+      "selfCare": [
+        "לחץ; מים; חבישה"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Небольшие раны: давление, промыть, закрыть. Неотложка при неостановимом кровотечении, глубокой ране. Врач при швах, укусе, инфекции.",
+      "emergencyIf": [
+        "Кровотечение не останавливается",
+        "Глубокая рана",
+        "Пульсирующее кровотечение"
+      ],
+      "seeDoctorIf": [
+        "Могут понадобиться швы",
+        "Укус",
+        "Инфекция"
+      ],
+      "selfCare": [
+        "Давление; вода; повязка"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-cuts-grazes",
+      "name": "NHS — Cuts and grazes",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

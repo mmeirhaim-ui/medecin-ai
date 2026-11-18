@@ -1,0 +1,123 @@
+{
+  "id": "sprains-strains",
+  "category": "ortho",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "sprain",
+      "strain",
+      "twisted ankle",
+      "pulled muscle"
+    ],
+    "fr": [
+      "entorse",
+      "foulure",
+      "cheville tordue",
+      "claquage musculaire"
+    ],
+    "he": [
+      "נקע",
+      "מתיחת שריר",
+      "קרסול מפותל"
+    ],
+    "ru": [
+      "растяжение",
+      "вывих лёгкий",
+      "подвернул лодыжку",
+      "надрыв мышцы"
+    ]
+  },
+  "titles": {
+    "en": "Sprains and strains",
+    "fr": "Entorses et foulures",
+    "he": "נקעים ומתיחות",
+    "ru": "Растяжения и надрывы"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sprains/strains: rest, ice wrapped, compression, elevation as tolerated; gradual return to activity. NHS: urgent care if cannot weight-bear, severe deformity, numbness, or suspected fracture/dislocation. Painkillers per label — no inventing opioid regimens.",
+      "emergencyIf": [
+        "Bone deformity or open wound with injury",
+        "No pulse / cold pale limb after injury",
+        "Cannot move limb with severe trauma"
+      ],
+      "seeDoctorIf": [
+        "Cannot put weight on the limb",
+        "Severe swelling/bruising",
+        "Not improving after a few days of self-care",
+        "Numbness or weakness"
+      ],
+      "selfCare": [
+        "PRICE principles: protect, rest, ice wrapped, compression, elevation; gentle movement as pain allows"
+      ],
+      "doNot": [
+        "Do not apply ice directly to skin",
+        "Do not invent opioid pain regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Entorse/foulure : repos, glace enveloppée, compression, surélévation. Urgence si déformation, impossibilité d'appuyer. Pas d'opioïdes inventés.",
+      "emergencyIf": [
+        "Déformation / plaie ouverte",
+        "Membre froid sans pouls"
+      ],
+      "seeDoctorIf": [
+        "Impossible d'appuyer",
+        "Gonflement sévère",
+        "Pas d'amélioration"
+      ],
+      "selfCare": [
+        "Repos ; glace enveloppée ; compression ; surélévation"
+      ],
+      "doNot": [
+        "Pas de glace directement sur la peau"
+      ]
+    },
+    "he": {
+      "summary": "נקע/מתיחה: מנוחה, קרח עטוף, לחץ, הרמה. חירום בעיוות או אי יכולת לדרוך. אין אופיואידים מומצאים.",
+      "emergencyIf": [
+        "עיוות / פצע פתוח",
+        "גפה קרה ללא דופק"
+      ],
+      "seeDoctorIf": [
+        "לא יכול לדרוך",
+        "נפיחות קשה",
+        "אין שיפור"
+      ],
+      "selfCare": [
+        "מנוחה; קרח עטוף; לחץ; הרמה"
+      ],
+      "doNot": [
+        "לא קרח ישירות על העור"
+      ]
+    },
+    "ru": {
+      "summary": "Растяжение: покой, лёд в ткани, компрессия, возвышение. Неотложка при деформации, невозможности наступать. Опиоиды не выдумывать.",
+      "emergencyIf": [
+        "Деформация / открытая рана",
+        "Холодная конечность без пульса"
+      ],
+      "seeDoctorIf": [
+        "Нельзя наступать",
+        "Сильный отёк",
+        "Нет улучшения"
+      ],
+      "selfCare": [
+        "Покой; лёд в ткани; компрессия; возвышение"
+      ],
+      "doNot": [
+        "Не лёд прямо на кожу"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-sprains-strains",
+      "name": "NHS — Sprains and strains",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sprains-and-strains/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

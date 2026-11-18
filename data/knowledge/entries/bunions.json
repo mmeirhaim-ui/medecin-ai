@@ -1,0 +1,99 @@
+{
+  "id": "bunions",
+  "category": "msk",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "bunion",
+      "hallux valgus",
+      "painful bump big toe joint"
+    ],
+    "fr": [
+      "oignon du pied",
+      "hallux valgus",
+      "bosse douloureuse gros orteil"
+    ],
+    "he": [
+      "הלוקס ולגוס",
+      "בליטה כואבת בבוהן"
+    ],
+    "ru": [
+      "вальгусная деформация",
+      "шишка у большого пальца ноги"
+    ]
+  },
+  "titles": {
+    "en": "Bunions",
+    "fr": "Oignon (hallux valgus)",
+    "he": "בוניון / הלוקס ולגוס",
+    "ru": "Вальгусная деформация (bunion)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Bunions are bony bumps at the big-toe joint that can hurt in tight shoes. NHS: wider shoes, pads, pain relief; GP if severe. Surgery is a specialist decision — not diagnosed/prescribed here.",
+      "seeDoctorIf": [
+        "Pain limiting walking",
+        "Worsening deformity",
+        "Skin breakdown over the bunion"
+      ],
+      "selfCare": [
+        "Wide comfortable shoes; bunion pads; avoid high heels; simple pain relief per label"
+      ],
+      "doNot": [
+        "Do not invent surgical plans or antibiotic regimens for skin breakdown without assessment"
+      ]
+    },
+    "fr": {
+      "summary": "L'oignon fait mal dans chaussures serrées. Chaussures larges ; médecin si gênant. Chirurgie = spécialiste.",
+      "seeDoctorIf": [
+        "Douleur limitant la marche",
+        "Aggravation",
+        "Lésion cutanée"
+      ],
+      "selfCare": [
+        "Chaussures larges ; protections ; antalgiques selon notice"
+      ],
+      "doNot": [
+        "Pas de plans chirurgicaux inventés"
+      ]
+    },
+    "he": {
+      "summary": "בוניון: בליטה במפרק הבוהן. נעליים רחבות; רופא אם מפריע. ניתוח — מומחה.",
+      "seeDoctorIf": [
+        "כאב שמגביל הליכה",
+        "החמרה",
+        "פצע בעור"
+      ],
+      "selfCare": [
+        "נעליים רחבות; ריפוד; משכך כאב לפי התווית"
+      ],
+      "doNot": [
+        "אין תוכניות ניתוח מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Bunion: костный выступ у большого пальца. Широкая обувь; врач если мешает. Операция — у специалиста.",
+      "seeDoctorIf": [
+        "Боль ограничивает ходьбу",
+        "Ухудшение",
+        "Повреждение кожи"
+      ],
+      "selfCare": [
+        "Широкая обувь; прокладки; анальгетики по инструкции"
+      ],
+      "doNot": [
+        "Не изобретать планы операций"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-bunions",
+      "name": "NHS — Bunions",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bunions/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
