@@ -291,6 +291,25 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\bhernie\s+[ée]trangl/i,
   /\bבקע\s+חנוק\b/u,
   /\bущемл\w*\s+грыж/iu,
+
+  // Kidney infection / pyelonephritis
+  /\bpyelonephritis\b/i,
+  /\bkidney\s+infection\b/i,
+  /\bpy[ée]lon[ée]phrite\b/i,
+  /\bדלקת\s+כליות\b/u,
+  /\bпиелонефрит/iu,
+
+  // Myasthenic crisis cues
+  /\bmyastheni\w*\s+crisis\b/i,
+  /\bcrise\s+myasth[ée]n/i,
+  /\bמשבר\s+מיאסטני\b/u,
+  /\bмиастеническ\w*\s+криз/iu,
+
+  // Critical limb ischaemia / cold painful limb
+  /\bcritical\s+(limb\s+)?ischa?emia\b/i,
+  /\bisch[ée]mie\s+critique\b/i,
+  /\bאיסכמיה\s+קריטית\b/u,
+  /\bкритическ\w*\s+ишеми/iu,
 ];
 
 const NEGATION =

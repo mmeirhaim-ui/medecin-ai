@@ -1,0 +1,102 @@
+{
+  "id": "sarcoidosis",
+  "category": "respiratory",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "sarcoidosis",
+      "sarcoid lungs lymph nodes",
+      "Lofgren sarcoidosis"
+    ],
+    "fr": [
+      "sarcoïdose",
+      "sarcoïde poumons ganglions",
+      "Löfgren sarcoïdose"
+    ],
+    "he": [
+      "סרקואידוזיס",
+      "סרקואיד ריאות בלוטות",
+      "סרקואידוזיס"
+    ],
+    "ru": [
+      "саркоидоз",
+      "саркоид лёгкие лимфоузлы",
+      "Лёфгрен саркоидоз"
+    ]
+  },
+  "titles": {
+    "en": "Sarcoidosis — orientation",
+    "fr": "Sarcoïdose — orientation",
+    "he": "סרקואידוזיס — התמצאות",
+    "ru": "Саркоидоз — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sarcoidosis can affect lungs, lymph nodes, skin and eyes. NHS: specialist diagnosis; many cases settle, some need treatment — never invent steroid doses. Emergency: sudden severe breathlessness, chest pain, new vision loss, or neurological deficits.",
+      "emergencyIf": [
+        "Sudden severe breathlessness or chest pain",
+        "Sudden vision loss",
+        "New weakness, seizures, or severe headache with sarcoid history"
+      ],
+      "seeDoctorIf": [
+        "Persistent cough with fatigue/weight loss",
+        "Unexplained lumps or eye symptoms"
+      ],
+      "doNot": [
+        "Do not invent corticosteroid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Sarcoïdose: poumons, ganglions, yeux. Urgences si dyspnée brutale, baisse visuelle, signes neuro. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Dyspnée / douleur thoracique brutale",
+        "Baisse visuelle soudaine",
+        "Signes neurologiques nouveaux"
+      ],
+      "seeDoctorIf": [
+        "Toux persistante avec fatigue"
+      ],
+      "doNot": [
+        "Pas de corticoïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "סרקואידוזיס: ריאות, בלוטות, עיניים. חירום בקוצר נשימה פתאומי, ירידת ראייה, סימנים נוירולוגיים. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "קוצר נשימה / כאב חזה פתאומי",
+        "ירידת ראייה פתאומית",
+        "חולשה/פרכוס חדשים"
+      ],
+      "seeDoctorIf": [
+        "שיעול מתמשך עם עייפות"
+      ],
+      "doNot": [
+        "אין מינוני סטרואידים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Саркоидоз: лёгкие, лимфоузлы, глаза. Неотложка при внезапной одышке, потере зрения, неврологических симптомах. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Внезапная одышка / боль в груди",
+        "Внезапная потеря зрения",
+        "Новые неврологические симптомы"
+      ],
+      "seeDoctorIf": [
+        "Стойкий кашель с усталостью"
+      ],
+      "doNot": [
+        "Не изобретать дозы стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-sarcoidosis",
+      "name": "NHS — Sarcoidosis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sarcoidosis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

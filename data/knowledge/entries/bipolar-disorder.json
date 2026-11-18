@@ -1,0 +1,103 @@
+{
+  "id": "bipolar-disorder",
+  "category": "mental-health",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "bipolar disorder",
+      "manic episode bipolar",
+      "bipolar mood swings"
+    ],
+    "fr": [
+      "trouble bipolaire",
+      "épisode maniaque bipolaire",
+      "sauts d'humeur bipolaire"
+    ],
+    "he": [
+      "הפרעה דו-קוטבית",
+      "מאניה ביפולרית",
+      "תנודות מצב רוח ביפולרי"
+    ],
+    "ru": [
+      "биполярное расстройство",
+      "маниакальный эпизод",
+      "биполярные перепады настроения"
+    ]
+  },
+  "titles": {
+    "en": "Bipolar disorder — orientation",
+    "fr": "Trouble bipolaire — orientation",
+    "he": "הפרעה דו-קוטבית — התמצאות",
+    "ru": "Биполярное расстройство — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Bipolar involves episodes of mania/hypomania and depression. NHS: specialist mental-health pathways; mood stabilisers are clinician-prescribed — never invent doses. Emergency: suicidal plans, psychosis with danger, or mania with no sleep and risky behaviour — crisis services / emergency care. See mental-health-crisis entry.",
+      "emergencyIf": [
+        "Suicidal plans or intent",
+        "Psychosis with risk of harm",
+        "Mania with extreme risk-taking or no sleep for days with collapse risk"
+      ],
+      "seeDoctorIf": [
+        "Mood swings disrupting life",
+        "Known bipolar with emerging episode"
+      ],
+      "doNot": [
+        "Do not invent lithium/antipsychotic doses",
+        "Do not leave someone alone in acute crisis"
+      ]
+    },
+    "fr": {
+      "summary": "Bipolaire: manie/dépression. Urgences si idées suicidaires, psychose à risque, manie dangereuse. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Idées suicidaires avec plan",
+        "Psychose avec danger",
+        "Manie à haut risque"
+      ],
+      "seeDoctorIf": [
+        "Oscillations d'humeur invalidantes"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "דו-קוטבי: מאניה/דיכאון. חירום במחשבות אובדניות, פסיכוזה מסוכנת, מאניה מסוכנת. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "תוכניות אובדניות",
+        "פסיכוזה עם סיכון",
+        "מאניה מסוכנת"
+      ],
+      "seeDoctorIf": [
+        "תנודות מצב רוח פוגעות בחיים"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Биполярное: мания/депрессия. Неотложка при суицидальных планах, опасном психозе, рискованной мании. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Суицидальные планы",
+        "Психоз с опасностью",
+        "Опасная мания"
+      ],
+      "seeDoctorIf": [
+        "Перепады настроения, мешающие жизни"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-bipolar",
+      "name": "NHS — Bipolar disorder",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bipolar-disorder/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

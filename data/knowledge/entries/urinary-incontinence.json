@@ -1,0 +1,99 @@
+{
+  "id": "urinary-incontinence",
+  "category": "uro",
+  "urgencyDefault": "consultation",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "urinary incontinence",
+      "leak urine when coughing",
+      "bladder leakage urge"
+    ],
+    "fr": [
+      "incontinence urinaire",
+      "fuites urinaires à la toux",
+      "fuites d'urine urgenturie"
+    ],
+    "he": [
+      "דליפת שתן",
+      "אי שליטה בשתן בשיעול",
+      "דליפה דחופה"
+    ],
+    "ru": [
+      "недержание мочи",
+      "подтекание мочи при кашле",
+      "ургентное недержание"
+    ]
+  },
+  "titles": {
+    "en": "Urinary incontinence",
+    "fr": "Incontinence urinaire",
+    "he": "דליפת שתן",
+    "ru": "Недержание мочи"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Urinary incontinence (stress or urge) is common and treatable. NHS: pelvic-floor exercises, bladder training, GP/continence pathways — never invent antimuscarinic doses. Emergency: sudden inability to pass urine (retention), or incontinence with new back pain/leg weakness (possible cauda equina — urgent).",
+      "emergencyIf": [
+        "Cannot pass urine at all (retention)",
+        "New incontinence with severe back pain and leg weakness/numbness around the saddle area"
+      ],
+      "seeDoctorIf": [
+        "Leakage affecting quality of life",
+        "Frequent urgency and nocturia"
+      ],
+      "doNot": [
+        "Do not invent bladder-drug doses",
+        "Do not ignore red-flag neurological signs with incontinence"
+      ]
+    },
+    "fr": {
+      "summary": "Incontinence: rééducation, avis. Urgences si rétention ou incontinence avec déficit neuro (queue de cheval). Pas de posologies inventées.",
+      "emergencyIf": [
+        "Rétention urinaire complète",
+        "Incontinence avec lombalgie sévère et déficit des jambes / anesthésie en selle"
+      ],
+      "seeDoctorIf": [
+        "Fuites gênantes"
+      ],
+      "doNot": [
+        "Pas de médicaments vésicaux inventés"
+      ]
+    },
+    "he": {
+      "summary": "דליפת שתן: תרגילים, ייעוץ. חירום באצירה או דליפה עם חולשת רגליים/כאבי גב (זנב סוס). אין מינונים מומצאים.",
+      "emergencyIf": [
+        "אצירת שתן מלאה",
+        "דליפה עם כאב גב קשה וחולשת רגליים / חוסר תחושה באזור האוכף"
+      ],
+      "seeDoctorIf": [
+        "דליפה שפוגעת באיכות החיים"
+      ],
+      "doNot": [
+        "אין תרופות שלפוחית מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Недержание: упражнения, консультация. Неотложка при задержке или недержании с неврологическим дефицитом (конский хвост). Дозы не выдумывать.",
+      "emergencyIf": [
+        "Полная задержка мочи",
+        "Недержание с сильной болью в спине и слабостью ног / онемением промежности"
+      ],
+      "seeDoctorIf": [
+        "Подтекание, мешающее жизни"
+      ],
+      "doNot": [
+        "Не изобретать лекарства для мочевого пузыря"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-urinary-incontinence",
+      "name": "NHS — Urinary incontinence",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/urinary-incontinence/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

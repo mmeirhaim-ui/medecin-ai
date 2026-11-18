@@ -344,6 +344,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-bipolar",
+      "name": "NHS — Bipolar disorder",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bipolar-disorder/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-boils",
       "name": "NHS — Boils",
       "org": "NHS",
@@ -355,6 +362,13 @@
       "name": "NHS — Broken bone (fracture)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/broken-bone/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-bronchiectasis",
+      "name": "NHS — Bronchiectasis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bronchiectasis/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -484,6 +498,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-corns-calluses",
+      "name": "NHS — Corns and calluses",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/corns-and-calluses/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-cradle-cap",
       "name": "NHS — Cradle cap",
       "org": "NHS",
@@ -516,6 +537,13 @@
       "name": "NHS — Dehydration",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/dehydration/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-dementia",
+      "name": "NHS — Dementia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dementia/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -568,6 +596,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-dupuytrens",
+      "name": "NHS — Dupuytren's contracture",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dupuytrens-contracture/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-dvt",
       "name": "NHS — DVT",
       "org": "NHS",
@@ -579,6 +614,13 @@
       "name": "NHS — Earwax build-up",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/earwax-build-up/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-eating-disorders",
+      "name": "NHS — Eating disorders",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/eating-disorders/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -827,6 +869,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-ingrown-toenail",
+      "name": "NHS — Ingrown toenail",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ingrown-toenail/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-insect-bites",
       "name": "NHS — Insect bites and stings",
       "org": "NHS",
@@ -862,6 +911,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-kidney-infection",
+      "name": "NHS — Kidney infection",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/kidney-infection/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-labyrinthitis",
       "name": "NHS — Labyrinthitis",
       "org": "NHS",
@@ -894,6 +950,13 @@
       "name": "NHS — Lyme disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/lyme-disease/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-lymphoedema",
+      "name": "NHS — Lymphoedema",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/lymphoedema/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -988,6 +1051,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-myasthenia-gravis",
+      "name": "NHS — Myasthenia gravis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/myasthenia-gravis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-nappy-rash",
       "name": "NHS — Nappy rash",
       "org": "NHS",
@@ -1009,10 +1079,24 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-ocd",
+      "name": "NHS — OCD",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/obsessive-compulsive-disorder-ocd/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-oral-thrush",
       "name": "NHS — Oral thrush (mouth thrush)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/oral-thrush-mouth-thrush/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-osteoarthritis",
+      "name": "NHS — Osteoarthritis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/osteoarthritis/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -1027,6 +1111,13 @@
       "name": "NHS — Ovarian cyst",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/ovarian-cyst/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-pad",
+      "name": "NHS — Peripheral arterial disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -1149,6 +1240,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-ptsd",
+      "name": "NHS — PTSD",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/post-traumatic-stress-disorder-ptsd/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-quinsy",
       "name": "NHS — Quinsy (peritonsillar abscess)",
       "org": "NHS",
@@ -1174,6 +1272,13 @@
       "name": "NHS — Rashes in babies and children",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/rashes-babies-and-children/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-raynauds",
+      "name": "NHS — Raynaud's",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/raynauds/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -1219,6 +1324,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-sarcoidosis",
+      "name": "NHS — Sarcoidosis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sarcoidosis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-scabies",
       "name": "NHS — Scabies",
       "org": "NHS",
@@ -1251,6 +1363,13 @@
       "name": "NHS — Sepsis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/sepsis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-sjogrens",
+      "name": "NHS — Sjögren's syndrome",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sjogrens-syndrome/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -1359,6 +1478,13 @@
       "retrievedAt": "2026-11-18"
     },
     {
+      "id": "nhs-trigger-finger",
+      "name": "NHS — Trigger finger",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/trigger-finger/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
       "id": "nhs-typhoid",
       "name": "NHS — Typhoid fever",
       "org": "NHS",
@@ -1370,6 +1496,13 @@
       "name": "NHS — Ulcerative colitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/ulcerative-colitis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-urinary-incontinence",
+      "name": "NHS — Urinary incontinence",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/urinary-incontinence/",
       "retrievedAt": "2026-11-18"
     },
     {
@@ -1398,6 +1531,13 @@
       "name": "NHS — Vision loss",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/vision-loss/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-vitiligo",
+      "name": "NHS — Vitiligo",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vitiligo/",
       "retrievedAt": "2026-11-18"
     },
     {

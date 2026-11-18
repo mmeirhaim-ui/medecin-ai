@@ -1,0 +1,98 @@
+{
+  "id": "ingrown-toenail",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "ingrown toenail",
+      "nail digging into skin toe",
+      "infected toenail red"
+    ],
+    "fr": [
+      "ongle incarné",
+      "ongle qui rentre dans la peau",
+      "ongle infecté orteil"
+    ],
+    "he": [
+      "ציפורן חודרנית",
+      "ציפורן ננעצת בעור",
+      "זיהום בציפורן הבוהן"
+    ],
+    "ru": [
+      "вросший ноготь",
+      "ноготь врезается в кожу",
+      "инфицированный ноготь пальца"
+    ]
+  },
+  "titles": {
+    "en": "Ingrown toenail",
+    "fr": "Ongle incarné",
+    "he": "ציפורן חודרנית",
+    "ru": "Вросший ноготь"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Ingrown toenails hurt when the nail edge digs into skin; redness and pus suggest infection. NHS: soak, keep clean, avoid cutting nails too short at corners; GP/podiatry if infected. Emergency: spreading redness, fever, or diabetes/poor circulation with foot infection.",
+      "emergencyIf": [
+        "Spreading redness up the foot/leg with fever",
+        "Diabetes or poor circulation with worsening foot infection"
+      ],
+      "seeDoctorIf": [
+        "Pus, increasing pain, or recurrent ingrown nails"
+      ],
+      "doNot": [
+        "Do not dig aggressively under the nail",
+        "Do not invent antibiotic doses"
+      ]
+    },
+    "fr": {
+      "summary": "Ongle incarné: trempages, hygiène; avis si infection. Urgences si lymphangite fébrile ou pied diabétique infecté.",
+      "emergencyIf": [
+        "Rougeur extensive avec fièvre",
+        "Diabète / mauvais flux avec infection du pied"
+      ],
+      "seeDoctorIf": [
+        "Pus, douleur croissante"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "ציפורן חודרנית: השריה וניקיון; רופא בזיהום. חירום באדמומיות מתפשטת עם חום או סוכרת עם זיהום.",
+      "emergencyIf": [
+        "אדמומיות מתפשטת עם חום",
+        "סוכרת / זרימה ירודה עם זיהום בכף הרגל"
+      ],
+      "seeDoctorIf": [
+        "מוגלה, כאב גובר"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Вросший ноготь: ванночки, гигиена; врач при инфекции. Неотложка при распространяющемся покраснении с лихорадкой или диабетической стопе.",
+      "emergencyIf": [
+        "Распространяющееся покраснение с лихорадкой",
+        "Диабет / плохой кровоток с инфекцией стопы"
+      ],
+      "seeDoctorIf": [
+        "Гной, нарастающая боль"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ingrown-toenail",
+      "name": "NHS — Ingrown toenail",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ingrown-toenail/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

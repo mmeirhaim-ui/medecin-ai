@@ -1,0 +1,98 @@
+{
+  "id": "vitiligo",
+  "category": "derm",
+  "urgencyDefault": "consultation",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "vitiligo",
+      "white patches skin pigment loss",
+      "depigmentation patches"
+    ],
+    "fr": [
+      "vitiligo",
+      "taches blanches peau",
+      "dépigmentation"
+    ],
+    "he": [
+      "ויטיליגו",
+      "כתמים לבנים בעור",
+      "אובדן פיגמנט"
+    ],
+    "ru": [
+      "витилиго",
+      "белые пятна на коже",
+      "депигментация"
+    ]
+  },
+  "titles": {
+    "en": "Vitiligo",
+    "fr": "Vitiligo",
+    "he": "ויטיליגו",
+    "ru": "Витилиго"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Vitiligo causes white patches from pigment loss. NHS: sun protection, camouflage, and dermatology options — never invent steroid/phototherapy regimens. Urgent review for sudden widespread blistering, severe burns on depigmented skin, or rapidly progressive painful rash (other diagnoses).",
+      "emergencyIf": [
+        "Severe sunburn/blistering on exposed white patches",
+        "Rapidly progressive painful blistering rash"
+      ],
+      "seeDoctorIf": [
+        "New white patches",
+        "Distress about appearance / treatment options"
+      ],
+      "doNot": [
+        "Do not invent topical steroid or phototherapy schedules"
+      ]
+    },
+    "fr": {
+      "summary": "Vitiligo: taches blanches. Protection solaire; pas de posologies inventées. Urgences si brûlures sévères ou éruption bulleuse.",
+      "emergencyIf": [
+        "Brûlures sévères sur zones dépigmentées",
+        "Éruption bulleuse douloureuse rapide"
+      ],
+      "seeDoctorIf": [
+        "Nouvelles taches blanches"
+      ],
+      "doNot": [
+        "Pas de schémas de corticoïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "ויטיליגו: כתמים לבנים. הגנה מהשמש; אין מינונים מומצאים. חירום בכוויות קשות או פריחה שלפוחיתית.",
+      "emergencyIf": [
+        "כוויות קשות באזורים בהירים",
+        "פריחה שלפוחיתית כואבת מהירה"
+      ],
+      "seeDoctorIf": [
+        "כתמים לבנים חדשים"
+      ],
+      "doNot": [
+        "אין משטרי סטרואידים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Витилиго: белые пятна. Защита от солнца; дозы не выдумывать. Неотложка при сильных ожогах или пузырьковой сыпи.",
+      "emergencyIf": [
+        "Сильные ожоги на депигментированных участках",
+        "Быстрая болезненная пузырьковая сыпь"
+      ],
+      "seeDoctorIf": [
+        "Новые белые пятна"
+      ],
+      "doNot": [
+        "Не изобретать схемы стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-vitiligo",
+      "name": "NHS — Vitiligo",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vitiligo/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

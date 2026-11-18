@@ -157,6 +157,12 @@ const cases = [
   { text: "sleep apnoea snoring pauses breathing", expect: "sleep-apnoea" },
   { text: "inguinal hernia groin lump painful", expect: "hernia" },
   { text: "fibromyalgia widespread pain fatigue fibro fog", expect: "fibromyalgia" },
+  { text: "myasthenia gravis drooping eyelid fatigable", expect: "myasthenia-gravis" },
+  { text: "kidney infection pyelonephritis flank pain fever", expect: "kidney-infection" },
+  { text: "peripheral arterial disease PAD claudication", expect: "peripheral-arterial-disease" },
+  { text: "Raynaud phenomenon white blue digits cold", expect: "raynauds" },
+  { text: "eating disorder anorexia bulimia restricting", expect: "eating-disorders" },
+  { text: "osteoarthritis OA joint wear pain", expect: "osteoarthritis" },
 ];
 
 for (const c of cases) {

@@ -1,0 +1,98 @@
+{
+  "id": "trigger-finger",
+  "category": "msk",
+  "urgencyDefault": "consultation",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "trigger finger",
+      "finger clicks locks",
+      "stenosing tenosynovitis finger"
+    ],
+    "fr": [
+      "doigt à ressaut",
+      "doigt qui se bloque",
+      "ténosynovite sténosante"
+    ],
+    "he": [
+      "אצבע הדק",
+      "אצבע ננעלת נקישה",
+      "טנוסינוביטיס באצבע"
+    ],
+    "ru": [
+      "щёлкающий палец",
+      "палец защёлкивается",
+      "стенозирующий тендовагинит"
+    ]
+  },
+  "titles": {
+    "en": "Trigger finger",
+    "fr": "Doigt à ressaut",
+    "he": "אצבע הדק",
+    "ru": "«Щёлкающий» палец"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Trigger finger causes clicking, catching or locking of a finger. NHS: rest, splints, and clinician-led injections/surgery if needed — never invent steroid doses. Emergency: rapidly spreading hand infection, fever with red streaking, or trauma with deformity.",
+      "emergencyIf": [
+        "Spreading redness with fever after injection/injury",
+        "Hand trauma with deformity or numbness"
+      ],
+      "seeDoctorIf": [
+        "Finger locking that interferes with grip",
+        "Painful nodule at the base of a finger"
+      ],
+      "doNot": [
+        "Do not invent steroid injection doses"
+      ]
+    },
+    "fr": {
+      "summary": "Doigt à ressaut: blocage/clic. Urgences si infection diffuse ou traumatisme. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Rougeur extensive avec fièvre",
+        "Traumatisme avec déformation"
+      ],
+      "seeDoctorIf": [
+        "Doigt qui se bloque"
+      ],
+      "doNot": [
+        "Pas d'injections inventées"
+      ]
+    },
+    "he": {
+      "summary": "אצבע הדק: נעילה/נקישה. חירום בזיהום מתפשט או חבלה. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "אדמומיות מתפשטת עם חום",
+        "חבלה עם עיוות"
+      ],
+      "seeDoctorIf": [
+        "אצבע ננעלת"
+      ],
+      "doNot": [
+        "אין הזרקות מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Щёлкающий палец: блокировка/щелчок. Неотложка при инфекции или травме. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Распространяющееся покраснение с лихорадкой",
+        "Травма с деформацией"
+      ],
+      "seeDoctorIf": [
+        "Палец блокируется"
+      ],
+      "doNot": [
+        "Не изобретать инъекции"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-trigger-finger",
+      "name": "NHS — Trigger finger",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/trigger-finger/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
