@@ -1,0 +1,125 @@
+{
+  "id": "derm-rash-cellulitis",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": ["rash", "itchy skin", "eczema", "cellulitis", "hot swollen skin", "hot swollen", "swollen painful skin", "painful skin", "hives", "non-blanching spots", "skin infection"],
+    "fr": ["éruption", "démangeaison", "eczéma", "cellulite infectieuse", "peau chaude gonflée", "urticaire", "taches qui ne pâlissent pas", "infection cutanée"],
+    "he": ["פריחה", "גרד", "אקזמה", "צלוליטיס", "עור חם ונפוח", "סרפדת", "כתמים שלא דועכים", "זיהום עור"],
+    "ru": ["сыпь", "зуд", "экзема", "целлюлит кожи", "горячая отёчная кожа", "крапивница", "пятна не бледнеют", "инфекция кожи"]
+  },
+  "titles": {
+    "en": "Rash / itchy skin / possible cellulitis",
+    "fr": "Éruption / démangeaisons / cellulite possible",
+    "he": "פריחה / גרד / חשד לצלוליטיס",
+    "ru": "Сыпь / зуд / возможный целлюлит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Many rashes are mild; photos cannot replace an exam. Painful hot swollen skin may be cellulitis and needs prompt clinical care. A non-blanching rash with illness can be a meningitis emergency. Not a diagnosis.",
+      "selfCare": [
+        "For mild itch without red flags: avoid irritants; pharmacist advice on emollients/OTC options",
+        "Do not scratch open wounds"
+      ],
+      "seeDoctorIf": [
+        "Itch affecting daily life, not improving, widespread, severe, or in pregnancy",
+        "Painful, hot and swollen skin (possible cellulitis) — urgent GP / clinician",
+        "Child rash with fever you are unsure about",
+        "Suspected measles contact concerns (pregnant, immunocompromised, infant <1 year, unvaccinated exposure)"
+      ],
+      "emergencyIf": [
+        "Rash with stiff neck, confusion, breathing difficulty, pale/blue/blotchy skin, or sudden lip/throat swelling",
+        "Rash like small bruises/bleeding under skin that does not fade when a glass is pressed",
+        "Cellulitis with very high temperature, fast heart/breathing, purple patches, dizziness, confusion, cold clammy skin, unresponsiveness"
+      ],
+      "doNot": [
+        "Do not diagnose from a photo alone",
+        "Do not prescribe antibiotics or steroid regimens here"
+      ]
+    },
+    "fr": {
+      "summary": "Beaucoup d’éruptions sont bénignes ; une photo ne remplace pas l’examen. Peau douloureuse, chaude et gonflée peut être une cellulite infectieuse. Éruption qui ne pâlit pas + maladie grave peut être une urgence méningée. Pas un diagnostic.",
+      "selfCare": [
+        "Démangeaison légère sans signe d’alarme : éviter irritants ; conseil pharmacien"
+      ],
+      "seeDoctorIf": [
+        "Démangeaison invalidante, persistante, généralisée, sévère ou grossesse",
+        "Peau douloureuse, chaude, gonflée (cellulite possible) — avis urgent",
+        "Éruption chez l’enfant avec fièvre et doute"
+      ],
+      "emergencyIf": [
+        "Éruption avec raideur de nuque, confusion, détresse respiratoire, gonflement lèvres/gorge",
+        "Éruption type purpura qui ne pâlit pas au verre",
+        "Cellulite avec fièvre élevée, tachycardie/polypnée, confusion, malaise"
+      ],
+      "doNot": [
+        "Pas de diagnostic sur photo seule",
+        "Pas d’ordonnance ici"
+      ]
+    },
+    "he": {
+      "summary": "פריחות רבות קלות; תמונה אינה מחליפה בדיקה. עור כואב, חם ונפוח עלול להיות צלוליטיס. פריחה שלא דועכת עם מחלה קשה עלולה להיות חירום. לא אבחנה.",
+      "selfCare": [
+        "גרד קל ללא סימני אזהרה: הימנעות ממגרים; ייעוץ רוקח"
+      ],
+      "seeDoctorIf": [
+        "גרד שמפריע לחיי היום־יום / לא משתפר / נרחב / בהריון",
+        "עור כואב חם ונפוח — פנייה דחופה",
+        "פריחה בילד עם חום וספק"
+      ],
+      "emergencyIf": [
+        "פריחה עם נוקשות עורף, בלבול, מצוקה נשימתית או נפיחות גרון",
+        "פריחה דמוית שטפי דם שלא דועכת בלחיצת כוס",
+        "צלוליטיס עם חום גבוה, בלבול או קריסה"
+      ],
+      "doNot": [
+        "לא לאבחן מתמונה בלבד",
+        "אין מרשם כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Многие сыпи лёгкие; фото не заменяет осмотр. Болезненная горячая отёчная кожа может быть целлюлитом и требует быстрой помощи. Небледнеющая сыпь при тяжёлом состоянии может быть неотложным менингитом. Не диагноз.",
+      "selfCare": [
+        "Лёгкий зуд без красных флагов: избегать раздражителей; совет фармацевта"
+      ],
+      "seeDoctorIf": [
+        "Зуд мешает жизни, не проходит, распространён, сильный или при беременности",
+        "Болезненная горячая отёчная кожа (возможный целлюлит) — срочно к врачу",
+        "Сыпь у ребёнка с температурой и сомнениями"
+      ],
+      "emergencyIf": [
+        "Сыпь с ригидностью затылка, спутанностью, одышкой или отёком губ/горла",
+        "Сыпь как мелкие кровоизлияния, не бледнеющая при нажатии стеклом",
+        "Целлюлит с высокой температурой, спутанностью, холодным липким потом, потерей сознания"
+      ],
+      "doNot": [
+        "Не ставьте диагноз по фото",
+        "Здесь нет рецептов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-cellulitis",
+      "name": "NHS — Cellulitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cellulitis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-rashes-children",
+      "name": "NHS — Rashes in babies and children",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/rashes-babies-and-children/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-itchy-skin",
+      "name": "NHS — Itchy skin",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/itchy-skin/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

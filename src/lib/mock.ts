@@ -2,6 +2,10 @@ import type { Assessment, ConsultRequest } from "./types";
 import { disclaimerShort } from "./prompts";
 import { detectEmergency } from "./emergency";
 import { isLocale, type Locale } from "./i18n/locales";
+import {
+  collectSourcesFromMatches,
+  matchKnowledge,
+} from "./knowledge";
 
 function localeOf(req: ConsultRequest): Locale {
   return isLocale(req.locale) ? req.locale : "en";
@@ -546,11 +550,17 @@ export function buildMockResponse(req: ConsultRequest): {
     .join("\n");
   const emergency = detectEmergency(text);
   const hasImages = Boolean(req.images?.length);
+  const matches = matchKnowledge(text, 4);
   let assessment = pickMockAssessment(
     req.message || req.symptoms,
     hasImages,
     locale,
   );
+  assessment = {
+    ...assessment,
+    sources: collectSourcesFromMatches(matches),
+    knowledgeHits: matches.map((m) => m.entry.id),
+  };
 
   if (emergency.detected) {
     assessment = {

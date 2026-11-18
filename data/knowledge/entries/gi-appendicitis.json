@@ -1,0 +1,105 @@
+{
+  "id": "gi-appendicitis",
+  "category": "gi",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": ["appendicitis", "appendix", "lower right abdominal pain", "pain moves to right side", "RLQ pain"],
+    "fr": ["appendicite", "appendice", "douleur bas droite abdomen", "douleur fosse iliaque droite", "FID"],
+    "he": ["דלקת התוספתן", "אפנדיציט", "כאב בטן ימין תחתון", "כאב שעובר לימין"],
+    "ru": ["аппендицит", "боль в правом нижнем боку", "боль смещается вправо"]
+  },
+  "titles": {
+    "en": "Possible appendicitis pattern",
+    "fr": "Tableau évocateur d’appendicite",
+    "he": "דפוס שמעלה חשד לדלקת התוספתן",
+    "ru": "Картина, похожая на аппендицит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Appendicitis often causes abdominal pain that worsens or moves to the lower right side and needs urgent clinical assessment. Sudden severe pain or sepsis-like features need emergency care. This pattern is not a diagnosis.",
+      "seeDoctorIf": [
+        "Abdominal pain gradually getting worse or not going away",
+        "Pain moving to the lower right side of the abdomen",
+        "Associated fever, nausea/vomiting, loss of appetite (clinical context)"
+      ],
+      "emergencyIf": [
+        "Severe abdominal pain",
+        "Confusion, blotchy/pale skin or difficulty breathing (possible sepsis)",
+        "Pain that briefly improves then becomes severe again (possible perforation concern — seek emergency care)"
+      ],
+      "doNot": [
+        "Do not delay urgent assessment for progressive right-lower pain",
+        "Do not eat/drink large amounts if surgery may be needed — follow emergency clinician advice",
+        "Do not invent antibiotics or pain regimens"
+      ]
+    },
+    "fr": {
+      "summary": "L’appendicite provoque souvent une douleur qui s’aggrave ou migre en fosse iliaque droite et nécessite une évaluation urgente. Douleur brutale sévère ou signes de sepsis = urgence. Pas un diagnostic.",
+      "seeDoctorIf": [
+        "Douleur abdominale qui s’aggrave progressivement ou ne passe pas",
+        "Douleur qui migre en bas à droite",
+        "Fièvre, nausées/vomissements, perte d’appétit associés"
+      ],
+      "emergencyIf": [
+        "Douleur abdominale sévère",
+        "Confusion, peau marbrée/pâle, détresse respiratoire",
+        "Douleur qui s’améliore brièvement puis revient très forte"
+      ],
+      "doNot": [
+        "Ne retardez pas l’évaluation urgente",
+        "Pas d’ordonnance ici"
+      ]
+    },
+    "he": {
+      "summary": "דלקת התוספתן גורמת לעיתים לכאב שמחמיר או נודד לבטן ימין תחתונה ודורשת הערכה דחופה. כאב חמור פתאומי או סימני אלח דם — חירום. לא אבחנה.",
+      "seeDoctorIf": [
+        "כאב בטן שמחמיר בהדרגה או לא חולף",
+        "כאב שנודד לבטן ימין תחתונה",
+        "חום, בחילות/הקאות, אובדן תיאבון"
+      ],
+      "emergencyIf": [
+        "כאב בטן חמור",
+        "בלבול, עור חיוור/מנומר, קושי נשימה",
+        "כאב שמשתפר לרגע ואז מחמיר מאוד"
+      ],
+      "doNot": [
+        "לא לדחות הערכה דחופה",
+        "אין מרשם כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Аппендицит часто даёт боль, которая усиливается или смещается в правый нижний квадрант и требует срочной оценки. Внезапная сильная боль или признаки сепсиса — неотложная помощь. Не диагноз.",
+      "seeDoctorIf": [
+        "Боль в животе постепенно усиливается или не проходит",
+        "Боль смещается в правый нижний отдел живота",
+        "Лихорадка, тошнота/рвота, потеря аппетита"
+      ],
+      "emergencyIf": [
+        "Сильная боль в животе",
+        "Спутанность, пятнистая/бледная кожа, затруднённое дыхание",
+        "Боль кратковременно стихает, затем становится очень сильной"
+      ],
+      "doNot": [
+        "Не откладывайте срочную оценку",
+        "Здесь нет рецептов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-appendicitis",
+      "name": "NHS — Appendicitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/appendicitis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "il-moh-stomach",
+      "name": "Israeli MoH — Stomach pain in children",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/digestive-system/stomach-ache/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

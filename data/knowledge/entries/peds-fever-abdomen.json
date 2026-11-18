@@ -1,0 +1,128 @@
+{
+  "id": "peds-fever-abdomen",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 7,
+  "keywords": {
+    "en": ["baby fever", "infant fever", "child stomach pain", "toddler vomiting", "floppy baby", "fewer wet nappies"],
+    "fr": ["fièvre bébé", "fièvre nourrisson", "mal ventre enfant", "vomissements enfant", "bébé mou", "couches moins mouillées"],
+    "he": ["חום תינוק", "חום פעוט", "כאב בטן ילד", "הקאות ילד", "תינוק רפוי", "פחות חיתולים רטובים"],
+    "ru": ["температура у младенца", "температура у ребёнка", "боль в животе у ребёнка", "рвота у ребёнка", "вялый младенец", "меньше мокрых подгузников"]
+  },
+  "titles": {
+    "en": "Paediatrics — fever & tummy symptoms",
+    "fr": "Pédiatrie — fièvre et symptômes digestifs",
+    "he": "ילדים — חום ותסמיני בטן",
+    "ru": "Педиатрия — лихорадка и симптомы живота"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Young infants with fever need a lower threshold for urgent care. For tummy symptoms, watch dehydration and sudden severe or right-lower pain. Summarized from MedlinePlus, NHS and Israeli MoH public pages — not a diagnosis.",
+      "seeDoctorIf": [
+        "Fever in infant under 2 months (MoH IL) / under 3 months ≥38°C (MedlinePlus/CDC framing) — urgent",
+        "Child looks worse, pale, exhausted, breathing difficulty, drowsier than usual",
+        "Fewer wet nappies / no urine ~6 hours; persistent vomiting or frequent diarrhoea",
+        "No improvement ~48 hours after illness onset when still unwell",
+        "Sudden severe abdominal pain, especially lower right; blood in vomit/stool; jaundice; swollen abdomen; testicular pain in boys"
+      ],
+      "emergencyIf": [
+        "Floppy, difficult to wake, weak continuous cry, not feeding with severe illness",
+        "Blue/grey/pale/blotchy skin; severe breathing difficulty",
+        "Non-blanching rash with illness; seizure; stiff neck"
+      ],
+      "doNot": [
+        "Do not give honey under age 1",
+        "Do not give OTC cough/cold medicines under age 6 (CDC)",
+        "Do not invent paediatric drug doses here"
+      ]
+    },
+    "fr": {
+      "summary": "Chez le nourrisson fébrile, le seuil de consultation urgente est bas. Pour le ventre : surveiller déshydratation et douleur brutale / fosse iliaque droite. Synthèse de pages publiques MedlinePlus, NHS et MoH Israël — pas un diagnostic.",
+      "seeDoctorIf": [
+        "Fièvre < 2 mois (MoH IL) / < 3 mois ≥ 38 °C — urgent",
+        "Enfant plus pâle, épuisé, dyspnée, plus somnolent",
+        "Moins de couches mouillées ; vomissements/diarrhée persistants",
+        "Pas d’amélioration ~48 h si toujours malade",
+        "Douleur abdominale sévère (surtout bas droite), sang, ictère, abdomen gonflé, douleur testiculaire"
+      ],
+      "emergencyIf": [
+        "Bébé mou, difficile à réveiller, cri faible continu, ne mange pas",
+        "Peau bleue/marbrée ; détresse respiratoire",
+        "Éruption qui ne pâlit pas ; convulsion ; raideur de nuque"
+      ],
+      "doNot": [
+        "Pas de miel < 1 an",
+        "Pas de sirops OTC < 6 ans (repère CDC)",
+        "Pas de posologie pédiatrique ici"
+      ]
+    },
+    "he": {
+      "summary": "בתינוקות עם חום סף הפנייה הדחופה נמוך. בכאבי בטן — לשים לב להתייבשות ולכאב פתאומי/ימין תחתון. תקציר ממקורות ציבוריים — לא אבחנה.",
+      "seeDoctorIf": [
+        "חום מתחת לגיל חודשיים / מתחת לגיל 3 חודשים ≥38°C — דחוף",
+        "הילד נראה גרוע יותר, חיוור, ישנוני, קושי נשימה",
+        "פחות חיתולים רטובים; הקאות/שלשולים מתמשכים",
+        "אין שיפור כ־48 שעות ועדיין חולה",
+        "כאב בטן חמור (במיוחד ימין תחתון), דם, צהבת, בטן נפוחה, כאב אשך"
+      ],
+      "emergencyIf": [
+        "תינוק רפוי, קשה להעיר, בכי חלש רציף, לא אוכל",
+        "עור כחלחל/מנומר; מצוקה נשימתית",
+        "פריחה שלא דועכת; פרכוס; נוקשות עורף"
+      ],
+      "doNot": [
+        "לא לתת דבש מתחת לגיל שנה",
+        "אין מינונים לילדים כאן"
+      ]
+    },
+    "ru": {
+      "summary": "У младенцев с лихорадкой низкий порог для срочной помощи. При болях в животе — следить за обезвоживанием и внезапной/правосторонней нижней болью. Сводка публичных страниц — не диагноз.",
+      "seeDoctorIf": [
+        "Лихорадка младше 2 месяцев (MoH IL) / младше 3 месяцев ≥38°C — срочно",
+        "Ребёнок бледнее, истощён, одышка, сонливее",
+        "Меньше мокрых подгузников; стойкая рвота/диарея",
+        "Нет улучшения ~48 часов при сохраняющейся болезни",
+        "Сильная боль в животе (особенно справа внизу), кровь, желтуха, вздутие, боль в яичке"
+      ],
+      "emergencyIf": [
+        "Вялый младенец, трудно разбудить, слабый непрерывный плач, не ест",
+        "Синюшная/пятнистая кожа; тяжёлая одышка",
+        "Небледнеющая сыпь; судороги; ригидность затылка"
+      ],
+      "doNot": [
+        "Не давать мёд до 1 года",
+        "Здесь нет педиатрических дозировок"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "il-moh-fever",
+      "name": "Israeli MoH — Fever in children",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/fever/high-temperature-and-fever/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "il-moh-stomach",
+      "name": "Israeli MoH — Stomach pain in children",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/digestive-system/stomach-ache/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-fever",
+      "name": "MedlinePlus — Fever",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/003090.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-cold",
+      "name": "CDC — Manage common cold",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/common-cold/treatment/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

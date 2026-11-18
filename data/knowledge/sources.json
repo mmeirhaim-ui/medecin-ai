@@ -1,0 +1,228 @@
+{
+  "sources": [
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "topics": ["emergency", "red-flags"]
+    },
+    {
+      "id": "medlineplus-er-adult",
+      "name": "MedlinePlus — When to use the emergency room (adult)",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000593.htm",
+      "topics": ["emergency"]
+    },
+    {
+      "id": "medlineplus-chest-pain",
+      "name": "MedlinePlus — Chest pain",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/003079.htm",
+      "topics": ["cardio"]
+    },
+    {
+      "id": "medlineplus-stroke",
+      "name": "MedlinePlus — Stroke",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/stroke.html",
+      "topics": ["stroke", "neuro"]
+    },
+    {
+      "id": "medlineplus-fever",
+      "name": "MedlinePlus — Fever",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/003090.htm",
+      "topics": ["fever", "peds"]
+    },
+    {
+      "id": "cdc-cold",
+      "name": "CDC — Manage common cold",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/common-cold/treatment/",
+      "topics": ["respiratory"]
+    },
+    {
+      "id": "cdc-sore-throat",
+      "name": "CDC — Sore throat basics",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/sore-throat/about/",
+      "topics": ["ent"]
+    },
+    {
+      "id": "cdc-respiratory",
+      "name": "CDC — About respiratory illnesses",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/respiratory-viruses/about/index.html",
+      "topics": ["respiratory", "emergency"]
+    },
+    {
+      "id": "cdc-flu-care",
+      "name": "CDC — Flu: what to do if you get sick",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/flu/takingcare/",
+      "topics": ["respiratory"]
+    },
+    {
+      "id": "nhs-heart-attack",
+      "name": "NHS — Heart attack",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "topics": ["cardio"]
+    },
+    {
+      "id": "nhs-stroke",
+      "name": "NHS — Stroke symptoms",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+      "topics": ["stroke"]
+    },
+    {
+      "id": "nhs-anaphylaxis",
+      "name": "NHS — Anaphylaxis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "topics": ["allergy"]
+    },
+    {
+      "id": "nhs-sepsis",
+      "name": "NHS — Sepsis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "topics": ["sepsis"]
+    },
+    {
+      "id": "nhs-meningitis",
+      "name": "NHS — Meningitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "topics": ["meningitis", "peds"]
+    },
+    {
+      "id": "nhs-cellulitis",
+      "name": "NHS — Cellulitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cellulitis/",
+      "topics": ["derm"]
+    },
+    {
+      "id": "nhs-rashes-children",
+      "name": "NHS — Rashes in babies and children",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/rashes-babies-and-children/",
+      "topics": ["derm", "peds"]
+    },
+    {
+      "id": "nhs-itchy-skin",
+      "name": "NHS — Itchy skin",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/itchy-skin/",
+      "topics": ["derm"]
+    },
+    {
+      "id": "nhs-diarrhoea-vomiting",
+      "name": "NHS — Diarrhoea and vomiting",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/diarrhoea-and-vomiting/",
+      "topics": ["gi"]
+    },
+    {
+      "id": "nhs-dehydration",
+      "name": "NHS — Dehydration",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dehydration/",
+      "topics": ["gi"]
+    },
+    {
+      "id": "nhs-stomach-ache",
+      "name": "NHS — Stomach ache",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/stomach-ache/",
+      "topics": ["gi"]
+    },
+    {
+      "id": "nhs-appendicitis",
+      "name": "NHS — Appendicitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/appendicitis/",
+      "topics": ["gi"]
+    },
+    {
+      "id": "ameli-chest-pain",
+      "name": "Ameli — Douleur thoracique / urgence",
+      "org": "Assurance Maladie (France)",
+      "url": "https://www.ameli.fr/assure/sante/themes/douleur-thoracique/reconnaitre-agit-urgence",
+      "topics": ["cardio"]
+    },
+    {
+      "id": "has-avc-alert",
+      "name": "HAS — AVC signes d’alerte",
+      "org": "Haute Autorité de Santé",
+      "url": "https://www.has-sante.fr/jcms/p_3701212/fr/accident-vasculaire-cerebral-des-signes-d-alerte-a-votre-retour-a-domicile",
+      "topics": ["stroke"]
+    },
+    {
+      "id": "who-suicide-qa",
+      "name": "WHO — Suicide Q&A",
+      "org": "WHO",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/suicide",
+      "topics": ["mental-health"]
+    },
+    {
+      "id": "who-depression",
+      "name": "WHO — Depression fact sheet",
+      "org": "WHO",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
+      "topics": ["mental-health"]
+    },
+    {
+      "id": "il-moh-fever",
+      "name": "Israeli MoH — Fever in children",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/fever/high-temperature-and-fever/",
+      "topics": ["peds", "fever"]
+    },
+    {
+      "id": "il-moh-stomach",
+      "name": "Israeli MoH — Stomach pain in children",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/digestive-system/stomach-ache/",
+      "topics": ["peds", "gi"]
+    },
+    {
+      "id": "il-moh-stroke",
+      "name": "Israeli MoH — Stroke (older adults)",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/older-adult/keep-me-healthy/common-conditions/stroke/",
+      "topics": ["stroke"]
+    },
+    {
+      "id": "il-moh-mental-crisis",
+      "name": "Israeli MoH — Mental health first aid / crisis",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/mental-health/therapy-rehabilitation/crisis-support/first-aid/",
+      "topics": ["mental-health"]
+    },
+    {
+      "id": "il-moh-sob",
+      "name": "Israeli MoH — Shortness of breath",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/older-adult/keep-me-healthy/common-concerns/shortness-of-breath/",
+      "topics": ["respiratory"]
+    },
+    {
+      "id": "medlineplus-uti-adults",
+      "name": "MedlinePlus — Urinary tract infection (adults)",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/000521.htm",
+      "topics": ["uro"]
+    },
+    {
+      "id": "medlineplus-uti-overview",
+      "name": "MedlinePlus — Urinary Tract Infections",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/urinarytractinfections.html",
+      "topics": ["uro"]
+    }
+  ]
+}
