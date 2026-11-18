@@ -1,0 +1,130 @@
+{
+  "id": "insect-bites-stings",
+  "category": "allergy",
+  "urgencyDefault": "auto_soins",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "insect bite",
+      "wasp sting",
+      "bee sting",
+      "mosquito bite swollen"
+    ],
+    "fr": [
+      "piqûre d'insecte",
+      "piqûre de guêpe",
+      "piqûre d'abeille",
+      "piqûre de moustique gonflée"
+    ],
+    "he": [
+      "עקיצת חרק",
+      "עקיצת צרעה",
+      "עקיצת דבורה",
+      "עקיצת יתוש נפוחה"
+    ],
+    "ru": [
+      "укус насекомого",
+      "укус осы",
+      "укус пчелы",
+      "укус комара отёк"
+    ]
+  },
+  "titles": {
+    "en": "Insect bites and stings",
+    "fr": "Piqûres d'insectes",
+    "he": "עקיצות חרקים",
+    "ru": "Укусы насекомых"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most insect bites/stings improve in a few days. NHS: remove stinger by scraping (not tweezers), wash, ice pack wrapped, elevate, pharmacy antihistamine/hydrocortisone if suitable. Urgent advice if worsening, sting in mouth/throat/near eyes, tummy pain/vomiting, dizziness, fever with swollen glands, multiple stings, or prior severe allergy. Emergency for anaphylaxis features.",
+      "emergencyIf": [
+        "Sudden lip/mouth/throat/tongue swelling",
+        "Struggling to breathe or swallow",
+        "Blue/grey/pale skin or lips",
+        "Confusion, drowsiness, or unresponsive"
+      ],
+      "seeDoctorIf": [
+        "Bite/sting worsening or not improving",
+        "Stung in mouth, throat, or near eyes",
+        "Dizziness, tummy pain/vomiting, fever with glands, multiple stings, prior severe reaction"
+      ],
+      "selfCare": [
+        "Scrape stinger sideways; wash with soap; cold pack up to 20 min; raise the area"
+      ],
+      "doNot": [
+        "Do not squeeze a bee stinger with tweezers",
+        "Do not invent adrenaline doses — use prescribed auto-injector if you have one"
+      ]
+    },
+    "fr": {
+      "summary": "La plupart des piqûres s'améliorent en quelques jours. Retirer le dard en raclant, laver, glace. Urgence si anaphylaxie. Avis urgent si empire, bouche/gorge/yeux, malaise.",
+      "emergencyIf": [
+        "Gonflement lèvres/gorge",
+        "Détresse respiratoire",
+        "Cyanose",
+        "Confusion"
+      ],
+      "seeDoctorIf": [
+        "Aggravation",
+        "Piqûre bouche/gorge/près des yeux",
+        "Vertige, vomissements, fièvre, piqûres multiples"
+      ],
+      "selfCare": [
+        "Racler le dard ; laver ; froid ; surélever"
+      ],
+      "doNot": [
+        "Ne pas pincer le dard avec une pince"
+      ]
+    },
+    "he": {
+      "summary": "רוב העקיצות משתפרות תוך ימים. להסיר עוקץ בגרידה, לשטוף, קרח. חירום באנפילקסיס. ייעוץ דחוף בהחמרה, פה/גרון/עיניים.",
+      "emergencyIf": [
+        "נפיחות שפתיים/גרון",
+        "קושי נשימה",
+        "כחלחלות",
+        "בלבול"
+      ],
+      "seeDoctorIf": [
+        "החמרה",
+        "עקיצה בפה/גרון/ליד עיניים",
+        "סחרחורת, הקאות, חום, עקיצות מרובות"
+      ],
+      "selfCare": [
+        "לגרד עוקץ הצידה; לשטוף; קרח; להרים"
+      ],
+      "doNot": [
+        "לא למשוך עוקץ במלקחיים"
+      ]
+    },
+    "ru": {
+      "summary": "Большинство укусов проходят за дни. Удалить жало соскабливанием, промыть, лёд. Неотложка при анафилаксии. Срочно при ухудшении, укусе во рту/горле/у глаз.",
+      "emergencyIf": [
+        "Отёк губ/горла",
+        "Затруднённое дыхание",
+        "Цианоз",
+        "Спутанность"
+      ],
+      "seeDoctorIf": [
+        "Ухудшение",
+        "Укус во рту/горле/у глаз",
+        "Головокружение, рвота, лихорадка, множественные укусы"
+      ],
+      "selfCare": [
+        "Соскоблить жало; промыть; холод; приподнять"
+      ],
+      "doNot": [
+        "Не вытаскивать жало пинцетом"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-insect-bites",
+      "name": "NHS — Insect bites and stings",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/insect-bites-and-stings/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

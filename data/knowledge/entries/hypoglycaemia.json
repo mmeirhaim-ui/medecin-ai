@@ -1,0 +1,109 @@
+{
+  "id": "hypoglycaemia",
+  "category": "endocrine",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "hypoglycaemia",
+      "low blood sugar",
+      "hypo shaking sweaty",
+      "blood sugar too low"
+    ],
+    "fr": [
+      "hypoglycémie",
+      "sucre bas",
+      "hypo tremblements sueurs",
+      "glycémie trop basse"
+    ],
+    "he": [
+      "היפוגליקמיה",
+      "סוכר נמוך",
+      "רעד והזעה מסוכר נמוך"
+    ],
+    "ru": [
+      "гипогликемия",
+      "низкий сахар",
+      "гипо дрожь пот"
+    ]
+  },
+  "titles": {
+    "en": "Low blood sugar (hypoglycaemia)",
+    "fr": "Hypoglycémie",
+    "he": "היפוגליקמיה",
+    "ru": "Гипогликемия"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Hypos can cause shaking, sweating, hunger, confusion, irritability, and if severe — seizures or unconsciousness. NHS: treat mild hypos with fast-acting carbohydrate per diabetes care plan; emergency if severe/unconscious. This pack never invents insulin or exact gram protocols beyond urging follow of the person's prescribed plan / emergency services.",
+      "emergencyIf": [
+        "Unconscious or having a seizure with suspected low sugar",
+        "Unable to swallow safely",
+        "Severe confusion not improving after usual hypo treatment"
+      ],
+      "seeDoctorIf": [
+        "Repeated hypos",
+        "Unsure how to manage diabetes lows — diabetes team/GP"
+      ],
+      "doNot": [
+        "Do not give food/drink if unconscious",
+        "Do not invent insulin dose changes",
+        "Do not put anything in the mouth if not alert"
+      ]
+    },
+    "fr": {
+      "summary": "L'hypoglycémie : tremblements, sueurs, faim, confusion ; sévère = convulsions/inconscience. Traiter selon plan diabète ; urgence si grave. Pas d'insulinothérapie inventée.",
+      "emergencyIf": [
+        "Inconscient ou convulsions",
+        "Impossible d'avaler",
+        "Confusion sévère"
+      ],
+      "seeDoctorIf": [
+        "Hypoglycémies répétées"
+      ],
+      "doNot": [
+        "Rien dans la bouche si inconscient",
+        "Pas de changements d'insuline inventés"
+      ]
+    },
+    "he": {
+      "summary": "היפו: רעד, הזעה, רעב, בלבול; חמור — פרכוס/איבוד הכרה. לטפל לפי תוכנית סוכרת; חירום אם חמור. אין שינוי אינסולין מומצא.",
+      "emergencyIf": [
+        "מחוסר הכרה או פרכוס",
+        "לא יכול לבלוע בבטחה",
+        "בלבול חמור"
+      ],
+      "seeDoctorIf": [
+        "היפו חוזר"
+      ],
+      "doNot": [
+        "לא לתת אוכל/שתייה אם מחוסר הכרה",
+        "אין שינוי מינון אינסולין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Гипо: дрожь, пот, голод, спутанность; тяжёлая — судороги/бессознательное состояние. Лечить по плану диабета; неотложка если тяжело. Инсулин не менять самостоятельно здесь.",
+      "emergencyIf": [
+        "Без сознания или судороги",
+        "Нельзя безопасно глотать",
+        "Тяжёлая спутанность"
+      ],
+      "seeDoctorIf": [
+        "Повторные гипо"
+      ],
+      "doNot": [
+        "Ничего в рот без сознания",
+        "Не изобретать изменения доз инсулина"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hypoglycaemia",
+      "name": "NHS — Low blood sugar (hypoglycaemia)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

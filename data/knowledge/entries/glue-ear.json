@@ -1,0 +1,90 @@
+{
+  "id": "glue-ear",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "glue ear",
+      "hearing muffled child",
+      "fluid behind eardrum"
+    ],
+    "fr": [
+      "otite séreuse",
+      "oreille collée",
+      "audition assourdie enfant"
+    ],
+    "he": [
+      "אוזן דביקה",
+      "שמיעה מעומעמת בילד",
+      "נוזל מאחורי עור התוף"
+    ],
+    "ru": [
+      "экссудативный отит",
+      "приглушённый слух у ребёнка",
+      "жидкость за барабанной перепонкой"
+    ]
+  },
+  "titles": {
+    "en": "Glue ear (otitis media with effusion)",
+    "fr": "Otite séromuqueuse",
+    "he": "אוזן דביקה",
+    "ru": "Экссудативный средний отит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Glue ear is fluid behind the eardrum causing muffled hearing, often after colds in children. NHS: many cases improve; see GP/hearing check if hearing problems persist. Not the same as acute painful ear infection. No inventing decongestant or antibiotic regimens.",
+      "seeDoctorIf": [
+        "Hearing problems lasting weeks",
+        "Speech delay concerns with hearing",
+        "Painful red ear with fever (possible acute infection — different pathway)"
+      ],
+      "doNot": [
+        "Do not invent antibiotics for glue ear",
+        "Do not ignore persistent hearing loss"
+      ]
+    },
+    "fr": {
+      "summary": "L'otite séreuse : liquide derrière le tympan, audition assourdie. Souvent amélioration ; médecin si persistance. Pas d'antibiotiques inventés.",
+      "seeDoctorIf": [
+        "Baisse d'audition prolongée",
+        "Retard de langage",
+        "Oreille rouge douloureuse fébrile"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés pour otite séreuse"
+      ]
+    },
+    "he": {
+      "summary": "אוזן דביקה: נוזל מאחורי התוף, שמיעה מעומעמת. לרוב משתפר; רופא אם נמשך. אין אנטיביוטיקה מומצאת.",
+      "seeDoctorIf": [
+        "בעיית שמיעה שנמשכת שבועות",
+        "חשש לעיכוב שפה",
+        "אוזן אדומה כואבת עם חום"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת לאוזן דביקה"
+      ]
+    },
+    "ru": {
+      "summary": "Экссудативный отит: жидкость за перепонкой, приглушённый слух. Часто проходит; врач если длится. Антибиотики не выдумывать.",
+      "seeDoctorIf": [
+        "Проблемы со слухом неделями",
+        "Задержка речи",
+        "Красное болезненное ухо с лихорадкой"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики при экссудативном отите"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-glue-ear",
+      "name": "NHS — Glue ear",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/glue-ear/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

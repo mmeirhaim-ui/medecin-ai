@@ -1,0 +1,106 @@
+{
+  "id": "mouth-ulcers",
+  "category": "ent",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "mouth ulcer",
+      "canker sore",
+      "aphthous ulcer"
+    ],
+    "fr": [
+      "aphte",
+      "ulcération buccale",
+      "plaie dans la bouche"
+    ],
+    "he": [
+      "אפטה",
+      "כיב בפה",
+      "פצע בפה"
+    ],
+    "ru": [
+      "афта",
+      "язва во рту",
+      "ранка во рту"
+    ]
+  },
+  "titles": {
+    "en": "Mouth ulcers",
+    "fr": "Aphtes",
+    "he": "אפטות / כיבים בפה",
+    "ru": "Афты / язвы во рту"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most mouth ulcers heal in 1–2 weeks. NHS: soft foods, avoid spicy/acidic triggers; pharmacy gels. See dentist/GP if lasting >3 weeks, unusual, bleeding/more painful, or ulcers elsewhere/joints swollen. No inventing steroid mouth regimens.",
+      "seeDoctorIf": [
+        "Ulcer lasting longer than 3 weeks",
+        "Different/larger than usual",
+        "Bleeding or increasingly painful/red",
+        "Ulcers elsewhere on body or painful swollen joints"
+      ],
+      "selfCare": [
+        "Soft toothbrush; cool drinks; soft foods; pharmacy mouth treatments"
+      ],
+      "doNot": [
+        "Do not invent steroid mouth sprays/tablets",
+        "Do not ignore ulcers >3 weeks"
+      ]
+    },
+    "fr": {
+      "summary": "Les aphtes guérissent souvent en 1–2 semaines. Aliments doux ; pharmacie. Dentiste/médecin si >3 semaines ou atypique. Pas de corticoïdes buccaux inventés.",
+      "seeDoctorIf": [
+        "Aphte > 3 semaines",
+        "Plus gros/atypique",
+        "Saignement / plus douloureux",
+        "Autres ulcères / articulations"
+      ],
+      "selfCare": [
+        "Brosse souple ; aliments mous ; traitements pharmacie"
+      ],
+      "doNot": [
+        "Pas de corticoïdes buccaux inventés"
+      ]
+    },
+    "he": {
+      "summary": "אפטות לרוב נרפאות תוך 1–2 שבועות. מזון רך; בית מרקחת. רופא שיניים/רופא אם מעל 3 שבועות או חריג. אין סטרואידים לפה מומצאים.",
+      "seeDoctorIf": [
+        "כיב מעל 3 שבועות",
+        "חריג/גדול מהרגיל",
+        "דימום / כואב יותר",
+        "כיבים במקומות אחרים / מפרקים"
+      ],
+      "selfCare": [
+        "מברשת רכה; מזון רך; טיפול בית מרקחת"
+      ],
+      "doNot": [
+        "אין סטרואידים לפה מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Афты обычно заживают за 1–2 недели. Мягкая еда; аптека. Стоматолог/врач если >3 недель или атипично. Стероиды для рта не выдумывать.",
+      "seeDoctorIf": [
+        "Язва >3 недель",
+        "Необычная/крупнее",
+        "Кровотечение / больнее",
+        "Язвы на теле / суставы"
+      ],
+      "selfCare": [
+        "Мягкая щётка; мягкая еда; аптечные средства"
+      ],
+      "doNot": [
+        "Не изобретать стероиды для рта"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-mouth-ulcers",
+      "name": "NHS — Mouth ulcers",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/mouth-ulcers/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

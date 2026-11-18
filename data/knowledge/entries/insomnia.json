@@ -1,0 +1,99 @@
+{
+  "id": "insomnia",
+  "category": "psych",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "insomnia",
+      "cannot sleep",
+      "lying awake all night"
+    ],
+    "fr": [
+      "insomnie",
+      "n'arrive pas à dormir",
+      "éveillé toute la nuit"
+    ],
+    "he": [
+      "נדודי שינה",
+      "לא מצליח להירדם",
+      "ער כל הלילה"
+    ],
+    "ru": [
+      "бессонница",
+      "не могу уснуть",
+      "не сплю всю ночь"
+    ]
+  },
+  "titles": {
+    "en": "Insomnia (sleep difficulty)",
+    "fr": "Insomnie",
+    "he": "נדודי שינה",
+    "ru": "Бессонница"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Insomnia is difficulty falling or staying asleep. NHS: sleep hygiene (regular schedule, wind-down, limit caffeine/screens); GP if lasting weeks or affecting life. Sleeping tablets are clinician-prescribed short-term only — never invent regimens. Screen for depression/anxiety/crisis separately.",
+      "seeDoctorIf": [
+        "Sleep problems lasting weeks",
+        "Daytime function severely affected",
+        "Possible depression/anxiety contributing"
+      ],
+      "selfCare": [
+        "Regular sleep/wake times; dark cool room; limit caffeine/alcohol late; wind-down routine"
+      ],
+      "doNot": [
+        "Do not invent hypnotic/benzodiazepine regimens",
+        "Do not use alcohol as a sleep aid"
+      ]
+    },
+    "fr": {
+      "summary": "L'insomnie gêne l'endormissement/maintien du sommeil. Hygiène du sommeil ; médecin si prolongé. Pas d'hypnotiques inventés.",
+      "seeDoctorIf": [
+        "Problèmes de sommeil depuis des semaines",
+        "Retentissement diurne majeur"
+      ],
+      "selfCare": [
+        "Horaires réguliers ; limiter caféine/écrans"
+      ],
+      "doNot": [
+        "Pas d'hypnotiques/benzodiazépines inventés"
+      ]
+    },
+    "he": {
+      "summary": "נדודי שינה: קושי להירדם/לישון. היגיינת שינה; רופא אם ממושך. אין כדורי שינה מומצאים.",
+      "seeDoctorIf": [
+        "בעיות שינה במשך שבועות",
+        "פגיעה בתפקוד יומי"
+      ],
+      "selfCare": [
+        "שעות קבועות; להגביל קפאין/מסכים"
+      ],
+      "doNot": [
+        "אין כדורי שינה/בנזודיאזפינים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Бессонница: трудно заснуть/спать. Гигиена сна; врач если длится. Снотворные не выдумывать.",
+      "seeDoctorIf": [
+        "Проблемы со сном неделями",
+        "Сильное нарушение дневной жизни"
+      ],
+      "selfCare": [
+        "Режим; ограничить кофеин/экраны"
+      ],
+      "doNot": [
+        "Не изобретать снотворные/бензодиазепины"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-insomnia",
+      "name": "NHS — Insomnia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/insomnia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

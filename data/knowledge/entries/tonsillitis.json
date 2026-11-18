@@ -1,0 +1,119 @@
+{
+  "id": "tonsillitis",
+  "category": "ent",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "tonsillitis",
+      "swollen tonsils white spots",
+      "sore throat tonsils"
+    ],
+    "fr": [
+      "amygdalite",
+      "angine amygdales",
+      "amygdales gonflées points blancs"
+    ],
+    "he": [
+      "דלקת שקדים",
+      "שקדים נפוחים נקודות לבנות",
+      "כאב גרון שקדים"
+    ],
+    "ru": [
+      "тонзиллит",
+      "опухшие миндалины белые точки",
+      "боль в горле миндалины"
+    ]
+  },
+  "titles": {
+    "en": "Tonsillitis",
+    "fr": "Amygdalite / angine",
+    "he": "דלקת שקדים",
+    "ru": "Тонзиллит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Tonsillitis causes sore throat, swollen tonsils, sometimes white spots, fever, difficulty swallowing. NHS: fluids, rest, soft foods, pharmacy pain relief; antibiotics only if clinician judges bacterial. Urgent care for breathing difficulty, drooling, severe swelling, or inability to swallow fluids. No invented antibiotic courses.",
+      "emergencyIf": [
+        "Severe breathing difficulty",
+        "Unable to swallow saliva / drooling with severe throat swelling"
+      ],
+      "seeDoctorIf": [
+        "Severe sore throat lasting more than a few days",
+        "High fever",
+        "Not able to swallow fluids comfortably",
+        "Recurrent tonsillitis"
+      ],
+      "selfCare": [
+        "Fluids; rest; soft foods; paracetamol/ibuprofen if suitable per label"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not ignore breathing difficulty"
+      ]
+    },
+    "fr": {
+      "summary": "L'amygdalite provoque mal de gorge, amygdales gonflées, parfois points blancs. Hydratation, repos ; antibiotiques seulement si avis médical. Urgence si détresse/salive impossible.",
+      "emergencyIf": [
+        "Détresse respiratoire",
+        "Impossible d'avaler la salive"
+      ],
+      "seeDoctorIf": [
+        "Angine sévère prolongée",
+        "Forte fièvre",
+        "Difficulté à boire"
+      ],
+      "selfCare": [
+        "Boire ; repos ; aliments mous"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת שקדים: כאב גרון, שקדים נפוחים, לעיתים נקודות לבנות. נוזלים, מנוחה; אנטיביוטיקה רק לפי רופא. חירום בקושי נשימה/ריור.",
+      "emergencyIf": [
+        "קושי נשימה חמור",
+        "לא יכול לבלוע רוק"
+      ],
+      "seeDoctorIf": [
+        "כאב גרון חזק ממושך",
+        "חום גבוה",
+        "קושי לשתות"
+      ],
+      "selfCare": [
+        "נוזלים; מנוחה; מזון רך"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Тонзиллит: боль в горле, отёк миндалин, иногда белые точки. Жидкость, покой; антибиотики только по решению врача. Неотложка при одышке/слюнотечении.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Нельзя проглотить слюну"
+      ],
+      "seeDoctorIf": [
+        "Сильная длительная боль в горле",
+        "Высокая лихорадка",
+        "Трудно пить"
+      ],
+      "selfCare": [
+        "Жидкость; покой; мягкая еда"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-tonsillitis",
+      "name": "NHS — Tonsillitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/tonsillitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

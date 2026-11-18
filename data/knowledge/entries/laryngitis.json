@@ -1,0 +1,103 @@
+{
+  "id": "laryngitis",
+  "category": "ent",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "laryngitis",
+      "lost my voice",
+      "hoarse voice sore throat"
+    ],
+    "fr": [
+      "laryngite",
+      "voix éraillée",
+      "extinction de voix"
+    ],
+    "he": [
+      "דלקת גרון תיבת קול",
+      "איבדתי את הקול",
+      "צרידות"
+    ],
+    "ru": [
+      "ларингит",
+      "осипший голос",
+      "пропал голос"
+    ]
+  },
+  "titles": {
+    "en": "Laryngitis (hoarse voice)",
+    "fr": "Laryngite (voix enrouée)",
+    "he": "דלקת גרון / צרידות",
+    "ru": "Ларингит (охриплость)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Laryngitis often follows a cold and causes hoarseness or voice loss. NHS: rest the voice, fluids, steam/humid air, avoid smoke; usually improves in 1–2 weeks. See a GP if lasting longer, difficulty breathing, or blood in spit. No inventing steroid courses for voice.",
+      "seeDoctorIf": [
+        "Hoarseness lasting more than 2–3 weeks",
+        "Difficulty breathing",
+        "Coughing up blood",
+        "Unexplained weight loss with voice change"
+      ],
+      "selfCare": [
+        "Voice rest; fluids; avoid whispering/shouting; humidify air; no smoking"
+      ],
+      "doNot": [
+        "Do not invent oral steroid regimens for laryngitis",
+        "Do not ignore prolonged hoarseness (possible other causes)"
+      ]
+    },
+    "fr": {
+      "summary": "La laryngite enroue la voix. Repos vocal, hydratation ; amélioration souvent en 1–2 semaines. Médecin si prolongé ou dyspnée. Pas de corticoïdes inventés.",
+      "seeDoctorIf": [
+        "Enrouement > 2–3 semaines",
+        "Dyspnée",
+        "Crachats de sang"
+      ],
+      "selfCare": [
+        "Repos de la voix ; boire ; éviter fumée"
+      ],
+      "doNot": [
+        "Pas de corticoïdes oraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת גרון גורמת לצרידות. מנוחת קול, נוזלים; לרוב משתפר תוך 1–2 שבועות. רופא אם ממושך או קושי נשימה. אין סטרואידים מומצאים.",
+      "seeDoctorIf": [
+        "צרידות מעל 2–3 שבועות",
+        "קושי נשימה",
+        "דם בשיעול"
+      ],
+      "selfCare": [
+        "מנוחת קול; שתייה; להימנע מעישון"
+      ],
+      "doNot": [
+        "אין סטרואידים פומיים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Ларингит даёт охриплость. Покой голоса, жидкость; обычно 1–2 недели. Врач если длится или одышка. Стероиды не выдумывать.",
+      "seeDoctorIf": [
+        "Охриплость >2–3 недель",
+        "Одышка",
+        "Кровь в мокроте"
+      ],
+      "selfCare": [
+        "Покой голоса; пить; без дыма"
+      ],
+      "doNot": [
+        "Не изобретать пероральные стероиды"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-laryngitis",
+      "name": "NHS — Laryngitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/laryngitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
