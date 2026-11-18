@@ -1,0 +1,99 @@
+{
+  "id": "cradle-cap",
+  "category": "peds",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "cradle cap",
+      "baby greasy scalp scales",
+      "infant seborrheic dermatitis scalp"
+    ],
+    "fr": [
+      "croûtes de lait",
+      "squames grasses cuir chevelu bébé"
+    ],
+    "he": [
+      "כובע עריסה",
+      "קשקשים שומניים בקרקפת תינוק"
+    ],
+    "ru": [
+      "себорейный дерматит новорождённых",
+      "молочные корочки на голове"
+    ]
+  },
+  "titles": {
+    "en": "Cradle cap",
+    "fr": "Croûtes de lait",
+    "he": "כובע עריסה",
+    "ru": "Молочные корочки"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Cradle cap is common and usually harmless greasy yellow scales on a baby's scalp. NHS: gentle washing; soften scales with baby oil if advised; do not pick aggressively. See a GP/pharmacist if inflamed, spreading, or baby unwell.",
+      "seeDoctorIf": [
+        "Scalp looks infected (red, weeping, spreading)",
+        "Baby seems unwell",
+        "Not improving with gentle care"
+      ],
+      "selfCare": [
+        "Wash hair regularly with mild baby shampoo; soften scales gently; do not scratch off hard"
+      ],
+      "doNot": [
+        "Do not pick crusts forcefully",
+        "Do not invent steroid scalp regimens for infants"
+      ]
+    },
+    "fr": {
+      "summary": "Les croûtes de lait sont fréquentes et souvent bénignes. Lavage doux ; ne pas gratter fort. Médecin si inflammation/infection.",
+      "seeDoctorIf": [
+        "Aspect infecté",
+        "Bébé malade",
+        "Pas d'amélioration"
+      ],
+      "selfCare": [
+        "Shampoing doux ; assouplir les squames"
+      ],
+      "doNot": [
+        "Ne pas arracher les croûtes"
+      ]
+    },
+    "he": {
+      "summary": "כובע עריסה נפוץ ולרוב לא מסוכן. שטיפה עדינה; לא לקרוע. רופא אם דלקת/זיהום.",
+      "seeDoctorIf": [
+        "מראה מזוהם",
+        "תינוק לא מרגיש טוב",
+        "אין שיפור"
+      ],
+      "selfCare": [
+        "שמפו עדין; ריכוך קשקשים"
+      ],
+      "doNot": [
+        "לא לקרוע גלדים בכוח"
+      ]
+    },
+    "ru": {
+      "summary": "Молочные корочки часты и обычно безвредны. Мягкое мытьё; не сдирать. Врач при воспалении/инфекции.",
+      "seeDoctorIf": [
+        "Признаки инфекции",
+        "Ребёнок плохо себя чувствует",
+        "Нет улучшения"
+      ],
+      "selfCare": [
+        "Мягкий шампунь; размягчать чешуйки"
+      ],
+      "doNot": [
+        "Не сдирать корки силой"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-cradle-cap",
+      "name": "NHS — Cradle cap",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cradle-cap/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

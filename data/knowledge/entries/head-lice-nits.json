@@ -1,0 +1,99 @@
+{
+  "id": "head-lice-nits",
+  "category": "peds",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "head lice",
+      "nits",
+      "itchy scalp lice"
+    ],
+    "fr": [
+      "poux",
+      "lentes",
+      "cuir chevelu qui démange poux"
+    ],
+    "he": [
+      "כינים",
+      "ביצי כינים",
+      "גרד קרקפת כינים"
+    ],
+    "ru": [
+      "вши",
+      "гниды",
+      "зуд кожи головы вши"
+    ]
+  },
+  "titles": {
+    "en": "Head lice and nits",
+    "fr": "Poux et lentes",
+    "he": "כינים וביצים",
+    "ru": "Вши и гниды"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Head lice are common in children. NHS: wet combing and/or pharmacy lotions; treat only if live lice found; check household. See pharmacist/GP if treatment fails or scalp infected.",
+      "seeDoctorIf": [
+        "Treatment not working",
+        "Scalp looks infected",
+        "Unsure how to treat"
+      ],
+      "selfCare": [
+        "Detection combing; pharmacy products as directed; wash bedding; avoid sharing brushes"
+      ],
+      "doNot": [
+        "Do not invent pesticide regimens beyond product labels",
+        "Do not treat 'just in case' without live lice if advised otherwise"
+      ]
+    },
+    "fr": {
+      "summary": "Les poux sont fréquents. Peignage humide et/ou lotions pharmacie si poux vivants. Médecin/pharmacien si échec.",
+      "seeDoctorIf": [
+        "Échec du traitement",
+        "Infection du cuir chevelu"
+      ],
+      "selfCare": [
+        "Peignage ; produits pharmacie ; ne pas partager brosses"
+      ],
+      "doNot": [
+        "Pas de schémas inventés hors notice"
+      ]
+    },
+    "he": {
+      "summary": "כינים נפוצות בילדים. סירוק רטוב ו/או תכשירים בבית מרקחת אם יש כינים חיות. רוקח/רופא בכישלון.",
+      "seeDoctorIf": [
+        "טיפול לא עוזר",
+        "זיהום בקרקפת"
+      ],
+      "selfCare": [
+        "סירוק; תכשירי בית מרקחת; לא לשתף מברשות"
+      ],
+      "doNot": [
+        "אין משטר מומצא מעבר להוראות"
+      ]
+    },
+    "ru": {
+      "summary": "Вши часты у детей. Влажное вычёсывание и/или аптечные средства при живых вшах. Фармацевт/врач при неудаче.",
+      "seeDoctorIf": [
+        "Лечение не помогает",
+        "Инфекция кожи головы"
+      ],
+      "selfCare": [
+        "Вычёсывание; аптечные средства; не делиться расчёсками"
+      ],
+      "doNot": [
+        "Не изобретать схемы вне инструкции"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-head-lice",
+      "name": "NHS — Head lice and nits",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/head-lice-and-nits/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

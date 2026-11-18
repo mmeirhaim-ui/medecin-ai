@@ -1,0 +1,110 @@
+{
+  "id": "miscarriage-bleeding",
+  "category": "pregnancy",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "miscarriage",
+      "pregnant bleeding spotting",
+      "pregnancy cramping bleeding"
+    ],
+    "fr": [
+      "fausse couche",
+      "saignement grossesse",
+      "crampes grossesse saignement"
+    ],
+    "he": [
+      "הפלה",
+      "דימום בהריון",
+      "כיווצים ודימום בהריון"
+    ],
+    "ru": [
+      "выкидыш",
+      "кровотечение при беременности",
+      "схватки и кровотечение беременность"
+    ]
+  },
+  "titles": {
+    "en": "Miscarriage / bleeding in pregnancy cues",
+    "fr": "Fausse couche / saignement de grossesse",
+    "he": "הפלה / דימום בהריון",
+    "ru": "Выкидыш / кровотечение при беременности"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Vaginal bleeding before 24 weeks may be a miscarriage and needs maternity assessment. NHS urgent help for light bleeding/spotting or unusual discharge/fluid leak. Emergency (call services) for severe tummy pain, shoulder pain, feeling sick/faint/dizzy/unconscious, or heavy bleeding soaking a pad quickly. Management options are clinical — never invent medicines or procedures here. Overlaps with ectopic/pregnancy-bleeding red-flag entries when severe.",
+      "emergencyIf": [
+        "Pregnant with vaginal bleeding and severe tummy pain",
+        "Shoulder pain with pregnancy bleeding",
+        "Feeling sick, faint, dizzy or losing consciousness",
+        "Heavy bleeding soaking a period pad soon after putting it on"
+      ],
+      "seeDoctorIf": [
+        "Any light bleeding/spotting in pregnancy",
+        "Unusual vaginal discharge or fluid leaking while pregnant"
+      ],
+      "doNot": [
+        "Do not invent miscarriage medicines or dosing",
+        "Do not wait at home with severe pain or heavy bleeding"
+      ]
+    },
+    "fr": {
+      "summary": "Un saignement avant 24 SA peut être une fausse couche — avis maternité. Urgence si douleur sévère, douleur d'épaule, malaise/syncope, saignement abondant. Pas de médicaments inventés.",
+      "emergencyIf": [
+        "Saignement + douleur abdominale sévère",
+        "Douleur d'épaule",
+        "Malaise/syncope",
+        "Saignement abondant saturant une protection rapidement"
+      ],
+      "seeDoctorIf": [
+        "Tout spotting/saignement léger",
+        "Pertes inhabituelles ou liquide"
+      ],
+      "doNot": [
+        "Pas de médicaments de fausse couche inventés"
+      ]
+    },
+    "he": {
+      "summary": "דימום לפני שבוע 24 עלול להיות הפלה — ייעוץ יולדות. חירום בכאב חזק, כאב כתף, סחרחורת/התעלפות, דימום כבד. אין תרופות מומצאות.",
+      "emergencyIf": [
+        "דימום + כאב בטן חזק",
+        "כאב כתף",
+        "בחילה/עילפון",
+        "דימום כבד שספוג תחבושת במהירות"
+      ],
+      "seeDoctorIf": [
+        "כל דימום קל/ספוטינג",
+        "הפרשות חריגות או דליפת נוזל"
+      ],
+      "doNot": [
+        "אין תרופות להפלה מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Кровотечение до 24 недель может быть выкидышем — к акушерам. Неотложка при сильной боли, боли в плече, обмороке, обильном кровотечении. Лекарства не выдумывать.",
+      "emergencyIf": [
+        "Кровотечение + сильная боль в животе",
+        "Боль в плече",
+        "Тошнота/обморок",
+        "Обильное кровотечение, быстро пропитывающее прокладку"
+      ],
+      "seeDoctorIf": [
+        "Любое лёгкое кровотечение/ spotting",
+        "Необычные выделения или подтекание жидкости"
+      ],
+      "doNot": [
+        "Не изобретать лекарства при выкидыше"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-miscarriage",
+      "name": "NHS — Miscarriage",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/miscarriage/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

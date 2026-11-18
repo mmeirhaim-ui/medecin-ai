@@ -1,0 +1,115 @@
+{
+  "id": "mumps",
+  "category": "infectious",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "mumps",
+      "swollen jaw glands",
+      "parotitis"
+    ],
+    "fr": [
+      "oreillons",
+      "parotidite",
+      "gonflement mâchoire"
+    ],
+    "he": [
+      "חזרת",
+      "נפיחות בבלוטות הרוק",
+      "פרוטיטיס"
+    ],
+    "ru": [
+      "свинка",
+      "эпидемический паротит",
+      "отёк околоушных желёз"
+    ]
+  },
+  "titles": {
+    "en": "Mumps",
+    "fr": "Oreillons",
+    "he": "חזרת",
+    "ru": "Эпидемический паротит (свинка)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Mumps causes fever and painful swelling of salivary glands (often jaw angle). NHS: see a GP; rest, fluids; highly contagious — stay off school/work as advised. Urgent care for severe headache/stiff neck (meningitis), testicular pain, or breathing difficulty. Vaccination prevents mumps; no inventing antivirals.",
+      "emergencyIf": [
+        "Severe headache or stiff neck with mumps",
+        "Severe testicular pain",
+        "Difficulty breathing/swallowing"
+      ],
+      "seeDoctorIf": [
+        "Suspected mumps",
+        "Contact if pregnant/immunocompromised — clinical advice"
+      ],
+      "selfCare": [
+        "Rest; fluids; soft foods; isolation as advised"
+      ],
+      "doNot": [
+        "Do not invent antivirals",
+        "Do not attend school/work while advised contagious"
+      ]
+    },
+    "fr": {
+      "summary": "Les oreillons : fièvre et gonflement des parotides. Médecin ; repos. Urgence si méningisme, douleur testiculaire, dyspnée. Pas d'antiviraux inventés.",
+      "emergencyIf": [
+        "Céphalée sévère / raideur de nuque",
+        "Douleur testiculaire sévère",
+        "Dyspnée"
+      ],
+      "seeDoctorIf": [
+        "Suspicion d'oreillons"
+      ],
+      "selfCare": [
+        "Repos ; boire ; isolement selon conseil"
+      ],
+      "doNot": [
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "חזרת: חום ונפיחות בבלוטות רוק. רופא; מנוחה. חירום בכאב ראש/נוקשות עורף, כאב אשך, קושי נשימה. אין אנטי-ויראלי מומצא.",
+      "emergencyIf": [
+        "כאב ראש חזק / נוקשות עורף",
+        "כאב אשך חזק",
+        "קושי נשימה"
+      ],
+      "seeDoctorIf": [
+        "חשד לחזרת"
+      ],
+      "selfCare": [
+        "מנוחה; שתייה; בידוד לפי ייעוץ"
+      ],
+      "doNot": [
+        "אין אנטי-ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Свинка: лихорадка и отёк слюнных желёз. К врачу; покой. Неотложка при менингизме, боли в яичке, одышке. Противовирусные не выдумывать.",
+      "emergencyIf": [
+        "Сильная головная боль / ригидность шеи",
+        "Сильная боль в яичке",
+        "Одышка"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на паротит"
+      ],
+      "selfCare": [
+        "Покой; жидкость; изоляция по совету"
+      ],
+      "doNot": [
+        "Не изобретать противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-mumps",
+      "name": "NHS — Mumps",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/mumps/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

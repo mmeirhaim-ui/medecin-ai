@@ -230,6 +230,26 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\bhypoglyc[ée]mie\b/i,
   /\bהיפוגליקמיה\b/u,
   /\bгипогликеми/iu,
+
+  // Vomiting blood / GI bleed
+  /\bvomit(ing)?\s+blood\b/i,
+  /\bhematemesis\b/i,
+  /\bvomissements?\s+de\s+sang\b/i,
+  /\bהקאת\s+דם\b/u,
+  /\bрвота\s+кровью\b/iu,
+
+  // Quinsy
+  /\bquinsy\b/i,
+  /\bperitonsillar\s+abscess\b/i,
+  /\bphlegmon\s+p[ée]ri[\s-]?amygdal/i,
+  /\bמורסה\s+(ליד|סביב)\s+שקד\b/u,
+  /\bпаратонзиллярн/iu,
+
+  // Sudden hearing loss
+  /\bsudden\s+hearing\s+loss\b/i,
+  /\bsurdit[ée]\s+brutale\b/i,
+  /\bירידת\s+שמיעה\s+פתאומית\b/u,
+  /\bвнезапн\w*\s+потеря\s+слуха\b/iu,
 ];
 
 const NEGATION =

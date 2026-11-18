@@ -1,0 +1,96 @@
+{
+  "id": "leg-cramps",
+  "category": "msk",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "leg cramps",
+      "charley horse",
+      "night calf cramp"
+    ],
+    "fr": [
+      "crampes aux jambes",
+      "crampe de mollet la nuit"
+    ],
+    "he": [
+      "התכווצויות רגליים",
+      "התכווצות שוק בלילה"
+    ],
+    "ru": [
+      "судороги в ногах",
+      "ночная судорога икры"
+    ]
+  },
+  "titles": {
+    "en": "Leg cramps",
+    "fr": "Crampes des jambes",
+    "he": "התכווצויות רגליים",
+    "ru": "Судороги ног"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Leg cramps are sudden painful muscle contractions, often at night. NHS: stretch and massage; gentle walking; stay hydrated. See a GP if very frequent, severe, or with swelling/redness (possible clot/other cause). No inventing quinine regimens.",
+      "seeDoctorIf": [
+        "Very frequent or severe cramps",
+        "Cramps with leg swelling, redness, or shortness of breath",
+        "Cramps only in one leg with other DVT cues"
+      ],
+      "selfCare": [
+        "Stretch the muscle; massage; heat/cold as tolerated; regular gentle exercise; fluids"
+      ],
+      "doNot": [
+        "Do not invent quinine or muscle-relaxant doses",
+        "Do not ignore unilateral swollen painful leg (DVT pathway)"
+      ]
+    },
+    "fr": {
+      "summary": "Les crampes sont des contractions douloureuses, souvent nocturnes. Étirement, hydratation. Médecin si fréquentes ou avec signes de phlébite. Pas de quinine inventée.",
+      "seeDoctorIf": [
+        "Crampes très fréquentes",
+        "Avec gonflement/rougeur / dyspnée"
+      ],
+      "selfCare": [
+        "Étirer ; masser ; boire"
+      ],
+      "doNot": [
+        "Pas de quinine inventée"
+      ]
+    },
+    "he": {
+      "summary": "התכווצויות רגליים כואבות, לרוב בלילה. מתיחה, שתייה. רופא אם תכופות או עם סימני קריש. אין כינין מומצא.",
+      "seeDoctorIf": [
+        "התכווצויות תכופות מאוד",
+        "עם נפיחות/אודם / קוצר נשימה"
+      ],
+      "selfCare": [
+        "מתיחה; עיסוי; שתייה"
+      ],
+      "doNot": [
+        "אין כינין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Судороги ног — внезапные болезненные сокращения, часто ночью. Растяжка, жидкость. Врач если частые или с признаками тромбоза. Хинин не выдумывать.",
+      "seeDoctorIf": [
+        "Очень частые судороги",
+        "С отёком/краснотой / одышкой"
+      ],
+      "selfCare": [
+        "Растянуть; массаж; пить"
+      ],
+      "doNot": [
+        "Не изобретать хинин"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-leg-cramps",
+      "name": "NHS — Leg cramps",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/leg-cramps/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

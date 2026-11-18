@@ -1,0 +1,102 @@
+{
+  "id": "quinsy-abscess",
+  "category": "ent",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "quinsy",
+      "peritonsillar abscess",
+      "tonsillitis one side swelling trismus"
+    ],
+    "fr": [
+      "phlegmon péri-amygdalien",
+      "abcès périamygdalien",
+      "angine unilatérale trismus"
+    ],
+    "he": [
+      "מורסה ליד שקד",
+      "קווינזי",
+      "דלקת שקדים חד צדדית קושי לפתוח פה"
+    ],
+    "ru": [
+      "паратонзиллярный абсцесс",
+      "флегмона вокруг миндалины",
+      "односторонний тонзиллит тризм"
+    ]
+  },
+  "titles": {
+    "en": "Quinsy (peritonsillar abscess)",
+    "fr": "Phlegmon péri-amygdalien",
+    "he": "מורסה סביב השקד (קווינזי)",
+    "ru": "Паратонзиллярный абсцесс"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Quinsy is a collection of pus beside a tonsil after tonsillitis — severe one-sided throat pain, fever, muffled voice, difficulty opening mouth, drooling. NHS: urgent medical care; may need drainage/antibiotics in hospital. Emergency if breathing difficulty. No inventing drainage or antibiotic regimens.",
+      "emergencyIf": [
+        "Difficulty breathing",
+        "Unable to swallow saliva / severe drooling",
+        "Severe one-sided throat swelling with fever and trismus"
+      ],
+      "seeDoctorIf": [
+        "Suspected quinsy after tonsillitis — urgent same-day care"
+      ],
+      "doNot": [
+        "Do not invent antibiotic or drainage plans",
+        "Do not wait at home with progressive swelling"
+      ]
+    },
+    "fr": {
+      "summary": "Le phlegmon péri-amygdalien : douleur unilatérale sévère, fièvre, voix étouffée, trismus. Soins urgents ; urgence si dyspnée. Pas de schémas inventés.",
+      "emergencyIf": [
+        "Dyspnée",
+        "Impossible d'avaler la salive",
+        "Gonflement unilatéral sévère avec fièvre et trismus"
+      ],
+      "seeDoctorIf": [
+        "Suspicion après angine — avis urgent"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques/drainage inventés"
+      ]
+    },
+    "he": {
+      "summary": "קווינזי: כאב חד־צדדי חזק, חום, קול עמום, קושי לפתוח פה. טיפול דחוף; חירום בקושי נשימה. אין פרוטוקולים מומצאים.",
+      "emergencyIf": [
+        "קושי נשימה",
+        "לא יכול לבלוע רוק",
+        "נפיחות חד־צדדית עם חום וטריזמוס"
+      ],
+      "seeDoctorIf": [
+        "חשד אחרי דלקת שקדים — דחוף"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה/ניקוז מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Паратонзиллярный абсцесс: сильная односторонняя боль, лихорадка, гнусавость, тризм. Срочная помощь; неотложка при одышке. Схемы не выдумывать.",
+      "emergencyIf": [
+        "Затруднённое дыхание",
+        "Нельзя проглотить слюну",
+        "Сильный односторонний отёк с лихорадкой и тризмом"
+      ],
+      "seeDoctorIf": [
+        "Подозрение после тонзиллита — срочно"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики/дренаж"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-quinsy",
+      "name": "NHS — Quinsy (peritonsillar abscess)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/quinsy/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

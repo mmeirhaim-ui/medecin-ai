@@ -7,11 +7,13 @@ import anaphylaxisAftercare from "../../../data/knowledge/entries/anaphylaxis-af
 import antibioticsStewardshipNote from "../../../data/knowledge/entries/antibiotics-stewardship-note.json";
 import asthmaInhalerTechnique from "../../../data/knowledge/entries/asthma-inhaler-technique.json";
 import atopicEczema from "../../../data/knowledge/entries/atopic-eczema.json";
+import bedwetting from "../../../data/knowledge/entries/bedwetting.json";
 import bellsPalsy from "../../../data/knowledge/entries/bells-palsy.json";
 import boilsSkin from "../../../data/knowledge/entries/boils-skin.json";
 import brokenBoneFracture from "../../../data/knowledge/entries/broken-bone-fracture.json";
 import bronchitis from "../../../data/knowledge/entries/bronchitis.json";
 import burnsFirstAid from "../../../data/knowledge/entries/burns-first-aid.json";
+import carpalTunnel from "../../../data/knowledge/entries/carpal-tunnel.json";
 import chickenpox from "../../../data/knowledge/entries/chickenpox.json";
 import chilblains from "../../../data/knowledge/entries/chilblains.json";
 import chronicKidneyDisease from "../../../data/knowledge/entries/chronic-kidney-disease.json";
@@ -21,6 +23,7 @@ import coldSores from "../../../data/knowledge/entries/cold-sores.json";
 import conjunctivitis from "../../../data/knowledge/entries/conjunctivitis.json";
 import constipationAdult from "../../../data/knowledge/entries/constipation-adult.json";
 import copdExacerbation from "../../../data/knowledge/entries/copd-exacerbation.json";
+import cradleCap from "../../../data/knowledge/entries/cradle-cap.json";
 import dehydration from "../../../data/knowledge/entries/dehydration.json";
 import deliriumSuddenConfusion from "../../../data/knowledge/entries/delirium-sudden-confusion.json";
 import dengueFever from "../../../data/knowledge/entries/dengue-fever.json";
@@ -29,6 +32,7 @@ import depressionLowMood from "../../../data/knowledge/entries/depression-low-mo
 import dermRashCellulitis from "../../../data/knowledge/entries/derm-rash-cellulitis.json";
 import diabetesSickDayDka from "../../../data/knowledge/entries/diabetes-sick-day-dka.json";
 import diverticulitis from "../../../data/knowledge/entries/diverticulitis.json";
+import earwaxBuildup from "../../../data/knowledge/entries/earwax-buildup.json";
 import ectopicPregnancy from "../../../data/knowledge/entries/ectopic-pregnancy.json";
 import elderlyFalls from "../../../data/knowledge/entries/elderly-falls.json";
 import emergencyWhenToEr from "../../../data/knowledge/entries/emergency-when-to-er.json";
@@ -42,11 +46,14 @@ import gallstonesBiliary from "../../../data/knowledge/entries/gallstones-biliar
 import gerdHeartburn from "../../../data/knowledge/entries/gerd-heartburn.json";
 import giAppendicitis from "../../../data/knowledge/entries/gi-appendicitis.json";
 import giStomachVomiting from "../../../data/knowledge/entries/gi-stomach-vomiting.json";
+import glandularFever from "../../../data/knowledge/entries/glandular-fever.json";
 import glueEar from "../../../data/knowledge/entries/glue-ear.json";
 import goutFlare from "../../../data/knowledge/entries/gout-flare.json";
 import haemorrhoidsPiles from "../../../data/knowledge/entries/haemorrhoids-piles.json";
 import handFootMouth from "../../../data/knowledge/entries/hand-foot-mouth.json";
 import headInjuryConcussion from "../../../data/knowledge/entries/head-injury-concussion.json";
+import headLiceNits from "../../../data/knowledge/entries/head-lice-nits.json";
+import hearingLossSudden from "../../../data/knowledge/entries/hearing-loss-sudden.json";
 import heartFailureCues from "../../../data/knowledge/entries/heart-failure-cues.json";
 import heatIllness from "../../../data/knowledge/entries/heat-illness.json";
 import heavyPeriods from "../../../data/knowledge/entries/heavy-periods.json";
@@ -65,15 +72,20 @@ import ironDeficiencyAnaemia from "../../../data/knowledge/entries/iron-deficien
 import kidneyStonesFlank from "../../../data/knowledge/entries/kidney-stones-flank.json";
 import labyrinthitis from "../../../data/knowledge/entries/labyrinthitis.json";
 import laryngitis from "../../../data/knowledge/entries/laryngitis.json";
+import legCramps from "../../../data/knowledge/entries/leg-cramps.json";
 import lymeDisease from "../../../data/knowledge/entries/lyme-disease.json";
 import malariaTravelFever from "../../../data/knowledge/entries/malaria-travel-fever.json";
+import mastitis from "../../../data/knowledge/entries/mastitis.json";
 import measles from "../../../data/knowledge/entries/measles.json";
 import menopausePostmenopausalBleeding from "../../../data/knowledge/entries/menopause-postmenopausal-bleeding.json";
 import mentalHealthCrisis from "../../../data/knowledge/entries/mental-health-crisis.json";
 import migraine from "../../../data/knowledge/entries/migraine.json";
+import miscarriageBleeding from "../../../data/knowledge/entries/miscarriage-bleeding.json";
 import motionSickness from "../../../data/knowledge/entries/motion-sickness.json";
 import mouthUlcers from "../../../data/knowledge/entries/mouth-ulcers.json";
 import mskBackJoint from "../../../data/knowledge/entries/msk-back-joint.json";
+import mumps from "../../../data/knowledge/entries/mumps.json";
+import nappyRash from "../../../data/knowledge/entries/nappy-rash.json";
 import neckTraumaWhiplash from "../../../data/knowledge/entries/neck-trauma-whiplash.json";
 import neonatalJaundice from "../../../data/knowledge/entries/neonatal-jaundice.json";
 import neuroHeadache from "../../../data/knowledge/entries/neuro-headache.json";
@@ -92,13 +104,16 @@ import polymyalgiaRheumatica from "../../../data/knowledge/entries/polymyalgia-r
 import preEclampsia from "../../../data/knowledge/entries/pre-eclampsia.json";
 import pregnancyBleeding from "../../../data/knowledge/entries/pregnancy-bleeding.json";
 import psoriasis from "../../../data/knowledge/entries/psoriasis.json";
+import quinsyAbscess from "../../../data/knowledge/entries/quinsy-abscess.json";
 import rabiesExposure from "../../../data/knowledge/entries/rabies-exposure.json";
+import rectalBleeding from "../../../data/knowledge/entries/rectal-bleeding.json";
 import redFlagsAnaphylaxis from "../../../data/knowledge/entries/red-flags-anaphylaxis.json";
 import redFlagsCardio from "../../../data/knowledge/entries/red-flags-cardio.json";
 import redFlagsSepsisMeningitis from "../../../data/knowledge/entries/red-flags-sepsis-meningitis.json";
 import redFlagsStroke from "../../../data/knowledge/entries/red-flags-stroke.json";
 import respiratoryAsthmaAttack from "../../../data/knowledge/entries/respiratory-asthma-attack.json";
 import respiratoryColdFlu from "../../../data/knowledge/entries/respiratory-cold-flu.json";
+import restlessLegs from "../../../data/knowledge/entries/restless-legs.json";
 import rheumatoidArthritis from "../../../data/knowledge/entries/rheumatoid-arthritis.json";
 import ringworm from "../../../data/knowledge/entries/ringworm.json";
 import scabies from "../../../data/knowledge/entries/scabies.json";
@@ -106,6 +121,7 @@ import scarletFever from "../../../data/knowledge/entries/scarlet-fever.json";
 import sciatica from "../../../data/knowledge/entries/sciatica.json";
 import seizureFirstAid from "../../../data/knowledge/entries/seizure-first-aid.json";
 import shinglesRash from "../../../data/knowledge/entries/shingles-rash.json";
+import slappedCheek from "../../../data/knowledge/entries/slapped-cheek.json";
 import snakeBites from "../../../data/knowledge/entries/snake-bites.json";
 import stiChlamydia from "../../../data/knowledge/entries/sti-chlamydia.json";
 import stiGonorrhoea from "../../../data/knowledge/entries/sti-gonorrhoea.json";
@@ -113,12 +129,16 @@ import sunburn from "../../../data/knowledge/entries/sunburn.json";
 import syncopeFainting from "../../../data/knowledge/entries/syncope-fainting.json";
 import temporalArteritis from "../../../data/knowledge/entries/temporal-arteritis.json";
 import testicularPain from "../../../data/knowledge/entries/testicular-pain.json";
+import threadworms from "../../../data/knowledge/entries/threadworms.json";
 import thrushCandidiasis from "../../../data/knowledge/entries/thrush-candidiasis.json";
+import tinnitus from "../../../data/knowledge/entries/tinnitus.json";
 import tonsillitis from "../../../data/knowledge/entries/tonsillitis.json";
 import travelVaccinesCatchup from "../../../data/knowledge/entries/travel-vaccines-catchup.json";
 import typhoidFever from "../../../data/knowledge/entries/typhoid-fever.json";
 import uroUti from "../../../data/knowledge/entries/uro-uti.json";
+import varicoseVeins from "../../../data/knowledge/entries/varicose-veins.json";
 import vertigo from "../../../data/knowledge/entries/vertigo.json";
+import vomitingBlood from "../../../data/knowledge/entries/vomiting-blood.json";
 import whoopingCough from "../../../data/knowledge/entries/whooping-cough.json";
 
 const ENTRIES = [
@@ -129,11 +149,13 @@ const ENTRIES = [
   antibioticsStewardshipNote,
   asthmaInhalerTechnique,
   atopicEczema,
+  bedwetting,
   bellsPalsy,
   boilsSkin,
   brokenBoneFracture,
   bronchitis,
   burnsFirstAid,
+  carpalTunnel,
   chickenpox,
   chilblains,
   chronicKidneyDisease,
@@ -143,6 +165,7 @@ const ENTRIES = [
   conjunctivitis,
   constipationAdult,
   copdExacerbation,
+  cradleCap,
   dehydration,
   deliriumSuddenConfusion,
   dengueFever,
@@ -151,6 +174,7 @@ const ENTRIES = [
   dermRashCellulitis,
   diabetesSickDayDka,
   diverticulitis,
+  earwaxBuildup,
   ectopicPregnancy,
   elderlyFalls,
   emergencyWhenToEr,
@@ -164,11 +188,14 @@ const ENTRIES = [
   gerdHeartburn,
   giAppendicitis,
   giStomachVomiting,
+  glandularFever,
   glueEar,
   goutFlare,
   haemorrhoidsPiles,
   handFootMouth,
   headInjuryConcussion,
+  headLiceNits,
+  hearingLossSudden,
   heartFailureCues,
   heatIllness,
   heavyPeriods,
@@ -187,15 +214,20 @@ const ENTRIES = [
   kidneyStonesFlank,
   labyrinthitis,
   laryngitis,
+  legCramps,
   lymeDisease,
   malariaTravelFever,
+  mastitis,
   measles,
   menopausePostmenopausalBleeding,
   mentalHealthCrisis,
   migraine,
+  miscarriageBleeding,
   motionSickness,
   mouthUlcers,
   mskBackJoint,
+  mumps,
+  nappyRash,
   neckTraumaWhiplash,
   neonatalJaundice,
   neuroHeadache,
@@ -214,13 +246,16 @@ const ENTRIES = [
   preEclampsia,
   pregnancyBleeding,
   psoriasis,
+  quinsyAbscess,
   rabiesExposure,
+  rectalBleeding,
   redFlagsAnaphylaxis,
   redFlagsCardio,
   redFlagsSepsisMeningitis,
   redFlagsStroke,
   respiratoryAsthmaAttack,
   respiratoryColdFlu,
+  restlessLegs,
   rheumatoidArthritis,
   ringworm,
   scabies,
@@ -228,6 +263,7 @@ const ENTRIES = [
   sciatica,
   seizureFirstAid,
   shinglesRash,
+  slappedCheek,
   snakeBites,
   stiChlamydia,
   stiGonorrhoea,
@@ -235,12 +271,16 @@ const ENTRIES = [
   syncopeFainting,
   temporalArteritis,
   testicularPain,
+  threadworms,
   thrushCandidiasis,
+  tinnitus,
   tonsillitis,
   travelVaccinesCatchup,
   typhoidFever,
   uroUti,
+  varicoseVeins,
   vertigo,
+  vomitingBlood,
   whoopingCough,
 ] as KnowledgeEntry[];
 
