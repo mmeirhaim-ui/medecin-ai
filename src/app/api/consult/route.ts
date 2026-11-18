@@ -44,7 +44,7 @@ export async function POST(req: Request) {
   const ticket =
     req.headers.get("x-consult-ticket") ||
     req.headers.get("X-Consult-Ticket");
-  const ticketErr = await consumeTicket(ticket, ip, sid);
+  const ticketErr = await consumeTicket(ticket, sid);
   if (ticketErr) {
     return NextResponse.json({ error: ticketErr }, { status: 401 });
   }

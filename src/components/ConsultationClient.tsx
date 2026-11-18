@@ -48,6 +48,14 @@ export function ConsultationClient({ initialId }: Props) {
     setStarted(true);
   }, [initialId]);
 
+  // Warm HttpOnly sid cookie early so the first submit already has a session.
+  useEffect(() => {
+    void fetch("/api/consult/ticket", {
+      method: "POST",
+      credentials: "same-origin",
+    }).catch(() => {});
+  }, []);
+
   const liveEmergency = useMemo(
     () => detectEmergency(`${symptoms}\n${followUp}`).detected,
     [symptoms, followUp],
@@ -74,12 +82,58 @@ export function ConsultationClient({ initialId }: Props) {
     const res = await fetch("/api/consult/ticket", {
       method: "POST",
       credentials: "same-origin",
+      headers: { Accept: "application/json" },
     });
-    const data = (await res.json()) as { ticket?: string; error?: string };
+    let data: { ticket?: string; error?: string } = {};
+    try {
+      data = (await res.json()) as { ticket?: string; error?: string };
+    } catch {
+      /* non-JSON */
+    }
     if (!res.ok || !data.ticket) {
       throw new Error(data.error || "Impossible d’obtenir un jeton d’analyse.");
     }
     return data.ticket;
+  }
+
+  function isRetryableTicketError(message: string): boolean {
+    const m = message.toLowerCase();
+    return (
+      m.includes("jeton") ||
+      m.includes("session manquante") ||
+      m.includes("session expirée")
+    );
+  }
+
+  async function postConsult(
+    body: Record<string, unknown>,
+  ): Promise<ConsultResponse> {
+    let lastError = "Échec de l’analyse";
+    // One automatic retry on ticket/session failures (fresh ticket + cookie).
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const ticket = await fetchConsultTicket();
+      const res = await fetch("/api/consult", {
+        method: "POST",
+        credentials: "same-origin",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "X-Consult-Ticket": ticket,
+        },
+        body: JSON.stringify(body),
+      });
+      let data: (ConsultResponse & { error?: string }) | null = null;
+      try {
+        data = (await res.json()) as ConsultResponse & { error?: string };
+      } catch {
+        throw new Error("Réponse serveur illisible. Réessayez.");
+      }
+      if (res.ok && data) return data;
+      lastError = data?.error || lastError;
+      if (attempt === 0 && isRetryableTicketError(lastError)) continue;
+      throw new Error(lastError);
+    }
+    throw new Error(lastError);
   }
 
   async function submitInitial(e: FormEvent) {
@@ -104,26 +158,15 @@ export function ConsultationClient({ initialId }: Props) {
     };
 
     try {
-      const ticket = await fetchConsultTicket();
-      const res = await fetch("/api/consult", {
-        method: "POST",
-        credentials: "same-origin",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Consult-Ticket": ticket,
-        },
-        body: JSON.stringify({
-          consultationId,
-          symptoms: symptoms.trim(),
-          images: images.slice(0, 2).map((img) => ({
-            mimeType: img.mimeType,
-            data: img.data,
-            name: img.name,
-          })),
-        }),
+      const data = await postConsult({
+        consultationId,
+        symptoms: symptoms.trim(),
+        images: images.slice(0, 2).map((img) => ({
+          mimeType: img.mimeType,
+          data: img.data,
+          name: img.name,
+        })),
       });
-      const data = (await res.json()) as ConsultResponse & { error?: string };
-      if (!res.ok) throw new Error(data.error || "Échec de l’analyse");
 
       const assistantMsg: ChatMessage = {
         id: newId(),
@@ -135,7 +178,7 @@ export function ConsultationClient({ initialId }: Props) {
       setMessages(nextMessages);
       setAssessment(data.assessment);
       setEmergencyDetected(data.emergencyDetected);
-      setMockBanner(data.mock);
+      setMockBanner(Boolean(data.mock));
       setStarted(true);
       setConsultationId(data.consultationId);
       persist({
@@ -169,23 +212,12 @@ export function ConsultationClient({ initialId }: Props) {
     }));
 
     try {
-      const ticket = await fetchConsultTicket();
-      const res = await fetch("/api/consult", {
-        method: "POST",
-        credentials: "same-origin",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Consult-Ticket": ticket,
-        },
-        body: JSON.stringify({
-          consultationId,
-          symptoms: symptoms.slice(0, 4000),
-          message: followUp.trim().slice(0, 1500),
-          history,
-        }),
+      const data = await postConsult({
+        consultationId,
+        symptoms: symptoms.slice(0, 4000),
+        message: followUp.trim().slice(0, 1500),
+        history,
       });
-      const data = (await res.json()) as ConsultResponse & { error?: string };
-      if (!res.ok) throw new Error(data.error || "Échec de l’analyse");
 
       const assistantMsg: ChatMessage = {
         id: newId(),
@@ -197,7 +229,7 @@ export function ConsultationClient({ initialId }: Props) {
       setMessages(nextMessages);
       setAssessment(data.assessment);
       setEmergencyDetected(data.emergencyDetected || emergencyDetected);
-      setMockBanner(data.mock);
+      setMockBanner(Boolean(data.mock));
       setFollowUp("");
       persist({
         messages: nextMessages,
@@ -230,8 +262,8 @@ export function ConsultationClient({ initialId }: Props) {
 
       {mockBanner && (
         <p className="rounded-full bg-[var(--brand-soft)] px-4 py-2 text-center text-sm text-[var(--brand-deep)]">
-          Mode démonstration — aucune clé Gemini détectée. Les réponses sont
-          réalistes mais simulées.
+          Mode démonstration — le service d’analyse n’est pas disponible ;
+          les réponses affichées sont simulées.
         </p>
       )}
 

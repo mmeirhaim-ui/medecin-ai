@@ -1,4 +1,4 @@
-import { createHmac, randomBytes, timingSafeEqual } from "crypto";
+import { createHash, createHmac, randomBytes, timingSafeEqual } from "crypto";
 import { sql } from "@/lib/db";
 
 /** Shared (DB-backed) per-IP / global budgets. */
@@ -14,14 +14,30 @@ export const CONSULT_SID_COOKIE = "medecin_consult_sid";
 
 type GlobalSecret = typeof globalThis & { __medecinConsultHmac?: string };
 
-/** Prefer env secrets; else process-local random (local/mock only). */
+/**
+ * Shared HMAC secret for multi-instance hosts.
+ * Prefer explicit CONSULT_TOKEN_SECRET; else derive from DATABASE_URL
+ * (same Postgres on every instance). Avoid GEMINI_API_KEY alone — it can be
+ * missing on a cold instance and fall back to a process-local random secret,
+ * which produces intermittent « Jeton invalide. ».
+ */
 function getSigningSecret(): string {
-  const fromEnv =
-    process.env.CONSULT_TOKEN_SECRET?.trim() ||
+  const explicit = process.env.CONSULT_TOKEN_SECRET?.trim();
+  if (explicit) return explicit;
+
+  const databaseUrl = process.env.DATABASE_URL?.trim();
+  if (databaseUrl) {
+    return createHash("sha256")
+      .update(`medecin-consult-hmac-v1:${databaseUrl}`)
+      .digest("hex");
+  }
+
+  const fromGemini =
     process.env.GEMINI_API_KEY?.trim() ||
     process.env.GOOGLE_GENERATIVE_AI_API_KEY?.trim() ||
     process.env.GOOGLE_API_KEY?.trim();
-  if (fromEnv) return fromEnv;
+  if (fromGemini) return fromGemini;
+
   const g = globalThis as GlobalSecret;
   if (!g.__medecinConsultHmac) {
     g.__medecinConsultHmac = randomBytes(32).toString("hex");
@@ -38,7 +54,7 @@ function normalizeIp(raw: string): string {
 }
 
 /**
- * Trusted client IP for rate limits / ticket binding.
+ * Client IP for rate limits only (not ticket binding).
  * Prefer platform `x-real-ip`. Never trust the first X-Forwarded-For hop
  * (client-spoofable); use only the last hop (closest to the edge).
  */
@@ -82,7 +98,9 @@ export function sidCookieHeader(sid: string): string {
     Boolean(process.env.VERCEL)
       ? "; Secure"
       : "";
-  return `${CONSULT_SID_COOKIE}=${encodeURIComponent(sid)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${maxAge}${secure}`;
+  // Lax: same-site navigations + our credentialed fetches; Strict can drop
+  // the cookie on some hosted edge redirects before the first ticket POST.
+  return `${CONSULT_SID_COOKIE}=${encodeURIComponent(sid)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${maxAge}${secure}`;
 }
 
 function normalizeHost(raw: string): string {
@@ -286,17 +304,18 @@ function safeEqual(a: string, b: string): boolean {
 }
 
 /**
- * Mint a short-lived HMAC ticket bound to IP + browser sid.
- * Format: base64url(id|expiresAt|ip|sid).signature
+ * Mint a short-lived HMAC ticket bound to browser sid only (sticky-safe).
+ * IP is intentionally not bound: multi-instance / edge hops often change
+ * x-real-ip between ticket mint and consult, which caused « Jeton invalide. ».
+ * Format: base64url(v2|id|expiresAt|sid).signature
  */
 export function mintTicket(
-  ip: string,
   sid: string,
 ): { ticket: string; expiresAt: number; ticketId: string } {
   const ticketId = randomBytes(16).toString("base64url");
   const expiresAt = Date.now() + TICKET_TTL_MS;
   const body = Buffer.from(
-    `${ticketId}|${expiresAt}|${ip}|${sid}`,
+    `v2|${ticketId}|${expiresAt}|${sid}`,
     "utf8",
   ).toString("base64url");
   const ticket = `${body}.${sign(body)}`;
@@ -304,38 +323,68 @@ export function mintTicket(
 }
 
 /**
- * Verify HMAC + IP/sid binding, then atomically mark ticket used in DB
+ * Verify HMAC + sid binding, then atomically mark ticket used in DB
  * (true single-use across instances).
  */
 export async function consumeTicket(
   ticket: string | null,
-  ip: string,
   sid: string,
 ): Promise<string | null> {
-  if (!ticket || ticket.length > 512) return "Jeton manquant ou invalide.";
+  if (!ticket || ticket.length > 512) {
+    return "Jeton manquant. Rechargez la page et réessayez.";
+  }
   const dot = ticket.lastIndexOf(".");
-  if (dot <= 0) return "Jeton invalide.";
+  if (dot <= 0) return "Jeton invalide. Rechargez la page.";
   const body = ticket.slice(0, dot);
   const sig = ticket.slice(dot + 1);
-  if (!body || !sig) return "Jeton invalide.";
-  if (!safeEqual(sign(body), sig)) return "Jeton invalide.";
+  if (!body || !sig) return "Jeton invalide. Rechargez la page.";
+  if (!safeEqual(sign(body), sig)) {
+    return "Jeton invalide. Rechargez la page.";
+  }
 
   let decoded: string;
   try {
     decoded = Buffer.from(body, "base64url").toString("utf8");
   } catch {
-    return "Jeton invalide.";
+    return "Jeton invalide. Rechargez la page.";
   }
   const parts = decoded.split("|");
-  if (parts.length !== 4) return "Jeton invalide.";
-  const [ticketId, expStr, ticketIp, ticketSid] = parts;
-  if (!ticketId) return "Jeton invalide.";
-  const expiresAt = Number(expStr);
-  if (!Number.isFinite(expiresAt) || Date.now() > expiresAt) {
-    return "Jeton expiré. Rechargez la page.";
-  }
-  if (ticketIp !== ip || ticketSid !== sid) return "Jeton invalide.";
 
+  // v2|id|expires|sid — sticky-safe (no IP)
+  if (parts[0] === "v2" && parts.length === 4) {
+    const [, ticketId, expStr, ticketSid] = parts;
+    if (!ticketId) return "Jeton invalide. Rechargez la page.";
+    const expiresAt = Number(expStr);
+    if (!Number.isFinite(expiresAt) || Date.now() > expiresAt) {
+      return "Jeton expiré. Rechargez la page.";
+    }
+    if (ticketSid !== sid) {
+      return "Session expirée. Rechargez la page.";
+    }
+    return markTicketUsed(ticketId, expiresAt);
+  }
+
+  // Legacy v1: id|expires|ip|sid — accept sid match only (ignore IP drift)
+  if (parts.length === 4 && parts[0] !== "v2") {
+    const [ticketId, expStr, , ticketSid] = parts;
+    if (!ticketId) return "Jeton invalide. Rechargez la page.";
+    const expiresAt = Number(expStr);
+    if (!Number.isFinite(expiresAt) || Date.now() > expiresAt) {
+      return "Jeton expiré. Rechargez la page.";
+    }
+    if (ticketSid !== sid) {
+      return "Session expirée. Rechargez la page.";
+    }
+    return markTicketUsed(ticketId, expiresAt);
+  }
+
+  return "Jeton invalide. Rechargez la page.";
+}
+
+async function markTicketUsed(
+  ticketId: string,
+  expiresAt: number,
+): Promise<string | null> {
   // Opportunistic cleanup of expired rows (best-effort).
   void sql(`DELETE FROM used_tickets WHERE expires_at < now()`).catch(() => {});
 
@@ -347,7 +396,7 @@ export async function consumeTicket(
     [ticketId, expiresAt],
   );
   if (!inserted[0]?.ticket_id) {
-    return "Jeton déjà utilisé.";
+    return "Jeton déjà utilisé. Réessayez.";
   }
   return null;
 }

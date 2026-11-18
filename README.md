@@ -34,6 +34,8 @@ Obtenez une clé sur [Google AI Studio](https://aistudio.google.com/apikey).
 
 Pour une app publiée sur Cursor, liez le secret `GEMINI_API_KEY` via les Secrets de la plateforme — ne le mettez jamais dans le code.
 
+Les tickets de consultation sont signés avec `CONSULT_TOKEN_SECRET` si défini, sinon une dérivation stable de `DATABASE_URL` (multi-instances). Ne signez pas uniquement avec `GEMINI_API_KEY` en production.
+
 ## Stack
 
 Next.js (App Router) · TypeScript · Tailwind CSS · `@google/generative-ai`

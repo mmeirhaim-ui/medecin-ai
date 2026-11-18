@@ -76,6 +76,14 @@ export function isMockMode(): boolean {
 /** Default Flash model — gemini-2.0-flash was shut down 2026-06-01. */
 export const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
 
+/** Fallback chain if the preferred model is unavailable for the key. */
+const MODEL_FALLBACKS = [
+  "gemini-3.6-flash",
+  "gemini-3.8-flash",
+  "gemini-3.5-flash-lite",
+  "gemini-2.5-flash",
+] as const;
+
 /**
  * Sanitize provider errors for clients/logs: keep status + short message,
  * strip API keys / long payloads.
@@ -96,6 +104,11 @@ export function formatGeminiError(err: unknown): string {
 
 function getModelName(): string {
   return process.env.GEMINI_MODEL?.trim() || DEFAULT_GEMINI_MODEL;
+}
+
+function modelCandidates(): string[] {
+  const preferred = getModelName();
+  return [preferred, ...MODEL_FALLBACKS.filter((m) => m !== preferred)];
 }
 
 function normalizeUrgency(value: unknown): UrgencyLevel {
@@ -199,13 +212,16 @@ function buildUserParts(req: ConsultRequest): Part[] {
   return parts;
 }
 
-function createModel(withGrounding: boolean): GenerativeModel {
+function createModel(
+  modelName: string,
+  withGrounding: boolean,
+): GenerativeModel {
   const key = getApiKey();
   if (!key) throw new Error("Missing API key");
   const genAI = new GoogleGenerativeAI(key);
 
   const base = {
-    model: getModelName(),
+    model: modelName,
     systemInstruction: SYSTEM_PROMPT,
     generationConfig: {
       temperature: 0.4,
@@ -223,6 +239,35 @@ function createModel(withGrounding: boolean): GenerativeModel {
   }
 
   return genAI.getGenerativeModel(base);
+}
+
+async function generateJsonText(
+  modelName: string,
+  parts: Part[],
+): Promise<{ text: string; grounded: boolean }> {
+  // Structured JSON + Google Search is often rejected together — prefer
+  // reliable JSON first, then optional grounded retry without schema pressure.
+  try {
+    const model = createModel(modelName, false);
+    const result = await model.generateContent({
+      contents: [{ role: "user", parts }],
+    });
+    return { text: result.response.text(), grounded: false };
+  } catch (primaryErr) {
+    try {
+      const groundedModel = createModel(modelName, true);
+      const result = await groundedModel.generateContent({
+        contents: [{ role: "user", parts }],
+      });
+      return { text: result.response.text(), grounded: true };
+    } catch (groundedErr) {
+      const primary = formatGeminiError(primaryErr);
+      const secondary = formatGeminiError(groundedErr);
+      const detail =
+        secondary !== primary ? `${primary} (grounding: ${secondary})` : primary;
+      throw new Error(`Gemini (${modelName}): ${detail}`);
+    }
+  }
 }
 
 export async function runConsultation(req: ConsultRequest): Promise<{
@@ -249,35 +294,24 @@ export async function runConsultation(req: ConsultRequest): Promise<{
 
   let grounded = false;
   let textOut = "";
-  let groundingError: unknown;
+  let lastError: unknown;
 
-  try {
-    const model = createModel(true);
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts }],
-    });
-    textOut = result.response.text();
-    grounded = true;
-  } catch (err) {
-    groundingError = err;
+  for (const modelName of modelCandidates()) {
     try {
-      const model = createModel(false);
-      const result = await model.generateContent({
-        contents: [{ role: "user", parts }],
-      });
-      textOut = result.response.text();
-      grounded = false;
-    } catch (fallbackErr) {
-      const primary = formatGeminiError(fallbackErr);
-      const secondary = groundingError
-        ? formatGeminiError(groundingError)
-        : null;
-      const detail =
-        secondary && secondary !== primary
-          ? `${primary} (grounding: ${secondary})`
-          : primary;
-      throw new Error(`Gemini (${getModelName()}): ${detail}`);
+      const out = await generateJsonText(modelName, parts);
+      textOut = out.text;
+      grounded = out.grounded;
+      lastError = undefined;
+      break;
+    } catch (err) {
+      lastError = err;
     }
+  }
+
+  if (!textOut) {
+    throw lastError instanceof Error
+      ? lastError
+      : new Error(`Gemini (${getModelName()}): échec d’analyse`);
   }
 
   const parsed = parseAssessment(extractJson(textOut));
