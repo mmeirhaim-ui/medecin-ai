@@ -144,6 +144,12 @@ const cases = [
   { text: "quinsy peritonsillar abscess trismus", expect: "quinsy-abscess" },
   { text: "threadworms itchy bottom at night", expect: "threadworms" },
   { text: "sudden hearing loss deaf one ear", expect: "hearing-loss-sudden" },
+  { text: "alcohol poisoning passed out drunk unconscious", expect: "alcohol-poisoning" },
+  { text: "swallowed poison overdose pills", expect: "poisoning-overdose" },
+  { text: "dislocated shoulder out of joint", expect: "dislocated-shoulder" },
+  { text: "Crohn's disease bloody diarrhoea abdominal pain", expect: "crohns-disease" },
+  { text: "ulcerative colitis UC bloody diarrhoea flare", expect: "ulcerative-colitis" },
+  { text: "tennis elbow pain outside elbow gripping", expect: "tennis-elbow" },
 ];
 
 for (const c of cases) {

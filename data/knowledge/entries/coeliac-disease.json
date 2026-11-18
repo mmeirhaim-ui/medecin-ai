@@ -1,0 +1,80 @@
+{
+  "id": "coeliac-disease",
+  "category": "gi",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "coeliac",
+      "celiac",
+      "gluten intolerance diarrhoea bloating"
+    ],
+    "fr": [
+      "maladie cœliaque",
+      "intolérance au gluten diarrhée ballonnements"
+    ],
+    "he": [
+      "צליאק",
+      "רגישות לגלוטן שלשול נפיחות"
+    ],
+    "ru": [
+      "целиакия",
+      "непереносимость глютена понос вздутие"
+    ]
+  },
+  "titles": {
+    "en": "Coeliac disease (orientation)",
+    "fr": "Maladie cœliaque (orientation)",
+    "he": "צליאק (הכוונה)",
+    "ru": "Целиакия (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Coeliac disease is an immune reaction to gluten. NHS: see a GP for testing before starting a gluten-free diet (testing needs gluten exposure). Do not self-diagnose; dietitian support after diagnosis. Emergency only for unrelated red flags (severe dehydration, bleeding).",
+      "seeDoctorIf": [
+        "Chronic diarrhoea, bloating, weight loss, anaemia symptoms suggesting coeliac",
+        "Family history with suggestive symptoms"
+      ],
+      "doNot": [
+        "Do not start strict gluten-free diet before testing without clinical advice",
+        "Do not invent supplement megadoses"
+      ]
+    },
+    "fr": {
+      "summary": "La maladie cœliaque réagit au gluten. Faire des tests avant régime sans gluten. Pas d'autodiagnostic.",
+      "seeDoctorIf": [
+        "Diarrhée chronique, ballonnements, amaigrissement, anémie"
+      ],
+      "doNot": [
+        "Ne pas débuter un régime strict avant bilans sans avis"
+      ]
+    },
+    "he": {
+      "summary": "צליאק: תגובה לגלוטן. בדיקות לפני דיאטה ללא גלוטן. לא לאבחן לבד.",
+      "seeDoctorIf": [
+        "שלשול כרוני, נפיחות, ירידה במשקל, אנמיה"
+      ],
+      "doNot": [
+        "לא להתחיל דיאטה קפדנית לפני בדיקות בלי ייעוץ"
+      ]
+    },
+    "ru": {
+      "summary": "Целиакия — реакция на глютен. Анализы до безглютеновой диеты. Не ставить диагноз себе.",
+      "seeDoctorIf": [
+        "Хроническая диарея, вздутие, похудение, анемия"
+      ],
+      "doNot": [
+        "Не начинать строгую диету до анализов без совета"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-coeliac",
+      "name": "NHS — Coeliac disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/coeliac-disease/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -291,10 +291,31 @@
       ]
     },
     {
+      "id": "nhs-acne",
+      "name": "NHS — Acne",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/acne/",
+      "topics": []
+    },
+    {
       "id": "nhs-acute-pancreatitis",
       "name": "NHS — Acute pancreatitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/acute-pancreatitis/",
+      "topics": []
+    },
+    {
+      "id": "nhs-addisons",
+      "name": "NHS — Addison's disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/addisons-disease/",
+      "topics": []
+    },
+    {
+      "id": "nhs-alcohol-poisoning",
+      "name": "NHS — Alcohol poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/alcohol-poisoning/",
       "topics": []
     },
     {
@@ -349,10 +370,24 @@
       ]
     },
     {
+      "id": "nhs-athletes-foot",
+      "name": "NHS — Athlete's foot",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/athletes-foot/",
+      "topics": []
+    },
+    {
       "id": "nhs-atopic-eczema",
       "name": "NHS — Atopic eczema",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+      "topics": []
+    },
+    {
+      "id": "nhs-b12-folate-anaemia",
+      "name": "NHS — Vitamin B12 or folate deficiency anaemia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/",
       "topics": []
     },
     {
@@ -388,6 +423,13 @@
       "name": "NHS — Bronchitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/bronchitis/",
+      "topics": []
+    },
+    {
+      "id": "nhs-bunions",
+      "name": "NHS — Bunions",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bunions/",
       "topics": []
     },
     {
@@ -460,6 +502,13 @@
       ]
     },
     {
+      "id": "nhs-coeliac",
+      "name": "NHS — Coeliac disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/coeliac-disease/",
+      "topics": []
+    },
+    {
       "id": "nhs-cold-sores",
       "name": "NHS — Cold sores",
       "org": "NHS",
@@ -502,6 +551,13 @@
       "topics": []
     },
     {
+      "id": "nhs-crohns",
+      "name": "NHS — Crohn's disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/crohns-disease/",
+      "topics": []
+    },
+    {
       "id": "nhs-croup",
       "name": "NHS — Croup",
       "org": "NHS",
@@ -509,6 +565,13 @@
       "topics": [
         "peds"
       ]
+    },
+    {
+      "id": "nhs-cuts-grazes",
+      "name": "NHS — Cuts and grazes",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+      "topics": []
     },
     {
       "id": "nhs-cystitis",
@@ -557,6 +620,13 @@
       ]
     },
     {
+      "id": "nhs-dislocated-shoulder",
+      "name": "NHS — Dislocated shoulder",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dislocated-shoulder/",
+      "topics": []
+    },
+    {
       "id": "nhs-diverticulitis",
       "name": "NHS — Diverticular disease and diverticulitis",
       "org": "NHS",
@@ -584,6 +654,13 @@
       "name": "NHS — Ectopic pregnancy",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
+      "topics": []
+    },
+    {
+      "id": "nhs-epilepsy",
+      "name": "NHS — Epilepsy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/epilepsy/",
       "topics": []
     },
     {
@@ -906,6 +983,13 @@
       "topics": []
     },
     {
+      "id": "nhs-multiple-sclerosis",
+      "name": "NHS — Multiple sclerosis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+      "topics": []
+    },
+    {
       "id": "nhs-mumps",
       "name": "NHS — Mumps",
       "org": "NHS",
@@ -948,6 +1032,13 @@
       "topics": []
     },
     {
+      "id": "nhs-parkinsons",
+      "name": "NHS — Parkinson's disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/parkinsons-disease/",
+      "topics": []
+    },
+    {
       "id": "nhs-pe",
       "name": "NHS — Pulmonary embolism",
       "org": "NHS",
@@ -968,6 +1059,13 @@
       "name": "NHS — Piles (haemorrhoids)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/piles-haemorrhoids/",
+      "topics": []
+    },
+    {
+      "id": "nhs-plantar-fasciitis",
+      "name": "NHS — Plantar fasciitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/plantar-fasciitis/",
       "topics": []
     },
     {
@@ -1106,6 +1204,13 @@
       "topics": []
     },
     {
+      "id": "nhs-rosacea",
+      "name": "NHS — Rosacea",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rosacea/",
+      "topics": []
+    },
+    {
       "id": "nhs-scabies",
       "name": "NHS — Scabies",
       "org": "NHS",
@@ -1164,6 +1269,13 @@
       "topics": []
     },
     {
+      "id": "nhs-sprains-strains",
+      "name": "NHS — Sprains and strains",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sprains-and-strains/",
+      "topics": []
+    },
+    {
       "id": "nhs-stomach-ache",
       "name": "NHS — Stomach ache",
       "org": "NHS",
@@ -1193,6 +1305,13 @@
       "name": "NHS — Temporal arteritis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/temporal-arteritis/",
+      "topics": []
+    },
+    {
+      "id": "nhs-tennis-elbow",
+      "name": "NHS — Tennis elbow",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/tennis-elbow/",
       "topics": []
     },
     {
@@ -1233,10 +1352,24 @@
       "topics": []
     },
     {
+      "id": "nhs-trigeminal-neuralgia",
+      "name": "NHS — Trigeminal neuralgia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/trigeminal-neuralgia/",
+      "topics": []
+    },
+    {
       "id": "nhs-typhoid",
       "name": "NHS — Typhoid fever",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/typhoid-fever/",
+      "topics": []
+    },
+    {
+      "id": "nhs-ulcerative-colitis",
+      "name": "NHS — Ulcerative colitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ulcerative-colitis/",
       "topics": []
     },
     {
@@ -1281,6 +1414,13 @@
       "name": "NHS — Vomiting blood",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/vomiting-blood/",
+      "topics": []
+    },
+    {
+      "id": "nhs-warts-verrucas",
+      "name": "NHS — Warts and verrucas",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/warts-and-verrucas/",
       "topics": []
     },
     {

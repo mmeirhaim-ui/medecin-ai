@@ -1,0 +1,84 @@
+{
+  "id": "b12-folate-anaemia",
+  "category": "general",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "B12 deficiency",
+      "folate deficiency",
+      "pernicious anaemia",
+      "vitamin B12 anaemia"
+    ],
+    "fr": [
+      "carence B12",
+      "carence en folates",
+      "anémie de Biermer"
+    ],
+    "he": [
+      "חסר B12",
+      "חסר חומצה פולית",
+      "אנמיה מזיקה"
+    ],
+    "ru": [
+      "дефицит B12",
+      "дефицит фолатов",
+      "пернициозная анемия"
+    ]
+  },
+  "titles": {
+    "en": "B12 / folate deficiency anaemia",
+    "fr": "Anémie par carence B12 / folates",
+    "he": "אנמיה מחסר B12 / פולאט",
+    "ru": "Анемия при дефиците B12 / фолатов"
+  },
+  "guidance": {
+    "en": {
+      "summary": "B12/folate deficiency can cause tiredness, breathlessness, pale skin, pins and needles, glossitis. NHS: blood tests via GP; treatment is clinician-guided (diet, tablets, or injections). Never invent B12 injection schedules here.",
+      "seeDoctorIf": [
+        "Symptoms of anaemia or neuropathy",
+        "Known risk (diet, absorption disorders, metformin long-term — discuss testing)"
+      ],
+      "doNot": [
+        "Do not invent B12 injection regimens",
+        "Do not self-megadose without advice"
+      ]
+    },
+    "fr": {
+      "summary": "Carence B12/folates : fatigue, dyspnée, paresthésies. Bilans chez le médecin. Pas de schémas d'injections inventés.",
+      "seeDoctorIf": [
+        "Signes d'anémie ou de neuropathie"
+      ],
+      "doNot": [
+        "Pas d'injections de B12 inventées"
+      ]
+    },
+    "he": {
+      "summary": "חסר B12/פולאט: עייפות, קוצר נשימה, נימול. בדיקות אצל רופא. אין לוח זריקות מומצא.",
+      "seeDoctorIf": [
+        "סימני אנמיה או נוירופתיה"
+      ],
+      "doNot": [
+        "אין זריקות B12 מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Дефицит B12/фолатов: усталость, одышка, парестезии. Анализы у врача. Схемы инъекций не выдумывать.",
+      "seeDoctorIf": [
+        "Признаки анемии или нейропатии"
+      ],
+      "doNot": [
+        "Не изобретать схемы инъекций B12"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-b12-folate-anaemia",
+      "name": "NHS — Vitamin B12 or folate deficiency anaemia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

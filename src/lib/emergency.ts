@@ -250,6 +250,28 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\bsurdit[ée]\s+brutale\b/i,
   /\bירידת\s+שמיעה\s+פתאומית\b/u,
   /\bвнезапн\w*\s+потеря\s+слуха\b/iu,
+
+  // Poisoning / overdose (general)
+  /\boverdose\b/i,
+  /\bpoisoning\b/i,
+  /\bintoxication\b/i,
+  /\bсурdose\b/i,
+  /\bהרעלה\b/u,
+  /\bמנת\s+יתר\b/u,
+  /\bотравлени/iu,
+  /\bпередозировк/iu,
+
+  // Alcohol poisoning
+  /\balcohol\s+poisoning\b/i,
+  /\bintoxication\s+alcool/i,
+  /\bהרעלת\s+אלכוהול\b/u,
+  /\bалкогольн\w*\s+отравлени/iu,
+
+  // Dislocated shoulder
+  /\bdislocated\s+shoulder\b/i,
+  /\b[ée]paule\s+(lux[ée]e|d[ée]bo[iî]t[ée]e)\b/i,
+  /\bכתף\s+מפורקת\b/u,
+  /\bвывих\s+плеча\b/iu,
 ];
 
 const NEGATION =
