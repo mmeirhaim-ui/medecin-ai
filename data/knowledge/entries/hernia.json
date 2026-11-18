@@ -1,0 +1,103 @@
+{
+  "id": "hernia",
+  "category": "surgery",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "hernia",
+      "inguinal hernia groin lump",
+      "bulge groin hernia"
+    ],
+    "fr": [
+      "hernie",
+      "hernie inguinale bosse aine",
+      "hernie étranglée"
+    ],
+    "he": [
+      "בקע מפשעתי",
+      "הרניה במפשעה",
+      "גוש במפשעה בקע"
+    ],
+    "ru": [
+      "грыжа",
+      "паховая грыжа",
+      "выпячивание в паху"
+    ]
+  },
+  "titles": {
+    "en": "Hernia (groin/abdominal)",
+    "fr": "Hernie (aine/abdomen)",
+    "he": "בקע (מפשעה/בטן)",
+    "ru": "Грыжа (паховая/брюшная)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "A hernia is a bulge where tissue pushes through a weak spot, often in the groin. NHS: GP assessment; surgery may be advised. Emergency (possible strangulation): sudden severe pain at the bulge, irreducible lump, vomiting, fever, or red/tender overlying skin — seek emergency care. Never invent pain-drug regimens.",
+      "emergencyIf": [
+        "Sudden severe pain at hernia site",
+        "Bulge that cannot be pushed back with vomiting",
+        "Fever or red/tender skin over the lump"
+      ],
+      "seeDoctorIf": [
+        "New groin/abdominal bulge",
+        "Discomfort with lifting/coughing"
+      ],
+      "doNot": [
+        "Do not ignore a painful irreducible hernia",
+        "Do not invent opioid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Hernie: bosse à l'aine. Urgence si douleur brutale, hernie irréductible, vomissements (étranglement).",
+      "emergencyIf": [
+        "Douleur brutale sur la hernie",
+        "Bosse irréductible avec vomissements",
+        "Fièvre / peau rouge"
+      ],
+      "seeDoctorIf": [
+        "Nouvelle bosse à l'aine"
+      ],
+      "doNot": [
+        "Ne pas ignorer une hernie douloureuse irréductible"
+      ]
+    },
+    "he": {
+      "summary": "בקע: גוש במפשעה. חירום בכאב פתאומי, בקע שאינו ניתן להחזרה עם הקאות.",
+      "emergencyIf": [
+        "כאב פתאומי בבקע",
+        "גוש שאינו ניתן להחזרה עם הקאות",
+        "חום / עור אדום"
+      ],
+      "seeDoctorIf": [
+        "גוש חדש במפשעה"
+      ],
+      "doNot": [
+        "לא להתעלם מבקע כואב שאינו חוזר"
+      ]
+    },
+    "ru": {
+      "summary": "Грыжа: выпячивание в паху. Неотложка при внезапной боли, невправимости, рвоте (ущемление).",
+      "emergencyIf": [
+        "Внезапная боль в грыже",
+        "Невправимое выпячивание с рвотой",
+        "Лихорадка / красная кожа"
+      ],
+      "seeDoctorIf": [
+        "Новое выпячивание в паху"
+      ],
+      "doNot": [
+        "Не игнорировать болезненную невправимую грыжу"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hernia",
+      "name": "NHS — Hernia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hernia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

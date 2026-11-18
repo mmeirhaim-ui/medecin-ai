@@ -1,0 +1,104 @@
+{
+  "id": "atrial-fibrillation",
+  "category": "cardio",
+  "urgencyDefault": "consultation",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "atrial fibrillation",
+      "AF irregular heartbeat",
+      "heart flutter AF"
+    ],
+    "fr": [
+      "fibrillation auriculaire",
+      "FA rythme irrégulier",
+      "cœur irrégulier FA"
+    ],
+    "he": [
+      "פרפור פרוזדורים",
+      "AF דופק לא סדיר",
+      "דפיקות לב פרפור"
+    ],
+    "ru": [
+      "мерцательная аритмия",
+      "фибрилляция предсердий",
+      "нерегулярный пульс ФП"
+    ]
+  },
+  "titles": {
+    "en": "Atrial fibrillation",
+    "fr": "Fibrillation auriculaire",
+    "he": "פרפור פרוזדורים",
+    "ru": "Фибрилляция предсердий"
+  },
+  "guidance": {
+    "en": {
+      "summary": "AF is an irregular often rapid heart rhythm that raises stroke risk. NHS: new AF needs medical assessment; anticoagulants/rate control are clinician-prescribed — never invent doses. Emergency: chest pain, severe breathlessness, fainting, stroke symptoms (FAST), or very fast pulse with collapse. See red-flags-cardio/stroke entries.",
+      "emergencyIf": [
+        "Chest pain or severe breathlessness",
+        "Fainting or near-fainting",
+        "Stroke symptoms (face/arm/speech)",
+        "Collapse with very fast pulse"
+      ],
+      "seeDoctorIf": [
+        "New irregular heartbeat or palpitations",
+        "Known AF with worsening symptoms"
+      ],
+      "doNot": [
+        "Do not invent anticoagulant or antiarrhythmic doses",
+        "Do not ignore stroke warning signs"
+      ]
+    },
+    "fr": {
+      "summary": "FA: rythme irrégulier, risque d'AVC. Urgences si douleur thoracique, dyspnée, malaise, signes d'AVC. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Douleur thoracique / dyspnée sévère",
+        "Syncope",
+        "Signes d'AVC"
+      ],
+      "seeDoctorIf": [
+        "Palpitations / rythme irrégulier nouveau"
+      ],
+      "doNot": [
+        "Pas d'anticoagulants inventés"
+      ]
+    },
+    "he": {
+      "summary": "פרפור פרוזדורים: דופק לא סדיר, סיכון לשבץ. חירום בכאב חזה, קוצר נשימה, התעלפות, סימני שבץ. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "כאב חזה / קוצר נשימה קשה",
+        "התעלפות",
+        "סימני שבץ"
+      ],
+      "seeDoctorIf": [
+        "דפיקות / דופק לא סדיר חדש"
+      ],
+      "doNot": [
+        "אין נוגדי קרישה מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "ФП: нерегулярный ритм, риск инсульта. Неотложка при боли в груди, одышке, обмороке, признаках инсульта. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Боль в груди / тяжёлая одышка",
+        "Обморок",
+        "Признаки инсульта"
+      ],
+      "seeDoctorIf": [
+        "Новые перебои / нерегулярный пульс"
+      ],
+      "doNot": [
+        "Не изобретать антикоагулянты"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-atrial-fibrillation",
+      "name": "NHS — Atrial fibrillation",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

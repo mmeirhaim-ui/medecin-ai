@@ -1,0 +1,102 @@
+{
+  "id": "hiatus-hernia",
+  "category": "gi",
+  "urgencyDefault": "consultation",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "hiatus hernia",
+      "hiatal hernia heartburn",
+      "stomach hernia diaphragm"
+    ],
+    "fr": [
+      "hernie hiatale",
+      "brûlures hernie hiatale"
+    ],
+    "he": [
+      "בקע סרעפתי",
+      "היאטוס הרניה",
+      "צרבת בקע סרעפתי"
+    ],
+    "ru": [
+      "хиатальная грыжа",
+      "грыжа пищеводного отверстия",
+      "изжога хиатальная грыжа"
+    ]
+  },
+  "titles": {
+    "en": "Hiatus hernia",
+    "fr": "Hernie hiatale",
+    "he": "בקע סרעפתי",
+    "ru": "Хиатальная грыжа"
+  },
+  "guidance": {
+    "en": {
+      "summary": "A hiatus hernia can contribute to heartburn and reflux. NHS: lifestyle measures and pharmacy/GP pathways similar to GORD; surgery is specialist. Emergency: sudden severe chest/abdominal pain, vomiting blood, black stools, or difficulty swallowing solids/liquids with weight loss — urgent assessment. Never invent PPI doses.",
+      "emergencyIf": [
+        "Vomiting blood or black stools",
+        "Sudden severe chest/abdominal pain",
+        "Food sticking with progressive swallowing difficulty"
+      ],
+      "seeDoctorIf": [
+        "Persistent heartburn",
+        "Known hiatus hernia with worsening reflux"
+      ],
+      "doNot": [
+        "Do not invent PPI regimens",
+        "Do not dismiss vomiting blood"
+      ]
+    },
+    "fr": {
+      "summary": "Hernie hiatale: reflux. Urgences si hématémèse, méléna, douleur brutale, dysphagie progressive. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Vomissements de sang / selles noires",
+        "Douleur thoracique/abdominale brutale",
+        "Dysphagie progressive"
+      ],
+      "seeDoctorIf": [
+        "Brûlures persistantes"
+      ],
+      "doNot": [
+        "Pas de posologies d'IPP inventées"
+      ]
+    },
+    "he": {
+      "summary": "בקע סרעפתי: צרבת. חירום בהקאת דם, צואה שחורה, כאב פתאומי. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "הקאת דם / צואה שחורה",
+        "כאב חזה/בטן פתאומי",
+        "קושי בליעה מתקדם"
+      ],
+      "seeDoctorIf": [
+        "צרבת מתמשכת"
+      ],
+      "doNot": [
+        "אין מינוני PPI מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Хиатальная грыжа: изжога. Неотложка при кровавой рвоте, чёрном стуле, внезапной боли. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Кровавая рвота / чёрный стул",
+        "Внезапная боль в груди/животе",
+        "Прогрессирующая дисфагия"
+      ],
+      "seeDoctorIf": [
+        "Стойкая изжога"
+      ],
+      "doNot": [
+        "Не изобретать дозы ИПП"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hiatus-hernia",
+      "name": "NHS — Hiatus hernia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

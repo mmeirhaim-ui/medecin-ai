@@ -1,0 +1,101 @@
+{
+  "id": "lupus",
+  "category": "rheumatology",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "lupus SLE",
+      "systemic lupus erythematosus rash joints"
+    ],
+    "fr": [
+      "lupus érythémateux disséminé",
+      "LED lupus articulations"
+    ],
+    "he": [
+      "זאבת לופוס",
+      "לופוס מערכתי",
+      "SLE"
+    ],
+    "ru": [
+      "красная волчанка",
+      "системная красная волчанка",
+      "СКВ волчанка"
+    ]
+  },
+  "titles": {
+    "en": "Lupus (SLE) — orientation",
+    "fr": "Lupus (LED) — orientation",
+    "he": "זאבת (לופוס) — התמצאות",
+    "ru": "Волчанка (СКВ) — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Lupus can affect joints, skin, kidneys and other organs. NHS: diagnosis needs clinical assessment and tests; flares need medical review. Emergency: severe breathlessness, chest pain, confusion, very high fever, or sudden swelling/oliguria suggesting organ involvement. Never invent immunosuppressant or steroid doses.",
+      "emergencyIf": [
+        "Severe breathlessness or chest pain",
+        "Confusion, very high fever",
+        "Sudden severe swelling or little/no urine"
+      ],
+      "seeDoctorIf": [
+        "Suspected lupus symptoms (joint pain, photosensitive rash, unexplained fatigue)",
+        "Known lupus with flare symptoms"
+      ],
+      "doNot": [
+        "Do not invent steroid/immunosuppressant doses",
+        "Do not stop prescribed medicines without clinician advice"
+      ]
+    },
+    "fr": {
+      "summary": "Lupus: articulations, peau, reins. Urgences si dyspnée, douleur thoracique, confusion, fièvre élevée, oligurie. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Dyspnée sévère ou douleur thoracique",
+        "Confusion, très forte fièvre",
+        "Oligurie / œdèmes sévères"
+      ],
+      "seeDoctorIf": [
+        "Suspicion de lupus ou poussée"
+      ],
+      "doNot": [
+        "Pas de posologies immunosuppresseurs inventées"
+      ]
+    },
+    "he": {
+      "summary": "לופוס: מפרקים, עור, כליות. חירום בקוצר נשימה, כאב חזה, בלבול, חום גבוה, מיעוט שתן. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "קוצר נשימה קשה או כאב חזה",
+        "בלבול, חום גבוה מאוד",
+        "נפיחות קשה או מיעוט שתן"
+      ],
+      "seeDoctorIf": [
+        "חשד ללופוס או התלקחות"
+      ],
+      "doNot": [
+        "אין מינוני סטרואידים/מדכאי חיסון מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Волчанка: суставы, кожа, почки. Неотложка при одышке, боли в груди, спутанности, высокой лихорадке, олигурии. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Тяжёлая одышка или боль в груди",
+        "Спутанность, очень высокая лихорадка",
+        "Отёки / мало мочи"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на волчанку или обострение"
+      ],
+      "doNot": [
+        "Не изобретать дозы иммунодепрессантов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-lupus",
+      "name": "NHS — Lupus",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/lupus/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

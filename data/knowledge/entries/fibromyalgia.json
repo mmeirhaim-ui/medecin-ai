@@ -1,0 +1,95 @@
+{
+  "id": "fibromyalgia",
+  "category": "rheumatology",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "fibromyalgia",
+      "widespread pain fatigue fibromyalgia",
+      "fibro fog"
+    ],
+    "fr": [
+      "fibromyalgie",
+      "douleurs diffuses fibromyalgie",
+      "fatigue fibromyalgie"
+    ],
+    "he": [
+      "פיברומיאלגיה",
+      "כאבים מפושטים פיברו",
+      "עייפות פיברומיאלגיה"
+    ],
+    "ru": [
+      "фибромиалгия",
+      "распространённые боли фибромиалгия",
+      "усталость фибромиалгия"
+    ]
+  },
+  "titles": {
+    "en": "Fibromyalgia — orientation",
+    "fr": "Fibromyalgie — orientation",
+    "he": "פיברומיאלגיה — התמצאות",
+    "ru": "Фибромиалгия — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Fibromyalgia involves widespread pain, fatigue, sleep problems and cognitive fog. NHS: diagnosis is clinical; management may include paced activity, sleep support, psychological therapies and sometimes medicines — this pack never invents doses. Seek urgent care for new chest pain, sudden weakness, or red-flag neuro symptoms (not typical fibromyalgia).",
+      "emergencyIf": [
+        "Sudden chest pain, stroke-like symptoms, or severe unexplained fever"
+      ],
+      "seeDoctorIf": [
+        "Persistent widespread pain/fatigue affecting daily life",
+        "New or changing symptoms your GP should assess"
+      ],
+      "doNot": [
+        "Do not invent opioid or antidepressant regimens",
+        "Do not dismiss new red-flag symptoms as 'just fibro'"
+      ]
+    },
+    "fr": {
+      "summary": "Fibromyalgie: douleurs diffuses, fatigue, sommeil. Orientation NHS; pas de posologies inventées. Urgences si signes cardio/neuro nouveaux.",
+      "emergencyIf": [
+        "Douleur thoracique soudaine, signes d'AVC, fièvre grave"
+      ],
+      "seeDoctorIf": [
+        "Douleurs/fatigue persistantes"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "פיברומיאלגיה: כאבים מפושטים, עייפות, שינה. לפי NHS; אין מינונים מומצאים. חירום לסימנים חדשים.",
+      "emergencyIf": [
+        "כאב חזה פתאומי, סימני שבץ, חום קשה"
+      ],
+      "seeDoctorIf": [
+        "כאבים/עייפות מתמשכים"
+      ],
+      "doNot": [
+        "אין מינוני תרופות מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Фибромиалгия: распространённые боли, усталость, сон. Ориентир NHS; дозы не выдумывать. Неотложка при новых красных флагах.",
+      "emergencyIf": [
+        "Внезапная боль в груди, признаки инсульта, тяжёлая лихорадка"
+      ],
+      "seeDoctorIf": [
+        "Стойкие боли/усталость"
+      ],
+      "doNot": [
+        "Не изобретать схемы лекарств"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-fibromyalgia",
+      "name": "NHS — Fibromyalgia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/fibromyalgia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

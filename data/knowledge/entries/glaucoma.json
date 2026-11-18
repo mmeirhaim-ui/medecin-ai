@@ -1,0 +1,103 @@
+{
+  "id": "glaucoma",
+  "category": "eye",
+  "urgencyDefault": "consultation",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "glaucoma",
+      "eye pressure glaucoma",
+      "acute angle closure eye pain"
+    ],
+    "fr": [
+      "glaucome",
+      "pression oculaire glaucome",
+      "glaucome aigu douleur œil"
+    ],
+    "he": [
+      "גלאוקומה",
+      "לחץ תוך עיני",
+      "גלאוקומה חריפה כאב עין"
+    ],
+    "ru": [
+      "глаукома",
+      "внутриглазное давление",
+      "острая глаукома боль в глазу"
+    ]
+  },
+  "titles": {
+    "en": "Glaucoma",
+    "fr": "Glaucome",
+    "he": "גלאוקומה",
+    "ru": "Глаукома"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Glaucoma can damage the optic nerve, often without early symptoms. Acute angle-closure glaucoma is an emergency: sudden severe eye pain, headache, nausea, halos, red eye and blurred vision — seek emergency care immediately. Routine open-angle disease needs optometrist/ophthalmology pathways. Never invent eye-drop doses.",
+      "emergencyIf": [
+        "Sudden severe eye pain with nausea/vomiting",
+        "Sudden vision loss or coloured halos with red eye",
+        "Hard, painful eye with headache"
+      ],
+      "seeDoctorIf": [
+        "Family history / risk factors — regular eye checks",
+        "Gradual peripheral vision concerns"
+      ],
+      "doNot": [
+        "Do not invent glaucoma drop regimens",
+        "Do not delay acute painful red eye with vision change"
+      ]
+    },
+    "fr": {
+      "summary": "Glaucome: urgence si douleur oculaire brutale, nausées, halos, œil rouge. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Douleur oculaire brutale avec nausées",
+        "Baisse visuelle soudaine / halos",
+        "Œil rouge douloureux"
+      ],
+      "seeDoctorIf": [
+        "Facteurs de risque — contrôles"
+      ],
+      "doNot": [
+        "Pas de collyres inventés"
+      ]
+    },
+    "he": {
+      "summary": "גלאוקומה: חירום בכאב עין פתאומי, בחילות, הילות, עין אדומה. אין טיפות מומצאות.",
+      "emergencyIf": [
+        "כאב עין פתאומי עם בחילות",
+        "ירידת ראייה פתאומית / הילות",
+        "עין אדומה כואבת"
+      ],
+      "seeDoctorIf": [
+        "גורמי סיכון — בדיקות עיניים"
+      ],
+      "doNot": [
+        "אין מינוני טיפות מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Глаукома: неотложка при внезапной боли в глазу, тошноте, радужных кругах. Капли не выдумывать.",
+      "emergencyIf": [
+        "Внезапная сильная боль в глазу с тошнотой",
+        "Внезапная потеря зрения / круги",
+        "Красный болезненный глаз"
+      ],
+      "seeDoctorIf": [
+        "Факторы риска — осмотры"
+      ],
+      "doNot": [
+        "Не изобретать глазные капли"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-glaucoma",
+      "name": "NHS — Glaucoma",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/glaucoma/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

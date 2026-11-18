@@ -5,1462 +5,1449 @@
       "name": "Ameli — Douleur thoracique / urgence",
       "org": "Assurance Maladie (France)",
       "url": "https://www.ameli.fr/assure/sante/themes/douleur-thoracique/reconnaitre-agit-urgence",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-cold",
       "name": "CDC — Manage common cold",
       "org": "CDC",
       "url": "https://www.cdc.gov/common-cold/treatment/",
-      "topics": [
-        "respiratory"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-diabetes-sick",
       "name": "CDC — Managing sick days (diabetes)",
       "org": "CDC",
       "url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
-      "topics": [
-        "endocrine"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-flu-care",
       "name": "CDC — Flu: what to do if you get sick",
       "org": "CDC",
       "url": "https://www.cdc.gov/flu/takingcare/",
-      "topics": [
-        "respiratory"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-heat-illnesses",
       "name": "CDC/NIOSH — Heat-related illnesses",
       "org": "CDC",
       "url": "https://www.cdc.gov/niosh/heat-stress/about/illnesses.html",
-      "topics": [
-        "environmental"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-heat-pdf",
-      "name": "CDC — Heat related illnesses tip sheet",
+      "name": "CDC — Heat related illnesses (public tip sheet)",
       "org": "CDC",
       "url": "https://www.cdc.gov/disasters/extremeheat/pdf/Heat_Related_Illness.pdf",
-      "topics": [
-        "environmental"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-malaria",
       "name": "CDC — Malaria",
       "org": "CDC",
       "url": "https://www.cdc.gov/malaria/index.html",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-respiratory",
       "name": "CDC — About respiratory illnesses",
       "org": "CDC",
       "url": "https://www.cdc.gov/respiratory-viruses/about/index.html",
-      "topics": [
-        "respiratory",
-        "emergency"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-sore-throat",
       "name": "CDC — Sore throat basics",
       "org": "CDC",
       "url": "https://www.cdc.gov/sore-throat/about/",
-      "topics": [
-        "ent"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "cdc-travelers-health",
       "name": "CDC — Travelers' Health",
       "org": "CDC",
       "url": "https://wwwnc.cdc.gov/travel",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "has-abx-respiratory",
-      "name": "HAS — Mieux prescrire les antibiotiques",
+      "name": "HAS — Mieux prescrire les antibiotiques (IR hautes / IU)",
       "org": "HAS",
       "url": "https://www.has-sante.fr/jcms/c_2723930/fr/mieux-prescrire-les-antibiotiques-pour-les-infections-respiratoires-hautes-et-les-infections-urinaires",
-      "topics": [
-        "general"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "has-allergy-messages",
       "name": "HAS — Allergologie & immunologie (5 messages)",
       "org": "HAS",
       "url": "https://www.has-sante.fr/jcms/pprd_2974199/fr/allergologie-immunologie-5-messages-pour-des-soins-pertinents",
-      "topics": [
-        "allergy"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "has-angine-abx",
       "name": "HAS — Angine aiguë / antibiothérapie",
       "org": "HAS",
       "url": "https://www.has-sante.fr/jcms/p_3529230/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-adulte",
-      "topics": [
-        "ent"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "has-avc-alert",
       "name": "HAS — AVC signes d’alerte",
       "org": "Haute Autorité de Santé",
       "url": "https://www.has-sante.fr/jcms/p_3701212/fr/accident-vasculaire-cerebral-des-signes-d-alerte-a-votre-retour-a-domicile",
-      "topics": [
-        "stroke"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "il-moh-fever",
       "name": "Israeli MoH — Fever in children",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/fever/high-temperature-and-fever/",
-      "topics": [
-        "peds",
-        "fever"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "il-moh-mental-crisis",
       "name": "Israeli MoH — Mental health first aid / crisis",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/mental-health/therapy-rehabilitation/crisis-support/first-aid/",
-      "topics": [
-        "mental-health"
-      ]
-    },
-    {
-      "id": "il-moh-sob",
-      "name": "Israeli MoH — Shortness of breath",
-      "org": "Israel Ministry of Health",
-      "url": "https://me.health.gov.il/en/older-adult/keep-me-healthy/common-concerns/shortness-of-breath/",
-      "topics": [
-        "respiratory"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "il-moh-stomach",
       "name": "Israeli MoH — Stomach pain in children",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/digestive-system/stomach-ache/",
-      "topics": [
-        "peds",
-        "gi"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "il-moh-stroke",
-      "name": "Israeli MoH — Stroke (older adults)",
+      "name": "Israeli MoH — Stroke",
       "org": "Israel Ministry of Health",
       "url": "https://me.health.gov.il/en/older-adult/keep-me-healthy/common-conditions/stroke/",
-      "topics": [
-        "stroke"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-burns",
       "name": "MedlinePlus — Burns",
       "org": "MedlinePlus",
       "url": "https://medlineplus.gov/ency/article/000030.htm",
-      "topics": [
-        "trauma"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-chest-pain",
       "name": "MedlinePlus — Chest pain",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/article/003079.htm",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-co",
       "name": "MedlinePlus — Carbon monoxide poisoning",
       "org": "MedlinePlus",
       "url": "https://medlineplus.gov/ency/article/002804.htm",
-      "topics": [
-        "toxicology"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-dka",
       "name": "MedlinePlus — Diabetic ketoacidosis",
       "org": "MedlinePlus",
       "url": "https://medlineplus.gov/ency/article/000320.htm",
-      "topics": [
-        "endocrine"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-dvt",
       "name": "MedlinePlus — Deep Vein Thrombosis",
       "org": "MedlinePlus",
       "url": "https://medlineplus.gov/deepveinthrombosis.html",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-emergencies",
       "name": "MedlinePlus — Recognizing medical emergencies",
-      "org": "MedlinePlus / NLM / NIH",
+      "org": "MedlinePlus",
       "url": "https://medlineplus.gov/ency/article/001927.htm",
-      "topics": [
-        "emergency",
-        "red-flags"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-er-adult",
       "name": "MedlinePlus — When to use the emergency room (adult)",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/patientinstructions/000593.htm",
-      "topics": [
-        "emergency"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-fever",
       "name": "MedlinePlus — Fever",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/ency/article/003090.htm",
-      "topics": [
-        "fever",
-        "peds"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-nosebleed",
       "name": "MedlinePlus — Nosebleed",
       "org": "MedlinePlus",
       "url": "https://medlineplus.gov/ency/article/003106.htm",
-      "topics": [
-        "ent"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-pe",
       "name": "MedlinePlus — Pulmonary Embolism",
       "org": "MedlinePlus",
       "url": "https://medlineplus.gov/pulmonaryembolism.html",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-stroke",
       "name": "MedlinePlus — Stroke",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/stroke.html",
-      "topics": [
-        "stroke",
-        "neuro"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-uti-adults",
       "name": "MedlinePlus — Urinary tract infection (adults)",
-      "org": "MedlinePlus / NLM / NIH",
+      "org": "MedlinePlus",
       "url": "https://medlineplus.gov/ency/article/000521.htm",
-      "topics": [
-        "uro"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "medlineplus-uti-overview",
       "name": "MedlinePlus — Urinary Tract Infections",
       "org": "MedlinePlus / NLM / NIH",
       "url": "https://medlineplus.gov/urinarytractinfections.html",
-      "topics": [
-        "uro"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-acne",
       "name": "NHS — Acne",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/acne/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-acute-pancreatitis",
       "name": "NHS — Acute pancreatitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/acute-pancreatitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-addisons",
       "name": "NHS — Addison's disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/addisons-disease/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-alcohol-poisoning",
       "name": "NHS — Alcohol poisoning",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/alcohol-poisoning/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-alcohol-use",
       "name": "NHS — Alcohol-use disorder",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/alcohol-use-disorder/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-anal-fissure",
+      "name": "NHS — Anal fissure",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/anal-fissure/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-anaphylaxis",
       "name": "NHS — Anaphylaxis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/anaphylaxis/",
-      "topics": [
-        "allergy"
-      ]
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-angina",
+      "name": "NHS — Angina",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/angina/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-anxiety-panic",
       "name": "NHS — Anxiety, fear or panic",
       "org": "NHS",
       "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-appendicitis",
       "name": "NHS — Appendicitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/appendicitis/",
-      "topics": [
-        "gi"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-asthma",
       "name": "NHS — Asthma",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/asthma/",
-      "topics": [
-        "respiratory"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-asthma-pregnancy",
       "name": "NHS — Asthma and pregnancy",
       "org": "NHS",
       "url": "https://www.nhs.uk/pregnancy/existing-health-conditions/asthma/",
-      "topics": [
-        "respiratory",
-        "obgyn"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-athletes-foot",
       "name": "NHS — Athlete's foot",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/athletes-foot/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-atopic-eczema",
       "name": "NHS — Atopic eczema",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/atopic-eczema/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-atrial-fibrillation",
+      "name": "NHS — Atrial fibrillation",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-b12-folate-anaemia",
       "name": "NHS — Vitamin B12 or folate deficiency anaemia",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-bedwetting",
       "name": "NHS — Bedwetting",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/bedwetting/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-bells-palsy",
       "name": "NHS — Bell's palsy",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/bells-palsy/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-boils",
       "name": "NHS — Boils",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/boils/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-broken-bone",
       "name": "NHS — Broken bone (fracture)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/broken-bone/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-bronchitis",
       "name": "NHS — Bronchitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/bronchitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-bunions",
       "name": "NHS — Bunions",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/bunions/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-carpal-tunnel",
       "name": "NHS — Carpal tunnel syndrome",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/carpal-tunnel-syndrome/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-cataracts",
+      "name": "NHS — Cataracts",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cataracts/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-cellulitis",
       "name": "NHS — Cellulitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/cellulitis/",
-      "topics": [
-        "derm"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-chickenpox",
       "name": "NHS — Chickenpox",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/chickenpox/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-chilblains",
       "name": "NHS — Chilblains",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/chilblains/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-child-colds",
       "name": "NHS — Colds, coughs and ear infections in children",
       "org": "NHS",
       "url": "https://www.nhs.uk/baby/health/colds-coughs-and-ear-infections-in-children/",
-      "topics": [
-        "peds"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-chlamydia",
       "name": "NHS — Chlamydia",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/chlamydia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-ckd",
       "name": "NHS — Chronic kidney disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/kidney-disease/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-cluster-headaches",
       "name": "NHS — Cluster headaches",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/cluster-headaches/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-co",
       "name": "NHS — Carbon monoxide poisoning",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/carbon-monoxide-poisoning/",
-      "topics": [
-        "toxicology"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-coeliac",
       "name": "NHS — Coeliac disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/coeliac-disease/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-cold-sores",
       "name": "NHS — Cold sores",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/cold-sores/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-confusion",
       "name": "NHS — Sudden confusion (delirium)",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/confusion/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-conjunctivitis",
       "name": "NHS — Conjunctivitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/conjunctivitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-constipation",
       "name": "NHS — Constipation",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/constipation/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-copd",
       "name": "NHS — Chronic obstructive pulmonary disease (COPD)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-cradle-cap",
       "name": "NHS — Cradle cap",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/cradle-cap/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-crohns",
       "name": "NHS — Crohn's disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/crohns-disease/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-croup",
       "name": "NHS — Croup",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/croup/",
-      "topics": [
-        "peds"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-cuts-grazes",
       "name": "NHS — Cuts and grazes",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
-      "topics": []
-    },
-    {
-      "id": "nhs-cystitis",
-      "name": "NHS — Cystitis",
-      "org": "NHS",
-      "url": "https://www.nhs.uk/conditions/cystitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-dehydration",
       "name": "NHS — Dehydration",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/dehydration/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-dengue",
       "name": "NHS — Dengue",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/dengue/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-dental-abscess",
       "name": "NHS — Dental abscess",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/dental-abscess/",
-      "topics": [
-        "dental"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-depression-low-mood",
       "name": "NHS — Low mood, sadness or depression",
       "org": "NHS",
       "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/low-mood-sadness-depression/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-diarrhoea-vomiting",
       "name": "NHS — Diarrhoea and vomiting",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/diarrhoea-and-vomiting/",
-      "topics": [
-        "gi"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-dislocated-shoulder",
       "name": "NHS — Dislocated shoulder",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/dislocated-shoulder/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-diverticulitis",
       "name": "NHS — Diverticular disease and diverticulitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-dry-eyes",
+      "name": "NHS — Dry eyes",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dry-eyes/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-dvt",
       "name": "NHS — DVT",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-earwax",
       "name": "NHS — Earwax build-up",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/earwax-build-up/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-ectopic",
       "name": "NHS — Ectopic pregnancy",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-endometriosis",
+      "name": "NHS — Endometriosis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/endometriosis/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-epilepsy",
       "name": "NHS — Epilepsy",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/epilepsy/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-fainting",
       "name": "NHS — Fainting",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/fainting/",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-falls",
       "name": "NHS — Falls",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/falls/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-fibroids",
+      "name": "NHS — Fibroids",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/fibroids/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-fibromyalgia",
+      "name": "NHS — Fibromyalgia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/fibromyalgia/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-food-poisoning",
       "name": "NHS — Food poisoning",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/food-poisoning/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-frostbite",
       "name": "NHS — Frostbite",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/frostbite/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-frozen-shoulder",
+      "name": "NHS — Frozen shoulder",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/frozen-shoulder/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-gallstones",
       "name": "NHS — Gallstones",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/gallstones/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-glandular-fever",
       "name": "NHS — Glandular fever",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/glandular-fever/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-glaucoma",
+      "name": "NHS — Glaucoma",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/glaucoma/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-glue-ear",
       "name": "NHS — Glue ear",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/glue-ear/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-gonorrhoea",
       "name": "NHS — Gonorrhoea",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/gonorrhoea/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-gout",
       "name": "NHS — Gout",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/gout/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hand-foot-mouth",
       "name": "NHS — Hand, foot and mouth disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/hand-foot-mouth-disease/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-head-injury",
       "name": "NHS — Head injury and concussion",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-head-lice",
       "name": "NHS — Head lice and nits",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/head-lice-and-nits/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hearing-loss",
       "name": "NHS — Hearing loss",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/hearing-loss/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-heart-attack",
       "name": "NHS — Heart attack",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/heart-attack/",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-heart-failure",
       "name": "NHS — Heart failure",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/heart-failure/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-heartburn-reflux",
       "name": "NHS — Heartburn and acid reflux",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-heavy-periods",
       "name": "NHS — Heavy periods",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/heavy-periods/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hepatitis-a",
       "name": "NHS — Hepatitis A",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/hepatitis-a/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-hernia",
+      "name": "NHS — Hernia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hernia/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-hiatus-hernia",
+      "name": "NHS — Hiatus hernia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hiccups",
       "name": "NHS — Hiccups",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/hiccups/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hyperglycaemia",
       "name": "NHS — High blood sugar (hyperglycaemia)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/high-blood-sugar-hyperglycaemia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hypertension",
       "name": "NHS — High blood pressure",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hyperthyroidism",
       "name": "NHS — Overactive thyroid (hyperthyroidism)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hypoglycaemia",
       "name": "NHS — Low blood sugar (hypoglycaemia)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-hypothyroidism",
       "name": "NHS — Underactive thyroid (hypothyroidism)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-ibs",
       "name": "NHS — Irritable bowel syndrome (IBS)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-impetigo",
       "name": "NHS — Impetigo",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/impetigo/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-insect-bites",
       "name": "NHS — Insect bites and stings",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/insect-bites-and-stings/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-insomnia",
       "name": "NHS — Insomnia",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/insomnia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-iron-deficiency-anaemia",
       "name": "NHS — Iron deficiency anaemia",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-itchy-skin",
       "name": "NHS — Itchy skin",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/itchy-skin/",
-      "topics": [
-        "derm"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-jaundice-babies",
       "name": "NHS — Jaundice in babies",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/jaundice-in-babies/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-labyrinthitis",
       "name": "NHS — Labyrinthitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/labyrinthitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-laryngitis",
       "name": "NHS — Laryngitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/laryngitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-leg-cramps",
       "name": "NHS — Leg cramps",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/leg-cramps/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-lupus",
+      "name": "NHS — Lupus",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/lupus/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-lyme",
       "name": "NHS — Lyme disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/lyme-disease/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-macular-degeneration",
+      "name": "NHS — Age-related macular degeneration",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/macular-degeneration/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-malaria",
       "name": "NHS — Malaria",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/malaria/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-mastitis",
       "name": "NHS — Mastitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/mastitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-me-cfs",
+      "name": "NHS — ME/CFS",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chronic-fatigue-syndrome-cfs/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-measles",
       "name": "NHS — Measles",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/measles/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-meningitis",
       "name": "NHS — Meningitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/meningitis/",
-      "topics": [
-        "meningitis",
-        "peds"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-menopause",
       "name": "NHS — Symptoms of menopause and perimenopause",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/menopause-and-perimenopause/symptoms/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-migraine",
       "name": "NHS — Migraine",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/migraine/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-miscarriage",
       "name": "NHS — Miscarriage",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/miscarriage/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-motion-sickness",
       "name": "NHS — Motion sickness",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/motion-sickness/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-mouth-ulcers",
       "name": "NHS — Mouth ulcers",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/mouth-ulcers/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-multiple-sclerosis",
       "name": "NHS — Multiple sclerosis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-mumps",
       "name": "NHS — Mumps",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/mumps/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-nappy-rash",
       "name": "NHS — Nappy rash",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/baby/caring-for-a-newborn/nappy-rash/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-neck-pain",
       "name": "NHS — Neck pain and stiff neck",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-norovirus",
       "name": "NHS — Norovirus (vomiting bug)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/norovirus/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-oral-thrush",
       "name": "NHS — Oral thrush (mouth thrush)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/oral-thrush-mouth-thrush/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-osteoporosis",
       "name": "NHS — Osteoporosis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/osteoporosis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-ovarian-cyst",
+      "name": "NHS — Ovarian cyst",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ovarian-cyst/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-parkinsons",
       "name": "NHS — Parkinson's disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/parkinsons-disease/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-pcos",
+      "name": "NHS — PCOS",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pe",
       "name": "NHS — Pulmonary embolism",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
-      "topics": [
-        "cardio"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pid",
       "name": "NHS — Pelvic inflammatory disease",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/pelvic-inflammatory-disease-pid/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-piles",
       "name": "NHS — Piles (haemorrhoids)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/piles-haemorrhoids/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-plantar-fasciitis",
       "name": "NHS — Plantar fasciitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/plantar-fasciitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pleurisy",
       "name": "NHS — Pleurisy",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/pleurisy/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pmr",
       "name": "NHS — Polymyalgia rheumatica",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/polymyalgia-rheumatica/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pmr-symptoms",
       "name": "NHS — Polymyalgia rheumatica symptoms",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/polymyalgia-rheumatica/symptoms/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pneumonia",
       "name": "NHS — Pneumonia",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/pneumonia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-poisoning",
       "name": "NHS — Poisoning",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/poisoning/",
-      "topics": [
-        "toxicology"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-postmenopausal-bleeding",
       "name": "NHS — Postmenopausal bleeding",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/post-menopausal-bleeding/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pre-eclampsia",
       "name": "NHS — Pre-eclampsia",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-pregnancy-bleeding",
       "name": "NHS — Vaginal bleeding in pregnancy",
       "org": "NHS",
       "url": "https://www.nhs.uk/pregnancy/common-symptoms/vaginal-bleeding/",
-      "topics": [
-        "obgyn"
-      ]
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-prostate-enlargement",
+      "name": "NHS — Prostate enlargement",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/prostate-enlargement/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-prostatitis",
+      "name": "NHS — Prostatitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/prostatitis/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-psoriasis",
       "name": "NHS — Psoriasis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/psoriasis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-quinsy",
       "name": "NHS — Quinsy (peritonsillar abscess)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/quinsy/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-ra-symptoms",
       "name": "NHS — Rheumatoid arthritis symptoms",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-rabies",
       "name": "NHS — Rabies",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/rabies/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-rashes-children",
       "name": "NHS — Rashes in babies and children",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/rashes-babies-and-children/",
-      "topics": [
-        "derm",
-        "peds"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-rectal-bleeding",
       "name": "NHS — Rectal bleeding",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/rectal-bleeding/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-red-eye",
       "name": "NHS — Red eye",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/red-eye/",
-      "topics": [
-        "eye"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-restless-legs",
       "name": "NHS — Restless legs syndrome",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/restless-legs-syndrome/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-rheumatoid-arthritis",
       "name": "NHS — Rheumatoid arthritis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-ringworm",
       "name": "NHS — Ringworm",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/ringworm/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-rosacea",
       "name": "NHS — Rosacea",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/rosacea/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-scabies",
       "name": "NHS — Scabies",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/scabies/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-scarlet-fever",
       "name": "NHS — Scarlet fever",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/scarlet-fever/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-sciatica",
       "name": "NHS — Sciatica",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/sciatica/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-seizures-help",
       "name": "NHS — What to do if someone has a seizure (fit)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/what-to-do-if-someone-has-a-seizure-fit/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-sepsis",
       "name": "NHS — Sepsis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/sepsis/",
-      "topics": [
-        "sepsis"
-      ]
-    },
-    {
-      "id": "nhs-sinusitis",
-      "name": "NHS — Sinusitis (sinus infection)",
-      "org": "NHS",
-      "url": "https://www.nhs.uk/conditions/sinusitis-sinus-infection/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-slapped-cheek",
       "name": "NHS — Slapped cheek syndrome",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/slapped-cheek-syndrome/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-sleep-apnoea",
+      "name": "NHS — Sleep apnoea",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-snake-bites",
       "name": "NHS — Snake bites",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/snake-bites/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-sprains-strains",
       "name": "NHS — Sprains and strains",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/sprains-and-strains/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-stomach-ache",
       "name": "NHS — Stomach ache",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/stomach-ache/",
-      "topics": [
-        "gi"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-stroke",
       "name": "NHS — Stroke symptoms",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
-      "topics": [
-        "stroke"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-sunburn",
       "name": "NHS — Sunburn",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/sunburn/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-temporal-arteritis",
       "name": "NHS — Temporal arteritis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/temporal-arteritis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-tennis-elbow",
       "name": "NHS — Tennis elbow",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/tennis-elbow/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-testicle-pain",
       "name": "NHS — Testicle pain",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/testicle-pain/",
-      "topics": [
-        "uro"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-threadworms",
       "name": "NHS — Threadworms",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/threadworms/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-thrush",
       "name": "NHS — Thrush in men and women",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/thrush-in-men-and-women/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-tinnitus",
       "name": "NHS — Tinnitus",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/tinnitus/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-tonsillitis",
       "name": "NHS — Tonsillitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/tonsillitis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-trigeminal-neuralgia",
       "name": "NHS — Trigeminal neuralgia",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/trigeminal-neuralgia/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-typhoid",
       "name": "NHS — Typhoid fever",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/typhoid-fever/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-ulcerative-colitis",
       "name": "NHS — Ulcerative colitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/ulcerative-colitis/",
-      "topics": []
-    },
-    {
-      "id": "nhs-uti",
-      "name": "NHS — Urinary tract infection (UTI)",
-      "org": "NHS",
-      "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-vaccinations",
       "name": "NHS — Vaccinations and when to have them",
       "org": "NHS",
       "url": "https://www.nhs.uk/vaccinations/nhs-vaccinations-and-when-to-have-them/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-varicose-veins",
       "name": "NHS — Varicose veins",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/varicose-veins/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-vertigo",
       "name": "NHS — Vertigo",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/vertigo/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-vision-loss",
       "name": "NHS — Vision loss",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/vision-loss/",
-      "topics": [
-        "eye"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-vomiting-blood",
       "name": "NHS — Vomiting blood",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/vomiting-blood/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-warts-verrucas",
       "name": "NHS — Warts and verrucas",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/warts-and-verrucas/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-whiplash",
       "name": "NHS — Whiplash",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/whiplash/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "nhs-whooping-cough",
       "name": "NHS — Whooping cough",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/whooping-cough/",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "who-depression",
       "name": "WHO — Depression fact sheet",
       "org": "WHO",
       "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
-      "topics": [
-        "mental-health"
-      ]
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "who-measles",
       "name": "WHO — Measles fact sheet",
       "org": "WHO",
       "url": "https://www.who.int/news-room/fact-sheets/detail/measles",
-      "topics": []
+      "retrievedAt": "2026-11-18"
     },
     {
       "id": "who-suicide-qa",
       "name": "WHO — Suicide Q&A",
       "org": "WHO",
       "url": "https://www.who.int/news-room/questions-and-answers/item/suicide",
-      "topics": [
-        "mental-health"
-      ]
+      "retrievedAt": "2026-11-18"
     }
   ]
 }
