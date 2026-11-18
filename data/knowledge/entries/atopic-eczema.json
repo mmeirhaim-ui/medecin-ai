@@ -1,0 +1,114 @@
+{
+  "id": "atopic-eczema",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "eczema",
+      "atopic dermatitis",
+      "itchy dry patches skin"
+    ],
+    "fr": [
+      "eczéma",
+      "dermatite atopique",
+      "plaques sèches qui démangent"
+    ],
+    "he": [
+      "אקזמה",
+      "דלקת עור אטופית",
+      "כתמים יבשים מגרדים"
+    ],
+    "ru": [
+      "экзема",
+      "атопический дерматит",
+      "зудящие сухие пятна"
+    ]
+  },
+  "titles": {
+    "en": "Atopic eczema (orientation)",
+    "fr": "Eczéma atopique (orientation)",
+    "he": "אקזמה אטופית (הכוונה)",
+    "ru": "Атопическая экзема (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Atopic eczema causes itchy, dry, inflamed skin. NHS: emollients liberally; avoid triggers; pharmacy/GP for flares. Seek urgent care if rapidly spreading redness, fever, or suspected skin infection. Steroid cream strength/duration is clinician/pharmacist guided — no invented potencies.",
+      "seeDoctorIf": [
+        "Eczema not controlled with simple care",
+        "Suspected infection of eczema",
+        "Sleep severely disrupted by itch"
+      ],
+      "emergencyIf": [
+        "Rapidly spreading red hot painful skin with fever"
+      ],
+      "selfCare": [
+        "Regular emollients; short lukewarm baths; avoid known irritants"
+      ],
+      "doNot": [
+        "Do not invent potent topical steroid regimens",
+        "Do not use someone else's prescription cream"
+      ]
+    },
+    "fr": {
+      "summary": "L'eczéma atopique démange et dessèche la peau. Emollients ; avis pharmacien/médecin. Urgence si infection cutanée fébrile. Pas de dermocorticoïdes inventés.",
+      "seeDoctorIf": [
+        "Eczéma non contrôlé",
+        "Suspicion d'infection",
+        "Prurit qui empêche de dormir"
+      ],
+      "emergencyIf": [
+        "Rougeur chaude douloureuse extensive avec fièvre"
+      ],
+      "selfCare": [
+        "Emollients réguliers ; bains tièdes courts"
+      ],
+      "doNot": [
+        "Pas de dermocorticoïdes puissants inventés"
+      ]
+    },
+    "he": {
+      "summary": "אקזמה אטופית מגרדת ומייבשת. קרמים לחים; רוקח/רופא. חירום בחשד לזיהום עם חום. אין סטרואידים מקומיים מומצאים.",
+      "seeDoctorIf": [
+        "אקזמה לא נשלטת",
+        "חשד לזיהום",
+        "גרד שמונע שינה"
+      ],
+      "emergencyIf": [
+        "אדמומיות חמה כואבת מתפשטת עם חום"
+      ],
+      "selfCare": [
+        "לחות סדירה; מקלחות פושרות קצרות"
+      ],
+      "doNot": [
+        "אין מינון סטרואיד מקומי חזק מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Атопическая экзема зудит и сушит кожу. Эмоленты; фармацевт/врач. Неотложка при инфекции с лихорадкой. Сильные топические стероиды не выдумывать.",
+      "seeDoctorIf": [
+        "Экзема не контролируется",
+        "Подозрение на инфекцию",
+        "Зуд мешает спать"
+      ],
+      "emergencyIf": [
+        "Быстро распространяющаяся красная горячая болезненная кожа с лихорадкой"
+      ],
+      "selfCare": [
+        "Регулярные эмоленты; короткие тёплые ванны"
+      ],
+      "doNot": [
+        "Не изобретать схемы сильных топических стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-atopic-eczema",
+      "name": "NHS — Atopic eczema",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

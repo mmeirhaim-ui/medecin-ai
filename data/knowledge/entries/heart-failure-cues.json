@@ -1,0 +1,122 @@
+{
+  "id": "heart-failure-cues",
+  "category": "cardio",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "heart failure",
+      "swollen ankles breathless",
+      "frothy pink phlegm",
+      "orthopnea lying flat"
+    ],
+    "fr": [
+      "insuffisance cardiaque",
+      "cheville gonflées essoufflement",
+      "crachats mousseux rosés",
+      "orthopnée"
+    ],
+    "he": [
+      "אי ספיקת לב",
+      "קרסוליים נפוחים קוצר נשימה",
+      "ליחה ורודה קצפית",
+      "קושי לשכב שטוח"
+    ],
+    "ru": [
+      "сердечная недостаточность",
+      "отёк лодыжек одышка",
+      "пенистая розовая мокрота",
+      "ортопноэ"
+    ]
+  },
+  "titles": {
+    "en": "Heart failure symptom cues",
+    "fr": "Insuffisance cardiaque — orientation",
+    "he": "אי־ספיקת לב — הכוונה",
+    "ru": "Сердечная недостаточность — ориентиры"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Heart failure means the heart cannot pump well enough. NHS symptoms include breathlessness on activity or lying flat, tiredness, ankle/leg/tummy swelling, sudden weight gain, night cough, frothy pink phlegm. New/worsening symptoms need clinical review; severe breathing difficulty or blue/grey colour is emergency. Medicines (diuretics, etc.) are clinician-only — no doses here.",
+      "emergencyIf": [
+        "Severe difficulty breathing",
+        "Lips/skin pale, blue or grey",
+        "Chest pain suggestive of heart attack",
+        "Sudden severe breathlessness with frothy pink phlegm"
+      ],
+      "seeDoctorIf": [
+        "New breathlessness on exertion or lying flat",
+        "Swelling of feet/ankles/legs/tummy",
+        "Sudden weight gain",
+        "Night cough or frothy pink phlegm"
+      ],
+      "doNot": [
+        "Do not invent diuretic or heart-failure drug doses",
+        "Do not stop prescribed medicines without advice"
+      ]
+    },
+    "fr": {
+      "summary": "L'insuffisance cardiaque perturbe le pompage. Dyspnée, œdèmes, prise de poids rapide, toux nocturne, crachats rosés = avis médical. Détresse/cyanose = urgence. Pas de diurétiques inventés.",
+      "emergencyIf": [
+        "Détresse respiratoire sévère",
+        "Lèvres/peau bleues ou grises",
+        "Douleur thoracique type infarctus",
+        "Dyspnée brutale avec crachats mousseux rosés"
+      ],
+      "seeDoctorIf": [
+        "Nouvelle dyspnée à l'effort ou allongé",
+        "Œdèmes",
+        "Prise de poids soudaine",
+        "Toux nocturne / crachats rosés"
+      ],
+      "doNot": [
+        "Pas de doses de diurétiques inventées"
+      ]
+    },
+    "he": {
+      "summary": "אי־ספיקת לב = הלב לא שואב מספיק. קוצר נשימה, בצקות, עלייה במשקל, שיעול לילי, ליחה ורודה — ייעוץ. מצוקה/כחלחלות — חירום. אין משתנים מומצאים.",
+      "emergencyIf": [
+        "קושי נשימה חמור",
+        "שפתיים/עור כחולים או אפורים",
+        "כאב חזה חשוד להתקף לב",
+        "קוצר נשימה פתאומי עם ליחה ורודה קצפית"
+      ],
+      "seeDoctorIf": [
+        "קוצר נשימה חדש במאמץ או בשכיבה",
+        "בצקות",
+        "עלייה פתאומית במשקל",
+        "שיעול לילי / ליחה ורודה"
+      ],
+      "doNot": [
+        "אין מינון משתנים מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Сердечная недостаточность — сердце плохо качает. Одышка, отёки, быстрый набор веса, ночной кашель, розовая мокрота — к врачу. Тяжёлая одышка/цианоз — неотложка. Диуретики не выдумывать.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Синие/серые губы/кожа",
+        "Боль в груди как при инфаркте",
+        "Внезапная одышка с пенистой розовой мокротой"
+      ],
+      "seeDoctorIf": [
+        "Новая одышка при нагрузке или лёжа",
+        "Отёки",
+        "Внезапный набор веса",
+        "Ночной кашель / розовая мокрота"
+      ],
+      "doNot": [
+        "Не изобретать дозы диуретиков"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-heart-failure",
+      "name": "NHS — Heart failure",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heart-failure/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

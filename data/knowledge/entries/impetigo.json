@@ -1,0 +1,102 @@
+{
+  "id": "impetigo",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "impetigo",
+      "honey crusted sores",
+      "school sores"
+    ],
+    "fr": [
+      "impétigo",
+      "croûtes miel",
+      "plaies croûteuses contagieuses"
+    ],
+    "he": [
+      "אימפטיגו",
+      "גלדים דבשיים",
+      "פצעים מידבקים בעור"
+    ],
+    "ru": [
+      "импетиго",
+      "медовые корки",
+      "заразные корочки на коже"
+    ]
+  },
+  "titles": {
+    "en": "Impetigo",
+    "fr": "Impétigo",
+    "he": "אימפטיגו",
+    "ru": "Импетиго"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Impetigo is a contagious bacterial skin infection with sores that may form honey-coloured crusts. NHS: see a GP — antibiotic cream or tablets may be needed (clinician-prescribed). Hygiene to reduce spread; keep children off school/nursery until advised (often 48h after starting antibiotics).",
+      "seeDoctorIf": [
+        "Suspected impetigo",
+        "Spreading sores",
+        "Fever or feeling unwell with skin sores"
+      ],
+      "selfCare": [
+        "Wash hands; avoid sharing towels; cover sores if possible"
+      ],
+      "doNot": [
+        "Do not invent antibiotic cream/tablet regimens",
+        "Do not scratch and share cloths"
+      ]
+    },
+    "fr": {
+      "summary": "L'impétigo est une infection cutanée contagieuse avec croûtes jaunâtres. Voir un médecin pour antibiotiques locaux/oraux. Hygiène pour limiter la contagion.",
+      "seeDoctorIf": [
+        "Suspicion d'impétigo",
+        "Plaies qui s'étendent",
+        "Fièvre"
+      ],
+      "selfCare": [
+        "Lavage des mains ; ne pas partager les serviettes"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "אימפטיגו זיהום עור מידבק עם גלדים דבשיים. רופא לאנטיביוטיקה. היגיינה להפחתת הדבקה.",
+      "seeDoctorIf": [
+        "חשד לאימפטיגו",
+        "פצעים מתפשטים",
+        "חום"
+      ],
+      "selfCare": [
+        "שטיפת ידיים; לא לשתף מגבות"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Импетиго — заразная бактериальная инфекция кожи с медовыми корками. К врачу за антибиотиками. Гигиена для снижения передачи.",
+      "seeDoctorIf": [
+        "Подозрение на импетиго",
+        "Распространяющиеся язвы",
+        "Лихорадка"
+      ],
+      "selfCare": [
+        "Мыть руки; не делиться полотенцами"
+      ],
+      "doNot": [
+        "Не изобретать схемы антибиотиков"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-impetigo",
+      "name": "NHS — Impetigo",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/impetigo/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

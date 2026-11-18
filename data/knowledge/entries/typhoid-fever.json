@@ -1,0 +1,103 @@
+{
+  "id": "typhoid-fever",
+  "category": "travel",
+  "urgencyDefault": "voir_medecin",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "typhoid",
+      "typhoid fever",
+      "fever after unclean water travel"
+    ],
+    "fr": [
+      "typhoïde",
+      "fièvre typhoïde",
+      "fièvre après eau non potable voyage"
+    ],
+    "he": [
+      "טיפואיד",
+      "קדחת טיפוס",
+      "חום אחרי מים לא נקיים בנסיעה"
+    ],
+    "ru": [
+      "брюшной тиф",
+      "тифозная лихорадка",
+      "лихорадка после грязной воды в поездке"
+    ]
+  },
+  "titles": {
+    "en": "Typhoid fever (travel)",
+    "fr": "Fièvre typhoïde (voyage)",
+    "he": "טיפואיד (נסיעות)",
+    "ru": "Брюшной тиф (путешествия)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Typhoid spreads via unclean food/water. Symptoms: rising fever, headache, cough, chills, tiredness, constipation or later tummy ache/diarrhoea, sometimes pink spots. Needs testing and antibiotics — clinician only. Emergency for sudden worsening stomach pain, black/dark-red stool, or coffee-ground/bloody vomit. Vaccination advice before travel is clinic-led.",
+      "emergencyIf": [
+        "Sudden stomach pain that keeps getting worse",
+        "Black or dark-red stool",
+        "Vomiting blood or coffee-ground vomit"
+      ],
+      "seeDoctorIf": [
+        "Fever after travel to typhoid-risk areas — mention travel",
+        "Consider pre-travel typhoid vaccination via travel clinic"
+      ],
+      "doNot": [
+        "Do not invent antibiotic courses",
+        "Do not delay if GI bleeding signs"
+      ]
+    },
+    "fr": {
+      "summary": "La typhoïde se transmet par eau/aliments souillés. Fièvre progressive, céphalées, etc. Antibiotiques = médecin. Urgence si douleur abdominale aggravée, selles noires, vomissements sanglants.",
+      "emergencyIf": [
+        "Douleur abdominale brutale qui empire",
+        "Selles noires ou rouge sombre",
+        "Vomissements de sang / aspect marc de café"
+      ],
+      "seeDoctorIf": [
+        "Fièvre après voyage en zone à risque"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "טיפואיד מועבר במזון/מים מזוהמים. חום עולה, כאב ראש ועוד. אנטיביוטיקה — רופא בלבד. חירום בכאב בטן מחמיר, צואה שחורה, הקאת דם.",
+      "emergencyIf": [
+        "כאב בטן פתאומי שמחמיר",
+        "צואה שחורה או אדומה כהה",
+        "הקאת דם / כמו קפה טחון"
+      ],
+      "seeDoctorIf": [
+        "חום אחרי נסיעה לאזור סיכון"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Брюшной тиф — через грязную воду/пищу. Нарастающая лихорадка и др. Антибиотики — только врач. Неотложка при усиливающейся боли в животе, чёрном стуле, кровавой рвоте.",
+      "emergencyIf": [
+        "Внезапная усиливающаяся боль в животе",
+        "Чёрный или тёмно-красный стул",
+        "Рвота кровью / «кофейной гущей»"
+      ],
+      "seeDoctorIf": [
+        "Лихорадка после поездки в зону риска"
+      ],
+      "doNot": [
+        "Не изобретать курсы антибиотиков"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-typhoid",
+      "name": "NHS — Typhoid fever",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/typhoid-fever/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

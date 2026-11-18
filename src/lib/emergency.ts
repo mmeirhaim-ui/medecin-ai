@@ -175,6 +175,23 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\btraumatisme\s+cr[âa]nien\b/i,
   /\bחבלת\s+ראש\b/u,
   /\bтравма\s+головы\b/iu,
+
+  // Neonatal jaundice red flags (baby <24h / not feeding framed via keywords)
+  /\bneonatal\s+jaundice\b/i,
+  /\bjaundice\s+(in\s+)?(newborn|baby|babies)\b/i,
+  /\bict[èe]re\s+(du\s+)?nouveau[\s-]?n[ée]\b/i,
+  /\bצהבת\s+(ב)?(יילוד|תינוק)\b/u,
+  /\bжелтуха\s+новорождённ/iu,
+
+  // Severe dengue
+  /\bsevere\s+dengue\b/i,
+  /\bdengue\s+s[ée]v[èe]re\b/i,
+  /\bדנגי\b/u,
+  /\bденге\b/iu,
+
+  // COPD severe distress already covered by breath patterns; keep named cue
+  /\bCOPD\s+(attack|exacerbation|flare)\b/i,
+  /\bexacerbation\s+(de\s+)?BPCO\b/i,
 ];
 
 const NEGATION =

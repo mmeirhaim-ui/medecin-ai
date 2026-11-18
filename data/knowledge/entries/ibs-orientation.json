@@ -1,0 +1,89 @@
+{
+  "id": "ibs-orientation",
+  "category": "gi",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "IBS",
+      "irritable bowel",
+      "bloating alternating diarrhoea constipation"
+    ],
+    "fr": [
+      "SII",
+      "côlon irritable",
+      "ballonnements diarrhée constipation alternés"
+    ],
+    "he": [
+      "מעי רגיז",
+      "IBS",
+      "נפיחות שלשול עצירות לסירוגין"
+    ],
+    "ru": [
+      "СРК",
+      "синдром раздражённого кишечника",
+      "вздутие понос запор"
+    ]
+  },
+  "titles": {
+    "en": "IBS (orientation — not a self-diagnosis)",
+    "fr": "SII / côlon irritable (orientation)",
+    "he": "מעי רגיז (הכוונה — לא אבחנה עצמית)",
+    "ru": "СРК (ориентация — не самодиагноз)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "IBS involves tummy pain with bloating and changed bowel habits. Diagnosis is clinical after excluding other causes — do not self-diagnose. Red flags (blood, weight loss, waking at night with pain/diarrhoea, onset after 50, family history of bowel cancer/IBD) need prompt medical review. Diet changes are guided, not invented protocols.",
+      "seeDoctorIf": [
+        "Symptoms suggestive of IBS for assessment",
+        "Blood in stool, unexplained weight loss, night symptoms, new onset later in life"
+      ],
+      "doNot": [
+        "Do not self-diagnose IBS without clinical assessment",
+        "Do not invent restrictive elimination diets as medical treatment"
+      ]
+    },
+    "fr": {
+      "summary": "Le SII associe douleur, ballonnements et troubles du transit. Diagnostic médical après exclusion d'autres causes. Signes d'alarme = avis prompt.",
+      "seeDoctorIf": [
+        "Symptômes évocateurs à évaluer",
+        "Sang, amaigrissement, symptômes nocturnes, début tardif"
+      ],
+      "doNot": [
+        "Pas d'autodiagnostic",
+        "Pas de régimes d'élimination inventés"
+      ]
+    },
+    "he": {
+      "summary": "מעי רגיז: כאב בטן עם נפיחות ושינוי יציאות. אבחנה רפואית לאחר שלילת גורמים אחרים. דגלים אדומים — ייעוץ מהיר.",
+      "seeDoctorIf": [
+        "תסמינים מחשידים להערכה",
+        "דם, ירידה במשקל, תסמיני לילה, התחלה בגיל מבוגר"
+      ],
+      "doNot": [
+        "לא לאבחן לבד",
+        "אין דיאטות אלימינציה מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "СРК: боль, вздутие, изменение стула. Диагноз врача после исключения другого. Красные флаги — быстрый осмотр.",
+      "seeDoctorIf": [
+        "Симптомы для оценки",
+        "Кровь, похудение, ночные симптомы, начало в зрелом возрасте"
+      ],
+      "doNot": [
+        "Не ставить себе диагноз СРК",
+        "Не изобретать жёсткие элиминационные диеты"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ibs",
+      "name": "NHS — Irritable bowel syndrome (IBS)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

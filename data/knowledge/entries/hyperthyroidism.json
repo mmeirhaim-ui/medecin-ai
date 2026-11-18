@@ -1,0 +1,102 @@
+{
+  "id": "hyperthyroidism",
+  "category": "endocrine",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "overactive thyroid",
+      "hyperthyroidism",
+      "thyrotoxicosis",
+      "racing heart weight loss thyroid"
+    ],
+    "fr": [
+      "thyroïde hyperactive",
+      "hyperthyroïdie",
+      "thyrotoxicose",
+      "cœur rapide amaigrissement thyroïde"
+    ],
+    "he": [
+      "יתר פעילות בלוטת התריס",
+      "היפרתירואידיזם",
+      "דפיקות לב וירידה במשקל תריס"
+    ],
+    "ru": [
+      "гипертиреоз",
+      "повышенная щитовидная",
+      "тиреотоксикоз",
+      "сердцебиение похудение щитовидка"
+    ]
+  },
+  "titles": {
+    "en": "Overactive thyroid (hyperthyroidism)",
+    "fr": "Hyperthyroïdie",
+    "he": "יתר־פעילות בלוטת התריס",
+    "ru": "Гипертиреоз"
+  },
+  "guidance": {
+    "en": {
+      "summary": "An overactive thyroid can cause anxiety, heat intolerance, weight loss, tremor, palpitations, and eye symptoms in some people. NHS: see a GP for assessment and blood tests. Treatments (antithyroid drugs, etc.) are clinician-only. Severe symptoms with fever/agitation may need emergency assessment (possible thyroid storm — rare).",
+      "emergencyIf": [
+        "Severe agitation with high fever and very fast heart rate after known thyroid disease — emergency assessment",
+        "Chest pain or severe breathlessness with palpitations"
+      ],
+      "seeDoctorIf": [
+        "Symptoms suggesting overactive thyroid",
+        "Eye bulging/irritation with thyroid symptoms"
+      ],
+      "doNot": [
+        "Do not invent antithyroid drug doses",
+        "Do not stop prescribed thyroid medicines without advice"
+      ]
+    },
+    "fr": {
+      "summary": "L'hyperthyroïdie peut causer anxiété, intolérance à la chaleur, amaigrissement, tremblements, palpitations. Bilan médical. Pas d'antithyroïdiens inventés.",
+      "emergencyIf": [
+        "Agitation sévère avec forte fièvre et tachycardie — urgence",
+        "Douleur thoracique ou dyspnée sévère avec palpitations"
+      ],
+      "seeDoctorIf": [
+        "Suspicion d'hyperthyroïdie"
+      ],
+      "doNot": [
+        "Pas d'antithyroïdiens inventés"
+      ]
+    },
+    "he": {
+      "summary": "יתר־פעילות תריס: חרדה, רגישות לחום, ירידה במשקל, רעד, דפיקות לב. בדיקות אצל רופא. אין תרופות אנטי־תריסיות מומצאות.",
+      "emergencyIf": [
+        "אי-שקט חמור עם חום גבוה ודופק מהיר מאוד — חירום",
+        "כאב חזה או קוצר נשימה חמור עם דפיקות"
+      ],
+      "seeDoctorIf": [
+        "חשד ליתר־פעילות תריס"
+      ],
+      "doNot": [
+        "אין מינון תרופות אנטי־תריסיות מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Гипертиреоз: тревога, непереносимость жары, похудение, тремор, сердцебиение. Обследование у врача. Антитиреоидные дозы не выдумывать.",
+      "emergencyIf": [
+        "Сильное возбуждение с высокой лихорадкой и очень частым пульсом — неотложка",
+        "Боль в груди или тяжёлая одышка с сердцебиением"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на гипертиреоз"
+      ],
+      "doNot": [
+        "Не изобретать дозы антитиреоидных препаратов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hyperthyroidism",
+      "name": "NHS — Overactive thyroid (hyperthyroidism)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
