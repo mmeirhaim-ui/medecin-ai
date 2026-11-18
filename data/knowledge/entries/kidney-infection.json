@@ -1,0 +1,107 @@
+{
+  "id": "kidney-infection",
+  "category": "uro",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "kidney infection",
+      "pyelonephritis",
+      "flank pain fever UTI"
+    ],
+    "fr": [
+      "infection rénale",
+      "pyélonéphrite",
+      "douleur flanc fièvre infection urinaire"
+    ],
+    "he": [
+      "דלקת כליות",
+      "פיאלונפריטיס",
+      "כאב מותן חום דלקת שתן"
+    ],
+    "ru": [
+      "инфекция почек",
+      "пиелонефрит",
+      "боль в боку лихорадка цистит"
+    ]
+  },
+  "titles": {
+    "en": "Kidney infection (pyelonephritis)",
+    "fr": "Infection rénale (pyélonéphrite)",
+    "he": "דלקת כליות",
+    "ru": "Инфекция почек (пиелонефрит)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Kidney infection often causes fever, flank/back pain, nausea and urinary symptoms. NHS: needs prompt medical assessment and prescribed antibiotics — never invent doses. Emergency: confusion, very high fever, vomiting preventing pills, pregnancy with fever/flank pain, or low blood pressure signs.",
+      "emergencyIf": [
+        "Confusion or very high fever with shaking",
+        "Cannot keep fluids/medicines down",
+        "Pregnant with fever and flank pain",
+        "Signs of sepsis (extreme weakness, mottled skin)"
+      ],
+      "seeDoctorIf": [
+        "Fever with flank pain or UTI symptoms lasting",
+        "Blood in urine with fever"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not delay care for fever with flank pain"
+      ]
+    },
+    "fr": {
+      "summary": "Pyélonéphrite: fièvre, douleur de flanc. Avis médical rapide; pas d'antibiotiques inventés. Urgences si sepsis, grossesse fébrile, vomissements.",
+      "emergencyIf": [
+        "Confusion / très forte fièvre",
+        "Vomissements empêchant les médicaments",
+        "Grossesse avec fièvre et douleur de flanc",
+        "Signes de sepsis"
+      ],
+      "seeDoctorIf": [
+        "Fièvre avec douleur de flanc"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת כליות: חום וכאב מותן. הערכה דחופה; אין אנטיביוטיקה מומצאת. חירום באלח דם, הריון עם חום, הקאות.",
+      "emergencyIf": [
+        "בלבול / חום גבוה מאוד",
+        "הקאות שמונעות תרופות",
+        "הריון עם חום וכאב מותן",
+        "סימני אלח דם"
+      ],
+      "seeDoctorIf": [
+        "חום עם כאב מותן"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Пиелонефрит: лихорадка, боль в боку. Срочная оценка; антибиотики не выдумывать. Неотложка при сепсисе, беременности с лихорадкой, рвоте.",
+      "emergencyIf": [
+        "Спутанность / очень высокая лихорадка",
+        "Рвота, мешающая лекарствам",
+        "Беременность с лихорадкой и болью в боку",
+        "Признаки сепсиса"
+      ],
+      "seeDoctorIf": [
+        "Лихорадка с болью в боку"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-kidney-infection",
+      "name": "NHS — Kidney infection",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/kidney-infection/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

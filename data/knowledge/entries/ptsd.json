@@ -1,0 +1,100 @@
+{
+  "id": "ptsd",
+  "category": "mental-health",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "PTSD",
+      "post traumatic stress",
+      "flashbacks trauma nightmares"
+    ],
+    "fr": [
+      "TSPT",
+      "stress post-traumatique",
+      "flashbacks cauchemars traumatisme"
+    ],
+    "he": [
+      "פוסט טראומה",
+      "PTSD",
+      "פלאשבקים סיוטים טראומה"
+    ],
+    "ru": [
+      "ПТСР",
+      "посттравматическое стрессовое",
+      "флэшбеки кошмары травма"
+    ]
+  },
+  "titles": {
+    "en": "PTSD — orientation",
+    "fr": "TSPT — orientation",
+    "he": "פוסט-טראומה — התמצאות",
+    "ru": "ПТСР — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "PTSD can follow trauma with flashbacks, nightmares, hyperarousal and avoidance. NHS: trauma-focused therapies; medicines only if clinician-prescribed — never invent doses. Emergency: suicidal crisis, harm to others, or acute dissociation with inability to stay safe.",
+      "emergencyIf": [
+        "Suicidal plans",
+        "Immediate risk of harm to self/others",
+        "Unable to stay safe during acute flashbacks"
+      ],
+      "seeDoctorIf": [
+        "Symptoms lasting weeks after trauma",
+        "Avoidance and nightmares disrupting life"
+      ],
+      "doNot": [
+        "Do not invent benzodiazepine or antidepressant regimens",
+        "Do not force detailed trauma retelling in casual chat"
+      ]
+    },
+    "fr": {
+      "summary": "TSPT: flashbacks, cauchemars. Thérapies; pas de posologies inventées. Urgences si crise suicidaire.",
+      "emergencyIf": [
+        "Idées suicidaires avec plan",
+        "Risque immédiat de danger"
+      ],
+      "seeDoctorIf": [
+        "Symptômes prolongés après traumatisme"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "PTSD: פלאשבקים, סיוטים. טיפולים; אין מינונים מומצאים. חירום במשבר אובדני.",
+      "emergencyIf": [
+        "תוכניות אובדניות",
+        "סיכון מיידי לפגיעה"
+      ],
+      "seeDoctorIf": [
+        "תסמינים ממושכים אחרי טראומה"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "ПТСР: флэшбеки, кошмары. Терапии; дозы не выдумывать. Неотложка при суицидальном кризисе.",
+      "emergencyIf": [
+        "Суицидальные планы",
+        "Непосредственный риск вреда"
+      ],
+      "seeDoctorIf": [
+        "Симптомы неделями после травмы"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ptsd",
+      "name": "NHS — PTSD",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/post-traumatic-stress-disorder-ptsd/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

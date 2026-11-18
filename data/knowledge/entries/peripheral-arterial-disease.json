@@ -1,0 +1,103 @@
+{
+  "id": "peripheral-arterial-disease",
+  "category": "vascular",
+  "urgencyDefault": "consultation",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "peripheral arterial disease",
+      "PAD claudication",
+      "leg pain walking PAD"
+    ],
+    "fr": [
+      "artériopathie périphérique",
+      "AOMI claudication",
+      "douleur jambe à la marche"
+    ],
+    "he": [
+      "מחלת עורקים היקפית",
+      "PAD צליעה",
+      "כאב רגל בהליכה"
+    ],
+    "ru": [
+      "периферическая артериальная болезнь",
+      "перемежающаяся хромота",
+      "боль в ноге при ходьбе"
+    ]
+  },
+  "titles": {
+    "en": "Peripheral arterial disease (PAD)",
+    "fr": "Artériopathie oblitérante (AOMI)",
+    "he": "מחלת עורקים היקפית",
+    "ru": "Заболевание периферических артерий"
+  },
+  "guidance": {
+    "en": {
+      "summary": "PAD causes leg pain on walking that eases with rest (claudication). NHS: GP assessment, risk-factor control; never invent antiplatelet doses. Emergency (critical ischaemia): sudden cold pale painful limb, rest pain, non-healing ulcers, or black toes — urgent vascular care.",
+      "emergencyIf": [
+        "Sudden cold, pale, painful limb",
+        "Rest pain in foot/toes at night",
+        "Black toes or rapidly worsening ulcers"
+      ],
+      "seeDoctorIf": [
+        "Leg pain when walking that limits distance",
+        "Known PAD with worsening symptoms"
+      ],
+      "doNot": [
+        "Do not invent antiplatelet or statin regimens",
+        "Do not ignore a cold painful limb"
+      ]
+    },
+    "fr": {
+      "summary": "AOMI: douleur à la marche. Urgence si membre froid/pâle douloureux (ischémie critique). Pas de posologies inventées.",
+      "emergencyIf": [
+        "Membre soudainement froid pâle douloureux",
+        "Douleur de repos du pied",
+        "Orteils noirs / ulcères"
+      ],
+      "seeDoctorIf": [
+        "Claudication limitante"
+      ],
+      "doNot": [
+        "Pas d'antiagrégants inventés"
+      ]
+    },
+    "he": {
+      "summary": "PAD: כאב בהליכה. חירום בגפה קרה חיוורת כואבת. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "גפה קרה חיוורת כואבת פתאום",
+        "כאב במנוחה בכף הרגל",
+        "אצבעות שחורות / כיבים"
+      ],
+      "seeDoctorIf": [
+        "צליעה מגבילה"
+      ],
+      "doNot": [
+        "אין נוגדי טסיות מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "ЗПА: боль при ходьбе. Неотложка при холодной бледной болезненной конечности. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Внезапно холодная бледная болезненная конечность",
+        "Боль в покое в стопе",
+        "Чёрные пальцы / язвы"
+      ],
+      "seeDoctorIf": [
+        "Ограничивающая хромота"
+      ],
+      "doNot": [
+        "Не изобретать антиагреганты"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pad",
+      "name": "NHS — Peripheral arterial disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

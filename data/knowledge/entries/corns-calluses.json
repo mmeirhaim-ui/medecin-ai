@@ -1,0 +1,103 @@
+{
+  "id": "corns-calluses",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 1,
+  "keywords": {
+    "en": [
+      "corns and calluses",
+      "hard skin feet corns",
+      "callus on foot"
+    ],
+    "fr": [
+      "cors et callosités",
+      "peau dure pieds cors",
+      "durillon pied"
+    ],
+    "he": [
+      "יבלות וקשיחות",
+      "עור קשה בכף הרגל",
+      "קאלוס ברגל"
+    ],
+    "ru": [
+      "мозоли и натоптыши",
+      "жёсткая кожа на стопах",
+      "натоптыш"
+    ]
+  },
+  "titles": {
+    "en": "Corns and calluses",
+    "fr": "Cors et callosités",
+    "he": "יבלות וקשיחות בעור",
+    "ru": "Мозоли и натоптыши"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Corns/calluses are thickened skin from pressure/friction. NHS: better-fitting shoes, padding, podiatry — avoid aggressive home cutting if you have diabetes or poor circulation. Emergency: spreading infection, ulcer under a corn, or black/painful ischaemic toe.",
+      "emergencyIf": [
+        "Ulcer or spreading infection under a corn",
+        "Black painful toe",
+        "Fever with foot infection"
+      ],
+      "seeDoctorIf": [
+        "Painful corns limiting walking",
+        "Diabetes with foot skin changes"
+      ],
+      "doNot": [
+        "Do not cut deep into corns if diabetic/poor circulation",
+        "Do not invent acid treatments as guaranteed cures"
+      ]
+    },
+    "fr": {
+      "summary": "Cors/callosités: chaussures adaptées, podologue. Urgences si ulcère/infection ou orteil ischémique.",
+      "emergencyIf": [
+        "Ulcère / infection sous un cor",
+        "Orteil noir douloureux",
+        "Fièvre avec infection du pied"
+      ],
+      "seeDoctorIf": [
+        "Cors douloureux"
+      ],
+      "doNot": [
+        "Ne pas couper profondément si diabète"
+      ]
+    },
+    "he": {
+      "summary": "יבלות: נעליים מתאימות, פודיאטר. חירום בכיב/זיהום או אצבע איסכמית.",
+      "emergencyIf": [
+        "כיב / זיהום תחת יבלת",
+        "אצבע שחורה כואבת",
+        "חום עם זיהום בכף הרגל"
+      ],
+      "seeDoctorIf": [
+        "יבלות כואבות"
+      ],
+      "doNot": [
+        "לא לחתוך עמוק אם סוכרת"
+      ]
+    },
+    "ru": {
+      "summary": "Мозоли: удобная обувь, подолог. Неотложка при язве/инфекции или ишемическом пальце.",
+      "emergencyIf": [
+        "Язва / инфекция под мозолью",
+        "Чёрный болезненный палец",
+        "Лихорадка с инфекцией стопы"
+      ],
+      "seeDoctorIf": [
+        "Болезненные мозоли"
+      ],
+      "doNot": [
+        "Не срезать глубоко при диабете"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-corns-calluses",
+      "name": "NHS — Corns and calluses",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/corns-and-calluses/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
