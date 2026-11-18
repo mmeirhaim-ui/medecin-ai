@@ -46,12 +46,16 @@ export type Consultation = {
   emergencyDetected: boolean;
 };
 
+export type ConsultLocale = "en" | "fr" | "he" | "ru";
+
 export type ConsultRequest = {
   consultationId?: string;
   symptoms: string;
   message?: string;
   history?: { role: "user" | "assistant"; content: string }[];
   images?: { mimeType: string; data: string; name?: string }[];
+  /** UI locale — AI replies should match. */
+  locale?: ConsultLocale;
 };
 
 export type ConsultResponse = {

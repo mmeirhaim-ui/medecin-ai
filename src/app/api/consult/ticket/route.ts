@@ -9,31 +9,99 @@ import {
   sidCookieHeader,
 } from "@/lib/consult-guard";
 
+function localeHint(req: Request): string | null {
+  return (
+    req.headers.get("x-locale") ||
+    req.headers.get("accept-language")?.split(",")[0] ||
+    null
+  );
+}
+
+function jsonError(
+  error: string,
+  status: number,
+  extra?: Record<string, unknown>,
+) {
+  return NextResponse.json(
+    { error, ...extra },
+    {
+      status,
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store",
+      },
+    },
+  );
+}
+
+/**
+ * POST /api/consult/ticket
+ * - Default: mint a single-use analysis ticket (+ refresh sid cookie).
+ * - `?warm=1` or header `X-Consult-Warm: 1`: only ensure sid cookie — does
+ *   not mint a ticket and does not burn ticket quota (UI preload).
+ */
 export async function POST(req: Request) {
-  const originErr = assertSameOrigin(req);
-  if (originErr) {
-    return NextResponse.json({ error: originErr }, { status: 403 });
-  }
+  try {
+    const originErr = assertSameOrigin(req);
+    if (originErr) {
+      return jsonError(originErr, 403);
+    }
 
-  const ip = clientIp(req);
-  if (!(await allowTicketIssue(ip))) {
-    return NextResponse.json(
-      { error: "Trop de demandes. Réessayez plus tard." },
-      { status: 429 },
+    const url = new URL(req.url);
+    const warm =
+      url.searchParams.get("warm") === "1" ||
+      req.headers.get("x-consult-warm") === "1";
+
+    const existingSid = readConsultSid(req);
+    const sid = existingSid || randomBytes(16).toString("base64url");
+
+    if (warm) {
+      const res = NextResponse.json(
+        { ok: true, warm: true },
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json; charset=utf-8",
+            "Cache-Control": "no-store",
+          },
+        },
+      );
+      res.headers.append("Set-Cookie", sidCookieHeader(sid));
+      return res;
+    }
+
+    const ip = clientIp(req);
+    const limited = await allowTicketIssue(ip, localeHint(req));
+    if (limited) {
+      return jsonError(limited.error, 429, {
+        retryAfterSeconds: limited.retryAfterSeconds,
+        kind: limited.kind,
+      });
+    }
+
+    const { ticket, expiresAt } = mintTicket(sid);
+
+    const res = NextResponse.json(
+      { ticket, expiresAt },
+      {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+          "Cache-Control": "no-store",
+        },
+      },
     );
+    res.headers.append("Set-Cookie", sidCookieHeader(sid));
+    return res;
+  } catch (err) {
+    console.error(
+      "ticket error",
+      err instanceof Error ? err.message : "unknown",
+    );
+    return jsonError("Service temporairement indisponible.", 502);
   }
-
-  const existingSid = readConsultSid(req);
-  const sid = existingSid || randomBytes(16).toString("base64url");
-  const { ticket, expiresAt } = mintTicket(sid);
-
-  const res = NextResponse.json({ ticket, expiresAt });
-  // Always refresh the sid cookie so Max-Age stays warm and the browser
-  // definitely has the value used in the HMAC (new or existing).
-  res.headers.append("Set-Cookie", sidCookieHeader(sid));
-  return res;
 }
 
 export async function GET() {
-  return NextResponse.json({ error: "Méthode non autorisée." }, { status: 405 });
+  return jsonError("Méthode non autorisée.", 405);
 }

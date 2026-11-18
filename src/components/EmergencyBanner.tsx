@@ -1,30 +1,31 @@
+"use client";
+
 import { EMERGENCY_NUMBERS } from "@/lib/emergency";
+import { useLocale } from "./LocaleProvider";
 
 type Props = {
   compact?: boolean;
 };
 
 export function EmergencyBanner({ compact }: Props) {
+  const { t } = useLocale();
+
   return (
     <aside
       role="alert"
       aria-live="assertive"
       className="animate-fade-slide rounded-[var(--radius)] border border-red-200 bg-[var(--urgent-bg)] px-4 py-4 text-[var(--urgent)] sm:px-5"
     >
-      <p className="font-display text-xl text-[var(--urgent)]">
-        Urgence possible — appelez les secours
-      </p>
+      <p className="font-display text-xl text-[var(--urgent)]">{t.emergency.title}</p>
       {!compact && (
         <p className="mt-2 text-sm leading-relaxed text-[var(--urgent)]/90">
-          Si vous présentez une douleur thoracique, des signes d’AVC, une
-          difficulté respiratoire sévère, un saignement abondant, une
-          anaphylaxie ou des idées suicidaires, n’attendez pas.
+          {t.emergency.body}
         </p>
       )}
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide opacity-80">
-            France
+            {t.emergency.france}
           </p>
           <ul className="mt-1 space-y-1 text-sm">
             {EMERGENCY_NUMBERS.france.map((n) => (
@@ -42,7 +43,7 @@ export function EmergencyBanner({ compact }: Props) {
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide opacity-80">
-            Israël
+            {t.emergency.israel}
           </p>
           <ul className="mt-1 space-y-1 text-sm">
             {EMERGENCY_NUMBERS.israel.map((n) => (

@@ -1,17 +1,34 @@
 import type { Consultation } from "./types";
 
-const KEY = "medcin-ai-consultations-v1";
+const KEY = "doctor-ia-consultations-v1";
+const LEGACY_KEYS = [
+  "medcin-ai-consultations-v1",
+  "medecin-ai-consultations-v1",
+];
 
-export function loadConsultations(): Consultation[] {
-  if (typeof window === "undefined") return [];
+function readRaw(key: string): Consultation[] {
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(key);
     if (!raw) return [];
     const parsed = JSON.parse(raw) as Consultation[];
     return Array.isArray(parsed) ? parsed : [];
   } catch {
     return [];
   }
+}
+
+export function loadConsultations(): Consultation[] {
+  if (typeof window === "undefined") return [];
+  const current = readRaw(KEY);
+  if (current.length) return current;
+  for (const legacy of LEGACY_KEYS) {
+    const old = readRaw(legacy);
+    if (old.length) {
+      saveConsultations(old);
+      return old;
+    }
+  }
+  return [];
 }
 
 export function saveConsultations(list: Consultation[]): void {

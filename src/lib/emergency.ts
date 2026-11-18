@@ -39,6 +39,23 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\bgrossesse.{0,40}saignement\s+vaginal\s+(abondant|important)\b/i,
   /\bintoxication\b/i,
   /\boverdose\b/i,
+  // Hebrew
+  /\bכאב\s+בחזה\b/u,
+  /\bהתקף\s+לב\b/u,
+  /\bקושי\s+נשימה\b/u,
+  /\bשבץ\b/u,
+  /\bאובדנ\w*\b/u,
+  /\bהתאבד\w*\b/u,
+  /\bפרכוס\w*\b/u,
+  /\bדימום\s+כבד\b/u,
+  // Russian
+  /\bболь\s+в\s+груд/i,
+  /\bинфаркт\b/i,
+  /\bинсульт\b/i,
+  /\bне\s+могу\s+дышать\b/i,
+  /\bсуицид\w*\b/i,
+  /\bсудорог\w*\b/i,
+  /\bсильное\s+кровотечение\b/i,
 ];
 
 const NEGATION =

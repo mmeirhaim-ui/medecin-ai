@@ -20,7 +20,12 @@
   --shadow: 0 18px 50px rgba(8, 70, 76, 0.08);
   --radius: 1.25rem;
   --font-display: var(--font-fraunces), "Times New Roman", serif;
-  --font-body: var(--font-dm-sans), "Segoe UI", sans-serif;
+  --font-body: var(--font-dm-sans), var(--font-noto-hebrew), "Segoe UI", sans-serif;
+}
+
+html[dir="rtl"] {
+  --font-display: var(--font-noto-hebrew), var(--font-fraunces), sans-serif;
+  --font-body: var(--font-noto-hebrew), var(--font-dm-sans), "Segoe UI", sans-serif;
 }
 
 @theme inline {
@@ -116,6 +121,46 @@ a {
   }
 }
 
+@keyframes thinking-dot {
+  0%,
+  80%,
+  100% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+.thinking-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.thinking-dots span {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 9999px;
+  background: var(--brand);
+  opacity: 0.2;
+  animation: thinking-dot 1.2s ease-in-out infinite;
+}
+
+.thinking-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.thinking-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.thinking-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
 .animate-rise {
   animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -141,7 +186,12 @@ a {
   .animate-rise-delay,
   .animate-rise-delay-2,
   .animate-pulse-soft,
-  .animate-fade-slide {
+  .animate-fade-slide,
+  .thinking-dots span {
     animation: none;
+  }
+
+  .thinking-dots span {
+    opacity: 0.7;
   }
 }

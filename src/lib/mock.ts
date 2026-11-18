@@ -1,197 +1,533 @@
 import type { Assessment, ConsultRequest } from "./types";
-import { DISCLAIMER_SHORT } from "./prompts";
+import { disclaimerShort } from "./prompts";
 import { detectEmergency } from "./emergency";
+import { isLocale, type Locale } from "./i18n/locales";
 
-function pickMockAssessment(text: string, hasImages: boolean): Assessment {
-  const lower = text.toLowerCase();
+function localeOf(req: ConsultRequest): Locale {
+  return isLocale(req.locale) ? req.locale : "en";
+}
 
-  if (/fièvre|fievre|toux|gorge|rhume|grippe|cold|fever|cough/.test(lower)) {
+type Pack = {
+  respiratory: Assessment;
+  skin: Assessment;
+  headache: Assessment;
+  generic: Assessment;
+  emergencySummary: string;
+  emergencyNext: string[];
+  emergencyLabs: string[];
+  emergencyReply: string;
+};
+
+function packFor(locale: Locale): Pack {
+  const disclaimer = disclaimerShort(locale);
+
+  if (locale === "fr") {
     return {
+      respiratory: {
+        summary:
+          "D’après votre description, un syndrome infectieux des voies respiratoires hautes (type rhume ou grippe saisonnière) est plausible. Sans examen, d’autres causes restent possibles.",
+        likelyCauses: [
+          {
+            title: "Infection virale des voies respiratoires (rhume / grippe)",
+            rank: 1,
+            rationale:
+              "Association fréquente de fièvre, toux ou mal de gorge d’apparition progressive.",
+            confidence: "moyenne",
+          },
+          {
+            title: "Angine / pharyngite",
+            rank: 2,
+            rationale: "Douleur de gorge isolée ou dominante.",
+            confidence: "faible",
+          },
+          {
+            title: "Sinusite virale",
+            rank: 3,
+            rationale: "Congestion et pression faciale parfois associées.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "auto_soins",
+        clarifyingQuestions: [
+          "Depuis combien de jours les symptômes ont-ils commencé ?",
+          "Avez-vous une température mesurée ?",
+          "Y a-t-il un essoufflement ou une douleur thoracique ?",
+        ],
+        nextSteps: [
+          "Repos, hydratation et surveillance de la température.",
+          "Voir un médecin si fièvre > 3 jours ou aggravation.",
+        ],
+        needsExamOrLabs: [
+          "Examen clinique ORL si douleur de gorge intense.",
+        ],
+        disclaimer,
+        mock: true,
+      },
+      skin: {
+        summary:
+          "Votre description évoque une irritation ou éruption cutanée. La photo seule ne confirme pas une cause précise.",
+        likelyCauses: [
+          {
+            title: "Dermatite de contact / irritation",
+            rank: 1,
+            rationale: "Réaction locale après contact irritant ou allergène.",
+            confidence: "moyenne",
+          },
+          {
+            title: "Eczéma",
+            rank: 2,
+            rationale: "Plaques sèches prurigineuses.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: [
+          "La zone démange-t-elle ou est-elle douloureuse ?",
+          "Nouveau produit cosmétique ou médicament ?",
+        ],
+        nextSteps: [
+          "Éviter le grattage et les produits irritants.",
+          "Consulter si extension, douleur ou fièvre.",
+        ],
+        needsExamOrLabs: ["Examen dermatologique en présentiel."],
+        disclaimer,
+        mock: true,
+      },
+      headache: {
+        summary:
+          "Des céphalées isolées sont souvent bénignes, mais certains signes imposent une évaluation urgente.",
+        likelyCauses: [
+          {
+            title: "Céphalée de tension",
+            rank: 1,
+            rationale: "Douleur en bandeau, stress, fatigue.",
+            confidence: "moyenne",
+          },
+          {
+            title: "Migraine",
+            rank: 2,
+            rationale: "Douleur pulsatile, photophobie possible.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: [
+          "Douleur brutale « coup de tonnerre » ?",
+          "Raideur de nuque ou déficit neurologique ?",
+        ],
+        nextSteps: [
+          "Repos, hydratation.",
+          "Appeler les secours si signes d’alarme neurologiques.",
+        ],
+        needsExamOrLabs: ["Examen neurologique clinique."],
+        disclaimer,
+        mock: true,
+      },
+      generic: {
+        summary:
+          "Plusieurs causes restent possibles ; une confirmation clinique peut être nécessaire.",
+        likelyCauses: [
+          {
+            title: "Cause fonctionnelle / bénigne fréquente",
+            rank: 1,
+            rationale: "Symptômes non spécifiques courants.",
+            confidence: "faible",
+          },
+          {
+            title: "Processus inflammatoire localisé",
+            rank: 2,
+            rationale: "À évoquer si douleur, rougeur ou fièvre.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: [
+          "Depuis quand exactement ?",
+          "Autres symptômes (fièvre, nausées, essoufflement) ?",
+        ],
+        nextSteps: [
+          "Noter l’évolution pour votre médecin.",
+          "Consulter si aggravation.",
+        ],
+        needsExamOrLabs: ["Examen clinique en présentiel."],
+        disclaimer,
+        mock: true,
+      },
+      emergencySummary:
+        "Certains éléments évoquent une situation potentiellement urgente. Contactez immédiatement les secours.",
+      emergencyNext: [
+        "Appelez le 15 / 112 (France) ou le 101 (Israël).",
+        "Ne conduisez pas vous-même en détresse.",
+      ],
+      emergencyLabs: ["Prise en charge médicale d’urgence."],
+      emergencyReply:
+        "⚠️ Situation potentiellement urgente.\n\nAppelez le 15 / 112 (France) ou le 101 (Israël).",
+    };
+  }
+
+  if (locale === "he") {
+    return {
+      respiratory: {
+        summary:
+          "לפי התיאור, תסמונת זיהומית של דרכי הנשימה העליונות (הצטננות / שפעת) אפשרית. בלי בדיקה נשארות סיבות נוספות.",
+        likelyCauses: [
+          {
+            title: "זיהום ויראלי בדרכי נשימה עליונות",
+            rank: 1,
+            rationale: "חום, שיעול או כאב גרון בהופעה הדרגתית.",
+            confidence: "moyenne",
+          },
+          {
+            title: "דלקת גרון",
+            rank: 2,
+            rationale: "כאב גרון דומיננטי.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "auto_soins",
+        clarifyingQuestions: ["כמה ימים?", "נמדד חום?", "קוצר נשימה?"],
+        nextSteps: ["מנוחה והידרציה.", "רופא אם חום מעל 3 ימים או החמרה."],
+        needsExamOrLabs: ["בדיקה קלינית אם כאב גרון חזק."],
+        disclaimer,
+        mock: true,
+      },
+      skin: {
+        summary: "התיאור מציע גירוי או פריחה בעור. תמונה לבדה אינה מאשרת סיבה.",
+        likelyCauses: [
+          {
+            title: "דלקת מגע / גירוי",
+            rank: 1,
+            rationale: "תגובה מקומית לאחר מגע.",
+            confidence: "moyenne",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: ["גרד או כאב?", "מוצר חדש?"],
+        nextSteps: ["הימנעו מגירוד.", "פנו לרופא בהרחבה או חום."],
+        needsExamOrLabs: ["בדיקת עור פנים אל פנים."],
+        disclaimer,
+        mock: true,
+      },
+      headache: {
+        summary: "כאבי ראש מבודדים לרוב שפירים, אך יש סימני אזהרה.",
+        likelyCauses: [
+          {
+            title: "כאב ראש מתחי",
+            rank: 1,
+            rationale: "לחץ, עייפות.",
+            confidence: "moyenne",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: ["הופעה פתאומית חזקה?", "נוקשות עורף?"],
+        nextSteps: ["מנוחה.", "חירום בסימנים נוירולוגיים."],
+        needsExamOrLabs: ["בדיקה נוירולוגית."],
+        disclaimer,
+        mock: true,
+      },
+      generic: {
+        summary: "מספר סיבות אפשריות; ייתכן שתידרש אימות קליני.",
+        likelyCauses: [
+          {
+            title: "סיבה שכיחה / תפקודית",
+            rank: 1,
+            rationale: "תסמינים לא ספציפיים.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: ["מתי התחיל?", "תסמינים נוספים?"],
+        nextSteps: ["עקבו אחרי השינוי.", "פנו לרופא בהחמרה."],
+        needsExamOrLabs: ["בדיקה קלינית."],
+        disclaimer,
+        mock: true,
+      },
+      emergencySummary: "יש סימנים לדחיפות אפשרית. פנו מיד לשירותי חירום.",
+      emergencyNext: ["התקשרו ל־15 / 112 או ל־101 בישראל."],
+      emergencyLabs: ["טיפול רפואי דחוף."],
+      emergencyReply: "⚠️ מצב שעלול להיות דחוף.\n\nהתקשרו ל־15 / 112 או ל־101.",
+    };
+  }
+
+  if (locale === "ru") {
+    return {
+      respiratory: {
+        summary:
+          "По описанию вероятна инфекция верхних дыхательных путей (простуда / сезонный грипп). Без осмотра возможны другие причины.",
+        likelyCauses: [
+          {
+            title: "Вирусная инфекция дыхательных путей",
+            rank: 1,
+            rationale: "Часто сочетание температуры, кашля или боли в горле.",
+            confidence: "moyenne",
+          },
+          {
+            title: "Фарингит / ангина",
+            rank: 2,
+            rationale: "Преобладающая боль в горле.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "auto_soins",
+        clarifyingQuestions: [
+          "Сколько дней длятся симптомы?",
+          "Измеряли температуру?",
+          "Есть одышка или боль в груди?",
+        ],
+        nextSteps: [
+          "Отдых, жидкость, контроль температуры.",
+          "К врачу при лихорадке > 3 дней или ухудшении.",
+        ],
+        needsExamOrLabs: ["Осмотр ЛОР при сильной боли в горле."],
+        disclaimer,
+        mock: true,
+      },
+      skin: {
+        summary:
+          "Описание указывает на раздражение или сыпь. Фото недостаточно для точной причины.",
+        likelyCauses: [
+          {
+            title: "Контактный дерматит",
+            rank: 1,
+            rationale: "Местная реакция после контакта.",
+            confidence: "moyenne",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: ["Зуд или боль?", "Новый косметический продукт?"],
+        nextSteps: ["Избегать расчёсывания.", "К врачу при распространении."],
+        needsExamOrLabs: ["Очный осмотр дерматолога."],
+        disclaimer,
+        mock: true,
+      },
+      headache: {
+        summary:
+          "Изолированная головная боль часто доброкачественна, но есть тревожные признаки.",
+        likelyCauses: [
+          {
+            title: "Головная боль напряжения",
+            rank: 1,
+            rationale: "Стресс, усталость.",
+            confidence: "moyenne",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: [
+          "Внезапная «громоподобная» боль?",
+          "Ригидность шеи?",
+        ],
+        nextSteps: [
+          "Отдых, гидратация.",
+          "Скорая при неврологических тревожных признаках.",
+        ],
+        needsExamOrLabs: ["Клинический неврологический осмотр."],
+        disclaimer,
+        mock: true,
+      },
+      generic: {
+        summary:
+          "Возможны несколько причин; может потребоваться клиническое подтверждение.",
+        likelyCauses: [
+          {
+            title: "Частая доброкачественная причина",
+            rank: 1,
+            rationale: "Неспецифические симптомы.",
+            confidence: "faible",
+          },
+        ],
+        urgency: "voir_medecin",
+        clarifyingQuestions: [
+          "С какого момента?",
+          "Другие симптомы (температура, одышка)?",
+        ],
+        nextSteps: [
+          "Отмечать динамику для врача.",
+          "Обратиться при ухудшении.",
+        ],
+        needsExamOrLabs: ["Очный клинический осмотр."],
+        disclaimer,
+        mock: true,
+      },
+      emergencySummary:
+        "Есть признаки возможной неотложности. Немедленно вызовите помощь.",
+      emergencyNext: ["Звоните 15 / 112 (Франция) или 101 (Израиль)."],
+      emergencyLabs: ["Неотложная медицинская помощь."],
+      emergencyReply:
+        "⚠️ Возможно неотложное состояние.\n\nЗвоните 15 / 112 или 101.",
+    };
+  }
+
+  // English (default)
+  return {
+    respiratory: {
       summary:
-        "D’après votre description, un syndrome infectieux des voies respiratoires hautes (type rhume ou grippe saisonnière) est plausible. Sans examen, d’autres causes restent possibles.",
+        "Based on your description, an upper respiratory viral illness (cold / seasonal flu) is plausible. Without an exam, other causes remain possible.",
       likelyCauses: [
         {
-          title: "Infection virale des voies respiratoires (rhume / grippe)",
+          title: "Viral upper respiratory infection (cold / flu)",
           rank: 1,
-          rationale:
-            "Association fréquente de fièvre, toux ou mal de gorge d’apparition progressive.",
+          rationale: "Common cluster of fever, cough, or sore throat.",
           confidence: "moyenne",
         },
         {
-          title: "Angine / pharyngite",
+          title: "Pharyngitis / tonsillitis",
           rank: 2,
-          rationale: "Douleur de gorge isolée ou dominante.",
+          rationale: "Throat pain dominant.",
           confidence: "faible",
         },
         {
-          title: "Sinusite virale",
+          title: "Viral sinusitis",
           rank: 3,
-          rationale: "Congestion et pression faciale parfois associées.",
+          rationale: "Congestion and facial pressure sometimes associated.",
           confidence: "faible",
         },
       ],
       urgency: "auto_soins",
       clarifyingQuestions: [
-        "Depuis combien de jours les symptômes ont-ils commencé ?",
-        "Avez-vous une température mesurée ? Si oui, laquelle ?",
-        "Y a-t-il un essoufflement, une douleur thoracique ou une raideur de nuque ?",
-        "Êtes-vous immunodéprimé, enceinte, ou âgé de plus de 65 ans ?",
+        "How many days have symptoms lasted?",
+        "Have you measured a temperature?",
+        "Any shortness of breath or chest pain?",
       ],
       nextSteps: [
-        "Repos, hydratation et surveillance de la température.",
-        "Consultation en pharmacie pour des mesures symptomatiques adaptées (sans ordonnance).",
-        "Voir un médecin si fièvre > 3 jours, aggravation, ou difficultés respiratoires.",
+        "Rest, fluids, and temperature monitoring.",
+        "See a doctor if fever lasts > 3 days or worsens.",
       ],
-      needsExamOrLabs: [
-        "Examen clinique ORL si douleur de gorge intense ou persistance.",
-        "Test grippal / COVID selon le contexte épidémique et les facteurs de risque.",
-      ],
-      disclaimer: DISCLAIMER_SHORT,
+      needsExamOrLabs: ["Clinical ENT exam if severe throat pain persists."],
+      disclaimer,
       mock: true,
-    };
-  }
-
-  if (
-    /peau|éruption|eruption|boutons|démange|demange|rash|eczéma|eczema/.test(
-      lower,
-    ) ||
-    hasImages
-  ) {
-    return {
+    },
+    skin: {
       summary:
-        "Votre description" +
-        (hasImages ? " et la/les photo(s)" : "") +
-        " évoquent une irritation ou éruption cutanée. L’aspect photo ne suffit pas à confirmer une cause précise.",
+        "Your description suggests skin irritation or rash. Photos alone cannot confirm a precise cause.",
       likelyCauses: [
         {
-          title: "Dermatite de contact / irritation",
+          title: "Contact dermatitis / irritation",
           rank: 1,
-          rationale:
-            "Réaction locale après contact avec un irritant ou un allergène.",
+          rationale: "Local reaction after irritant or allergen contact.",
           confidence: "moyenne",
         },
         {
-          title: "Eczéma / dermatite atopique",
+          title: "Eczema",
           rank: 2,
-          rationale: "Plaques sèches prurigineuses, souvent récidivantes.",
-          confidence: "faible",
-        },
-        {
-          title: "Infection cutanée locale",
-          rank: 3,
-          rationale: "Rougeur chaude, croûtes ou extension progressive.",
+          rationale: "Dry, itchy patches.",
           confidence: "faible",
         },
       ],
       urgency: "voir_medecin",
       clarifyingQuestions: [
-        "La zone démange-t-elle, brûle-t-elle, ou est-elle douloureuse ?",
-        "Y a-t-il eu un nouveau produit cosmétique, lessive ou médicament ?",
-        "Observez-vous de la fièvre, des bulles, ou une extension rapide ?",
+        "Does the area itch or hurt?",
+        "Any new cosmetic product or medicine?",
       ],
       nextSteps: [
-        "Éviter le grattage et les produits irritants.",
-        "Nettoyage doux à l’eau tiède, sans antiseptique agressif.",
-        "Consulter un médecin ou dermatologue si extension, douleur, ou fièvre.",
+        "Avoid scratching and irritants.",
+        "See a clinician if spreading, painful, or feverish.",
       ],
-      needsExamOrLabs: [
-        "Examen dermatologique en présentiel (la photo est insuffisante).",
-        "Prélèvement cutané si suspicion d’infection.",
-      ],
-      disclaimer: DISCLAIMER_SHORT,
+      needsExamOrLabs: ["In-person dermatology exam."],
+      disclaimer,
       mock: true,
-    };
-  }
-
-  if (/mal\s+de\s+tête|migraine|céphal|cephal|headache/.test(lower)) {
-    return {
+    },
+    headache: {
       summary:
-        "Des céphalées isolées sont souvent bénignes (tension, migraine), mais certains signes imposent une évaluation urgente.",
+        "Isolated headaches are often benign, but some warning signs need urgent evaluation.",
       likelyCauses: [
         {
-          title: "Céphalée de tension",
+          title: "Tension-type headache",
           rank: 1,
-          rationale: "Douleur en bandeau, stress, fatigue.",
+          rationale: "Band-like pain, stress, fatigue.",
           confidence: "moyenne",
         },
         {
           title: "Migraine",
           rank: 2,
-          rationale:
-            "Douleur pulsatile, sensibilité à la lumière ou aux bruits.",
-          confidence: "faible",
-        },
-        {
-          title: "Cause secondaire à explorer",
-          rank: 3,
-          rationale:
-            "Si céphalée brutale, inhabituelle ou avec signes neurologiques.",
+          rationale: "Pulsating pain, light sensitivity possible.",
           confidence: "faible",
         },
       ],
       urgency: "voir_medecin",
       clarifyingQuestions: [
-        "La douleur est-elle la pire de votre vie ou d’apparition brutale (« coup de tonnerre ») ?",
-        "Y a-t-il une raideur de nuque, une vision double, une faiblesse d’un côté ?",
-        "Prenez-vous des traitements au long cours ?",
+        "Thunderclap sudden onset?",
+        "Neck stiffness or neurological deficit?",
       ],
       nextSteps: [
-        "Repos dans un endroit calme, hydratation.",
-        "Consulter rapidement si céphalée inhabituelle ou signes associés.",
-        "Appeler les secours si faiblesse unilatérale, trouble de la parole ou perte de vision soudaine.",
+        "Rest and hydration.",
+        "Call emergency services for neurological red flags.",
       ],
-      needsExamOrLabs: [
-        "Examen neurologique clinique.",
-        "Imagerie cérébrale si signes d’alarme (sur indication médicale).",
-      ],
-      disclaimer: DISCLAIMER_SHORT,
+      needsExamOrLabs: ["Clinical neurological exam."],
+      disclaimer,
       mock: true,
-    };
+    },
+    generic: {
+      summary:
+        "Several causes remain possible; clinical confirmation may be needed.",
+      likelyCauses: [
+        {
+          title: "Common benign / functional cause",
+          rank: 1,
+          rationale: "Non-specific symptoms are frequent.",
+          confidence: "faible",
+        },
+        {
+          title: "Localized inflammatory process",
+          rank: 2,
+          rationale: "Consider if pain, redness, or fever.",
+          confidence: "faible",
+        },
+      ],
+      urgency: "voir_medecin",
+      clarifyingQuestions: [
+        "When exactly did this start?",
+        "Other symptoms (fever, nausea, shortness of breath)?",
+      ],
+      nextSteps: [
+        "Track changes for your clinician.",
+        "Seek care if worsening.",
+      ],
+      needsExamOrLabs: ["In-person clinical exam."],
+      disclaimer,
+      mock: true,
+    },
+    emergencySummary:
+      "Some elements suggest a potentially urgent situation. Contact emergency services immediately.",
+    emergencyNext: [
+      "Call 15 / 112 (France) or 101 (Israel) now.",
+      "Do not drive yourself if in distress.",
+    ],
+    emergencyLabs: ["Emergency medical care on site / ER."],
+    emergencyReply:
+      "⚠️ Potentially urgent situation.\n\nCall 15 / 112 (France) or 101 (Israel).",
+  };
+}
+
+function pickMockAssessment(
+  text: string,
+  hasImages: boolean,
+  locale: Locale,
+): Assessment {
+  const pack = packFor(locale);
+  const lower = text.toLowerCase();
+
+  if (
+    /fièvre|fievre|toux|gorge|rhume|grippe|cold|fever|cough|חום|שיעול|температур|кашел|горл/.test(
+      lower,
+    )
+  ) {
+    return pack.respiratory;
   }
 
-  return {
-    summary:
-      "Merci pour ces précisions. Sur la base des éléments fournis, plusieurs causes restent possibles ; une confirmation clinique peut être nécessaire.",
-    likelyCauses: [
-      {
-        title: "Cause fonctionnelle / bénigne fréquente",
-        rank: 1,
-        rationale:
-          "Symptômes non spécifiques courants, souvent spontanément favorables.",
-        confidence: "faible",
-      },
-      {
-        title: "Processus inflammatoire ou infectieux localisé",
-        rank: 2,
-        rationale: "À évoquer si douleur, rougeur, fièvre ou progression.",
-        confidence: "faible",
-      },
-      {
-        title: "Autre cause à préciser en consultation",
-        rank: 3,
-        rationale: "L’historique et l’examen permettent d’affiner.",
-        confidence: "faible",
-      },
-    ],
-    urgency: "voir_medecin",
-    clarifyingQuestions: [
-      "Depuis quand exactement ces symptômes ont-ils commencé ?",
-      "Y a-t-il des facteurs qui aggravent ou améliorent les symptômes ?",
-      "Avez-vous d’autres symptômes (fièvre, nausées, essoufflement) ?",
-      "Avez-vous des antécédents médicaux ou prenez-vous des traitements ?",
-    ],
-    nextSteps: [
-      "Noter l’évolution (horaire, intensité) pour votre médecin.",
-      "Consulter un professionnel de santé si aggravation ou persistance.",
-      "En cas de signes d’alarme (douleur thoracique, essoufflement sévère, saignement abondant), appelez les secours.",
-    ],
-    needsExamOrLabs: [
-      "Examen clinique en présentiel recommandé pour affiner l’orientation.",
-      "Imagerie ou analyses uniquement sur indication médicale.",
-    ],
-    disclaimer: DISCLAIMER_SHORT,
-    mock: true,
-  };
+  if (
+    /peau|éruption|eruption|boutons|démange|demange|rash|eczéma|eczema|עור|פריחה|кож|сып/.test(
+      lower,
+    ) ||
+    hasImages
+  ) {
+    return pack.skin;
+  }
+
+  if (/mal\s+de\s+tête|migraine|céphal|cephal|headache|ראש|головн/.test(lower)) {
+    return pack.headache;
+  }
+
+  return pack.generic;
 }
 
 export function buildMockResponse(req: ConsultRequest): {
@@ -199,6 +535,8 @@ export function buildMockResponse(req: ConsultRequest): {
   reply: string;
   emergencyDetected: boolean;
 } {
+  const locale = localeOf(req);
+  const pack = packFor(locale);
   const text = [
     req.symptoms,
     req.message,
@@ -208,22 +546,19 @@ export function buildMockResponse(req: ConsultRequest): {
     .join("\n");
   const emergency = detectEmergency(text);
   const hasImages = Boolean(req.images?.length);
-  let assessment = pickMockAssessment(req.message || req.symptoms, hasImages);
+  let assessment = pickMockAssessment(
+    req.message || req.symptoms,
+    hasImages,
+    locale,
+  );
 
   if (emergency.detected) {
     assessment = {
       ...assessment,
       urgency: "urgent",
-      summary:
-        "Certains éléments de votre message évoquent une situation potentiellement urgente. N’attendez pas une réponse numérique : contactez immédiatement les secours.",
-      nextSteps: [
-        "Appelez immédiatement le 15 ou le 112 (France), ou le 101 Magen David Adom (Israël).",
-        "Ne conduisez pas vous-même si vous êtes en détresse ; faites-vous accompagner.",
-        "Si idéation suicidaire : contactez aussi les secours ou une ligne d’écoute d’urgence locale.",
-      ],
-      needsExamOrLabs: [
-        "Prise en charge médicale d’urgence sur place / aux urgences.",
-      ],
+      summary: pack.emergencySummary,
+      nextSteps: pack.emergencyNext,
+      needsExamOrLabs: pack.emergencyLabs,
       clarifyingQuestions: [],
       mock: true,
     };
@@ -231,15 +566,18 @@ export function buildMockResponse(req: ConsultRequest): {
 
   const reply =
     req.message && req.history?.length
-      ? `${assessment.summary}\n\nPour préciser : ${assessment.clarifyingQuestions.slice(0, 2).join(" ")}`
-      : `${assessment.summary}\n\nHypothèses principales : ${assessment.likelyCauses
+      ? `${assessment.summary}\n\n${assessment.clarifyingQuestions.slice(0, 2).join(" ")}`
+      : `${assessment.summary}\n\n${assessment.likelyCauses
           .map((c) => `${c.rank}. ${c.title}`)
-          .join(" ; ")}.\n\nProchaines étapes : ${assessment.nextSteps[0] ?? ""}`;
+          .join(" ; ")}.\n\n${assessment.nextSteps[0] ?? ""}`;
 
   return {
-    assessment: { ...assessment, disclaimer: DISCLAIMER_SHORT },
+    assessment: {
+      ...assessment,
+      disclaimer: disclaimerShort(locale),
+    },
     reply: emergency.detected
-      ? `⚠️ Situation potentiellement urgente.\n\n${assessment.summary}\n\nAppelez le 15 / 112 (France) ou le 101 (Israël).`
+      ? `${pack.emergencyReply}\n\n${assessment.summary}`
       : reply,
     emergencyDetected: emergency.detected,
   };

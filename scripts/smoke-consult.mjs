@@ -38,7 +38,9 @@ async function main() {
   if (!ticketRes.ok || !ticketJson.ticket) {
     fail(`ticket ${ticketRes.status}: ${JSON.stringify(ticketJson)}`);
   }
-  if (!jar.has("medecin_consult_sid")) fail("missing medecin_consult_sid cookie");
+  if (!jar.has("doctor_ia_consult_sid") && !jar.has("medecin_consult_sid")) {
+    fail("missing doctor_ia_consult_sid cookie");
+  }
 
   const consultRes = await fetch(`${base}/api/consult`, {
     method: "POST",

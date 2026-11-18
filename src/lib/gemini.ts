@@ -5,9 +5,14 @@ import {
   type Part,
   type ResponseSchema,
 } from "@google/generative-ai";
-import { SYSTEM_PROMPT, DISCLAIMER_SHORT } from "./prompts";
+import {
+  buildSystemPrompt,
+  disclaimerShort,
+  DISCLAIMER_SHORT,
+} from "./prompts";
 import { buildMockResponse } from "./mock";
 import { detectEmergency } from "./emergency";
+import { isLocale, type Locale } from "./i18n/locales";
 import type {
   Assessment,
   ConsultRequest,
@@ -73,16 +78,24 @@ export function isMockMode(): boolean {
   return !getApiKey();
 }
 
-/** Default Flash model — gemini-2.0-flash was shut down 2026-06-01. */
-export const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
+/**
+ * Prefer a fast Flash / lite model. Override with GEMINI_MODEL.
+ * gemini-2.0-flash was shut down 2026-06-01.
+ */
+export const DEFAULT_GEMINI_MODEL = "gemini-3.5-flash-lite";
 
 /** Fallback chain if the preferred model is unavailable for the key. */
 const MODEL_FALLBACKS = [
+  "gemini-3.5-flash-lite",
   "gemini-3.6-flash",
   "gemini-3.8-flash",
-  "gemini-3.5-flash-lite",
   "gemini-2.5-flash",
 ] as const;
+
+function groundingEnabled(): boolean {
+  const v = process.env.GEMINI_ENABLE_GROUNDING?.trim().toLowerCase();
+  return v === "1" || v === "true" || v === "yes";
+}
 
 /**
  * Sanitize provider errors for clients/logs: keep status + short message,
@@ -97,7 +110,10 @@ export function formatGeminiError(err: unknown): string {
         : "Erreur inconnue";
   const scrubbed = raw
     .replace(/AIza[0-9A-Za-z_-]{20,}/g, "[redacted]")
-    .replace(/(api[_-]?key|x-goog-api-key)\s*[:=]\s*["']?[^\s"',}]+/gi, "$1=[redacted]");
+    .replace(
+      /(api[_-]?key|x-goog-api-key)\s*[:=]\s*["']?[^\s"',}]+/gi,
+      "$1=[redacted]",
+    );
   const compact = scrubbed.replace(/\s+/g, " ").trim().slice(0, 320);
   return compact || "Erreur Gemini inconnue";
 }
@@ -111,6 +127,10 @@ function modelCandidates(): string[] {
   return [preferred, ...MODEL_FALLBACKS.filter((m) => m !== preferred)];
 }
 
+function resolveLocale(req: ConsultRequest): Locale {
+  return isLocale(req.locale) ? req.locale : "en";
+}
+
 function normalizeUrgency(value: unknown): UrgencyLevel {
   const v = String(value ?? "").toLowerCase();
   if (v.includes("urgent")) return "urgent";
@@ -120,13 +140,28 @@ function normalizeUrgency(value: unknown): UrgencyLevel {
 
 function normalizeConfidence(value: unknown): LikelyCause["confidence"] {
   const v = String(value ?? "").toLowerCase();
-  if (v.includes("élev") || v.includes("elev") || v.includes("high"))
+  if (
+    v.includes("élev") ||
+    v.includes("elev") ||
+    v.includes("high") ||
+    v.includes("גבוה") ||
+    v.includes("высок")
+  )
     return "élevée";
-  if (v.includes("moy") || v.includes("med")) return "moyenne";
+  if (
+    v.includes("moy") ||
+    v.includes("med") ||
+    v.includes("בינונ") ||
+    v.includes("средн")
+  )
+    return "moyenne";
   return "faible";
 }
 
-function parseAssessment(raw: unknown): {
+function parseAssessment(
+  raw: unknown,
+  locale: Locale,
+): {
   assessment: Assessment;
   reply: string;
 } {
@@ -135,13 +170,14 @@ function parseAssessment(raw: unknown): {
   const likelyCauses: LikelyCause[] = causesRaw.map((c, i) => {
     const item = (c ?? {}) as Record<string, unknown>;
     return {
-      title: String(item.title ?? `Hypothèse ${i + 1}`),
+      title: String(item.title ?? `Hypothesis ${i + 1}`),
       rank: Number(item.rank ?? i + 1),
       rationale: String(item.rationale ?? ""),
       confidence: normalizeConfidence(item.confidence),
     };
   });
 
+  const fallbackDisclaimer = disclaimerShort(locale);
   const assessment: Assessment = {
     summary: String(obj.summary ?? ""),
     likelyCauses,
@@ -153,7 +189,7 @@ function parseAssessment(raw: unknown): {
     needsExamOrLabs: Array.isArray(obj.needsExamOrLabs)
       ? obj.needsExamOrLabs.map(String)
       : [],
-    disclaimer: String(obj.disclaimer || DISCLAIMER_SHORT),
+    disclaimer: String(obj.disclaimer || fallbackDisclaimer),
     mock: false,
   };
 
@@ -178,19 +214,17 @@ function extractJson(text: string): unknown {
 function buildUserParts(req: ConsultRequest): Part[] {
   const historyBlock =
     req.history && req.history.length
-      ? `\n\nHistorique de la conversation :\n${req.history
+      ? `\n\nConversation:\n${req.history
           .map(
             (h) =>
-              `${h.role === "user" ? "Patient" : "Medecin AI"}: ${h.content}`,
+              `${h.role === "user" ? "Patient" : "Doctor IA"}: ${h.content}`,
           )
           .join("\n")}`
       : "";
 
-  const followUp = req.message
-    ? `\n\nMessage de suivi du patient :\n${req.message}`
-    : "";
+  const followUp = req.message ? `\n\nFollow-up:\n${req.message}` : "";
 
-  const text = `Symptômes / description initiale :\n${req.symptoms}${historyBlock}${followUp}\n\nRéponds strictement au format JSON demandé.`;
+  const text = `Symptoms:\n${req.symptoms}${historyBlock}${followUp}\n\nRespond with the required JSON only.`;
 
   const parts: Part[] = [{ text }];
 
@@ -205,7 +239,7 @@ function buildUserParts(req: ConsultRequest): Part[] {
 
   if (req.images?.length) {
     parts.push({
-      text: `${req.images.length} image(s) clinique(s) jointe(s). Analyse-les avec prudence et indique les limites de l’interprétation photographique.`,
+      text: `${req.images.length} clinical image(s) attached. Interpret cautiously; photo limits apply.`,
     });
   }
 
@@ -214,6 +248,7 @@ function buildUserParts(req: ConsultRequest): Part[] {
 
 function createModel(
   modelName: string,
+  locale: Locale,
   withGrounding: boolean,
 ): GenerativeModel {
   const key = getApiKey();
@@ -222,9 +257,10 @@ function createModel(
 
   const base = {
     model: modelName,
-    systemInstruction: SYSTEM_PROMPT,
+    systemInstruction: buildSystemPrompt(locale),
     generationConfig: {
-      temperature: 0.4,
+      temperature: 0.3,
+      maxOutputTokens: 2048,
       responseMimeType: "application/json" as const,
       responseSchema: RESPONSE_SCHEMA,
     },
@@ -243,32 +279,43 @@ function createModel(
 
 async function generateJsonText(
   modelName: string,
+  locale: Locale,
   parts: Part[],
 ): Promise<{ text: string; grounded: boolean }> {
-  // Structured JSON + Google Search is often rejected together — prefer
-  // reliable JSON first, then optional grounded retry without schema pressure.
-  try {
-    const model = createModel(modelName, false);
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts }],
-    });
-    return { text: result.response.text(), grounded: false };
-  } catch (primaryErr) {
+  // Grounding (Google Search) is opt-in via GEMINI_ENABLE_GROUNDING — skipped by
+  // default to avoid multi-second latency. Structured JSON without tools is faster.
+  if (groundingEnabled()) {
     try {
-      const groundedModel = createModel(modelName, true);
-      const result = await groundedModel.generateContent({
+      const groundedModel = createModel(modelName, locale, true);
+      const groundedResult = await groundedModel.generateContent({
         contents: [{ role: "user", parts }],
       });
-      return { text: result.response.text(), grounded: true };
-    } catch (groundedErr) {
-      const primary = formatGeminiError(primaryErr);
-      const secondary = formatGeminiError(groundedErr);
-      const detail =
-        secondary !== primary ? `${primary} (grounding: ${secondary})` : primary;
-      throw new Error(`Gemini (${modelName}): ${detail}`);
+      return { text: groundedResult.response.text(), grounded: true };
+    } catch {
+      /* schema + search often incompatible — fall through to fast JSON */
     }
   }
+
+  const model = createModel(modelName, locale, false);
+  const result = await model.generateContent({
+    contents: [{ role: "user", parts }],
+  });
+  return { text: result.response.text(), grounded: false };
 }
+
+const EMERGENCY_PREFIX: Record<Locale, string> = {
+  en: "⚠️ Potentially urgent situation.\n\n",
+  fr: "⚠️ Situation potentiellement urgente.\n\n",
+  he: "⚠️ מצב שעלול להיות דחוף.\n\n",
+  ru: "⚠️ Возможно неотложное состояние.\n\n",
+};
+
+const EMERGENCY_SUFFIX: Record<Locale, string> = {
+  en: "\n\nCall 15 / 112 (France) or 101 (Israel — Magen David Adom) immediately.",
+  fr: "\n\nAppelez immédiatement le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).",
+  he: "\n\nהתקשרו מיד ל־15 / 112 (צרפת) או ל־101 (ישראל — מגן דוד אדום).",
+  ru: "\n\nНемедленно звоните 15 / 112 (Франция) или 101 (Израиль — Маген Давид Адом).",
+};
 
 export async function runConsultation(req: ConsultRequest): Promise<{
   assessment: Assessment;
@@ -276,6 +323,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
   emergencyDetected: boolean;
   mock: boolean;
 }> {
+  const locale = resolveLocale(req);
   const blob = [
     req.symptoms,
     req.message,
@@ -286,7 +334,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
   const emergency = detectEmergency(blob);
 
   if (isMockMode()) {
-    const mock = buildMockResponse(req);
+    const mock = buildMockResponse({ ...req, locale });
     return { ...mock, mock: true };
   }
 
@@ -298,7 +346,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
 
   for (const modelName of modelCandidates()) {
     try {
-      const out = await generateJsonText(modelName, parts);
+      const out = await generateJsonText(modelName, locale, parts);
       textOut = out.text;
       grounded = out.grounded;
       lastError = undefined;
@@ -314,7 +362,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
       : new Error(`Gemini (${getModelName()}): échec d’analyse`);
   }
 
-  const parsed = parseAssessment(extractJson(textOut));
+  const parsed = parseAssessment(extractJson(textOut), locale);
   let { assessment, reply } = parsed;
   assessment.grounded = grounded;
   assessment.mock = false;
@@ -324,13 +372,13 @@ export async function runConsultation(req: ConsultRequest): Promise<{
       ...assessment,
       urgency: "urgent",
     };
-    reply = `⚠️ Situation potentiellement urgente.\n\n${reply}\n\nAppelez immédiatement le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).`;
+    reply = `${EMERGENCY_PREFIX[locale]}${reply}${EMERGENCY_SUFFIX[locale]}`;
   }
 
   return {
     assessment: {
       ...assessment,
-      disclaimer: assessment.disclaimer || DISCLAIMER_SHORT,
+      disclaimer: assessment.disclaimer || disclaimerShort(locale) || DISCLAIMER_SHORT,
     },
     reply,
     emergencyDetected: emergency.detected,

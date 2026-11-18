@@ -2,6 +2,7 @@
 
 import { useId, useRef } from "react";
 import type { UploadedImage } from "@/lib/types";
+import { useLocale } from "./LocaleProvider";
 
 type Props = {
   images: UploadedImage[];
@@ -9,6 +10,7 @@ type Props = {
   max?: number;
 };
 
+/** Keep in sync with PAYLOAD_LIMITS (~0.65 MiB binary ≈ under 900k b64). */
 const MAX_BYTES = 0.65 * 1024 * 1024;
 
 async function fileToUploaded(file: File): Promise<UploadedImage> {
@@ -31,6 +33,7 @@ async function fileToUploaded(file: File): Promise<UploadedImage> {
 export function ImageUpload({ images, onChange, max = 2 }: Props) {
   const inputId = useId();
   const inputRef = useRef<HTMLInputElement>(null);
+  const { t } = useLocale();
 
   async function handleFiles(fileList: FileList | null) {
     if (!fileList) return;
@@ -40,7 +43,7 @@ export function ImageUpload({ images, onChange, max = 2 }: Props) {
     for (const file of selected) {
       if (!file.type.startsWith("image/")) continue;
       if (file.size > MAX_BYTES) {
-        window.alert(`« ${file.name} » dépasse 3,5 Mo.`);
+        window.alert(t.images.tooLarge.replace("{name}", file.name));
         continue;
       }
       accepted.push(await fileToUploaded(file));
@@ -62,11 +65,10 @@ export function ImageUpload({ images, onChange, max = 2 }: Props) {
         htmlFor={inputId}
         className="block text-sm font-medium text-[var(--ink)]"
       >
-        Photos (optionnel)
+        {t.images.label}
       </label>
       <p className="mt-1 text-sm text-[var(--ink-muted)]">
-        Peau, éruption, blessure… jusqu’à {max} images. Ne photographiez pas de
-        documents d’identité.
+        {t.images.hint.replace("{max}", String(max))}
       </p>
 
       <div className="mt-3 flex flex-wrap items-center gap-3">
@@ -76,7 +78,7 @@ export function ImageUpload({ images, onChange, max = 2 }: Props) {
           disabled={images.length >= max}
           className="rounded-full bg-[var(--brand)] px-4 py-2 text-sm font-medium text-white transition hover:bg-[var(--brand-deep)] disabled:cursor-not-allowed disabled:opacity-50"
         >
-          Ajouter des photos
+          {t.images.add}
         </button>
         <span className="text-xs text-[var(--ink-muted)]">
           {images.length}/{max}
@@ -105,10 +107,10 @@ export function ImageUpload({ images, onChange, max = 2 }: Props) {
               <button
                 type="button"
                 onClick={() => remove(img.id)}
-                className="absolute right-2 top-2 rounded-full bg-black/60 px-2 py-0.5 text-xs text-white"
-                aria-label={`Retirer ${img.name}`}
+                className="absolute end-2 top-2 rounded-full bg-black/60 px-2 py-0.5 text-xs text-white"
+                aria-label={`${t.images.remove} ${img.name}`}
               >
-                Retirer
+                {t.images.remove}
               </button>
             </li>
           ))}

@@ -1,16 +1,22 @@
 import { createHash, createHmac, randomBytes, timingSafeEqual } from "crypto";
 import { sql } from "@/lib/db";
 
-/** Shared (DB-backed) per-IP / global budgets. */
-const TICKET_LIMIT_PER_IP = 8;
+/**
+ * Shared (DB-backed) per-IP / global budgets.
+ * Ticket minting is generous: UI warms sid + prefetches tickets without
+ * counting those as consults. Only successful consult posts burn consult quota.
+ */
+const TICKET_LIMIT_PER_IP = 60;
 const TICKET_WINDOW_MS = 60 * 60 * 1000; // 1h
-const CONSULT_LIMIT_PER_IP = 5;
+const CONSULT_LIMIT_PER_IP = 30;
 const CONSULT_WINDOW_MS = 60 * 60 * 1000; // 1h
-const CONSULT_DAILY_PER_IP = 20;
-const GLOBAL_CONSULT_DAILY = 250;
+const CONSULT_DAILY_PER_IP = 80;
+const GLOBAL_CONSULT_DAILY = 2000;
 const TICKET_TTL_MS = 3 * 60 * 1000; // 3 min
 
-export const CONSULT_SID_COOKIE = "medecin_consult_sid";
+export const CONSULT_SID_COOKIE = "doctor_ia_consult_sid";
+/** Legacy cookie from Medecin AI builds — still accepted for sid continuity. */
+export const CONSULT_SID_COOKIE_LEGACY = "medecin_consult_sid";
 
 type GlobalSecret = typeof globalThis & { __medecinConsultHmac?: string };
 
@@ -77,10 +83,9 @@ export function clientIp(req: Request): string {
   return "anon";
 }
 
-export function readConsultSid(req: Request): string | null {
-  const cookie = req.headers.get("cookie") || "";
+function readCookieValue(cookie: string, name: string): string | null {
   const match = cookie.match(
-    new RegExp(`(?:^|;\\s*)${CONSULT_SID_COOKIE}=([^;]+)`),
+    new RegExp(`(?:^|;\\s*)${name}=([^;]+)`),
   );
   if (!match?.[1]) return null;
   try {
@@ -88,6 +93,100 @@ export function readConsultSid(req: Request): string | null {
   } catch {
     return null;
   }
+}
+
+export function readConsultSid(req: Request): string | null {
+  const cookie = req.headers.get("cookie") || "";
+  return (
+    readCookieValue(cookie, CONSULT_SID_COOKIE) ||
+    readCookieValue(cookie, CONSULT_SID_COOKIE_LEGACY)
+  );
+}
+
+export type RateLimitKind =
+  | "ticket"
+  | "consult_hour"
+  | "consult_day"
+  | "consult_global";
+
+export type RateLimitResult = {
+  ok: false;
+  kind: RateLimitKind;
+  retryAfterSeconds: number;
+  error: string;
+};
+
+function rateLimitMessage(
+  kind: RateLimitKind,
+  retryAfterSeconds: number,
+  localeHint?: string | null,
+): string {
+  const mins = Math.max(1, Math.ceil(retryAfterSeconds / 60));
+  const locale = (localeHint || "fr").toLowerCase().slice(0, 2);
+
+  const messages: Record<string, Record<RateLimitKind, string>> = {
+    en: {
+      ticket: `Too many ticket requests. Try again in about ${mins} min.`,
+      consult_hour: `Too many analyses. Try again in about ${mins} min.`,
+      consult_day: `Daily analysis limit reached. Try again tomorrow.`,
+      consult_global: `Service is busy. Try again in about ${mins} min.`,
+    },
+    fr: {
+      ticket: `Trop de demandes de jeton. Réessayez dans environ ${mins} min.`,
+      consult_hour: `Trop de demandes d’analyse. Réessayez dans environ ${mins} min.`,
+      consult_day: `Limite quotidienne atteinte. Réessayez demain.`,
+      consult_global: `Service temporairement saturé. Réessayez dans environ ${mins} min.`,
+    },
+    he: {
+      ticket: `יותר מדי בקשות כרטיס. נסו שוב בעוד כ־${mins} דק׳.`,
+      consult_hour: `יותר מדי ניתוחים. נסו שוב בעוד כ־${mins} דק׳.`,
+      consult_day: `הגעתם למגבלת היום. נסו שוב מחר.`,
+      consult_global: `השירות עמוס. נסו שוב בעוד כ־${mins} דק׳.`,
+    },
+    ru: {
+      ticket: `Слишком много запросов билета. Повторите примерно через ${mins} мин.`,
+      consult_hour: `Слишком много анализов. Повторите примерно через ${mins} мин.`,
+      consult_day: `Дневной лимит исчерпан. Попробуйте завтра.`,
+      consult_global: `Сервис перегружен. Повторите примерно через ${mins} мин.`,
+    },
+  };
+
+  const pack = messages[locale] || messages.en;
+  return pack[kind];
+}
+
+async function bumpCounterDetailed(
+  bucketKey: string,
+  limit: number,
+  windowMs: number,
+): Promise<{ allowed: boolean; retryAfterSeconds: number }> {
+  const resetAt = new Date(Date.now() + windowMs).toISOString();
+  const rows = await sql<{ count: number; reset_at: string | Date }>(
+    `INSERT INTO rate_counters (bucket_key, count, reset_at)
+     VALUES ($1, 1, $2::timestamptz)
+     ON CONFLICT (bucket_key) DO UPDATE
+     SET
+       count = CASE
+         WHEN rate_counters.reset_at <= now() THEN 1
+         ELSE rate_counters.count + 1
+       END,
+       reset_at = CASE
+         WHEN rate_counters.reset_at <= now() THEN EXCLUDED.reset_at
+         ELSE rate_counters.reset_at
+       END
+     RETURNING count, reset_at`,
+    [bucketKey, resetAt],
+  );
+  const count = Number(rows[0]?.count ?? 0);
+  const resetRaw = rows[0]?.reset_at;
+  const resetMs =
+    resetRaw instanceof Date
+      ? resetRaw.getTime()
+      : Date.parse(String(resetRaw || ""));
+  const retryAfterSeconds = Number.isFinite(resetMs)
+    ? Math.max(1, Math.ceil((resetMs - Date.now()) / 1000))
+    : Math.ceil(windowMs / 1000);
+  return { allowed: count <= limit, retryAfterSeconds };
 }
 
 export function sidCookieHeader(sid: string): string {
@@ -224,69 +323,101 @@ export function assertSameOrigin(req: Request): string | null {
   return "Requête non autorisée.";
 }
 
-async function bumpCounter(
-  bucketKey: string,
-  limit: number,
-  windowMs: number,
-): Promise<boolean> {
-  const resetAt = new Date(Date.now() + windowMs).toISOString();
-  const rows = await sql<{ count: number }>(
-    `INSERT INTO rate_counters (bucket_key, count, reset_at)
-     VALUES ($1, 1, $2::timestamptz)
-     ON CONFLICT (bucket_key) DO UPDATE
-     SET
-       count = CASE
-         WHEN rate_counters.reset_at <= now() THEN 1
-         ELSE rate_counters.count + 1
-       END,
-       reset_at = CASE
-         WHEN rate_counters.reset_at <= now() THEN EXCLUDED.reset_at
-         ELSE rate_counters.reset_at
-       END
-     RETURNING count`,
-    [bucketKey, resetAt],
+export async function allowTicketIssue(
+  ip: string,
+  localeHint?: string | null,
+): Promise<RateLimitResult | null> {
+  const result = await bumpCounterDetailed(
+    `ticket:ip:${ip}`,
+    TICKET_LIMIT_PER_IP,
+    TICKET_WINDOW_MS,
   );
-  const count = Number(rows[0]?.count ?? 0);
-  return count <= limit;
+  if (result.allowed) return null;
+  return {
+    ok: false,
+    kind: "ticket",
+    retryAfterSeconds: result.retryAfterSeconds,
+    error: rateLimitMessage("ticket", result.retryAfterSeconds, localeHint),
+  };
 }
 
-export async function allowTicketIssue(ip: string): Promise<boolean> {
-  return bumpCounter(`ticket:ip:${ip}`, TICKET_LIMIT_PER_IP, TICKET_WINDOW_MS);
-}
+/**
+ * Count only real consult attempts (after a valid ticket is consumed).
+ * Failed ticket/auth paths must not call this.
+ */
+export async function allowConsult(
+  ip: string,
+  sid: string,
+  localeHint?: string | null,
+): Promise<RateLimitResult | null> {
+  const hourIp = await bumpCounterDetailed(
+    `consult:ip:${ip}`,
+    CONSULT_LIMIT_PER_IP,
+    CONSULT_WINDOW_MS,
+  );
+  if (!hourIp.allowed) {
+    return {
+      ok: false,
+      kind: "consult_hour",
+      retryAfterSeconds: hourIp.retryAfterSeconds,
+      error: rateLimitMessage(
+        "consult_hour",
+        hourIp.retryAfterSeconds,
+        localeHint,
+      ),
+    };
+  }
 
-export async function allowConsult(ip: string, sid: string): Promise<string | null> {
-  if (
-    !(await bumpCounter(`consult:ip:${ip}`, CONSULT_LIMIT_PER_IP, CONSULT_WINDOW_MS))
-  ) {
-    return "Trop de requêtes. Réessayez plus tard.";
+  const hourSid = await bumpCounterDetailed(
+    `consult:sid:${sid}`,
+    CONSULT_LIMIT_PER_IP,
+    CONSULT_WINDOW_MS,
+  );
+  if (!hourSid.allowed) {
+    return {
+      ok: false,
+      kind: "consult_hour",
+      retryAfterSeconds: hourSid.retryAfterSeconds,
+      error: rateLimitMessage(
+        "consult_hour",
+        hourSid.retryAfterSeconds,
+        localeHint,
+      ),
+    };
   }
-  if (
-    !(await bumpCounter(
-      `consult:sid:${sid}`,
-      CONSULT_LIMIT_PER_IP,
-      CONSULT_WINDOW_MS,
-    ))
-  ) {
-    return "Trop de requêtes. Réessayez plus tard.";
+
+  const day = await bumpCounterDetailed(
+    `consult:day:ip:${ip}:${utcDay()}`,
+    CONSULT_DAILY_PER_IP,
+    24 * 60 * 60 * 1000,
+  );
+  if (!day.allowed) {
+    return {
+      ok: false,
+      kind: "consult_day",
+      retryAfterSeconds: day.retryAfterSeconds,
+      error: rateLimitMessage("consult_day", day.retryAfterSeconds, localeHint),
+    };
   }
-  if (
-    !(await bumpCounter(
-      `consult:day:ip:${ip}:${utcDay()}`,
-      CONSULT_DAILY_PER_IP,
-      24 * 60 * 60 * 1000,
-    ))
-  ) {
-    return "Limite quotidienne atteinte. Réessayez demain.";
+
+  const global = await bumpCounterDetailed(
+    `consult:global:${utcDay()}`,
+    GLOBAL_CONSULT_DAILY,
+    24 * 60 * 60 * 1000,
+  );
+  if (!global.allowed) {
+    return {
+      ok: false,
+      kind: "consult_global",
+      retryAfterSeconds: global.retryAfterSeconds,
+      error: rateLimitMessage(
+        "consult_global",
+        global.retryAfterSeconds,
+        localeHint,
+      ),
+    };
   }
-  if (
-    !(await bumpCounter(
-      `consult:global:${utcDay()}`,
-      GLOBAL_CONSULT_DAILY,
-      24 * 60 * 60 * 1000,
-    ))
-  ) {
-    return "Service temporairement saturé. Réessayez plus tard.";
-  }
+
   return null;
 }
 

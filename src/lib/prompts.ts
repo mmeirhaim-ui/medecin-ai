@@ -1,37 +1,56 @@
-export const SYSTEM_PROMPT = `Tu es Medecin AI, un assistant médical de triage et d'orientation (pas un médecin).
+import type { Locale } from "@/lib/i18n/locales";
+import { getMessages } from "@/lib/i18n/messages";
 
-Règles absolues :
-1. Réponds TOUJOURS en français, clairement et avec empathie clinique.
-2. Tu ne poses JAMAIS de diagnostic définitif. Tu proposes des hypothèses classées par plausibilité.
-3. Tu ne prescrits JAMAIS de médicaments contrôlés, d'antibiotiques sur ordonnance, ni de posologies « comme une ordonnance ». Tu peux mentionner des mesures générales (hydratation, repos, paracétamol OTC uniquement si adapté et avec rappel de lire la notice / demander conseil pharmacien).
-4. Si les symptômes suggèrent une urgence (douleur thoracique, signes d'AVC, dyspnée sévère, hémorragie, anaphylaxie, idéation suicidaire, perte de connaissance, convulsions), dis clairement d'appeler les secours immédiatement (France : 15 / 112 ; Israël : 101 MDA, 100 police, 102 pompiers).
-5. Indique toujours quand un examen clinique, une imagerie ou des analyses de laboratoire sont nécessaires.
-6. Quand tu n'es pas sûr, dis-le et cite le besoin d'avis médical. Si tu t'appuies sur des connaissances générales ou une recherche, reste prudent.
-7. Analyse les photos fournies (peau, éruption, blessure, etc.) avec prudence : la photo est partielle, l'éclairage trompe, et tu ne remplaces pas un examen.
-8. Termine chaque réponse structurée par un rappel : ce n'est pas un substitut à un médecin ; en cas d'urgence, appeler les secours.
+const LANGUAGE_NAME: Record<Locale, string> = {
+  en: "English",
+  fr: "French",
+  he: "Hebrew",
+  ru: "Russian",
+};
 
-Format de sortie OBLIGATOIRE : un unique objet JSON valide (pas de markdown autour) avec exactement ces clés :
-{
-  "summary": "résumé court en 2-4 phrases",
-  "likelyCauses": [
-    { "title": "...", "rank": 1, "rationale": "...", "confidence": "faible|moyenne|élevée" }
-  ],
-  "urgency": "urgent|voir_medecin|auto_soins",
-  "clarifyingQuestions": ["...", "..."],
-  "nextSteps": ["...", "..."],
-  "needsExamOrLabs": ["...", "..."],
-  "disclaimer": "rappel sécurité en français",
-  "reply": "message conversationnel en français pour l'utilisateur (peut reprendre les points clés)"
+/** Compact safety + JSON contract — kept short for latency. */
+export function buildSystemPrompt(locale: Locale = "en"): string {
+  const lang = LANGUAGE_NAME[locale];
+  return `You are Doctor IA, a medical triage / orientation assistant (not a doctor).
+
+Hard rules:
+1. Reply ONLY in ${lang}. Empathetic, clear, clinical tone.
+2. Never give a definitive diagnosis — ranked hypotheses only.
+3. Never prescribe controlled drugs, Rx antibiotics, or prescription-style dosing. General self-care (rest, fluids, OTC paracetamol if appropriate + read label / ask pharmacist) is OK.
+4. If emergency signs (chest pain, stroke, severe dyspnea, hemorrhage, anaphylaxis, suicidal ideation, loss of consciousness, seizures): tell user to call emergency services now (France 15/112; Israel 101 MDA, 100 police, 102 fire).
+5. Say when clinical exam, imaging, or labs are needed. Admit uncertainty.
+6. Photos are incomplete — lighting misleads; you do not replace examination.
+7. End structured output with a short safety disclaimer in ${lang}.
+
+Return ONE valid JSON object (no markdown) with keys:
+summary (2–4 sentences),
+likelyCauses (2–5 items: title, rank, rationale, confidence as "faible"|"moyenne"|"élevée"),
+urgency ("urgent"|"voir_medecin"|"auto_soins"),
+clarifyingQuestions (array),
+nextSteps (array),
+needsExamOrLabs (array),
+disclaimer (string),
+reply (conversational message in ${lang}).
+
+Be concise. Prefer shorter rationales.`;
 }
 
-Classe 2 à 5 causes probables. urgency = urgent si prise en charge immédiate ; voir_medecin si consultation rapide ; auto_soins si surveillance à domicile possible avec prudence.`;
+/** @deprecated Prefer buildSystemPrompt(locale) */
+export const SYSTEM_PROMPT = buildSystemPrompt("fr");
 
-export const DISCLAIMER_SHORT =
-  "Medecin AI n'est pas un médecin et ne remplace pas une consultation. En cas d'urgence, appelez le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).";
+export function disclaimerShort(locale: Locale = "en"): string {
+  return getMessages(locale).disclaimer.short;
+}
 
-export const DISCLAIMER_LONG =
-  "Les informations fournies par Medecin AI sont à titre éducatif et d'orientation uniquement. Elles ne constituent pas un diagnostic, une prescription ni un avis médical personnalisé. Consultez un professionnel de santé qualifié pour toute décision médicale. En cas de symptômes graves ou d'urgence, contactez immédiatement les services d'urgence.";
+export function disclaimerLong(locale: Locale = "en"): string {
+  return getMessages(locale).disclaimer.long;
+}
 
-/** Shown before submit: third-party processing disclosure. */
-export const PRIVACY_GEMINI_NOTICE =
-  "En envoyant, votre description (et photos éventuelles) est transmise à Google Gemini pour générer une orientation. Ne saisissez pas de données d’identité (nom, n° de sécurité sociale, etc.). Sans clé API côté serveur, un mode démonstration local est utilisé.";
+export function privacyNotice(locale: Locale = "en"): string {
+  return getMessages(locale).disclaimer.privacy;
+}
+
+/** French defaults for server/mock fallbacks when locale unknown. */
+export const DISCLAIMER_SHORT = disclaimerShort("fr");
+export const DISCLAIMER_LONG = disclaimerLong("fr");
+export const PRIVACY_GEMINI_NOTICE = privacyNotice("fr");

@@ -1,30 +1,33 @@
+"use client";
+
 import type { Assessment } from "@/lib/types";
 import { UrgencyBadge } from "./UrgencyBadge";
 import { Disclaimer } from "./Disclaimer";
+import { useLocale } from "./LocaleProvider";
 
 export function AssessmentResult({ assessment }: { assessment: Assessment }) {
+  const { t } = useLocale();
+
   return (
-    <section className="animate-fade-slide space-y-5" aria-label="Résultat d’orientation">
+    <section className="animate-fade-slide space-y-5" aria-label={t.assessment.aria}>
       <UrgencyBadge level={assessment.urgency} />
 
       <div>
         <h2 className="font-display text-2xl text-[var(--brand-deep)]">
-          Synthèse
+          {t.assessment.summary}
         </h2>
-        <p className="mt-2 leading-relaxed text-[var(--ink)]">
-          {assessment.summary}
-        </p>
+        <p className="mt-2 leading-relaxed text-[var(--ink)]">{assessment.summary}</p>
       </div>
 
       <div>
         <h3 className="font-display text-xl text-[var(--brand-deep)]">
-          Causes possibles (classées)
+          {t.assessment.causes}
         </h3>
         <ol className="mt-3 space-y-3">
           {assessment.likelyCauses.map((cause) => (
             <li
               key={`${cause.rank}-${cause.title}`}
-              className="border-l-2 border-[var(--brand)] pl-4"
+              className="border-l-2 border-[var(--brand)] ps-4"
             >
               <div className="flex flex-wrap items-baseline gap-2">
                 <span className="text-xs font-semibold uppercase tracking-wide text-[var(--ink-muted)]">
@@ -32,12 +35,10 @@ export function AssessmentResult({ assessment }: { assessment: Assessment }) {
                 </span>
                 <span className="font-medium">{cause.title}</span>
                 <span className="rounded-full bg-[var(--brand-soft)] px-2 py-0.5 text-xs text-[var(--brand-deep)]">
-                  confiance {cause.confidence}
+                  {t.assessment.confidence} {t.confidence[cause.confidence]}
                 </span>
               </div>
-              <p className="mt-1 text-sm text-[var(--ink-muted)]">
-                {cause.rationale}
-              </p>
+              <p className="mt-1 text-sm text-[var(--ink-muted)]">{cause.rationale}</p>
             </li>
           ))}
         </ol>
@@ -46,9 +47,9 @@ export function AssessmentResult({ assessment }: { assessment: Assessment }) {
       {assessment.clarifyingQuestions.length > 0 && (
         <div>
           <h3 className="font-display text-xl text-[var(--brand-deep)]">
-            Questions pour préciser
+            {t.assessment.questions}
           </h3>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[var(--ink)]">
+          <ul className="mt-2 list-disc space-y-1 ps-5 text-sm text-[var(--ink)]">
             {assessment.clarifyingQuestions.map((q) => (
               <li key={q}>{q}</li>
             ))}
@@ -58,9 +59,9 @@ export function AssessmentResult({ assessment }: { assessment: Assessment }) {
 
       <div>
         <h3 className="font-display text-xl text-[var(--brand-deep)]">
-          Que faire ensuite
+          {t.assessment.nextSteps}
         </h3>
-        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[var(--ink)]">
+        <ul className="mt-2 list-disc space-y-1 ps-5 text-sm text-[var(--ink)]">
           {assessment.nextSteps.map((s) => (
             <li key={s}>{s}</li>
           ))}
@@ -70,9 +71,9 @@ export function AssessmentResult({ assessment }: { assessment: Assessment }) {
       {assessment.needsExamOrLabs.length > 0 && (
         <div>
           <h3 className="font-display text-xl text-[var(--brand-deep)]">
-            Examens / imagerie / laboratoire
+            {t.assessment.exams}
           </h3>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[var(--ink)]">
+          <ul className="mt-2 list-disc space-y-1 ps-5 text-sm text-[var(--ink)]">
             {assessment.needsExamOrLabs.map((s) => (
               <li key={s}>{s}</li>
             ))}
@@ -85,10 +86,10 @@ export function AssessmentResult({ assessment }: { assessment: Assessment }) {
         {(assessment.mock || assessment.grounded !== undefined) && (
           <p className="mt-2 text-xs text-[var(--ink-muted)]">
             {assessment.mock
-              ? "Mode démonstration (aucune clé API) — réponses d’exemple."
+              ? t.assessment.mockNote
               : assessment.grounded
-                ? "Réponse générée via Google Gemini avec recherche Google lorsque disponible."
-                : "Réponse générée via Google Gemini."}
+                ? t.assessment.groundedNote
+                : t.assessment.geminiNote}
           </p>
         )}
       </div>

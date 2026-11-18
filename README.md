@@ -1,40 +1,47 @@
-# Medecin AI
+# Doctor IA
 
-Assistant d’**orientation médicale** en français : décrivez vos symptômes, joignez éventuellement des photos, et recevez des hypothèses classées, un niveau d’urgence et des pistes de suite à donner.
+Assisted **medical orientation** in English, French, Hebrew, and Russian: describe symptoms, optionally attach photos, and receive ranked hypotheses, an urgency level, and next steps.
 
-> **Ce n’est pas un médecin.** Pas de diagnostic définitif, pas de prescription. En urgence : France **15 / 112** — Israël **101** (MDA), **100**, **102**.
+> **Not a doctor.** No definitive diagnosis, no prescription. Emergencies: France **15 / 112** — Israel **101** (MDA), **100**, **102**.
 
-## Lancer en local
+## Run locally
 
 ```bash
-cd medcin-ai
+cd doctor-ai
 npm install
 npm run dev
 ```
 
-Ouvrez [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000).
 
-### Clé API Gemini (optionnelle)
+### Language
 
-Sans clé, l’app tourne en **mode démonstration** avec des réponses réalistes simulées.
+The UI defaults to the browser language when it is `he`, `en`, `fr`, or `ru`; otherwise **English**. Use the language picker in the header; the choice is stored in `localStorage` (`doctor-ia-locale`). Hebrew uses RTL. AI replies follow the selected locale.
+
+### Gemini API key (optional)
+
+Without a key, the app runs in **demo mode** with realistic simulated replies.
 
 ```bash
 # .env.local
-GEMINI_API_KEY=votre_cle_google_ai
-# ou
-GOOGLE_GENERATIVE_AI_API_KEY=votre_cle_google_ai
-# ou
-GOOGLE_API_KEY=votre_cle_google_ai
+GEMINI_API_KEY=your_google_ai_key
+# or
+GOOGLE_GENERATIVE_AI_API_KEY=your_google_ai_key
+# or
+GOOGLE_API_KEY=your_google_ai_key
 
-# optionnel (défaut: gemini-3.6-flash)
-GEMINI_MODEL=gemini-3.6-flash
+# optional (default: gemini-3.5-flash-lite — faster; falls back to flash)
+# GEMINI_MODEL=gemini-3.5-flash-lite
+
+# optional: enable Google Search grounding (slower; off by default)
+# GEMINI_ENABLE_GROUNDING=1
 ```
 
-Obtenez une clé sur [Google AI Studio](https://aistudio.google.com/apikey).
+Get a key from [Google AI Studio](https://aistudio.google.com/apikey).
 
-Pour une app publiée sur Cursor, liez le secret `GEMINI_API_KEY` via les Secrets de la plateforme — ne le mettez jamais dans le code.
+For a Cursor-published app, bind `GEMINI_API_KEY` via platform Secrets — never commit it.
 
-Les tickets de consultation sont signés avec `CONSULT_TOKEN_SECRET` si défini, sinon une dérivation stable de `DATABASE_URL` (multi-instances). Ne signez pas uniquement avec `GEMINI_API_KEY` en production.
+Consult tickets are signed with `CONSULT_TOKEN_SECRET` when set, otherwise a stable derivation of `DATABASE_URL` (multi-instance safe).
 
 ## Stack
 
