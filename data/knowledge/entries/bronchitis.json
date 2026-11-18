@@ -1,0 +1,126 @@
+{
+  "id": "bronchitis",
+  "category": "respiratory",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "bronchitis",
+      "chesty cough mucus",
+      "acute bronchitis"
+    ],
+    "fr": [
+      "bronchite",
+      "toux grasse",
+      "bronchite aiguë"
+    ],
+    "he": [
+      "ברונכיטיס",
+      "שיעול ליחתי",
+      "דלקת סימפונות חדה"
+    ],
+    "ru": [
+      "бронхит",
+      "влажный кашель",
+      "острый бронхит"
+    ]
+  },
+  "titles": {
+    "en": "Bronchitis (chesty cough)",
+    "fr": "Bronchite",
+    "he": "ברונכיטיס",
+    "ru": "Бронхит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Acute bronchitis often causes a chesty cough with mucus after a cold. NHS: rest, fluids; antibiotics usually not needed for viral bronchitis. Seek urgent care for breathing difficulty, coughing blood, high fever lasting, chest pain, or if you have heart/lung disease. No invented antibiotic or inhaler regimens.",
+      "emergencyIf": [
+        "Severe difficulty breathing",
+        "Coughing up blood",
+        "Blue/grey lips or sudden confusion"
+      ],
+      "seeDoctorIf": [
+        "Cough lasting more than 3 weeks",
+        "High fever",
+        "Chest pain",
+        "Known heart/lung disease with worsening cough"
+      ],
+      "selfCare": [
+        "Rest; fluids; honey for cough in adults/older children if suitable (not under 1 year)"
+      ],
+      "doNot": [
+        "Do not invent antibiotics",
+        "Do not give honey to infants under 1 year"
+      ]
+    },
+    "fr": {
+      "summary": "La bronchite aiguë donne une toux grasse. Repos, hydratation ; antibiotiques souvent inutiles si viral. Avis urgent si dyspnée, hémoptysie, fièvre, douleur thoracique.",
+      "emergencyIf": [
+        "Détresse respiratoire",
+        "Crachats de sang",
+        "Cyanose / confusion"
+      ],
+      "seeDoctorIf": [
+        "Toux > 3 semaines",
+        "Forte fièvre",
+        "Douleur thoracique",
+        "Cardiopathie/pneumopathie connue"
+      ],
+      "selfCare": [
+        "Repos ; boire"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "ברונכיטיס חדה: שיעול ליחתי. מנוחה, נוזלים; אנטיביוטיקה לרוב לא נחוצה אם ויראלי. ייעוץ דחוף בקושי נשימה, דם, חום, כאב חזה.",
+      "emergencyIf": [
+        "קושי נשימה חמור",
+        "שיעול דם",
+        "כחלחלות / בלבול"
+      ],
+      "seeDoctorIf": [
+        "שיעול מעל 3 שבועות",
+        "חום גבוה",
+        "כאב חזה",
+        "מחלת לב/ריאות ידועה"
+      ],
+      "selfCare": [
+        "מנוחה; שתייה"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Острый бронхит: влажный кашель. Покой, жидкость; антибиотики часто не нужны при вирусе. Срочно при одышке, крови, лихорадке, боли в груди.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Кровь при кашле",
+        "Цианоз / спутанность"
+      ],
+      "seeDoctorIf": [
+        "Кашель >3 недель",
+        "Высокая лихорадка",
+        "Боль в груди",
+        "Известная болезнь сердца/лёгких"
+      ],
+      "selfCare": [
+        "Покой; пить"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-bronchitis",
+      "name": "NHS — Bronchitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bronchitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

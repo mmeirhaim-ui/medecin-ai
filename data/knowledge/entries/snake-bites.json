@@ -1,0 +1,103 @@
+{
+  "id": "snake-bites",
+  "category": "trauma",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "snake bite",
+      "bitten by a snake",
+      "snakebite"
+    ],
+    "fr": [
+      "morsure de serpent",
+      "mordu par un serpent"
+    ],
+    "he": [
+      "הכשת נחש",
+      "נחש נשך"
+    ],
+    "ru": [
+      "укус змеи",
+      "змея укусила"
+    ]
+  },
+  "titles": {
+    "en": "Snake bite — emergency care",
+    "fr": "Morsure de serpent — urgence",
+    "he": "הכשת נחש — חירום",
+    "ru": "Укус змеи — неотложная помощь"
+  },
+  "guidance": {
+    "en": {
+      "summary": "NHS: call emergency services / go to A&E for any snake bite. Stay calm; keep the bitten part still; recovery position if needed; paracetamol for pain; remove jewellery/loosen clothes near the bite; note colour/pattern from a safe distance. Do not catch the snake, suck/cut venom, apply tight tourniquets, or take aspirin/ibuprofen (bleeding risk). Antivenom is hospital-only.",
+      "emergencyIf": [
+        "Any suspected snake bite"
+      ],
+      "selfCare": [
+        "Keep still; arrange emergency transport; do not drive yourself if possible"
+      ],
+      "doNot": [
+        "Do not catch or kill the snake",
+        "Do not suck or cut the wound",
+        "Do not apply a tight tourniquet",
+        "Do not take aspirin or ibuprofen",
+        "Do not invent antivenom doses"
+      ]
+    },
+    "fr": {
+      "summary": "Toute morsure de serpent = urgences. Rester calme ; immobiliser ; paracétamol ; retirer bijoux. Ne pas aspirer/couper, garrot serré, aspirine/ibuprofène. Sérum antivenimeux = hôpital.",
+      "emergencyIf": [
+        "Toute morsure de serpent suspectée"
+      ],
+      "selfCare": [
+        "Immobiliser ; transport d'urgence"
+      ],
+      "doNot": [
+        "Ne pas attraper le serpent",
+        "Ne pas aspirer/couper",
+        "Pas de garrot serré",
+        "Pas d'aspirine/ibuprofène"
+      ]
+    },
+    "he": {
+      "summary": "כל הכשת נחש — חירום. להישאר רגועים; לייצב; פרצטמול; להסיר תכשיטים. לא למצוץ/לחתוך, חוסם עורקים הדוק, אספירין/איבופרופן. נסיוב — בית חולים.",
+      "emergencyIf": [
+        "כל חשד להכשת נחש"
+      ],
+      "selfCare": [
+        "לייצב; פינוי חירום"
+      ],
+      "doNot": [
+        "לא לתפוס את הנחש",
+        "לא למצוץ/לחתוך",
+        "לא חוסם הדוק",
+        "לא אספירין/איבופרופן"
+      ]
+    },
+    "ru": {
+      "summary": "Любой укус змеи — неотложка. Спокойствие; обездвижить; парацетамол; снять украшения. Не отсасывать/резать, тугой жгут, аспирин/ибупрофен. Сыворотка — только в больнице.",
+      "emergencyIf": [
+        "Любой подозреваемый укус змеи"
+      ],
+      "selfCare": [
+        "Обездвижить; экстренная транспортировка"
+      ],
+      "doNot": [
+        "Не ловить змею",
+        "Не отсасывать/резать",
+        "Не тугой жгут",
+        "Не аспирин/ибупрофен"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-snake-bites",
+      "name": "NHS — Snake bites",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/snake-bites/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

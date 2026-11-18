@@ -212,6 +212,24 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\bpancr[ée]atite\b/i,
   /\bדלקת\s+לבלב\b/u,
   /\bпанкреатит\b/iu,
+
+  // Snake bite
+  /\bsnake\s*bite\b/i,
+  /\bmorsure\s+de\s+serpent\b/i,
+  /\bהכשת\s+נחש\b/u,
+  /\bукус\s+змеи\b/iu,
+
+  // Pre-eclampsia
+  /\bpre[\s-]?eclampsia\b/i,
+  /\bpr[ée][\s-]?[ée]clampsie\b/i,
+  /\bרעלת\s+הריון\b/u,
+  /\bпреэклампси/iu,
+
+  // Severe hypo
+  /\bhypoglyc(a|e)emia\b/i,
+  /\bhypoglyc[ée]mie\b/i,
+  /\bהיפוגליקמיה\b/u,
+  /\bгипогликеми/iu,
 ];
 
 const NEGATION =

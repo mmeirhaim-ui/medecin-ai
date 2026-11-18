@@ -1,0 +1,102 @@
+{
+  "id": "cold-sores",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "cold sore",
+      "herpes labialis",
+      "fever blister lip"
+    ],
+    "fr": [
+      "bouton de fièvre",
+      "herpès labial",
+      "vescicules lèvre"
+    ],
+    "he": [
+      "הרפס שפתיים",
+      "שלפוחית חום בשפה",
+      "cold sore"
+    ],
+    "ru": [
+      "герпес на губах",
+      "простуда на губе",
+      "лихорадочный пузырёк"
+    ]
+  },
+  "titles": {
+    "en": "Cold sores (herpes labialis)",
+    "fr": "Bouton de fièvre (herpès labial)",
+    "he": "הרפס שפתיים",
+    "ru": "Герпес губ"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Cold sores are usually self-limiting. NHS: pharmacy antiviral cream may help if started early; avoid kissing/sharing while sores present; do not touch eyes. See a GP if sores near eyes, immunocompromised, or not healing. No inventing oral antiviral doses.",
+      "seeDoctorIf": [
+        "Cold sores near the eyes",
+        "Immunocompromised with cold sores",
+        "Not healing or very frequent severe outbreaks"
+      ],
+      "selfCare": [
+        "Pharmacy advice on topical antivirals; avoid touching/spreading; separate towels"
+      ],
+      "doNot": [
+        "Do not invent oral antiviral regimens",
+        "Do not pick sores"
+      ]
+    },
+    "fr": {
+      "summary": "Le bouton de fièvre est souvent bénin. Crème antivirale en pharmacie tôt ; éviter de contaminer les yeux. Médecin si près des yeux, immunodépression, non cicatrisation. Pas d'antiviraux oraux inventés.",
+      "seeDoctorIf": [
+        "Près des yeux",
+        "Immunodépression",
+        "Ne cicatrise pas"
+      ],
+      "selfCare": [
+        "Avis pharmacien ; ne pas toucher/essaimer"
+      ],
+      "doNot": [
+        "Pas d'antiviraux oraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "הרפס שפתיים לרוב חולף. משחה בבית מרקחת מוקדם; לא לגעת בעיניים. רופא ליד עיניים/דיכוי חיסוני/לא נרפא. אין אנטי-ויראלי פומי מומצא.",
+      "seeDoctorIf": [
+        "ליד העיניים",
+        "דיכוי חיסוני",
+        "לא נרפא"
+      ],
+      "selfCare": [
+        "ייעוץ רוקח; לא לגעת/להדביק"
+      ],
+      "doNot": [
+        "אין אנטי-ויראלי פומי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Герпес губ обычно проходит. Аптечный крем рано; не трогать глаза. Врач у глаз/иммунодефицит/не заживает. Пероральные противовирусные не выдумывать.",
+      "seeDoctorIf": [
+        "Около глаз",
+        "Иммунодефицит",
+        "Не заживает"
+      ],
+      "selfCare": [
+        "Совет фармацевта; не трогать/не распространять"
+      ],
+      "doNot": [
+        "Не изобретать пероральные противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-cold-sores",
+      "name": "NHS — Cold sores",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cold-sores/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

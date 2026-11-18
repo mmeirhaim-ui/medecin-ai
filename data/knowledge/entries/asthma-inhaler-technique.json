@@ -1,0 +1,103 @@
+{
+  "id": "asthma-inhaler-technique",
+  "category": "respiratory",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "inhaler technique",
+      "how to use inhaler",
+      "spacer inhaler",
+      "asthma inhaler not working"
+    ],
+    "fr": [
+      "technique d'inhalateur",
+      "comment utiliser inhalateur",
+      "chambre d'inhalation",
+      "inhalateur asthme inefficace"
+    ],
+    "he": [
+      "טכניקת משאף",
+      "איך להשתמש במשאף",
+      "ספייסר למשאף",
+      "משאף אסתמה לא עובד"
+    ],
+    "ru": [
+      "техника ингалятора",
+      "как пользоваться ингалятором",
+      "спейсер",
+      "ингалятор астмы не помогает"
+    ]
+  },
+  "titles": {
+    "en": "Asthma inhaler technique (orientation)",
+    "fr": "Technique d'inhalateur (orientation)",
+    "he": "טכניקת משאף אסתמה (הכוונה)",
+    "ru": "Техника ингалятора при астме (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Poor inhaler technique is a common reason treatment seems ineffective. NHS: ask a pharmacist/nurse/GP to check technique and spacer use. For acute asthma attack follow the separate asthma-attack entry / emergency care. This pack never invents puff counts or steroid doses.",
+      "emergencyIf": [
+        "Asthma attack with severe breathlessness, cannot speak, blue lips — emergency pathway"
+      ],
+      "seeDoctorIf": [
+        "Inhaler seems ineffective",
+        "Need technique check or spacer advice",
+        "Increasing reliever use"
+      ],
+      "doNot": [
+        "Do not invent inhaler doses or oral steroid courses",
+        "Do not skip seeking help for a severe attack"
+      ]
+    },
+    "fr": {
+      "summary": "Une mauvaise technique d'inhalateur diminue l'efficacité. Faire vérifier en pharmacie/cabinet. Crise d'asthme sévère = urgence. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Crise d'asthme sévère — filière urgence"
+      ],
+      "seeDoctorIf": [
+        "Inhalateur inefficace",
+        "Besoin de vérifier la technique / chambre"
+      ],
+      "doNot": [
+        "Pas de doses d'inhalateur/corticoïdes inventées"
+      ]
+    },
+    "he": {
+      "summary": "טכניקת משאף לקויה מפחיתה יעילות. לבדוק אצל רוקח/אחות/רופא. התקף חמור — חירום. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "התקף אסתמה חמור — מסלול חירום"
+      ],
+      "seeDoctorIf": [
+        "משאף לא יעיל",
+        "צורך בבדיקת טכניקה / ספייסר"
+      ],
+      "doNot": [
+        "אין מינון משאף/סטרואידים מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Плохая техника ингалятора снижает эффект. Проверить у фармацевта/медсестры/врача. Тяжёлый приступ — неотложка. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Тяжёлый приступ астмы — неотложный путь"
+      ],
+      "seeDoctorIf": [
+        "Ингалятор не помогает",
+        "Нужна проверка техники / спейсера"
+      ],
+      "doNot": [
+        "Не изобретать дозы ингалятора/стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-asthma",
+      "name": "NHS — Asthma",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/asthma/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -363,10 +363,24 @@
       "topics": []
     },
     {
+      "id": "nhs-boils",
+      "name": "NHS — Boils",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/boils/",
+      "topics": []
+    },
+    {
       "id": "nhs-broken-bone",
       "name": "NHS — Broken bone (fracture)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/broken-bone/",
+      "topics": []
+    },
+    {
+      "id": "nhs-bronchitis",
+      "name": "NHS — Bronchitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bronchitis/",
       "topics": []
     },
     {
@@ -383,6 +397,13 @@
       "name": "NHS — Chickenpox",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/chickenpox/",
+      "topics": []
+    },
+    {
+      "id": "nhs-chilblains",
+      "name": "NHS — Chilblains",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chilblains/",
       "topics": []
     },
     {
@@ -423,6 +444,13 @@
       "topics": [
         "toxicology"
       ]
+    },
+    {
+      "id": "nhs-cold-sores",
+      "name": "NHS — Cold sores",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cold-sores/",
+      "topics": []
     },
     {
       "id": "nhs-confusion",
@@ -554,10 +582,24 @@
       "topics": []
     },
     {
+      "id": "nhs-frostbite",
+      "name": "NHS — Frostbite",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/frostbite/",
+      "topics": []
+    },
+    {
       "id": "nhs-gallstones",
       "name": "NHS — Gallstones",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/gallstones/",
+      "topics": []
+    },
+    {
+      "id": "nhs-glue-ear",
+      "name": "NHS — Glue ear",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/glue-ear/",
       "topics": []
     },
     {
@@ -626,6 +668,20 @@
       "topics": []
     },
     {
+      "id": "nhs-hiccups",
+      "name": "NHS — Hiccups",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/hiccups/",
+      "topics": []
+    },
+    {
+      "id": "nhs-hyperglycaemia",
+      "name": "NHS — High blood sugar (hyperglycaemia)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/high-blood-sugar-hyperglycaemia/",
+      "topics": []
+    },
+    {
       "id": "nhs-hypertension",
       "name": "NHS — High blood pressure",
       "org": "NHS",
@@ -639,6 +695,13 @@
       "name": "NHS — Overactive thyroid (hyperthyroidism)",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/",
+      "topics": []
+    },
+    {
+      "id": "nhs-hypoglycaemia",
+      "name": "NHS — Low blood sugar (hypoglycaemia)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
       "topics": []
     },
     {
@@ -660,6 +723,20 @@
       "name": "NHS — Impetigo",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/impetigo/",
+      "topics": []
+    },
+    {
+      "id": "nhs-insect-bites",
+      "name": "NHS — Insect bites and stings",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/insect-bites-and-stings/",
+      "topics": []
+    },
+    {
+      "id": "nhs-insomnia",
+      "name": "NHS — Insomnia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/insomnia/",
       "topics": []
     },
     {
@@ -690,6 +767,13 @@
       "name": "NHS — Labyrinthitis",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/labyrinthitis/",
+      "topics": []
+    },
+    {
+      "id": "nhs-laryngitis",
+      "name": "NHS — Laryngitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/laryngitis/",
       "topics": []
     },
     {
@@ -735,6 +819,20 @@
       "name": "NHS — Migraine",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/migraine/",
+      "topics": []
+    },
+    {
+      "id": "nhs-motion-sickness",
+      "name": "NHS — Motion sickness",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/motion-sickness/",
+      "topics": []
+    },
+    {
+      "id": "nhs-mouth-ulcers",
+      "name": "NHS — Mouth ulcers",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/mouth-ulcers/",
       "topics": []
     },
     {
@@ -789,6 +887,27 @@
       "topics": []
     },
     {
+      "id": "nhs-pleurisy",
+      "name": "NHS — Pleurisy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pleurisy/",
+      "topics": []
+    },
+    {
+      "id": "nhs-pmr",
+      "name": "NHS — Polymyalgia rheumatica",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/polymyalgia-rheumatica/",
+      "topics": []
+    },
+    {
+      "id": "nhs-pmr-symptoms",
+      "name": "NHS — Polymyalgia rheumatica symptoms",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/polymyalgia-rheumatica/symptoms/",
+      "topics": []
+    },
+    {
       "id": "nhs-pneumonia",
       "name": "NHS — Pneumonia",
       "org": "NHS",
@@ -809,6 +928,13 @@
       "name": "NHS — Postmenopausal bleeding",
       "org": "NHS",
       "url": "https://www.nhs.uk/symptoms/post-menopausal-bleeding/",
+      "topics": []
+    },
+    {
+      "id": "nhs-pre-eclampsia",
+      "name": "NHS — Pre-eclampsia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
       "topics": []
     },
     {
@@ -919,6 +1045,13 @@
       "topics": []
     },
     {
+      "id": "nhs-snake-bites",
+      "name": "NHS — Snake bites",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/snake-bites/",
+      "topics": []
+    },
+    {
       "id": "nhs-stomach-ache",
       "name": "NHS — Stomach ache",
       "org": "NHS",
@@ -967,10 +1100,24 @@
       "topics": []
     },
     {
+      "id": "nhs-tonsillitis",
+      "name": "NHS — Tonsillitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/tonsillitis/",
+      "topics": []
+    },
+    {
       "id": "nhs-typhoid",
       "name": "NHS — Typhoid fever",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/typhoid-fever/",
+      "topics": []
+    },
+    {
+      "id": "nhs-uti",
+      "name": "NHS — Urinary tract infection (UTI)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
       "topics": []
     },
     {

@@ -132,6 +132,12 @@ const cases = [
   { text: "acute pancreatitis severe upper abdominal pain to back", expect: "acute-pancreatitis" },
   { text: "lyme disease tick bite bullseye rash", expect: "lyme-disease" },
   { text: "how to use adrenaline auto injector EpiPen two pens", expect: "anaphylaxis-aftercare" },
+  { text: "snake bite bitten by a snake", expect: "snake-bites" },
+  { text: "pre-eclampsia pregnancy headache swelling vision", expect: "pre-eclampsia" },
+  { text: "hypoglycaemia low blood sugar shaking sweaty", expect: "hypoglycaemia" },
+  { text: "polymyalgia rheumatica morning stiffness shoulders hips", expect: "polymyalgia-rheumatica" },
+  { text: "insect bite wasp sting swollen", expect: "insect-bites-stings" },
+  { text: "frostbite frozen fingers white hard", expect: "frostbite" },
 ];
 
 for (const c of cases) {
