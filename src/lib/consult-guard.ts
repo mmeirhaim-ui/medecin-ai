@@ -85,16 +85,105 @@ export function sidCookieHeader(sid: string): string {
   return `${CONSULT_SID_COOKIE}=${encodeURIComponent(sid)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${maxAge}${secure}`;
 }
 
-/** Require same-origin browser navigation / fetch. */
+function normalizeHost(raw: string): string {
+  return raw.trim().toLowerCase().replace(/\.$/, "");
+}
+
+/** Extract host[:port] from Host / X-Forwarded-Host / origin-like values. */
+function hostFromValue(value: string | null | undefined): string | null {
+  if (!value) return null;
+  const first = value.split(",")[0]?.trim();
+  if (!first) return null;
+  try {
+    if (first.includes("://")) {
+      return normalizeHost(new URL(first).host);
+    }
+    // Reject clearly invalid header values.
+    if (/[\s/]/.test(first)) return null;
+    return normalizeHost(first);
+  } catch {
+    return null;
+  }
+}
+
+function hostnameOnly(host: string): string {
+  // Strip brackets for IPv6 and a trailing :port (not inside [...]).
+  if (host.startsWith("[")) {
+    const end = host.indexOf("]");
+    return end >= 0 ? host.slice(0, end + 1) : host;
+  }
+  const idx = host.lastIndexOf(":");
+  if (idx > 0 && /^\d+$/.test(host.slice(idx + 1))) {
+    return host.slice(0, idx);
+  }
+  return host;
+}
+
+function isLocalDevHost(host: string): boolean {
+  const name = hostnameOnly(host);
+  return name === "localhost" || name === "127.0.0.1" || name === "[::1]" || name === "::1";
+}
+
+/** Cursor-published apps (e.g. medecin-ai.apps.grok.bot). */
+function isCursorAppsHost(host: string): boolean {
+  const name = hostnameOnly(host);
+  return name === "apps.grok.bot" || name.endsWith(".apps.grok.bot");
+}
+
+/**
+ * Trusted request hosts from the incoming request + deploy env.
+ * Prefer ALLOWED_ORIGINS / VERCEL_URL over hardcoding a single domain.
+ */
+function trustedRequestHosts(req: Request): Set<string> {
+  const trusted = new Set<string>();
+  const add = (raw: string | null | undefined) => {
+    const host = hostFromValue(raw);
+    if (!host) return;
+    trusted.add(host);
+    trusted.add(hostnameOnly(host));
+  };
+
+  add(req.headers.get("host"));
+  add(req.headers.get("x-forwarded-host"));
+
+  for (const entry of (process.env.ALLOWED_ORIGINS || "").split(",")) {
+    const trimmed = entry.trim();
+    if (!trimmed) continue;
+    add(trimmed);
+  }
+
+  const vercelUrl = process.env.VERCEL_URL?.trim();
+  if (vercelUrl) {
+    add(vercelUrl.includes("://") ? vercelUrl : `https://${vercelUrl}`);
+  }
+
+  return trusted;
+}
+
+function isAllowedBrowserHost(candidateHost: string, trusted: Set<string>): boolean {
+  const host = normalizeHost(candidateHost);
+  const name = hostnameOnly(host);
+  if (trusted.has(host) || trusted.has(name)) return true;
+  if (isLocalDevHost(host)) return true;
+  if (isCursorAppsHost(host)) return true;
+  return false;
+}
+
+/**
+ * Require browser Origin/Referer from a trusted host.
+ * Allows request Host / X-Forwarded-Host, ALLOWED_ORIGINS, VERCEL_URL,
+ * localhost, and *.apps.grok.bot (Cursor published apps).
+ */
 export function assertSameOrigin(req: Request): string | null {
-  const host = req.headers.get("host");
-  if (!host) return "Requête invalide.";
+  const trusted = trustedRequestHosts(req);
 
   const origin = req.headers.get("origin");
   if (origin) {
     try {
       const o = new URL(origin);
-      if (o.host !== host) return "Origine non autorisée.";
+      if (!isAllowedBrowserHost(o.host, trusted)) {
+        return "Origine non autorisée.";
+      }
       return null;
     } catch {
       return "Origine non autorisée.";
@@ -105,7 +194,9 @@ export function assertSameOrigin(req: Request): string | null {
   if (referer) {
     try {
       const r = new URL(referer);
-      if (r.host !== host) return "Origine non autorisée.";
+      if (!isAllowedBrowserHost(r.host, trusted)) {
+        return "Origine non autorisée.";
+      }
       return null;
     } catch {
       return "Origine non autorisée.";
