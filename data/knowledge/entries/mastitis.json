@@ -1,0 +1,103 @@
+{
+  "id": "mastitis",
+  "category": "pregnancy",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "mastitis",
+      "hot painful breast breastfeeding",
+      "breast lump hot red"
+    ],
+    "fr": [
+      "mastite",
+      "sein chaud douloureux allaitement",
+      "sein rouge chaud"
+    ],
+    "he": [
+      "דלקת שד",
+      "שד חם כואב בהנקה",
+      "גוש חם אדום בשד"
+    ],
+    "ru": [
+      "мастит",
+      "горячая болезненная грудь при кормлении",
+      "горячий красный участок груди"
+    ]
+  },
+  "titles": {
+    "en": "Mastitis",
+    "fr": "Mastite",
+    "he": "דלקת שד (מסטיטיס)",
+    "ru": "Мастит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Mastitis: swollen, hot, painful breast area (often one side), sometimes flu-like symptoms. NHS: continue breastfeeding/expressing if breastfeeding; cold compress; rest; pharmacy/GP pain relief. See GP if not better in 12–24h home care, not better 48h after antibiotics, or mastitis when not breastfeeding. Antibiotics are clinician-prescribed — no invented courses.",
+      "seeDoctorIf": [
+        "Not better 12–24 hours after home care",
+        "Not better 48 hours after antibiotics",
+        "Mastitis and not breastfeeding",
+        "Worsening fever or spreading redness"
+      ],
+      "selfCare": [
+        "Continue feeds if breastfeeding; cold compress 10 min/hour; supportive bra; rest; paracetamol/ibuprofen if suitable per label"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not stop breastfeeding solely because of mastitis without advice"
+      ]
+    },
+    "fr": {
+      "summary": "Mastite : sein chaud, douloureux, parfois symptômes grippaux. Continuer l'allaitement si possible ; compresses froides. Médecin si pas d'amélioration. Pas d'antibiotiques inventés.",
+      "seeDoctorIf": [
+        "Pas d'amélioration en 12–24 h",
+        "Pas d'amélioration 48 h après antibiotiques",
+        "Mastite hors allaitement"
+      ],
+      "selfCare": [
+        "Continuer tétées ; compresses froides ; repos"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת שד: אזור חם וכואב, לעיתים דמוי שפעת. להמשיך הנקה אם אפשר; קומפרס קר. רופא אם אין שיפור. אין אנטיביוטיקה מומצאת.",
+      "seeDoctorIf": [
+        "אין שיפור תוך 12–24 שעות",
+        "אין שיפור 48 שעות אחרי אנטיביוטיקה",
+        "מסטיטיס בלי הנקה"
+      ],
+      "selfCare": [
+        "להמשיך הנקה; קומפרס קר; מנוחה"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Мастит: горячий болезненный участок груди, иногда гриппоподобные симптомы. Продолжать кормление если возможно; холодный компресс. Врач если нет улучшения. Антибиотики не выдумывать.",
+      "seeDoctorIf": [
+        "Нет улучшения за 12–24 ч",
+        "Нет улучшения через 48 ч после антибиотиков",
+        "Мастит без грудного вскармливания"
+      ],
+      "selfCare": [
+        "Продолжать кормление; холодный компресс; покой"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-mastitis",
+      "name": "NHS — Mastitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/mastitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

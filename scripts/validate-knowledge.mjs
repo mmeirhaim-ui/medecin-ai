@@ -138,6 +138,12 @@ const cases = [
   { text: "polymyalgia rheumatica morning stiffness shoulders hips", expect: "polymyalgia-rheumatica" },
   { text: "insect bite wasp sting swollen", expect: "insect-bites-stings" },
   { text: "frostbite frozen fingers white hard", expect: "frostbite" },
+  { text: "miscarriage pregnant bleeding spotting cramping", expect: "miscarriage-bleeding" },
+  { text: "mastitis hot painful breast breastfeeding", expect: "mastitis" },
+  { text: "vomiting blood coffee ground vomit", expect: "vomiting-blood" },
+  { text: "quinsy peritonsillar abscess trismus", expect: "quinsy-abscess" },
+  { text: "threadworms itchy bottom at night", expect: "threadworms" },
+  { text: "sudden hearing loss deaf one ear", expect: "hearing-loss-sudden" },
 ];
 
 for (const c of cases) {

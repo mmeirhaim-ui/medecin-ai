@@ -1,0 +1,113 @@
+{
+  "id": "varicose-veins",
+  "category": "cardio",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "varicose veins",
+      "bulging leg veins",
+      "twisted veins legs"
+    ],
+    "fr": [
+      "varices",
+      "veines gonflées jambes",
+      "veines tortueuses"
+    ],
+    "he": [
+      "דליות",
+      "ורידים בולטים ברגליים"
+    ],
+    "ru": [
+      "варикоз",
+      "вздутые вены на ногах"
+    ]
+  },
+  "titles": {
+    "en": "Varicose veins",
+    "fr": "Varices",
+    "he": "דליות ברגליים",
+    "ru": "Варикозное расширение вен"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Varicose veins are swollen twisted leg veins that can ache or itch. NHS: elevate legs, stay active, compression if advised. See GP for pain, skin changes, ulcers, or bleeding. Urgent care for sudden one-leg swelling (DVT) or heavy bleeding from a vein.",
+      "emergencyIf": [
+        "Sudden one-leg swelling/pain (possible DVT)",
+        "Heavy bleeding from a varicose vein that does not stop with pressure"
+      ],
+      "seeDoctorIf": [
+        "Aching varicose veins affecting life",
+        "Skin discoloration or ulcers near ankles",
+        "Bleeding from a vein"
+      ],
+      "selfCare": [
+        "Elevate legs; avoid prolonged standing; walk regularly; compression as advised"
+      ],
+      "doNot": [
+        "Do not invent sclerotherapy or surgery plans",
+        "Do not ignore unilateral swollen painful leg"
+      ]
+    },
+    "fr": {
+      "summary": "Les varices peuvent faire mal ou démanger. Surélever, marcher. Médecin si troubles cutanés/ulcères. Urgence si phlébite suspectée ou saignement abondant.",
+      "emergencyIf": [
+        "Jambe unilatérale gonflée/douloureuse (TVP possible)",
+        "Saignement abondant d'une varice"
+      ],
+      "seeDoctorIf": [
+        "Gêne importante",
+        "Troubles cutanés / ulcères"
+      ],
+      "selfCare": [
+        "Surélever ; marcher ; compression si conseillée"
+      ],
+      "doNot": [
+        "Pas de plans de sclérothérapie inventés"
+      ]
+    },
+    "he": {
+      "summary": "דליות יכולות לכאוב או לגרד. להרים רגליים, ללכת. רופא בשינויי עור/כיבים. חירום בחשד לפקקת או דימום כבד.",
+      "emergencyIf": [
+        "נפיחות/כאב חד־צדדי (חשד ל־DVT)",
+        "דימום כבד מדליה"
+      ],
+      "seeDoctorIf": [
+        "הפרעה משמעותית",
+        "שינויי עור / כיבים"
+      ],
+      "selfCare": [
+        "הרמת רגליים; הליכה; לחץ לפי ייעוץ"
+      ],
+      "doNot": [
+        "אין תוכניות סקלרותרפיה מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Варикоз может болеть или чесаться. Приподнимать ноги, ходить. Врач при изменениях кожи/язвах. Неотложка при подозрении на ТГВ или обильном кровотечении.",
+      "emergencyIf": [
+        "Односторонний отёк/боль (возможен ТГВ)",
+        "Обильное кровотечение из вены"
+      ],
+      "seeDoctorIf": [
+        "Сильный дискомфорт",
+        "Изменения кожи / язвы"
+      ],
+      "selfCare": [
+        "Приподнимать ноги; ходить; компрессия по совету"
+      ],
+      "doNot": [
+        "Не изобретать планы склеротерапии"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-varicose-veins",
+      "name": "NHS — Varicose veins",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/varicose-veins/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

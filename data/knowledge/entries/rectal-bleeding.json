@@ -1,0 +1,110 @@
+{
+  "id": "rectal-bleeding",
+  "category": "gi",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "rectal bleeding",
+      "blood in stool",
+      "bleeding from bottom"
+    ],
+    "fr": [
+      "saignement rectal",
+      "sang dans les selles",
+      "saignement par l'anus"
+    ],
+    "he": [
+      "דימום רקטלי",
+      "דם בצואה",
+      "דימום מפי הטבעת"
+    ],
+    "ru": [
+      "ректальное кровотечение",
+      "кровь в стуле",
+      "кровь из заднего прохода"
+    ]
+  },
+  "titles": {
+    "en": "Rectal bleeding",
+    "fr": "Saignement rectal",
+    "he": "דימום רקטלי",
+    "ru": "Ректальное кровотечение"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Blood from the bottom needs assessment — causes range from piles to more serious disease. NHS: see a GP for unexplained rectal bleeding. Emergency for heavy bleeding, dizziness/fainting, black tarry stools with unwellness, or severe pain. Do not assume piles without review.",
+      "emergencyIf": [
+        "Heavy rectal bleeding",
+        "Bleeding with dizziness or fainting",
+        "Black tarry stools with feeling very unwell",
+        "Severe abdominal pain with bleeding"
+      ],
+      "seeDoctorIf": [
+        "Any unexplained blood in stool or on wiping",
+        "Change in bowel habit with bleeding"
+      ],
+      "doNot": [
+        "Do not assume all bleeding is haemorrhoids",
+        "Do not invent treatments for GI bleeding"
+      ]
+    },
+    "fr": {
+      "summary": "Un saignement anal nécessite un avis. Urgence si abondant, malaise, selles noires, douleur sévère. Ne pas attribuer d'emblée aux hémorroïdes.",
+      "emergencyIf": [
+        "Saignement abondant",
+        "Avec vertige/syncope",
+        "Selles noires + malaise",
+        "Douleur abdominale sévère"
+      ],
+      "seeDoctorIf": [
+        "Tout sang inexpliqué",
+        "Changement de transit avec sang"
+      ],
+      "doNot": [
+        "Ne pas conclure aux hémorroïdes sans avis"
+      ]
+    },
+    "he": {
+      "summary": "דימום מפי הטבעת דורש הערכה. חירום אם כבד, סחרחורת, צואה שחורה, כאב חזק. לא להניח שזה רק טחורים.",
+      "emergencyIf": [
+        "דימום כבד",
+        "עם סחרחורת/עילפון",
+        "צואה שחורה + הרגשה רעה",
+        "כאב בטן חזק"
+      ],
+      "seeDoctorIf": [
+        "כל דם לא מוסבר",
+        "שינוי ביציאות עם דם"
+      ],
+      "doNot": [
+        "לא להניח שזה טחורים בלי בדיקה"
+      ]
+    },
+    "ru": {
+      "summary": "Кровь из заднего прохода требует оценки. Неотложка при обильном кровотечении, головокружении, чёрном стуле, сильной боли. Не считать сразу геморроем.",
+      "emergencyIf": [
+        "Обильное кровотечение",
+        "С головокружением/обмороком",
+        "Чёрный стул + плохое самочувствие",
+        "Сильная боль в животе"
+      ],
+      "seeDoctorIf": [
+        "Любая необъяснимая кровь",
+        "Изменение стула с кровью"
+      ],
+      "doNot": [
+        "Не считать геморроем без осмотра"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-rectal-bleeding",
+      "name": "NHS — Rectal bleeding",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rectal-bleeding/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

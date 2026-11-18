@@ -1,0 +1,99 @@
+{
+  "id": "nappy-rash",
+  "category": "peds",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "nappy rash",
+      "diaper rash",
+      "red bottom baby"
+    ],
+    "fr": [
+      "érythème fessier",
+      "rougeurs couches bébé"
+    ],
+    "he": [
+      "תפרחת חיתולים",
+      "אודם בישבן תינוק"
+    ],
+    "ru": [
+      "опрелости под подгузником",
+      "красный поп у малыша"
+    ]
+  },
+  "titles": {
+    "en": "Nappy (diaper) rash",
+    "fr": "Érythème fessier",
+    "he": "תפרחת חיתולים",
+    "ru": "Опрелости"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Nappy rash is common. NHS: change nappies often, clean gently, leave nappy off when possible, barrier cream from pharmacy. See a GP if not improving, blistering, spreading, fever, or baby in pain.",
+      "seeDoctorIf": [
+        "Not improving with barrier cream care",
+        "Blisters, pus, or spreading redness",
+        "Fever or baby very unsettled"
+      ],
+      "selfCare": [
+        "Frequent changes; gentle cleaning; dry well; barrier cream; nappy-free time"
+      ],
+      "doNot": [
+        "Do not invent steroid cream strengths for infants",
+        "Do not use adult products without advice"
+      ]
+    },
+    "fr": {
+      "summary": "L'érythème fessier est fréquent. Changes fréquents, crème barrière. Médecin si pas d'amélioration, cloques, fièvre.",
+      "seeDoctorIf": [
+        "Pas d'amélioration",
+        "Cloques / pus / rougeur extensive",
+        "Fièvre"
+      ],
+      "selfCare": [
+        "Changes fréquents ; nettoyer doucement ; crème barrière"
+      ],
+      "doNot": [
+        "Pas de dermocorticoïdes inventés pour nourrissons"
+      ]
+    },
+    "he": {
+      "summary": "תפרחת חיתולים נפוצה. החלפות תכופות, קרם מחסום. רופא אם אין שיפור, שלפוחיות, חום.",
+      "seeDoctorIf": [
+        "אין שיפור",
+        "שלפוחיות / מוגלה / אודם מתפשט",
+        "חום"
+      ],
+      "selfCare": [
+        "החלפות תכופות; ניקוי עדין; קרם מחסום"
+      ],
+      "doNot": [
+        "אין סטרואיד מקומי מומצא לתינוקות"
+      ]
+    },
+    "ru": {
+      "summary": "Опрелости часты. Частая смена, барьерный крем. Врач если нет улучшения, пузыри, лихорадка.",
+      "seeDoctorIf": [
+        "Нет улучшения",
+        "Пузыри / гной / распространяющаяся краснота",
+        "Лихорадка"
+      ],
+      "selfCare": [
+        "Частая смена; мягкая очистка; барьерный крем"
+      ],
+      "doNot": [
+        "Не изобретать топические стероиды для младенцев"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-nappy-rash",
+      "name": "NHS — Nappy rash",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/baby/caring-for-a-newborn/nappy-rash/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

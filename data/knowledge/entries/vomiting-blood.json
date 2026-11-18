@@ -1,0 +1,98 @@
+{
+  "id": "vomiting-blood",
+  "category": "gi",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "vomiting blood",
+      "hematemesis",
+      "coffee ground vomit"
+    ],
+    "fr": [
+      "vomissements de sang",
+      "hématémèse",
+      "vomissements marc de café"
+    ],
+    "he": [
+      "הקאת דם",
+      "המטומזיס",
+      "הקאה כמו קפה טחון"
+    ],
+    "ru": [
+      "рвота кровью",
+      "гематемезис",
+      "рвота кофейной гущей"
+    ]
+  },
+  "titles": {
+    "en": "Vomiting blood",
+    "fr": "Vomissements de sang",
+    "he": "הקאת דם",
+    "ru": "Рвота кровью"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Vomiting blood or coffee-ground material needs urgent medical assessment. NHS: emergency care especially with dizziness, fainting, severe abdominal pain, black stools, or large amounts. Do not eat/drink if advised NPO for possible endoscopy — follow clinicians. No inventing acid-suppressant IV regimens.",
+      "emergencyIf": [
+        "Vomiting blood or coffee-ground vomit",
+        "Vomiting blood with dizziness, fainting, severe pain, or black stools"
+      ],
+      "seeDoctorIf": [
+        "Any unexplained blood in vomit — same-day urgent pathway"
+      ],
+      "doNot": [
+        "Do not delay emergency care",
+        "Do not invent PPI/antacid treatment plans for GI bleed"
+      ]
+    },
+    "fr": {
+      "summary": "Vomir du sang ou un aspect marc de café = urgence. Surtout avec malaise, douleur, selles noires. Pas de schémas inventés.",
+      "emergencyIf": [
+        "Vomissements de sang / marc de café",
+        "Avec vertige, syncope, douleur sévère, selles noires"
+      ],
+      "seeDoctorIf": [
+        "Tout sang dans les vomissements"
+      ],
+      "doNot": [
+        "Ne pas retarder les urgences"
+      ]
+    },
+    "he": {
+      "summary": "הקאת דם או מראה קפה טחון — חירום. במיוחד עם סחרחורת, כאב, צואה שחורה. אין פרוטוקולים מומצאים.",
+      "emergencyIf": [
+        "הקאת דם / קפה טחון",
+        "עם סחרחורת, עילפון, כאב חזק, צואה שחורה"
+      ],
+      "seeDoctorIf": [
+        "כל דם בהקאה"
+      ],
+      "doNot": [
+        "לא לדחות טיפול חירום"
+      ]
+    },
+    "ru": {
+      "summary": "Рвота кровью или «кофейной гущей» — неотложка. Особенно с головокружением, болью, чёрным стулом. Схемы не выдумывать.",
+      "emergencyIf": [
+        "Рвота кровью / кофейной гущей",
+        "С головокружением, обмороком, сильной болью, чёрным стулом"
+      ],
+      "seeDoctorIf": [
+        "Любая кровь в рвоте"
+      ],
+      "doNot": [
+        "Не откладывать неотложную помощь"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-vomiting-blood",
+      "name": "NHS — Vomiting blood",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vomiting-blood/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
