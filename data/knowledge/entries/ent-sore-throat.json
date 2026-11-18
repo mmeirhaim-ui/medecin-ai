@@ -1,0 +1,120 @@
+{
+  "id": "ent-sore-throat",
+  "category": "ent",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": ["sore throat", "pharyngitis", "strep throat", "painful swallowing", "tonsils"],
+    "fr": ["mal de gorge", "angine", "pharyngite", "douleur à avaler", "amygdales"],
+    "he": ["כאב גרון", "דלקת גרון", "סטרפטוקוק", "כאב בבליעה", "שקדים"],
+    "ru": ["боль в горле", "фарингит", "ангина", "боль при глотании", "миндалины"]
+  },
+  "titles": {
+    "en": "Sore throat",
+    "fr": "Mal de gorge / angine",
+    "he": "כאב גרון",
+    "ru": "Боль в горле"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Viruses cause most sore throats; many improve within a week. Antibiotics help only when a clinician diagnoses a bacterial cause such as strep. Seek care for breathing/swallowing difficulty or other red flags. Not a diagnosis.",
+      "selfCare": [
+        "Rest, fluids, humidifier; pharmacist advice on OTC symptom relief for suitable ages",
+        "Most viral sore throats improve within about a week"
+      ],
+      "seeDoctorIf": [
+        "Difficulty breathing or swallowing",
+        "Blood in saliva or phlegm",
+        "Excessive drooling in young children",
+        "Dehydration",
+        "Joint swelling and pain, or a rash",
+        "Symptoms that do not improve within a few days or worsen",
+        "Recurrent sore throats",
+        "Infant under 3 months with fever ≥38°C (100.4°F)"
+      ],
+      "emergencyIf": [
+        "Severe breathing difficulty or throat swelling suggesting anaphylaxis/airway threat",
+        "Inability to swallow saliva / severe drooling with distress"
+      ],
+      "doNot": [
+        "Do not self-start antibiotics",
+        "Do not invent strep treatment doses here"
+      ]
+    },
+    "fr": {
+      "summary": "La plupart des maux de gorge sont viraux et s’améliorent en environ une semaine. Les antibiotiques n’aident que si un professionnel diagnostique une cause bactérienne. Consulter si difficulté à respirer/avaler ou autres signes d’alarme. Pas un diagnostic.",
+      "selfCare": [
+        "Repos, hydratation ; conseil pharmacien pour mesures symptomatiques adaptées à l’âge"
+      ],
+      "seeDoctorIf": [
+        "Difficulté à respirer ou à avaler",
+        "Sang dans la salive ou les crachats",
+        "Salivation excessive chez le jeune enfant",
+        "Déshydratation",
+        "Douleurs articulaires, éruption",
+        "Pas d’amélioration en quelques jours ou aggravation",
+        "Nourrisson < 3 mois avec fièvre ≥ 38 °C"
+      ],
+      "emergencyIf": [
+        "Détresse respiratoire ou gonflement de gorge menaçant les voies aériennes"
+      ],
+      "doNot": [
+        "Pas d’antibiotiques en automédication",
+        "Pas de posologie ici"
+      ]
+    },
+    "he": {
+      "summary": "רוב כאבי הגרון נגרמים מנגיפים ומשתפרים תוך כשבוע. אנטיביוטיקה רק אם רופא מאבחן גורם חיידקי. לפנות אם יש קושי נשימה/בליעה או סימני אזהרה. לא אבחנה.",
+      "selfCare": [
+        "מנוחה ושתייה; ייעוץ רוקח לתסמינים לפי גיל"
+      ],
+      "seeDoctorIf": [
+        "קושי נשימה או בליעה",
+        "דם ברוק",
+        "ריור מוגזם בילדים קטנים",
+        "התייבשות",
+        "פריחה או כאבי מפרקים",
+        "אין שיפור תוך כמה ימים",
+        "תינוק מתחת לגיל 3 חודשים עם חום ≥38°C"
+      ],
+      "emergencyIf": [
+        "מצוקה נשימתית או נפיחות גרון מסכנת נתיב אוויר"
+      ],
+      "doNot": [
+        "לא להתחיל אנטיביוטיקה לבד",
+        "אין מרשם כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Большинство болей в горле вирусные и улучшаются примерно за неделю. Антибиотики нужны только при подтверждённой врачом бактериальной причине. Обращайтесь при затруднении дыхания/глотания или других «красных флагах». Не диагноз.",
+      "selfCare": [
+        "Отдых, жидкость; совет фармацевта по симптоматическим средствам по возрасту"
+      ],
+      "seeDoctorIf": [
+        "Затруднение дыхания или глотания",
+        "Кровь в слюне или мокроте",
+        "Обильное слюнотечение у маленьких детей",
+        "Обезвоживание",
+        "Сыпь или боль/отёк суставов",
+        "Нет улучшения за несколько дней",
+        "Младенец <3 месяцев с температурой ≥38°C"
+      ],
+      "emergencyIf": [
+        "Тяжёлая одышка или отёк горла с угрозой дыхательным путям"
+      ],
+      "doNot": [
+        "Не начинайте антибиотики самостоятельно",
+        "Здесь нет дозировок"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "cdc-sore-throat",
+      "name": "CDC — Sore throat basics",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/sore-throat/about/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

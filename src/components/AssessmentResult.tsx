@@ -81,6 +81,31 @@ export function AssessmentResult({ assessment }: { assessment: Assessment }) {
         </div>
       )}
 
+      {assessment.sources && assessment.sources.length > 0 && (
+        <div>
+          <h3 className="font-display text-xl text-[var(--brand-deep)]">
+            {t.assessment.sources}
+          </h3>
+          <ul className="mt-2 list-disc space-y-1 ps-5 text-sm text-[var(--ink)]">
+            {assessment.sources.map((s) => (
+              <li key={s.url}>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--brand-deep)] underline decoration-[var(--brand)]/40 underline-offset-2 hover:decoration-[var(--brand)]"
+                >
+                  {s.title}
+                </a>
+                {s.publisher ? (
+                  <span className="text-[var(--ink-muted)]"> — {s.publisher}</span>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <div className="rounded-[var(--radius)] border border-[var(--line)] bg-white/60 px-4 py-3">
         <Disclaimer />
         {(assessment.mock || assessment.grounded !== undefined) && (
@@ -90,6 +115,9 @@ export function AssessmentResult({ assessment }: { assessment: Assessment }) {
               : assessment.grounded
                 ? t.assessment.groundedNote
                 : t.assessment.geminiNote}
+            {assessment.knowledgeHits && assessment.knowledgeHits.length > 0
+              ? ` [${assessment.knowledgeHits.join(", ")}]`
+              : ""}
           </p>
         )}
       </div>

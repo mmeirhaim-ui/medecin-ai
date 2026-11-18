@@ -75,6 +75,7 @@ export type Messages = {
     questions: string;
     nextSteps: string;
     exams: string;
+    sources: string;
     mockNote: string;
     groundedNote: string;
     geminiNote: string;
@@ -200,6 +201,7 @@ const en: Messages = {
     questions: "Clarifying questions",
     nextSteps: "What to do next",
     exams: "Exams / imaging / labs",
+    sources: "Public sources",
     mockNote: "Demo mode (no API key) — sample replies.",
     groundedNote: "Generated with Google Gemini and Google Search when available.",
     geminiNote: "Generated with Google Gemini.",
@@ -338,6 +340,7 @@ const fr: Messages = {
     questions: "Questions pour préciser",
     nextSteps: "Que faire ensuite",
     exams: "Examens / imagerie / laboratoire",
+    sources: "Sources publiques",
     mockNote: "Mode démonstration (aucune clé API) — réponses d’exemple.",
     groundedNote:
       "Réponse générée via Google Gemini avec recherche Google lorsque disponible.",
@@ -475,6 +478,7 @@ const he: Messages = {
     questions: "שאלות להבהרה",
     nextSteps: "מה לעשות הלאה",
     exams: "בדיקות / הדמיה / מעבדה",
+    sources: "מקורות ציבוריים",
     mockNote: "מצב הדגמה (אין מפתח API) — תשובות לדוגמה.",
     groundedNote: "נוצר עם Google Gemini וחיפוש Google כשזמין.",
     geminiNote: "נוצר עם Google Gemini.",
@@ -612,6 +616,7 @@ const ru: Messages = {
     questions: "Уточняющие вопросы",
     nextSteps: "Что делать дальше",
     exams: "Обследования / визуализация / анализы",
+    sources: "Публичные источники",
     mockNote: "Демо-режим (нет API-ключа) — примеры ответов.",
     groundedNote:
       "Сгенерировано через Google Gemini с поиском Google, если доступно.",

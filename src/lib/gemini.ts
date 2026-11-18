@@ -13,8 +13,15 @@ import {
 import { buildMockResponse } from "./mock";
 import { detectEmergency } from "./emergency";
 import { isLocale, type Locale } from "./i18n/locales";
+import {
+  collectSourcesFromMatches,
+  formatKnowledgeForPrompt,
+  matchKnowledge,
+  pickGuidanceLang,
+} from "./knowledge";
 import type {
   Assessment,
+  AssessmentSource,
   ConsultRequest,
   LikelyCause,
   UrgencyLevel,
@@ -50,6 +57,18 @@ const RESPONSE_SCHEMA: ResponseSchema = {
       type: SchemaType.ARRAY,
       items: { type: SchemaType.STRING },
     },
+    sources: {
+      type: SchemaType.ARRAY,
+      items: {
+        type: SchemaType.OBJECT,
+        properties: {
+          title: { type: SchemaType.STRING },
+          url: { type: SchemaType.STRING },
+          publisher: { type: SchemaType.STRING },
+        },
+        required: ["title", "url"],
+      },
+    },
     disclaimer: { type: SchemaType.STRING },
     reply: { type: SchemaType.STRING },
   },
@@ -60,6 +79,7 @@ const RESPONSE_SCHEMA: ResponseSchema = {
     "clarifyingQuestions",
     "nextSteps",
     "needsExamOrLabs",
+    "sources",
     "disclaimer",
     "reply",
   ],
@@ -92,9 +112,27 @@ const MODEL_FALLBACKS = [
   "gemini-2.5-flash",
 ] as const;
 
+/**
+ * Grounding mode:
+ * - prefer: try Google Search first, then JSON-only
+ * - on / 1 / true: same as prefer (legacy GEMINI_ENABLE_GROUNDING)
+ * - fallback: JSON-only first, then optional grounded retry
+ * - off (default): never enable googleSearch — keeps latency low
+ */
+export type GroundingMode = "prefer" | "fallback" | "off";
+
+export function getGroundingMode(): GroundingMode {
+  const legacy = process.env.GEMINI_ENABLE_GROUNDING?.trim().toLowerCase();
+  if (legacy === "1" || legacy === "true" || legacy === "yes") return "prefer";
+  const raw = (process.env.GEMINI_GROUNDING || "off").trim().toLowerCase();
+  if (raw === "prefer" || raw === "on" || raw === "1" || raw === "true")
+    return "prefer";
+  if (raw === "fallback") return "fallback";
+  return "off";
+}
+
 function groundingEnabled(): boolean {
-  const v = process.env.GEMINI_ENABLE_GROUNDING?.trim().toLowerCase();
-  return v === "1" || v === "true" || v === "yes";
+  return getGroundingMode() !== "off";
 }
 
 /**
@@ -158,6 +196,37 @@ function normalizeConfidence(value: unknown): LikelyCause["confidence"] {
   return "faible";
 }
 
+function normalizeSources(raw: unknown): AssessmentSource[] {
+  if (!Array.isArray(raw)) return [];
+  const out: AssessmentSource[] = [];
+  for (const item of raw) {
+    const obj = (item ?? {}) as Record<string, unknown>;
+    const url = String(obj.url ?? "").trim();
+    const title = String(obj.title ?? "").trim();
+    if (!url || !title || !/^https?:\/\//i.test(url)) continue;
+    out.push({
+      title,
+      url,
+      publisher: obj.publisher ? String(obj.publisher) : undefined,
+    });
+  }
+  return out;
+}
+
+function mergeSources(
+  primary: AssessmentSource[],
+  secondary: AssessmentSource[],
+): AssessmentSource[] {
+  const seen = new Set<string>();
+  const out: AssessmentSource[] = [];
+  for (const s of [...primary, ...secondary]) {
+    if (seen.has(s.url)) continue;
+    seen.add(s.url);
+    out.push(s);
+  }
+  return out.slice(0, 8);
+}
+
 function parseAssessment(
   raw: unknown,
   locale: Locale,
@@ -189,6 +258,7 @@ function parseAssessment(
     needsExamOrLabs: Array.isArray(obj.needsExamOrLabs)
       ? obj.needsExamOrLabs.map(String)
       : [],
+    sources: normalizeSources(obj.sources),
     disclaimer: String(obj.disclaimer || fallbackDisclaimer),
     mock: false,
   };
@@ -211,7 +281,7 @@ function extractJson(text: string): unknown {
   }
 }
 
-function buildUserParts(req: ConsultRequest): Part[] {
+function buildUserParts(req: ConsultRequest, knowledgeBlock: string): Part[] {
   const historyBlock =
     req.history && req.history.length
       ? `\n\nConversation:\n${req.history
@@ -224,7 +294,11 @@ function buildUserParts(req: ConsultRequest): Part[] {
 
   const followUp = req.message ? `\n\nFollow-up:\n${req.message}` : "";
 
-  const text = `Symptoms:\n${req.symptoms}${historyBlock}${followUp}\n\nRespond with the required JSON only.`;
+  const knowledgeSection = knowledgeBlock
+    ? `\n\n${knowledgeBlock}\n`
+    : "\n\n(No local knowledge-pack match — use triage rules + trusted sources.)\n";
+
+  const text = `Symptoms:\n${req.symptoms}${historyBlock}${followUp}${knowledgeSection}\nRespond with the required JSON only. Fill "sources" with trusted public URLs when useful.`;
 
   const parts: Part[] = [{ text }];
 
@@ -244,6 +318,29 @@ function buildUserParts(req: ConsultRequest): Part[] {
   }
 
   return parts;
+}
+
+type GroundingChunk = { title: string; url: string };
+
+function extractGroundingSources(response: {
+  candidates?: Array<{
+    groundingMetadata?: {
+      groundingChunks?: Array<{ web?: { uri?: string; title?: string } }>;
+    };
+  }>;
+}): GroundingChunk[] {
+  const chunks =
+    response.candidates?.[0]?.groundingMetadata?.groundingChunks ?? [];
+  const out: GroundingChunk[] = [];
+  const seen = new Set<string>();
+  for (const chunk of chunks) {
+    const url = chunk.web?.uri?.trim();
+    const title = chunk.web?.title?.trim() || url;
+    if (!url || !title || seen.has(url)) continue;
+    seen.add(url);
+    out.push({ title, url });
+  }
+  return out;
 }
 
 function createModel(
@@ -277,30 +374,61 @@ function createModel(
   return genAI.getGenerativeModel(base);
 }
 
+async function tryGenerate(
+  modelName: string,
+  locale: Locale,
+  parts: Part[],
+  withGrounding: boolean,
+): Promise<{
+  text: string;
+  grounded: boolean;
+  groundingSources: GroundingChunk[];
+}> {
+  const model = createModel(modelName, locale, withGrounding);
+  const result = await model.generateContent({
+    contents: [{ role: "user", parts }],
+  });
+  return {
+    text: result.response.text(),
+    grounded: withGrounding,
+    groundingSources: withGrounding
+      ? extractGroundingSources(result.response)
+      : [],
+  };
+}
+
 async function generateJsonText(
   modelName: string,
   locale: Locale,
   parts: Part[],
-): Promise<{ text: string; grounded: boolean }> {
-  // Grounding (Google Search) is opt-in via GEMINI_ENABLE_GROUNDING — skipped by
-  // default to avoid multi-second latency. Structured JSON without tools is faster.
-  if (groundingEnabled()) {
+): Promise<{
+  text: string;
+  grounded: boolean;
+  groundingSources: GroundingChunk[];
+}> {
+  // Grounding is opt-in (default off) to keep latency low. Prefer/fallback
+  // via GEMINI_GROUNDING or legacy GEMINI_ENABLE_GROUNDING=1.
+  const mode = getGroundingMode();
+  const attempts: boolean[] =
+    mode === "off"
+      ? [false]
+      : mode === "prefer"
+        ? [true, false]
+        : [false, true];
+
+  let lastError: unknown;
+  for (const withGrounding of attempts) {
+    if (withGrounding && !groundingEnabled()) continue;
     try {
-      const groundedModel = createModel(modelName, locale, true);
-      const groundedResult = await groundedModel.generateContent({
-        contents: [{ role: "user", parts }],
-      });
-      return { text: groundedResult.response.text(), grounded: true };
-    } catch {
-      /* schema + search often incompatible — fall through to fast JSON */
+      return await tryGenerate(modelName, locale, parts, withGrounding);
+    } catch (err) {
+      lastError = err;
     }
   }
 
-  const model = createModel(modelName, locale, false);
-  const result = await model.generateContent({
-    contents: [{ role: "user", parts }],
-  });
-  return { text: result.response.text(), grounded: false };
+  throw lastError instanceof Error
+    ? lastError
+    : new Error(`Gemini (${modelName}): échec d’analyse`);
 }
 
 const EMERGENCY_PREFIX: Record<Locale, string> = {
@@ -332,15 +460,31 @@ export async function runConsultation(req: ConsultRequest): Promise<{
     .filter(Boolean)
     .join("\n");
   const emergency = detectEmergency(blob);
+  const matches = matchKnowledge(blob, 4);
+  const guidanceLang = pickGuidanceLang(blob, locale);
+  const knowledgeBlock = formatKnowledgeForPrompt(matches, guidanceLang);
+  const packSources = collectSourcesFromMatches(matches);
+  const knowledgeHits = matches.map((m) => m.entry.id);
 
   if (isMockMode()) {
     const mock = buildMockResponse({ ...req, locale });
-    return { ...mock, mock: true };
+    return {
+      assessment: {
+        ...mock.assessment,
+        sources: mergeSources(mock.assessment.sources ?? [], packSources),
+        knowledgeHits,
+        grounded: false,
+      },
+      reply: mock.reply,
+      emergencyDetected: mock.emergencyDetected,
+      mock: true,
+    };
   }
 
-  const parts = buildUserParts(req);
+  const parts = buildUserParts(req, knowledgeBlock);
 
   let grounded = false;
+  let groundingSources: GroundingChunk[] = [];
   let textOut = "";
   let lastError: unknown;
 
@@ -349,6 +493,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
       const out = await generateJsonText(modelName, locale, parts);
       textOut = out.text;
       grounded = out.grounded;
+      groundingSources = out.groundingSources;
       lastError = undefined;
       break;
     } catch (err) {
@@ -364,8 +509,21 @@ export async function runConsultation(req: ConsultRequest): Promise<{
 
   const parsed = parseAssessment(extractJson(textOut), locale);
   let { assessment, reply } = parsed;
-  assessment.grounded = grounded;
-  assessment.mock = false;
+  const groundedAsSources: AssessmentSource[] = groundingSources.map((g) => ({
+    title: g.title,
+    url: g.url,
+    publisher: "Google Search grounding",
+  }));
+  assessment = {
+    ...assessment,
+    grounded,
+    knowledgeHits,
+    sources: mergeSources(
+      assessment.sources ?? [],
+      mergeSources(packSources, groundedAsSources),
+    ),
+    mock: false,
+  };
 
   if (emergency.detected) {
     assessment = {

@@ -27,6 +27,10 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   serverExternalPackages: ["@electric-sql/pglite"],
+  // Keep curated medical knowledge JSON reachable in traced server bundles.
+  outputFileTracingIncludes: {
+    "/api/consult": ["./data/knowledge/**/*"],
+  },
   turbopack: {
     rules: {
       "*.css": {

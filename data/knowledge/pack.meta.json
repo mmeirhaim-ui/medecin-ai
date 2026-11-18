@@ -1,0 +1,44 @@
+{
+  "id": "doctor-ia-public-triage-pack",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-18",
+  "purpose": "Curated, attributed symptom→guidance maps from public educational health pages. Accelerates non-diagnostic orientation. Not a medical device; not a diagnosis or prescription aid.",
+  "languages": ["en", "fr", "he", "ru"],
+  "licenseNotes": [
+    "Entries paraphrase publicly available educational guidance and cite source URLs.",
+    "Do not copy paywalled textbooks or copyrighted monographs wholesale.",
+    "U.S. federal sites (CDC, MedlinePlus/NIH) and WHO materials are used under their public educational terms; NHS, Ameli, HAS, and Israeli MoH pages are cited with links for attribution — summaries only.",
+    "Always prefer the live source page over this pack when guidance may have changed."
+  ],
+  "trustedDomains": [
+    "who.int",
+    "cdc.gov",
+    "nhs.uk",
+    "medlineplus.gov",
+    "nih.gov",
+    "has-sante.fr",
+    "ameli.fr",
+    "health.gov.il",
+    "me.health.gov.il",
+    "sante.gouv.fr"
+  ],
+  "entryFiles": [
+    "entries/red-flags-cardio.json",
+    "entries/red-flags-stroke.json",
+    "entries/red-flags-anaphylaxis.json",
+    "entries/red-flags-sepsis-meningitis.json",
+    "entries/respiratory-cold-flu.json",
+    "entries/ent-sore-throat.json",
+    "entries/ent-ear-sinus.json",
+    "entries/fever-adult-child.json",
+    "entries/derm-rash-cellulitis.json",
+    "entries/gi-stomach-vomiting.json",
+    "entries/gi-appendicitis.json",
+    "entries/neuro-headache.json",
+    "entries/mental-health-crisis.json",
+    "entries/peds-fever-abdomen.json",
+    "entries/msk-back-joint.json",
+    "entries/uro-uti.json",
+    "entries/emergency-when-to-er.json"
+  ]
+}

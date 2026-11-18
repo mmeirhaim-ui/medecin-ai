@@ -24,6 +24,12 @@ export type LikelyCause = {
   confidence: "faible" | "moyenne" | "élevée";
 };
 
+export type AssessmentSource = {
+  title: string;
+  url: string;
+  publisher?: string;
+};
+
 export type Assessment = {
   summary: string;
   likelyCauses: LikelyCause[];
@@ -32,7 +38,11 @@ export type Assessment = {
   nextSteps: string[];
   needsExamOrLabs: string[];
   disclaimer: string;
+  /** Attributed public / grounded sources when available. */
+  sources?: AssessmentSource[];
   grounded?: boolean;
+  /** Local knowledge-pack entry ids that matched this consult. */
+  knowledgeHits?: string[];
   mock?: boolean;
 };
 

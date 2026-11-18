@@ -1,0 +1,127 @@
+{
+  "id": "msk-back-joint",
+  "category": "msk",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": ["back pain", "low back pain", "sciatica", "joint pain", "sprain", "can't walk back pain", "leg weakness back"],
+    "fr": ["mal de dos", "lombalgie", "sciatique", "douleur articulaire", "entorse", "faiblesse jambe dos"],
+    "he": ["כאב גב", "למבגו", "סיאטיקה", "כאב מפרק", "נקע", "חולשת רגל עם כאב גב"],
+    "ru": ["боль в спине", "поясница", "ишиас", "боль в суставе", "растяжение", "слабость ноги при боли в спине"]
+  },
+  "titles": {
+    "en": "Back / joint pain — when to worry",
+    "fr": "Douleur de dos / articulaire — quand s’inquiéter",
+    "he": "כאב גב / מפרקים — מתי לדאוג",
+    "ru": "Боль в спине / суставах — когда беспокоиться"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Many back and joint pains improve with relative rest and gradual activity. Red flags include new bowel/bladder loss, progressive leg weakness, saddle numbness, fever with spinal pain, or trauma with neurological deficits — seek emergency/urgent care. Not a diagnosis.",
+      "selfCare": [
+        "Relative rest; avoid prolonged total bed rest unless advised",
+        "Pharmacist advice on OTC pain relief when suitable; heat/cold as tolerated",
+        "Gentle return to movement as pain allows"
+      ],
+      "seeDoctorIf": [
+        "Pain lasting beyond a couple of weeks or worsening",
+        "Pain after significant injury",
+        "Joint swelling, inability to bear weight, or locking"
+      ],
+      "emergencyIf": [
+        "New incontinence or inability to urinate with back pain",
+        "Saddle anaesthesia / numbness in the groin/perineum",
+        "Progressive leg weakness or foot drop",
+        "Back pain with fever, IV drug use, cancer history, or immunosuppression (urgent clinician pathway)",
+        "Major trauma with neck/spine injury and neurological symptoms"
+      ],
+      "doNot": [
+        "Do not prescribe opioids or muscle-relaxant regimens here",
+        "Do not ignore bowel/bladder or saddle numbness changes"
+      ]
+    },
+    "fr": {
+      "summary": "Beaucoup de lombalgies s’améliorent avec repos relatif et reprise progressive. Signes d’alarme : troubles sphinctériens, faiblesse progressive des jambes, anesthésie en selle, fièvre + douleur rachidienne, traumatisme neuro — urgence. Pas un diagnostic.",
+      "selfCare": [
+        "Repos relatif ; éviter l’alitement prolongé sans avis",
+        "Conseil pharmacien pour antalgiques OTC si adaptés"
+      ],
+      "seeDoctorIf": [
+        "Douleur > quelques semaines ou aggravation",
+        "Après traumatisme significatif",
+        "Gonflement articulaire, impotence fonctionnelle"
+      ],
+      "emergencyIf": [
+        "Incontinence ou rétention urinaire nouvelle avec lombalgie",
+        "Anesthésie en selle",
+        "Faiblesse progressive des jambes",
+        "Douleur rachidienne + fièvre / terrain à risque",
+        "Trauma rachidien avec déficit neurologique"
+      ],
+      "doNot": [
+        "Pas d’opioïdes prescrits ici",
+        "Ne négligez pas les troubles sphinctériens"
+      ]
+    },
+    "he": {
+      "summary": "רבים מכאבי הגב משתפרים עם מנוחה יחסית וחזרה הדרגתית לתנועה. דגלים אדומים: אובדן שליטה על סוגרים, חולשת רגליים מתקדמת, נימול באוכף, חום עם כאב גב — דחוף. לא אבחנה.",
+      "selfCare": [
+        "מנוחה יחסית; להימנע משכיבה ממושכת ללא ייעוץ",
+        "ייעוץ רוקח למשככי כאבים מתאימים"
+      ],
+      "seeDoctorIf": [
+        "כאב מעל שבועיים או מחמיר",
+        "לאחר חבלה משמעותית",
+        "נפיחות מפרק או קושי לדרוך"
+      ],
+      "emergencyIf": [
+        "בריחת שתן/צואה חדשה או עצירת שתן עם כאב גב",
+        "נימול באזור המפשעה («אוכף»)",
+        "חולשת רגליים מתקדמת",
+        "כאב גב עם חום או דיכוי חיסוני",
+        "חבלה בעמוד השדרה עם סימנים נוירולוגיים"
+      ],
+      "doNot": [
+        "אין מרשם למשככי כאב חזקים כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Многие боли в спине улучшаются при относительном покое и постепенном движении. Красные флаги: нарушение контроля тазовых функций, нарастающая слабость ног, «седловидное» онемение, лихорадка с болью в спине — срочно. Не диагноз.",
+      "selfCare": [
+        "Относительный покой; избегать длительного постельного режима без совета",
+        "Совет фармацевта по обезболивающим при уместности"
+      ],
+      "seeDoctorIf": [
+        "Боль дольше пары недель или усиливается",
+        "После значительной травмы",
+        "Отёк сустава, невозможность опираться"
+      ],
+      "emergencyIf": [
+        "Новое недержание или задержка мочи при боли в спине",
+        "Онемение в промежности («седло»)",
+        "Нарастающая слабость ног",
+        "Боль в спине с лихорадкой / иммунодефицитом",
+        "Травма позвоночника с неврологическими симптомами"
+      ],
+      "doNot": [
+        "Здесь нет рецептов на опиоиды"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-er-adult",
+      "name": "MedlinePlus — When to use the emergency room (adult)",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000593.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

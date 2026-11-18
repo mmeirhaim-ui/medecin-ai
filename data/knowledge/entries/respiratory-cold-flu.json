@@ -1,0 +1,152 @@
+{
+  "id": "respiratory-cold-flu",
+  "category": "respiratory",
+  "urgencyDefault": "auto_soins",
+  "priority": 5,
+  "keywords": {
+    "en": ["cold", "flu", "runny nose", "stuffy nose", "cough", "sore throat mild", "body aches", "influenza"],
+    "fr": ["rhume", "grippe", "nez qui coule", "nez bouché", "toux", "mal de gorge", "courbatures", "syndrome grippal"],
+    "he": ["הצטננות", "שפעת", "נזלת", "אף סתום", "שיעול", "כאבי גוף", "כאב גרון קל"],
+    "ru": ["простуда", "грипп", "насморк", "заложенный нос", "кашель", "ломота", "боль в горле"]
+  },
+  "titles": {
+    "en": "Common cold / flu-like illness (non-emergency)",
+    "fr": "Rhume / syndrome grippal (hors urgence)",
+    "he": "הצטננות / מחלה דמוית שפעת (לא חירום)",
+    "ru": "Простуда / гриппоподобное состояние (не неотложность)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most colds improve on their own; antibiotics do not treat viruses. Rest, fluids and pharmacist-guided OTC symptom relief may help adults. Seek care sooner if high-risk for severe flu/COVID complications. Not a diagnosis.",
+      "selfCare": [
+        "Rest and drink plenty of fluids",
+        "Humidifier/cool mist, saline nasal spray, steam from a shower",
+        "Ask a pharmacist/clinician before OTC medicines; follow the label",
+        "Honey for cough only if age ≥1 year (never give honey to infants under 1)",
+        "Stay home until symptoms are improving and fever-free ≥24h without fever reducers (per CDC respiratory guidance framing)"
+      ],
+      "seeDoctorIf": [
+        "Trouble breathing or fast breathing",
+        "Dehydration",
+        "Fever lasting longer than 4 days",
+        "Symptoms lasting more than 10 days without improvement",
+        "Fever or cough that improves then returns or worsens",
+        "Chronic conditions getting worse",
+        "Higher risk for severe COVID/flu — contact a clinician early even if mild"
+      ],
+      "emergencyIf": [
+        "Difficulty breathing or persistent chest pressure",
+        "Persistent dizziness, confusion, inability to arouse",
+        "Seizures",
+        "Blue lips or face; in children: ribs pulling in, lack of alertness, fever in infant <12 weeks (≥38°C / 100.4°F)"
+      ],
+      "doNot": [
+        "Do not expect antibiotics to help a viral cold",
+        "Do not give OTC cough/cold medicines to children younger than 6 years (CDC)",
+        "Do not prescribe antivirals or doses here — clinician decision"
+      ]
+    },
+    "fr": {
+      "summary": "La plupart des rhumes s’améliorent seuls ; les antibiotiques n’agissent pas sur les virus. Repos, hydratation et conseils officinaux pour les symptômes. Consulter plus tôt si risque élevé de complications grippe/COVID. Pas un diagnostic.",
+      "selfCare": [
+        "Repos et boire beaucoup",
+        "Humidificateur, sérum physiologique, vapeur de douche",
+        "Demander conseil au pharmacien avant tout médicament OTC ; lire la notice",
+        "Miel contre la toux seulement si ≥ 1 an"
+      ],
+      "seeDoctorIf": [
+        "Difficulté ou respiration rapide",
+        "Déshydratation",
+        "Fièvre > 4 jours",
+        "Symptômes > 10 jours sans amélioration",
+        "Fièvre/toux qui réapparaissent ou s’aggravent",
+        "Terrain à risque — contacter tôt un professionnel"
+      ],
+      "emergencyIf": [
+        "Détresse respiratoire, oppression thoracique persistante",
+        "Confusion, impossibilité de réveiller",
+        "Convulsions ; lèvres bleues ; nourrisson < 3 mois avec fièvre ≥ 38 °C"
+      ],
+      "doNot": [
+        "Pas d’antibiotiques « au cas où » pour un rhume viral",
+        "Pas de sirops OTC chez l’enfant < 6 ans (repère CDC)",
+        "Pas de prescription ici"
+      ]
+    },
+    "he": {
+      "summary": "רוב ההצטננויות משתפרות לבד; אנטיביוטיקה לא מטפלת בנגיפים. מנוחה, שתייה וייעוץ רוקח לתסמינים. לפנות מוקדם אם יש סיכון גבוה לסיבוכים. לא אבחנה.",
+      "selfCare": [
+        "מנוחה ושתייה מרובה",
+        "תרסיס מי מלח לאף, אדים מהמקלחת",
+        "להתייעץ עם רוקח לפני תרופות ללא מרשם",
+        "דבש לשיעול רק מגיל שנה ומעלה"
+      ],
+      "seeDoctorIf": [
+        "קושי נשימה או נשימה מהירה",
+        "התייבשות",
+        "חום מעל 4 ימים",
+        "תסמינים מעל 10 ימים ללא שיפור",
+        "חום/שיעול שחוזרים או מחמירים",
+        "קבוצת סיכון — פנייה מוקדמת לרופא"
+      ],
+      "emergencyIf": [
+        "מצוקה נשימתית, לחץ בחזה מתמשך",
+        "בלבול או קושי להעיר",
+        "פרכוסים; שפתיים כחלחלות; תינוק מתחת לגיל 3 חודשים עם חום ≥38°C"
+      ],
+      "doNot": [
+        "לא לקחת אנטיביוטיקה ללא הוראת רופא לווירוס",
+        "אין כאן מרשם"
+      ]
+    },
+    "ru": {
+      "summary": "Большинство простуд проходит самостоятельно; антибиотики не действуют на вирусы. Покой, жидкость и советы фармацевта по симптомам. Обращайтесь раньше при высоком риске осложнений гриппа/COVID. Не диагноз.",
+      "selfCare": [
+        "Отдых и обильное питьё",
+        "Увлажнитель, солевой спрей для носа, пар от душа",
+        "Спросите фармацевта перед безрецептурными средствами; читайте инструкцию",
+        "Мёд от кашля только с 1 года"
+      ],
+      "seeDoctorIf": [
+        "Затруднённое или учащённое дыхание",
+        "Обезвоживание",
+        "Лихорадка дольше 4 дней",
+        "Симптомы дольше 10 дней без улучшения",
+        "Лихорадка/кашель возвращаются или усиливаются",
+        "Группа риска — ранний контакт с врачом"
+      ],
+      "emergencyIf": [
+        "Тяжёлая одышка, стойкое давление в груди",
+        "Спутанность, невозможно разбудить",
+        "Судороги; синие губы; младенец <12 недель с температурой ≥38°C"
+      ],
+      "doNot": [
+        "Не ждите, что антибиотики вылечат вирусную простуду",
+        "Это не рецепт"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "cdc-cold",
+      "name": "CDC — Manage common cold",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/common-cold/treatment/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-respiratory",
+      "name": "CDC — About respiratory illnesses",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/respiratory-viruses/about/index.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-flu-care",
+      "name": "CDC — Flu: what to do if you get sick",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/flu/takingcare/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

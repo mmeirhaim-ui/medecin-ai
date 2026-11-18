@@ -1,0 +1,124 @@
+{
+  "id": "ent-ear-sinus",
+  "category": "ent",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": ["ear pain", "earache", "otitis", "sinus pressure", "sinusitis", "blocked ear", "hearing loss sudden"],
+    "fr": ["mal d'oreille", "otalgie", "otite", "sinusite", "pression sinusienne", "oreille bouchée", "surdité brutale"],
+    "he": ["כאב אוזן", "דלקת אוזן", "סינוסיטיס", "לחץ בסינוסים", "אוזן סתומה", "ירידת שמיעה פתאומית"],
+    "ru": ["боль в ухе", "отит", "синусит", "давление в пазухах", "заложенное ухо", "внезапная потеря слуха"]
+  },
+  "titles": {
+    "en": "Ear pain / sinus congestion",
+    "fr": "Douleur d’oreille / congestion sinusienne",
+    "he": "כאב אוזן / גודש סינוסים",
+    "ru": "Боль в ухе / заложенность пазух"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Earache and sinus pressure are common with colds; many improve with time and supportive care. Sudden hearing loss, severe swelling behind the ear, high fever with stiff neck, or neurological signs need urgent care. Educational only — thresholds for antibiotics are clinician decisions.",
+      "selfCare": [
+        "Rest, fluids, saline rinses for congestion when appropriate",
+        "Pharmacist advice on age-appropriate OTC pain relief — read labels; no doses invented here"
+      ],
+      "seeDoctorIf": [
+        "Ear pain lasting several days, discharge, or fever",
+        "Facial swelling, severe facial pain, or symptoms not improving",
+        "Recurrent ear infections or known risk factors"
+      ],
+      "emergencyIf": [
+        "Sudden severe hearing loss",
+        "Mastoid-area swelling/redness with high fever (urgent clinician/ER)",
+        "Ear symptoms with stiff neck, confusion, or severe headache (meningitis pathway)"
+      ],
+      "doNot": [
+        "Do not put oils/liquids in the ear unless a clinician advised it",
+        "Do not self-start antibiotics"
+      ]
+    },
+    "fr": {
+      "summary": "Otalgie et pression sinusienne sont fréquentes avec un rhume. Surdité brutale, gonflement rétro-auriculaire, fièvre + raideur de nuque ou signes neuro = urgence. Contenu éducatif — les antibiotiques sont une décision clinique.",
+      "selfCare": [
+        "Repos, hydratation, lavage de nez au sérum physiologique si adapté",
+        "Conseil pharmacien pour antalgiques OTC selon l’âge"
+      ],
+      "seeDoctorIf": [
+        "Douleur d’oreille plusieurs jours, écoulement, fièvre",
+        "Gonflement facial, douleur intense, absence d’amélioration"
+      ],
+      "emergencyIf": [
+        "Surdité brutale",
+        "Gonflement/rougeur derrière l’oreille avec forte fièvre",
+        "Signes méningés associés"
+      ],
+      "doNot": [
+        "Pas d’instillation dans l’oreille sans avis",
+        "Pas d’antibiotiques en automédication"
+      ]
+    },
+    "he": {
+      "summary": "כאבי אוזן ולחץ בסינוסים שכיחים עם הצטננות. ירידת שמיעה פתאומית, נפיחות מאחורי האוזן, חום עם נוקשות עורף — דחוף. מידע חינוכי בלבד.",
+      "selfCare": [
+        "מנוחה, שתייה, שטיפות מי מלח לאף לפי הצורך",
+        "ייעוץ רוקח למשככי כאבים לפי גיל"
+      ],
+      "seeDoctorIf": [
+        "כאב אוזן מספר ימים, הפרשה או חום",
+        "נפיחות בפנים או היעדר שיפור"
+      ],
+      "emergencyIf": [
+        "ירידת שמיעה פתאומית",
+        "נפיחות/אדמומיות מאחורי האוזן עם חום גבוה",
+        "סימנים דמויי דלקת קרום המוח"
+      ],
+      "doNot": [
+        "לא לטפטף לנוזלים לאוזן ללא ייעוץ",
+        "לא להתחיל אנטיביוטיקה לבד"
+      ]
+    },
+    "ru": {
+      "summary": "Боль в ухе и давление в пазухах часто бывают при простуде. Внезапная потеря слуха, отёк за ухом, температура с ригидностью затылка — срочно. Только образование; антибиотики — решение врача.",
+      "selfCare": [
+        "Покой, жидкость, солевые промывания носа при уместности",
+        "Совет фармацевта по обезболивающим по возрасту"
+      ],
+      "seeDoctorIf": [
+        "Боль в ухе несколько дней, отделяемое или лихорадка",
+        "Отёк лица, сильная боль, нет улучшения"
+      ],
+      "emergencyIf": [
+        "Внезапная тяжёлая потеря слуха",
+        "Отёк/краснота за ухом с высокой температурой",
+        "Менингеальные признаки"
+      ],
+      "doNot": [
+        "Не закапывайте жидкости в ухо без совета",
+        "Не начинайте антибиотики сами"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "cdc-cold",
+      "name": "CDC — Manage common cold",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/common-cold/treatment/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-meningitis",
+      "name": "NHS — Meningitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

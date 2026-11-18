@@ -1,0 +1,128 @@
+{
+  "id": "neuro-headache",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": ["headache", "migraine", "thunderclap headache", "worst headache", "tension headache"],
+    "fr": ["mal de tête", "céphalée", "migraine", "céphalée en coup de tonnerre", "pire mal de tête", "céphalée de tension"],
+    "he": ["כאב ראש", "מיגרנה", "כאב ראש פתאומי חזק", "כאב הראש הכי גרוע"],
+    "ru": ["головная боль", "мигрень", "внезапная сильнейшая головная боль", "головная боль напряжения"]
+  },
+  "titles": {
+    "en": "Headache — red flags vs common patterns",
+    "fr": "Céphalées — signes d’alarme vs tableaux fréquents",
+    "he": "כאב ראש — דגלים אדומים מול דפוסים שכיחים",
+    "ru": "Головная боль — красные флаги и частые варианты"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Many headaches are tension-type or migraine-like and not emergencies. Sudden «worst ever» / thunderclap headache, headache with stroke signs, stiff neck, confusion, or fever with meningeal features needs emergency care. Not a diagnosis.",
+      "selfCare": [
+        "Rest in a quiet place; hydration",
+        "Pharmacist advice on OTC pain relief when appropriate; read labels; no prescription dosing here"
+      ],
+      "seeDoctorIf": [
+        "New, unusual, or progressively worsening headaches",
+        "Headaches disrupting daily life or recurring frequently",
+        "Headache with concerning associated symptoms that are not clearly emergency but worry you"
+      ],
+      "emergencyIf": [
+        "Sudden severe headache with no known cause (including thunderclap pattern)",
+        "Headache with face/arm/speech stroke signs, sudden vision loss, or one-sided weakness",
+        "Headache with stiff neck, confusion, seizure, high fever, or non-blanching rash",
+        "Headache after major head injury with vomiting, confusion or reduced alertness"
+      ],
+      "doNot": [
+        "Do not dismiss sudden worst-ever headache",
+        "Do not prescribe triptans, opioids or other controlled regimens here"
+      ]
+    },
+    "fr": {
+      "summary": "Beaucoup de céphalées sont de tension ou migraineuses. Une céphalée brutale « la pire de la vie », des signes d’AVC, une raideur de nuque, une confusion ou un tableau méningé = urgence. Pas un diagnostic.",
+      "selfCare": [
+        "Repos au calme ; hydratation",
+        "Conseil pharmacien pour antalgiques OTC adaptés ; lire la notice"
+      ],
+      "seeDoctorIf": [
+        "Céphalées nouvelles, inhabituelles ou progressives",
+        "Impact sur la vie quotidienne ou récurrence fréquente"
+      ],
+      "emergencyIf": [
+        "Céphalée brutale très intense (coup de tonnerre)",
+        "Signes d’AVC associés",
+        "Raideur de nuque, confusion, convulsion, fièvre élevée, éruption qui ne pâlit pas",
+        "Après traumatisme crânien majeur avec vomissements/confusion"
+      ],
+      "doNot": [
+        "Ne minimisez pas une céphalée brutale maximale",
+        "Pas de prescription ici"
+      ]
+    },
+    "he": {
+      "summary": "רבים מכאבי הראש הם ממתח או דמויי מיגרנה. כאב ראש פתאומי «הכי גרוע בחיים», סימני שבץ, נוקשות עורף, בלבול או תמונה דמוית דלקת קרום המוח — חירום. לא אבחנה.",
+      "selfCare": [
+        "מנוחה במקום שקט; שתייה",
+        "ייעוץ רוקח למשככי כאבים מתאימים; לקרוא את העלון"
+      ],
+      "seeDoctorIf": [
+        "כאבי ראש חדשים, חריגים או מחמירים",
+        "הפרעה לחיי היום־יום או חזרתיות גבוהה"
+      ],
+      "emergencyIf": [
+        "כאב ראש פתאומי חזק מאוד",
+        "סימני שבץ נלווים",
+        "נוקשות עורף, בלבול, פרכוס, חום גבוה, פריחה שלא דועכת",
+        "לאחר חבלת ראש קשה עם הקאות/בלבול"
+      ],
+      "doNot": [
+        "לא להתעלם מכאב ראש פתאומי מקסימלי",
+        "אין מרשם כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Многие головные боли — напряжения или мигренеподобные. Внезапная «худшая в жизни» боль, признаки инсульта, ригидность затылка, спутанность или менингеальная картина — неотложная помощь. Не диагноз.",
+      "selfCare": [
+        "Покой в тихом месте; питьё",
+        "Совет фармацевта по безрецептурным анальгетикам при уместности; читать инструкцию"
+      ],
+      "seeDoctorIf": [
+        "Новые, необычные или прогрессирующие головные боли",
+        "Нарушение повседневной жизни или частые повторы"
+      ],
+      "emergencyIf": [
+        "Внезапная очень сильная головная боль",
+        "Признаки инсульта",
+        "Ригидность затылка, спутанность, судороги, высокая температура, небледнеющая сыпь",
+        "После тяжёлой травмы головы с рвотой/спутанностью"
+      ],
+      "doNot": [
+        "Не игнорируйте внезапную сильнейшую головную боль",
+        "Здесь нет рецептов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-stroke",
+      "name": "MedlinePlus — Stroke",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/stroke.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-meningitis",
+      "name": "NHS — Meningitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

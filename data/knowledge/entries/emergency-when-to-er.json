@@ -1,0 +1,109 @@
+{
+  "id": "emergency-when-to-er",
+  "category": "emergency",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": ["emergency", "ER", "911", "can't breathe", "unconscious", "severe bleeding", "overdose", "poisoning", "seizure"],
+    "fr": ["urgence", "urgences", "SAMU", "ne peut pas respirer", "inconscient", "saignement abondant", "surdose", "intoxication", "convulsion"],
+    "he": ["חירום", "מיון", "לא יכול לנשום", "מחוסר הכרה", "דימום חזק", "מנת יתר", "הרעלה", "פרכוס"],
+    "ru": ["неотложка", "скорая", "не могу дышать", "без сознания", "сильное кровотечение", "передозировка", "отравление", "судороги"]
+  },
+  "titles": {
+    "en": "When to use emergency services",
+    "fr": "Quand appeler les secours / aller aux urgences",
+    "he": "מתי לפנות לשירותי חירום / מיון",
+    "ru": "Когда вызывать скорую / ехать в приёмное отделение"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Call local emergency services for life-threatening problems: severe chest pain, severe breathing trouble, stroke signs, uncontrolled bleeding, unconsciousness, seizures with prolonged recovery, severe allergic reaction, poisoning/overdose, or suicidal crisis. Educational list from public sources — not exhaustive.",
+      "emergencyIf": [
+        "Choking; stopped breathing; severe shortness of breath",
+        "Severe chest pain or pressure; pain to arm/jaw",
+        "Sudden inability to speak, see, walk or move; one-sided weakness/droop",
+        "Heavy bleeding that will not stop; coughing or vomiting blood",
+        "Fainting/unconsciousness; seizure lasting >1 minute or not waking promptly",
+        "Severe allergic reaction with breathing/swelling problems",
+        "High fever with headache and stiff neck",
+        "Poisoning or overdose",
+        "Feeling of committing suicide or murder — emergency / crisis support now",
+        "Head or spine injury with loss of feeling/movement or confusion"
+      ],
+      "doNot": [
+        "Do not delay if the condition could become life-threatening on the way to hospital",
+        "Prefer ambulance when moving the person could worsen injury or skills/equipment of paramedics are needed"
+      ]
+    },
+    "fr": {
+      "summary": "Appelez le 15 / 112 (France) ou le 101 (Israël) pour les situations vitales : douleur thoracique sévère, détresse respiratoire, signes d’AVC, hémorragie, inconscience, convulsions, anaphylaxie, intoxication/surdose, crise suicidaire. Liste éducative — non exhaustive.",
+      "emergencyIf": [
+        "Étouffement ; arrêt respiratoire ; essoufflement sévère",
+        "Douleur/pression thoracique sévère ; irradiation bras/mâchoire",
+        "Incapacité soudaine de parler, voir, marcher ; déficit unilatéral",
+        "Saignement abondant ; vomir/cracher du sang",
+        "Perte de connaissance ; convulsion prolongée",
+        "Réaction allergique grave",
+        "Fièvre + céphalée + raideur de nuque",
+        "Intoxication ou surdose",
+        "Idées suicidaires avec danger immédiat"
+      ],
+      "doNot": [
+        "Ne retardez pas si le risque vital peut apparaître en route",
+        "Préférez l’ambulance si le déplacement est dangereux"
+      ]
+    },
+    "he": {
+      "summary": "התקשרו ל־101 (מד״א) במצבים מסכני חיים: כאב חזה חמור, מצוקה נשימתית, סימני שבץ, דימום בלתי נשלט, אובדן הכרה, פרכוסים, אנפילקסיס, הרעלה/מנת יתר, משבר אובדני. רשימה חינוכית — לא ממצה.",
+      "emergencyIf": [
+        "חנק; הפסקת נשימה; קוצר נשימה חמור",
+        "כאב/לחץ חזה חמור",
+        "אובדן פתאומי של דיבור/ראייה/הליכה; חולשה חד־צדדית",
+        "דימום חזק; הקאת/שיעול דם",
+        "אובדן הכרה; פרכוס ממושך",
+        "תגובה אלרגית חמורה",
+        "חום + כאב ראש + נוקשות עורף",
+        "הרעלה או מנת יתר",
+        "מחשבות אובדניות עם סכנה מיידית"
+      ],
+      "doNot": [
+        "לא לדחות אם המצב עלול להחמיר בדרך",
+        "להעדיף אמבולנס כשהזזה מסוכנת"
+      ]
+    },
+    "ru": {
+      "summary": "Вызывайте скорую при жизнеугрожающих ситуациях: сильная боль в груди, тяжёлая одышка, признаки инсульта, неостанавливаемое кровотечение, потеря сознания, судороги, анафилаксия, отравление/передозировка, суицидальный кризис. Образовательный список — не исчерпывающий.",
+      "emergencyIf": [
+        "Удушье; остановка дыхания; тяжёлая одышка",
+        "Сильная боль/давление в груди; иррадиация в руку/челюсть",
+        "Внезапная невозможность говорить, видеть, ходить; односторонняя слабость",
+        "Сильное кровотечение; кровь при кашле/рвоте",
+        "Потеря сознания; длительные судороги",
+        "Тяжёлая аллергическая реакция",
+        "Высокая температура + головная боль + ригидность затылка",
+        "Отравление или передозировка",
+        "Суицидальные мысли с непосредственной опасностью"
+      ],
+      "doNot": [
+        "Не откладывайте, если состояние может стать жизнеугрожающим по дороге",
+        "Предпочитайте скорую, если перемещение опасно"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-er-adult",
+      "name": "MedlinePlus — When to use the emergency room (adult)",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000593.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

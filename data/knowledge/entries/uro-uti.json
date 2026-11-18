@@ -1,0 +1,125 @@
+{
+  "id": "uro-uti",
+  "category": "uro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": ["uti", "urinary tract infection", "burning urine", "dysuria", "frequent urination", "blood in urine", "flank pain fever", "kidney infection"],
+    "fr": ["cystite", "infection urinaire", "brûlure miction", "dysurie", "envie fréquente uriner", "sang dans urine", "douleur fosse lombaire fièvre", "pyélonéphrite"],
+    "he": ["דלקת בדרכי השתן", "צריבה במתן שתן", "השתנה תכופה", "דם בשתן", "כאב מותן עם חום", "דלקת כליה"],
+    "ru": ["цистит", "инфекция мочевых путей", "жжение при мочеиспускании", "частое мочеиспускание", "кровь в моче", "боль в боку с температурой", "пиелонефрит"]
+  },
+  "titles": {
+    "en": "Urinary symptoms / possible UTI",
+    "fr": "Symptômes urinaires / infection possible",
+    "he": "תסמינים בדרכי השתן / חשד לדלקת",
+    "ru": "Мочевые симптомы / возможная ИМП"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Burning urination and frequency often lead people to seek care for possible UTI; diagnosis and antibiotics require a clinician. Fever with flank pain may indicate a more serious kidney infection needing prompt care. Male/child/pregnant presentations usually need clinical review. Not a diagnosis.",
+      "selfCare": [
+        "Drink fluids unless a clinician advised otherwise",
+        "Do not delay care if pregnant, male, child, or systemically unwell"
+      ],
+      "seeDoctorIf": [
+        "Dysuria, frequency, urgency, or blood in urine",
+        "Recurrent urinary symptoms",
+        "Symptoms in pregnancy, men, children, or people with catheters/immunosuppression"
+      ],
+      "emergencyIf": [
+        "High fever with flank/back pain, shaking chills, vomiting, confusion (possible pyelo/sepsis pathway)",
+        "Inability to urinate at all with severe pain",
+        "Severe abdominal/flank pain with shock-like features"
+      ],
+      "doNot": [
+        "Do not self-start leftover antibiotics",
+        "Do not invent antibiotic choices or doses"
+      ]
+    },
+    "fr": {
+      "summary": "Brûlures mictionnelles et pollakiurie font souvent évoquer une cystite ; diagnostic et antibiotiques = décision clinique. Fièvre + douleur lombaire peut évoquer une pyélonéphrite. Homme/enfant/grossesse : avis médical. Pas un diagnostic.",
+      "selfCare": [
+        "Boire si pas de contre-indication médicale",
+        "Ne pas retarder la consultation si grossesse, homme, enfant, ou altération de l’état général"
+      ],
+      "seeDoctorIf": [
+        "Dysurie, pollakiurie, urgences mictionnelles, hématurie",
+        "Récidives",
+        "Terrain particulier (grossesse, sonde, immunodépression)"
+      ],
+      "emergencyIf": [
+        "Forte fièvre + douleur de fosse lombaire, frissons, vomissements, confusion",
+        "Rétention urinaire douloureuse complète",
+        "Douleur sévère avec signes de choc"
+      ],
+      "doNot": [
+        "Pas d’antibiotiques « restants » en automédication",
+        "Pas de posologie ici"
+      ]
+    },
+    "he": {
+      "summary": "צריבה ותכיפות במתן שתן מעלים חשד לדלקת בדרכי השתן; אבחנה ואנטיביוטיקה — החלטת רופא. חום עם כאב מותני עלול להצביע על זיהום כלייתי. בהריון/גברים/ילדים — פנייה לרופא. לא אבחנה.",
+      "selfCare": [
+        "שתייה אלא אם נאמר אחרת",
+        "לא לדחות פנייה בהריון, בגברים, בילדים או במצב כללי ירוד"
+      ],
+      "seeDoctorIf": [
+        "צריבה, תכיפות, דחיפות או דם בשתן",
+        "תסמינים חוזרים",
+        "הריון, קתטר, דיכוי חיסוני"
+      ],
+      "emergencyIf": [
+        "חום גבוה + כאב מותני, צמרמורות, הקאות, בלבול",
+        "אי יכולת להשתין כלל עם כאב חזק"
+      ],
+      "doNot": [
+        "לא לקחת אנטיביוטיקה ישנה לבד",
+        "אין מינון כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Жжение и частое мочеиспускание часто связаны с ИМП; диагноз и антибиотики — решение врача. Лихорадка с болью в боку может быть пиелонефритом. Беременность/мужчины/дети — к врачу. Не диагноз.",
+      "selfCare": [
+        "Пить жидкость, если нет иных указаний врача",
+        "Не откладывайте обращение при беременности, у мужчин, детей или тяжёлом самочувствии"
+      ],
+      "seeDoctorIf": [
+        "Дизурия, частое мочеиспускание, императивные позывы, кровь в моче",
+        "Повторяющиеся симптомы",
+        "Катетер, иммунодефицит, беременность"
+      ],
+      "emergencyIf": [
+        "Высокая температура + боль в боку/пояснице, озноб, рвота, спутанность",
+        "Полная задержка мочи с сильной болью"
+      ],
+      "doNot": [
+        "Не принимайте «оставшиеся» антибиотики сами",
+        "Здесь нет дозировок"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-uti-adults",
+      "name": "MedlinePlus — Urinary tract infection (adults)",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/000521.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-uti-overview",
+      "name": "MedlinePlus — Urinary Tract Infections",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/urinarytractinfections.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-sepsis",
+      "name": "NHS — Sepsis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

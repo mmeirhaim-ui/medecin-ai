@@ -33,8 +33,9 @@ GOOGLE_API_KEY=your_google_ai_key
 # optional (default: gemini-3.5-flash-lite — faster; falls back to flash)
 # GEMINI_MODEL=gemini-3.5-flash-lite
 
-# optional: enable Google Search grounding (slower; off by default)
-# GEMINI_ENABLE_GROUNDING=1
+# optional: Google Search grounding (slower; off by default)
+# GEMINI_GROUNDING=prefer
+# or legacy: GEMINI_ENABLE_GROUNDING=1
 ```
 
 Get a key from [Google AI Studio](https://aistudio.google.com/apikey).
@@ -42,6 +43,16 @@ Get a key from [Google AI Studio](https://aistudio.google.com/apikey).
 For a Cursor-published app, bind `GEMINI_API_KEY` via platform Secrets — never commit it.
 
 Consult tickets are signed with `CONSULT_TOKEN_SECRET` when set, otherwise a stable derivation of `DATABASE_URL` (multi-instance safe).
+
+## Knowledge pack & grounding
+
+Curated public triage maps live in [`data/knowledge/`](./data/knowledge/) (EN/FR/HE/RU) with attribution to WHO, CDC, NHS, HAS, Ameli, MedlinePlus, and Israeli MoH pages. They are matched by keywords and injected into consult prompts; URLs appear in `assessment.sources`.
+
+```bash
+npm run validate:knowledge
+```
+
+Live Google Search grounding is **off by default** for latency (`GEMINI_GROUNDING=prefer|fallback|off`, or `GEMINI_ENABLE_GROUNDING=1`). The local knowledge pack still supplies attributed public guidance. Structured triage rules are embedded in the system prompt; answers remain non-diagnostic and non-prescribing.
 
 ## Stack
 
