@@ -1,0 +1,120 @@
+{
+  "id": "panic-anxiety",
+  "category": "psych",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "panic attack",
+      "anxiety attack",
+      "racing heart anxiety",
+      "fear panic",
+      "hyperventilating anxiety"
+    ],
+    "fr": [
+      "crise de panique",
+      "attaque d'angoisse",
+      "cœur qui s'emballe anxiété",
+      "peur panique",
+      "hyperventilation anxiété"
+    ],
+    "he": [
+      "התקף פאניקה",
+      "חרדה",
+      "דפיקות לב מחרדה",
+      "פחד פאניקה",
+      "היפרוונטילציה מחרדה"
+    ],
+    "ru": [
+      "паническая атака",
+      "приступ тревоги",
+      "сердцебиение от тревоги",
+      "страх паника",
+      "гипервентиляция тревога"
+    ]
+  },
+  "titles": {
+    "en": "Panic / anxiety (non-crisis)",
+    "fr": "Panique / anxiété (hors crise suicidaire)",
+    "he": "פאניקה / חרדה (לא משבר אובדני)",
+    "ru": "Паника / тревога (не суицидальный кризис)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Panic attacks are frightening but usually not dangerous. NHS: breathing slows, grounding, and GP/talking therapies if attacks continue. Chest pain, severe breathlessness, or collapse still need emergency ruling-out of physical causes. Suicidal crisis uses the separate mental-health-crisis entry.",
+      "emergencyIf": [
+        "Chest pain, severe breathlessness, collapse, or stroke/heart red flags — call emergency services",
+        "Thoughts of self-harm or suicide — use crisis pathways"
+      ],
+      "seeDoctorIf": [
+        "Repeated panic or anxiety that disrupts life",
+        "Unsure if symptoms are panic vs physical illness"
+      ],
+      "selfCare": [
+        "Slow breathing; sit somewhere quiet; remind yourself the peak usually passes",
+        "Avoid excess caffeine/alcohol if they trigger attacks"
+      ],
+      "doNot": [
+        "Do not invent benzodiazepine or antidepressant regimens",
+        "Do not ignore new chest pain as 'just panic' without assessment when unsure"
+      ]
+    },
+    "fr": {
+      "summary": "Les crises de panique font peur mais sont souvent sans danger. Respiration lente, ancrage ; médecin/thérapie si répétées. Douleur thoracique/détresse = urgence à écarter. Pas de benzodiazépines inventées.",
+      "emergencyIf": [
+        "Douleur thoracique, détresse respiratoire, syncope",
+        "Idées suicidaires — filière crise"
+      ],
+      "seeDoctorIf": [
+        "Panique/anxiété répétée qui gêne la vie"
+      ],
+      "selfCare": [
+        "Respiration lente ; endroit calme"
+      ],
+      "doNot": [
+        "Pas de benzodiazépines inventées"
+      ]
+    },
+    "he": {
+      "summary": "התקפי פאניקה מפחידים אך לרוב אינם מסוכנים. נשימה איטית; רופא/טיפול אם חוזר. כאב חזה/קוצר נשימה — לשלול חירום. אין בנזודיאזפינים מומצאים.",
+      "emergencyIf": [
+        "כאב חזה, קוצר נשימה חמור, התמוטטות",
+        "מחשבות אובדניות — מסלול משבר"
+      ],
+      "seeDoctorIf": [
+        "פאניקה/חרדה חוזרת שמפריעה לחיים"
+      ],
+      "selfCare": [
+        "נשימה איטית; מקום שקט"
+      ],
+      "doNot": [
+        "אין מינון בנזודיאזפינים מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Панические атаки пугают, но обычно не опасны. Медленное дыхание; врач/терапия при повторах. Боль в груди/одышка — исключать неотложку. Бензодиазепины не выдумывать.",
+      "emergencyIf": [
+        "Боль в груди, тяжёлая одышка, обморок",
+        "Суицидальные мысли — кризисный путь"
+      ],
+      "seeDoctorIf": [
+        "Повторяющаяся паника/тревога, мешающая жизни"
+      ],
+      "selfCare": [
+        "Медленное дыхание; тихое место"
+      ],
+      "doNot": [
+        "Не изобретать дозы бензодиазепинов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-anxiety-panic",
+      "name": "NHS — Anxiety, fear or panic",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/anxiety-fear-panic/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

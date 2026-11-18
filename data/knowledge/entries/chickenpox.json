@@ -1,0 +1,127 @@
+{
+  "id": "chickenpox",
+  "category": "peds",
+  "urgencyDefault": "auto_soins",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "chickenpox",
+      "varicella",
+      "itchy blisters child",
+      "pox spots"
+    ],
+    "fr": [
+      "varicelle",
+      "boutons qui démangent enfant",
+      "vésicules varicelle"
+    ],
+    "he": [
+      "אבעבועות רוח",
+      "שלפוחיות מגרדות בילד",
+      "אבובות"
+    ],
+    "ru": [
+      "ветрянка",
+      "ветряная оспа",
+      "зудящие пузырьки у ребёнка"
+    ]
+  },
+  "titles": {
+    "en": "Chickenpox (varicella)",
+    "fr": "Varicelle",
+    "he": "אבעבועות רוח",
+    "ru": "Ветряная оспа"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Chickenpox usually improves in 1–2 weeks. NHS: fluids, paracetamol for discomfort, cool baths; stay off school until spots scab (~5 days). Urgent advice if worsening skin infection, dehydration, breathlessness, pregnancy/immunosuppression exposure, or newborn contact.",
+      "emergencyIf": [
+        "Severe breathlessness with chickenpox",
+        "Baby/newborn with chickenpox or significant exposure — urgent advice"
+      ],
+      "seeDoctorIf": [
+        "Unsure it is chickenpox",
+        "Red/hot/painful skin around blisters",
+        "Dehydration (fewer wet nappies)",
+        "Pregnant or immunocompromised exposure",
+        "Breastfeeding with symptoms"
+      ],
+      "selfCare": [
+        "Fluids; paracetamol per label; cool baths; loose clothes; trim nails"
+      ],
+      "doNot": [
+        "Do not give aspirin to children",
+        "Do not invent antiviral doses"
+      ]
+    },
+    "fr": {
+      "summary": "La varicelle s'améliore souvent en 1–2 semaines. Hydratation, paracétamol, bains tièdes. Avis urgent si infection cutanée, déshydratation, dyspnée, grossesse/immunodépression, nouveau-né.",
+      "emergencyIf": [
+        "Dyspnée sévère",
+        "Nouveau-né atteint ou exposé"
+      ],
+      "seeDoctorIf": [
+        "Doute diagnostique",
+        "Peau rouge/chaude/douloureuse autour des vésicules",
+        "Déshydratation",
+        "Grossesse ou immunodépression exposée"
+      ],
+      "selfCare": [
+        "Boire ; paracétamol ; bains frais ; ongles courts"
+      ],
+      "doNot": [
+        "Pas d'aspirine chez l'enfant",
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "אבעבועות רוח לרוב משתפרות תוך 1–2 שבועות. נוזלים, פרצטמול, אמבטיות קרות. ייעוץ דחוף אם החמרת עור, התייבשות, קוצר נשימה, הריון/דיכוי חיסוני, יילוד.",
+      "emergencyIf": [
+        "קוצר נשימה חמור",
+        "יילוד עם מחלה או חשיפה משמעותית"
+      ],
+      "seeDoctorIf": [
+        "ספק באבחנה",
+        "עור אדום/חם/כואב סביב שלפוחיות",
+        "התייבשות",
+        "חשיפה בהריון או דיכוי חיסוני"
+      ],
+      "selfCare": [
+        "נוזלים; פרצטמול; אמבט קריר; ציפורניים קצרות"
+      ],
+      "doNot": [
+        "לא אספירין לילדים",
+        "אין אנטי-ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Ветрянка обычно проходит за 1–2 недели. Жидкость, парацетамол, прохладные ванны. Срочно при инфекции кожи, обезвоживании, одышке, беременности/иммунодефиците, новорождённом.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Новорождённый с болезнью или значимым контактом"
+      ],
+      "seeDoctorIf": [
+        "Сомнения в диагнозе",
+        "Красная/горячая/болезненная кожа вокруг пузырьков",
+        "Обезвоживание",
+        "Контакт при беременности или иммунодефиците"
+      ],
+      "selfCare": [
+        "Жидкость; парацетамол; прохладные ванны; короткие ногти"
+      ],
+      "doNot": [
+        "Не давать аспирин детям",
+        "Не изобретать дозы противовирусных"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-chickenpox",
+      "name": "NHS — Chickenpox",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chickenpox/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

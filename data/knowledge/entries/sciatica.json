@@ -1,0 +1,120 @@
+{
+  "id": "sciatica",
+  "category": "ortho",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "sciatica",
+      "pain down the leg",
+      "shooting leg pain from back",
+      "piriformis sciatica"
+    ],
+    "fr": [
+      "sciatique",
+      "douleur qui descend dans la jambe",
+      "élancement jambe depuis le dos"
+    ],
+    "he": [
+      "סיאטיקה",
+      "כאב שיורה לרגל",
+      "כאב רגל מהגב"
+    ],
+    "ru": [
+      "ишиас",
+      "боль отдающая в ногу",
+      "прострел в ногу из спины"
+    ]
+  },
+  "titles": {
+    "en": "Sciatica (leg pain from back)",
+    "fr": "Sciatique",
+    "he": "סיאטיקה",
+    "ru": "Ишиас"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sciatica is pain radiating from the back into the leg. NHS: keep active within comfort; see GP if not improving, or urgent care for bowel/bladder loss, saddle numbness, or progressive leg weakness (cauda equina red flags).",
+      "emergencyIf": [
+        "Loss of bowel or bladder control",
+        "Numbness around genitals/anus (saddle anaesthesia)",
+        "Progressive leg weakness"
+      ],
+      "seeDoctorIf": [
+        "Pain not improving after a few weeks",
+        "Severe pain limiting walking",
+        "New neurological symptoms"
+      ],
+      "selfCare": [
+        "Stay gently active; simple pain relief per label; avoid prolonged bed rest"
+      ],
+      "doNot": [
+        "Do not ignore cauda equina red flags",
+        "Do not invent opioid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "La sciatique irradie du dos vers la jambe. Rester actif selon tolérance. Urgence si troubles sphinctériens, anesthésie en selle, déficit moteur progressif.",
+      "emergencyIf": [
+        "Incontinence urinaire/fécale",
+        "Anesthésie en selle",
+        "Faiblesse progressive de jambe"
+      ],
+      "seeDoctorIf": [
+        "Pas d'amélioration en quelques semaines",
+        "Douleur sévère"
+      ],
+      "selfCare": [
+        "Rester actif doucement ; antalgiques selon notice"
+      ],
+      "doNot": [
+        "Ne pas ignorer les signes de queue de cheval"
+      ]
+    },
+    "he": {
+      "summary": "סיאטיקה היא כאב מהגב לרגל. להישאר פעיל בעדינות. חירום אם אובדן שליטה בסוגרים, נימול באוכף, חולשת רגל מתקדמת.",
+      "emergencyIf": [
+        "אובדן שליטה במעי/שלפוחית",
+        "נימול באזור אוכף",
+        "חולשת רגל מתקדמת"
+      ],
+      "seeDoctorIf": [
+        "אין שיפור אחרי שבועות",
+        "כאב חזק"
+      ],
+      "selfCare": [
+        "פעילות עדינה; משכך כאב לפי התווית"
+      ],
+      "doNot": [
+        "לא להתעלם מדגלי cauda equina"
+      ]
+    },
+    "ru": {
+      "summary": "Ишиас — боль из спины в ногу. Оставайтесь мягко активны. Неотложка при нарушении тазовых функций, седловидной анестезии, нарастающей слабости ноги.",
+      "emergencyIf": [
+        "Нарушение контроля тазовых функций",
+        "Онемение в седловидной зоне",
+        "Нарастающая слабость ноги"
+      ],
+      "seeDoctorIf": [
+        "Нет улучшения за недели",
+        "Сильная боль"
+      ],
+      "selfCare": [
+        "Мягкая активность; анальгетики по инструкции"
+      ],
+      "doNot": [
+        "Не игнорировать красные флаги синдрома конского хвоста"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-sciatica",
+      "name": "NHS — Sciatica",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sciatica/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

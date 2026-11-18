@@ -1,0 +1,143 @@
+{
+  "id": "head-injury-concussion",
+  "category": "neuro",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "head injury",
+      "concussion",
+      "hit head",
+      "knocked out",
+      "fall hit head"
+    ],
+    "fr": [
+      "traumatisme crânien",
+      "commotion cérébrale",
+      "coup à la tête",
+      "perte de connaissance après chute",
+      "choc tête"
+    ],
+    "he": [
+      "חבלת ראש",
+      "זעזוע מוח",
+      "מכה בראש",
+      "איבוד הכרה אחרי נפילה"
+    ],
+    "ru": [
+      "травма головы",
+      "сотрясение мозга",
+      "удар головой",
+      "потеря сознания после падения"
+    ]
+  },
+  "titles": {
+    "en": "Head injury / concussion red flags",
+    "fr": "Traumatisme crânien / commotion — signes d'alarme",
+    "he": "חבלת ראש / זעזוע מוח — דגלים אדומים",
+    "ru": "Травма головы / сотрясение — красные флаги"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most head injuries are not serious, but some need emergency care (not waking, seizure, high fall, CSF from ears/nose, new weakness, high-speed impact). Vomiting/dizziness after injury warrants urgent advice. Educational NHS framing.",
+      "emergencyIf": [
+        "Knocked out and not woken up",
+        "Cannot stay awake",
+        "Seizure",
+        "Fall >1 metre or 5 stairs",
+        "Vision/hearing problems",
+        "Clear fluid from ears/nose",
+        "Bleeding from ears or bruising behind ears",
+        "New numbness/weakness",
+        "Problems walking/speaking/understanding",
+        "High-speed impact",
+        "Dent in head or object in wound"
+      ],
+      "seeDoctorIf": [
+        "Vomiting, dizziness, blood thinners, alcohol/drugs at time of injury"
+      ],
+      "selfCare": [
+        "Ice pack wrapped for swelling; rest; adult supervision first 24h",
+        "Paracetamol for headache per label",
+        "No contact sports ≥3 weeks; no alcohol until better"
+      ],
+      "doNot": [
+        "Do not drive until recovered",
+        "Do not take sleeping pills unless clinician advised"
+      ]
+    },
+    "fr": {
+      "summary": "La plupart des chocs à la tête sont bénins, mais certains signes imposent les urgences (ne se réveille pas, convulsion, chute haute, liquide clair oreilles/nez, déficit).",
+      "emergencyIf": [
+        "Ne se réveille pas",
+        "Ne reste pas éveillé",
+        "Convulsion",
+        "Chute > 1 m / 5 marches",
+        "Trouble vision/audition",
+        "Liquide clair oreilles/nez",
+        "Faiblesse/engourdissement nouveau",
+        "Impact haute vitesse"
+      ],
+      "seeDoctorIf": [
+        "Vomissements, vertiges, anticoagulants, alcool au moment du trauma"
+      ],
+      "selfCare": [
+        "Glace enveloppée ; repos ; surveillance 24 h"
+      ],
+      "doNot": [
+        "Ne pas conduire tant que non rétabli"
+      ]
+    },
+    "he": {
+      "summary": "רוב חבלות הראש קלות, אך יש סימנים שדורשים חירום (לא מתעורר, פרכוס, נפילה מגובה, נוזל שקוף מאוזניים/אף, חולשה חדשה).",
+      "emergencyIf": [
+        "לא מתעורר",
+        "לא נשאר ער",
+        "פרכוס",
+        "נפילה מעל מטר / 5 מדרגות",
+        "הפרעת ראייה/שמיעה",
+        "נוזל שקוף מאוזן/אף",
+        "חולשה/נימול חדש"
+      ],
+      "seeDoctorIf": [
+        "הקאות, סחרחורת, מדללי דם"
+      ],
+      "selfCare": [
+        "קרח עטוף; מנוחה; השגחה 24 שעות"
+      ],
+      "doNot": [
+        "לא לנהוג עד החלמה"
+      ]
+    },
+    "ru": {
+      "summary": "Большинство травм головы несерьёзны, но есть признаки неотложности (не просыпается, судороги, падение с высоты, прозрачная жидкость из ушей/носа, новая слабость).",
+      "emergencyIf": [
+        "Не просыпается",
+        "Не может бодрствовать",
+        "Судороги",
+        "Падение >1 м / 5 ступеней",
+        "Проблемы со зрением/слухом",
+        "Прозрачная жидкость из ушей/носа",
+        "Новая слабость/онемение"
+      ],
+      "seeDoctorIf": [
+        "Рвота, головокружение, антикоагулянты"
+      ],
+      "selfCare": [
+        "Лёд в ткани; покой; наблюдение 24 ч"
+      ],
+      "doNot": [
+        "Не водить до восстановления"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-head-injury",
+      "name": "NHS — Head injury and concussion",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
