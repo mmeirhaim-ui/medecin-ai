@@ -1,0 +1,96 @@
+{
+  "id": "me-cfs",
+  "category": "general",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "ME CFS",
+      "chronic fatigue syndrome",
+      "myalgic encephalomyelitis post-exertional malaise"
+    ],
+    "fr": [
+      "encéphalomyélite myalgique",
+      "syndrome de fatigue chronique",
+      "EM/SFC malaise post-effort"
+    ],
+    "he": [
+      "תסמונת עייפות כרונית",
+      "ME CFS",
+      "עייפות כרונית מאמץ"
+    ],
+    "ru": [
+      "синдром хронической усталости",
+      "миалгический энцефаломиелит",
+      "СХУ МЕ"
+    ]
+  },
+  "titles": {
+    "en": "ME/CFS — orientation",
+    "fr": "EM/SFC — orientation",
+    "he": "עייפות כרונית (ME/CFS) — התמצאות",
+    "ru": "СХУ / МЕ — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "ME/CFS can cause profound fatigue, post-exertional malaise, sleep and cognitive issues. NHS: specialist pathways exist; pacing and avoiding boom-bust cycles matter. This pack never invents graded-exercise prescriptions or drug doses. Emergency care for chest pain, fainting with injury, suicidal crisis, or sudden severe illness.",
+      "emergencyIf": [
+        "Chest pain, collapse with injury, suicidal thoughts/plans",
+        "Sudden severe new illness"
+      ],
+      "seeDoctorIf": [
+        "Fatigue lasting months with post-exertional worsening",
+        "Unable to work/study due to exhaustion"
+      ],
+      "doNot": [
+        "Do not invent exercise programmes or stimulant doses",
+        "Do not push through post-exertional crashes"
+      ]
+    },
+    "fr": {
+      "summary": "EM/SFC: fatigue profonde, malaise post-effort. Orientation NHS; pas de programmes/doses inventés.",
+      "emergencyIf": [
+        "Douleur thoracique, malaise avec blessure, idées suicidaires"
+      ],
+      "seeDoctorIf": [
+        "Fatigue prolongée avec aggravation post-effort"
+      ],
+      "doNot": [
+        "Pas de programmes d'effort inventés"
+      ]
+    },
+    "he": {
+      "summary": "ME/CFS: עייפות עמוקה והחמרה אחרי מאמץ. לפי NHS; אין תוכניות/מינונים מומצאים.",
+      "emergencyIf": [
+        "כאב חזה, התמוטטות עם פציעה, מחשבות אובדניות"
+      ],
+      "seeDoctorIf": [
+        "עייפות ממושכת עם החמרה אחרי מאמץ"
+      ],
+      "doNot": [
+        "אין תוכניות מאמץ מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "СХУ/МЕ: глубокая усталость, ухудшение после нагрузки. Ориентир NHS; схемы/дозы не выдумывать.",
+      "emergencyIf": [
+        "Боль в груди, обморок с травмой, суицидальные мысли"
+      ],
+      "seeDoctorIf": [
+        "Длительная усталость с постнагрузочным ухудшением"
+      ],
+      "doNot": [
+        "Не изобретать программы нагрузок"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-me-cfs",
+      "name": "NHS — ME/CFS",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chronic-fatigue-syndrome-cfs/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

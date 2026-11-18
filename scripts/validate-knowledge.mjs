@@ -150,6 +150,13 @@ const cases = [
   { text: "Crohn's disease bloody diarrhoea abdominal pain", expect: "crohns-disease" },
   { text: "ulcerative colitis UC bloody diarrhoea flare", expect: "ulcerative-colitis" },
   { text: "tennis elbow pain outside elbow gripping", expect: "tennis-elbow" },
+  { text: "endometriosis painful menstruation diagnosis", expect: "endometriosis" },
+  { text: "atrial fibrillation irregular heartbeat flutter", expect: "atrial-fibrillation" },
+  { text: "stable angina on climbing stairs", expect: "angina" },
+  { text: "glaucoma eye pressure vision", expect: "glaucoma" },
+  { text: "sleep apnoea snoring pauses breathing", expect: "sleep-apnoea" },
+  { text: "inguinal hernia groin lump painful", expect: "hernia" },
+  { text: "fibromyalgia widespread pain fatigue fibro fog", expect: "fibromyalgia" },
 ];
 
 for (const c of cases) {

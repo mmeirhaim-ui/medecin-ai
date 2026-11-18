@@ -1,0 +1,98 @@
+{
+  "id": "prostatitis",
+  "category": "mens-health",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "prostatitis",
+      "prostate infection pain peeing"
+    ],
+    "fr": [
+      "prostatite",
+      "infection prostate douleur miction"
+    ],
+    "he": [
+      "דלקת ערמונית",
+      "פרוסטטיטיס",
+      "כאב במתן שתן ערמונית"
+    ],
+    "ru": [
+      "простатит",
+      "воспаление простаты",
+      "боль при мочеиспускании простата"
+    ]
+  },
+  "titles": {
+    "en": "Prostatitis",
+    "fr": "Prostatite",
+    "he": "דלקת ערמונית",
+    "ru": "Простатит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Prostatitis can cause pelvic/perineal pain, painful urination, fever and flu-like illness. NHS: acute bacterial prostatitis needs urgent medical care; chronic forms need GP pathways. Never invent antibiotic doses. Emergency: high fever, confusion, inability to pee, or severe systemic illness.",
+      "emergencyIf": [
+        "High fever, shaking chills, confusion",
+        "Cannot pass urine",
+        "Severe systemic illness"
+      ],
+      "seeDoctorIf": [
+        "Pelvic/perineal pain with urinary symptoms",
+        "Recurrent UTIs in men"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not delay care for fever with urinary symptoms"
+      ]
+    },
+    "fr": {
+      "summary": "Prostatite: douleur pelvienne/périnée, dysurie, fièvre. Urgence si fièvre élevée. Pas d'antibiotiques inventés.",
+      "emergencyIf": [
+        "Forte fièvre, frissons, confusion",
+        "Rétention urinaire"
+      ],
+      "seeDoctorIf": [
+        "Douleur pelvienne avec symptômes urinaires"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת ערמונית: כאב אגן/פרינאום, צריבה במתן שתן, חום. חירום בחום גבוה. אין אנטיביוטיקה מומצאת.",
+      "emergencyIf": [
+        "חום גבוה, צמרמורות, בלבול",
+        "אצירת שתן"
+      ],
+      "seeDoctorIf": [
+        "כאב אגן עם תסמיני שתן"
+      ],
+      "doNot": [
+        "אין משטרי אנטיביוטיקה מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Простатит: боль в тазу/промежности, дизурия, лихорадка. Неотложка при высокой лихорадке. Антибиотики не выдумывать.",
+      "emergencyIf": [
+        "Высокая лихорадка, озноб, спутанность",
+        "Задержка мочи"
+      ],
+      "seeDoctorIf": [
+        "Тазовая боль с мочевыми симптомами"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-prostatitis",
+      "name": "NHS — Prostatitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/prostatitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

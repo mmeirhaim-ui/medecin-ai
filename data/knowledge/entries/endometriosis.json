@@ -1,0 +1,102 @@
+{
+  "id": "endometriosis",
+  "category": "womens-health",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "endometriosis",
+      "period pain endometriosis pelvic pain"
+    ],
+    "fr": [
+      "endométriose",
+      "douleurs règles endométriose",
+      "douleur pelvienne endométriose"
+    ],
+    "he": [
+      "אנדומטריוזיס",
+      "כאבי מחזור אנדומטריוזיס",
+      "כאב אגן אנדו"
+    ],
+    "ru": [
+      "эндометриоз",
+      "боль при месячных эндометриоз",
+      "тазовая боль эндометриоз"
+    ]
+  },
+  "titles": {
+    "en": "Endometriosis — orientation",
+    "fr": "Endométriose — orientation",
+    "he": "אנדומטריוזיס — התמצאות",
+    "ru": "Эндометриоз — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Endometriosis can cause severe period pain, pelvic pain, pain with sex, and fertility issues. NHS: see a GP if periods disrupt life; diagnosis may involve specialist pathways. Emergency: sudden severe one-sided pelvic pain, fainting, or heavy bleeding (consider ectopic/other acute causes — see related entries). Never invent hormone or pain-drug doses.",
+      "emergencyIf": [
+        "Sudden severe pelvic pain with fainting or shoulder-tip pain",
+        "Very heavy bleeding with dizziness"
+      ],
+      "seeDoctorIf": [
+        "Painful periods affecting work/school",
+        "Pelvic pain between periods",
+        "Difficulty conceiving with pelvic symptoms"
+      ],
+      "doNot": [
+        "Do not invent hormone or opioid regimens",
+        "Do not ignore sudden severe pain as 'just period pain'"
+      ]
+    },
+    "fr": {
+      "summary": "Endométriose: douleurs de règles/pelviennes. Urgences si douleur pelvienne brutale avec malaise. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Douleur pelvienne brutale avec malaise",
+        "Hémorragie abondante avec vertiges"
+      ],
+      "seeDoctorIf": [
+        "Règles invalidantes",
+        "Douleur pelvienne"
+      ],
+      "doNot": [
+        "Pas de posologies hormonales inventées"
+      ]
+    },
+    "he": {
+      "summary": "אנדומטריוזיס: כאבי מחזור/אגן. חירום בכאב אגן פתאומי עם התעלפות. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "כאב אגן פתאומי עם התעלפות",
+        "דימום כבד עם סחרחורת"
+      ],
+      "seeDoctorIf": [
+        "מחזור מכאיב מאוד",
+        "כאב אגן"
+      ],
+      "doNot": [
+        "אין מינוני הורמונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Эндометриоз: боли при месячных/в тазу. Неотложка при внезапной тазовой боли с обмороком. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Внезапная тазовая боль с обмороком",
+        "Обильное кровотечение с головокружением"
+      ],
+      "seeDoctorIf": [
+        "Инвалидирующие месячные",
+        "Тазовая боль"
+      ],
+      "doNot": [
+        "Не изобретать гормональные схемы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-endometriosis",
+      "name": "NHS — Endometriosis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/endometriosis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

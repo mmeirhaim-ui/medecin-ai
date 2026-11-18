@@ -272,6 +272,25 @@ const EMERGENCY_PATTERNS: RegExp[] = [
   /\b[ée]paule\s+(lux[ée]e|d[ée]bo[iî]t[ée]e)\b/i,
   /\bכתף\s+מפורקת\b/u,
   /\bвывих\s+плеча\b/iu,
+
+  // Acute angle-closure glaucoma cues
+  /\bacute\s+(angle[-\s]?closure\s+)?glaucoma\b/i,
+  /\bglaucome\s+aigu\b/i,
+  /\bגלאוקומה\s+חריפה\b/u,
+  /\bострая\s+глаукома\b/iu,
+
+  // Angina / suspected ACS phrasing (complements cardio red flags)
+  /\bangina\b/i,
+  /\bangine\s+de\s+poitrine\b/i,
+  /\bאנגינה\b/u,
+  /\bתעוקת\s+חזה\b/u,
+  /\bстенокарди/iu,
+
+  // Strangulated / irreducible hernia
+  /\bstrangulat\w*\s+hernia\b/i,
+  /\bhernie\s+[ée]trangl/i,
+  /\bבקע\s+חנוק\b/u,
+  /\bущемл\w*\s+грыж/iu,
 ];
 
 const NEGATION =

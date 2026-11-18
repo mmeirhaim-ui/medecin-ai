@@ -1,0 +1,100 @@
+{
+  "id": "dry-eyes",
+  "category": "eye",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "dry eyes",
+      "gritty eyes dry",
+      "artificial tears dry eye"
+    ],
+    "fr": [
+      "œil sec",
+      "yeux secs gritty",
+      "larmes artificielles"
+    ],
+    "he": [
+      "עיניים יבשות",
+      "תחושת חול בעיניים",
+      "דמעות מלאכותיות"
+    ],
+    "ru": [
+      "сухие глаза",
+      "ощущение песка в глазах",
+      "искусственные слёзы"
+    ]
+  },
+  "titles": {
+    "en": "Dry eyes",
+    "fr": "Œil sec",
+    "he": "עיניים יבשות",
+    "ru": "Сухие глаза"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Dry eyes feel gritty, burning or watery-paradoxically. NHS: blink breaks, humidify, and pharmacy lubricating drops may help — brands/doses are individual; this pack does not invent regimens. Urgent care for severe pain, sudden vision loss, light sensitivity with trauma, or chemical splash.",
+      "emergencyIf": [
+        "Chemical splash in eye",
+        "Sudden vision loss or severe eye pain",
+        "Injury with light intolerance"
+      ],
+      "seeDoctorIf": [
+        "Persistent dryness affecting vision",
+        "Contact lens wearers with ongoing irritation"
+      ],
+      "doNot": [
+        "Do not invent steroid eye-drop regimens",
+        "Do not ignore chemical eye injury"
+      ]
+    },
+    "fr": {
+      "summary": "Œil sec: pauses clignement, larmes artificielles en pharmacie. Urgences si brûlure chimique, douleur sévère, baisse visuelle.",
+      "emergencyIf": [
+        "Produit chimique dans l'œil",
+        "Baisse visuelle / douleur sévère"
+      ],
+      "seeDoctorIf": [
+        "Sécheresse persistante"
+      ],
+      "doNot": [
+        "Pas de collyres stéroïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "עיניים יבשות: הפסקות מצמוץ, דמעות מבית מרקחת. חירום בכוויה כימית או כאב/ירידת ראייה.",
+      "emergencyIf": [
+        "חומר כימי בעין",
+        "ירידת ראייה / כאב קשה"
+      ],
+      "seeDoctorIf": [
+        "יבשות מתמשכת"
+      ],
+      "doNot": [
+        "אין טיפות סטרואידים מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Сухие глаза: перерывы на моргание, аптечные капли. Неотложка при химическом ожоге или сильной боли/потере зрения.",
+      "emergencyIf": [
+        "Химическое вещество в глазу",
+        "Потеря зрения / сильная боль"
+      ],
+      "seeDoctorIf": [
+        "Стойкая сухость"
+      ],
+      "doNot": [
+        "Не изобретать стероидные капли"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dry-eyes",
+      "name": "NHS — Dry eyes",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dry-eyes/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

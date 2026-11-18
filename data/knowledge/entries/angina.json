@@ -1,0 +1,103 @@
+{
+  "id": "angina",
+  "category": "cardio",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "angina",
+      "chest pain on exertion angina",
+      "stable angina"
+    ],
+    "fr": [
+      "angine de poitrine",
+      "douleur thoracique à l'effort",
+      "angor"
+    ],
+    "he": [
+      "אנגינה פקטוריס",
+      "כאב חזה במאמץ",
+      "תעוקת חזה"
+    ],
+    "ru": [
+      "стенокардия",
+      "боль в груди при нагрузке",
+      "грудная жаба"
+    ]
+  },
+  "titles": {
+    "en": "Angina",
+    "fr": "Angine de poitrine",
+    "he": "תעוקת חזה (אנגינה)",
+    "ru": "Стенокардия"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Angina is chest discomfort often triggered by exertion or stress and eased by rest. NHS: new or worsening chest pain needs urgent medical assessment — call emergency services for pain at rest, lasting >15 minutes, with breathlessness, sweating, nausea, or radiating pain (possible heart attack). Never invent GTN or other cardiac drug doses.",
+      "emergencyIf": [
+        "Chest pain at rest or lasting more than 15 minutes",
+        "Pain with breathlessness, sweating, nausea, or arm/jaw radiation",
+        "Sudden collapse"
+      ],
+      "seeDoctorIf": [
+        "Predictable exertional chest discomfort",
+        "Known angina becoming more frequent"
+      ],
+      "doNot": [
+        "Do not invent GTN/beta-blocker doses",
+        "Do not drive yourself with suspected heart attack"
+      ]
+    },
+    "fr": {
+      "summary": "Angor: douleur à l'effort. Urgences si douleur au repos >15 min, dyspnée, sueurs. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Douleur au repos ou >15 min",
+        "Douleur avec dyspnée/sueurs/nausées",
+        "Malaise"
+      ],
+      "seeDoctorIf": [
+        "Douleur d'effort prévisible"
+      ],
+      "doNot": [
+        "Pas de posologies de trinitrine inventées"
+      ]
+    },
+    "he": {
+      "summary": "אנגינה: כאב במאמץ. חירום בכאב במנוחה >15 דק', קוצר נשימה, הזעה. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "כאב במנוחה או מעל 15 דקות",
+        "כאב עם קוצר נשימה/הזעה/בחילה",
+        "התמוטטות"
+      ],
+      "seeDoctorIf": [
+        "כאב חזה במאמץ צפוי"
+      ],
+      "doNot": [
+        "אין מינוני ניטרטים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Стенокардия: боль при нагрузке. Неотложка при боли в покое >15 мин, одышке, поте. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Боль в покое или >15 минут",
+        "Боль с одышкой/потом/тошнотой",
+        "Коллапс"
+      ],
+      "seeDoctorIf": [
+        "Предсказуемая боль при нагрузке"
+      ],
+      "doNot": [
+        "Не изобретать дозы нитратов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-angina",
+      "name": "NHS — Angina",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/angina/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

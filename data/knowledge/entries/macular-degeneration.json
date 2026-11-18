@@ -1,0 +1,98 @@
+{
+  "id": "macular-degeneration",
+  "category": "eye",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "macular degeneration",
+      "AMD age-related macular",
+      "central vision distortion"
+    ],
+    "fr": [
+      "dégénérescence maculaire",
+      "DMLA",
+      "vision centrale déformée"
+    ],
+    "he": [
+      "ניוון מקולרי",
+      "AMD מקולה",
+      "עיוות ראייה מרכזית"
+    ],
+    "ru": [
+      "макулярная дегенерация",
+      "ВМД макула",
+      "искажение центрального зрения"
+    ]
+  },
+  "titles": {
+    "en": "Age-related macular degeneration",
+    "fr": "DMLA",
+    "he": "ניוון מקולרי הקשור לגיל",
+    "ru": "Возрастная макулярная дегенерация"
+  },
+  "guidance": {
+    "en": {
+      "summary": "AMD affects central vision (reading, faces). NHS: sudden distortion, a dark patch in central vision, or rapid worsening needs urgent ophthalmology assessment (possible wet AMD). Dry AMD is usually slower. Never invent injection or supplement doses as treatment advice.",
+      "emergencyIf": [
+        "Sudden central vision distortion or dark patch",
+        "Rapid worsening of central vision in one eye"
+      ],
+      "seeDoctorIf": [
+        "Gradual difficulty reading/recognising faces",
+        "Family history — regular eye checks"
+      ],
+      "doNot": [
+        "Do not invent anti-VEGF injection schedules or mega-dose supplements"
+      ]
+    },
+    "fr": {
+      "summary": "DMLA: vision centrale. Urgence si déformation/tache centrale soudaine. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Déformation ou tache centrale soudaine",
+        "Aggravation rapide d'un œil"
+      ],
+      "seeDoctorIf": [
+        "Difficulté progressive à lire"
+      ],
+      "doNot": [
+        "Pas de schémas d'injections inventés"
+      ]
+    },
+    "he": {
+      "summary": "ניוון מקולרי: ראייה מרכזית. חירום בעיוות/כתם מרכזי פתאומי. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "עיוות או כתם מרכזי פתאומי",
+        "החמרה מהירה בעין אחת"
+      ],
+      "seeDoctorIf": [
+        "קושי הדרגתי בקריאה"
+      ],
+      "doNot": [
+        "אין לוחות זמנים להזרקות מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "ВМД: центральное зрение. Неотложка при внезапном искажении/пятне. Дозы/инъекции не выдумывать.",
+      "emergencyIf": [
+        "Внезапное искажение или тёмное пятно в центре",
+        "Быстрое ухудшение одного глаза"
+      ],
+      "seeDoctorIf": [
+        "Постепенные трудности с чтением"
+      ],
+      "doNot": [
+        "Не изобретать схемы инъекций"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-macular-degeneration",
+      "name": "NHS — Age-related macular degeneration",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/macular-degeneration/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
