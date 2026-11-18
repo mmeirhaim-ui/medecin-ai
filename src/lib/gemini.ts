@@ -61,11 +61,41 @@ const RESPONSE_SCHEMA: ResponseSchema = {
 };
 
 export function getApiKey(): string | undefined {
-  return process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || undefined;
+  return (
+    process.env.GEMINI_API_KEY ||
+    process.env.GOOGLE_GENERATIVE_AI_API_KEY ||
+    process.env.GOOGLE_API_KEY ||
+    undefined
+  );
 }
 
 export function isMockMode(): boolean {
   return !getApiKey();
+}
+
+/** Default Flash model — gemini-2.0-flash was shut down 2026-06-01. */
+export const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
+
+/**
+ * Sanitize provider errors for clients/logs: keep status + short message,
+ * strip API keys / long payloads.
+ */
+export function formatGeminiError(err: unknown): string {
+  const raw =
+    err instanceof Error
+      ? err.message
+      : typeof err === "string"
+        ? err
+        : "Erreur inconnue";
+  const scrubbed = raw
+    .replace(/AIza[0-9A-Za-z_-]{20,}/g, "[redacted]")
+    .replace(/(api[_-]?key|x-goog-api-key)\s*[:=]\s*["']?[^\s"',}]+/gi, "$1=[redacted]");
+  const compact = scrubbed.replace(/\s+/g, " ").trim().slice(0, 320);
+  return compact || "Erreur Gemini inconnue";
+}
+
+function getModelName(): string {
+  return process.env.GEMINI_MODEL?.trim() || DEFAULT_GEMINI_MODEL;
 }
 
 function normalizeUrgency(value: unknown): UrgencyLevel {
@@ -175,7 +205,7 @@ function createModel(withGrounding: boolean): GenerativeModel {
   const genAI = new GoogleGenerativeAI(key);
 
   const base = {
-    model: process.env.GEMINI_MODEL || "gemini-2.0-flash",
+    model: getModelName(),
     systemInstruction: SYSTEM_PROMPT,
     generationConfig: {
       temperature: 0.4,
@@ -219,6 +249,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
 
   let grounded = false;
   let textOut = "";
+  let groundingError: unknown;
 
   try {
     const model = createModel(true);
@@ -227,13 +258,26 @@ export async function runConsultation(req: ConsultRequest): Promise<{
     });
     textOut = result.response.text();
     grounded = true;
-  } catch {
-    const model = createModel(false);
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts }],
-    });
-    textOut = result.response.text();
-    grounded = false;
+  } catch (err) {
+    groundingError = err;
+    try {
+      const model = createModel(false);
+      const result = await model.generateContent({
+        contents: [{ role: "user", parts }],
+      });
+      textOut = result.response.text();
+      grounded = false;
+    } catch (fallbackErr) {
+      const primary = formatGeminiError(fallbackErr);
+      const secondary = groundingError
+        ? formatGeminiError(groundingError)
+        : null;
+      const detail =
+        secondary && secondary !== primary
+          ? `${primary} (grounding: ${secondary})`
+          : primary;
+      throw new Error(`Gemini (${getModelName()}): ${detail}`);
+    }
   }
 
   const parsed = parseAssessment(extractJson(textOut));

@@ -22,10 +22,12 @@ Sans clé, l’app tourne en **mode démonstration** avec des réponses réalist
 # .env.local
 GEMINI_API_KEY=votre_cle_google_ai
 # ou
+GOOGLE_GENERATIVE_AI_API_KEY=votre_cle_google_ai
+# ou
 GOOGLE_API_KEY=votre_cle_google_ai
 
-# optionnel
-GEMINI_MODEL=gemini-2.0-flash
+# optionnel (défaut: gemini-3.6-flash)
+GEMINI_MODEL=gemini-3.6-flash
 ```
 
 Obtenez une clé sur [Google AI Studio](https://aistudio.google.com/apikey).

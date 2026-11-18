@@ -1,6 +1,12 @@
 import { NextResponse } from "next/server";
 import { randomUUID } from "crypto";
-import { runConsultation, isMockMode } from "@/lib/gemini";
+import {
+  runConsultation,
+  isMockMode,
+  formatGeminiError,
+  getApiKey,
+  DEFAULT_GEMINI_MODEL,
+} from "@/lib/gemini";
 import type { ConsultRequest } from "@/lib/types";
 
 /** Simple in-memory rate limit (per instance). */
@@ -31,10 +37,15 @@ function rateLimit(key: string): boolean {
 }
 
 export async function GET() {
+  const mock = isMockMode();
   return NextResponse.json({
     ok: true,
-    mock: isMockMode(),
-    provider: isMockMode() ? "mock" : "gemini",
+    mock,
+    provider: mock ? "mock" : "gemini",
+    model: mock
+      ? null
+      : process.env.GEMINI_MODEL?.trim() || DEFAULT_GEMINI_MODEL,
+    hasKey: Boolean(getApiKey()),
   });
 }
 
@@ -98,14 +109,12 @@ export async function POST(req: Request) {
       mock: result.mock,
     });
   } catch (err) {
-    console.error(
-      "consult error",
-      err instanceof Error ? err.message : "unknown",
-    );
+    const detail = formatGeminiError(err);
+    console.error("consult error", detail);
     return NextResponse.json(
       {
-        error:
-          "Le service d’analyse est temporairement indisponible. Réessayez ou activez le mode démo sans clé API.",
+        error: `Le service d’analyse est temporairement indisponible. ${detail}`,
+        detail,
       },
       { status: 502 },
     );
