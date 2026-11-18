@@ -31,3 +31,7 @@ export const DISCLAIMER_SHORT =
 
 export const DISCLAIMER_LONG =
   "Les informations fournies par Medecin AI sont à titre éducatif et d'orientation uniquement. Elles ne constituent pas un diagnostic, une prescription ni un avis médical personnalisé. Consultez un professionnel de santé qualifié pour toute décision médicale. En cas de symptômes graves ou d'urgence, contactez immédiatement les services d'urgence.";
+
+/** Shown before submit: third-party processing disclosure. */
+export const PRIVACY_GEMINI_NOTICE =
+  "En envoyant, votre description (et photos éventuelles) est transmise à Google Gemini pour générer une orientation. Ne saisissez pas de données d’identité (nom, n° de sécurité sociale, etc.). Sans clé API côté serveur, un mode démonstration local est utilisé.";

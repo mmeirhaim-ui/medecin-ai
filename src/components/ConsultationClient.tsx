@@ -70,6 +70,15 @@ export function ConsultationClient({ initialId }: Props) {
     upsertConsultation(record);
   }
 
+  async function fetchConsultTicket(): Promise<string> {
+    const res = await fetch("/api/consult/ticket", { method: "POST" });
+    const data = (await res.json()) as { ticket?: string; error?: string };
+    if (!res.ok || !data.ticket) {
+      throw new Error(data.error || "Impossible d’obtenir un jeton d’analyse.");
+    }
+    return data.ticket;
+  }
+
   async function submitInitial(e: FormEvent) {
     e.preventDefault();
     if (!symptoms.trim()) {
@@ -92,13 +101,17 @@ export function ConsultationClient({ initialId }: Props) {
     };
 
     try {
+      const ticket = await fetchConsultTicket();
       const res = await fetch("/api/consult", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-Consult-Ticket": ticket,
+        },
         body: JSON.stringify({
           consultationId,
           symptoms: symptoms.trim(),
-          images: images.map((img) => ({
+          images: images.slice(0, 2).map((img) => ({
             mimeType: img.mimeType,
             data: img.data,
             name: img.name,
@@ -146,19 +159,23 @@ export function ConsultationClient({ initialId }: Props) {
       content: followUp.trim(),
       createdAt: new Date().toISOString(),
     };
-    const history = messages.map((m) => ({
+    const history = messages.slice(-6).map((m) => ({
       role: m.role,
-      content: m.content,
+      content: m.content.slice(0, 1200),
     }));
 
     try {
+      const ticket = await fetchConsultTicket();
       const res = await fetch("/api/consult", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-Consult-Ticket": ticket,
+        },
         body: JSON.stringify({
           consultationId,
-          symptoms,
-          message: followUp.trim(),
+          symptoms: symptoms.slice(0, 4000),
+          message: followUp.trim().slice(0, 1500),
           history,
         }),
       });
@@ -246,9 +263,10 @@ export function ConsultationClient({ initialId }: Props) {
             />
           </div>
 
-          <ImageUpload images={images} onChange={setImages} />
+          <ImageUpload images={images} onChange={setImages} max={2} />
 
           <Disclaimer variant="banner" />
+          <Disclaimer variant="privacy" />
 
           {error && (
             <p className="text-sm text-[var(--urgent)]" role="alert">
@@ -325,6 +343,7 @@ export function ConsultationClient({ initialId }: Props) {
               onSubmit={submitFollowUp}
               className="space-y-3 border-t border-[var(--line)] pt-4"
             >
+              <Disclaimer variant="privacy" />
               <label htmlFor="followup" className="sr-only">
                 Message de suivi
               </label>

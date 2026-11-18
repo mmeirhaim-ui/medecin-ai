@@ -9,7 +9,7 @@ type Props = {
   max?: number;
 };
 
-const MAX_BYTES = 3.5 * 1024 * 1024;
+const MAX_BYTES = 0.65 * 1024 * 1024;
 
 async function fileToUploaded(file: File): Promise<UploadedImage> {
   const buffer = await file.arrayBuffer();
@@ -28,7 +28,7 @@ async function fileToUploaded(file: File): Promise<UploadedImage> {
   };
 }
 
-export function ImageUpload({ images, onChange, max = 4 }: Props) {
+export function ImageUpload({ images, onChange, max = 2 }: Props) {
   const inputId = useId();
   const inputRef = useRef<HTMLInputElement>(null);
 
