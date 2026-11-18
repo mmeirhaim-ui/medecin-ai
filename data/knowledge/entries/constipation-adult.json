@@ -1,0 +1,107 @@
+{
+  "id": "constipation-adult",
+  "category": "gi",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "constipation",
+      "cannot poo",
+      "hard stools straining"
+    ],
+    "fr": [
+      "constipation",
+      "n'arrive pas à aller à la selle",
+      "selles dures efforts"
+    ],
+    "he": [
+      "עצירות",
+      "לא מצליח לעשות צרכים",
+      "צואה קשה מאמץ"
+    ],
+    "ru": [
+      "запор",
+      "не могу сходить в туалет",
+      "твёрдый стул натуживание"
+    ]
+  },
+  "titles": {
+    "en": "Constipation (orientation)",
+    "fr": "Constipation (orientation)",
+    "he": "עצירות (הכוונה)",
+    "ru": "Запор (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Constipation is common. NHS self-care: fluids, fibre-rich diet, activity; pharmacist advice on laxatives when needed. See a GP if lasting long, blood in stool, unintended weight loss, or severe pain. Do not invent stimulant laxative regimens for children without advice.",
+      "seeDoctorIf": [
+        "Constipation lasting a long time",
+        "Blood in stool",
+        "Unexplained weight loss",
+        "Severe tummy pain",
+        "Alternating constipation/diarrhoea with red flags"
+      ],
+      "selfCare": [
+        "Drink enough fluids; increase fibre gradually; stay active; ask pharmacist about suitable laxatives"
+      ],
+      "doNot": [
+        "Do not invent high-dose laxative protocols",
+        "Do not ignore blood in stool"
+      ]
+    },
+    "fr": {
+      "summary": "La constipation est fréquente. Hydratation, fibres, activité ; pharmacien pour laxatifs. Médecin si durée longue, sang, amaigrissement, douleur sévère.",
+      "seeDoctorIf": [
+        "Constipation prolongée",
+        "Sang dans les selles",
+        "Amaigrissement",
+        "Douleur sévère"
+      ],
+      "selfCare": [
+        "Boire ; fibres ; activité ; avis pharmacien"
+      ],
+      "doNot": [
+        "Pas de protocoles de laxatifs inventés"
+      ]
+    },
+    "he": {
+      "summary": "עצירות נפוצה. נוזלים, סיבים, פעילות; רוקח למשלשלים. רופא אם ממושך, דם, ירידה במשקל, כאב חזק.",
+      "seeDoctorIf": [
+        "עצירות ממושכת",
+        "דם בצואה",
+        "ירידה במשקל",
+        "כאב חזק"
+      ],
+      "selfCare": [
+        "שתייה; סיבים; פעילות; רוקח"
+      ],
+      "doNot": [
+        "אין פרוטוקול משלשלים מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Запор часто встречается. Жидкость, клетчатка, активность; фармацевт по слабительным. Врач при длительности, крови, похудении, сильной боли.",
+      "seeDoctorIf": [
+        "Длительный запор",
+        "Кровь в стуле",
+        "Похудение",
+        "Сильная боль"
+      ],
+      "selfCare": [
+        "Пить; клетчатка; активность; фармацевт"
+      ],
+      "doNot": [
+        "Не изобретать схемы слабительных"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-constipation",
+      "name": "NHS — Constipation",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/constipation/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

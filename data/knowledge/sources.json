@@ -342,6 +342,13 @@
       ]
     },
     {
+      "id": "nhs-atopic-eczema",
+      "name": "NHS — Atopic eczema",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+      "topics": []
+    },
+    {
       "id": "nhs-bells-palsy",
       "name": "NHS — Bell's palsy",
       "org": "NHS",
@@ -381,6 +388,13 @@
       ]
     },
     {
+      "id": "nhs-ckd",
+      "name": "NHS — Chronic kidney disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/kidney-disease/",
+      "topics": []
+    },
+    {
       "id": "nhs-co",
       "name": "NHS — Carbon monoxide poisoning",
       "org": "NHS",
@@ -397,6 +411,20 @@
       "topics": []
     },
     {
+      "id": "nhs-constipation",
+      "name": "NHS — Constipation",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/constipation/",
+      "topics": []
+    },
+    {
+      "id": "nhs-copd",
+      "name": "NHS — Chronic obstructive pulmonary disease (COPD)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+      "topics": []
+    },
+    {
       "id": "nhs-croup",
       "name": "NHS — Croup",
       "org": "NHS",
@@ -406,10 +434,24 @@
       ]
     },
     {
+      "id": "nhs-cystitis",
+      "name": "NHS — Cystitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cystitis/",
+      "topics": []
+    },
+    {
       "id": "nhs-dehydration",
       "name": "NHS — Dehydration",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/dehydration/",
+      "topics": []
+    },
+    {
+      "id": "nhs-dengue",
+      "name": "NHS — Dengue",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dengue/",
       "topics": []
     },
     {
@@ -470,10 +512,24 @@
       "topics": []
     },
     {
+      "id": "nhs-gallstones",
+      "name": "NHS — Gallstones",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/gallstones/",
+      "topics": []
+    },
+    {
       "id": "nhs-gout",
       "name": "NHS — Gout",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/gout/",
+      "topics": []
+    },
+    {
+      "id": "nhs-hand-foot-mouth",
+      "name": "NHS — Hand, foot and mouth disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hand-foot-mouth-disease/",
       "topics": []
     },
     {
@@ -493,6 +549,13 @@
       ]
     },
     {
+      "id": "nhs-heart-failure",
+      "name": "NHS — Heart failure",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heart-failure/",
+      "topics": []
+    },
+    {
       "id": "nhs-heavy-periods",
       "name": "NHS — Heavy periods",
       "org": "NHS",
@@ -509,6 +572,41 @@
       ]
     },
     {
+      "id": "nhs-hyperthyroidism",
+      "name": "NHS — Overactive thyroid (hyperthyroidism)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/",
+      "topics": []
+    },
+    {
+      "id": "nhs-hypothyroidism",
+      "name": "NHS — Underactive thyroid (hypothyroidism)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+      "topics": []
+    },
+    {
+      "id": "nhs-ibs",
+      "name": "NHS — Irritable bowel syndrome (IBS)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/",
+      "topics": []
+    },
+    {
+      "id": "nhs-impetigo",
+      "name": "NHS — Impetigo",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/impetigo/",
+      "topics": []
+    },
+    {
+      "id": "nhs-iron-deficiency-anaemia",
+      "name": "NHS — Iron deficiency anaemia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+      "topics": []
+    },
+    {
       "id": "nhs-itchy-skin",
       "name": "NHS — Itchy skin",
       "org": "NHS",
@@ -516,6 +614,13 @@
       "topics": [
         "derm"
       ]
+    },
+    {
+      "id": "nhs-jaundice-babies",
+      "name": "NHS — Jaundice in babies",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/jaundice-in-babies/",
+      "topics": []
     },
     {
       "id": "nhs-malaria",
@@ -579,6 +684,13 @@
       "topics": []
     },
     {
+      "id": "nhs-piles",
+      "name": "NHS — Piles (haemorrhoids)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/piles-haemorrhoids/",
+      "topics": []
+    },
+    {
       "id": "nhs-pneumonia",
       "name": "NHS — Pneumonia",
       "org": "NHS",
@@ -611,6 +723,13 @@
       ]
     },
     {
+      "id": "nhs-psoriasis",
+      "name": "NHS — Psoriasis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/psoriasis/",
+      "topics": []
+    },
+    {
       "id": "nhs-rashes-children",
       "name": "NHS — Rashes in babies and children",
       "org": "NHS",
@@ -628,6 +747,13 @@
       "topics": [
         "eye"
       ]
+    },
+    {
+      "id": "nhs-scarlet-fever",
+      "name": "NHS — Scarlet fever",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/scarlet-fever/",
+      "topics": []
     },
     {
       "id": "nhs-sciatica",
@@ -651,6 +777,13 @@
       "topics": [
         "sepsis"
       ]
+    },
+    {
+      "id": "nhs-sinusitis",
+      "name": "NHS — Sinusitis (sinus infection)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sinusitis-sinus-infection/",
+      "topics": []
     },
     {
       "id": "nhs-stomach-ache",
@@ -684,6 +817,13 @@
       "name": "NHS — Thrush in men and women",
       "org": "NHS",
       "url": "https://www.nhs.uk/conditions/thrush-in-men-and-women/",
+      "topics": []
+    },
+    {
+      "id": "nhs-typhoid",
+      "name": "NHS — Typhoid fever",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/typhoid-fever/",
       "topics": []
     },
     {

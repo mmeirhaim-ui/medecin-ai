@@ -1,0 +1,134 @@
+{
+  "id": "neonatal-jaundice",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "jaundice baby",
+      "newborn yellow",
+      "yellow eyes baby",
+      "neonatal jaundice"
+    ],
+    "fr": [
+      "ictère nouveau-né",
+      "jaunisse bébé",
+      "yeux jaunes bébé",
+      "ictère néonatal"
+    ],
+    "he": [
+      "צהבת ביילוד",
+      "תינוק צהוב",
+      "עיניים צהובות בתינוק",
+      "צהבת ילודים"
+    ],
+    "ru": [
+      "желтуха новорождённых",
+      "жёлтый малыш",
+      "жёлтые глаза у новорождённого"
+    ]
+  },
+  "titles": {
+    "en": "Jaundice in babies",
+    "fr": "Ictère du nouveau-né",
+    "he": "צהבת ביילודים",
+    "ru": "Желтуха новорождённых"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Newborn jaundice (yellow eyes/skin) is common and often settles in ~2 weeks. NHS: emergency care if jaundice with sleepiness/hard to wake, not feeding, floppy/stiff/jerks, fever or very low temp, no wet nappies, breathing difficulty, or age <24 hours. Encourage regular feeds; treatment (e.g. phototherapy) is clinician-led — not prescribed here.",
+      "emergencyIf": [
+        "Jaundice and sleepier than normal / difficult to wake",
+        "Not feeding",
+        "Floppy, stiff, jerking or twitching",
+        "High temperature ≥38°C or low ≤36°C / hot-cold / shivering",
+        "No wet nappies",
+        "Difficulty breathing / grunting / very fast breathing",
+        "Baby less than 24 hours old with jaundice"
+      ],
+      "seeDoctorIf": [
+        "Any jaundice — midwife/GP advice",
+        "Feeding difficulties or unsure feeds are enough"
+      ],
+      "selfCare": [
+        "Encourage regular feeds (~8–12/day); wake sleepy babies for feeds if advised"
+      ],
+      "doNot": [
+        "Do not invent phototherapy or bilirubin thresholds",
+        "Do not delay if baby <24h with jaundice"
+      ]
+    },
+    "fr": {
+      "summary": "L'ictère néonatal est fréquent et s'améliore souvent en ~2 semaines. Urgence si somnolence, non-alimentation, hypotonie/raideur/secousses, fièvre/hypothermie, pas de couches mouillées, détresse, âge <24 h.",
+      "emergencyIf": [
+        "Somnolence / réveil difficile",
+        "Ne mange pas",
+        "Mou, raide, secousses",
+        "Fièvre ≥38°C ou ≤36°C",
+        "Pas de couches mouillées",
+        "Détresse respiratoire",
+        "Moins de 24 h de vie"
+      ],
+      "seeDoctorIf": [
+        "Tout ictère — avis sage-femme/médecin"
+      ],
+      "selfCare": [
+        "Tétées/biberons réguliers"
+      ],
+      "doNot": [
+        "Pas de photothérapie inventée"
+      ]
+    },
+    "he": {
+      "summary": "צהבת ביילודים נפוצה ולרוב חולפת תוך כשבועיים. חירום אם ישנוניות, לא אוכל, רפיון/נוקשות/עוויתות, חום/היפותרמיה, ללא חיתולים רטובים, קושי נשימה, או גיל <24 שעות.",
+      "emergencyIf": [
+        "ישנוניות / קשה להעיר",
+        "לא אוכל",
+        "רפוי/נוקשה/עוויתות",
+        "חום ≥38 או ≤36",
+        "אין חיתולים רטובים",
+        "קושי נשימה",
+        "מתחת ל־24 שעות"
+      ],
+      "seeDoctorIf": [
+        "כל צהבת — ייעוץ מיילדת/רופא"
+      ],
+      "selfCare": [
+        "האכלות סדירות"
+      ],
+      "doNot": [
+        "אין פוטותרפיה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Желтуха новорождённых часта и часто проходит за ~2 недели. Неотложка при сонливости, отказе от еды, вялости/скованности/подёргиваниях, лихорадке/гипотермии, отсутствии мокрых подгузников, одышке, возрасте <24 ч.",
+      "emergencyIf": [
+        "Сонливость / трудно разбудить",
+        "Не ест",
+        "Вялый, скованный, подёргивания",
+        "Температура ≥38 или ≤36",
+        "Нет мокрых подгузников",
+        "Затруднённое дыхание",
+        "Младше 24 часов"
+      ],
+      "seeDoctorIf": [
+        "Любая желтуха — совет акушерки/врача"
+      ],
+      "selfCare": [
+        "Регулярные кормления"
+      ],
+      "doNot": [
+        "Не изобретать фототерапию"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-jaundice-babies",
+      "name": "NHS — Jaundice in babies",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/jaundice-in-babies/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

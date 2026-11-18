@@ -118,6 +118,13 @@ const cases = [
   { text: "broken bone deformed limb after fall", expect: "broken-bone-fracture" },
   { text: "postmenopausal bleeding after menopause", expectIncludes: "menopause-postmenopausal-bleeding" },
   { text: "pneumonia coughing yellow green mucus breathless", expect: "pneumonia-red-flags" },
+  { text: "newborn yellow jaundice baby not feeding", expect: "neonatal-jaundice" },
+  { text: "COPD more short of breath than usual", expect: "copd-exacerbation" },
+  { text: "swollen ankles breathless frothy pink phlegm", expect: "heart-failure-cues" },
+  { text: "dengue fever pain behind eyes after travel", expect: "dengue-fever" },
+  { text: "scarlet fever sandpaper rash strawberry tongue", expect: "scarlet-fever" },
+  { text: "gallstones pain under right ribs biliary", expect: "gallstones-biliary" },
+  { text: "impetigo honey crusted sores", expect: "impetigo" },
 ];
 
 for (const c of cases) {

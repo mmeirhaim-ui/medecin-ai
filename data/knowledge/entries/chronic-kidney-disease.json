@@ -1,0 +1,104 @@
+{
+  "id": "chronic-kidney-disease",
+  "category": "uro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "chronic kidney disease",
+      "CKD",
+      "kidney disease tired swelling",
+      "blood in urine kidney"
+    ],
+    "fr": [
+      "insuffisance rénale chronique",
+      "IRC",
+      "maladie rénale fatigue œdème",
+      "sang dans les urines reins"
+    ],
+    "he": [
+      "מחלת כליות כרונית",
+      "אי ספיקת כליות",
+      "עייפות ובצקת כליות",
+      "דם בשתן כליות"
+    ],
+    "ru": [
+      "хроническая болезнь почек",
+      "ХБП",
+      "болезнь почек усталость отёк",
+      "кровь в моче почки"
+    ]
+  },
+  "titles": {
+    "en": "Chronic kidney disease (orientation)",
+    "fr": "Maladie rénale chronique (orientation)",
+    "he": "מחלת כליות כרונית (הכוונה)",
+    "ru": "Хроническая болезнь почек (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Early CKD often has no symptoms and is found on blood/urine tests. Later: tiredness, ankle/hand swelling, breathlessness, nausea, blood in urine. See a GP for persistent worrying symptoms. Acute severe illness with no urine output or severe breathlessness needs urgent care. No inventing ACE-inhibitor or ESA doses.",
+      "emergencyIf": [
+        "No urine output with severe illness",
+        "Severe breathlessness with suspected fluid overload",
+        "Chest pain or collapse"
+      ],
+      "seeDoctorIf": [
+        "Persistent tiredness, swelling, breathlessness, nausea, or blood in urine",
+        "Known diabetes/hypertension — discuss kidney checks"
+      ],
+      "doNot": [
+        "Do not invent kidney-drug doses",
+        "Do not stop prescribed medicines without advice"
+      ]
+    },
+    "fr": {
+      "summary": "L'IRC précoce est souvent silencieuse. Plus tard : fatigue, œdèmes, dyspnée, nausées, hématurie. Avis médical. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Anurie avec maladie grave",
+        "Dyspnée sévère avec surcharge liquidienne suspectée"
+      ],
+      "seeDoctorIf": [
+        "Fatigue, œdèmes, dyspnée, nausées ou sang dans les urines persistants"
+      ],
+      "doNot": [
+        "Pas de doses de médicaments rénaux inventées"
+      ]
+    },
+    "he": {
+      "summary": "CKD מוקדמת לרוב ללא תסמינים. בהמשך: עייפות, בצקות, קוצר נשימה, בחילה, דם בשתן. ייעוץ רפואי. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "אין שתן עם מחלה קשה",
+        "קוצר נשימה חמור עם חשד לעומס נוזלים"
+      ],
+      "seeDoctorIf": [
+        "עייפות, בצקות, קוצר נשימה, בחילה או דם בשתן מתמשכים"
+      ],
+      "doNot": [
+        "אין מינון תרופות כליה מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Ранняя ХБП часто бессимптомна. Позже: усталость, отёки, одышка, тошнота, кровь в моче. К врачу. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Нет мочи при тяжёлом состоянии",
+        "Тяжёлая одышка с подозрением на гиперволемию"
+      ],
+      "seeDoctorIf": [
+        "Стойкая усталость, отёки, одышка, тошнота или кровь в моче"
+      ],
+      "doNot": [
+        "Не изобретать дозы почечных препаратов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ckd",
+      "name": "NHS — Chronic kidney disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/kidney-disease/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
