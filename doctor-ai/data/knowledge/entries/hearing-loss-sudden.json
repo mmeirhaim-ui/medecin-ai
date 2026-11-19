@@ -1,0 +1,98 @@
+{
+  "id": "hearing-loss-sudden",
+  "category": "ent",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "sudden hearing loss",
+      "deaf in one ear suddenly",
+      "sudden deafness"
+    ],
+    "fr": [
+      "surdité brutale",
+      "sourd d'une oreille soudainement"
+    ],
+    "he": [
+      "ירידת שמיעה פתאומית",
+      "חרש פתאומי באוזן אחת"
+    ],
+    "ru": [
+      "внезапная потеря слуха",
+      "внезапно оглох на одно ухо"
+    ]
+  },
+  "titles": {
+    "en": "Sudden hearing loss",
+    "fr": "Surdité brutale",
+    "he": "ירידת שמיעה פתאומית",
+    "ru": "Внезапная потеря слуха"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sudden hearing loss in one or both ears is an urgent ENT issue. NHS: seek same-day urgent assessment. Do not wait to 'see if it passes'. Treatments (e.g. steroids) are clinician-only — no invented doses. Also rule out stroke/red-flag neuro symptoms.",
+      "emergencyIf": [
+        "Sudden hearing loss",
+        "Sudden hearing loss with facial weakness, speech trouble, or severe headache"
+      ],
+      "seeDoctorIf": [
+        "Any sudden drop in hearing — urgent same-day care"
+      ],
+      "doNot": [
+        "Do not wait days hoping it improves",
+        "Do not invent oral/IV steroid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Une surdité brutale est une urgence ORL. Avis le jour même. Pas de corticoïdes inventés. Écarter signes d'AVC.",
+      "emergencyIf": [
+        "Surdité brutale",
+        "Avec faiblesse faciale / trouble de parole / céphalée sévère"
+      ],
+      "seeDoctorIf": [
+        "Toute baisse soudaine d'audition"
+      ],
+      "doNot": [
+        "Ne pas attendre des jours",
+        "Pas de corticoïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "ירידת שמיעה פתאומית היא דחופה. הערכה באותו יום. אין סטרואידים מומצאים. לשלול שבץ.",
+      "emergencyIf": [
+        "ירידת שמיעה פתאומית",
+        "עם חולשת פנים / דיבור / כאב ראש חזק"
+      ],
+      "seeDoctorIf": [
+        "כל ירידה פתאומית בשמיעה"
+      ],
+      "doNot": [
+        "לא לחכות ימים",
+        "אין סטרואידים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Внезапная потеря слуха — срочная ЛОР-проблема. Оценка в тот же день. Стероиды не выдумывать. Исключать инсульт.",
+      "emergencyIf": [
+        "Внезапная потеря слуха",
+        "С слабостью лица / речи / сильной головной болью"
+      ],
+      "seeDoctorIf": [
+        "Любое внезапное снижение слуха"
+      ],
+      "doNot": [
+        "Не ждать днями",
+        "Не изобретать стероиды"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hearing-loss",
+      "name": "NHS — Hearing loss",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hearing-loss/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

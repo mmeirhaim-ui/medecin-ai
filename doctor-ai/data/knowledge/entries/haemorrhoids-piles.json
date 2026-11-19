@@ -1,0 +1,120 @@
+{
+  "id": "haemorrhoids-piles",
+  "category": "gi",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "haemorrhoids",
+      "piles",
+      "hemorrhoids itching bleeding",
+      "anal lumps"
+    ],
+    "fr": [
+      "hémorroïdes",
+      "saignement anal démangeaisons",
+      "boules à l'anus"
+    ],
+    "he": [
+      "טחורים",
+      "דימום אנאלי גרד",
+      "בליטות בפי הטבעת"
+    ],
+    "ru": [
+      "геморрой",
+      "зуд и кровь из заднего прохода",
+      "узелки в анусе"
+    ]
+  },
+  "titles": {
+    "en": "Piles (haemorrhoids)",
+    "fr": "Hémorroïdes",
+    "he": "טחורים",
+    "ru": "Геморрой"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Piles can cause itching, discomfort, and bright red blood on wiping. NHS: self-care with fibre/fluids; pharmacy products. See a GP if bleeding persists, severe pain, or unsure. Heavy bleeding or black stools need urgent assessment (may not be piles).",
+      "seeDoctorIf": [
+        "Bleeding that does not settle",
+        "Severe anal pain",
+        "Unsure of the cause"
+      ],
+      "emergencyIf": [
+        "Heavy rectal bleeding",
+        "Black tarry stools",
+        "Dizziness with bleeding"
+      ],
+      "selfCare": [
+        "Fluids and fibre; avoid straining; ask pharmacist about creams/ointments"
+      ],
+      "doNot": [
+        "Do not assume all rectal bleeding is piles",
+        "Do not invent prescription steroid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Les hémorroïdes causent démangeaisons, gêne, sang rouge vif. Autosoins ; pharmacie. Médecin si saignement persiste. Saignement abondant/selles noires = urgence.",
+      "seeDoctorIf": [
+        "Saignement qui ne cède pas",
+        "Douleur anale sévère"
+      ],
+      "emergencyIf": [
+        "Saignement rectal abondant",
+        "Selles noires",
+        "Vertige avec saignement"
+      ],
+      "selfCare": [
+        "Hydratation et fibres ; éviter les efforts ; pharmacien"
+      ],
+      "doNot": [
+        "Ne pas attribuer tout saignement aux hémorroïdes"
+      ]
+    },
+    "he": {
+      "summary": "טחורים: גרד, אי-נוחות, דם אדום בהיר. טיפול עצמי; בית מרקחת. רופא אם דימום נמשך. דימום כבד/צואה שחורה — חירום.",
+      "seeDoctorIf": [
+        "דימום שלא מפסיק",
+        "כאב אנאלי חזק"
+      ],
+      "emergencyIf": [
+        "דימום רקטלי כבד",
+        "צואה שחורה",
+        "סחרחורת עם דימום"
+      ],
+      "selfCare": [
+        "נוזלים וסיבים; להימנע ממאמץ; רוקח"
+      ],
+      "doNot": [
+        "לא להניח שכל דימום הוא טחורים"
+      ]
+    },
+    "ru": {
+      "summary": "Геморрой: зуд, дискомфорт, ярко-красная кровь. Самопомощь; аптека. Врач если кровотечение не проходит. Обильное кровотечение/чёрный стул — неотложка.",
+      "seeDoctorIf": [
+        "Кровотечение не проходит",
+        "Сильная анальная боль"
+      ],
+      "emergencyIf": [
+        "Обильное ректальное кровотечение",
+        "Чёрный стул",
+        "Головокружение с кровотечением"
+      ],
+      "selfCare": [
+        "Жидкость и клетчатка; не тужиться; фармацевт"
+      ],
+      "doNot": [
+        "Не считать любое кровотечение геморроем"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-piles",
+      "name": "NHS — Piles (haemorrhoids)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/piles-haemorrhoids/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

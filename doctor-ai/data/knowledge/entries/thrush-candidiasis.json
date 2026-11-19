@@ -1,0 +1,123 @@
+{
+  "id": "thrush-candidiasis",
+  "category": "gyn",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "thrush",
+      "yeast infection",
+      "candida itch",
+      "vaginal thrush",
+      "white discharge itch"
+    ],
+    "fr": [
+      "muguet vaginal",
+      "mycose vaginale",
+      "candida démangeaisons",
+      "pertes blanches qui grattent"
+    ],
+    "he": [
+      "פטרייה וגינלית",
+      "קנדידה",
+      "גרד עם הפרשה לבנה",
+      "קיכאון"
+    ],
+    "ru": [
+      "молочница",
+      "кандидоз",
+      "зуд с белыми выделениями"
+    ]
+  },
+  "titles": {
+    "en": "Thrush (candidiasis) — self-care cues",
+    "fr": "Mycose / candidose — autoprise en charge",
+    "he": "פטרייה (קנדידה) — טיפול עצמי",
+    "ru": "Молочница (кандидоз) — самопомощь"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Thrush often causes itch and thick white discharge. NHS: pharmacy advice for typical uncomplicated cases; see a GP if pregnant, recurrent, unsure, severe, or with pelvic pain/fever (could be another infection). No inventing prescription antifungals.",
+      "emergencyIf": [
+        "Severe pelvic pain with fever (not typical simple thrush)"
+      ],
+      "seeDoctorIf": [
+        "Pregnant",
+        "Recurrent thrush",
+        "Unsure of diagnosis",
+        "Symptoms after treatment not improving",
+        "Blood in discharge or foul smell suggesting other infection"
+      ],
+      "selfCare": [
+        "Loose cotton underwear; avoid irritants; ask pharmacist about over-the-counter options where appropriate"
+      ],
+      "doNot": [
+        "Do not invent oral antifungal doses",
+        "Do not assume STI treatment without testing when risk factors present"
+      ]
+    },
+    "fr": {
+      "summary": "La mycose provoque souvent démangeaisons et pertes blanches épaisses. Conseil pharmacien si typique ; médecin si grossesse, récidives, doute, douleur pelvienne/fièvre.",
+      "emergencyIf": [
+        "Douleur pelvienne sévère avec fièvre"
+      ],
+      "seeDoctorIf": [
+        "Grossesse",
+        "Récidives",
+        "Doute",
+        "Pas d'amélioration"
+      ],
+      "selfCare": [
+        "Sous-vêtements coton ; éviter irritants ; avis pharmacien"
+      ],
+      "doNot": [
+        "Pas d'antifongiques oraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "פטרייה גורמת לרוב לגרד והפרשה לבנה סמיכה. ייעוץ בית מרקחת אם טיפוסי; רופא בהריון, חוזר, ספק, כאב אגן/חום.",
+      "emergencyIf": [
+        "כאב אגן חזק עם חום"
+      ],
+      "seeDoctorIf": [
+        "הריון",
+        "חוזר",
+        "ספק",
+        "אין שיפור"
+      ],
+      "selfCare": [
+        "כותנה; להימנע ממגרים; רוקח"
+      ],
+      "doNot": [
+        "אין אנטי־פטרייתי פומי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Молочница часто даёт зуд и густые белые выделения. Совет фармацевта если типично; врач при беременности, рецидивах, сомнении, тазовой боли/лихорадке.",
+      "emergencyIf": [
+        "Сильная тазовая боль с лихорадкой"
+      ],
+      "seeDoctorIf": [
+        "Беременность",
+        "Рецидивы",
+        "Сомнение",
+        "Нет улучшения"
+      ],
+      "selfCare": [
+        "Хлопковое бельё; избегать раздражителей; фармацевт"
+      ],
+      "doNot": [
+        "Не изобретать дозы пероральных противогрибковых"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-thrush",
+      "name": "NHS — Thrush in men and women",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/thrush-in-men-and-women/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

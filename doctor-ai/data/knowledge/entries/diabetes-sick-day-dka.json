@@ -1,0 +1,146 @@
+{
+  "id": "diabetes-sick-day-dka",
+  "category": "endocrine",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "diabetic ketoacidosis",
+      "DKA",
+      "ketones",
+      "fruity breath",
+      "diabetes sick day",
+      "blood sugar very high",
+      "hypoglycemia severe"
+    ],
+    "fr": [
+      "acidocétose diabétique",
+      "acétone",
+      "haleine fruitée",
+      "diabète jour de maladie",
+      "hypoglycémie sévère",
+      "sucre très haut"
+    ],
+    "he": [
+      "חמצת קטוטית",
+      "קטונים",
+      "ריח פירותי",
+      "סוכרת יום מחלה",
+      "היפוגליקמיה חמורה"
+    ],
+    "ru": [
+      "диабетический кетоацидоз",
+      "кетоны",
+      "фруктовый запах изо рта",
+      "диабет болезнь",
+      "тяжёлая гипогликемия"
+    ]
+  },
+  "titles": {
+    "en": "Diabetes sick day / possible DKA",
+    "fr": "Diabète en cas de maladie / ACD possible",
+    "he": "סוכרת בימי מחלה / חשד ל־DKA",
+    "ru": "Диабет в дни болезни / возможный ДКА"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Illness can destabilize blood sugar. DKA is a medical emergency (ketones, fruity breath, nausea/vomiting, trouble breathing, decreased alertness). Follow the person's sick-day plan; this tool does not set insulin doses.",
+      "emergencyIf": [
+        "Trouble breathing",
+        "Ketones present (per home testing guidance) with illness",
+        "Cannot keep liquids >4 hours or food >24 hours",
+        "Blood sugar <60 mg/dL (≈3.3 mmol/L) per CDC sick-day framing",
+        "Vomiting/severe diarrhoea >6 hours",
+        "Fever >101°F (≈38.3°C) for 24 hours",
+        "Decreased consciousness, fruity breath, nausea/vomiting, trouble breathing (MedlinePlus DKA)"
+      ],
+      "seeDoctorIf": [
+        "Ketones present — contact clinician right away",
+        "Unintentional weight loss during illness",
+        "Unsure how to adjust insulin — clinician only"
+      ],
+      "selfCare": [
+        "Continue insulin/diabetes medicines as usual unless clinician advised otherwise",
+        "Check glucose often; drink water; try to eat as normally as possible"
+      ],
+      "doNot": [
+        "Do not invent insulin doses",
+        "Do not delay ER for DKA warning signs"
+      ]
+    },
+    "fr": {
+      "summary": "Une maladie peut déstabiliser la glycémie. L'ACD est une urgence (cétones, haleine fruitée, nausées/vomissements, dyspnée, baisse de vigilance). Pas de doses d'insuline ici.",
+      "emergencyIf": [
+        "Difficulté à respirer",
+        "Cétones présentes",
+        "Impossible de garder les liquides",
+        "Conscience diminuée, haleine fruitée, vomissements"
+      ],
+      "seeDoctorIf": [
+        "Cétones — contacter immédiatement",
+        "Perte de poids involontaire"
+      ],
+      "selfCare": [
+        "Continuer le traitement habituel sauf avis contraire",
+        "Contrôler la glycémie souvent ; boire"
+      ],
+      "doNot": [
+        "Pas de schéma d'insuline inventé"
+      ]
+    },
+    "he": {
+      "summary": "מחלה עלולה לערער סוכר. DKA היא חירום (קטונים, ריח פירותי, הקאות, קושי נשימה, ירידה בערנות). אין מינוני אינסולין כאן.",
+      "emergencyIf": [
+        "קושי נשימה",
+        "קטונים חיוביים",
+        "לא מצליחים להחזיק נוזלים",
+        "ירידה בהכרה / ריח פירותי / הקאות"
+      ],
+      "seeDoctorIf": [
+        "קטונים — פנייה מיידית לרופא"
+      ],
+      "selfCare": [
+        "להמשיך טיפול רגיל אלא אם נאמר אחרת",
+        "לבדוק סוכר לעיתים קרובות"
+      ],
+      "doNot": [
+        "אין מינון אינסולין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Болезнь может дестабилизировать сахар. ДКА — неотложность (кетоны, фруктовый запах, рвота, одышка, снижение сознания). Здесь нет доз инсулина.",
+      "emergencyIf": [
+        "Затруднённое дыхание",
+        "Есть кетоны",
+        "Не удерживается жидкость",
+        "Снижение сознания, фруктовый запах, рвота"
+      ],
+      "seeDoctorIf": [
+        "Кетоны — сразу к врачу"
+      ],
+      "selfCare": [
+        "Продолжать обычное лечение, если врач не сказал иное",
+        "Чаще измерять сахар; пить воду"
+      ],
+      "doNot": [
+        "Не изобретать дозы инсулина"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "cdc-diabetes-sick",
+      "name": "CDC — Managing sick days (diabetes)",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/diabetes/living-with/managing-sick-days.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-dka",
+      "name": "MedlinePlus — Diabetic ketoacidosis",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/000320.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

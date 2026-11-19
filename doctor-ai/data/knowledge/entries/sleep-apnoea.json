@@ -1,0 +1,104 @@
+{
+  "id": "sleep-apnoea",
+  "category": "respiratory",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "sleep apnoea",
+      "sleep apnea snoring pauses breathing",
+      "CPAP sleep apnoea"
+    ],
+    "fr": [
+      "apnée du sommeil",
+      "ronflement pauses respiratoires",
+      "PPC apnée"
+    ],
+    "he": [
+      "דום נשימה בשינה",
+      "נחירות עם הפסקות נשימה",
+      "CPAP דום נשימה"
+    ],
+    "ru": [
+      "апноэ сна",
+      "храп с остановками дыхания",
+      "СИПАП апноэ"
+    ]
+  },
+  "titles": {
+    "en": "Sleep apnoea",
+    "fr": "Apnée du sommeil",
+    "he": "דום נשימה בשינה",
+    "ru": "Апноэ сна"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Obstructive sleep apnoea causes pauses in breathing during sleep, loud snoring, daytime sleepiness and concentration problems. NHS: GP/sleep clinic pathways; CPAP and lifestyle measures are clinician-led — never invent device settings or drug doses. Emergency: severe breathlessness while awake, chest pain, or blue lips — use cardio/respiratory pathways.",
+      "emergencyIf": [
+        "Severe breathlessness at rest while awake",
+        "Chest pain or blue lips",
+        "Confusion with breathing difficulty"
+      ],
+      "seeDoctorIf": [
+        "Loud snoring with witnessed pauses",
+        "Daytime sleepiness affecting driving",
+        "Morning headaches with snoring"
+      ],
+      "doNot": [
+        "Do not invent CPAP pressure settings or stimulant doses",
+        "Do not drive if dangerously sleepy"
+      ]
+    },
+    "fr": {
+      "summary": "Apnée du sommeil: pauses, ronflement, somnolence. Orientation NHS; pas de réglages PPC inventés. Urgences si dyspnée éveillée sévère.",
+      "emergencyIf": [
+        "Dyspnée sévère éveillé",
+        "Douleur thoracique / lèvres bleues"
+      ],
+      "seeDoctorIf": [
+        "Ronflement avec pauses",
+        "Somnolence diurne"
+      ],
+      "doNot": [
+        "Pas de réglages PPC inventés"
+      ]
+    },
+    "he": {
+      "summary": "דום נשימה בשינה: הפסקות, נחירות, ישנוניות. לפי NHS; אין הגדרות CPAP מומצאות. חירום בקוצר נשימה בערות.",
+      "emergencyIf": [
+        "קוצר נשימה קשה בערות",
+        "כאב חזה / שפתיים כחולות"
+      ],
+      "seeDoctorIf": [
+        "נחירות עם הפסקות",
+        "ישנוניות ביום"
+      ],
+      "doNot": [
+        "אין הגדרות CPAP מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Апноэ сна: паузы, храп, сонливость. Ориентир NHS; настройки СИПАП не выдумывать. Неотложка при тяжёлой одышке наяву.",
+      "emergencyIf": [
+        "Тяжёлая одышка наяву",
+        "Боль в груди / синие губы"
+      ],
+      "seeDoctorIf": [
+        "Храп с паузами",
+        "Дневная сонливость"
+      ],
+      "doNot": [
+        "Не изобретать настройки СИПАП"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-sleep-apnoea",
+      "name": "NHS — Sleep apnoea",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "peds-croup",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "croup",
+      "barking cough",
+      "stridor",
+      "seal cough child"
+    ],
+    "fr": [
+      "laryngite striduleuse",
+      "croup",
+      "toux aboyante",
+      "stridor",
+      "toux de phoque"
+    ],
+    "he": [
+      "קרופ",
+      "שיעול נביחה",
+      "סטרידור",
+      "שיעול כמו כלב ים"
+    ],
+    "ru": [
+      "круп",
+      "лающий кашель",
+      "стридор",
+      "кашель как у тюленя"
+    ]
+  },
+  "titles": {
+    "en": "Croup (barking cough / stridor)",
+    "fr": "Laryngite / croup (toux aboyante)",
+    "he": "קרופ (שיעול נביחה / סטרידור)",
+    "ru": "Круп (лающий кашель / стридор)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Croup often follows colds with a barking cough and harsh breathing-in sound. Call urgent advice if suspected. Emergency if struggling to breathe, colour change, very sleepy/floppy, or drooling with swallow difficulty. Do not use steam rooms (NHS).",
+      "emergencyIf": [
+        "Struggling to breathe (grunting, tummy sucking under ribs)",
+        "Blue/grey/pale/blotchy skin/lips/tongue",
+        "Sleepier than normal or difficult to wake",
+        "Limp/floppy/not responding",
+        "Very upset with breathing difficulty that cannot be calmed",
+        "Unwell and drooling more / hard to swallow"
+      ],
+      "seeDoctorIf": [
+        "Think child may have croup",
+        "Getting worse after seeing a clinician"
+      ],
+      "selfCare": [
+        "Sit upright; keep calm; fluids; check overnight",
+        "Paracetamol/ibuprofen for fever/discomfort per label/age"
+      ],
+      "doNot": [
+        "Do not put child in a steamy room or force steam inhalation (NHS)",
+        "Do not invent steroid doses"
+      ]
+    },
+    "fr": {
+      "summary": "Le croup donne souvent une toux aboyante et un stridor. Avis urgent si suspecté. Urgence si détresse respiratoire, cyanose, enfant mou/somnolent. Pas de pièces à vapeur (NHS).",
+      "emergencyIf": [
+        "Détresse respiratoire",
+        "Peau/lèvres bleues ou marbrées",
+        "Très somnolent ou mou",
+        "Salivation + difficulté à avaler"
+      ],
+      "seeDoctorIf": [
+        "Suspicion de croup",
+        "Aggravation"
+      ],
+      "selfCare": [
+        "Position assise ; calme ; boissons"
+      ],
+      "doNot": [
+        "Pas de vapeur forcée",
+        "Pas de corticoïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "קרופ לרוב עם שיעול נביחה וסטרידור. ייעוץ דחוף בחשד. חירום במצוקה נשימתית, כיחלון או ילד רפוי/ישנוני. לא חדרי אדים (NHS).",
+      "emergencyIf": [
+        "מצוקה נשימתית",
+        "עור/שפתיים כחלחלים",
+        "ישנוני מאוד או רפוי",
+        "ריור מוגבר וקושי בבליעה"
+      ],
+      "seeDoctorIf": [
+        "חשד לקרופ",
+        "החמרה"
+      ],
+      "selfCare": [
+        "ישיבה זקופה; להרגיע; שתייה"
+      ],
+      "doNot": [
+        "לא להכניס לחדר אדים"
+      ]
+    },
+    "ru": {
+      "summary": "Круп часто даёт лающий кашель и стридор. При подозрении — срочный совет. Неотложка при дыхательной недостаточности, синюшности или вялости. Не использовать паровые комнаты (NHS).",
+      "emergencyIf": [
+        "Тяжёлое дыхание",
+        "Синюшные/пятнистые губы/кожа",
+        "Очень сонливый или вялый",
+        "Слюнотечение и трудно глотать"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на круп",
+        "Ухудшение"
+      ],
+      "selfCare": [
+        "Сидячее положение; успокоить; поить"
+      ],
+      "doNot": [
+        "Не устраивать «парную»",
+        "Не изобретать дозы стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-croup",
+      "name": "NHS — Croup",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/croup/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-child-colds",
+      "name": "NHS — Colds, coughs and ear infections in children",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/baby/health/colds-coughs-and-ear-infections-in-children/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

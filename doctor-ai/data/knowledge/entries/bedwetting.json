@@ -1,0 +1,104 @@
+{
+  "id": "bedwetting",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "bedwetting",
+      "enuresis",
+      "child wets the bed"
+    ],
+    "fr": [
+      "énurésie",
+      "pipi au lit",
+      "enfant mouille le lit"
+    ],
+    "he": [
+      "הרטבת לילה",
+      "ילד מרטיב במיטה"
+    ],
+    "ru": [
+      "ночное недержание",
+      "ребёнок мочится в постель"
+    ]
+  },
+  "titles": {
+    "en": "Bedwetting (enuresis)",
+    "fr": "Énurésie nocturne",
+    "he": "הרטבת לילה",
+    "ru": "Ночной энурез"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Bedwetting is common in young children and often improves with time. NHS: supportive approach; see GP if starting after being dry, daytime symptoms, pain, thirst, or family distress. Alarms/medicines are clinician-guided — no invented desmopressin doses.",
+      "seeDoctorIf": [
+        "New bedwetting after a long dry period",
+        "Daytime wetting, pain, excessive thirst",
+        "Constipation with wetting",
+        "Family wanting structured help"
+      ],
+      "selfCare": [
+        "Calm support; easy night access to toilet; limit blame; waterproof mattress cover"
+      ],
+      "doNot": [
+        "Do not invent desmopressin regimens",
+        "Do not punish the child"
+      ]
+    },
+    "fr": {
+      "summary": "L'énurésie est fréquente et s'améliore souvent. Approche bienveillante ; médecin si récidive après propreté, symptômes diurnes, soif. Pas de desmopressine inventée.",
+      "seeDoctorIf": [
+        "Réapparition après période sèche",
+        "Symptômes diurnes / douleur / soif",
+        "Constipation associée"
+      ],
+      "selfCare": [
+        "Soutien calme ; accès toilettes ; housse impermeable"
+      ],
+      "doNot": [
+        "Pas de desmopressine inventée",
+        "Ne pas punir"
+      ]
+    },
+    "he": {
+      "summary": "הרטבת לילה נפוצה ומשתפרת לרוב. גישה תומכת; רופא אם חוזר אחרי יובש, תסמיני יום, צמא. אין דסמופרסין מומצא.",
+      "seeDoctorIf": [
+        "הרטבה חדשה אחרי תקופה יבשה",
+        "הרטבה ביום / כאב / צמא מוגבר",
+        "עצירות נלווית"
+      ],
+      "selfCare": [
+        "תמיכה רגועה; גישה לשירותים; כיסוי אטום"
+      ],
+      "doNot": [
+        "אין דסמופרסין מומצא",
+        "לא להעניש"
+      ]
+    },
+    "ru": {
+      "summary": "Ночной энурез частый и часто проходит. Поддержка; врач если после сухого периода, дневные симптомы, жажда. Десмопрессин не выдумывать.",
+      "seeDoctorIf": [
+        "Новое недержание после сухого периода",
+        "Дневные симптомы / боль / жажда",
+        "Запор"
+      ],
+      "selfCare": [
+        "Спокойная поддержка; доступ к туалету; непромокаемый чехол"
+      ],
+      "doNot": [
+        "Не изобретать десмопрессин",
+        "Не наказывать"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-bedwetting",
+      "name": "NHS — Bedwetting",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bedwetting/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

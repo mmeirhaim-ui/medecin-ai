@@ -1,0 +1,100 @@
+{
+  "id": "plantar-fasciitis",
+  "category": "msk",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "plantar fasciitis",
+      "heel pain first steps",
+      "pain bottom of foot morning"
+    ],
+    "fr": [
+      "aponévrosite plantaire",
+      "douleur talon premiers pas",
+      "talalgie matinale"
+    ],
+    "he": [
+      "דלקת פאשיה של כף הרגל",
+      "כאב עקב בצעדים ראשונים"
+    ],
+    "ru": [
+      "плантарный фасциит",
+      "боль в пятке первые шаги"
+    ]
+  },
+  "titles": {
+    "en": "Plantar fasciitis",
+    "fr": "Aponévrosite plantaire",
+    "he": "פלנטר פשיאיטיס",
+    "ru": "Плантарный фасциит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Plantar fasciitis causes heel/arch pain, often worse with first steps. NHS: rest from aggravating activity, supportive shoes, stretching, pharmacy advice; GP/physio if persistent. No inventing steroid injection doses.",
+      "seeDoctorIf": [
+        "Heel pain lasting weeks",
+        "Inability to walk",
+        "Sudden severe heel pain after a pop (possible rupture — urgent review)"
+      ],
+      "selfCare": [
+        "Reduce impact; supportive footwear; calf/plantar stretches; ice wrapped after activity"
+      ],
+      "doNot": [
+        "Do not invent steroid injection regimens",
+        "Do not ignore sudden 'pop' with severe pain"
+      ]
+    },
+    "fr": {
+      "summary": "L'aponévrosite plantaire fait mal au talon, surtout aux premiers pas. Chaussures adaptées, étirements ; médecin si persistant. Pas d'injections inventées.",
+      "seeDoctorIf": [
+        "Douleur prolongée",
+        "Impossible de marcher",
+        "Douleur brutale après un 'clac'"
+      ],
+      "selfCare": [
+        "Réduire les impacts ; chaussures de soutien ; étirements"
+      ],
+      "doNot": [
+        "Pas d'injections inventées"
+      ]
+    },
+    "he": {
+      "summary": "פלנטר פשיאיטיס: כאב עקב/קשת, לרוב בצעדים ראשונים. נעליים תומכות, מתיחות; רופא אם נמשך. אין זריקות מומצאות.",
+      "seeDoctorIf": [
+        "כאב ממושך",
+        "לא יכול ללכת",
+        "כאב פתאומי אחרי 'קליק'"
+      ],
+      "selfCare": [
+        "להפחית עומס; נעליים תומכות; מתיחות"
+      ],
+      "doNot": [
+        "אין זריקות מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Плантарный фасциит: боль в пятке/своде, хуже с первых шагов. Обувь с поддержкой, растяжки; врач если длится. Инъекции не выдумывать.",
+      "seeDoctorIf": [
+        "Длительная боль",
+        "Нельзя ходить",
+        "Внезапная боль после «щелчка»"
+      ],
+      "selfCare": [
+        "Снизить ударную нагрузку; поддерживающая обувь; растяжки"
+      ],
+      "doNot": [
+        "Не изобретать инъекции"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-plantar-fasciitis",
+      "name": "NHS — Plantar fasciitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/plantar-fasciitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

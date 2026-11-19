@@ -1,0 +1,105 @@
+{
+  "id": "ringworm",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "ringworm",
+      "tinea",
+      "circular scaly rash fungus",
+      "jock itch"
+    ],
+    "fr": [
+      "teigne",
+      "dermatophytie",
+      "plaque circulaire squameuse",
+      "eczéma marginé"
+    ],
+    "he": [
+      "גזזת",
+      "טינאה",
+      "פריחה עגולה קשקשית פטרייה"
+    ],
+    "ru": [
+      "стригущий лишай",
+      "микроспория",
+      "кольцевидная чешуйчатая сыпь"
+    ]
+  },
+  "titles": {
+    "en": "Ringworm (fungal rash)",
+    "fr": "Teigne / dermatophytie",
+    "he": "גזזת / פטרת עור",
+    "ru": "Стригущий лишай"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Ringworm is a fungal infection (not a worm) causing a scaly, itchy, often ring-shaped rash. NHS: see a pharmacist first for antifungal cream/gel/spray/tablets as appropriate. Use for the full recommended course. GP if scalp involvement, unclear diagnosis, or not improving.",
+      "seeDoctorIf": [
+        "Scalp ringworm",
+        "Not improving after pharmacy treatment",
+        "Uncertain diagnosis",
+        "Extensive rash"
+      ],
+      "selfCare": [
+        "Ask pharmacist which antifungal suits the site; complete the course even if rash fades"
+      ],
+      "doNot": [
+        "Do not invent oral antifungal doses",
+        "Do not share towels while contagious"
+      ]
+    },
+    "fr": {
+      "summary": "La teigne est une mycose (pas un ver). Pharmacien d'abord pour antifongique. Médecin si cuir chevelu, doute, échec. Pas de comprimés inventés.",
+      "seeDoctorIf": [
+        "Atteinte du cuir chevelu",
+        "Échec du traitement pharmacie",
+        "Doute"
+      ],
+      "selfCare": [
+        "Suivre le conseil du pharmacien jusqu'au bout"
+      ],
+      "doNot": [
+        "Pas d'antifongiques oraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "גזזת היא פטרת (לא תולעת). רוקח תחילה לתכשיר אנטי־פטרייתי. רופא אם קרקפת, ספק, או אין שיפור. אין מינון פומי מומצא.",
+      "seeDoctorIf": [
+        "מעורבות קרקפת",
+        "אין שיפור אחרי טיפול בית מרקחת",
+        "ספק"
+      ],
+      "selfCare": [
+        "לפי ייעוץ הרוקח עד סוף הקורס"
+      ],
+      "doNot": [
+        "אין אנטי־פטרייתי פומי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Стригущий лишай — грибок (не червь). Сначала фармацевт за противогрибковым. Врач при поражении кожи головы, сомнении, неэффективности. Пероральные дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Поражение кожи головы",
+        "Нет улучшения после аптеки",
+        "Сомнение"
+      ],
+      "selfCare": [
+        "Следовать совету фармацевта до конца курса"
+      ],
+      "doNot": [
+        "Не изобретать пероральные противогрибковые"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ringworm",
+      "name": "NHS — Ringworm",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ringworm/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "iron-deficiency-anaemia",
+  "category": "general",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "iron deficiency",
+      "anaemia tired pale",
+      "anemia low iron",
+      "low ferritin"
+    ],
+    "fr": [
+      "carence en fer",
+      "anémie fatigué pâle",
+      "ferritine basse"
+    ],
+    "he": [
+      "חסר ברזל",
+      "אנמיה עייף חיוור",
+      "פריטין נמוך"
+    ],
+    "ru": [
+      "дефицит железа",
+      "анемия усталость бледность",
+      "низкий ферритин"
+    ]
+  },
+  "titles": {
+    "en": "Iron deficiency anaemia (orientation)",
+    "fr": "Anémie par carence en fer (orientation)",
+    "he": "אנמיה מחוסר ברזל (הכוונה)",
+    "ru": "Железодефицитная анемия (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Iron deficiency anaemia can cause tiredness, pale skin, shortness of breath, and heart palpitations. NHS: see a GP for blood tests and to find the cause (including bleeding). Iron supplements are clinician/pharmacist guided — do not invent doses, especially in children.",
+      "emergencyIf": [
+        "Severe breathlessness, chest pain, or fainting with suspected severe anaemia",
+        "Heavy ongoing bleeding"
+      ],
+      "seeDoctorIf": [
+        "Persistent tiredness, pallor, breathlessness",
+        "Heavy periods with anaemia symptoms"
+      ],
+      "doNot": [
+        "Do not invent iron megadoses",
+        "Do not ignore possible bleeding sources"
+      ]
+    },
+    "fr": {
+      "summary": "L'anémie ferriprive peut causer fatigue, pâleur, dyspnée, palpitations. Bilan médical. Pas de doses de fer inventées.",
+      "emergencyIf": [
+        "Dyspnée sévère, douleur thoracique ou syncope",
+        "Saignement abondant persistant"
+      ],
+      "seeDoctorIf": [
+        "Fatigue, pâleur, dyspnée persistantes"
+      ],
+      "doNot": [
+        "Pas de mégadoses de fer inventées"
+      ]
+    },
+    "he": {
+      "summary": "אנמיה מחוסר ברזל: עייפות, חיוורון, קוצר נשימה, דפיקות לב. בדיקות דם. אין מינון ברזל מומצא.",
+      "emergencyIf": [
+        "קוצר נשימה חמור, כאב חזה או התעלפות",
+        "דימום כבד מתמשך"
+      ],
+      "seeDoctorIf": [
+        "עייפות, חיוורון, קוצר נשימה מתמשכים"
+      ],
+      "doNot": [
+        "אין מינון ברזל מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Железодефицитная анемия: усталость, бледность, одышка, сердцебиение. Анализы у врача. Дозы железа не выдумывать.",
+      "emergencyIf": [
+        "Тяжёлая одышка, боль в груди или обморок",
+        "Продолжающееся обильное кровотечение"
+      ],
+      "seeDoctorIf": [
+        "Стойкая усталость, бледность, одышка"
+      ],
+      "doNot": [
+        "Не изобретать мегадозы железа"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-iron-deficiency-anaemia",
+      "name": "NHS — Iron deficiency anaemia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

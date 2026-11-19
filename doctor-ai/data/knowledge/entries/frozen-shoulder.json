@@ -1,0 +1,103 @@
+{
+  "id": "frozen-shoulder",
+  "category": "msk",
+  "urgencyDefault": "consultation",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "frozen shoulder",
+      "adhesive capsulitis",
+      "stiff painful shoulder frozen"
+    ],
+    "fr": [
+      "épaule gelée",
+      "capsulite rétractile",
+      "épaule raide douloureuse"
+    ],
+    "he": [
+      "כתף קפואה",
+      "דלקת מעטפת הכתף",
+      "כתף נוקשה כואבת"
+    ],
+    "ru": [
+      "замёрзшее плечо",
+      "адгезивный капсулит",
+      "тугоподвижное плечо"
+    ]
+  },
+  "titles": {
+    "en": "Frozen shoulder",
+    "fr": "Épaule gelée",
+    "he": "כתף קפואה",
+    "ru": "«Замёрзшее» плечо"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Frozen shoulder causes progressive pain and stiffness limiting movement. NHS: physiotherapy and time; medicines/injections are clinician-led — never invent steroid doses. Emergency: sudden deformity after trauma (possible dislocation/fracture), neurovascular compromise, or chest pain radiating to shoulder (cardiac).",
+      "emergencyIf": [
+        "Shoulder deformity after injury",
+        "Chest pain with shoulder radiation / suspected cardiac",
+        "Sudden loss of pulse/colour in the arm"
+      ],
+      "seeDoctorIf": [
+        "Progressive shoulder stiffness lasting weeks",
+        "Pain waking you at night"
+      ],
+      "doNot": [
+        "Do not invent steroid injection doses",
+        "Do not force a traumatically injured shoulder"
+      ]
+    },
+    "fr": {
+      "summary": "Épaule gelée: raideur progressive. Urgences si déformation traumatique ou douleur thoracique. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Déformation après traumatisme",
+        "Douleur thoracique irradiant à l'épaule",
+        "Membre froid/pâle"
+      ],
+      "seeDoctorIf": [
+        "Raideur progressive"
+      ],
+      "doNot": [
+        "Pas d'injections de stéroïdes inventées"
+      ]
+    },
+    "he": {
+      "summary": "כתף קפואה: נוקשות מתקדמת. חירום בעיוות אחרי חבלה או כאב חזה. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "עיוות אחרי חבלה",
+        "כאב חזה עם הקרנה לכתף",
+        "יד חיוורת/קרה"
+      ],
+      "seeDoctorIf": [
+        "נוקשות מתקדמת"
+      ],
+      "doNot": [
+        "אין מינוני הזרקות סטרואידים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "«Замёрзшее» плечо: нарастающая скованность. Неотложка при деформации после травмы или боли в груди. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Деформация после травмы",
+        "Боль в груди с иррадиацией в плечо",
+        "Холодная/бледная рука"
+      ],
+      "seeDoctorIf": [
+        "Прогрессирующая скованность"
+      ],
+      "doNot": [
+        "Не изобретать дозы стероидных инъекций"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-frozen-shoulder",
+      "name": "NHS — Frozen shoulder",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/frozen-shoulder/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "warts-verrucas",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 1,
+  "keywords": {
+    "en": [
+      "wart",
+      "verruca",
+      "plantar wart foot"
+    ],
+    "fr": [
+      "verrue",
+      "verrue plantaire",
+      "verrue pied"
+    ],
+    "he": [
+      "יבלת",
+      "ורוקה",
+      "יבלת בכף הרגל"
+    ],
+    "ru": [
+      "бородавка",
+      "подошвенная бородавка"
+    ]
+  },
+  "titles": {
+    "en": "Warts and verrucas",
+    "fr": "Verrues",
+    "he": "יבלות / ורוקות",
+    "ru": "Бородавки"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Warts/verrucas are viral and often clear eventually. NHS: pharmacy treatments; avoid sharing towels/socks; see GP if painful, facial/genital, or not improving. No inventing destructive procedures.",
+      "seeDoctorIf": [
+        "Painful or spreading",
+        "On face/genitals",
+        "Immunocompromised",
+        "Not improving with pharmacy care"
+      ],
+      "selfCare": [
+        "Pharmacy wart treatments as labeled; cover verrucas in pools if advised; do not pick"
+      ],
+      "doNot": [
+        "Do not cut warts out yourself",
+        "Do not invent prescription regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Les verrues sont virales. Traitements pharmacie ; médecin si douloureuses, visage/génital, échec. Ne pas couper soi-même.",
+      "seeDoctorIf": [
+        "Douloureuses / étendues",
+        "Visage / génital",
+        "Échec"
+      ],
+      "selfCare": [
+        "Traitements pharmacie ; ne pas gratter"
+      ],
+      "doNot": [
+        "Ne pas exciser soi-même"
+      ]
+    },
+    "he": {
+      "summary": "יבלות ויראליות. טיפול בית מרקחת; רופא אם כואבות, בפנים/איברי מין, או אין שיפור. לא לחתוך לבד.",
+      "seeDoctorIf": [
+        "כואבות / מתפשטות",
+        "בפנים / איברי מין",
+        "אין שיפור"
+      ],
+      "selfCare": [
+        "טיפול בית מרקחת; לא לחטט"
+      ],
+      "doNot": [
+        "לא לחתוך לבד"
+      ]
+    },
+    "ru": {
+      "summary": "Бородавки вирусные. Аптечные средства; врач если болезненные, на лице/гениталиях, нет улучшения. Не вырезать самостоятельно.",
+      "seeDoctorIf": [
+        "Болезненные / распространяются",
+        "Лицо / гениталии",
+        "Нет улучшения"
+      ],
+      "selfCare": [
+        "Аптечные средства; не ковырять"
+      ],
+      "doNot": [
+        "Не вырезать самостоятельно"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-warts-verrucas",
+      "name": "NHS — Warts and verrucas",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/warts-and-verrucas/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

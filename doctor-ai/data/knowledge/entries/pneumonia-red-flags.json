@@ -1,0 +1,139 @@
+{
+  "id": "pneumonia-red-flags",
+  "category": "respiratory",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "pneumonia",
+      "coughing yellow green mucus",
+      "chest infection breathless",
+      "cough with fever chest pain"
+    ],
+    "fr": [
+      "pneumonie",
+      "toux glaires jaunes vertes",
+      "infection pulmonaire essoufflement",
+      "toux fièvre douleur thorax"
+    ],
+    "he": [
+      "דלקת ריאות",
+      "שיעול ליחה צהובה ירוקה",
+      "זיהום ריאתי קוצר נשימה",
+      "שיעול חום כאב חזה"
+    ],
+    "ru": [
+      "пневмония",
+      "кашель жёлто зелёная мокрота",
+      "лёгочная инфекция одышка",
+      "кашель жар боль в груди"
+    ]
+  },
+  "titles": {
+    "en": "Pneumonia / chest infection red flags",
+    "fr": "Pneumonie / infection pulmonaire — alarmes",
+    "he": "דלקת ריאות — דגלים אדומים",
+    "ru": "Пневмония — красные флаги"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Pneumonia can cause cough, fever, breathlessness, chest pain, and confusion (especially in older people). NHS: urgent advice for persistent cough, coloured phlegm, chest pain with breathing, or shortness of breath; emergency care if struggling to breathe, blue/grey colour, coughing blood, sudden confusion, or unresponsive baby. Antibiotics are clinician-prescribed only.",
+      "emergencyIf": [
+        "Struggling to breathe — gasping, choking, unable to speak",
+        "Pale, blue or blotchy skin, lips or tongue",
+        "Coughing up blood",
+        "Sudden confusion",
+        "Cannot wake baby or baby feels floppy"
+      ],
+      "seeDoctorIf": [
+        "Cough up to 3 weeks",
+        "Yellow or green phlegm",
+        "Chest pain with breathing or coughing",
+        "Feeling short of breath"
+      ],
+      "selfCare": [
+        "Rest; fluids; paracetamol/ibuprofen if suitable per label",
+        "Cover coughs; hand hygiene"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not delay if breathing is hard"
+      ]
+    },
+    "fr": {
+      "summary": "La pneumonie peut causer toux, fièvre, dyspnée, douleur thoracique, confusion. Avis urgent si toux persistante, expectorations colorées, douleur à la respiration ; urgence si détresse, cyanose, hémoptysie, confusion brutale.",
+      "emergencyIf": [
+        "Détresse respiratoire",
+        "Peau/lèvres bleues ou grises",
+        "Crachats de sang",
+        "Confusion brutale",
+        "Nourrisson inconsolable/mou"
+      ],
+      "seeDoctorIf": [
+        "Toux jusqu'à 3 semaines",
+        "Glaire jaune/verte",
+        "Douleur thoracique à la respiration",
+        "Essoufflement"
+      ],
+      "selfCare": [
+        "Repos ; hydratation ; paracétamol selon notice"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת ריאות עלולה לגרום לשיעול, חום, קוצר נשימה, כאב חזה ובלבול. ייעוץ דחוף לשיעול מתמשך/ליחה צבעונית; חירום אם קושי נשימה, כחלחלות, דם בשיעול, בלבול פתאומי.",
+      "emergencyIf": [
+        "קושי נשימה קשה",
+        "עור/שפתיים כחולים או אפורים",
+        "שיעול דם",
+        "בלבול פתאומי",
+        "תינוק שלא מתעורר/רפוי"
+      ],
+      "seeDoctorIf": [
+        "שיעול עד 3 שבועות",
+        "ליחה צהובה/ירוקה",
+        "כאב חזה בנשימה",
+        "קוצר נשימה"
+      ],
+      "selfCare": [
+        "מנוחה; נוזלים; פרצטמול לפי התווית"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Пневмония может давать кашель, жар, одышку, боль в груди, спутанность. Срочно при длительном кашле/цветной мокроте; неотложка при тяжёлой одышке, цианозе, крови в мокроте, внезапной спутанности.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Синие/серые губы/кожа",
+        "Кровь при кашле",
+        "Внезапная спутанность",
+        "Нельзя разбудить младенца"
+      ],
+      "seeDoctorIf": [
+        "Кашель до 3 недель",
+        "Жёлто-зелёная мокрота",
+        "Боль в груди при дыхании",
+        "Одышка"
+      ],
+      "selfCare": [
+        "Покой; жидкость; парацетамол по инструкции"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pneumonia",
+      "name": "NHS — Pneumonia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pneumonia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

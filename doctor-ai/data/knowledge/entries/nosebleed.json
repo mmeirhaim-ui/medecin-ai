@@ -1,0 +1,122 @@
+{
+  "id": "nosebleed",
+  "category": "ent",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "nosebleed",
+      "epistaxis",
+      "bleeding nose"
+    ],
+    "fr": [
+      "saignement de nez",
+      "épistaxis",
+      "nez qui saigne"
+    ],
+    "he": [
+      "דימום מהאף",
+      "אפיסטקסיס",
+      "אף מדמם"
+    ],
+    "ru": [
+      "носовое кровотечение",
+      "эпистаксис",
+      "кровь из носа"
+    ]
+  },
+  "titles": {
+    "en": "Nosebleed (epistaxis)",
+    "fr": "Saignement de nez (épistaxis)",
+    "he": "דימום מהאף",
+    "ru": "Носовое кровотечение"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most nosebleeds are from minor irritation. Pinch soft part of nose 10 minutes, lean forward. Emergency if bleeding >20 minutes, after head injury, possible broken nose, or on blood thinners with ongoing bleed. Educational MedlinePlus framing.",
+      "emergencyIf": [
+        "Bleeding does not stop after 20 minutes",
+        "Nosebleed after head injury",
+        "Nose may be broken",
+        "On anticoagulants with difficult-to-control bleeding"
+      ],
+      "seeDoctorIf": [
+        "Frequent nosebleeds",
+        "Nosebleeds not linked to cold/minor irritation"
+      ],
+      "selfCare": [
+        "Sit, pinch soft nose 10 full minutes, lean forward, breathe through mouth",
+        "Cold compress across bridge; avoid packing gauze inside",
+        "Avoid sniffing/blowing for several hours after"
+      ],
+      "doNot": [
+        "Do not lie flat",
+        "Do not pack gauze deep into the nose as first step"
+      ]
+    },
+    "fr": {
+      "summary": "La plupart des épistaxis sont bénignes. Pincer 10 minutes, pencher en avant. Urgence si > 20 min, après traumatisme crânien, nez cassé, ou anticoagulants.",
+      "emergencyIf": [
+        "Saignement > 20 minutes",
+        "Après traumatisme crânien",
+        "Nez potentiellement cassé",
+        "Anticoagulants avec saignement difficile"
+      ],
+      "seeDoctorIf": [
+        "Saignements fréquents"
+      ],
+      "selfCare": [
+        "Pincer 10 min, pencher en avant",
+        "Compresses froides"
+      ],
+      "doNot": [
+        "Ne pas s'allonger à plat"
+      ]
+    },
+    "he": {
+      "summary": "רוב דימומי האף קלים. ללחוץ 10 דקות ולהתכופף קדימה. חירום אם מעל 20 דקות, אחרי חבלת ראש, או תחת מדללי דם.",
+      "emergencyIf": [
+        "דימום מעל 20 דקות",
+        "אחרי חבלת ראש",
+        "חשד לשבירת אף",
+        "מדללי דם עם דימום קשה לעצירה"
+      ],
+      "seeDoctorIf": [
+        "דימומים חוזרים"
+      ],
+      "selfCare": [
+        "ללחוץ 10 דקות, להישען קדימה"
+      ],
+      "doNot": [
+        "לא לשכב שטוח"
+      ]
+    },
+    "ru": {
+      "summary": "Большинство носовых кровотечений неопасны. Зажмите мягкую часть носа на 10 минут, наклонитесь вперёд. Неотложка если >20 минут, после травмы головы, перелом носа или антикоагулянты.",
+      "emergencyIf": [
+        "Кровотечение >20 минут",
+        "После травмы головы",
+        "Возможный перелом носа",
+        "Антикоагулянты с трудно останавливаемым кровотечением"
+      ],
+      "seeDoctorIf": [
+        "Частые кровотечения"
+      ],
+      "selfCare": [
+        "Зажать на 10 минут, наклониться вперёд"
+      ],
+      "doNot": [
+        "Не ложиться горизонтально"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-nosebleed",
+      "name": "MedlinePlus — Nosebleed",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/003106.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "pleurisy",
+  "category": "respiratory",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "pleurisy",
+      "pain when breathing in",
+      "sharp chest pain breathing"
+    ],
+    "fr": [
+      "pleurésie",
+      "douleur en inspirant",
+      "douleur thoracique à la respiration"
+    ],
+    "he": [
+      "דלקת צדר",
+      "כאב בנשימה פנימה",
+      "כאב חד בחזה בנשימה"
+    ],
+    "ru": [
+      "плеврит",
+      "боль на вдохе",
+      "острая боль в груди при дыхании"
+    ]
+  },
+  "titles": {
+    "en": "Pleurisy (pain on breathing)",
+    "fr": "Pleurésie (douleur à l'inspiration)",
+    "he": "דלקת צדר (כאב בנשימה)",
+    "ru": "Плеврит (боль при дыхании)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Pleurisy is inflammation of the lung lining causing sharp chest pain worse on breathing or coughing. NHS: see a GP — causes vary and need assessment. Emergency if severe breathlessness, coughing blood, sudden one-sided swelling with chest pain (possible clot), or cardiac red flags. Do not invent anti-inflammatory regimens.",
+      "emergencyIf": [
+        "Severe breathlessness",
+        "Coughing blood",
+        "Chest pain with heart-attack features",
+        "Sudden chest pain with one-leg swelling (possible PE/DVT pathway)"
+      ],
+      "seeDoctorIf": [
+        "Sharp chest pain worse on breathing or coughing"
+      ],
+      "doNot": [
+        "Do not assume 'just a muscle strain' without assessment when pain is pleuritic",
+        "Do not invent NSAID/steroid doses"
+      ]
+    },
+    "fr": {
+      "summary": "La pleurésie donne une douleur thoracique aiguë à l'inspiration. Avis médical. Urgence si dyspnée sévère, hémoptysie, signes d'infarctus/embolie. Pas d'AINS inventés.",
+      "emergencyIf": [
+        "Dyspnée sévère",
+        "Crachats de sang",
+        "Douleur type infarctus",
+        "Douleur + jambe gonflée unilatérale"
+      ],
+      "seeDoctorIf": [
+        "Douleur thoracique à l'inspiration"
+      ],
+      "doNot": [
+        "Pas d'AINS/corticoïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "דלקת צדר: כאב חד בחזה שמחמיר בנשימה. ייעוץ רפואי. חירום בקוצר נשימה חמור, דם, סימני התקף לב/תסחיף. אין NSAID מומצא.",
+      "emergencyIf": [
+        "קוצר נשימה חמור",
+        "שיעול דם",
+        "כאב חזה חשוד להתקף לב",
+        "כאב + נפיחות ברגל אחת"
+      ],
+      "seeDoctorIf": [
+        "כאב חד בנשימה/שיעול"
+      ],
+      "doNot": [
+        "אין NSAID/סטרואידים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Плеврит: острая боль в груди хуже на вдохе. К врачу. Неотложка при тяжёлой одышке, крови, признаках инфаркта/ТЭЛА. НПВП не выдумывать.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Кровь при кашле",
+        "Боль как при инфаркте",
+        "Боль + отёк одной ноги"
+      ],
+      "seeDoctorIf": [
+        "Острая боль при дыхании/кашле"
+      ],
+      "doNot": [
+        "Не изобретать НПВП/стероиды"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pleurisy",
+      "name": "NHS — Pleurisy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pleurisy/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

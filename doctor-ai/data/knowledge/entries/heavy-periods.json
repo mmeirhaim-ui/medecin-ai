@@ -1,0 +1,105 @@
+{
+  "id": "heavy-periods",
+  "category": "gyn",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "heavy periods",
+      "menorrhagia",
+      "flooding periods",
+      "soaking pads hourly"
+    ],
+    "fr": [
+      "règles abondantes",
+      "ménorragies",
+      "règles qui inondent",
+      "changer de protection toutes les heures"
+    ],
+    "he": [
+      "וסת כבדה",
+      "דימום וסתי כבד",
+      "החלפת תחבושת כל שעה"
+    ],
+    "ru": [
+      "обильные менструации",
+      "меноррагия",
+      "прокладки каждый час"
+    ]
+  },
+  "titles": {
+    "en": "Heavy periods (orientation)",
+    "fr": "Règles abondantes (orientation)",
+    "he": "וסת כבדה (הכוונה)",
+    "ru": "Обильные менструации (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Heavy periods can cause anaemia and may need investigation. NHS: see a GP if periods disrupt life, last >7 days, or you soak through protection hourly. Emergency care for very heavy bleeding with dizziness/fainting. Treatments are clinician-led.",
+      "emergencyIf": [
+        "Soaking through protection every hour with dizziness or fainting",
+        "Passing large clots with severe weakness"
+      ],
+      "seeDoctorIf": [
+        "Periods lasting more than 7 days",
+        "Flooding that limits work/school",
+        "Symptoms of anaemia (tiredness, breathlessness, pale)"
+      ],
+      "doNot": [
+        "Do not ignore progressive heavy bleeding",
+        "Do not invent hormone or iron doses"
+      ]
+    },
+    "fr": {
+      "summary": "Les règles abondantes peuvent entraîner une anémie. Avis médical si gêne majeure, >7 jours, ou protections saturées chaque heure.",
+      "emergencyIf": [
+        "Protection saturée chaque heure avec malaise"
+      ],
+      "seeDoctorIf": [
+        "Règles > 7 jours",
+        "Gêne majeure",
+        "Signes d'anémie"
+      ],
+      "doNot": [
+        "Pas de doses d'hormones ou fer inventées"
+      ]
+    },
+    "he": {
+      "summary": "וסת כבדה עלולה לגרום לאנמיה. פנו לרופא אם מפריע לחיים, נמשך מעל 7 ימים, או ספיגה כל שעה.",
+      "emergencyIf": [
+        "ספיגה כל שעה עם סחרחורת/התעלפות"
+      ],
+      "seeDoctorIf": [
+        "מעל 7 ימים",
+        "הפרעה משמעותית",
+        "סימני אנמיה"
+      ],
+      "doNot": [
+        "אין מינון הורמונים או ברזל מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Обильные менструации могут вызвать анемию. К врачу при нарушении жизни, >7 дней или промокании каждый час.",
+      "emergencyIf": [
+        "Промокание каждый час с головокружением/обмороком"
+      ],
+      "seeDoctorIf": [
+        ">7 дней",
+        "Сильное нарушение жизни",
+        "Признаки анемии"
+      ],
+      "doNot": [
+        "Не изобретать дозы гормонов или железа"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-heavy-periods",
+      "name": "NHS — Heavy periods",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heavy-periods/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

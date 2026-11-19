@@ -1,0 +1,114 @@
+{
+  "id": "labyrinthitis",
+  "category": "ent",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "labyrinthitis",
+      "inner ear spinning with hearing",
+      "vestibular neuritis"
+    ],
+    "fr": [
+      "labyrinthite",
+      "oreille interne vertige",
+      "névrite vestibulaire"
+    ],
+    "he": [
+      "דלקת מבוך",
+      "ורטיגו אוזן פנימית",
+      "נוירטיס וסטיבולרית"
+    ],
+    "ru": [
+      "лабиринтит",
+      "головокружение внутреннее ухо",
+      "вестибулярный неврит"
+    ]
+  },
+  "titles": {
+    "en": "Labyrinthitis / vestibular neuritis cues",
+    "fr": "Labyrinthite / névrite vestibulaire",
+    "he": "דלקת מבוך / נוירטיס וסטיבולרית",
+    "ru": "Лабиринтит / вестибулярный неврит"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Labyrinthitis can cause sudden vertigo, sometimes with hearing change or ear symptoms. NHS: rest during attacks; see a GP if severe or not improving. Emergency if stroke red flags with vertigo (face/arm/speech, severe headache, double vision, new weakness). Do not invent vestibular suppressant regimens.",
+      "emergencyIf": [
+        "Sudden vertigo with face droop, arm weakness, speech trouble, severe headache, double vision, or new weakness"
+      ],
+      "seeDoctorIf": [
+        "Severe spinning dizziness",
+        "Hearing loss or ear discharge with vertigo",
+        "Not improving or recurrent attacks"
+      ],
+      "selfCare": [
+        "Sit or lie still during attacks; move slowly; hydrate"
+      ],
+      "doNot": [
+        "Do not drive while symptomatic",
+        "Do not invent vestibular suppressant doses"
+      ]
+    },
+    "fr": {
+      "summary": "La labyrinthite peut causer un vertige brutal, parfois avec troubles auditifs. Repos ; médecin si sévère. Urgence si signes d'AVC. Pas de suppressifs vestibulaires inventés.",
+      "emergencyIf": [
+        "Vertige brutal avec signes d'AVC"
+      ],
+      "seeDoctorIf": [
+        "Vertige sévère",
+        "Surdité ou otorrhée associées",
+        "Pas d'amélioration"
+      ],
+      "selfCare": [
+        "S'asseoir/s'allonger ; mouvements lents"
+      ],
+      "doNot": [
+        "Ne pas conduire pendant les symptômes"
+      ]
+    },
+    "he": {
+      "summary": "דלקת מבוך עלולה לגרום לוורטיגו פתאומי, לעיתים עם שינוי שמיעה. מנוחה; רופא אם חמור. חירום עם דגלי שבץ. אין מדכאי וסטיבולר מומצאים.",
+      "emergencyIf": [
+        "ורטיגו פתאומי עם דגלי שבץ"
+      ],
+      "seeDoctorIf": [
+        "סחרחורת סיבובית חזקה",
+        "ירידת שמיעה או הפרשות",
+        "אין שיפור"
+      ],
+      "selfCare": [
+        "לשבת/לשכב; תנועות איטיות"
+      ],
+      "doNot": [
+        "לא לנהוג בזמן תסמינים"
+      ]
+    },
+    "ru": {
+      "summary": "Лабиринтит может давать внезапное вертиго, иногда с изменением слуха. Покой; врач если тяжело. Неотложка при красных флагах инсульта. Вестибулярные супрессанты не выдумывать.",
+      "emergencyIf": [
+        "Внезапное вертиго с признаками инсульта"
+      ],
+      "seeDoctorIf": [
+        "Сильное вращательное головокружение",
+        "Снижение слуха или отделяемое",
+        "Нет улучшения"
+      ],
+      "selfCare": [
+        "Сесть/лечь; медленные движения"
+      ],
+      "doNot": [
+        "Не водить при симптомах"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-labyrinthitis",
+      "name": "NHS — Labyrinthitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/labyrinthitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

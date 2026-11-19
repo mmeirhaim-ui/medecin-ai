@@ -1,0 +1,116 @@
+{
+  "id": "migraine",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "migraine",
+      "throbbing headache light sound",
+      "migraine aura zigzag"
+    ],
+    "fr": [
+      "migraine",
+      "céphalée pulsatile lumière bruit",
+      "aura migraine zig zag"
+    ],
+    "he": [
+      "מיגרנה",
+      "כאב ראש פועם רגישות לאור",
+      "אאורה זיגזג במיגרנה"
+    ],
+    "ru": [
+      "мигрень",
+      "пульсирующая головная боль светобоязнь",
+      "аура мигрени зигзаг"
+    ]
+  },
+  "titles": {
+    "en": "Migraine (vs emergency headache)",
+    "fr": "Migraine (vs céphalée d'urgence)",
+    "he": "מיגרנה (מול כאב ראש חירומי)",
+    "ru": "Мигрень (против неотложной головной боли)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Migraine attacks: throbbing headache (often one-sided), nausea/vomiting, light/sound sensitivity; aura (zigzags, tingling) should last ≤1 hour. NHS urgent advice if attack >72h, aura >1h, or pregnant/postpartum. Emergency for sudden worst headache, stroke signs, seizure, meningitis features, or recent head injury. Abortive/preventive meds are clinician-prescribed — no invented triptan doses.",
+      "emergencyIf": [
+        "Sudden extremely painful headache",
+        "Speech/memory problems, vision loss, drowsiness/confusion, seizure",
+        "Very high temperature with meningitis symptoms",
+        "Weakness on one side",
+        "Recent head injury with headache"
+      ],
+      "seeDoctorIf": [
+        "Migraine lasting >72 hours",
+        "Aura lasting >1 hour",
+        "Pregnant or just had a baby with migraine",
+        "New or changing migraine pattern"
+      ],
+      "doNot": [
+        "Do not invent triptan or preventive regimens",
+        "Do not ignore thunderclap headache as 'just migraine'"
+      ]
+    },
+    "fr": {
+      "summary": "Migraine : céphalée pulsatile, nausées, photophobie ; aura ≤1 h. Avis urgent si >72 h, aura >1 h, grossesse. Urgence si céphalée brutale maximale, signes d'AVC/méningite. Pas de triptans inventés.",
+      "emergencyIf": [
+        "Céphalée brutale extrême",
+        "Troubles de parole/vision, confusion, convulsion",
+        "Fièvre avec signes de méningite",
+        "Faiblesse d'un côté"
+      ],
+      "seeDoctorIf": [
+        "Crise > 72 h",
+        "Aura > 1 h",
+        "Grossesse / post-partum"
+      ],
+      "doNot": [
+        "Pas de triptans inventés"
+      ]
+    },
+    "he": {
+      "summary": "מיגרנה: כאב פועם, בחילה, רגישות לאור/רעש; אאורה ≤שעה. ייעוץ דחוף אם מעל 72 שעות, אאורה מעל שעה, הריון. חירום בכאב פתאומי מקסימלי/שבץ/דלקת קרום המוח. אין טריפטנים מומצאים.",
+      "emergencyIf": [
+        "כאב ראש פתאומי קיצוני",
+        "הפרעת דיבור/ראייה, בלבול, פרכוס",
+        "חום עם סימני דלקת קרום המוח",
+        "חולשה בצד אחד"
+      ],
+      "seeDoctorIf": [
+        "התקף מעל 72 שעות",
+        "אאורה מעל שעה",
+        "הריון / אחרי לידה"
+      ],
+      "doNot": [
+        "אין טריפטנים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Мигрень: пульсирующая боль, тошнота, светобоязнь; аура ≤1 ч. Срочно если >72 ч, аура >1 ч, беременность. Неотложка при внезапной максимальной боли/инсульте/менингите. Триптаны не выдумывать.",
+      "emergencyIf": [
+        "Внезапная крайне сильная головная боль",
+        "Нарушение речи/зрения, спутанность, судороги",
+        "Лихорадка с признаками менингита",
+        "Слабость с одной стороны"
+      ],
+      "seeDoctorIf": [
+        "Приступ >72 ч",
+        "Аура >1 ч",
+        "Беременность / после родов"
+      ],
+      "doNot": [
+        "Не изобретать триптаны"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-migraine",
+      "name": "NHS — Migraine",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/migraine/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

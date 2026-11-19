@@ -1,0 +1,115 @@
+{
+  "id": "pelvic-inflammatory-disease",
+  "category": "gyn",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "pelvic inflammatory disease",
+      "PID",
+      "pelvic infection",
+      "lower abdominal pain STI",
+      "painful sex fever discharge"
+    ],
+    "fr": [
+      "infection pelvienne",
+      "MIP",
+      "salpingite",
+      "douleur bas ventre IST",
+      "rapports douloureux fièvre pertes"
+    ],
+    "he": [
+      "מחלה דלקתית באגן",
+      "PID",
+      "זיהום אגן",
+      "כאב בטן תחתונה מין",
+      "כאב בקיום יחסים חום הפרשות"
+    ],
+    "ru": [
+      "воспалительные заболевания органов малого таза",
+      "ВЗОМТ",
+      "тазовая инфекция",
+      "боль внизу живота ИППП",
+      "боль при сексе жар выделения"
+    ]
+  },
+  "titles": {
+    "en": "Pelvic inflammatory disease (PID) cues",
+    "fr": "Infection génitale haute / MIP — orientation",
+    "he": "מחלה דלקתית של האגן — הכוונה",
+    "ru": "ВЗОМТ — ориентиры"
+  },
+  "guidance": {
+    "en": {
+      "summary": "PID is an infection of the upper genital tract. NHS: see a GP urgently for lower abdominal pain with abnormal discharge, painful sex, bleeding between periods/after sex, fever, or pain when peeing. Severe pain or feeling very unwell needs emergency care. Diagnosis and antibiotics are clinician-only — no regimens here.",
+      "emergencyIf": [
+        "Severe pelvic/abdominal pain",
+        "Fever with severe pelvic pain",
+        "Vomiting and unable to keep fluids with suspected pelvic infection"
+      ],
+      "seeDoctorIf": [
+        "Lower abdominal pain with abnormal vaginal discharge",
+        "Painful sex, bleeding between periods or after sex",
+        "Fever or pain when peeing with pelvic symptoms"
+      ],
+      "doNot": [
+        "Do not self-prescribe antibiotics",
+        "Do not ignore partner notification advice from clinicians"
+      ]
+    },
+    "fr": {
+      "summary": "La MIP est une infection de l'appareil génital haut. Douleur bas-ventre avec pertes anormales, rapports douloureux, saignements, fièvre = avis médical urgent. Pas d'antibiotiques inventés.",
+      "emergencyIf": [
+        "Douleur pelvienne sévère",
+        "Fièvre avec douleur pelvienne forte"
+      ],
+      "seeDoctorIf": [
+        "Douleur bas-ventre + pertes anormales",
+        "Rapports douloureux, métrorragies",
+        "Fièvre ou dysurie avec symptômes pelviens"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques en automédication"
+      ]
+    },
+    "he": {
+      "summary": "PID היא זיהום במערכת המין העליונה. כאב בטן תחתונה עם הפרשות לא תקינות, כאב ביחסים, דימום, חום — ייעוץ דחוף. אין אנטיביוטיקה מומצאת.",
+      "emergencyIf": [
+        "כאב אגן/בטן חזק",
+        "חום עם כאב אגן חזק"
+      ],
+      "seeDoctorIf": [
+        "כאב בטן תחתונה + הפרשות חריגות",
+        "כאב ביחסים, דימום בין וסתות",
+        "חום או כאב במתן שתן עם תסמיני אגן"
+      ],
+      "doNot": [
+        "לא לרשום אנטיביוטיקה לבד"
+      ]
+    },
+    "ru": {
+      "summary": "ВЗОМТ — инфекция верхних отделов половых путей. Боль внизу живота с аномальными выделениями, боль при сексе, кровотечения, лихорадка — срочный осмотр. Антибиотики не выдумывать.",
+      "emergencyIf": [
+        "Сильная тазовая/абдоминальная боль",
+        "Лихорадка с сильной тазовой болью"
+      ],
+      "seeDoctorIf": [
+        "Боль внизу живота + аномальные выделения",
+        "Боль при сексе, кровотечения между менструациями",
+        "Лихорадка или дизурия с тазовыми симптомами"
+      ],
+      "doNot": [
+        "Не назначать себе антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pid",
+      "name": "NHS — Pelvic inflammatory disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pelvic-inflammatory-disease-pid/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

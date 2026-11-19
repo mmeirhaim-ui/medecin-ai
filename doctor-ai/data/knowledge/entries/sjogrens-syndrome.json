@@ -1,0 +1,102 @@
+{
+  "id": "sjogrens-syndrome",
+  "category": "rheumatology",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "Sjogren syndrome",
+      "Sjögren dry eyes mouth",
+      "autoimmune dry mouth Sjogren"
+    ],
+    "fr": [
+      "syndrome de Sjögren",
+      "Sjögren yeux bouche secs",
+      "sécheresse Sjögren"
+    ],
+    "he": [
+      "תסמונת שיוגרן",
+      "יובש עיניים פה שיוגרן",
+      "שיוגרן אוטואימוני"
+    ],
+    "ru": [
+      "синдром Шегрена",
+      "сухость глаз рта Шегрен",
+      "Шегрен аутоиммунный"
+    ]
+  },
+  "titles": {
+    "en": "Sjögren's syndrome — orientation",
+    "fr": "Syndrome de Sjögren — orientation",
+    "he": "תסמונת שיוגרן — התמצאות",
+    "ru": "Синдром Шегрена — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sjögren's often causes dry eyes and dry mouth and can involve other organs. NHS: GP/rheumatology pathways; lubricating drops and dental care help dryness — never invent immunosuppressant doses. Emergency: sudden severe breathlessness, chest pain, high fever with confusion, or sudden vision loss.",
+      "emergencyIf": [
+        "Severe breathlessness or chest pain",
+        "Sudden vision loss",
+        "High fever with confusion"
+      ],
+      "seeDoctorIf": [
+        "Persistent dry eyes/mouth affecting eating or vision",
+        "Joint pain with dryness"
+      ],
+      "doNot": [
+        "Do not invent steroid/immunosuppressant doses"
+      ]
+    },
+    "fr": {
+      "summary": "Sjögren: sécheresse oculaire/buccale. Orientation NHS; pas de posologies inventées. Urgences si dyspnée, baisse visuelle brutale, fièvre avec confusion.",
+      "emergencyIf": [
+        "Dyspnée sévère / douleur thoracique",
+        "Baisse visuelle brutale",
+        "Forte fièvre avec confusion"
+      ],
+      "seeDoctorIf": [
+        "Sécheresse persistante"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "שיוגרן: יובש עיניים/פה. לפי NHS; אין מינונים מומצאים. חירום בקוצר נשימה, ירידת ראייה פתאומית, חום עם בלבול.",
+      "emergencyIf": [
+        "קוצר נשימה / כאב חזה",
+        "ירידת ראייה פתאומית",
+        "חום גבוה עם בלבול"
+      ],
+      "seeDoctorIf": [
+        "יובש מתמשך"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Шегрен: сухость глаз/рта. Ориентир NHS; дозы не выдумывать. Неотложка при одышке, внезапной потере зрения, лихорадке со спутанностью.",
+      "emergencyIf": [
+        "Тяжёлая одышка / боль в груди",
+        "Внезапная потеря зрения",
+        "Высокая лихорадка со спутанностью"
+      ],
+      "seeDoctorIf": [
+        "Стойкая сухость"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-sjogrens",
+      "name": "NHS — Sjögren's syndrome",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sjogrens-syndrome/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

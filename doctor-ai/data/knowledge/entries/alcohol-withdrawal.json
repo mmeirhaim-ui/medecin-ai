@@ -1,0 +1,121 @@
+{
+  "id": "alcohol-withdrawal",
+  "category": "psych",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "alcohol withdrawal",
+      "delirium tremens",
+      "DT alcohol",
+      "stop drinking shaking",
+      "alcohol seizure",
+      "alcohol hallucinations"
+    ],
+    "fr": [
+      "sevrage alcool",
+      "delirium tremens",
+      "tremblements arrêt alcool",
+      "convulsion alcool",
+      "hallucinations alcool"
+    ],
+    "he": [
+      "גמילה מאלכוהול",
+      "דליריום טרמנס",
+      "רעד מהפסקת שתייה",
+      "פרכוס מאלכוהול",
+      "הזיות מאלכוהול"
+    ],
+    "ru": [
+      "абстиненция алкоголь",
+      "белая горячка",
+      "тремор при отмене алкоголя",
+      "судороги от алкоголя",
+      "алкогольный делирий"
+    ]
+  },
+  "titles": {
+    "en": "Alcohol withdrawal (severe)",
+    "fr": "Sevrage alcoolique (sévère)",
+    "he": "גמילה מאלכוהול (חמורה)",
+    "ru": "Алкогольная абстиненция (тяжёлая)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Stopping suddenly when alcohol-dependent can be dangerous. Severe withdrawal (visible shaking, confusion, hallucinations, seizure) needs emergency care. Get medical help before trying to stop if you get withdrawal symptoms. Educational NHS framing — not a detox protocol.",
+      "emergencyIf": [
+        "Visible shaking after stopping alcohol",
+        "Unusually restless, irritable or upset with severe withdrawal",
+        "Confusion (e.g. not knowing the day)",
+        "Hallucinations",
+        "Seizure"
+      ],
+      "seeDoctorIf": [
+        "Any withdrawal symptoms — get medical help before trying to stop",
+        "Anxiety, insomnia, nausea, racing heart, sweating, tremor after cutting down"
+      ],
+      "doNot": [
+        "Do not attempt unsupported abrupt detox if dependent",
+        "Do not invent benzodiazepine regimens here"
+      ]
+    },
+    "fr": {
+      "summary": "Arrêter brutalement en cas de dépendance à l'alcool peut être dangereux. Sevrage sévère (tremblements, confusion, hallucinations, convulsion) = urgence. Pas de protocole de sevrage ici.",
+      "emergencyIf": [
+        "Tremblements visibles",
+        "Confusion",
+        "Hallucinations",
+        "Convulsion",
+        "Agitation sévère"
+      ],
+      "seeDoctorIf": [
+        "Tout symptôme de sevrage — avis médical avant d'arrêter"
+      ],
+      "doNot": [
+        "Pas de sevrage brutal non encadré",
+        "Pas de benzodiazépines inventées"
+      ]
+    },
+    "he": {
+      "summary": "הפסקה פתאומית בתלות באלכוהול עלולה להיות מסוכנת. גמילה חמורה (רעד, בלבול, הזיות, פרכוס) — חירום. אין פרוטוקול גמילה כאן.",
+      "emergencyIf": [
+        "רעד בולט",
+        "בלבול",
+        "הזיות",
+        "פרכוס"
+      ],
+      "seeDoctorIf": [
+        "כל תסמיני גמילה — ייעוץ לפני הפסקה"
+      ],
+      "doNot": [
+        "לא לגמול לבד בתלות",
+        "אין מינון לבנזודיאזפינים"
+      ]
+    },
+    "ru": {
+      "summary": "Резкая отмена при алкогольной зависимости опасна. Тяжёлая абстиненция (тремор, спутанность, галлюцинации, судороги) — неотложная помощь. Здесь нет протокола детокса.",
+      "emergencyIf": [
+        "Видимый тремор",
+        "Спутанность",
+        "Галлюцинации",
+        "Судороги"
+      ],
+      "seeDoctorIf": [
+        "Любые симптомы отмены — к врачу до попытки бросить"
+      ],
+      "doNot": [
+        "Не бросайте резко без медпомощи при зависимости",
+        "Не изобретать дозы бензодиазепинов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-alcohol-use",
+      "name": "NHS — Alcohol-use disorder",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/alcohol-use-disorder/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

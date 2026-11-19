@@ -1,0 +1,105 @@
+{
+  "id": "cluster-headache",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "cluster headache",
+      "pain around one eye watering",
+      "suicidal headache cluster"
+    ],
+    "fr": [
+      "algie vasculaire de la face",
+      "douleur autour d'un œil larmoyant",
+      "céphalée en grappe"
+    ],
+    "he": [
+      "כאב ראש מקבצי",
+      "כאב סביב עין אחת דומעת",
+      "cluster headache"
+    ],
+    "ru": [
+      "пучковая головная боль",
+      "боль вокруг одного глаза слезящегося",
+      "кластерная головная боль"
+    ]
+  },
+  "titles": {
+    "en": "Cluster headache cues",
+    "fr": "Algie vasculaire de la face",
+    "he": "כאב ראש מקבצי",
+    "ru": "Пучковая (кластерная) головная боль"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Cluster headaches: sharp/burning pain usually around one eye, 15 min–3 h, often restlessness, red/watering eye, drooping lid, small pupil, nasal symptoms. NHS: emergency for first-time drooping eyelid or unequal pupils. Urgent advice for severe headache with jaw pain on eating, blurred/double vision, sore scalp, or limb numbness/weakness (possible temporal arteritis). Treatments are specialist — no invented oxygen/triptan protocols here.",
+      "emergencyIf": [
+        "First-time drooping eyelid",
+        "One pupil smaller than the other for the first time"
+      ],
+      "seeDoctorIf": [
+        "Severe headache with jaw pain when eating, blurred/double vision, sore scalp, or limb numbness/weakness",
+        "Suspected cluster pattern needing diagnosis"
+      ],
+      "doNot": [
+        "Do not invent high-flow oxygen or injectable triptan regimens"
+      ]
+    },
+    "fr": {
+      "summary": "AVF : douleur autour d'un œil 15 min–3 h, agitation, œil rouge/larmoyant, ptosis, myosis. Urgence si ptosis/myosis inaugural. Avis urgent si signes d'artérite temporale. Pas de protocoles inventés.",
+      "emergencyIf": [
+        "Ptosis inaugural",
+        "Pupille plus petite d'un côté pour la première fois"
+      ],
+      "seeDoctorIf": [
+        "Céphalée sévère avec douleur de mâchoire à la mastication, diplopie, cuir chevelu douloureux"
+      ],
+      "doNot": [
+        "Pas de protocoles d'oxygène/triptans inventés"
+      ]
+    },
+    "he": {
+      "summary": "כאב מקבצי: כאב חד סביב עין אחת 15 דק'–3 שעות, אי-שקט, עין אדומה/דומעת, צניחת עפעף. חירום בצניחת עפעף/אישון לא שווה בפעם הראשונה. אין פרוטוקולים מומצאים.",
+      "emergencyIf": [
+        "צניחת עפעף בפעם הראשונה",
+        "אישון קטן יותר בצד אחד בפעם הראשונה"
+      ],
+      "seeDoctorIf": [
+        "כאב חזק עם כאב לסת באכילה, ראייה כפולה, קרקפת כואבת"
+      ],
+      "doNot": [
+        "אין פרוטוקול חמצן/טריפטן מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Кластерная боль: острая боль вокруг одного глаза 15 мин–3 ч, беспокойство, красный/слезящийся глаз, птоз. Неотложка при первом птозе/анизокории. Протоколы не выдумывать.",
+      "emergencyIf": [
+        "Птоз впервые",
+        "Зрачок меньше с одной стороны впервые"
+      ],
+      "seeDoctorIf": [
+        "Сильная боль с болью в челюсти при еде, двоением, болезненной кожей головы"
+      ],
+      "doNot": [
+        "Не изобретать схемы кислорода/триптанов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-cluster-headaches",
+      "name": "NHS — Cluster headaches",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cluster-headaches/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-temporal-arteritis",
+      "name": "NHS — Temporal arteritis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/temporal-arteritis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

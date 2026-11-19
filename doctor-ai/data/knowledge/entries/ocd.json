@@ -1,0 +1,99 @@
+{
+  "id": "ocd",
+  "category": "mental-health",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "OCD",
+      "obsessive compulsive disorder",
+      "intrusive thoughts compulsions"
+    ],
+    "fr": [
+      "TOC",
+      "trouble obsessionnel compulsif",
+      "pensées intrusives compulsions"
+    ],
+    "he": [
+      "הפרעה טורדנית כפייתית",
+      "OCD",
+      "מחשבות חודרניות כפייתיות"
+    ],
+    "ru": [
+      "ОКР",
+      "обсессивно-компульсивное расстройство",
+      "навязчивые мысли ритуалы"
+    ]
+  },
+  "titles": {
+    "en": "OCD — orientation",
+    "fr": "TOC — orientation",
+    "he": "OCD — התמצאות",
+    "ru": "ОКР — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "OCD involves unwanted intrusive thoughts and repetitive rituals. NHS: talking therapies (e.g. CBT/ERP) and sometimes medicines — never invent SSRI doses. Emergency: suicidal crisis or inability to function with severe self-neglect — crisis pathways.",
+      "emergencyIf": [
+        "Suicidal thoughts/plans",
+        "Severe self-neglect with medical risk"
+      ],
+      "seeDoctorIf": [
+        "Rituals or intrusive thoughts consuming hours daily",
+        "Avoidance disrupting work/relationships"
+      ],
+      "doNot": [
+        "Do not invent SSRI or antipsychotic doses",
+        "Do not force rituals as advice"
+      ]
+    },
+    "fr": {
+      "summary": "TOC: pensées/compulsions. Thérapies; pas de posologies inventées. Urgences si crise suicidaire.",
+      "emergencyIf": [
+        "Idées suicidaires",
+        "Négligence grave avec risque médical"
+      ],
+      "seeDoctorIf": [
+        "Rituels envahissants"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "OCD: מחשבות/טקסים. טיפולים; אין מינונים מומצאים. חירום במשבר אובדני.",
+      "emergencyIf": [
+        "מחשבות אובדניות",
+        "הזנחה עצמית חמורה"
+      ],
+      "seeDoctorIf": [
+        "טקסים שגוזלים שעות"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "ОКР: мысли/ритуалы. Терапии; дозы не выдумывать. Неотложка при суицидальном кризисе.",
+      "emergencyIf": [
+        "Суицидальные мысли",
+        "Тяжёлая самозапущенность"
+      ],
+      "seeDoctorIf": [
+        "Ритуалы на часы в день"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ocd",
+      "name": "NHS — OCD",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/obsessive-compulsive-disorder-ocd/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "dementia-orientation",
+  "category": "neuro",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "dementia",
+      "Alzheimer memory loss dementia",
+      "cognitive decline dementia"
+    ],
+    "fr": [
+      "démence",
+      "Alzheimer perte mémoire",
+      "déclin cognitif démence"
+    ],
+    "he": [
+      "דמנציה",
+      "אלצהיימר אובדן זיכרון",
+      "ירידה קוגניטיבית"
+    ],
+    "ru": [
+      "деменция",
+      "болезнь Альцгеймера память",
+      "когнитивное снижение"
+    ]
+  },
+  "titles": {
+    "en": "Dementia — orientation",
+    "fr": "Démence — orientation",
+    "he": "דמנציה — התמצאות",
+    "ru": "Деменция — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Dementia involves progressive memory and thinking changes. NHS: GP assessment and memory-clinic pathways; medicines are specialist-led — never invent doses. Emergency: sudden confusion (delirium), stroke symptoms, head injury after a fall, or inability to swallow with choking. Distinct from delirium-sudden-confusion entry.",
+      "emergencyIf": [
+        "Sudden confusion with fever or new illness",
+        "Stroke symptoms (FAST)",
+        "Head injury after fall",
+        "Choking / cannot swallow safely"
+      ],
+      "seeDoctorIf": [
+        "Progressive memory loss affecting daily life",
+        "Getting lost or personality change"
+      ],
+      "doNot": [
+        "Do not invent cholinesterase-inhibitor doses",
+        "Do not dismiss sudden confusion as 'just dementia'"
+      ]
+    },
+    "fr": {
+      "summary": "Démence: troubles progressifs. Urgences si confusion brutale (délirium), signes d'AVC, chute avec traumatisme. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Confusion brutale",
+        "Signes d'AVC",
+        "Traumatisme crânien après chute"
+      ],
+      "seeDoctorIf": [
+        "Perte de mémoire progressive"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "דמנציה: ירידה הדרגתית. חירום בבלבול פתאומי, סימני שבץ, חבלת ראש אחרי נפילה. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "בלבול פתאומי",
+        "סימני שבץ",
+        "חבלת ראש אחרי נפילה"
+      ],
+      "seeDoctorIf": [
+        "אובדן זיכרון מתקדם"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Деменция: прогрессирующие нарушения. Неотложка при внезапной спутанности, инсульте, ЧМТ после падения. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Внезапная спутанность",
+        "Признаки инсульта",
+        "ЧМТ после падения"
+      ],
+      "seeDoctorIf": [
+        "Прогрессирующая потеря памяти"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dementia",
+      "name": "NHS — Dementia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dementia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

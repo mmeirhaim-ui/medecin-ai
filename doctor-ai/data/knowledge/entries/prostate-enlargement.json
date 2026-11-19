@@ -1,0 +1,104 @@
+{
+  "id": "prostate-enlargement",
+  "category": "mens-health",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "enlarged prostate",
+      "BPH prostate",
+      "weak urine stream prostate"
+    ],
+    "fr": [
+      "hypertrophie de la prostate",
+      "HBP prostate",
+      "jet urinaire faible prostate"
+    ],
+    "he": [
+      "ערמונית מוגדלת",
+      "BPH ערמונית",
+      "זרם שתן חלש ערמונית"
+    ],
+    "ru": [
+      "аденома простаты",
+      "гиперплазия простаты",
+      "слабая струя мочи простата"
+    ]
+  },
+  "titles": {
+    "en": "Prostate enlargement (BPH)",
+    "fr": "Hypertrophie de la prostate (HBP)",
+    "he": "ערמונית מוגדלת",
+    "ru": "Аденома простаты"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Enlarged prostate (BPH) can cause weak stream, urgency, nocturia and incomplete emptying. NHS: GP assessment; medicines/procedures are clinician-led — never invent alpha-blocker doses. Emergency: inability to pass urine, severe lower abdominal pain, fever with urinary symptoms, or blood in urine with clot retention.",
+      "emergencyIf": [
+        "Cannot pass urine at all",
+        "Severe lower abdominal pain with retention",
+        "Fever with urinary symptoms / suspected sepsis"
+      ],
+      "seeDoctorIf": [
+        "Ongoing urinary symptoms in men",
+        "Blood in urine",
+        "Symptoms disrupting sleep"
+      ],
+      "doNot": [
+        "Do not invent prostate medicine doses",
+        "Do not ignore acute urinary retention"
+      ]
+    },
+    "fr": {
+      "summary": "HBP: jet faible, nycturie. Urgences si rétention urinaire ou fièvre. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Impossibilité d'uriner",
+        "Douleur abdominale basse sévère",
+        "Fièvre avec symptômes urinaires"
+      ],
+      "seeDoctorIf": [
+        "Troubles urinaires persistants"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "ערמונית מוגדלת: זרם חלש, השתנה לילית. חירום באצירת שתן או חום. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "אי יכולת להשתין בכלל",
+        "כאב בטן תחתונה קשה",
+        "חום עם תסמיני שתן"
+      ],
+      "seeDoctorIf": [
+        "תסמיני שתן מתמשכים"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Аденома простаты: слабая струя, никтурия. Неотложка при задержке мочи или лихорадке. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Полная невозможность помочиться",
+        "Сильная боль внизу живота",
+        "Лихорадка с мочевыми симптомами"
+      ],
+      "seeDoctorIf": [
+        "Стойкие мочевые симптомы"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-prostate-enlargement",
+      "name": "NHS — Prostate enlargement",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/prostate-enlargement/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

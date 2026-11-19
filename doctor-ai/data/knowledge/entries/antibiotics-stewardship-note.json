@@ -1,0 +1,113 @@
+{
+  "id": "antibiotics-stewardship-note",
+  "category": "general",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "need antibiotics",
+      "want antibiotics",
+      "antibiotic for cold",
+      "prescribe amoxicillin"
+    ],
+    "fr": [
+      "besoin antibiotiques",
+      "antibiotique pour rhume",
+      "ordonnance amoxicilline",
+      "prescrire antibiotique"
+    ],
+    "he": [
+      "צריך אנטיביוטיקה",
+      "אנטיביוטיקה להצטננות",
+      "מרשם אמוקסיצילין"
+    ],
+    "ru": [
+      "нужны антибиотики",
+      "антибиотик от простуды",
+      "рецепт амоксициллин"
+    ]
+  },
+  "titles": {
+    "en": "Antibiotics — when they are (not) appropriate",
+    "fr": "Antibiotiques — quand ils ne sont (pas) indiqués",
+    "he": "אנטיביוטיקה — מתי כן/לא",
+    "ru": "Антибиотики — когда уместны / нет"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Antibiotics do not treat viral colds. For sore throat/angina, antibiotics depend on clinical testing (e.g. rapid strep test) — HAS: no antibiotics if negative/low score. This assistant never writes prescriptions.",
+      "seeDoctorIf": [
+        "Symptoms suggesting bacterial infection needing exam (severe local infection, high-risk patient, prolonged fever)"
+      ],
+      "doNot": [
+        "Do not self-start leftover antibiotics",
+        "Do not expect antibiotics for typical viral cold/rhinitis (HAS/CDC)"
+      ],
+      "selfCare": [
+        "Supportive care for viral illnesses; pharmacist advice for OTC symptom relief"
+      ]
+    },
+    "fr": {
+      "summary": "Les antibiotiques ne traitent pas les rhumes viraux. Pour l'angine, indication selon score/TDR (HAS). Cet assistant ne prescrit jamais.",
+      "seeDoctorIf": [
+        "Suspicion d'infection bactérienne nécessitant examen"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques restants",
+        "Pas d'antibiotiques pour rhinopharyngite virale (HAS)"
+      ],
+      "selfCare": [
+        "Mesures symptomatiques ; conseil pharmacien"
+      ]
+    },
+    "he": {
+      "summary": "אנטיביוטיקה אינה מטפלת בהצטננות נגיפית. באנגינה — לפי בדיקה קלינית/TDR. האסיסטנט אינו רושם מרשמים.",
+      "seeDoctorIf": [
+        "חשד לזיהום חיידקי שדורש בדיקה"
+      ],
+      "doNot": [
+        "לא לקחת אנטיביוטיקה ישנה",
+        "לא לצפות לאנטיביוטיקה לנזלת נגיפית"
+      ],
+      "selfCare": [
+        "טיפול תומך; ייעוץ רוקח"
+      ]
+    },
+    "ru": {
+      "summary": "Антибиотики не лечат вирусную простуду. При ангине решение зависит от обследования/экспресс-теста. Этот ассистент не выписывает рецепты.",
+      "seeDoctorIf": [
+        "Подозрение на бактериальную инфекцию, требующую осмотра"
+      ],
+      "doNot": [
+        "Не начинайте «оставшиеся» антибиотики",
+        "Не ждите антибиотиков при вирусном насморке"
+      ],
+      "selfCare": [
+        "Симптоматическая поддержка; совет фармацевта"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "has-angine-abx",
+      "name": "HAS — Angine aiguë / antibiothérapie",
+      "org": "HAS",
+      "url": "https://www.has-sante.fr/jcms/p_3529230/fr/choix-et-durees-d-antibiotherapies-angine-aigue-de-l-adulte",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "has-abx-respiratory",
+      "name": "HAS — Mieux prescrire les antibiotiques (IR hautes / IU)",
+      "org": "HAS",
+      "url": "https://www.has-sante.fr/jcms/c_2723930/fr/mieux-prescrire-les-antibiotiques-pour-les-infections-respiratoires-hautes-et-les-infections-urinaires",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-cold",
+      "name": "CDC — Manage common cold",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/common-cold/treatment/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

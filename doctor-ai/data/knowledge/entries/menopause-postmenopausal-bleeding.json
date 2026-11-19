@@ -1,0 +1,127 @@
+{
+  "id": "menopause-postmenopausal-bleeding",
+  "category": "gyn",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "menopause",
+      "hot flushes",
+      "postmenopausal bleeding",
+      "bleeding after menopause",
+      "perimenopause"
+    ],
+    "fr": [
+      "ménopause",
+      "bouffées de chaleur",
+      "saignement post ménopausique",
+      "saignement après ménopause",
+      "périménopause"
+    ],
+    "he": [
+      "מנופאוזה",
+      "גלי חום",
+      "דימום אחרי מנופאוזה",
+      "דימום לאחר הפסקת וסת",
+      "פרימנופאוזה"
+    ],
+    "ru": [
+      "менопауза",
+      "приливы",
+      "кровотечение после менопаузы",
+      "кровянистые после климакса",
+      "перименопауза"
+    ]
+  },
+  "titles": {
+    "en": "Menopause symptoms / postmenopausal bleeding",
+    "fr": "Ménopause / saignement post-ménopausique",
+    "he": "מנופאוזה / דימום לאחר מנופאוזה",
+    "ru": "Менопауза / кровотечение после менопаузы"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Hot flushes, night sweats, mood and sleep changes are common around menopause. Any vaginal bleeding after menopause needs GP assessment (NHS) — do not ignore. HRT and other treatments are clinician decisions; this pack does not prescribe.",
+      "emergencyIf": [
+        "Very heavy bleeding with dizziness or fainting"
+      ],
+      "seeDoctorIf": [
+        "Any bleeding after menopause",
+        "Symptoms disrupting life (flushes, sleep, mood, vaginal dryness)",
+        "Unsure if bleeding is postmenopausal"
+      ],
+      "selfCare": [
+        "Layered clothing, cool bedroom, limit alcohol/spicy triggers if they worsen flushes",
+        "Discuss options with a clinician rather than self-medicating hormones"
+      ],
+      "doNot": [
+        "Do not ignore postmenopausal bleeding",
+        "Do not start hormone therapy without clinical advice"
+      ]
+    },
+    "fr": {
+      "summary": "Bouffées, sueurs nocturnes, troubles de l'humeur/sommeil sont fréquents. Tout saignement après la ménopause nécessite un avis médical. Pas d'hormonothérapie inventée.",
+      "emergencyIf": [
+        "Saignement très abondant avec malaise"
+      ],
+      "seeDoctorIf": [
+        "Tout saignement post-ménopausique",
+        "Symptômes qui perturbent la vie"
+      ],
+      "selfCare": [
+        "Vêtements en couches, chambre fraîche"
+      ],
+      "doNot": [
+        "Ne pas ignorer un saignement post-ménopausique"
+      ]
+    },
+    "he": {
+      "summary": "גלי חום, הזעות לילה ושינויי מצב רוח נפוצים. כל דימום אחרי מנופאוזה דורש בדיקה. אין HRT מומצא.",
+      "emergencyIf": [
+        "דימום כבד מאוד עם סחרחורת"
+      ],
+      "seeDoctorIf": [
+        "כל דימום אחרי מנופאוזה",
+        "תסמינים שמפריעים לחיים"
+      ],
+      "selfCare": [
+        "ביגוד בשכבות, חדר קריר"
+      ],
+      "doNot": [
+        "לא להתעלם מדימום לאחר מנופאוזה"
+      ]
+    },
+    "ru": {
+      "summary": "Приливы, ночная потливость, изменения настроения/сна часты. Любое кровотечение после менопаузы — к врачу. ЗГТ не назначать себе.",
+      "emergencyIf": [
+        "Очень обильное кровотечение с головокружением"
+      ],
+      "seeDoctorIf": [
+        "Любое кровотечение после менопаузы",
+        "Симптомы, мешающие жизни"
+      ],
+      "selfCare": [
+        "Многослойная одежда, прохладная спальня"
+      ],
+      "doNot": [
+        "Не игнорировать кровотечение после менопаузы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-menopause",
+      "name": "NHS — Symptoms of menopause and perimenopause",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/menopause-and-perimenopause/symptoms/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-postmenopausal-bleeding",
+      "name": "NHS — Postmenopausal bleeding",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/post-menopausal-bleeding/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

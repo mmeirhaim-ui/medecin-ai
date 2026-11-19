@@ -1,0 +1,110 @@
+{
+  "id": "boils-skin",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "boil",
+      "furuncle",
+      "painful pus bump skin"
+    ],
+    "fr": [
+      "furoncle",
+      "bouton à pus douloureux",
+      "abcès cutané petit"
+    ],
+    "he": [
+      "מורסה בעור",
+      "פרונקל",
+      "בליטה מוגלתית כואבת"
+    ],
+    "ru": [
+      "фурункул",
+      "чирей",
+      "болезненный гнойный бугорок"
+    ]
+  },
+  "titles": {
+    "en": "Boils (furuncles)",
+    "fr": "Furoncles",
+    "he": "מורסות / פרונקלים",
+    "ru": "Фурункулы"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Boils are painful pus-filled skin lumps. NHS: warm compresses; do not squeeze; pharmacy/GP if large, fever, spreading redness, on face, or recurrent. Antibiotics/drainage are clinician decisions — no invented regimens.",
+      "seeDoctorIf": [
+        "Large or worsening boil",
+        "Fever",
+        "Spreading redness",
+        "Boil on the face",
+        "Recurrent boils"
+      ],
+      "selfCare": [
+        "Warm compress; keep clean; do not squeeze"
+      ],
+      "doNot": [
+        "Do not squeeze or lance at home",
+        "Do not invent antibiotic courses"
+      ]
+    },
+    "fr": {
+      "summary": "Le furoncle est une bosse douloureuse à pus. Compresses tièdes ; ne pas percer. Médecin si gros, fièvre, rougeur extensive, visage, récidives. Pas d'antibiotiques inventés.",
+      "seeDoctorIf": [
+        "Gros/aggravé",
+        "Fièvre",
+        "Rougeur qui s'étend",
+        "Sur le visage",
+        "Récidives"
+      ],
+      "selfCare": [
+        "Compresse tiède ; ne pas presser"
+      ],
+      "doNot": [
+        "Ne pas percer à domicile"
+      ]
+    },
+    "he": {
+      "summary": "מורסה: בליטה כואבת עם מוגלה. קומפרסים חמים; לא לסחוט. רופא אם גדול, חום, אודם מתפשט, בפנים, חוזר. אין אנטיביוטיקה מומצאת.",
+      "seeDoctorIf": [
+        "גדול/מחמיר",
+        "חום",
+        "אודם מתפשט",
+        "בפנים",
+        "חוזר"
+      ],
+      "selfCare": [
+        "קומפרס חם; לא לסחוט"
+      ],
+      "doNot": [
+        "לא לפתוח בבית"
+      ]
+    },
+    "ru": {
+      "summary": "Фурункул: болезненный гнойный бугорок. Тёплые компрессы; не выдавливать. Врач если крупный, лихорадка, краснота, на лице, рецидивы. Антибиотики не выдумывать.",
+      "seeDoctorIf": [
+        "Крупный/ухудшается",
+        "Лихорадка",
+        "Распространяющаяся краснота",
+        "На лице",
+        "Рецидивы"
+      ],
+      "selfCare": [
+        "Тёплый компресс; не выдавливать"
+      ],
+      "doNot": [
+        "Не вскрывать дома"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-boils",
+      "name": "NHS — Boils",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/boils/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

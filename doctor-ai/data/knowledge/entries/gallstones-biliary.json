@@ -1,0 +1,110 @@
+{
+  "id": "gallstones-biliary",
+  "category": "gi",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "gallstones",
+      "biliary colic",
+      "pain under right ribs",
+      "gallbladder attack"
+    ],
+    "fr": [
+      "calculs biliaires",
+      "colique hépatique",
+      "douleur sous les côtes droites",
+      "crise de vésicule"
+    ],
+    "he": [
+      "אבני מרה",
+      "קוליק מרה",
+      "כאב מתחת לצלעות ימין",
+      "התקף כיס מרה"
+    ],
+    "ru": [
+      "камни в желчном",
+      "жёлчная колика",
+      "боль под правыми рёбрами",
+      "приступ желчного"
+    ]
+  },
+  "titles": {
+    "en": "Gallstones / biliary pain",
+    "fr": "Calculs biliaires / colique hépatique",
+    "he": "אבני מרה / כאב מרה",
+    "ru": "Желчнокаменная болезнь / колика"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Gallstones often cause no symptoms. Blocking a duct can cause severe constant tummy pain (>30 min up to hours), often middle or under right ribs, with nausea/vomiting (biliary colic). NHS: urgent advice for pain >30 min; emergency for sudden severe pain, pain to back with vomiting, very high fever/shivers, or jaundice. Surgery decisions are clinical — not here.",
+      "emergencyIf": [
+        "Sudden severe tummy pain",
+        "Pain spreading to the back with vomiting",
+        "Very high temperature or hot/cold/shivery",
+        "Yellow skin or whites of eyes"
+      ],
+      "seeDoctorIf": [
+        "Tummy pain lasting longer than 30 minutes"
+      ],
+      "doNot": [
+        "Do not invent ursodeoxycholic acid or opioid doses",
+        "Do not ignore jaundice with biliary pain"
+      ]
+    },
+    "fr": {
+      "summary": "Les calculs sont souvent asymptomatiques. Douleur >30 min sous côtes droites/milieu = avis urgent. Urgence si douleur brutale, irradiation dorsale avec vomissements, fièvre élevée, ictère.",
+      "emergencyIf": [
+        "Douleur abdominale brutale sévère",
+        "Douleur vers le dos avec vomissements",
+        "Forte fièvre / frissons",
+        "Peau ou yeux jaunes"
+      ],
+      "seeDoctorIf": [
+        "Douleur > 30 minutes"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "אבני מרה לרוב ללא תסמינים. כאב מעל 30 דק' באמצע/מתחת לצלעות ימין — ייעוץ דחוף. חירום בכאב פתאומי חזק, הקרנה לגב עם הקאות, חום גבוה, צהבת.",
+      "emergencyIf": [
+        "כאב בטן פתאומי חזק",
+        "כאב לגב עם הקאות",
+        "חום גבוה / צמרמורת",
+        "עור או עיניים צהובים"
+      ],
+      "seeDoctorIf": [
+        "כאב מעל 30 דקות"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Камни часто бессимптомны. Боль >30 мин в середине/под правыми рёбрами — срочный совет. Неотложка при внезапной сильной боли, иррадиации в спину с рвотой, высокой лихорадке, желтухе.",
+      "emergencyIf": [
+        "Внезапная сильная боль в животе",
+        "Боль в спину с рвотой",
+        "Очень высокая температура / озноб",
+        "Жёлтая кожа или глаза"
+      ],
+      "seeDoctorIf": [
+        "Боль дольше 30 минут"
+      ],
+      "doNot": [
+        "Не изобретать дозы препаратов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-gallstones",
+      "name": "NHS — Gallstones",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/gallstones/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "alcohol-poisoning",
+  "category": "toxicology",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "alcohol poisoning",
+      "passed out drunk",
+      "alcohol overdose vomiting unconscious"
+    ],
+    "fr": [
+      "intoxication alcoolique",
+      "évanoui après alcool",
+      "coma éthylique"
+    ],
+    "he": [
+      "הרעלת אלכוהול",
+      "התעלף משתייה",
+      "מנת יתר אלכוהול"
+    ],
+    "ru": [
+      "алкогольное отравление",
+      "потерял сознание от алкоголя",
+      "алкогольная интоксикация"
+    ]
+  },
+  "titles": {
+    "en": "Alcohol poisoning",
+    "fr": "Intoxication alcoolique aiguë",
+    "he": "הרעלת אלכוהול",
+    "ru": "Алкогольное отравление"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Alcohol poisoning can be life-threatening. NHS: emergency care if unconscious/hard to wake, seizures, slow/irregular breathing, cold/clammy/blue-tinged skin, or vomiting while not fully awake. Put in recovery position if unconscious and breathing; do not leave alone. Distinct from alcohol-withdrawal entry.",
+      "emergencyIf": [
+        "Unconscious or hard to wake after drinking",
+        "Seizures",
+        "Slow or irregular breathing",
+        "Cold, clammy, pale or blue-tinged skin",
+        "Vomiting while not fully conscious"
+      ],
+      "selfCare": [
+        "If conscious and advised to wait for help: keep warm, sit/lie safely, sip water if able — still seek urgent assessment when severe"
+      ],
+      "doNot": [
+        "Do not leave the person alone",
+        "Do not give more alcohol or coffee as a 'cure'",
+        "Do not put them in a cold shower",
+        "Do not invent detox drug regimens"
+      ]
+    },
+    "fr": {
+      "summary": "L'intoxication alcoolique peut tuer. Urgences si inconscient, convulsions, respiration lente, peau froide/cyanose, vomissements sans éveil complet. PLS si inconscient et respire.",
+      "emergencyIf": [
+        "Inconscient / réveil difficile",
+        "Convulsions",
+        "Respiration lente/irrégulière",
+        "Peau froide/cyanose",
+        "Vomissements sans éveil complet"
+      ],
+      "doNot": [
+        "Ne pas laisser seul",
+        "Pas de café/alcool supplémentaires",
+        "Pas de douche froide"
+      ]
+    },
+    "he": {
+      "summary": "הרעלת אלכוהול מסוכנת. חירום אם מחוסר הכרה, פרכוסים, נשימה איטית, עור קר/כחלחל, הקאות בלי ערנות. מצב החלמה אם נושם.",
+      "emergencyIf": [
+        "מחוסר הכרה / קשה להעיר",
+        "פרכוסים",
+        "נשימה איטית/לא סדירה",
+        "עור קר/כחלחל",
+        "הקאות בלי ערנות מלאה"
+      ],
+      "doNot": [
+        "לא להשאיר לבד",
+        "לא קפה/אלכוהול נוסף",
+        "לא מקלחת קרה"
+      ]
+    },
+    "ru": {
+      "summary": "Алкогольное отравление опасно для жизни. Неотложка при бессознательном состоянии, судорогах, медленном дыхании, холодной/синюшной коже, рвоте без полного сознания. Положение восстановления если дышит.",
+      "emergencyIf": [
+        "Без сознания / трудно разбудить",
+        "Судороги",
+        "Медленное/нерегулярное дыхание",
+        "Холодная/синюшная кожа",
+        "Рвота без полного сознания"
+      ],
+      "doNot": [
+        "Не оставлять одного",
+        "Не давать ещё алкоголь/кофе",
+        "Не холодный душ"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-alcohol-poisoning",
+      "name": "NHS — Alcohol poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/alcohol-poisoning/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

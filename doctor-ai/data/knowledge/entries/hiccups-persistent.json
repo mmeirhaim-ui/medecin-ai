@@ -1,0 +1,98 @@
+{
+  "id": "hiccups-persistent",
+  "category": "general",
+  "urgencyDefault": "auto_soins",
+  "priority": 1,
+  "keywords": {
+    "en": [
+      "hiccups",
+      "hiccoughs lasting",
+      "cannot stop hiccuping"
+    ],
+    "fr": [
+      "hoquet",
+      "hoquet qui dure",
+      "n'arrive pas à arrêter le hoquet"
+    ],
+    "he": [
+      "שיהוקים",
+      "שיהוקים שנמשכים",
+      "לא מצליח להפסיק לשיהק"
+    ],
+    "ru": [
+      "икота",
+      "длительная икота",
+      "не могу остановить икоту"
+    ]
+  },
+  "titles": {
+    "en": "Hiccups",
+    "fr": "Hoquet",
+    "he": "שיהוקים",
+    "ru": "Икота"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Short hiccup bouts are common. NHS: sip cold water, breathe into a paper bag carefully if advised for brief spells, hold breath briefly — evidence is limited. See a GP if lasting >48 hours or with chest/abdominal pain, shortness of breath, or vomiting. No inventing chlorpromazine doses.",
+      "seeDoctorIf": [
+        "Hiccups lasting more than 48 hours",
+        "Hiccups with chest/abdominal pain, breathlessness, or vomiting"
+      ],
+      "selfCare": [
+        "Sip cold water; gentle breath-holding; avoid large meals/alcohol triggers"
+      ],
+      "doNot": [
+        "Do not invent prescription hiccup medicines",
+        "Do not rebreath into a bag if you have breathing/heart problems without advice"
+      ]
+    },
+    "fr": {
+      "summary": "Le hoquet court est fréquent. Boire de l'eau froide. Médecin si >48 h ou douleur/dyspnée/vomissements. Pas de médicaments inventés.",
+      "seeDoctorIf": [
+        "Hoquet > 48 h",
+        "Avec douleur/dyspnée/vomissements"
+      ],
+      "selfCare": [
+        "Eau froide ; éviter gros repas/alcool"
+      ],
+      "doNot": [
+        "Pas de médicaments de prescription inventés"
+      ]
+    },
+    "he": {
+      "summary": "שיהוקים קצרים נפוצים. לגימות מים קרים. רופא אם מעל 48 שעות או עם כאב/קוצר נשימה/הקאות. אין תרופות מומצאות.",
+      "seeDoctorIf": [
+        "שיהוקים מעל 48 שעות",
+        "עם כאב/קוצר נשימה/הקאות"
+      ],
+      "selfCare": [
+        "מים קרים; להימנע מארוחות גדולות/אלכוהול"
+      ],
+      "doNot": [
+        "אין תרופות מרשם מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Короткая икота обычна. Глотки холодной воды. Врач если >48 ч или с болью/одышкой/рвотой. Лекарства не выдумывать.",
+      "seeDoctorIf": [
+        "Икота >48 ч",
+        "С болью/одышкой/рвотой"
+      ],
+      "selfCare": [
+        "Холодная вода; избегать больших приёмов пищи/алкоголя"
+      ],
+      "doNot": [
+        "Не изобретать рецептурные средства от икоты"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hiccups",
+      "name": "NHS — Hiccups",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/hiccups/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "delirium-sudden-confusion",
+  "category": "neuro",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "sudden confusion",
+      "delirium",
+      "disoriented suddenly",
+      "acute confusion elderly"
+    ],
+    "fr": [
+      "confusion soudaine",
+      "délire aigu",
+      "désorientation brutale",
+      "confusion personne âgée"
+    ],
+    "he": [
+      "בלבול פתאומי",
+      "דליריום",
+      "דיסאוריינטציה פתאומית",
+      "בלבול חד בקשיש"
+    ],
+    "ru": [
+      "внезапная спутанность",
+      "делирий",
+      "острая дезориентация",
+      "спутанность у пожилых"
+    ]
+  },
+  "titles": {
+    "en": "Sudden confusion (delirium)",
+    "fr": "Confusion soudaine (délire)",
+    "he": "בלבול פתאומי (דליריום)",
+    "ru": "Внезапная спутанность (делирий)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sudden confusion needs immediate medical assessment — causes can be life-threatening (infection, stroke, low sugar, head injury, medicines, alcohol/CO). Do not self-diagnose. NHS: go to A&E or call emergency services.",
+      "emergencyIf": [
+        "Someone suddenly becomes confused or delirious",
+        "Cannot think/speak clearly, disoriented, hallucinations with sudden onset"
+      ],
+      "seeDoctorIf": [
+        "New or fluctuating confusion in an older person — urgent clinical review"
+      ],
+      "doNot": [
+        "Do not assume dementia for sudden onset",
+        "Do not delay emergency assessment"
+      ]
+    },
+    "fr": {
+      "summary": "Une confusion soudaine nécessite une évaluation immédiate (infection, AVC, hypoglycémie, traumatisme, médicaments, alcool/CO). Ne pas s'autodiagnostiquer.",
+      "emergencyIf": [
+        "Confusion ou délire d'apparition brutale"
+      ],
+      "seeDoctorIf": [
+        "Confusion nouvelle ou fluctuante chez la personne âgée"
+      ],
+      "doNot": [
+        "Ne pas confondre avec démence d'emblée"
+      ]
+    },
+    "he": {
+      "summary": "בלבול פתאומי דורש הערכה מיידית — גורמים עלולים לסכן חיים. לא לאבחן לבד.",
+      "emergencyIf": [
+        "בלבול או דליריום שמתחיל בפתאומיות"
+      ],
+      "seeDoctorIf": [
+        "בלבול חדש או משתנה בקשיש"
+      ],
+      "doNot": [
+        "לא להניח שזו דמנציה אם ההתחלה פתאומית"
+      ]
+    },
+    "ru": {
+      "summary": "Внезапная спутанность требует немедленной оценки — причины могут быть жизнеугрожающими. Не занимайтесь самодиагностикой.",
+      "emergencyIf": [
+        "Внезапная спутанность или делирий"
+      ],
+      "seeDoctorIf": [
+        "Новая или флюктуирующая спутанность у пожилого"
+      ],
+      "doNot": [
+        "Не считать сразу деменцией при внезапном начале"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-confusion",
+      "name": "NHS — Sudden confusion (delirium)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/confusion/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

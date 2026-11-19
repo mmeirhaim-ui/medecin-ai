@@ -1,0 +1,103 @@
+{
+  "id": "travel-vaccines-catchup",
+  "category": "travel",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "travel vaccines",
+      "vaccination catch up",
+      "missed vaccines",
+      "need travel shots",
+      "yellow fever vaccine"
+    ],
+    "fr": [
+      "vaccins voyage",
+      "rattrapage vaccinal",
+      "vaccins manqués",
+      "fièvre jaune vaccin",
+      "vaccination avant voyage"
+    ],
+    "he": [
+      "חיסוני נסיעות",
+      "השלמת חיסונים",
+      "חיסונים חסרים",
+      "חיסון קדחת צהובה"
+    ],
+    "ru": [
+      "прививки для поездки",
+      "догоняющая вакцинация",
+      "пропущенные прививки",
+      "вакцина жёлтой лихорадки"
+    ]
+  },
+  "titles": {
+    "en": "Travel vaccines / catch-up (orientation)",
+    "fr": "Vaccins voyage / rattrapage (orientation)",
+    "he": "חיסוני נסיעה / השלמה (הכוונה)",
+    "ru": "Прививки для поездки / догоняющие (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Vaccine needs depend on destination, age, pregnancy, and immune status. Use official schedules (NHS vaccinations pages, CDC Travelers' Health) and a travel clinic or GP — this assistant never issues a personal vaccine prescription or invents catch-up intervals.",
+      "seeDoctorIf": [
+        "Planning travel to regions with vaccine-preventable disease risk",
+        "Unsure if childhood or adult vaccines are up to date",
+        "Pregnant, immunocompromised, or infant travelling"
+      ],
+      "doNot": [
+        "Do not invent doses, brands, or catch-up calendars",
+        "Do not skip destination-specific advice (e.g. yellow fever certificate rules)"
+      ]
+    },
+    "fr": {
+      "summary": "Les besoins vaccinaux dépendent de la destination, de l'âge, de la grossesse et de l'immunité. Consulter les calendriers officiels et une clinique du voyage — jamais de schéma inventé ici.",
+      "seeDoctorIf": [
+        "Voyage prévu en zone à risque vaccinal",
+        "Schéma vaccinal incomplet",
+        "Grossesse, immunodépression, nourrisson"
+      ],
+      "doNot": [
+        "Pas de doses ni calendriers inventés"
+      ]
+    },
+    "he": {
+      "summary": "צורכי חיסון תלויים ביעד, גיל, הריון ומצב חיסוני. לוחות רשמיים ומרפאת נסיעות — אין לוח השלמה מומצא כאן.",
+      "seeDoctorIf": [
+        "תכנון נסיעה לאזור סיכון",
+        "חיסונים לא מעודכנים",
+        "הריון / דיכוי חיסוני / תינוק"
+      ],
+      "doNot": [
+        "אין מינונים או לוחות מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Нужды в вакцинах зависят от направления, возраста, беременности и иммунитета. Официальные календари и клиника путешествий — здесь нет выдуманных схем.",
+      "seeDoctorIf": [
+        "Поездка в зону вакциноуправляемого риска",
+        "Неполный график",
+        "Беременность / иммунодефицит / младенец"
+      ],
+      "doNot": [
+        "Не изобретать дозы и календари"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-vaccinations",
+      "name": "NHS — Vaccinations and when to have them",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/vaccinations/nhs-vaccinations-and-when-to-have-them/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-travelers-health",
+      "name": "CDC — Travelers' Health",
+      "org": "CDC",
+      "url": "https://wwwnc.cdc.gov/travel",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

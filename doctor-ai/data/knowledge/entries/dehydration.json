@@ -1,0 +1,141 @@
+{
+  "id": "dehydration",
+  "category": "general",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "dehydration",
+      "not peeing enough",
+      "dark urine dizzy",
+      "sunken fontanelle",
+      "fewer wet nappies"
+    ],
+    "fr": [
+      "déshydratation",
+      "urine foncée peu fréquente",
+      "fontanelle enfoncée",
+      "moins de couches mouillées"
+    ],
+    "he": [
+      "התייבשות",
+      "שתן כהה מועט",
+      "מרפס שקוע",
+      "פחות חיתולים רטובים"
+    ],
+    "ru": [
+      "обезвоживание",
+      "тёмная моча редко",
+      "запавший родничок",
+      "меньше мокрых подгузников"
+    ]
+  },
+  "titles": {
+    "en": "Dehydration — when to escalate",
+    "fr": "Déshydratation — quand s'inquiéter",
+    "he": "התייבשות — מתי להחמיר",
+    "ru": "Обезвоживание — когда срочно"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Dehydration means fluid loss exceeds intake. NHS: drink fluids in small sips; pharmacist ORS if vomiting/diarrhoea. Urgent advice for unusual tiredness, persistent dizziness on standing, dark/less urine, fast breathing/heart rate, few tears, sunken fontanelle. Emergency if blue/grey/pale blotchy skin, cold skin, hard breathing, confusion, or hard to wake (possible shock).",
+      "emergencyIf": [
+        "Blue, grey, pale or blotchy skin/lips/tongue with dehydration signs",
+        "Cold skin",
+        "Difficulty breathing or very rapid breaths",
+        "Confused",
+        "Sleepier than normal or difficult to wake"
+      ],
+      "seeDoctorIf": [
+        "Unusually tired or drowsy child",
+        "Dizziness on standing that does not settle",
+        "Dark urine or peeing much less / fewer wet nappies",
+        "Fast breathing or heart rate",
+        "Sunken fontanelle"
+      ],
+      "selfCare": [
+        "Small frequent sips of fluid; avoid excess caffeine/alcohol",
+        "Ask pharmacist about oral rehydration solutions when vomiting/diarrhoea"
+      ],
+      "doNot": [
+        "Do not invent IV fluid plans",
+        "Do not delay care in infants with sunken fontanelle and few wet nappies"
+      ]
+    },
+    "fr": {
+      "summary": "La déshydratation survient quand les pertes dépassent les apports. Boire par petites gorgées ; SRO en pharmacie si vomissements/diarrhée. Urgence si signes de choc (cyanose, froideur, détresse, confusion, réveil difficile).",
+      "emergencyIf": [
+        "Peau/lèvres bleues, grises, pâles ou marbrées",
+        "Peau froide",
+        "Détresse respiratoire",
+        "Confusion",
+        "Somnolence / réveil difficile"
+      ],
+      "seeDoctorIf": [
+        "Fatigue inhabituelle",
+        "Vertige au lever persistant",
+        "Urines foncées/rares",
+        "Fontanelle enfoncée"
+      ],
+      "selfCare": [
+        "Petites gorgées ; éviter caféine/alcool excessifs ; SRO si besoin"
+      ],
+      "doNot": [
+        "Pas de protocoles de perfusion inventés"
+      ]
+    },
+    "he": {
+      "summary": "התייבשות = איבוד נוזלים עולה על הצריכה. לגימות קטנות; ORS בבית מרקחת. חירום בסימני הלם. ייעוץ דחוף לעייפות חריגה, סחרחורת בעמידה, שתן כהה/מועט, מרפס שקוע.",
+      "emergencyIf": [
+        "עור/שפתיים כחולים אפורים חיוורים או מנומרים",
+        "עור קר",
+        "קושי נשימה",
+        "בלבול",
+        "ישנוניות / קשה להעיר"
+      ],
+      "seeDoctorIf": [
+        "עייפות חריגה",
+        "סחרחורת בעמידה",
+        "שתן כהה או מועט",
+        "מרפס שקוע"
+      ],
+      "selfCare": [
+        "לגימות קטנות; להימנע מקפאין/אלכוהול עודפים; ORS לפי רוקח"
+      ],
+      "doNot": [
+        "אין פרוטוקול עירוי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Обезвоживание — потери жидкости больше поступления. Маленькие глотки; ОРС в аптеке. Неотложка при признаках шока. Срочно при необычной сонливости, головокружении при вставании, тёмной/редкой моче, запавшем родничке.",
+      "emergencyIf": [
+        "Синяя/серая/бледная мраморная кожа/губы",
+        "Холодная кожа",
+        "Затруднённое дыхание",
+        "Спутанность",
+        "Сонливость / трудно разбудить"
+      ],
+      "seeDoctorIf": [
+        "Необычная усталость",
+        "Головокружение при вставании",
+        "Тёмная/редкая моча",
+        "Запавший родничок"
+      ],
+      "selfCare": [
+        "Маленькие глотки; избегать лишнего кофеина/алкоголя; ОРС по совету фармацевта"
+      ],
+      "doNot": [
+        "Не изобретать схемы инфузий"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dehydration",
+      "name": "NHS — Dehydration",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dehydration/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

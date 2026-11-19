@@ -1,0 +1,103 @@
+{
+  "id": "hepatitis-a",
+  "category": "travel",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "hepatitis A",
+      "hep A",
+      "jaundice after travel food",
+      "dark urine pale stools travel"
+    ],
+    "fr": [
+      "hépatite A",
+      "ictère après voyage alimentaire",
+      "urines foncées selles pâles voyage"
+    ],
+    "he": [
+      "הפטיטיס A",
+      "צהבת אחרי נסיעה מזון",
+      "שתן כהה צואה בהירה נסיעה"
+    ],
+    "ru": [
+      "гепатит A",
+      "желтуха после поездки еда",
+      "тёмная моча светлый стул поездка"
+    ]
+  },
+  "titles": {
+    "en": "Hepatitis A (orientation)",
+    "fr": "Hépatite A (orientation)",
+    "he": "הפטיטיס A (הכוונה)",
+    "ru": "Гепатит A (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Hepatitis A is a liver infection spread via faecal–oral route. Symptoms: fever, flu-like illness, nausea, upper tummy pain, diarrhoea/constipation, pale stools, dark urine, itch, jaundice. NHS: see a GP if recent travel/exposure; urgent advice if pregnant, over 60, or known liver disease. Rest, fluids; infectious ~7 days after jaundice/symptom onset. Vaccination for risk groups is clinic-led — no invented vaccine schedules.",
+      "seeDoctorIf": [
+        "You think you might have hepatitis A",
+        "Recent travel to a high-risk country",
+        "Pregnant, >60, or liver condition with suspected hep A — urgent advice"
+      ],
+      "selfCare": [
+        "Rest; fluids; limit contact while infectious as advised; hand hygiene after toilet"
+      ],
+      "doNot": [
+        "Do not invent antivirals or vaccine catch-up calendars",
+        "Do not share towels/food prep while infectious"
+      ]
+    },
+    "fr": {
+      "summary": "L'hépatite A se transmet féco-orale. Fièvre, nausées, douleur haute, selles pâles, urines foncées, ictère. Avis médical ; urgent si grossesse, >60 ans, maladie du foie. Pas de schémas vaccinaux inventés.",
+      "seeDoctorIf": [
+        "Suspicion d'hépatite A",
+        "Voyage récent en zone à risque",
+        "Grossesse / >60 ans / foie — avis urgent"
+      ],
+      "selfCare": [
+        "Repos ; hydratation ; hygiène des mains"
+      ],
+      "doNot": [
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "הפטיטיס A מועבר צואה-פה. חום, בחילה, כאב בטן עליון, צואה בהירה, שתן כהה, צהבת. ייעוץ; דחוף בהריון/>60/מחלת כבד. אין לוח חיסונים מומצא.",
+      "seeDoctorIf": [
+        "חשד להפטיטיס A",
+        "נסיעה לאחרונה לאזור סיכון",
+        "הריון / מעל 60 / כבד — ייעוץ דחוף"
+      ],
+      "selfCare": [
+        "מנוחה; שתייה; היגיינת ידיים"
+      ],
+      "doNot": [
+        "אין אנטי-ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Гепатит A — фекально-оральный. Лихорадка, тошнота, боль вверху живота, светлый стул, тёмная моча, желтуха. К врачу; срочно при беременности/>60/болезни печени. Календари вакцин не выдумывать.",
+      "seeDoctorIf": [
+        "Подозрение на гепатит A",
+        "Недавняя поездка в зону риска",
+        "Беременность />60 / печень — срочно"
+      ],
+      "selfCare": [
+        "Покой; жидкость; гигиена рук"
+      ],
+      "doNot": [
+        "Не изобретать противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hepatitis-a",
+      "name": "NHS — Hepatitis A",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hepatitis-a/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

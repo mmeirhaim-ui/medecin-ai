@@ -1,0 +1,127 @@
+{
+  "id": "heat-illness",
+  "category": "environmental",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "heat stroke",
+      "heat exhaustion",
+      "overheating",
+      "hot dry skin confusion",
+      "heat cramps"
+    ],
+    "fr": [
+      "coup de chaleur",
+      "épuisement dû à la chaleur",
+      "suréchauffe",
+      "peau chaude sèche confusion",
+      "crampes de chaleur"
+    ],
+    "he": [
+      "מכת חום",
+      "תשישות חום",
+      "התחממות יתר",
+      "עור חם ויבש עם בלבול",
+      "התכווצויות מחום"
+    ],
+    "ru": [
+      "тепловой удар",
+      "тепловое истощение",
+      "перегрев",
+      "горячая сухая кожа спутанность",
+      "тепловые судороги"
+    ]
+  },
+  "titles": {
+    "en": "Heat stroke / heat exhaustion",
+    "fr": "Coup de chaleur / épuisement thermique",
+    "he": "מכת חום / תשישות מחום",
+    "ru": "Тепловой удар / тепловое истощение"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Heat stroke is a medical emergency (very high temperature, hot skin, confusion, fainting, seizures). Heat exhaustion needs cooling and fluids; seek help if vomiting, worsening, or lasting >1 hour. Educational CDC framing.",
+      "emergencyIf": [
+        "Heat stroke signs: high body temperature (~103°F/39.4°C or higher), hot red dry or damp skin, fast strong pulse, headache, dizziness, nausea, confusion, loss of consciousness",
+        "Seizures or altered mental status in heat"
+      ],
+      "seeDoctorIf": [
+        "Heat exhaustion with vomiting, worsening, or symptoms >1 hour",
+        "Heat cramps lasting >1 hour or in people with heart disease / low-sodium diet"
+      ],
+      "selfCare": [
+        "Heat exhaustion: cool place, loosen clothes, cool wet cloths/bath, sip water",
+        "Heat stroke: call emergency services; cool quickly; CDC says do not give the person anything to drink while awaiting emergency care for heat stroke"
+      ],
+      "doNot": [
+        "Do not leave someone with heat stroke alone",
+        "Do not invent IV fluid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Le coup de chaleur est une urgence (température très élevée, peau chaude, confusion, syncope, convulsions). Épuisement : refroidir et hydrater ; aide si vomissements, aggravation ou > 1 h.",
+      "emergencyIf": [
+        "Signes de coup de chaleur : température très haute, peau chaude, confusion, perte de connaissance, convulsions"
+      ],
+      "seeDoctorIf": [
+        "Épuisement avec vomissements, aggravation, durée > 1 h"
+      ],
+      "selfCare": [
+        "Lieu frais, vêtements lâches, linges froids ; petites gorgées si épuisement",
+        "Coup de chaleur : secours + refroidissement ; ne pas faire boire en attendant les secours (repère CDC)"
+      ],
+      "doNot": [
+        "Ne laissez pas la personne seule"
+      ]
+    },
+    "he": {
+      "summary": "מכת חום היא חירום (חום גבוה מאוד, עור חם, בלבול, עילפון, פרכוסים). בתשישות חום — קירור ושתייה; פנו לעזרה אם יש הקאות, החמרה או מעל שעה.",
+      "emergencyIf": [
+        "סימני מכת חום: חום גבוה מאוד, עור חם, בלבול, אובדן הכרה, פרכוסים"
+      ],
+      "seeDoctorIf": [
+        "תשישות עם הקאות / החמרה / מעל שעה"
+      ],
+      "selfCare": [
+        "מקום קריר, בגדים רפויים, מגבות קרות; לגימות אם תשישות",
+        "מכת חום: חירום + קירור; לפי CDC לא להשקות בזמן המתנה לחירום"
+      ],
+      "doNot": [
+        "לא להשאיר לבד במכת חום"
+      ]
+    },
+    "ru": {
+      "summary": "Тепловой удар — неотложность (очень высокая температура, горячая кожа, спутанность, обморок, судороги). При тепловом истощении — охлаждение и жидкость; помощь при рвоте, ухудшении или >1 часа.",
+      "emergencyIf": [
+        "Признаки теплового удара: очень высокая температура, горячая кожа, спутанность, потеря сознания, судороги"
+      ],
+      "seeDoctorIf": [
+        "Истощение с рвотой, ухудшением или длительностью >1 часа"
+      ],
+      "selfCare": [
+        "Прохладное место, ослабить одежду, холодные компрессы; глотки воды при истощении",
+        "Тепловой удар: скорая + быстрое охлаждение; по CDC не давать пить до приезда помощи"
+      ],
+      "doNot": [
+        "Не оставляйте человека с тепловым ударом одного"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "cdc-heat-illnesses",
+      "name": "CDC/NIOSH — Heat-related illnesses",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/niosh/heat-stress/about/illnesses.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-heat-pdf",
+      "name": "CDC — Heat related illnesses (public tip sheet)",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/disasters/extremeheat/pdf/Heat_Related_Illness.pdf",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

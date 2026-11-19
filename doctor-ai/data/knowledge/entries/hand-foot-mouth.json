@@ -1,0 +1,99 @@
+{
+  "id": "hand-foot-mouth",
+  "category": "peds",
+  "urgencyDefault": "auto_soins",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "hand foot mouth",
+      "HFMD",
+      "mouth ulcers hand spots",
+      "hand foot and mouth"
+    ],
+    "fr": [
+      "maladie pied main bouche",
+      "aphtes et boutons mains pieds",
+      "syndrome pied-main-bouche"
+    ],
+    "he": [
+      "יד רגל פה",
+      "כיבים בפה ושלפוחיות בידיים",
+      "HFMD"
+    ],
+    "ru": [
+      "синдром рука-нога-рот",
+      "язвочки во рту и сыпь на руках",
+      "HFMD"
+    ]
+  },
+  "titles": {
+    "en": "Hand, foot and mouth disease",
+    "fr": "Syndrome pied-main-bouche",
+    "he": "מחלת יד-רגל-פה",
+    "ru": "Синдром рука–нога–рот"
+  },
+  "guidance": {
+    "en": {
+      "summary": "HFMD usually improves in 7–10 days. Cool fluids, soft foods, paracetamol/ibuprofen per label. See GP if not improving by 7–10 days or if pregnant. Urgent advice for very high temperature/shivers, worry about the child, or peeing less (dehydration).",
+      "seeDoctorIf": [
+        "Not improving after 7–10 days",
+        "Pregnant with HFMD"
+      ],
+      "selfCare": [
+        "Cool fluids (avoid acidic drinks); soft foods; paracetamol/ibuprofen if suitable per label"
+      ],
+      "doNot": [
+        "Do not invent antivirals or antibiotics for viral HFMD",
+        "Antibiotics do not cure HFMD"
+      ]
+    },
+    "fr": {
+      "summary": "Le syndrome pied-main-bouche s'améliore souvent en 7–10 jours. Liquides frais, aliments mous, paracétamol/ibuprofène selon notice. Médecin si pas d'amélioration ou grossesse.",
+      "seeDoctorIf": [
+        "Pas d'amélioration à 7–10 jours",
+        "Grossesse"
+      ],
+      "selfCare": [
+        "Boissons fraîches ; aliments mous ; antalgiques selon notice"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques pour soigner le HFMD viral"
+      ]
+    },
+    "he": {
+      "summary": "יד-רגל-פה לרוב משתפר תוך 7–10 ימים. נוזלים קרים, מזון רך, פרצטמול/איבופרופן לפי התווית. רופא אם אין שיפור או בהריון.",
+      "seeDoctorIf": [
+        "אין שיפור אחרי 7–10 ימים",
+        "הריון"
+      ],
+      "selfCare": [
+        "נוזלים קרים; מזון רך; משככי כאב לפי התווית"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה לריפוי HFMD ויראלי"
+      ]
+    },
+    "ru": {
+      "summary": "Синдром рука–нога–рот обычно проходит за 7–10 дней. Прохладные жидкости, мягкая еда, парацетамол/ибупрофен по инструкции. Врач если нет улучшения или беременность.",
+      "seeDoctorIf": [
+        "Нет улучшения за 7–10 дней",
+        "Беременность"
+      ],
+      "selfCare": [
+        "Прохладные жидкости; мягкая еда; анальгетики по инструкции"
+      ],
+      "doNot": [
+        "Антибиотики не лечат вирусный HFMD"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hand-foot-mouth",
+      "name": "NHS — Hand, foot and mouth disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/hand-foot-mouth-disease/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

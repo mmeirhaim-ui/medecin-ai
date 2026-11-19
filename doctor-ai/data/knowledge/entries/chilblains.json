@@ -1,0 +1,100 @@
+{
+  "id": "chilblains",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "chilblains",
+      "itchy red toes after cold",
+      "perniosis"
+    ],
+    "fr": [
+      "engelures",
+      "orteils rouges qui démangent après le froid",
+      "perniones"
+    ],
+    "he": [
+      "צ'ילבליינס",
+      "אצבעות אדומות מגרדות אחרי קור"
+    ],
+    "ru": [
+      "ознобление",
+      "красные зудящие пальцы после холода"
+    ]
+  },
+  "titles": {
+    "en": "Chilblains",
+    "fr": "Engelures",
+    "he": "צ'ילבליינס / כוויות קור קלות",
+    "ru": "Ознобление"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Chilblains are itchy, red/purple swellings on extremities after cold. NHS: gentle rewarming, avoid scratching, moisturise; see GP if not improving, infected, or diabetes/poor circulation. Not the same as deep frostbite.",
+      "seeDoctorIf": [
+        "Not improving",
+        "Signs of infection",
+        "Diabetes or poor circulation with chilblains"
+      ],
+      "selfCare": [
+        "Warm gradually; loose warm clothing; moisturise; avoid direct heat and scratching"
+      ],
+      "doNot": [
+        "Do not massage vigorously or use direct heat",
+        "Do not ignore spreading infection"
+      ]
+    },
+    "fr": {
+      "summary": "Les engelures démangent après le froid. Réchauffement doux ; médecin si infection ou terrain à risque. Différent de la gelure profonde.",
+      "seeDoctorIf": [
+        "Pas d'amélioration",
+        "Infection",
+        "Diabète / mauvaise circulation"
+      ],
+      "selfCare": [
+        "Réchauffer doucement ; hydrater ; éviter chaleur directe"
+      ],
+      "doNot": [
+        "Pas de massage vigoureux / chaleur directe"
+      ]
+    },
+    "he": {
+      "summary": "צ'ילבליינס: נפיחות מגרדות אחרי קור. חימום עדין; רופא אם זיהום או סוכרת. שונה מכוויית קור עמוקה.",
+      "seeDoctorIf": [
+        "אין שיפור",
+        "זיהום",
+        "סוכרת / סירקולציה לקויה"
+      ],
+      "selfCare": [
+        "חימום עדין; לחות; להימנע מחום ישיר"
+      ],
+      "doNot": [
+        "לא עיסוי חזק / חום ישיר"
+      ]
+    },
+    "ru": {
+      "summary": "Ознобление: зудящие красные припухлости после холода. Мягкое согревание; врач при инфекции или диабете. Не глубокое отморожение.",
+      "seeDoctorIf": [
+        "Нет улучшения",
+        "Инфекция",
+        "Диабет / плохое кровообращение"
+      ],
+      "selfCare": [
+        "Мягко согревать; увлажнять; без прямого тепла"
+      ],
+      "doNot": [
+        "Не сильный массаж / прямое тепло"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-chilblains",
+      "name": "NHS — Chilblains",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chilblains/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

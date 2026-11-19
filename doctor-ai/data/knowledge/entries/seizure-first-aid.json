@@ -1,0 +1,117 @@
+{
+  "id": "seizure-first-aid",
+  "category": "neuro",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "seizure",
+      "someone having a fit",
+      "convulsion first aid",
+      "epileptic fit help"
+    ],
+    "fr": [
+      "crise d'épilepsie",
+      "convulsion premiers secours",
+      "quelqu'un qui convulse",
+      "crise comitiale"
+    ],
+    "he": [
+      "פרכוס",
+      "התקף אפילפסיה",
+      "עזרה ראשונה לפרכוס",
+      "מישהו מפרכס"
+    ],
+    "ru": [
+      "приступ",
+      "эпилептический припадок",
+      "первая помощь при судорогах",
+      "человек бьётся в судорогах"
+    ]
+  },
+  "titles": {
+    "en": "Seizure (fit) — first aid cues",
+    "fr": "Crise convulsive — gestes d'urgence",
+    "he": "פרכוס — עזרה ראשונה",
+    "ru": "Судорожный приступ — первая помощь"
+  },
+  "guidance": {
+    "en": {
+      "summary": "NHS: protect from injury, cushion the head, time the seizure, put in recovery position after movements stop, stay until recovered. Call emergency services if first seizure, lasts >5 minutes, repeated seizures, injury, pregnancy, diabetes, water, or breathing difficulty. Do not put anything in the mouth or restrain.",
+      "emergencyIf": [
+        "Seizure lasting more than 5 minutes",
+        "Repeated seizures without recovery",
+        "First known seizure",
+        "Difficulty breathing / injury / pregnancy / diabetes / in water"
+      ],
+      "seeDoctorIf": [
+        "Known epilepsy with change in pattern — clinical follow-up"
+      ],
+      "selfCare": [
+        "Cushion head; clear hazards; time the event; recovery position after jerking stops"
+      ],
+      "doNot": [
+        "Do not put anything in the mouth",
+        "Do not restrain movements",
+        "Do not give food/drink until fully alert"
+      ]
+    },
+    "fr": {
+      "summary": "Protéger, caler la tête, chronométrer, PLS après les mouvements. Appeler les secours si >5 min, crises répétées, première crise, blessure, grossesse, diabète, eau, détresse.",
+      "emergencyIf": [
+        "Crise > 5 minutes",
+        "Crises répétées",
+        "Première crise",
+        "Détresse / blessure / grossesse / diabète / dans l'eau"
+      ],
+      "selfCare": [
+        "Protéger la tête ; chronométrer ; PLS"
+      ],
+      "doNot": [
+        "Rien dans la bouche",
+        "Ne pas maintenir de force"
+      ]
+    },
+    "he": {
+      "summary": "להגן מפציעה, לרפד ראש, לתזמן, מצב החלמה אחרי התנועות. לקרוא לעזרה אם מעל 5 דקות, חוזר, ראשון, פציעה, הריון, סוכרת, מים.",
+      "emergencyIf": [
+        "פרכוס מעל 5 דקות",
+        "פרכוסים חוזרים",
+        "פרכוס ראשון",
+        "קושי נשימה / פציעה / הריון / סוכרת / במים"
+      ],
+      "selfCare": [
+        "ריפוד ראש; תזמון; מצב החלמה"
+      ],
+      "doNot": [
+        "לא לשים דבר בפה",
+        "לא לרסן בכוח"
+      ]
+    },
+    "ru": {
+      "summary": "Защитить от травмы, подложить голову, засечь время, положение восстановления после движений. Вызывать помощь если >5 мин, повторы, первый приступ, травма, беременность, диабет, вода.",
+      "emergencyIf": [
+        "Приступ >5 минут",
+        "Повторяющиеся приступы",
+        "Первый приступ",
+        "Одышка / травма / беременность / диабет / в воде"
+      ],
+      "selfCare": [
+        "Подложить голову; засечь время; положение восстановления"
+      ],
+      "doNot": [
+        "Ничего в рот",
+        "Не удерживать силой"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-seizures-help",
+      "name": "NHS — What to do if someone has a seizure (fit)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/what-to-do-if-someone-has-a-seizure-fit/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "pre-eclampsia",
+  "category": "pregnancy",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "pre-eclampsia",
+      "preeclampsia",
+      "pregnancy headache swelling vision",
+      "high blood pressure pregnant"
+    ],
+    "fr": [
+      "pré-éclampsie",
+      "prééclampsie",
+      "céphalée grossesse œdème vision",
+      "hypertension grossesse"
+    ],
+    "he": [
+      "רעלת הריון",
+      "פרה אקלמפסיה",
+      "כאב ראש בהריון בצקת ראייה",
+      "לחץ דם גבוה בהריון"
+    ],
+    "ru": [
+      "преэклампсия",
+      "головная боль беременность отёк зрение",
+      "высокое давление беременность"
+    ]
+  },
+  "titles": {
+    "en": "Pre-eclampsia cues",
+    "fr": "Pré-éclampsie — signes d'alarme",
+    "he": "רעלת הריון — דגלים",
+    "ru": "Преэклампсия — тревожные признаки"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Pre-eclampsia is a pregnancy complication with high blood pressure that can be dangerous for mother and baby. NHS: seek urgent assessment for severe headache, vision problems, severe pain under ribs, sudden swelling of face/hands/feet, vomiting, or feeling very unwell in pregnancy. This is not diagnosed by chat — urgent clinical care only. No inventing antihypertensives.",
+      "emergencyIf": [
+        "Severe headache in pregnancy",
+        "Vision problems in pregnancy",
+        "Severe pain under the ribs",
+        "Sudden swelling of face/hands/feet",
+        "Vomiting and feeling very unwell while pregnant"
+      ],
+      "seeDoctorIf": [
+        "Any concern about blood pressure or new swelling/headache in pregnancy — same-day maternity advice"
+      ],
+      "doNot": [
+        "Do not invent blood-pressure medicines",
+        "Do not wait at home with severe symptoms"
+      ]
+    },
+    "fr": {
+      "summary": "La pré-éclampsie associe HTA gravidique et peut menacer mère et fœtus. Avis urgent si céphalée sévère, troubles visuels, douleur sous les côtes, œdème brutal, vomissements. Pas d'antihypertenseurs inventés.",
+      "emergencyIf": [
+        "Céphalée sévère grossesse",
+        "Troubles visuels",
+        "Douleur sous les côtes",
+        "Œdème brutal face/mains/pieds",
+        "Vomissements / malaise grave"
+      ],
+      "seeDoctorIf": [
+        "Toute inquiétude tension/œdème/céphalée — filière maternité le jour même"
+      ],
+      "doNot": [
+        "Pas d'antihypertenseurs inventés"
+      ]
+    },
+    "he": {
+      "summary": "רעלת הריון מסוכנת לאם ולעובר. ייעוץ דחוף בכאב ראש חזק, הפרעת ראייה, כאב מתחת לצלעות, בצקת פתאומית, הקאות. אין תרופות לחץ דם מומצאות.",
+      "emergencyIf": [
+        "כאב ראש חזק בהריון",
+        "הפרעת ראייה",
+        "כאב חזק מתחת לצלעות",
+        "בצקת פתאומית בפנים/ידיים/רגליים",
+        "הקאות / הרגשה רעה מאוד"
+      ],
+      "seeDoctorIf": [
+        "כל חשש ללחץ דם/בצקת/כאב ראש — ייעוץ יולדות באותו יום"
+      ],
+      "doNot": [
+        "אין תרופות לחץ דם מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Преэклампсия опасна для матери и плода. Срочно при сильной головной боли, нарушении зрения, боли под рёбрами, внезапном отёке, рвоте. Антигипертензивные не выдумывать.",
+      "emergencyIf": [
+        "Сильная головная боль при беременности",
+        "Нарушение зрения",
+        "Сильная боль под рёбрами",
+        "Внезапный отёк лица/рук/ног",
+        "Рвота / очень плохое самочувствие"
+      ],
+      "seeDoctorIf": [
+        "Любое беспокойство о давлении/отёке/головной боли — в тот же день к акушерам"
+      ],
+      "doNot": [
+        "Не изобретать антигипертензивные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pre-eclampsia",
+      "name": "NHS — Pre-eclampsia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

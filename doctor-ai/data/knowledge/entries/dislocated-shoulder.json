@@ -1,0 +1,100 @@
+{
+  "id": "dislocated-shoulder",
+  "category": "ortho",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "dislocated shoulder",
+      "shoulder out of joint",
+      "shoulder popped out"
+    ],
+    "fr": [
+      "épaule luxée",
+      "épaule déboîtée",
+      "luxation d'épaule"
+    ],
+    "he": [
+      "כתף מפורקת",
+      "כתף יצאה מהמקום"
+    ],
+    "ru": [
+      "вывих плеча",
+      "плечо выскочило"
+    ]
+  },
+  "titles": {
+    "en": "Dislocated shoulder",
+    "fr": "Luxation d'épaule",
+    "he": "פריקת כתף",
+    "ru": "Вывих плеча"
+  },
+  "guidance": {
+    "en": {
+      "summary": "A dislocated shoulder is painful and needs urgent clinical reduction — do not try to force it back yourself. NHS: support the arm, seek emergency care. Numbness, cool hand, or open injury raises urgency further.",
+      "emergencyIf": [
+        "Suspected dislocated shoulder",
+        "Shoulder deformity with severe pain after trauma",
+        "Numbness or cold hand after shoulder injury"
+      ],
+      "selfCare": [
+        "Support the arm in the most comfortable position while arranging emergency care"
+      ],
+      "doNot": [
+        "Do not try to shove the shoulder back in yourself",
+        "Do not invent sedation/reduction drug regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Une épaule luxée nécessite une réduction médicale urgente — ne pas forcer soi-même. Soutenir le bras ; urgences.",
+      "emergencyIf": [
+        "Suspicion de luxation",
+        "Déformation + douleur sévère",
+        "Engourdissement / main froide"
+      ],
+      "selfCare": [
+        "Soutenir le bras en attendant les secours"
+      ],
+      "doNot": [
+        "Ne pas remettre soi-même"
+      ]
+    },
+    "he": {
+      "summary": "פריקת כתף דורשת החזרה רפואית דחופה — לא להחזיר לבד. לתמוך בזרוע; חירום.",
+      "emergencyIf": [
+        "חשד לפריקה",
+        "עיוות + כאב חזק",
+        "נימול / יד קרה"
+      ],
+      "selfCare": [
+        "לתמוך בזרוע עד לעזרה"
+      ],
+      "doNot": [
+        "לא להחזיר לבד"
+      ]
+    },
+    "ru": {
+      "summary": "Вывих плеча требует срочного вправления врачом — не вправлять самостоятельно. Поддержать руку; неотложка.",
+      "emergencyIf": [
+        "Подозрение на вывих",
+        "Деформация + сильная боль",
+        "Онемение / холодная кисть"
+      ],
+      "selfCare": [
+        "Поддержать руку до помощи"
+      ],
+      "doNot": [
+        "Не вправлять самостоятельно"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dislocated-shoulder",
+      "name": "NHS — Dislocated shoulder",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dislocated-shoulder/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "scarlet-fever",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "scarlet fever",
+      "sandpaper rash",
+      "strawberry tongue",
+      "scarlatina"
+    ],
+    "fr": [
+      "scarlatine",
+      "éruption papier de verre",
+      "langue framboise"
+    ],
+    "he": [
+      "שנית",
+      "פריחת נייר זכוכית",
+      "לשון תות"
+    ],
+    "ru": [
+      "скарлатина",
+      "сыпь как наждак",
+      "малиновый язык"
+    ]
+  },
+  "titles": {
+    "en": "Scarlet fever",
+    "fr": "Scarlatine",
+    "he": "שנית",
+    "ru": "Скарлатина"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Scarlet fever often starts with fever, sore throat and swollen neck glands, then a sandpaper-like rash and strawberry tongue. NHS: see a GP (phone ahead). Antibiotics are clinician-prescribed. Seek help again if not better in a week, scarlet fever with chickenpox, or illness weeks later (possible complication).",
+      "seeDoctorIf": [
+        "Scarlet fever symptoms",
+        "Not better in a week after seeing a GP",
+        "Scarlet fever and chickenpox together",
+        "Ill again weeks after recovery",
+        "Unwell after contact with scarlet fever"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not send children back to school until advised (often 24h after first antibiotic dose)"
+      ]
+    },
+    "fr": {
+      "summary": "Scarlatine : fièvre, angine, ganglions, puis éruption rugueuse et langue framboise. Voir un médecin (appeler avant). Antibiotiques = prescription. Pas de schéma inventé.",
+      "seeDoctorIf": [
+        "Symptômes de scarlatine",
+        "Pas d'amélioration à 1 semaine",
+        "Scarlatine + varicelle",
+        "Malade des semaines après"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "שנית: חום, כאב גרון, בלוטות, ואז פריחת נייר זכוכית ולשון תות. רופא (להתקשר מראש). אנטיביוטיקה — מרשם בלבד.",
+      "seeDoctorIf": [
+        "תסמיני שנית",
+        "אין שיפור אחרי שבוע",
+        "שנית עם אבעבועות רוח",
+        "חולי שבועות אחרי"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Скарлатина: лихорадка, боль в горле, железы, затем сыпь «наждак» и малиновый язык. К врачу (позвонить заранее). Антибиотики — по рецепту.",
+      "seeDoctorIf": [
+        "Симптомы скарлатины",
+        "Нет улучшения через неделю",
+        "Скарлатина + ветрянка",
+        "Болезнь через недели после"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-scarlet-fever",
+      "name": "NHS — Scarlet fever",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/scarlet-fever/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

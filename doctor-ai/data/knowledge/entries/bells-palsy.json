@@ -1,0 +1,104 @@
+{
+  "id": "bells-palsy",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "bell's palsy",
+      "bells palsy",
+      "facial droop one side",
+      "cannot close eye one side"
+    ],
+    "fr": [
+      "paralysie de Bell",
+      "paralysie faciale a frigore",
+      "visage tombant d'un côté",
+      "œil qui ne ferme pas"
+    ],
+    "he": [
+      "שיתוק בל",
+      "צניחת פנים בצד אחד",
+      "לא סוגר עין בצד אחד"
+    ],
+    "ru": [
+      "паралич Белла",
+      "перекос лица с одной стороны",
+      "не закрывается глаз с одной стороны"
+    ]
+  },
+  "titles": {
+    "en": "Bell's palsy vs stroke — seek urgent advice",
+    "fr": "Paralysie de Bell vs AVC — avis urgent",
+    "he": "שיתוק בל מול שבץ — ייעוץ דחוף",
+    "ru": "Паралич Белла vs инсульт — срочный совет"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sudden facial weakness needs urgent assessment to distinguish Bell's palsy from stroke. NHS: get help urgently for facial droop. Eye care matters if the eye will not close. Steroids timing is clinician-only — no doses here.",
+      "emergencyIf": [
+        "Sudden face/arm/leg weakness, speech difficulty, or other stroke signs — emergency pathway",
+        "Sudden facial droop — urgent clinical assessment"
+      ],
+      "seeDoctorIf": [
+        "Facial weakness without clear stroke features — same-day advice",
+        "Eye not closing — protect the eye as advised by clinician"
+      ],
+      "doNot": [
+        "Do not assume Bell's palsy without clinical assessment",
+        "Do not invent steroid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Une faiblesse faciale brutale nécessite d'écarter un AVC. Avis urgent. Soins de l'œil si non fermeture. Pas de corticoïdes inventés.",
+      "emergencyIf": [
+        "Faiblesse face/bras/jambe ou trouble de la parole — filière AVC",
+        "Asymétrie faciale brutale — avis urgent"
+      ],
+      "seeDoctorIf": [
+        "Faiblesse faciale — avis le jour même"
+      ],
+      "doNot": [
+        "Ne pas conclure à une paralysie de Bell sans examen",
+        "Pas de corticoïdes inventés"
+      ]
+    },
+    "he": {
+      "summary": "חולשת פנים פתאומית דורשת הערכה דחופה לשלילת שבץ. טיפול בעין אם לא נסגרת. אין סטרואידים מומצאים.",
+      "emergencyIf": [
+        "חולשת פנים/זרוע/רגל או דיבור — מסלול שבץ",
+        "צניחת פנים פתאומית — הערכה דחופה"
+      ],
+      "seeDoctorIf": [
+        "חולשת פנים — ייעוץ באותו יום"
+      ],
+      "doNot": [
+        "לא להניח שזה שיתוק בל בלי בדיקה",
+        "אין סטרואידים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Внезапная слабость лица требует срочной оценки для исключения инсульта. Уход за глазом если не закрывается. Стероиды не выдумывать.",
+      "emergencyIf": [
+        "Слабость лица/руки/ноги или речи — путь инсульта",
+        "Внезапный перекос лица — срочная оценка"
+      ],
+      "seeDoctorIf": [
+        "Слабость лица — совет в тот же день"
+      ],
+      "doNot": [
+        "Не считать параличом Белла без осмотра",
+        "Не изобретать дозы стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-bells-palsy",
+      "name": "NHS — Bell's palsy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bells-palsy/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

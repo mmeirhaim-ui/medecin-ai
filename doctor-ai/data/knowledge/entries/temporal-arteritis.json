@@ -1,0 +1,102 @@
+{
+  "id": "temporal-arteritis",
+  "category": "rheum",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "temporal arteritis",
+      "giant cell arteritis",
+      "temple headache jaw claudication",
+      "scalp tenderness headache"
+    ],
+    "fr": [
+      "artérite temporale",
+      "maladie de Horton",
+      "céphalée tempe claudication masticatoire",
+      "cuir chevelu douloureux"
+    ],
+    "he": [
+      "דלקת עורקים רקתית",
+      "ארטריטיס תאי ענק",
+      "כאב רקתי צליעה בלסת",
+      "רגישות בקרקפת"
+    ],
+    "ru": [
+      "височный артериит",
+      "гигантоклеточный артериит",
+      "боль в виске хромота челюсти",
+      "болезненность кожи головы"
+    ]
+  },
+  "titles": {
+    "en": "Temporal arteritis (urgent)",
+    "fr": "Artérite temporale (urgent)",
+    "he": "דלקת עורקים רקתית (דחוף)",
+    "ru": "Височный артериит (срочно)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Temporal (giant cell) arteritis needs urgent treatment to reduce risk of blindness/stroke. NHS: urgent GP/111 if frequent severe headaches, temple/scalp tenderness, jaw pain while eating/talking, or vision problems (double vision/loss). Steroids are started by clinicians — never invent prednisolone doses.",
+      "emergencyIf": [
+        "Sudden vision loss with suspected temporal arteritis",
+        "Stroke symptoms with temple headache"
+      ],
+      "seeDoctorIf": [
+        "You think you might have temporal arteritis — urgent same-day pathway"
+      ],
+      "doNot": [
+        "Do not invent high-dose steroid regimens",
+        "Do not delay for 'just a headache' if temple pain + jaw claudication + vision change"
+      ]
+    },
+    "fr": {
+      "summary": "L'artérite temporale nécessite un traitement urgent (risque de cécité/AVC). Avis urgent si céphalées sévères, tempes douloureuses, douleur de mâchoire, troubles visuels. Pas de prednisolone inventée.",
+      "emergencyIf": [
+        "Perte visuelle brutale",
+        "Signes d'AVC avec céphalée temporale"
+      ],
+      "seeDoctorIf": [
+        "Suspicion d'artérite temporale — filière urgente"
+      ],
+      "doNot": [
+        "Pas de fortes doses de corticoïdes inventées"
+      ]
+    },
+    "he": {
+      "summary": "דלקת עורקים רקתית דורשת טיפול דחוף (סיכון לעיוורון/שבץ). ייעוץ דחוף בכאבי ראש, רגישות רקתית, כאב לסת, הפרעות ראייה. אין פרדניזולון מומצא.",
+      "emergencyIf": [
+        "אובדן ראייה פתאומי",
+        "סימני שבץ עם כאב רקתי"
+      ],
+      "seeDoctorIf": [
+        "חשד לדלקת עורקים רקתית — מסלול דחוף"
+      ],
+      "doNot": [
+        "אין מינון סטרואידים גבוה מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Височный артериит требует срочного лечения (риск слепоты/инсульта). Срочно при сильных головных болях, болезненных висках, боли в челюсти, нарушениях зрения. Преднизолон не выдумывать.",
+      "emergencyIf": [
+        "Внезапная потеря зрения",
+        "Признаки инсульта с височной болью"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на височный артериит — срочный путь"
+      ],
+      "doNot": [
+        "Не изобретать высокие дозы стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-temporal-arteritis",
+      "name": "NHS — Temporal arteritis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/temporal-arteritis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

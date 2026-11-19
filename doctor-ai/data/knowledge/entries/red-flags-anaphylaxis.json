@@ -1,0 +1,112 @@
+{
+  "id": "red-flags-anaphylaxis",
+  "category": "allergy",
+  "urgencyDefault": "urgent",
+  "priority": 10,
+  "keywords": {
+    "en": ["anaphylaxis", "anaphylactic", "throat swelling", "tongue swelling", "severe allergic reaction", "epipen", "can't swallow allergy"],
+    "fr": ["anaphylaxie", "choc anaphylactique", "gonflement gorge", "gonflement langue", "réaction allergique grave", "stylo adrénaline"],
+    "he": ["אנפילקסיס", "תגובה אלרגית חמורה", "נפיחות בגרון", "נפיחות בלשון", "אפיפן", "קושי בבליעה אלרגיה"],
+    "ru": ["анафилаксия", "анафилактический шок", "отёк горла", "отёк языка", "тяжёлая аллергия", "эпипен"]
+  },
+  "titles": {
+    "en": "Anaphylaxis / severe allergic reaction",
+    "fr": "Anaphylaxie / réaction allergique grave",
+    "he": "אנפילקסיס / תגובה אלרגית חמורה",
+    "ru": "Анафилаксия / тяжёлая аллергическая реакция"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Anaphylaxis is a fast, life-threatening allergic reaction. Sudden swelling of lips/mouth/throat/tongue, severe breathing difficulty, tight throat, colour change of lips/skin, collapse or confusion are emergency signs. Educational routing only.",
+      "emergencyIf": [
+        "Sudden swelling of lips, mouth, throat or tongue",
+        "Struggling to breathe, very wheezy, gasping, or feeling like choking",
+        "Throat feels tight or struggling to swallow",
+        "Skin, tongue or lips turn blue, grey or pale (check palms/soles on darker skin)",
+        "Sudden confusion, drowsiness, dizziness, or fainting and not waking",
+        "Child limp, floppy or not responding normally"
+      ],
+      "selfCare": [
+        "If an adrenaline auto-injector is available and prescribed for the person, use it as labeled while calling emergency services",
+        "Lie down; raise legs if helpful; if breathing is hard, raise shoulders or sit up slowly; if pregnant, left side",
+        "Do not stand or walk around even if feeling better"
+      ],
+      "doNot": [
+        "Do not delay calling emergency services",
+        "Do not prescribe or invent adrenaline doses here",
+        "Do not assume hives alone without airway/breathing/circulation concerns are anaphylaxis — but seek urgent help if unsure"
+      ]
+    },
+    "fr": {
+      "summary": "L’anaphylaxie est une réaction allergique grave et rapide. Gonflement soudain lèvres/bouche/gorge/langue, détresse respiratoire, gorge serrée, pâleur/cyanose, malaise ou confusion = urgence. Orientation éducative uniquement.",
+      "emergencyIf": [
+        "Gonflement soudain des lèvres, bouche, gorge ou langue",
+        "Difficulté sévère à respirer, sifflements, sensation d’étouffement",
+        "Gorge serrée ou difficulté à avaler",
+        "Lèvres/peau bleues, grises ou très pâles",
+        "Confusion soudaine, somnolence, vertiges, perte de connaissance",
+        "Enfant mou, non réactif"
+      ],
+      "selfCare": [
+        "Si un stylo d’adrénaline est disponible et prescrit pour la personne, l’utiliser selon la notice tout en appelant le 15 / 112",
+        "Allonger la personne ; ne pas se lever/marcher même si ça s’améliore"
+      ],
+      "doNot": [
+        "Ne retardez pas l’appel aux secours",
+        "Pas de posologie inventée ici"
+      ]
+    },
+    "he": {
+      "summary": "אנפילקסיס היא תגובה אלרגית מסכנת חיים ומהירה. נפיחות פתאומית בשפתיים/פה/גרון/לשון, קושי נשימה חמור, גרון הדוק, שינוי צבע, התמוטטות או בלבול — מצב חירום. הכוונה חינוכית בלבד.",
+      "emergencyIf": [
+        "נפיחות פתאומית של שפתיים, פה, גרון או לשון",
+        "קושי נשימה חמור או תחושת חנק",
+        "קושי בבליעה / גרון הדוק",
+        "שפתיים או עור כחלחלים/אפורים/חיוורים",
+        "בלבול, ישנוניות או אובדן הכרה"
+      ],
+      "selfCare": [
+        "אם יש מזרק אדרנלין שנרשם לאותו אדם — להשתמש לפי ההוראות ולקרוא לעזרה",
+        "לא לעמוד או ללכת גם אם מרגישים שיפור"
+      ],
+      "doNot": [
+        "לא לדחות קריאה ל־101",
+        "אין כאן מינון או מרשם"
+      ]
+    },
+    "ru": {
+      "summary": "Анафилаксия — быстрая жизнеугрожающая аллергическая реакция. Внезапный отёк губ/рта/горла/языка, тяжёлая одышка, ощущение сдавления горла, изменение цвета кожи, коллапс или спутанность — неотложность. Только образовательная маршрутизация.",
+      "emergencyIf": [
+        "Внезапный отёк губ, рта, горла или языка",
+        "Тяжёлая одышка, свистящее дыхание, ощущение удушья",
+        "Трудно глотать / горло сжимает",
+        "Губы/кожа синие, серые или бледные",
+        "Внезапная спутанность, сонливость, обморок"
+      ],
+      "selfCare": [
+        "Если есть назначенный автоинъектор адреналина — использовать по инструкции и вызвать скорую",
+        "Не вставать и не ходить, даже если стало легче"
+      ],
+      "doNot": [
+        "Не откладывайте вызов скорой",
+        "Здесь нет дозировок и рецептов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-anaphylaxis",
+      "name": "NHS — Anaphylaxis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

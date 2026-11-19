@@ -1,0 +1,116 @@
+{
+  "id": "gout-flare",
+  "category": "ortho",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "gout",
+      "gout flare",
+      "hot swollen big toe",
+      "uric acid joint pain"
+    ],
+    "fr": [
+      "goutte",
+      "crise de goutte",
+      "gros orteil rouge chaud",
+      "acide urique articulaire"
+    ],
+    "he": [
+      "שיגדון",
+      "התקף גאוט",
+      "בוהן נפוחה חמה",
+      "חומצת שתן מפרק"
+    ],
+    "ru": [
+      "подагра",
+      "приступ подагры",
+      "горячий отёк большого пальца ноги",
+      "мочевая кислота сустав"
+    ]
+  },
+  "titles": {
+    "en": "Gout flare (orientation)",
+    "fr": "Crise de goutte (orientation)",
+    "he": "התקף שיגדון (הכוונה)",
+    "ru": "Приступ подагры (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Gout causes sudden hot, swollen, very painful joints (often big toe). NHS: rest, ice, elevate; see GP for diagnosis and treatment. Infection (cellulitis/septic joint) can look similar — urgent care if fever/systemic illness. No inventing colchicine/allopurinol doses.",
+      "emergencyIf": [
+        "Hot swollen joint with high fever or feeling very unwell (possible septic joint)",
+        "Unable to walk with severe systemic symptoms"
+      ],
+      "seeDoctorIf": [
+        "First suspected gout attack",
+        "Recurrent flares",
+        "Unsure gout vs infection"
+      ],
+      "selfCare": [
+        "Rest the joint; ice wrapped; elevate; fluids; follow clinician plan"
+      ],
+      "doNot": [
+        "Do not invent colchicine, NSAID, or urate-lowering doses",
+        "Do not ignore fever with a hot joint"
+      ]
+    },
+    "fr": {
+      "summary": "La goutte provoque une articulation chaude, gonflée, très douloureuse. Repos, glace, avis médical. Fièvre = écarter infection. Pas de colchicine inventée.",
+      "emergencyIf": [
+        "Articulation chaude + forte fièvre / sepsis possible"
+      ],
+      "seeDoctorIf": [
+        "Première crise suspectée",
+        "Crises récidivantes"
+      ],
+      "selfCare": [
+        "Repos ; glace ; surélévation ; hydratation"
+      ],
+      "doNot": [
+        "Pas de colchicine/allopurinol inventés"
+      ]
+    },
+    "he": {
+      "summary": "שיגדון גורם למפרק חם, נפוח וכואב מאוד. מנוחה, קרח, רופא. חום — לשלול זיהום. אין קולכיצין מומצא.",
+      "emergencyIf": [
+        "מפרק חם + חום גבוה / חשד לספסיס"
+      ],
+      "seeDoctorIf": [
+        "התקף ראשון חשוד",
+        "התקפים חוזרים"
+      ],
+      "selfCare": [
+        "מנוחה; קרח; הרמה; שתייה"
+      ],
+      "doNot": [
+        "אין קולכיצין/אלופורינול מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Подагра даёт горячий, отёчный, очень болезненный сустав. Покой, лёд, врач. Лихорадка — исключать инфекцию. Колхицин не выдумывать.",
+      "emergencyIf": [
+        "Горячий сустав + высокая лихорадка / возможный сепсис"
+      ],
+      "seeDoctorIf": [
+        "Первый подозреваемый приступ",
+        "Повторяющиеся атаки"
+      ],
+      "selfCare": [
+        "Покой; лёд; возвышение; жидкость"
+      ],
+      "doNot": [
+        "Не изобретать дозы колхицина/аллопуринола"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-gout",
+      "name": "NHS — Gout",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/gout/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "neck-trauma-whiplash",
+  "category": "ortho",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "whiplash",
+      "neck injury after crash",
+      "stiff neck after accident",
+      "neck pain after car accident"
+    ],
+    "fr": [
+      "coup du lapin",
+      "traumisme cervical",
+      "cou raide après accident",
+      "douleur cervicale après accident"
+    ],
+    "he": [
+      "צליפת שוט",
+      "פציעת צוואר אחרי תאונה",
+      "צוואר נוקשה אחרי תאונה",
+      "כאב צוואר אחרי תאונת דרכים"
+    ],
+    "ru": [
+      "хлыстовая травма",
+      "травма шеи после аварии",
+      "жёсткая шея после ДТП",
+      "боль в шее после аварии"
+    ]
+  },
+  "titles": {
+    "en": "Neck injury / whiplash red flags",
+    "fr": "Traumatisme cervical / coup du lapin",
+    "he": "פציעת צוואר / צליפת שוט",
+    "ru": "Травма шеи / хлыстовая травма"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most neck pain and whiplash improve with gentle movement and simple pain relief. NHS: urgent help for severe pain despite analgesics, tingling both sides, walking/sitting problems, electric-shock sensations, or limb weakness after neck injury. Avoid collars unless clinician advised.",
+      "emergencyIf": [
+        "Limb weakness after neck injury",
+        "Cannot walk or sit upright after neck trauma",
+        "Electric-shock feeling into arms/legs",
+        "Severe neurological deficit"
+      ],
+      "seeDoctorIf": [
+        "Severe pain despite paracetamol/ibuprofen",
+        "Pins and needles after injury",
+        "Symptoms not improving after a week"
+      ],
+      "selfCare": [
+        "Keep neck gently moving; heat/cold; avoid prolonged rest; no collar unless told"
+      ],
+      "doNot": [
+        "Do not drive if neck movement unsafe",
+        "Do not wear a collar by default"
+      ]
+    },
+    "fr": {
+      "summary": "La plupart des cervicalgies/coups du lapin s'améliorent. Urgence si faiblesse, trouble marche, décharges électriques, déficit neuro après trauma.",
+      "emergencyIf": [
+        "Faiblesse des membres",
+        "Impossible de marcher/s'asseoir",
+        "Décharges vers bras/jambes"
+      ],
+      "seeDoctorIf": [
+        "Douleur sévère malgré antalgiques",
+        "Fourmillements",
+        "Pas d'amélioration à 1 semaine"
+      ],
+      "selfCare": [
+        "Mobiliser doucement ; chaud/froid ; pas de collier sauf avis"
+      ],
+      "doNot": [
+        "Ne pas conduire si mobilité dangereuse"
+      ]
+    },
+    "he": {
+      "summary": "רוב כאבי הצוואר/צליפת שוט משתפרים. חירום אם חולשת גפיים, קושי בהליכה, תחושות חשמל, חסר נוירולוגי אחרי חבלה.",
+      "emergencyIf": [
+        "חולשת גפיים",
+        "לא יכול ללכת/לשבת זקוף",
+        "תחושת חשמל לידיים/רגליים"
+      ],
+      "seeDoctorIf": [
+        "כאב חזק למרות משככי כאבים",
+        "נימול",
+        "אין שיפור אחרי שבוע"
+      ],
+      "selfCare": [
+        "תנועה עדינה; חום/קור; בלי צווארון אלא אם נאמר"
+      ],
+      "doNot": [
+        "לא לנהוג אם התנועה מסוכנת"
+      ]
+    },
+    "ru": {
+      "summary": "Большинство болей в шее/хлыстовых травм улучшаются. Неотложка при слабости конечностей, нарушении ходьбы, «электрических» ощущениях, неврологическом дефиците.",
+      "emergencyIf": [
+        "Слабость конечностей",
+        "Не может ходить/сидеть прямо",
+        "Электрические ощущения в руки/ноги"
+      ],
+      "seeDoctorIf": [
+        "Сильная боль несмотря на анальгетики",
+        "Покалывание",
+        "Нет улучшения через неделю"
+      ],
+      "selfCare": [
+        "Мягко двигать; тепло/холод; без воротника без указания"
+      ],
+      "doNot": [
+        "Не водить при опасной подвижности"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-whiplash",
+      "name": "NHS — Whiplash",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/whiplash/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-neck-pain",
+      "name": "NHS — Neck pain and stiff neck",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "motion-sickness",
+  "category": "general",
+  "urgencyDefault": "auto_soins",
+  "priority": 1,
+  "keywords": {
+    "en": [
+      "motion sickness",
+      "car sick",
+      "seasick",
+      "travel nausea"
+    ],
+    "fr": [
+      "mal des transports",
+      "nausée en voiture",
+      "mal de mer"
+    ],
+    "he": [
+      "מחלת נסיעה",
+      "בחילה ברכב",
+      "מחלת ים"
+    ],
+    "ru": [
+      "укачивание",
+      "тошнота в машине",
+      "морская болезнь"
+    ]
+  },
+  "titles": {
+    "en": "Motion sickness",
+    "fr": "Mal des transports",
+    "he": "מחלת נסיעה",
+    "ru": "Укачивание"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Motion sickness causes nausea on travel. NHS: look at the horizon, fresh air, sit where motion is least; pharmacy travel sickness medicines if suitable. See a GP if severe/persistent beyond travel. No inventing prescription antiemetic regimens.",
+      "seeDoctorIf": [
+        "Severe symptoms not helped by pharmacy options",
+        "Vertigo/hearing symptoms suggesting inner-ear disease"
+      ],
+      "selfCare": [
+        "Face forward; horizon focus; fresh air; small snacks; pharmacy advice on travel tablets"
+      ],
+      "doNot": [
+        "Do not invent prescription antiemetic doses",
+        "Do not drive if medicines cause drowsiness"
+      ]
+    },
+    "fr": {
+      "summary": "Le mal des transports provoque des nausées. Horizon, air frais ; médicaments pharmacie si adaptés. Pas d'antiémétiques de prescription inventés.",
+      "seeDoctorIf": [
+        "Symptômes sévères malgré pharmacie",
+        "Vertige/audition évocateurs d'oreille interne"
+      ],
+      "selfCare": [
+        "Regarder l'horizon ; air frais ; avis pharmacien"
+      ],
+      "doNot": [
+        "Pas d'antiémétiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "מחלת נסיעה: בחילה בנסיעה. להסתכל לאופק, אוויר צח; תרופות בית מרקחת. אין נוגדי הקאה מרשם מומצאים.",
+      "seeDoctorIf": [
+        "תסמינים חזקים למרות בית מרקחת",
+        "ורטיגו/שמיעה החשודים לאוזן פנימית"
+      ],
+      "selfCare": [
+        "אופק; אוויר צח; ייעוץ רוקח"
+      ],
+      "doNot": [
+        "אין נוגדי הקאה מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Укачивание: тошнота в поездке. Смотреть на горизонт, свежий воздух; аптечные средства. Рецептурные противорвотные не выдумывать.",
+      "seeDoctorIf": [
+        "Тяжёлые симптомы несмотря на аптеку",
+        "Вертиго/слух как при болезни внутреннего уха"
+      ],
+      "selfCare": [
+        "Горизонт; свежий воздух; фармацевт"
+      ],
+      "doNot": [
+        "Не изобретать рецептурные противорвотные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-motion-sickness",
+      "name": "NHS — Motion sickness",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/motion-sickness/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

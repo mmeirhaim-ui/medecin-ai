@@ -1,0 +1,106 @@
+{
+  "id": "slapped-cheek",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "slapped cheek",
+      "fifth disease",
+      "parvovirus B19 rash"
+    ],
+    "fr": [
+      "mégalérythème épidémique",
+      "5e maladie",
+      "parvovirus B19"
+    ],
+    "he": [
+      "לחי סטורה",
+      "מחלת הפרבווירוס",
+      "פריחת לחי אדומה ילד"
+    ],
+    "ru": [
+      "пятая болезнь",
+      "синдром пощёчины",
+      "парвовирус B19"
+    ]
+  },
+  "titles": {
+    "en": "Slapped cheek syndrome",
+    "fr": "Mégalérythème (5e maladie)",
+    "he": "תסמונת הלחי הסטורה",
+    "ru": "Пятая болезнь (парвовирус)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Slapped cheek (parvovirus B19) causes a bright red cheek rash, often after mild fever, then a body lace-like rash. NHS: usually mild in children; see GP if unsure. Pregnant people, sickle-cell/haemolytic anaemia, or immunocompromised contacts need prompt clinical advice. No inventing antivirals.",
+      "seeDoctorIf": [
+        "Unsure of diagnosis",
+        "Pregnant after exposure/symptoms",
+        "Blood disorder or immunocompromised with exposure",
+        "Child very unwell"
+      ],
+      "selfCare": [
+        "Rest; fluids; paracetamol if suitable per label for fever/discomfort"
+      ],
+      "doNot": [
+        "Do not invent antivirals",
+        "Do not ignore pregnancy exposure — seek advice"
+      ]
+    },
+    "fr": {
+      "summary": "Le mégalérythème : joues rouges puis exanthème. Souvent bénin ; médecin si doute. Grossesse / anémies / immunodépression = avis prompt. Pas d'antiviraux inventés.",
+      "seeDoctorIf": [
+        "Doute",
+        "Grossesse après contact",
+        "Anémie / immunodépression",
+        "Enfant très malade"
+      ],
+      "selfCare": [
+        "Repos ; boire ; paracétamol selon notice"
+      ],
+      "doNot": [
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "לחי סטורה: לחיים אדומות ואז פריחה. לרוב קל; רופא בספק. הריון/אנמיה/דיכוי חיסוני — ייעוץ מהיר. אין אנטי-ויראלי מומצא.",
+      "seeDoctorIf": [
+        "ספק",
+        "הריון אחרי חשיפה",
+        "הפרעת דם / דיכוי חיסוני",
+        "ילד חולה מאוד"
+      ],
+      "selfCare": [
+        "מנוחה; שתייה; פרצטמול לפי התווית"
+      ],
+      "doNot": [
+        "אין אנטי-ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Пятая болезнь: яркие красные щёки, затем сыпь. Обычно лёгкая; врач при сомнении. Беременность/анемия/иммунодефицит — быстрый совет. Противовирусные не выдумывать.",
+      "seeDoctorIf": [
+        "Сомнение",
+        "Беременность после контакта",
+        "Болезнь крови / иммунодефицит",
+        "Ребёнок очень болен"
+      ],
+      "selfCare": [
+        "Покой; жидкость; парацетамол по инструкции"
+      ],
+      "doNot": [
+        "Не изобретать противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-slapped-cheek",
+      "name": "NHS — Slapped cheek syndrome",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/slapped-cheek-syndrome/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "hyperglycaemia",
+  "category": "endocrine",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "hyperglycaemia",
+      "high blood sugar",
+      "blood sugar too high",
+      "polyuria polydipsia diabetes"
+    ],
+    "fr": [
+      "hyperglycémie",
+      "sucre élevé",
+      "glycémie trop haute",
+      "soif urines fréquentes diabète"
+    ],
+    "he": [
+      "היפרגליקמיה",
+      "סוכר גבוה",
+      "צמא והשתנה מרובה בסוכרת"
+    ],
+    "ru": [
+      "гипергликемия",
+      "высокий сахар",
+      "жажда частое мочеиспускание диабет"
+    ]
+  },
+  "titles": {
+    "en": "High blood sugar (hyperglycaemia)",
+    "fr": "Hyperglycémie",
+    "he": "היפרגליקמיה",
+    "ru": "Гипергликемия"
+  },
+  "guidance": {
+    "en": {
+      "summary": "High blood sugar can cause thirst, frequent urination, tiredness, blurred vision. NHS: follow diabetes sick-day rules with your care team; urgent/emergency care for vomiting, abdominal pain, fruity breath, deep breathing, confusion (possible DKA — see diabetes-sick-day-dka). Never invent insulin sliding scales here.",
+      "emergencyIf": [
+        "Vomiting with high sugars, abdominal pain, fruity breath, deep/rapid breathing, confusion (possible DKA)",
+        "Cannot keep fluids down with known diabetes"
+      ],
+      "seeDoctorIf": [
+        "Persistent high readings",
+        "Thirst and frequent urination with possible new diabetes"
+      ],
+      "doNot": [
+        "Do not invent insulin dose adjustments",
+        "Do not ignore DKA warning signs"
+      ]
+    },
+    "fr": {
+      "summary": "L'hyperglycémie : soif, polyurie, fatigue. Suivre le plan diabète. Urgence si signes d'acidocétose. Pas de schémas d'insuline inventés.",
+      "emergencyIf": [
+        "Vomissements, douleur abdominale, haleine fruitée, respiration profonde, confusion (AAD possible)"
+      ],
+      "seeDoctorIf": [
+        "Glycémies hautes persistantes",
+        "Soif/polyurie — possible diabète nouveau"
+      ],
+      "doNot": [
+        "Pas d'ajustements d'insuline inventés"
+      ]
+    },
+    "he": {
+      "summary": "סוכר גבוה: צמא, השתנה מרובה, עייפות. לפי תוכנית סוכרת. חירום בסימני חמצת קטוטית. אין התאמת אינסולין מומצאת.",
+      "emergencyIf": [
+        "הקאות, כאב בטן, ריח פירותי, נשימה עמוקה, בלבול (חשד ל־DKA)"
+      ],
+      "seeDoctorIf": [
+        "ערכים גבוהים מתמשכים",
+        "צמא/השתנה מרובה — סוכרת חדשה אפשרית"
+      ],
+      "doNot": [
+        "אין התאמת אינסולין מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Высокий сахар: жажда, частое мочеиспускание, усталость. По плану диабета. Неотложка при признаках ДКА. Схемы инсулина не выдумывать.",
+      "emergencyIf": [
+        "Рвота, боль в животе, фруктовый запах, глубокое дыхание, спутанность (возможный ДКА)"
+      ],
+      "seeDoctorIf": [
+        "Стойко высокие показатели",
+        "Жажда/полиурия — возможный новый диабет"
+      ],
+      "doNot": [
+        "Не изобретать корректировки инсулина"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hyperglycaemia",
+      "name": "NHS — High blood sugar (hyperglycaemia)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/high-blood-sugar-hyperglycaemia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

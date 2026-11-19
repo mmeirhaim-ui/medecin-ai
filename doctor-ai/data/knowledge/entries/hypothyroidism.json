@@ -1,0 +1,88 @@
+{
+  "id": "hypothyroidism",
+  "category": "endocrine",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "underactive thyroid",
+      "hypothyroidism",
+      "thyroid tired weight gain",
+      "levothyroxine"
+    ],
+    "fr": [
+      "thyroïde paresseuse",
+      "hypothyroïdie",
+      "fatigue prise de poids thyroïde",
+      "lévothyroxine"
+    ],
+    "he": [
+      "תת פעילות בלוטת התריס",
+      "היפותירואידיזם",
+      "עייפות ועלייה במשקל תריס"
+    ],
+    "ru": [
+      "гипотиреоз",
+      "пониженная щитовидная",
+      "усталость набор веса щитовидка"
+    ]
+  },
+  "titles": {
+    "en": "Underactive thyroid (hypothyroidism)",
+    "fr": "Hypothyroïdie",
+    "he": "תת־פעילות בלוטת התריס",
+    "ru": "Гипотиреоз"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Hypothyroidism can cause fatigue, feeling cold, weight gain, constipation, low mood, dry skin/hair, hoarse voice, heavy periods. NHS: see a GP for blood tests. Levothyroxine dosing is clinician-managed with monitoring — never invent doses here.",
+      "seeDoctorIf": [
+        "You think you might have an underactive thyroid",
+        "Side effects on thyroid medicine — talk to GP/pharmacist"
+      ],
+      "doNot": [
+        "Do not invent levothyroxine doses",
+        "Do not adjust dose without clinical advice"
+      ]
+    },
+    "fr": {
+      "summary": "L'hypothyroïdie peut causer fatigue, frilosité, prise de poids, constipation, moral bas, peau/cheveux secs. Bilan sanguin chez le médecin. Pas de doses de lévothyroxine inventées.",
+      "seeDoctorIf": [
+        "Suspicion d'hypothyroïdie",
+        "Effets indésirables du traitement"
+      ],
+      "doNot": [
+        "Pas de doses de lévothyroxine inventées"
+      ]
+    },
+    "he": {
+      "summary": "תת־פעילות תריס: עייפות, קור, עלייה במשקל, עצירות, מצב רוח ירוד, עור/שיער יבשים. בדיקות דם אצל רופא. אין מינון לבותירוקסין מומצא.",
+      "seeDoctorIf": [
+        "חשד לתת־פעילות תריס",
+        "תופעות לוואי של הטיפול"
+      ],
+      "doNot": [
+        "אין מינון לבותירוקסין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Гипотиреоз: усталость, зябкость, набор веса, запоры, низкое настроение, сухая кожа/волосы. Анализы у врача. Дозы левотироксина не выдумывать.",
+      "seeDoctorIf": [
+        "Подозрение на гипотиреоз",
+        "Побочные эффекты лечения"
+      ],
+      "doNot": [
+        "Не изобретать дозы левотироксина"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-hypothyroidism",
+      "name": "NHS — Underactive thyroid (hypothyroidism)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
