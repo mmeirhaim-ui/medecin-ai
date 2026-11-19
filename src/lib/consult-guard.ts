@@ -15,7 +15,7 @@ const GLOBAL_CONSULT_DAILY = 2000;
 const TICKET_TTL_MS = 3 * 60 * 1000; // 3 min
 
 export const CONSULT_SID_COOKIE = "doctor_ai_consult_sid";
-/** Legacy cookies from Doctor IA / Medecin AI builds — still accepted for sid continuity. */
+/** Legacy cookies from older Doctor AI / Medecin AI builds — still accepted for sid continuity. */
 export const CONSULT_SID_COOKIE_LEGACY = "doctor_ia_consult_sid";
 export const CONSULT_SID_COOKIE_LEGACY_MEDECIN = "medecin_consult_sid";
 

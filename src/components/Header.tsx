@@ -22,7 +22,7 @@ export function Header() {
           <span className="font-display text-2xl tracking-tight text-[var(--brand-deep)] sm:text-[1.75rem]">
             Doctor{" "}
             <span className="italic text-[var(--brand)] transition-colors group-hover:text-[var(--brand-deep)]">
-              IA
+              AI
             </span>
           </span>
         </Link>
