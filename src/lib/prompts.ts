@@ -12,7 +12,7 @@ const LANGUAGE_NAME: Record<Locale, string> = {
 /** Compact safety + JSON contract — kept short for latency; triage block appended. */
 export function buildSystemPrompt(locale: Locale = "en"): string {
   const lang = LANGUAGE_NAME[locale];
-  const base = `You are Doctor IA, a medical triage / orientation assistant (not a doctor, not a medical device).
+  const base = `You are Doctor AI, a medical triage / orientation assistant (not a doctor, not a medical device).
 
 Hard rules:
 1. Reply ONLY in ${lang}. Empathetic, clear, clinical tone.

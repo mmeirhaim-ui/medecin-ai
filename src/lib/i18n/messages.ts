@@ -115,9 +115,9 @@ export type Messages = {
 };
 
 const en: Messages = {
-  brand: "Doctor IA",
+  brand: "Doctor AI",
   brandTagline: "Assisted medical orientation",
-  metaTitle: "Doctor IA — Assisted medical orientation",
+  metaTitle: "Doctor AI — Assisted medical orientation",
   metaDescription:
     "Describe your symptoms, add photos if needed, and receive careful orientation (not a diagnosis).",
   nav: {
@@ -161,7 +161,7 @@ const en: Messages = {
     consultationHint: "Refine your description in the conversation thread.",
     newSession: "New",
     you: "You",
-    assistant: "Doctor IA",
+    assistant: "Doctor AI",
     followUpLabel: "Follow-up message",
     followUpPlaceholder: "Clarify: duration, intensity, triggers…",
     send: "Send",
@@ -170,7 +170,7 @@ const en: Messages = {
     needSymptoms: "Describe your symptoms to begin.",
     mockBanner:
       "Demo mode — analysis service unavailable; replies shown are simulated.",
-    thinking: "Doctor IA is thinking",
+    thinking: "Doctor AI is thinking",
   },
   images: {
     label: "Photos (optional)",
@@ -230,9 +230,9 @@ const en: Messages = {
     importantLabel: "Important: ",
     privacyLabel: "Privacy & processing. ",
     short:
-      "Doctor IA is not a doctor and does not replace a consultation. In an emergency, call 15 / 112 (France) or 101 (Israel — Magen David Adom).",
+      "Doctor AI is not a doctor and does not replace a consultation. In an emergency, call 15 / 112 (France) or 101 (Israel — Magen David Adom).",
     long:
-      "Information from Doctor IA is educational orientation only. It is not a diagnosis, prescription, or personalized medical advice. See a qualified clinician for medical decisions. For severe symptoms or emergencies, contact emergency services immediately.",
+      "Information from Doctor AI is educational orientation only. It is not a diagnosis, prescription, or personalized medical advice. See a qualified clinician for medical decisions. For severe symptoms or emergencies, contact emergency services immediately.",
     privacy:
       "By submitting, your description (and any photos) is sent to Google Gemini to generate orientation. Do not enter identity data (name, social security number, etc.). Without a server API key, a local demo mode is used.",
   },
@@ -243,7 +243,7 @@ const en: Messages = {
     israel: "Israel",
   },
   footer: {
-    copyright: "© 2026 Doctor IA — assisted medical orientation",
+    copyright: "© 2026 Doctor AI — assisted medical orientation",
   },
   errors: {
     unexpected: "Unexpected error",
@@ -254,9 +254,9 @@ const en: Messages = {
 };
 
 const fr: Messages = {
-  brand: "Doctor IA",
+  brand: "Doctor AI",
   brandTagline: "Orientation médicale assistée",
-  metaTitle: "Doctor IA — Orientation médicale assistée",
+  metaTitle: "Doctor AI — Orientation médicale assistée",
   metaDescription:
     "Décrivez vos symptômes, ajoutez des photos si besoin, et recevez une orientation prudente (pas un diagnostic).",
   nav: {
@@ -300,7 +300,7 @@ const fr: Messages = {
     consultationHint: "Affinez votre description dans le fil de discussion.",
     newSession: "Nouvelle",
     you: "Vous",
-    assistant: "Doctor IA",
+    assistant: "Doctor AI",
     followUpLabel: "Message de suivi",
     followUpPlaceholder: "Précisez : durée, intensité, facteurs déclenchants…",
     send: "Envoyer",
@@ -309,7 +309,7 @@ const fr: Messages = {
     needSymptoms: "Décrivez vos symptômes pour commencer.",
     mockBanner:
       "Mode démonstration — le service d’analyse n’est pas disponible ; les réponses affichées sont simulées.",
-    thinking: "Doctor IA réfléchit",
+    thinking: "Doctor AI réfléchit",
   },
   images: {
     label: "Photos (optionnel)",
@@ -370,9 +370,9 @@ const fr: Messages = {
     importantLabel: "Important : ",
     privacyLabel: "Confidentialité & traitement. ",
     short:
-      "Doctor IA n'est pas un médecin et ne remplace pas une consultation. En cas d'urgence, appelez le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).",
+      "Doctor AI n'est pas un médecin et ne remplace pas une consultation. En cas d'urgence, appelez le 15 / 112 (France) ou le 101 (Israël — Magen David Adom).",
     long:
-      "Les informations fournies par Doctor IA sont à titre éducatif et d'orientation uniquement. Elles ne constituent pas un diagnostic, une prescription ni un avis médical personnalisé. Consultez un professionnel de santé qualifié pour toute décision médicale. En cas de symptômes graves ou d'urgence, contactez immédiatement les services d'urgence.",
+      "Les informations fournies par Doctor AI sont à titre éducatif et d'orientation uniquement. Elles ne constituent pas un diagnostic, une prescription ni un avis médical personnalisé. Consultez un professionnel de santé qualifié pour toute décision médicale. En cas de symptômes graves ou d'urgence, contactez immédiatement les services d'urgence.",
     privacy:
       "En envoyant, votre description (et photos éventuelles) est transmise à Google Gemini pour générer une orientation. Ne saisissez pas de données d’identité (nom, n° de sécurité sociale, etc.). Sans clé API côté serveur, un mode démonstration local est utilisé.",
   },
@@ -383,7 +383,7 @@ const fr: Messages = {
     israel: "Israël",
   },
   footer: {
-    copyright: "© 2026 Doctor IA — orientation médicale assistée",
+    copyright: "© 2026 Doctor AI — orientation médicale assistée",
   },
   errors: {
     unexpected: "Erreur inattendue",
@@ -394,9 +394,9 @@ const fr: Messages = {
 };
 
 const he: Messages = {
-  brand: "Doctor IA",
+  brand: "Doctor AI",
   brandTagline: "הכוונה רפואית בסיוע בינה מלאכותית",
-  metaTitle: "Doctor IA — הכוונה רפואית",
+  metaTitle: "Doctor AI — הכוונה רפואית",
   metaDescription:
     "תארו את התסמינים, הוסיפו תמונות במידת הצורך, וקבלו הכוונה זהירה (לא אבחנה).",
   nav: {
@@ -438,7 +438,7 @@ const he: Messages = {
     consultationHint: "דייקו את התיאור בשרשור השיחה.",
     newSession: "חדש",
     you: "אתם",
-    assistant: "Doctor IA",
+    assistant: "Doctor AI",
     followUpLabel: "הודעת המשך",
     followUpPlaceholder: "דיוק: משך, עוצמה, גורמים מעוררים…",
     send: "שליחה",
@@ -447,7 +447,7 @@ const he: Messages = {
     needSymptoms: "תארו את התסמינים כדי להתחיל.",
     mockBanner:
       "מצב הדגמה — שירות הניתוח אינו זמין; התשובות המוצגות מדומות.",
-    thinking: "Doctor IA חושב",
+    thinking: "Doctor AI חושב",
   },
   images: {
     label: "תמונות (אופציונלי)",
@@ -507,9 +507,9 @@ const he: Messages = {
     importantLabel: "חשוב: ",
     privacyLabel: "פרטיות ועיבוד. ",
     short:
-      "Doctor IA אינו רופא ואינו מחליף ייעוץ רפואי. בחירום התקשרו ל־15 / 112 (צרפת) או ל־101 (ישראל — מגן דוד אדום).",
+      "Doctor AI אינו רופא ואינו מחליף ייעוץ רפואי. בחירום התקשרו ל־15 / 112 (צרפת) או ל־101 (ישראל — מגן דוד אדום).",
     long:
-      "המידע מ־Doctor IA הוא להכוונה חינוכית בלבד. אינו אבחנה, מרשם או ייעוץ רפואי אישי. פנו לאיש מקצוע מוסמך להחלטות רפואיות. בתסמינים חמורים או חירום — פנו מיד לשירותי חירום.",
+      "המידע מ־Doctor AI הוא להכוונה חינוכית בלבד. אינו אבחנה, מרשם או ייעוץ רפואי אישי. פנו לאיש מקצוע מוסמך להחלטות רפואיות. בתסמינים חמורים או חירום — פנו מיד לשירותי חירום.",
     privacy:
       "בשליחה, התיאור (ותמונות אם יש) נשלח ל־Google Gemini ליצירת הכוונה. אל תזינו פרטי זהות. ללא מפתח API בשרת נעשה שימוש במצב הדגמה מקומי.",
   },
@@ -520,7 +520,7 @@ const he: Messages = {
     israel: "ישראל",
   },
   footer: {
-    copyright: "© 2026 Doctor IA — הכוונה רפואית בסיוע",
+    copyright: "© 2026 Doctor AI — הכוונה רפואית בסיוע",
   },
   errors: {
     unexpected: "שגיאה בלתי צפויה",
@@ -531,9 +531,9 @@ const he: Messages = {
 };
 
 const ru: Messages = {
-  brand: "Doctor IA",
+  brand: "Doctor AI",
   brandTagline: "Помощь в медицинской ориентации",
-  metaTitle: "Doctor IA — Медицинская ориентация",
+  metaTitle: "Doctor AI — Медицинская ориентация",
   metaDescription:
     "Опишите симптомы, при необходимости добавьте фото и получите осторожную ориентацию (не диагноз).",
   nav: {
@@ -576,7 +576,7 @@ const ru: Messages = {
     consultationHint: "Уточните описание в переписке.",
     newSession: "Новая",
     you: "Вы",
-    assistant: "Doctor IA",
+    assistant: "Doctor AI",
     followUpLabel: "Сообщение уточнения",
     followUpPlaceholder: "Уточните: длительность, интенсивность, триггеры…",
     send: "Отправить",
@@ -585,7 +585,7 @@ const ru: Messages = {
     needSymptoms: "Опишите симптомы, чтобы начать.",
     mockBanner:
       "Демо-режим — сервис анализа недоступен; показанные ответы смоделированы.",
-    thinking: "Doctor IA думает",
+    thinking: "Doctor AI думает",
   },
   images: {
     label: "Фото (необязательно)",
@@ -646,9 +646,9 @@ const ru: Messages = {
     importantLabel: "Важно: ",
     privacyLabel: "Конфиденциальность и обработка. ",
     short:
-      "Doctor IA не является врачом и не заменяет консультацию. В экстренной ситуации звоните 15 / 112 (Франция) или 101 (Израиль — Маген Давид Адом).",
+      "Doctor AI не является врачом и не заменяет консультацию. В экстренной ситуации звоните 15 / 112 (Франция) или 101 (Израиль — Маген Давид Адом).",
     long:
-      "Информация Doctor IA носит образовательный и ориентирующий характер. Это не диагноз, не рецепт и не персональная медицинская рекомендация. Обращайтесь к квалифицированному специалисту. При тяжёлых симптомах или неотложном состоянии немедленно вызывайте экстренные службы.",
+      "Информация Doctor AI носит образовательный и ориентирующий характер. Это не диагноз, не рецепт и не персональная медицинская рекомендация. Обращайтесь к квалифицированному специалисту. При тяжёлых симптомах или неотложном состоянии немедленно вызывайте экстренные службы.",
     privacy:
       "При отправке описание (и фото, если есть) передаётся в Google Gemini для ориентации. Не вводите данные удостоверения личности. Без серверного API-ключа используется локальный демо-режим.",
   },
@@ -659,7 +659,7 @@ const ru: Messages = {
     israel: "Израиль",
   },
   footer: {
-    copyright: "© 2026 Doctor IA — медицинская ориентация с ИИ",
+    copyright: "© 2026 Doctor AI — медицинская ориентация с ИИ",
   },
   errors: {
     unexpected: "Неожиданная ошибка",

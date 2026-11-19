@@ -1,7 +1,8 @@
 import type { Consultation } from "./types";
 
-const KEY = "doctor-ia-consultations-v1";
+const KEY = "doctor-ai-consultations-v1";
 const LEGACY_KEYS = [
+  "doctor-ia-consultations-v1",
   "medcin-ai-consultations-v1",
   "medecin-ai-consultations-v1",
 ];

@@ -1,4 +1,4 @@
-# Doctor IA
+# Doctor AI
 
 Assisted **medical orientation** in English, French, Hebrew, and Russian: describe symptoms, optionally attach photos, and receive ranked hypotheses, an urgency level, and next steps.
 
@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ### Language
 
-The UI defaults to the browser language when it is `he`, `en`, `fr`, or `ru`; otherwise **English**. Use the language picker in the header; the choice is stored in `localStorage` (`doctor-ia-locale`). Hebrew uses RTL. AI replies follow the selected locale.
+The UI defaults to the browser language when it is `he`, `en`, `fr`, or `ru`; otherwise **English**. Use the language picker in the header; the choice is stored in `localStorage` (`doctor-ai-locale`). Hebrew uses RTL. AI replies follow the selected locale.
 
 ### Gemini API key (optional)
 

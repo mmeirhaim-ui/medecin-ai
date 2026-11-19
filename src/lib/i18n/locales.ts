@@ -4,7 +4,9 @@ export type Locale = (typeof LOCALES)[number];
 
 export const DEFAULT_LOCALE: Locale = "en";
 
-export const LOCALE_STORAGE_KEY = "doctor-ia-locale";
+export const LOCALE_STORAGE_KEY = "doctor-ai-locale";
+/** Previous brand key — still read for continuity. */
+export const LOCALE_STORAGE_KEY_LEGACY = "doctor-ia-locale";
 
 export const LOCALE_LABELS: Record<Locale, string> = {
   en: "English",
@@ -45,7 +47,9 @@ export function detectDeviceLocale(): Locale {
 export function readStoredLocale(): Locale | null {
   if (typeof window === "undefined") return null;
   try {
-    const raw = localStorage.getItem(LOCALE_STORAGE_KEY);
+    const raw =
+      localStorage.getItem(LOCALE_STORAGE_KEY) ||
+      localStorage.getItem(LOCALE_STORAGE_KEY_LEGACY);
     return isLocale(raw) ? raw : null;
   } catch {
     return null;

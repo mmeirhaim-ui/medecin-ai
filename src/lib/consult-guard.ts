@@ -14,9 +14,10 @@ const CONSULT_DAILY_PER_IP = 80;
 const GLOBAL_CONSULT_DAILY = 2000;
 const TICKET_TTL_MS = 3 * 60 * 1000; // 3 min
 
-export const CONSULT_SID_COOKIE = "doctor_ia_consult_sid";
-/** Legacy cookie from Medecin AI builds — still accepted for sid continuity. */
-export const CONSULT_SID_COOKIE_LEGACY = "medecin_consult_sid";
+export const CONSULT_SID_COOKIE = "doctor_ai_consult_sid";
+/** Legacy cookies from Doctor IA / Medecin AI builds — still accepted for sid continuity. */
+export const CONSULT_SID_COOKIE_LEGACY = "doctor_ia_consult_sid";
+export const CONSULT_SID_COOKIE_LEGACY_MEDECIN = "medecin_consult_sid";
 
 type GlobalSecret = typeof globalThis & { __medecinConsultHmac?: string };
 
@@ -99,7 +100,8 @@ export function readConsultSid(req: Request): string | null {
   const cookie = req.headers.get("cookie") || "";
   return (
     readCookieValue(cookie, CONSULT_SID_COOKIE) ||
-    readCookieValue(cookie, CONSULT_SID_COOKIE_LEGACY)
+    readCookieValue(cookie, CONSULT_SID_COOKIE_LEGACY) ||
+    readCookieValue(cookie, CONSULT_SID_COOKIE_LEGACY_MEDECIN)
   );
 }
 

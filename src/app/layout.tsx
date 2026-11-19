@@ -3,7 +3,10 @@ import { DM_Sans, Fraunces, Noto_Sans_Hebrew } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LocaleProvider } from "@/components/LocaleProvider";
-import { LOCALE_STORAGE_KEY } from "@/lib/i18n/locales";
+import {
+  LOCALE_STORAGE_KEY,
+  LOCALE_STORAGE_KEY_LEGACY,
+} from "@/lib/i18n/locales";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -25,11 +28,11 @@ const notoHebrew = Noto_Sans_Hebrew({
 });
 
 export const metadata: Metadata = {
-  title: "Doctor IA — Assisted medical orientation",
+  title: "Doctor AI — Assisted medical orientation",
   description:
     "Describe your symptoms, add photos if needed, and receive careful orientation (not a diagnosis). Available in English, French, Hebrew, and Russian.",
   openGraph: {
-    title: "Doctor IA",
+    title: "Doctor AI",
     description:
       "Medical orientation assistant: symptoms, photos, emergency guardrails.",
     locale: "en_US",
@@ -40,7 +43,8 @@ const localeBootScript = `
 (function(){
   try {
     var key=${JSON.stringify(LOCALE_STORAGE_KEY)};
-    var stored=localStorage.getItem(key);
+    var legacy=${JSON.stringify(LOCALE_STORAGE_KEY_LEGACY)};
+    var stored=localStorage.getItem(key)||localStorage.getItem(legacy);
     var supported=['en','fr','he','ru'];
     var loc=stored;
     if(!loc||supported.indexOf(loc)<0){
