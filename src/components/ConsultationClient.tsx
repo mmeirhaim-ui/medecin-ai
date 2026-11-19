@@ -77,6 +77,27 @@ export function ConsultationClient({ initialId }: Props) {
     setStarted(true);
   }, [initialId]);
 
+  async function prefetchTicket(force = false): Promise<void> {
+    const cached = prefetched.current;
+    if (!force && cached && Date.now() - cached.at < 45_000) return;
+    try {
+      const res = await fetch("/api/consult/ticket", {
+        method: "POST",
+        credentials: "same-origin",
+        headers: {
+          Accept: "application/json",
+          "X-Locale": locale,
+        },
+      });
+      const data = await readJsonSafe<{ ticket?: string }>(res);
+      if (res.ok && data.ok && data.body?.ticket) {
+        prefetched.current = { ticket: data.body.ticket, at: Date.now() };
+      }
+    } catch {
+      /* ignore warm failures */
+    }
+  }
+
   // Warm HttpOnly sid only (no ticket quota). Prefetch a real ticket later.
   useEffect(() => {
     void fetch("/api/consult/ticket?warm=1", {
@@ -86,33 +107,19 @@ export function ConsultationClient({ initialId }: Props) {
     }).catch(() => {});
   }, [locale]);
 
+  // Prefetch ticket earlier (shorter text + debounce) so submit rarely waits on mint.
   useEffect(() => {
-    if (started || symptoms.trim().length < 12) return;
+    if (started || symptoms.trim().length < 8) return;
     let cancelled = false;
     const timer = window.setTimeout(() => {
-      void (async () => {
-        try {
-          const res = await fetch("/api/consult/ticket", {
-            method: "POST",
-            credentials: "same-origin",
-            headers: {
-              Accept: "application/json",
-              "X-Locale": locale,
-            },
-          });
-          const data = await readJsonSafe<{ ticket?: string }>(res);
-          if (!cancelled && res.ok && data.ok && data.body?.ticket) {
-            prefetched.current = { ticket: data.body.ticket, at: Date.now() };
-          }
-        } catch {
-          /* ignore warm failures */
-        }
-      })();
-    }, 400);
+      if (cancelled) return;
+      void prefetchTicket();
+    }, 180);
     return () => {
       cancelled = true;
       window.clearTimeout(timer);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- prefetchTicket closes over locale
   }, [symptoms, started, locale]);
 
   const liveEmergency = useMemo(
@@ -213,7 +220,6 @@ export function ConsultationClient({ initialId }: Props) {
       return;
     }
     setError(null);
-    setLoading(true);
 
     const userMsg: ChatMessage = {
       id: newId(),
@@ -226,6 +232,13 @@ export function ConsultationClient({ initialId }: Props) {
         previewUrl: img.previewUrl,
       })),
     };
+
+    // Optimistic first paint: show the chat + thinking dots immediately
+    // while ticket/consult runs (ticket is usually prefetched).
+    setMessages([userMsg]);
+    setStarted(true);
+    setLoading(true);
+    void prefetchTicket();
 
     try {
       const data = await postConsult({
@@ -249,7 +262,6 @@ export function ConsultationClient({ initialId }: Props) {
       setAssessment(data.assessment);
       setEmergencyDetected(data.emergencyDetected);
       setMockBanner(Boolean(data.mock));
-      setStarted(true);
       setConsultationId(data.consultationId);
       persist({
         symptoms: symptoms.trim(),
@@ -258,6 +270,10 @@ export function ConsultationClient({ initialId }: Props) {
         emergencyDetected: data.emergencyDetected,
       });
     } catch (err) {
+      // Roll back optimistic chat so the form stays usable.
+      setStarted(false);
+      setMessages([]);
+      setAssessment(null);
       setError(err instanceof Error ? err.message : t.errors.unexpected);
     } finally {
       setLoading(false);
@@ -268,7 +284,6 @@ export function ConsultationClient({ initialId }: Props) {
     e.preventDefault();
     if (!followUp.trim()) return;
     setError(null);
-    setLoading(true);
 
     const userMsg: ChatMessage = {
       id: newId(),
@@ -276,16 +291,22 @@ export function ConsultationClient({ initialId }: Props) {
       content: followUp.trim(),
       createdAt: new Date().toISOString(),
     };
-    const history = messages.slice(-6).map((m) => ({
+    const priorMessages = messages;
+    const history = priorMessages.slice(-6).map((m) => ({
       role: m.role,
       content: m.content.slice(0, 1200),
     }));
+    const optimistic = [...priorMessages, userMsg];
+    setMessages(optimistic);
+    setFollowUp("");
+    setLoading(true);
+    void prefetchTicket();
 
     try {
       const data = await postConsult({
         consultationId,
         symptoms: symptoms.slice(0, 4000),
-        message: followUp.trim().slice(0, 1500),
+        message: userMsg.content.slice(0, 1500),
         history,
       });
 
@@ -295,18 +316,19 @@ export function ConsultationClient({ initialId }: Props) {
         content: data.reply,
         createdAt: new Date().toISOString(),
       };
-      const nextMessages = [...messages, userMsg, assistantMsg];
+      const nextMessages = [...optimistic, assistantMsg];
       setMessages(nextMessages);
       setAssessment(data.assessment);
       setEmergencyDetected(data.emergencyDetected || emergencyDetected);
       setMockBanner(Boolean(data.mock));
-      setFollowUp("");
       persist({
         messages: nextMessages,
         assessment: data.assessment,
         emergencyDetected: data.emergencyDetected || emergencyDetected,
       });
     } catch (err) {
+      setMessages(priorMessages);
+      setFollowUp(userMsg.content);
       setError(err instanceof Error ? err.message : t.errors.unexpected);
     } finally {
       setLoading(false);
@@ -360,6 +382,9 @@ export function ConsultationClient({ initialId }: Props) {
               id="symptoms"
               value={symptoms}
               onChange={(e) => setSymptoms(e.target.value)}
+              onFocus={() => {
+                if (symptoms.trim().length >= 8) void prefetchTicket();
+              }}
               rows={7}
               placeholder={t.consult.symptomsPlaceholder}
               className="mt-2 w-full resize-y rounded-2xl border border-[var(--line)] bg-white/80 px-4 py-3 text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--ink-muted)]/70 focus:ring-2"

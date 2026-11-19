@@ -19,6 +19,12 @@ import {
   matchKnowledge,
   pickGuidanceLang,
 } from "./knowledge";
+import {
+  GEMINI_MAX_OUTPUT_TOKENS,
+  getGroundingMode,
+  getModelName,
+  modelCandidates,
+} from "./gemini-config";
 import type {
   Assessment,
   AssessmentSource,
@@ -26,6 +32,13 @@ import type {
   LikelyCause,
   UrgencyLevel,
 } from "./types";
+
+export {
+  DEFAULT_GEMINI_MODEL,
+  getGroundingMode,
+  getModelName,
+  type GroundingMode,
+} from "./gemini-config";
 
 const RESPONSE_SCHEMA: ResponseSchema = {
   type: SchemaType.OBJECT,
@@ -98,39 +111,6 @@ export function isMockMode(): boolean {
   return !getApiKey();
 }
 
-/**
- * Prefer a fast Flash / lite model. Override with GEMINI_MODEL.
- * gemini-2.0-flash was shut down 2026-06-01.
- */
-export const DEFAULT_GEMINI_MODEL = "gemini-3.5-flash-lite";
-
-/** Fallback chain if the preferred model is unavailable for the key. */
-const MODEL_FALLBACKS = [
-  "gemini-3.5-flash-lite",
-  "gemini-3.6-flash",
-  "gemini-3.8-flash",
-  "gemini-2.5-flash",
-] as const;
-
-/**
- * Grounding mode:
- * - prefer: try Google Search first, then JSON-only
- * - on / 1 / true: same as prefer (legacy GEMINI_ENABLE_GROUNDING)
- * - fallback: JSON-only first, then optional grounded retry
- * - off (default): never enable googleSearch — keeps latency low
- */
-export type GroundingMode = "prefer" | "fallback" | "off";
-
-export function getGroundingMode(): GroundingMode {
-  const legacy = process.env.GEMINI_ENABLE_GROUNDING?.trim().toLowerCase();
-  if (legacy === "1" || legacy === "true" || legacy === "yes") return "prefer";
-  const raw = (process.env.GEMINI_GROUNDING || "off").trim().toLowerCase();
-  if (raw === "prefer" || raw === "on" || raw === "1" || raw === "true")
-    return "prefer";
-  if (raw === "fallback") return "fallback";
-  return "off";
-}
-
 function groundingEnabled(): boolean {
   return getGroundingMode() !== "off";
 }
@@ -154,15 +134,6 @@ export function formatGeminiError(err: unknown): string {
     );
   const compact = scrubbed.replace(/\s+/g, " ").trim().slice(0, 320);
   return compact || "Erreur Gemini inconnue";
-}
-
-function getModelName(): string {
-  return process.env.GEMINI_MODEL?.trim() || DEFAULT_GEMINI_MODEL;
-}
-
-function modelCandidates(): string[] {
-  const preferred = getModelName();
-  return [preferred, ...MODEL_FALLBACKS.filter((m) => m !== preferred)];
 }
 
 function resolveLocale(req: ConsultRequest): Locale {
@@ -298,8 +269,7 @@ function buildUserParts(req: ConsultRequest, knowledgeBlock: string): Part[] {
     ? `\n\n${knowledgeBlock}\n`
     : "\n\n(No local knowledge-pack match — use triage rules + trusted sources.)\n";
 
-  const text = `Symptoms:\n${req.symptoms}${historyBlock}${followUp}${knowledgeSection}\nRespond with the required JSON only. Fill "sources" with trusted public URLs when useful.`;
-
+  const text = `Symptoms:\n${req.symptoms}${historyBlock}${followUp}${knowledgeSection}\nJSON only. Keep reply/summary short. Fill "sources" with trusted public URLs when useful.`;
   const parts: Part[] = [{ text }];
 
   for (const img of req.images ?? []) {
@@ -343,36 +313,65 @@ function extractGroundingSources(response: {
   return out;
 }
 
+type GlobalGemini = typeof globalThis & {
+  __doctorIaGenAI?: GoogleGenerativeAI;
+  __doctorIaModels?: Map<string, GenerativeModel>;
+};
+
+function getGenAI(): GoogleGenerativeAI {
+  const key = getApiKey();
+  if (!key) throw new Error("Missing API key");
+  const g = globalThis as GlobalGemini;
+  if (!g.__doctorIaGenAI) {
+    g.__doctorIaGenAI = new GoogleGenerativeAI(key);
+  }
+  return g.__doctorIaGenAI;
+}
+
 function createModel(
   modelName: string,
   locale: Locale,
   withGrounding: boolean,
 ): GenerativeModel {
-  const key = getApiKey();
-  if (!key) throw new Error("Missing API key");
-  const genAI = new GoogleGenerativeAI(key);
+  const g = globalThis as GlobalGemini;
+  if (!g.__doctorIaModels) g.__doctorIaModels = new Map();
+  const cacheKey = `${modelName}|${locale}|${withGrounding ? "g" : "n"}`;
+  const cached = g.__doctorIaModels.get(cacheKey);
+  if (cached) return cached;
 
+  const genAI = getGenAI();
   const base = {
     model: modelName,
     systemInstruction: buildSystemPrompt(locale),
     generationConfig: {
       temperature: 0.3,
-      maxOutputTokens: 2048,
+      maxOutputTokens: GEMINI_MAX_OUTPUT_TOKENS,
       responseMimeType: "application/json" as const,
       responseSchema: RESPONSE_SCHEMA,
     },
   };
 
-  if (withGrounding) {
-    return genAI.getGenerativeModel({
-      ...base,
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      tools: [{ googleSearch: {} } as any],
-    });
-  }
+  const model = withGrounding
+    ? genAI.getGenerativeModel({
+        ...base,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        tools: [{ googleSearch: {} } as any],
+      })
+    : genAI.getGenerativeModel(base);
 
-  return genAI.getGenerativeModel(base);
+  g.__doctorIaModels.set(cacheKey, model);
+  return model;
 }
+
+export type ConsultTimings = {
+  knowledgeMs: number;
+  modelMs: number;
+  totalMs: number;
+  knowledgeHits: number;
+  knowledgeChars: number;
+  grounded: boolean;
+  mock: boolean;
+};
 
 async function tryGenerate(
   modelName: string,
@@ -450,7 +449,9 @@ export async function runConsultation(req: ConsultRequest): Promise<{
   reply: string;
   emergencyDetected: boolean;
   mock: boolean;
+  timings: ConsultTimings;
 }> {
+  const t0 = performance.now();
   const locale = resolveLocale(req);
   const blob = [
     req.symptoms,
@@ -460,14 +461,16 @@ export async function runConsultation(req: ConsultRequest): Promise<{
     .filter(Boolean)
     .join("\n");
   const emergency = detectEmergency(blob);
-  const matches = matchKnowledge(blob, 4);
+  const matches = matchKnowledge(blob, 3);
   const guidanceLang = pickGuidanceLang(blob, locale);
   const knowledgeBlock = formatKnowledgeForPrompt(matches, guidanceLang);
   const packSources = collectSourcesFromMatches(matches);
   const knowledgeHits = matches.map((m) => m.entry.id);
+  const knowledgeMs = performance.now() - t0;
 
   if (isMockMode()) {
     const mock = buildMockResponse({ ...req, locale });
+    const totalMs = performance.now() - t0;
     return {
       assessment: {
         ...mock.assessment,
@@ -478,6 +481,15 @@ export async function runConsultation(req: ConsultRequest): Promise<{
       reply: mock.reply,
       emergencyDetected: mock.emergencyDetected,
       mock: true,
+      timings: {
+        knowledgeMs: Math.round(knowledgeMs * 100) / 100,
+        modelMs: 0,
+        totalMs: Math.round(totalMs * 100) / 100,
+        knowledgeHits: knowledgeHits.length,
+        knowledgeChars: knowledgeBlock.length,
+        grounded: false,
+        mock: true,
+      },
     };
   }
 
@@ -487,6 +499,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
   let groundingSources: GroundingChunk[] = [];
   let textOut = "";
   let lastError: unknown;
+  const modelStart = performance.now();
 
   for (const modelName of modelCandidates()) {
     try {
@@ -500,6 +513,8 @@ export async function runConsultation(req: ConsultRequest): Promise<{
       lastError = err;
     }
   }
+
+  const modelMs = performance.now() - modelStart;
 
   if (!textOut) {
     throw lastError instanceof Error
@@ -533,6 +548,7 @@ export async function runConsultation(req: ConsultRequest): Promise<{
     reply = `${EMERGENCY_PREFIX[locale]}${reply}${EMERGENCY_SUFFIX[locale]}`;
   }
 
+  const totalMs = performance.now() - t0;
   return {
     assessment: {
       ...assessment,
@@ -541,5 +557,14 @@ export async function runConsultation(req: ConsultRequest): Promise<{
     reply,
     emergencyDetected: emergency.detected,
     mock: false,
+    timings: {
+      knowledgeMs: Math.round(knowledgeMs * 100) / 100,
+      modelMs: Math.round(modelMs * 100) / 100,
+      totalMs: Math.round(totalMs * 100) / 100,
+      knowledgeHits: knowledgeHits.length,
+      knowledgeChars: knowledgeBlock.length,
+      grounded,
+      mock: false,
+    },
   };
 }

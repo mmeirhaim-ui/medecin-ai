@@ -22,10 +22,12 @@ export {
   getEntryById,
   matchKnowledge,
   pickGuidanceLang,
+  resetKnowledgeMatchIndex,
 } from "./match";
 
 export {
   TRIAGE_KNOWLEDGE_BLOCK,
+  citationPolicyBlock,
   groundingPolicyBlock,
   withMedicalKnowledge,
 } from "./prompt-blocks";
