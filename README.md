@@ -54,6 +54,8 @@ npm run validate:knowledge
 
 Live Google Search grounding is **off by default** for latency (`GEMINI_GROUNDING=prefer|fallback|off`, or `GEMINI_ENABLE_GROUNDING=1`). The local knowledge pack still supplies attributed public guidance. Structured triage rules are embedded in the system prompt; answers remain non-diagnostic and non-prescribing.
 
+Latency notes: keyword index for the knowledge pack, compact prompt injection (top 3 matches), cached Gemini client, `maxOutputTokens` capped, ticket prefetch + optimistic chat paint. Measure local pre-model cost with `npm run bench:consult`. Consult responses expose `Server-Timing` (`knowledge`, `model`, `consult`).
+
 ## Stack
 
 Next.js (App Router) · TypeScript · Tailwind CSS · `@google/generative-ai`

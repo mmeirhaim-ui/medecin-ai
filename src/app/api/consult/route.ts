@@ -144,6 +144,7 @@ export async function POST(req: Request) {
     }
 
     try {
+      const guardStart = performance.now();
       const result = await runConsultation({
         symptoms: symptoms || message,
         message: message || undefined,
@@ -151,14 +152,28 @@ export async function POST(req: Request) {
         images,
         locale: isLocale(body.locale) ? body.locale : undefined,
       });
+      const routeOverheadMs =
+        Math.round((performance.now() - guardStart - result.timings.totalMs) * 100) /
+        100;
 
-      return json({
-        consultationId: body.consultationId || randomUUID(),
-        assessment: result.assessment,
-        reply: result.reply,
-        emergencyDetected: result.emergencyDetected,
-        mock: result.mock,
-      });
+      const serverTiming = [
+        `knowledge;dur=${result.timings.knowledgeMs}`,
+        `model;dur=${result.timings.modelMs}`,
+        `consult;dur=${result.timings.totalMs}`,
+        `route;dur=${Math.max(0, routeOverheadMs)}`,
+      ].join(", ");
+
+      return json(
+        {
+          consultationId: body.consultationId || randomUUID(),
+          assessment: result.assessment,
+          reply: result.reply,
+          emergencyDetected: result.emergencyDetected,
+          mock: result.mock,
+        },
+        200,
+        { "Server-Timing": serverTiming },
+      );
     } catch (err) {
       console.error("consult error", formatGeminiError(err));
       return json({ error: GENERIC_UNAVAILABLE }, 502);

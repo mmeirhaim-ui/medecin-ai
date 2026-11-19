@@ -419,5 +419,5 @@ export function loadKnowledgeEntries(): KnowledgeEntry[] {
 }
 
 export function resetKnowledgeCache(): void {
-  // Static imports — nothing to reset.
+  // Static imports — nothing to reset. Match index is separate (see match.ts).
 }
