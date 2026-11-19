@@ -1,0 +1,101 @@
+{
+  "id": "pcos",
+  "category": "womens-health",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "PCOS",
+      "polycystic ovary syndrome irregular periods"
+    ],
+    "fr": [
+      "SOPK",
+      "syndrome des ovaires polykystiques",
+      "règles irrégulières SOPK"
+    ],
+    "he": [
+      "שחלות פוליציסטיות",
+      "PCOS",
+      "מחזור לא סדיר שחלות"
+    ],
+    "ru": [
+      "СПКЯ",
+      "синдром поликистозных яичников",
+      "нерегулярные месячные СПКЯ"
+    ]
+  },
+  "titles": {
+    "en": "PCOS — orientation",
+    "fr": "SOPK — orientation",
+    "he": "שחלות פוליציסטיות — התמצאות",
+    "ru": "СПКЯ — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "PCOS can cause irregular periods, excess hair, acne, weight changes and fertility issues. NHS: GP assessment and blood tests/ultrasound may be used; lifestyle and medical options exist — this pack never invents metformin or hormone doses. Emergency: sudden severe pelvic pain (cyst complications) or very heavy bleeding with dizziness.",
+      "emergencyIf": [
+        "Sudden severe pelvic pain",
+        "Very heavy bleeding with fainting/dizziness"
+      ],
+      "seeDoctorIf": [
+        "Irregular or absent periods",
+        "Excess hair/acne with cycle changes",
+        "Difficulty conceiving"
+      ],
+      "doNot": [
+        "Do not invent metformin, anti-androgen or fertility drug doses"
+      ]
+    },
+    "fr": {
+      "summary": "SOPK: cycles irréguliers, poils, acné. Orientation NHS; pas de posologies inventées. Urgences si douleur pelvienne brutale.",
+      "emergencyIf": [
+        "Douleur pelvienne brutale",
+        "Hémorragie avec malaise"
+      ],
+      "seeDoctorIf": [
+        "Cycles irréguliers",
+        "Difficulté à concevoir"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "PCOS: מחזור לא סדיר, שיעור, אקנה. לפי NHS; אין מינונים מומצאים. חירום בכאב אגן פתאומי.",
+      "emergencyIf": [
+        "כאב אגן פתאומי",
+        "דימום כבד עם סחרחורת"
+      ],
+      "seeDoctorIf": [
+        "מחזור לא סדיר",
+        "קושי להרות"
+      ],
+      "doNot": [
+        "אין מינוני מטפורמין/הורמונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "СПКЯ: нерегулярные циклы, волосы, акне. Ориентир NHS; дозы не выдумывать. Неотложка при острой тазовой боли.",
+      "emergencyIf": [
+        "Внезапная тазовая боль",
+        "Обильное кровотечение с обмороком"
+      ],
+      "seeDoctorIf": [
+        "Нерегулярные месячные",
+        "Трудности с зачатием"
+      ],
+      "doNot": [
+        "Не изобретать дозы метформина/гормонов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pcos",
+      "name": "NHS — PCOS",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "mental-health-crisis",
+  "category": "mental-health",
+  "urgencyDefault": "urgent",
+  "priority": 10,
+  "keywords": {
+    "en": ["suicide", "kill myself", "want to die", "self-harm", "suicidal", "end my life", "hurt myself"],
+    "fr": ["suicide", "me tuer", "envie de mourir", "automutilation", "suicidaire", "en finir", "me faire du mal"],
+    "he": ["התאבדות", "למות", "לפגוע בעצמי", "אובדני", "לסיים את החיים", "פגיעה עצמית"],
+    "ru": ["самоубийство", "убить себя", "хочу умереть", "суицид", "себе вред", "покончить с собой"]
+  },
+  "titles": {
+    "en": "Mental health crisis / suicidal thoughts",
+    "fr": "Crise psychique / idées suicidaires",
+    "he": "משבר נפשי / מחשבות אובדניות",
+    "ru": "Психический кризис / суицидальные мысли"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Thoughts of suicide or self-harm mean severe distress. You are not alone; talking can help. If in immediate danger of harming yourself, contact emergency services or a crisis line now. This app does not replace crisis care.",
+      "emergencyIf": [
+        "Immediate danger of harming yourself — call local emergency services now",
+        "Someone else has attempted suicide — call emergency services; do not leave them alone"
+      ],
+      "selfCare": [
+        "Talk to someone you trust",
+        "Contact a health worker, counsellor, or crisis line",
+        "If supporting someone: stay with them if immediate danger, remove access to means when safe to do so, seek emergency help"
+      ],
+      "seeDoctorIf": [
+        "Persistent depression, hopelessness, or suicidal thoughts even if not immediate — seek professional care",
+        "In Israel: mental-health ER options and HMO mental-health hotlines are listed by the Ministry of Health"
+      ],
+      "doNot": [
+        "Do not stay alone if in immediate danger",
+        "Do not delay emergency contact when danger is immediate",
+        "This tool will not provide methods of self-harm"
+      ]
+    },
+    "fr": {
+      "summary": "Des idées suicidaires ou d’automutilation signalent une détresse sévère. Vous n’êtes pas seul·e. En danger immédiat, contactez les secours ou une ligne de crise maintenant. Cette app ne remplace pas les soins de crise.",
+      "emergencyIf": [
+        "Danger immédiat de vous faire du mal — appelez le 15 / 112 / 101 selon le pays",
+        "Tentative chez un proche — secours immédiats ; ne pas laisser la personne seule"
+      ],
+      "selfCare": [
+        "Parler à quelqu’un de confiance",
+        "Contacter un professionnel de santé ou une ligne d’écoute",
+        "Si vous aidez quelqu’un : rester présent·e, limiter l’accès aux moyens, appeler les secours"
+      ],
+      "seeDoctorIf": [
+        "Tristesse persistante, désespoir ou idées suicidaires même non immédiates — aide professionnelle"
+      ],
+      "doNot": [
+        "Ne restez pas seul·e en danger immédiat",
+        "Cet outil ne fournit aucun mode opératoire d’automutilation"
+      ]
+    },
+    "he": {
+      "summary": "מחשבות על התאבדות או פגיעה עצמית הן מצוקה חמורה. אינכם לבד. בסכנה מיידית — פנו למד״א/חירום או לקו סיוע עכשיו. האפליקציה אינה מחליפה טיפול במשבר.",
+      "emergencyIf": [
+        "סכנה מיידית לפגוע בעצמכם — התקשרו ל־101 או לשירותי חירום",
+        "ניסיון התאבדות של אדם אחר — חירום מיידי; אל תעזבו לבד"
+      ],
+      "selfCare": [
+        "דברו עם אדם שאתם סומכים עליו",
+        "פנו לאיש מקצוע או לקו משבר",
+        "בליווי אדם במשבר: הישארו איתו, הגבילו גישה לאמצעים כשאפשר בבטחה, קראו לעזרה"
+      ],
+      "seeDoctorIf": [
+        "דיכאון מתמשך או מחשבות אובדניות גם אם לא מיידיות — פנו לטיפול",
+        "בישראל: חדרי מיון פסיכיאטריים ומוקדי קופות לפי משרד הבריאות"
+      ],
+      "doNot": [
+        "אל תישארו לבד בסכנה מיידית",
+        "הכלי לא יספק שיטות לפגיעה עצמית"
+      ]
+    },
+    "ru": {
+      "summary": "Мысли о самоубийстве или самоповреждении — признак тяжёлого стресса. Вы не одиноки. При непосредственной опасности — немедленно служба спасения или кризисная линия. Это приложение не заменяет кризисную помощь.",
+      "emergencyIf": [
+        "Непосредственная опасность причинить себе вред — вызывайте скорую",
+        "Попытка у другого человека — скорая; не оставляйте человека одного"
+      ],
+      "selfCare": [
+        "Поговорите с тем, кому доверяете",
+        "Обратитесь к специалисту или на кризисную линию",
+        "Если помогаете другому: оставайтесь рядом, ограничьте доступ к средствам, когда безопасно, вызывайте помощь"
+      ],
+      "seeDoctorIf": [
+        "Стойкая депрессия или суицидальные мысли даже без немедленной угрозы — к специалисту"
+      ],
+      "doNot": [
+        "Не оставайтесь одни при непосредственной опасности",
+        "Инструмент не предоставляет способов самоповреждения"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "who-suicide-qa",
+      "name": "WHO — Suicide Q&A",
+      "org": "WHO",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/suicide",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "who-depression",
+      "name": "WHO — Depression fact sheet",
+      "org": "WHO",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "il-moh-mental-crisis",
+      "name": "Israeli MoH — Mental health first aid / crisis",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/mental-health/therapy-rehabilitation/crisis-support/first-aid/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-emergencies",
+      "name": "MedlinePlus — Recognizing medical emergencies",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/001927.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "tinnitus",
+  "category": "ent",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "tinnitus",
+      "ringing in ears",
+      "buzzing in ears"
+    ],
+    "fr": [
+      "acouphènes",
+      "sifflements dans les oreilles",
+      "bourdonnements"
+    ],
+    "he": [
+      "טיניטוס",
+      "צלצולים באוזניים",
+      "זמזום באוזניים"
+    ],
+    "ru": [
+      "тиннитус",
+      "звон в ушах",
+      "шум в ушах"
+    ]
+  },
+  "titles": {
+    "en": "Tinnitus",
+    "fr": "Acouphènes",
+    "he": "טיניטוס",
+    "ru": "Тиннитус"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Tinnitus is hearing sounds with no external source. NHS: see a GP for assessment; sudden hearing loss with tinnitus needs urgent care. Management is supportive/clinical — no inventing unproven supplements as treatment.",
+      "emergencyIf": [
+        "Sudden hearing loss with tinnitus",
+        "Tinnitus with new neurological deficits (face/arm/speech)"
+      ],
+      "seeDoctorIf": [
+        "Persistent ringing/buzzing",
+        "Tinnitus with hearing loss, dizziness, or one-sided symptoms"
+      ],
+      "doNot": [
+        "Do not invent miracle supplement regimens",
+        "Do not ignore sudden one-sided hearing loss"
+      ]
+    },
+    "fr": {
+      "summary": "Les acouphènes sont des bruits sans source externe. Médecin ; urgence si surdité brutale. Pas de compléments miracles inventés.",
+      "emergencyIf": [
+        "Surdité brutale avec acouphènes",
+        "Avec déficit neurologique nouveau"
+      ],
+      "seeDoctorIf": [
+        "Acouphènes persistants",
+        "Avec baisse d'audition / vertige / unilatéral"
+      ],
+      "doNot": [
+        "Pas de compléments miracles inventés"
+      ]
+    },
+    "he": {
+      "summary": "טיניטוס: שמיעת רעשים ללא מקור חיצוני. רופא; חירום בירידת שמיעה פתאומית. אין תוספים מופלאים מומצאים.",
+      "emergencyIf": [
+        "ירידת שמיעה פתאומית עם טיניטוס",
+        "עם חסר נוירולוגי חדש"
+      ],
+      "seeDoctorIf": [
+        "צלצול מתמשך",
+        "עם ירידת שמיעה / סחרחורת / חד־צדדי"
+      ],
+      "doNot": [
+        "אין תוספים מופלאים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Тиннитус — звуки без внешнего источника. К врачу; неотложка при внезапной потере слуха. Чудо-добавки не выдумывать.",
+      "emergencyIf": [
+        "Внезапная потеря слуха с тиннитусом",
+        "С новым неврологическим дефицитом"
+      ],
+      "seeDoctorIf": [
+        "Стойкий звон",
+        "Со снижением слуха / головокружением / односторонностью"
+      ],
+      "doNot": [
+        "Не изобретать чудо-БАДы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-tinnitus",
+      "name": "NHS — Tinnitus",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/tinnitus/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

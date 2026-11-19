@@ -1,0 +1,102 @@
+{
+  "id": "cataracts",
+  "category": "eye",
+  "urgencyDefault": "consultation",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "cataracts",
+      "cloudy vision cataract",
+      "lens cloudy eye"
+    ],
+    "fr": [
+      "cataracte",
+      "vision trouble cataracte",
+      "cristallin opaque"
+    ],
+    "he": [
+      "קטרקט",
+      "עדשה עכורה",
+      "ראייה מטושטשת קטרקט"
+    ],
+    "ru": [
+      "катаракта",
+      "мутная линза глаза",
+      "затуманенное зрение катаракта"
+    ]
+  },
+  "titles": {
+    "en": "Cataracts",
+    "fr": "Cataracte",
+    "he": "קטרקט",
+    "ru": "Катаракта"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Cataracts cause gradual cloudy or blurry vision, glare and faded colours. NHS: optometrist/GP referral; surgery is common when vision affects daily life. Sudden vision loss, severe eye pain, or flashes/floaters with curtain need urgent pathways (not typical cataract). Never invent eye-drop 'cures'.",
+      "emergencyIf": [
+        "Sudden vision loss",
+        "Severe eye pain",
+        "Curtain over vision / many new floaters with flashes"
+      ],
+      "seeDoctorIf": [
+        "Gradual cloudy vision affecting driving/reading",
+        "Glare at night"
+      ],
+      "doNot": [
+        "Do not invent cataract-dissolving drops or supplements as proven cures"
+      ]
+    },
+    "fr": {
+      "summary": "Cataracte: vision trouble progressive. Urgences si baisse brutale, douleur, voile. Pas de 'gouttes miracles' inventées.",
+      "emergencyIf": [
+        "Baisse visuelle brutale",
+        "Douleur oculaire sévère",
+        "Voile / corps flottants avec éclairs"
+      ],
+      "seeDoctorIf": [
+        "Vision trouble progressive"
+      ],
+      "doNot": [
+        "Pas de collyres inventés comme cure"
+      ]
+    },
+    "he": {
+      "summary": "קטרקט: ראייה מעוננת הדרגתית. חירום בירידה פתאומית/כאב. אין טיפות 'קסם' מומצאות.",
+      "emergencyIf": [
+        "ירידת ראייה פתאומית",
+        "כאב עין קשה",
+        "וילון / נקודות צפות עם הבזקים"
+      ],
+      "seeDoctorIf": [
+        "ראייה מעוננת מתקדמת"
+      ],
+      "doNot": [
+        "אין טיפות מומצאות כריפוי"
+      ]
+    },
+    "ru": {
+      "summary": "Катаракта: постепенное помутнение зрения. Неотложка при внезапной потере/боли. «Чудо-капли» не выдумывать.",
+      "emergencyIf": [
+        "Внезапная потеря зрения",
+        "Сильная боль в глазу",
+        "Завеса / мушки со вспышками"
+      ],
+      "seeDoctorIf": [
+        "Прогрессирующее помутнение зрения"
+      ],
+      "doNot": [
+        "Не изобретать капли-«лечение»"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-cataracts",
+      "name": "NHS — Cataracts",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/cataracts/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

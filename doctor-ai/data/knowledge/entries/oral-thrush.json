@@ -1,0 +1,91 @@
+{
+  "id": "oral-thrush",
+  "category": "ent",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "oral thrush",
+      "white patches mouth",
+      "candida mouth"
+    ],
+    "fr": [
+      "muguet buccal",
+      "plaques blanches bouche",
+      "candidose orale"
+    ],
+    "he": [
+      "פטרייה בפה",
+      "כתמים לבנים בפה",
+      "קנדידה בפה"
+    ],
+    "ru": [
+      "молочница во рту",
+      "белые пятна во рту",
+      "оральный кандидоз"
+    ]
+  },
+  "titles": {
+    "en": "Oral thrush",
+    "fr": "Muguet buccal",
+    "he": "פטרייה בפה",
+    "ru": "Молочница во рту"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Oral thrush causes white patches in the mouth that can be wiped leaving red areas, with soreness. NHS: see a pharmacist/GP — antifungal gel/drops may be advised. Check inhaler technique/spacers if on steroid inhalers. Infants and immunocompromised need clinical advice. No inventing systemic antifungal doses.",
+      "seeDoctorIf": [
+        "White patches in the mouth",
+        "Infant with feeding difficulty and white mouth patches",
+        "Immunocompromised or diabetes with oral thrush",
+        "Not improving after pharmacy treatment"
+      ],
+      "doNot": [
+        "Do not invent oral antifungal tablet regimens",
+        "Do not ignore thrush with swallowing pain (possible oesophageal involvement — clinical review)"
+      ]
+    },
+    "fr": {
+      "summary": "Le muguet buccal forme des plaques blanches. Pharmacien/médecin pour antifongique local. Technique d'inhalateur à vérifier. Pas d'antifongiques systémiques inventés.",
+      "seeDoctorIf": [
+        "Plaques blanches",
+        "Nourrisson avec difficulté à s'alimenter",
+        "Immunodépression / diabète"
+      ],
+      "doNot": [
+        "Pas d'antifongiques oraux systémiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "פטרייה בפה: כתמים לבנים. רוקח/רופא לתכשיר מקומי. לבדוק טכניקת משאף סטרואידים. אין אנטי־פטרייתי מערכתי מומצא.",
+      "seeDoctorIf": [
+        "כתמים לבנים בפה",
+        "תינוק עם קושי בהאכלה",
+        "דיכוי חיסוני / סוכרת"
+      ],
+      "doNot": [
+        "אין אנטי־פטרייתי פומי מערכתי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Молочница во рту: белые пятна. Фармацевт/врач за местным противогрибковым. Проверить технику ингалятора. Системные дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Белые пятна во рту",
+        "Младенец с трудностью кормления",
+        "Иммунодефицит / диабет"
+      ],
+      "doNot": [
+        "Не изобретать системные противогрибковые"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-oral-thrush",
+      "name": "NHS — Oral thrush (mouth thrush)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/oral-thrush-mouth-thrush/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

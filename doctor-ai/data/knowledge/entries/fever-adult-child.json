@@ -1,0 +1,119 @@
+{
+  "id": "fever-adult-child",
+  "category": "fever",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": ["fever", "high temperature", "febrile", "hot to touch", "chills fever"],
+    "fr": ["fièvre", "température élevée", "fébrile", "frissons fièvre", "chaud au toucher"],
+    "he": ["חום", "חום גבוה", "צמרמורת", "חם למגע"],
+    "ru": ["температура", "лихорадка", "жар", "озноб"]
+  },
+  "titles": {
+    "en": "Fever — when to seek care",
+    "fr": "Fièvre — quand consulter",
+    "he": "חום — מתי לפנות לטיפול",
+    "ru": "Лихорадка — когда обращаться"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Fever is a symptom, not a diagnosis. Thresholds for concern differ by age. Infants under ~2–3 months with fever need urgent evaluation. Emergency signs include stiff neck, confusion, severe breathing trouble, seizures, or blue lips. Educational only.",
+      "seeDoctorIf": [
+        "Age ≤3 months with rectal temperature ≥38°C (100.4°F) — seek care right away",
+        "Age 3–12 months with fever ≥39°C (102.2°F)",
+        "Age ≤2 years with fever lasting >24–48 hours; older children/adults fever >48–72 hours",
+        "Fever ≥40.5–40.6°C (about 105°F) unless it comes down readily and the person is comfortable",
+        "New rash or bruises, pain with urination, immunocompromise, chronic serious illness, recent travel",
+        "Israeli MoH framing: under 2 months any fever >38°C → ER/urgent clinic; any age with breathing difficulty or extreme lethargy → urgent care"
+      ],
+      "emergencyIf": [
+        "Cannot be awakened; confused; cannot walk",
+        "Difficulty breathing; blue lips, tongue or nails",
+        "Very bad headache; stiff neck",
+        "Seizure",
+        "Child crying inconsolably or refusing to move an arm/leg"
+      ],
+      "doNot": [
+        "Do not give dosing instructions here — follow product labels / clinician or pharmacist advice",
+        "Do not assume fever alone identifies the infection type"
+      ]
+    },
+    "fr": {
+      "summary": "La fièvre est un symptôme, pas un diagnostic. Les seuils d’alerte dépendent de l’âge. Nourrisson < ~2–3 mois avec fièvre = évaluation urgente. Signes d’alarme : raideur de nuque, confusion, détresse respiratoire, convulsions, lèvres bleues. Contenu éducatif.",
+      "seeDoctorIf": [
+        "≤ 3 mois avec température ≥ 38 °C — consulter immédiatement",
+        "3–12 mois avec fièvre ≥ 39 °C",
+        "≤ 2 ans : fièvre > 24–48 h ; plus âgés : > 48–72 h",
+        "Fièvre ~40,5 °C ou plus si elle ne cède pas et inconfort",
+        "Nouvelle éruption, douleur urinaire, immunodépression, maladie chronique grave, voyage récent",
+        "Repère MoH Israël : < 2 mois toute fièvre > 38 °C → urgences/clinique urgente"
+      ],
+      "emergencyIf": [
+        "Ne se réveille pas ; confusion ; ne marche pas",
+        "Difficulté à respirer ; lèvres/ongles bleus",
+        "Céphalée très intense ; raideur de nuque",
+        "Convulsion"
+      ],
+      "doNot": [
+        "Pas de posologie ici",
+        "La fièvre seule ne dit pas la cause"
+      ]
+    },
+    "he": {
+      "summary": "חום הוא תסמין, לא אבחנה. ספי דאגה משתנים לפי גיל. תינוק מתחת לגיל כ־2–3 חודשים עם חום דורש הערכה דחופה. סימני חירום: נוקשות עורף, בלבול, מצוקה נשימתית, פרכוס, שפתיים כחלחלות.",
+      "seeDoctorIf": [
+        "עד גיל 3 חודשים עם חום ≥38°C — פנייה מיידית",
+        "גיל 3–12 חודשים עם חום ≥39°C",
+        "חום ממושך מעבר ל־24–72 שעות לפי גיל",
+        "פריחה חדשה, כאב במתן שתן, דיכוי חיסוני, מחלה כרונית",
+        "לפי משרד הבריאות: מתחת לגיל חודשיים — כל חום >38°C דורש טיפול דחוף"
+      ],
+      "emergencyIf": [
+        "קושי להעיר / בלבול",
+        "קושי נשימה; שפתיים כחלחלות",
+        "כאב ראש חזק מאוד; נוקשות עורף",
+        "פרכוס"
+      ],
+      "doNot": [
+        "אין מינונים כאן",
+        "חום לבד אינו מזהה את הגורם"
+      ]
+    },
+    "ru": {
+      "summary": "Лихорадка — симптом, не диагноз. Пороги зависят от возраста. Младенец младше ~2–3 месяцев с температурой нуждается в срочной оценке. Неотложные признаки: ригидность затылка, спутанность, тяжёлая одышка, судороги, синие губы.",
+      "seeDoctorIf": [
+        "≤3 месяцев с температурой ≥38°C — сразу к врачу/в неотложку",
+        "3–12 месяцев с температурой ≥39°C",
+        "≤2 лет: лихорадка >24–48 ч; старше: >48–72 ч",
+        "Новая сыпь, боль при мочеиспускании, иммунодефицит, тяжёлая хроническая болезнь",
+        "По израильскому MoH: младше 2 месяцев любой жар >38°C — срочная помощь"
+      ],
+      "emergencyIf": [
+        "Невозможно разбудить; спутанность",
+        "Затруднённое дыхание; синие губы",
+        "Очень сильная головная боль; ригидность затылка",
+        "Судороги"
+      ],
+      "doNot": [
+        "Здесь нет дозировок",
+        "Одна температура не определяет причину"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-fever",
+      "name": "MedlinePlus — Fever",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/003090.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "il-moh-fever",
+      "name": "Israeli MoH — Fever in children",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/parenting/raising-children/common-childhood-diseases-and-symptoms/fever/high-temperature-and-fever/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

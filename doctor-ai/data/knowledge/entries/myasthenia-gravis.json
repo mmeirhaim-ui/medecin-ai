@@ -1,0 +1,103 @@
+{
+  "id": "myasthenia-gravis",
+  "category": "neuro",
+  "urgencyDefault": "consultation",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "myasthenia gravis",
+      "drooping eyelid myasthenia",
+      "muscle weakness fatigable myasthenia"
+    ],
+    "fr": [
+      "myasthénie",
+      "paupière tombante myasthénie",
+      "faiblesse fatigable myasthénie"
+    ],
+    "he": [
+      "מיאסטניה גרביס",
+      "צניחת עפעף מיאסטניה",
+      "חולשת שרירים מיאסטניה"
+    ],
+    "ru": [
+      "миастения гравис",
+      "опущение века миастения",
+      "утомляемая слабость миастения"
+    ]
+  },
+  "titles": {
+    "en": "Myasthenia gravis",
+    "fr": "Myasthénie",
+    "he": "מיאסטניה גרביס",
+    "ru": "Миастения гравис"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Myasthenia causes fatigable weakness (eyes, face, limbs, breathing). NHS: specialist pathways; crisis with breathing/swallowing failure is an emergency. Never invent anticholinesterase or steroid doses.",
+      "emergencyIf": [
+        "Difficulty breathing or speaking",
+        "Cannot swallow saliva / choking on fluids",
+        "Rapidly worsening weakness"
+      ],
+      "seeDoctorIf": [
+        "Drooping eyelid or double vision that worsens with use",
+        "Fatigable limb weakness"
+      ],
+      "doNot": [
+        "Do not invent pyridostigmine or steroid doses",
+        "Do not delay care for breathing/swallowing trouble"
+      ]
+    },
+    "fr": {
+      "summary": "Myasthénie: faiblesse fatigable. Urgence si dyspnée ou fausses routes. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Difficulté à respirer ou parler",
+        "Impossible d'avaler la salive",
+        "Faiblesse rapidement progressive"
+      ],
+      "seeDoctorIf": [
+        "Ptosis / vision double fatigable"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "מיאסטניה: חולשה מתעייפת. חירום בקושי נשימה/בליעה. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "קושי לנשום או לדבר",
+        "לא בולע רוק",
+        "חולשה מחמירה במהירות"
+      ],
+      "seeDoctorIf": [
+        "צניחת עפעף / כפל ראייה"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Миастения: утомляемая слабость. Неотложка при дыхании/глотании. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Трудность дышать или говорить",
+        "Не может глотать слюну",
+        "Быстро нарастающая слабость"
+      ],
+      "seeDoctorIf": [
+        "Птоз / двоение"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-myasthenia-gravis",
+      "name": "NHS — Myasthenia gravis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/myasthenia-gravis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

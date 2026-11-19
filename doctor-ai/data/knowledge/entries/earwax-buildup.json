@@ -1,0 +1,100 @@
+{
+  "id": "earwax-buildup",
+  "category": "ent",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "earwax",
+      "blocked ear wax",
+      "cannot hear wax"
+    ],
+    "fr": [
+      "cérumen",
+      "oreille bouchée cérumen",
+      "bouchon de cérumen"
+    ],
+    "he": [
+      "שעוות אוזניים",
+      "אוזן סתומה משעווה"
+    ],
+    "ru": [
+      "серная пробка",
+      "заложенное ухо сера"
+    ]
+  },
+  "titles": {
+    "en": "Earwax build-up",
+    "fr": "Bouchon de cérumen",
+    "he": "שעוות אוזניים",
+    "ru": "Серная пробка"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Earwax can block hearing. NHS: pharmacy drops to soften; do not use cotton buds. See GP/audiology if not clearing, pain, discharge, or after ear surgery/perforation history. No inventing irrigation protocols beyond clinical advice.",
+      "seeDoctorIf": [
+        "Wax not clearing with drops",
+        "Ear pain, discharge, or hearing loss after drops",
+        "History of perforated eardrum / ear surgery"
+      ],
+      "selfCare": [
+        "Pharmacy softening drops as directed; no cotton buds"
+      ],
+      "doNot": [
+        "Do not insert cotton buds or objects",
+        "Do not invent home syringing if advised against"
+      ]
+    },
+    "fr": {
+      "summary": "Le cérumen peut boucher l'oreille. Gouttes pharmacie ; pas de coton-tige. Médecin si échec, douleur, écoulement.",
+      "seeDoctorIf": [
+        "Pas d'amélioration",
+        "Douleur / otorrhée",
+        "Antécédent de perforation / chirurgie"
+      ],
+      "selfCare": [
+        "Gouttes assouplissantes ; pas de coton-tige"
+      ],
+      "doNot": [
+        "Ne rien introduire dans l'oreille"
+      ]
+    },
+    "he": {
+      "summary": "שעווה עלולה לסתום. טיפות בבית מרקחת; לא מקלוני צמר גפן. רופא בכישלון, כאב, הפרשות.",
+      "seeDoctorIf": [
+        "אין שיפור",
+        "כאב / הפרשות",
+        "היסטוריית ניקוב / ניתוח"
+      ],
+      "selfCare": [
+        "טיפות מרככות; בלי מקלונים"
+      ],
+      "doNot": [
+        "לא להכניס חפצים לאוזן"
+      ]
+    },
+    "ru": {
+      "summary": "Сера может блокировать слух. Аптечные капли; не ватные палочки. Врач при неудаче, боли, отделяемом.",
+      "seeDoctorIf": [
+        "Нет улучшения",
+        "Боль / отделяемое",
+        "Перфорация / операция в анамнезе"
+      ],
+      "selfCare": [
+        "Смягчающие капли; без палочек"
+      ],
+      "doNot": [
+        "Не вводить предметы в ухо"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-earwax",
+      "name": "NHS — Earwax build-up",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/earwax-build-up/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

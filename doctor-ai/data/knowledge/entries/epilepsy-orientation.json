@@ -1,0 +1,109 @@
+{
+  "id": "epilepsy-orientation",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "epilepsy",
+      "epileptic seizures ongoing",
+      "known epilepsy medication"
+    ],
+    "fr": [
+      "épilepsie",
+      "crises d'épilepsie connues",
+      "traitement antiépileptique"
+    ],
+    "he": [
+      "אפילפסיה",
+      "פרכוסים ידועים",
+      "תרופות לאפילפסיה"
+    ],
+    "ru": [
+      "эпилепсия",
+      "известные приступы",
+      "противоэпилептические препараты"
+    ]
+  },
+  "titles": {
+    "en": "Epilepsy (living with — orientation)",
+    "fr": "Épilepsie (orientation)",
+    "he": "אפילפסיה (הכוונה)",
+    "ru": "Эпилепсия (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Epilepsy is a tendency to recurrent seizures. For a seizure in progress use the seizure-first-aid entry. NHS: neurology follow-up; never invent anti-epileptic doses or stop medicines abruptly. Emergency if prolonged/repeated seizures (status cues).",
+      "emergencyIf": [
+        "Seizure lasting >5 minutes or repeated without recovery — emergency",
+        "First seizure — emergency assessment"
+      ],
+      "seeDoctorIf": [
+        "Change in seizure pattern",
+        "Medication side effects",
+        "Pregnancy with epilepsy — specialist advice"
+      ],
+      "doNot": [
+        "Do not invent anti-epileptic regimens",
+        "Do not stop AEDs suddenly without specialist advice"
+      ]
+    },
+    "fr": {
+      "summary": "L'épilepsie = crises récurrentes. Gestes d'urgence : fiche crise. Neurologue ; pas d'antiépileptiques inventés. Urgence si crise >5 min.",
+      "emergencyIf": [
+        "Crise > 5 min ou répétées",
+        "Première crise"
+      ],
+      "seeDoctorIf": [
+        "Changement de profil",
+        "Effets indésirables",
+        "Grossesse"
+      ],
+      "doNot": [
+        "Pas d'antiépileptiques inventés",
+        "Ne pas arrêter brusquement"
+      ]
+    },
+    "he": {
+      "summary": "אפילפסיה: נטייה לפרכוסים חוזרים. עזרה ראשונה — ערך פרכוס. נוירולוג; אין תרופות מומצאות. חירום אם מעל 5 דקות.",
+      "emergencyIf": [
+        "פרכוס מעל 5 דקות או חוזר",
+        "פרכוס ראשון"
+      ],
+      "seeDoctorIf": [
+        "שינוי בדפוס",
+        "תופעות לוואי",
+        "הריון"
+      ],
+      "doNot": [
+        "אין נוגדי פרכוס מומצאים",
+        "לא להפסיק בבת אחת"
+      ]
+    },
+    "ru": {
+      "summary": "Эпилепсия — склонность к повторным приступам. Первая помощь — карточка приступа. Невролог; препараты не выдумывать. Неотложка если >5 мин.",
+      "emergencyIf": [
+        "Приступ >5 мин или повторы",
+        "Первый приступ"
+      ],
+      "seeDoctorIf": [
+        "Изменение характера",
+        "Побочные эффекты",
+        "Беременность"
+      ],
+      "doNot": [
+        "Не изобретать ПЭП",
+        "Не отменять резко"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-epilepsy",
+      "name": "NHS — Epilepsy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/epilepsy/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

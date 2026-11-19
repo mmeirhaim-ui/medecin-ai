@@ -1,0 +1,103 @@
+{
+  "id": "raynauds",
+  "category": "vascular",
+  "urgencyDefault": "consultation",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "Raynaud",
+      "fingers white blue cold Raynaud",
+      "Raynaud phenomenon"
+    ],
+    "fr": [
+      "phénomène de Raynaud",
+      "doigts blancs bleus froid",
+      "Raynaud"
+    ],
+    "he": [
+      "ריינו",
+      "אצבעות לבנות כחולות בקור",
+      "תופעת ריינו"
+    ],
+    "ru": [
+      "болезнь Рейно",
+      "пальцы белые синие на холоде",
+      "синдром Рейно"
+    ]
+  },
+  "titles": {
+    "en": "Raynaud's phenomenon",
+    "fr": "Phénomène de Raynaud",
+    "he": "תופעת ריינו",
+    "ru": "Синдром Рейно"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Raynaud's causes fingers/toes to turn white then blue then red with cold or stress, often with numbness. NHS: keep warm, stop smoking; GP review if severe or with ulcers. Emergency: persistent colour change with severe pain, skin breakdown, or signs of critical limb ischaemia. Never invent vasodilator doses.",
+      "emergencyIf": [
+        "Finger/toe stays white/blue with severe pain",
+        "Skin ulceration or tissue damage on digits",
+        "Sudden cold pale painful limb"
+      ],
+      "seeDoctorIf": [
+        "Frequent attacks affecting daily life",
+        "Raynaud with joint pain/rash (possible connective-tissue disease)"
+      ],
+      "doNot": [
+        "Do not invent calcium-channel blocker doses",
+        "Do not ignore non-healing digital ulcers"
+      ]
+    },
+    "fr": {
+      "summary": "Raynaud: doigts blancs/bleus au froid. Urgences si ischémie persistante ou ulcère. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Doigt restant blanc/bleu très douloureux",
+        "Ulcération digitale",
+        "Membre froid pâle douloureux"
+      ],
+      "seeDoctorIf": [
+        "Crises fréquentes"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "ריינו: אצבעות לבנות/כחולות בקור. חירום באיסכמיה מתמשכת או כיב. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "אצבע נשארת לבנה/כחולה עם כאב קשה",
+        "כיב באצבע",
+        "גפה קרה חיוורת כואבת"
+      ],
+      "seeDoctorIf": [
+        "התקפים תכופים"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Рейно: пальцы белеют/синеют на холоде. Неотложка при стойкой ишемии или язве. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Палец остаётся белым/синим с сильной болью",
+        "Язва на пальце",
+        "Холодная бледная болезненная конечность"
+      ],
+      "seeDoctorIf": [
+        "Частые приступы"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-raynauds",
+      "name": "NHS — Raynaud's",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/raynauds/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "dengue-fever",
+  "category": "travel",
+  "urgencyDefault": "voir_medecin",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "dengue",
+      "dengue fever",
+      "pain behind eyes travel",
+      "severe dengue"
+    ],
+    "fr": [
+      "dengue",
+      "fièvre dengue",
+      "douleur derrière les yeux voyage",
+      "dengue sévère"
+    ],
+    "he": [
+      "דנגי",
+      "קדחת דנגי",
+      "כאב מאחורי העיניים אחרי נסיעה",
+      "דנגי חמור"
+    ],
+    "ru": [
+      "денге",
+      "лихорадка денге",
+      "боль за глазами после поездки",
+      "тяжёлая денге"
+    ]
+  },
+  "titles": {
+    "en": "Dengue (travel fever)",
+    "fr": "Dengue (fièvre du voyageur)",
+    "he": "דנגי (חום אחרי נסיעה)",
+    "ru": "Денге (лихорадка путешественника)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Dengue is mosquito-borne. Symptoms can resemble flu (fever, severe headache, pain behind eyes, muscle/joint pain, rash). NHS: seek urgent advice if unwell after travel to a dengue area. Severe dengue (severe tummy pain, repeated vomiting, fast breathing, bleeding gums/nose, extreme fatigue/restlessness, blood in vomit/stool) needs emergency care. Rest, fluids, paracetamol — avoid inventing NSAID advice conflicting with bleeding risk; no antiviral doses.",
+      "emergencyIf": [
+        "Severe tummy pain after dengue-risk travel",
+        "Repeatedly being sick",
+        "Fast breathing",
+        "Bleeding gums or nose",
+        "Extreme fatigue or restlessness",
+        "Blood in vomit or stool"
+      ],
+      "seeDoctorIf": [
+        "Unwell after travel to a dengue-risk country — say where you travelled"
+      ],
+      "selfCare": [
+        "Rest; plenty of fluids; paracetamol for fever/pain per label if suitable"
+      ],
+      "doNot": [
+        "Do not invent antivirals",
+        "Do not ignore severe dengue symptoms"
+      ]
+    },
+    "fr": {
+      "summary": "La dengue est transmise par moustiques. Fièvre, céphalées, douleur rétro-orbitaire, myalgies, éruption. Avis urgent après voyage. Dengue sévère = urgence. Repos, hydratation, paracétamol.",
+      "emergencyIf": [
+        "Douleur abdominale sévère",
+        "Vomissements répétés",
+        "Respiration rapide",
+        "Saignements gencives/nez",
+        "Fatigue extrême / agitation",
+        "Sang dans vomi/selles"
+      ],
+      "seeDoctorIf": [
+        "Malade après voyage en zone de dengue"
+      ],
+      "selfCare": [
+        "Repos ; boire ; paracétamol selon notice"
+      ],
+      "doNot": [
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "דנגי מועבר ביתושים. חום, כאב ראש, כאב מאחורי העיניים, כאבי שרירים, פריחה. ייעוץ דחוף אחרי נסיעה. דנגי חמור — חירום.",
+      "emergencyIf": [
+        "כאב בטן חזק",
+        "הקאות חוזרות",
+        "נשימה מהירה",
+        "דימום מהחניכיים/אף",
+        "עייפות קיצונית / אי-שקט",
+        "דם בהקאה/צואה"
+      ],
+      "seeDoctorIf": [
+        "לא מרגיש טוב אחרי נסיעה לאזור דנגי"
+      ],
+      "selfCare": [
+        "מנוחה; שתייה; פרצטמול לפי התווית"
+      ],
+      "doNot": [
+        "אין אנטי-ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Денге передаётся комарами. Лихорадка, головная боль, боль за глазами, миалгии, сыпь. Срочно после поездки. Тяжёлая денге — неотложка.",
+      "emergencyIf": [
+        "Сильная боль в животе",
+        "Повторная рвота",
+        "Частое дыхание",
+        "Кровотечение из дёсен/носа",
+        "Крайняя усталость / беспокойство",
+        "Кровь в рвоте/стуле"
+      ],
+      "seeDoctorIf": [
+        "Плохое самочувствие после поездки в зону денге"
+      ],
+      "selfCare": [
+        "Покой; жидкость; парацетамол по инструкции"
+      ],
+      "doNot": [
+        "Не изобретать противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dengue",
+      "name": "NHS — Dengue",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dengue/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

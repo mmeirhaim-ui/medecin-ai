@@ -1,0 +1,98 @@
+{
+  "id": "ovarian-cyst",
+  "category": "womens-health",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "ovarian cyst",
+      "cyst on ovary pelvic pain"
+    ],
+    "fr": [
+      "kyste de l'ovaire",
+      "kyste ovarien douleur"
+    ],
+    "he": [
+      "ציסטה בשחלה",
+      "כיסה שחלתית",
+      "כאב אגן ציסטה"
+    ],
+    "ru": [
+      "киста яичника",
+      "яичниковая киста",
+      "боль внизу живота киста"
+    ]
+  },
+  "titles": {
+    "en": "Ovarian cyst",
+    "fr": "Kyste de l'ovaire",
+    "he": "ציסטה בשחלה",
+    "ru": "Киста яичника"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Many ovarian cysts are benign and settle; some cause pain or complications. NHS: sudden severe pelvic pain, vomiting, or fainting needs emergency assessment (possible torsion/rupture/ectopic). Never invent hormone doses. Correlate with ectopic-pregnancy and PID entries when relevant.",
+      "emergencyIf": [
+        "Sudden severe one-sided pelvic pain",
+        "Pain with vomiting, fever, or fainting",
+        "Heavy bleeding with dizziness"
+      ],
+      "seeDoctorIf": [
+        "Persistent pelvic pain",
+        "Known cyst with new symptoms"
+      ],
+      "doNot": [
+        "Do not invent hormone regimens",
+        "Do not ignore sudden severe pain"
+      ]
+    },
+    "fr": {
+      "summary": "Kyste ovarien: souvent bénin; urgence si douleur pelvienne brutale (torsion/rupture). Pas de posologies inventées.",
+      "emergencyIf": [
+        "Douleur pelvienne unilatérale brutale",
+        "Douleur avec vomissements/fièvre/malaise"
+      ],
+      "seeDoctorIf": [
+        "Douleur pelvienne persistante"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "ציסטה שחלתית: לעיתים שפירה; חירום בכאב אגן פתאומי. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "כאב אגן חד-צדדי פתאומי",
+        "כאב עם הקאות/חום/התעלפות"
+      ],
+      "seeDoctorIf": [
+        "כאב אגן מתמשך"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Киста яичника: часто доброкачественная; неотложка при внезапной тазовой боли. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Внезапная односторонняя тазовая боль",
+        "Боль с рвотой/лихорадкой/обмороком"
+      ],
+      "seeDoctorIf": [
+        "Стойкая тазовая боль"
+      ],
+      "doNot": [
+        "Не изобретать схемы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ovarian-cyst",
+      "name": "NHS — Ovarian cyst",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ovarian-cyst/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

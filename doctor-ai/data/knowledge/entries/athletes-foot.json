@@ -1,0 +1,100 @@
+{
+  "id": "athletes-foot",
+  "category": "derm",
+  "urgencyDefault": "auto_soins",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "athlete's foot",
+      "athletes foot",
+      "itchy peeling toes fungus"
+    ],
+    "fr": [
+      "pied d'athlète",
+      "mycose des pieds",
+      "doigts de pied qui pèlent"
+    ],
+    "he": [
+      "רגל ספורטאים",
+      "פטרייה בין האצבעות"
+    ],
+    "ru": [
+      "грибок стопы",
+      "микоз между пальцами ног"
+    ]
+  },
+  "titles": {
+    "en": "Athlete's foot",
+    "fr": "Pied d'athlète (mycose)",
+    "he": "רגל ספורטאים",
+    "ru": "Грибок стопы"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Athlete's foot is a common fungal infection between toes. NHS: pharmacy antifungal cream/spray; keep feet dry. See GP if not improving, diabetes, or spreading. No inventing oral antifungal doses.",
+      "seeDoctorIf": [
+        "Not improving after pharmacy treatment",
+        "Diabetes with foot infection signs",
+        "Spreading redness, pain, fever"
+      ],
+      "selfCare": [
+        "Antifungal from pharmacy as directed; dry between toes; change socks; avoid sharing towels"
+      ],
+      "doNot": [
+        "Do not invent oral antifungal regimens",
+        "Do not ignore infected diabetic feet"
+      ]
+    },
+    "fr": {
+      "summary": "Le pied d'athlète est une mycose. Antifongique pharmacie ; pieds secs. Médecin si échec ou diabète. Pas de comprimés inventés.",
+      "seeDoctorIf": [
+        "Échec pharmacie",
+        "Diabète avec signes d'infection",
+        "Rougeur/fièvre"
+      ],
+      "selfCare": [
+        "Antifongique pharmacie ; sécher entre les orteils"
+      ],
+      "doNot": [
+        "Pas d'antifongiques oraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "רגל ספורטאים: פטרת בין האצבעות. תכשיר בית מרקחת; לייבש. רופא בכישלון או סוכרת. אין כדורים מומצאים.",
+      "seeDoctorIf": [
+        "אין שיפור",
+        "סוכרת עם סימני זיהום",
+        "אודם/חום"
+      ],
+      "selfCare": [
+        "אנטי־פטרייתי מבית מרקחת; לייבש בין האצבעות"
+      ],
+      "doNot": [
+        "אין אנטי־פטרייתי פומי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Грибок стопы между пальцами. Аптечное средство; сушить ноги. Врач при неудаче или диабете. Таблетки не выдумывать.",
+      "seeDoctorIf": [
+        "Нет улучшения",
+        "Диабет с признаками инфекции",
+        "Краснота/лихорадка"
+      ],
+      "selfCare": [
+        "Противогрибковое из аптеки; сушить между пальцами"
+      ],
+      "doNot": [
+        "Не изобретать пероральные противогрибковые"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-athletes-foot",
+      "name": "NHS — Athlete's foot",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/athletes-foot/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

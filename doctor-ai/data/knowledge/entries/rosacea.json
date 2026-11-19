@@ -1,0 +1,103 @@
+{
+  "id": "rosacea",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "rosacea",
+      "facial redness flushing bumps",
+      "red face adult persistent"
+    ],
+    "fr": [
+      "rosacée",
+      "rougeurs visage bouffées",
+      "couperose"
+    ],
+    "he": [
+      "רוזציאה",
+      "אדמומיות בפנים הסתמקות"
+    ],
+    "ru": [
+      "розацеа",
+      "покраснение лица приливы"
+    ]
+  },
+  "titles": {
+    "en": "Rosacea",
+    "fr": "Rosacée",
+    "he": "רוזציאה",
+    "ru": "Розацеа"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Rosacea causes facial redness, flushing, and sometimes bumps. NHS: see a GP for diagnosis/treatment; avoid known triggers (spicy food, alcohol, extreme temperatures for some). Eye symptoms need prompt review. Prescription topicals/orals are clinician-only.",
+      "seeDoctorIf": [
+        "Persistent facial redness/bumps",
+        "Eye irritation with facial rosacea",
+        "Not sure if acne vs rosacea"
+      ],
+      "selfCare": [
+        "Gentle skincare; identify triggers; sun protection"
+      ],
+      "doNot": [
+        "Do not invent antibiotic gel/tablet regimens",
+        "Do not use strong steroid creams on the face without advice"
+      ]
+    },
+    "fr": {
+      "summary": "La rosacée rouge le visage et provoque des bouffées. Médecin pour traitement. Éviter déclencheurs. Pas de schémas inventés.",
+      "seeDoctorIf": [
+        "Rougeurs persistantes",
+        "Yeux irrités",
+        "Doute diagnostique"
+      ],
+      "selfCare": [
+        "Soins doux ; protection solaire ; éviter déclencheurs"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés",
+        "Pas de dermocorticoïdes faciaux sans avis"
+      ]
+    },
+    "he": {
+      "summary": "רוזציאה: אדמומיות והסתמקות בפנים. רופא לטיפול. להימנע מטריגרים. אין מינונים מומצאים.",
+      "seeDoctorIf": [
+        "אדמומיות מתמשכת",
+        "גירוי בעיניים",
+        "ספק באבחנה"
+      ],
+      "selfCare": [
+        "טיפוח עדין; הגנה מהשמש; להימנע מטריגרים"
+      ],
+      "doNot": [
+        "אין אנטיביוטיקה מומצאת",
+        "אין סטרואידים לפנים בלי ייעוץ"
+      ]
+    },
+    "ru": {
+      "summary": "Розацеа: покраснение и приливы лица. К врачу. Избегать триггеров. Схемы не выдумывать.",
+      "seeDoctorIf": [
+        "Стойкое покраснение",
+        "Раздражение глаз",
+        "Сомнение в диагнозе"
+      ],
+      "selfCare": [
+        "Мягкий уход; защита от солнца; избегать триггеров"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики",
+        "Не сильные стероиды на лицо без совета"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-rosacea",
+      "name": "NHS — Rosacea",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rosacea/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "glandular-fever",
+  "category": "infectious",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "glandular fever",
+      "mono",
+      "infectious mononucleosis",
+      "EBV sore throat glands"
+    ],
+    "fr": [
+      "mononucléose",
+      "fièvre glandulaire",
+      "angine ganglions fatigue"
+    ],
+    "he": [
+      "מחלת הנשיקה",
+      "מונונוקלאוזיס",
+      "כאב גרון ובלוטות עייפות"
+    ],
+    "ru": [
+      "инфекционный мононуклеоз",
+      "железистая лихорадка",
+      "ангина железы усталость"
+    ]
+  },
+  "titles": {
+    "en": "Glandular fever (mono)",
+    "fr": "Mononucléose infectieuse",
+    "he": "מחלת הנשיקה / מונו",
+    "ru": "Инфекционный мононуклеоз"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Glandular fever causes sore throat, fever, swollen glands, and marked fatigue. NHS: rest, fluids; see GP for diagnosis. Avoid contact sports while recovering (spleen risk). Urgent care for severe throat swelling/breathing difficulty or severe abdominal pain. No inventing antivirals.",
+      "emergencyIf": [
+        "Severe breathing difficulty or inability to swallow",
+        "Severe abdominal pain after glandular fever (possible spleen issue)"
+      ],
+      "seeDoctorIf": [
+        "Suspected glandular fever",
+        "Prolonged severe fatigue",
+        "Jaundice"
+      ],
+      "selfCare": [
+        "Rest; fluids; avoid alcohol; no contact sports until advised clear"
+      ],
+      "doNot": [
+        "Do not invent antivirals",
+        "Do not return to contact sports early"
+      ]
+    },
+    "fr": {
+      "summary": "La mononucléose : angine, fièvre, ganglions, fatigue. Repos ; médecin. Éviter sports de contact. Urgence si dyspnée ou douleur abdominale sévère. Pas d'antiviraux inventés.",
+      "emergencyIf": [
+        "Dyspnée / impossibilité d'avaler",
+        "Douleur abdominale sévère"
+      ],
+      "seeDoctorIf": [
+        "Suspicion de mononucléose",
+        "Fatigue prolongée",
+        "Ictère"
+      ],
+      "selfCare": [
+        "Repos ; boire ; pas de sport de contact"
+      ],
+      "doNot": [
+        "Pas d'antiviraux inventés"
+      ]
+    },
+    "he": {
+      "summary": "מחלת הנשיקה: כאב גרון, חום, בלוטות, עייפות. מנוחה; רופא. להימנע מספורט מגע. חירום בקושי נשימה או כאב בטן חזק. אין אנטי-ויראלי מומצא.",
+      "emergencyIf": [
+        "קושי נשימה / לא יכול לבלוע",
+        "כאב בטן חזק"
+      ],
+      "seeDoctorIf": [
+        "חשד למחלת נשיקה",
+        "עייפות ממושכת",
+        "צהבת"
+      ],
+      "selfCare": [
+        "מנוחה; שתייה; בלי ספורט מגע"
+      ],
+      "doNot": [
+        "אין אנטי-ויראלי מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Мононуклеоз: боль в горле, лихорадка, железы, усталость. Покой; врач. Избегать контактного спорта. Неотложка при одышке или сильной боли в животе. Противовирусные не выдумывать.",
+      "emergencyIf": [
+        "Одышка / нельзя глотать",
+        "Сильная боль в животе"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на мононуклеоз",
+        "Длительная усталость",
+        "Желтуха"
+      ],
+      "selfCare": [
+        "Покой; жидкость; без контактного спорта"
+      ],
+      "doNot": [
+        "Не изобретать противовирусные"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-glandular-fever",
+      "name": "NHS — Glandular fever",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/glandular-fever/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "poisoning-carbon-monoxide",
+  "category": "toxicology",
+  "urgencyDefault": "urgent",
+  "priority": 10,
+  "keywords": {
+    "en": [
+      "poisoning",
+      "overdose medicine",
+      "carbon monoxide",
+      "CO poisoning",
+      "swallowed bleach",
+      "toxic ingestion"
+    ],
+    "fr": [
+      "intoxication",
+      "surdose",
+      "monoxyde de carbone",
+      "intoxication CO",
+      "ingestion produit ménager",
+      "empoisonnement"
+    ],
+    "he": [
+      "הרעלה",
+      "מנת יתר",
+      "חד תחמוצת הפחמן",
+      "בליעת חומר ניקוי",
+      "הרעלת CO"
+    ],
+    "ru": [
+      "отравление",
+      "передозировка",
+      "угарный газ",
+      "отравление CO",
+      "проглотил бытовую химию"
+    ]
+  },
+  "titles": {
+    "en": "Poisoning / carbon monoxide",
+    "fr": "Intoxication / monoxyde de carbone",
+    "he": "הרעלה / חד־תחמוצת הפחמן",
+    "ru": "Отравление / угарный газ"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Suspected poisoning needs immediate medical advice. For carbon monoxide: get outside to fresh air, stop using suspect appliances, seek care. Emergency if hard to breathe, confusion, unconsciousness, weakness, chest/muscle pain. Never invent antidotes.",
+      "emergencyIf": [
+        "Thought someone swallowed/touched/breathed something harmful with loss of consciousness, stopped breathing, severe breathing difficulty, or seizure",
+        "CO exposure with hard breathing, sudden confusion, loss of consciousness, weakness, chest or muscle pain"
+      ],
+      "seeDoctorIf": [
+        "Any suspected CO symptoms — leave building and get medical advice promptly",
+        "Any suspected poisoning even if symptoms delayed"
+      ],
+      "selfCare": [
+        "CO: go outside; do not return until advised",
+        "Bring packaging/labels to emergency care if safe"
+      ],
+      "doNot": [
+        "Do not induce vomiting unless told by poison control/clinician",
+        "Do not invent charcoal/antidote dosing"
+      ]
+    },
+    "fr": {
+      "summary": "Suspicion d'intoxication = avis médical immédiat. CO : sortir à l'air libre, arrêter appareils suspects. Urgence si dyspnée, confusion, inconscience. Pas d'antidote inventé.",
+      "emergencyIf": [
+        "Ingestion/inhalation toxique avec inconscience, arrêt respiratoire, détresse, convulsion",
+        "CO avec dyspnée, confusion, faiblesse, douleur thoracique"
+      ],
+      "seeDoctorIf": [
+        "Tout symptôme évocateur de CO",
+        "Toute suspicion d'intoxication"
+      ],
+      "selfCare": [
+        "Sortir ; ne pas rentrer sans avis"
+      ],
+      "doNot": [
+        "Pas de vomissement forcé sans consignes"
+      ]
+    },
+    "he": {
+      "summary": "חשד להרעלה דורש ייעוץ רפואי מיידי. ב־CO: לצאת לאוויר הפתוח. חירום במצוקה נשימתית, בלבול או אובדן הכרה. אין תריאק מומצא.",
+      "emergencyIf": [
+        "בליעה/שאיפת רעל עם אובדן הכרה, הפסקת נשימה, מצוקה או פרכוס",
+        "CO עם קושי נשימה, בלבול, חולשה, כאב חזה"
+      ],
+      "seeDoctorIf": [
+        "כל חשד ל־CO או להרעלה"
+      ],
+      "selfCare": [
+        "לצאת החוצה; לא לחזור בלי ייעוץ"
+      ],
+      "doNot": [
+        "לא לגרום להקאה ללא הנחיה"
+      ]
+    },
+    "ru": {
+      "summary": "Подозрение на отравление — немедленная медицинская помощь. При CO: выйти на свежий воздух. Неотложность при одышке, спутанности, потере сознания. Антидоты не выдумывать.",
+      "emergencyIf": [
+        "Проглатывание/вдыхание яда с потерей сознания, остановкой дыхания, судорогами",
+        "CO с одышкой, спутанностью, слабостью, болью в груди"
+      ],
+      "seeDoctorIf": [
+        "Любые симптомы, похожие на CO",
+        "Любое подозрение на отравление"
+      ],
+      "selfCare": [
+        "Выйти на улицу; не возвращаться без совета"
+      ],
+      "doNot": [
+        "Не вызывать рвоту без указаний"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-poisoning",
+      "name": "NHS — Poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/poisoning/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-co",
+      "name": "NHS — Carbon monoxide poisoning",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/carbon-monoxide-poisoning/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "medlineplus-co",
+      "name": "MedlinePlus — Carbon monoxide poisoning",
+      "org": "MedlinePlus",
+      "url": "https://medlineplus.gov/ency/article/002804.htm",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "red-flags-cardio",
+  "category": "cardio",
+  "urgencyDefault": "urgent",
+  "priority": 10,
+  "keywords": {
+    "en": ["chest pain", "chest pressure", "heart attack", "crushing chest", "pain radiating arm", "jaw pain with chest", "angina"],
+    "fr": ["douleur thoracique", "douleur poitrine", "douleur dans la poitrine", "douleur à la poitrine", "oppression thoracique", "crise cardiaque", "infarctus", "douleur bras mâchoire", "angine de poitrine"],
+    "he": ["כאב בחזה", "לחץ בחזה", "התקף לב", "כאבים מקרינים לזרוע", "תעוקת חזה"],
+    "ru": ["боль в груди", "давление в груди", "инфаркт", "приступ стенокардии", "боль отдаёт в руку"]
+  },
+  "titles": {
+    "en": "Chest pain / possible cardiac emergency",
+    "fr": "Douleur thoracique / urgence cardiaque possible",
+    "he": "כאב בחזה / חשד לאירוע לבבי דחוף",
+    "ru": "Боль в груди / возможная кардиологическая неотложность"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sudden crushing or squeezing chest pain, pain spreading to the jaw/arm/back, or chest pain with shortness of breath, sweating, nausea or dizziness may signal a heart attack or other vascular emergency. This is educational triage only — not a diagnosis.",
+      "emergencyIf": [
+        "Sudden crushing, squeezing, tightening or pressure in the chest",
+        "Pain spreading to jaw, left arm, neck, back or between shoulder blades",
+        "Chest pain with nausea, dizziness, sweating, racing heart or shortness of breath",
+        "Known angina that is worse, lasts longer, or occurs at rest",
+        "Sudden sharp chest pain with shortness of breath after immobility (possible clot/PE concern)"
+      ],
+      "seeDoctorIf": [
+        "Fever or cough with yellow-green phlegm and chest discomfort",
+        "Chest pain lasting more than a few days",
+        "Swallowing problems with chest symptoms"
+      ],
+      "doNot": [
+        "Do not drive yourself if severely unwell — call emergency services",
+        "Do not wait for pain to 'settle' when red-flag features are present",
+        "Do not treat this as a prescription or dose instruction"
+      ]
+    },
+    "fr": {
+      "summary": "Une douleur thoracique brutale en étau, irradiant vers la mâchoire/le bras/le dos, ou associée à un essoufflement, des sueurs, des nausées ou des vertiges peut évoquer une urgence cardiovasculaire. Orientation éducative uniquement — pas un diagnostic.",
+      "emergencyIf": [
+        "Douleur brutale, intense, qui serre la poitrine et dure plus de quelques minutes",
+        "Irradiation vers mâchoire, bras, dos, cou ou abdomen",
+        "Essoufflement, pâleur, lèvres bleues, sueurs, nausées, vertiges, pouls irrégulier",
+        "Troubles de conscience ou perte de connaissance",
+        "Angine de poitrine connue qui s’aggrave, dure plus longtemps ou survient au repos"
+      ],
+      "seeDoctorIf": [
+        "Fièvre ou toux productive avec gêne thoracique",
+        "Douleur thoracique persistant plusieurs jours",
+        "Difficultés à avaler associées"
+      ],
+      "doNot": [
+        "Ne conduisez pas vous-même en détresse — appelez le 15 / 112",
+        "N’attendez pas que la douleur « passe » en présence de signes d’alarme",
+        "Aucune posologie ni ordonnance ici"
+      ]
+    },
+    "he": {
+      "summary": "כאב חזה לוחץ/חונק פתאומי, כאב שמתפשט ללסת/זרוע/גב, או כאב חזה עם קוצר נשימה, הזעה, בחילה או סחרחורת עלולים להצביע על מצב לבבי דחוף. מידע חינוכי בלבד — לא אבחנה.",
+      "emergencyIf": [
+        "כאב חזה לוחץ, חונק או כבד פתאומי",
+        "כאב שמתפשט ללסת, זרוע, צוואר או גב",
+        "כאב חזה עם קוצר נשימה, הזעה, בחילה או סחרחורת",
+        "תעוקת חזה מוכרת שמחמירה, נמשכת יותר או מופיעה במנוחה"
+      ],
+      "seeDoctorIf": [
+        "חום או שיעול עם ליחה ירוקה-צהובה וחוסר נוחות בחזה",
+        "כאב חזה שנמשך מספר ימים"
+      ],
+      "doNot": [
+        "אל תנהגו בעצמכם במצוקה — התקשרו ל־101 (מד״א)",
+        "אין כאן מרשם או מינון תרופתי"
+      ]
+    },
+    "ru": {
+      "summary": "Внезапная давящая боль в груди, иррадиация в челюсть/руку/спину или боль с одышкой, потом, тошнотой или головокружением может указывать на неотложное сердечно-сосудистое состояние. Только образовательная ориентация — не диагноз.",
+      "emergencyIf": [
+        "Внезапная давящая, сжимающая боль или тяжесть в груди",
+        "Боль отдаёт в челюсть, левую руку, шею или спину",
+        "Боль в груди с одышкой, потом, тошнотой, головокружением",
+        "Известная стенокардия, ставшая сильнее, дольше или в покое"
+      ],
+      "seeDoctorIf": [
+        "Лихорадка или кашель с желто-зелёной мокротой и дискомфорт в груди",
+        "Боль в груди длится несколько дней"
+      ],
+      "doNot": [
+        "Не садитесь за руль при тяжёлом состоянии — вызывайте скорую",
+        "Это не рецепт и не дозировка"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-chest-pain",
+      "name": "MedlinePlus — Chest pain",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/ency/article/003079.htm",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-heart-attack",
+      "name": "NHS — Heart attack",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/heart-attack/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "ameli-chest-pain",
+      "name": "Ameli — Douleur thoracique / urgence",
+      "org": "Assurance Maladie (France)",
+      "url": "https://www.ameli.fr/assure/sante/themes/douleur-thoracique/reconnaitre-agit-urgence",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

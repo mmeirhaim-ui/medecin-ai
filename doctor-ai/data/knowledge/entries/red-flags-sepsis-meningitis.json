@@ -1,0 +1,97 @@
+{
+  "id": "red-flags-sepsis-meningitis",
+  "category": "infection",
+  "urgencyDefault": "urgent",
+  "priority": 10,
+  "keywords": {
+    "en": ["sepsis", "meningitis", "stiff neck fever", "non-blanching rash", "glass test rash", "photophobia fever", "confused fever", "floppy baby fever"],
+    "fr": ["sepsis", "septicémie", "méningite", "raideur nuque", "éruption ne pâlit pas", "test verre", "photophobie fièvre", "confusion fièvre", "bébé mou"],
+    "he": ["אלח דם", "ספסיס", "דלקת קרום המוח", "נוקשות עורף", "פריחה שלא דועכת", "פוטופוביה", "בלבול עם חום", "תינוק רפוי"],
+    "ru": ["сепсис", "менингит", "ригидность затылка", "сыпь не бледнеет", "стеклянный тест", "светобоязнь", "спутанность с температурой", "вялый ребёнок"]
+  },
+  "titles": {
+    "en": "Sepsis / meningitis warning signs",
+    "fr": "Signes d’alerte sepsis / méningite",
+    "he": "סימני אזהרה לספסיס / דלקת קרום המוח",
+    "ru": "Признаки сепсиса / менингита"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Sepsis and meningitis can worsen quickly. Very high or low temperature, confusion, fast breathing, blotchy/pale/blue skin, a rash that does not fade when pressed, stiff neck, severe headache, or a floppy/unresponsive child need emergency care. Not a diagnosis.",
+      "emergencyIf": [
+        "Very high or very low temperature, shivering, hot or cold to touch with severe illness",
+        "Confused, slurred speech, or not making sense",
+        "Breathing very fast or with difficulty; blue/grey/pale/blotchy skin, lips or tongue",
+        "Rash that does not fade when a glass is pressed on it (may be harder to see on darker skin — check palms/soles/mouth)",
+        "Stiff neck, severe headache, cannot look at bright lights",
+        "First seizure, or baby/child floppy, difficult to wake, weak continuous cry, not feeding",
+        "No pee for ~12 hours in a young child with severe illness signs"
+      ],
+      "doNot": [
+        "Do not wait for every classic sign — trust severe illness and seek help",
+        "Do not drive yourself if critically unwell"
+      ]
+    },
+    "fr": {
+      "summary": "Sepsis et méningite peuvent s’aggraver vite. Fièvre très haute ou basse, confusion, respiration rapide, peau marbrée/pâle/bleue, éruption qui ne pâlit pas au verre, raideur de nuque, céphalée intense, enfant mou/non réactif = urgence. Pas un diagnostic.",
+      "emergencyIf": [
+        "Température très haute ou très basse, frissons, sensation de froid/chaud avec maladie grave",
+        "Confusion, paroles incohérentes",
+        "Respiration très rapide ou difficile ; peau/lèvres bleues, grises, pâles ou marbrées",
+        "Éruption qui ne pâlit pas sous un verre",
+        "Raideur de nuque, céphalée très douloureuse, photophobie",
+        "Première crise convulsive ; bébé mou, difficile à réveiller, cri faible/continu, ne mange pas"
+      ],
+      "doNot": [
+        "N’attendez pas tous les signes classiques",
+        "Appelez le 15 / 112"
+      ]
+    },
+    "he": {
+      "summary": "ספסיס ודלקת קרום המוח עלולים להחמיר במהירות. חום גבוה מאוד או נמוך, בלבול, נשימה מהירה, עור חיוור/כחלחל/מנומר, פריחה שלא דועכת בלחיצה, נוקשות עורף, כאב ראש חזק או תינוק רפוי — פנו בדחיפות. לא אבחנה.",
+      "emergencyIf": [
+        "חום גבוה מאוד או נמוך מאוד עם מצב כללי רע",
+        "בלבול או דיבור לא ברור",
+        "נשימה מהירה/קשה; עור/שפתיים כחלחלים או חיוורים",
+        "פריחה שלא דועכת בלחיצת כוס",
+        "נוקשות עורף, כאב ראש חזק, רגישות לאור",
+        "פרכוס ראשון; תינוק רפוי, קשה להעיר, לא אוכל"
+      ],
+      "doNot": [
+        "אל תמתינו לכל הסימנים הקלאסיים",
+        "התקשרו ל־101"
+      ]
+    },
+    "ru": {
+      "summary": "Сепсис и менингит могут быстро ухудшаться. Очень высокая или низкая температура, спутанность, частое дыхание, пятнистая/бледная/синюшная кожа, сыпь не бледнеющая при нажатии стеклом, ригидность затылка, сильная головная боль или вялый ребёнок — неотложная помощь. Не диагноз.",
+      "emergencyIf": [
+        "Очень высокая или низкая температура с тяжёлым самочувствием",
+        "Спутанность, бессвязная речь",
+        "Очень частое или затруднённое дыхание; синюшная/серая/бледная/пятнистая кожа или губы",
+        "Сыпь, которая не бледнеет при нажатии стеклом",
+        "Ригидность затылка, сильная головная боль, светобоязнь",
+        "Первый судорожный приступ; вялый ребёнок, трудно разбудить, не ест"
+      ],
+      "doNot": [
+        "Не ждите полного набора «классических» признаков",
+        "Вызывайте скорую"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-sepsis",
+      "name": "NHS — Sepsis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/sepsis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-meningitis",
+      "name": "NHS — Meningitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/meningitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

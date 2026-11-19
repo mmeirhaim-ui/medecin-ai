@@ -1,0 +1,102 @@
+{
+  "id": "ulcerative-colitis",
+  "category": "gi",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "ulcerative colitis",
+      "UC bloody diarrhoea",
+      "inflammatory bowel colitis"
+    ],
+    "fr": [
+      "rectocolite hémorragique",
+      "RCH diarrhée sanglante",
+      "colite ulcéreuse"
+    ],
+    "he": [
+      "קוליטיס כיבית",
+      "שלשול דמי",
+      "דלקת מעי גס כיבית"
+    ],
+    "ru": [
+      "язвенный колит",
+      "кровавая диарея",
+      "ЯК"
+    ]
+  },
+  "titles": {
+    "en": "Ulcerative colitis (orientation)",
+    "fr": "Rectocolite hémorragique (orientation)",
+    "he": "קוליטיס כיבית (הכוונה)",
+    "ru": "Язвенный колит (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Ulcerative colitis causes bloody diarrhoea, urgency, and abdominal pain. NHS: specialist care. Severe flare (many bloody stools, fever, severe pain, dehydration) needs urgent/emergency assessment. Medicines are specialist-prescribed — no invented mesalazine/steroid doses.",
+      "emergencyIf": [
+        "Severe bloody diarrhoea with fever, severe pain, or dehydration",
+        "Dizziness/fainting with heavy bleeding"
+      ],
+      "seeDoctorIf": [
+        "Bloody diarrhoea lasting days",
+        "Known UC flare not responding to plan"
+      ],
+      "doNot": [
+        "Do not invent UC drug regimens",
+        "Do not stop maintenance therapy without advice"
+      ]
+    },
+    "fr": {
+      "summary": "La RCH provoque diarrhée sanglante et urgences défécatoires. Poussée sévère = urgence. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Diarrhée sanglante sévère + fièvre/douleur/déshydratation",
+        "Malaise avec saignement"
+      ],
+      "seeDoctorIf": [
+        "Diarrhée sanglante prolongée",
+        "Poussée non contrôlée"
+      ],
+      "doNot": [
+        "Pas de schémas inventés"
+      ]
+    },
+    "he": {
+      "summary": "קוליטיס כיבית: שלשול דמי ודחיפות. התלקחות חמורה — חירום. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "שלשול דמי חמור + חום/כאב/התייבשות",
+        "סחרחורת עם דימום"
+      ],
+      "seeDoctorIf": [
+        "שלשול דמי ממושך",
+        "התלקחות לא נשלטת"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Язвенный колит: кровавая диарея и императивные позывы. Тяжёлое обострение — неотложка. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Тяжёлая кровавая диарея + лихорадка/боль/обезвоживание",
+        "Головокружение с кровотечением"
+      ],
+      "seeDoctorIf": [
+        "Длительная кровавая диарея",
+        "Неконтролируемое обострение"
+      ],
+      "doNot": [
+        "Не изобретать схемы препаратов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ulcerative-colitis",
+      "name": "NHS — Ulcerative colitis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ulcerative-colitis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

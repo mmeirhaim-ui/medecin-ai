@@ -1,0 +1,102 @@
+{
+  "id": "parkinsons-disease",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "Parkinson's",
+      "Parkinson tremor stiffness",
+      "shuffling gait slow movement"
+    ],
+    "fr": [
+      "Parkinson",
+      "tremblement rigidité Parkinson",
+      "marche à petits pas"
+    ],
+    "he": [
+      "פרקינסון",
+      "רעד ונוקשות פרקינסון",
+      "הליכה בצעדים קטנים"
+    ],
+    "ru": [
+      "болезнь Паркинсона",
+      "тремор скованность Паркинсон",
+      "шаркающая походка"
+    ]
+  },
+  "titles": {
+    "en": "Parkinson's disease (orientation)",
+    "fr": "Maladie de Parkinson (orientation)",
+    "he": "מחלת פרקינסון (הכוונה)",
+    "ru": "Болезнь Паркинсона (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Parkinson's can cause tremor, stiffness, slowness, and gait changes. NHS: GP/neurology for diagnosis and treatment. Medicines timing matters — never invent levodopa regimens. Falls and swallowing problems need clinical review; emergency for injury after falls or choking.",
+      "emergencyIf": [
+        "Choking / unable to breathe",
+        "Serious injury after a fall"
+      ],
+      "seeDoctorIf": [
+        "New tremor, stiffness, or slowed movement",
+        "Known Parkinson's with falls, swallowing difficulty, or medication wearing-off"
+      ],
+      "doNot": [
+        "Do not invent levodopa/agonist regimens",
+        "Do not stop Parkinson's medicines abruptly"
+      ]
+    },
+    "fr": {
+      "summary": "Parkinson : tremblement, rigidité, akinésie. Neurologue. Pas de lévodopa inventée. Urgence si fausse route/chute grave.",
+      "emergencyIf": [
+        "Étouffement",
+        "Blessure grave après chute"
+      ],
+      "seeDoctorIf": [
+        "Nouveau tremblement/rigidité",
+        "Chutes / dysphagie / échappement thérapeutique"
+      ],
+      "doNot": [
+        "Pas de lévodopa inventée"
+      ]
+    },
+    "he": {
+      "summary": "פרקינסון: רעד, נוקשות, איטיות. נוירולוג. אין לבודופה מומצאת. חירום בחנק/פציעה מנפילה.",
+      "emergencyIf": [
+        "חנק",
+        "פציעה קשה מנפילה"
+      ],
+      "seeDoctorIf": [
+        "רעד/נוקשות חדשים",
+        "נפילות / קושי בליעה"
+      ],
+      "doNot": [
+        "אין לבודופה מומצאת"
+      ]
+    },
+    "ru": {
+      "summary": "Паркинсон: тремор, скованность, замедленность. Невролог. Леводопу не выдумывать. Неотложка при удушье/тяжёлой травме от падения.",
+      "emergencyIf": [
+        "Удушье",
+        "Тяжёлая травма после падения"
+      ],
+      "seeDoctorIf": [
+        "Новый тремор/скованность",
+        "Падения / дисфагия"
+      ],
+      "doNot": [
+        "Не изобретать леводопу"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-parkinsons",
+      "name": "NHS — Parkinson's disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/parkinsons-disease/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

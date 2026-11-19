@@ -1,0 +1,117 @@
+{
+  "id": "rabies-exposure",
+  "category": "travel",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "rabies",
+      "animal bite abroad",
+      "bat scratch",
+      "licked wound animal travel"
+    ],
+    "fr": [
+      "rage",
+      "morsure animale à l'étranger",
+      "griffe de chauve-souris",
+      "lésion léchée animal voyage"
+    ],
+    "he": [
+      "כלבת",
+      "נשיכת בעל חיים בחו\"ל",
+      "שריטת עטלף",
+      "ליקוק פצע על ידי חיה בנסיעה"
+    ],
+    "ru": [
+      "бешенство",
+      "укус животного за границей",
+      "царапина летучей мыши",
+      "животное лизнуло рану в поездке"
+    ]
+  },
+  "titles": {
+    "en": "Rabies exposure — get help now",
+    "fr": "Exposition à la rage — agir immédiatement",
+    "he": "חשיפה לכלבת — לפנות מיד",
+    "ru": "Контакт с бешенством — немедленно за помощью"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Rabies is almost always fatal once symptoms appear but preventable with prompt post-exposure care. NHS: get medical help immediately after animal bite/scratch abroad, animal licking eyes/nose/mouth/wound abroad, or bat bite/scratch in the UK. Do not wait until return home if abroad. Vaccines/immunoglobulin are clinician-only — no invented schedules. Wash wound with soap and water while seeking care.",
+      "emergencyIf": [
+        "Possible rabies exposure (bite/scratch/lick of mucosa or wound by suspect animal)",
+        "Any bat bite/scratch in the UK"
+      ],
+      "seeDoctorIf": [
+        "Had treatment abroad — GP follow-up on return to check completion"
+      ],
+      "selfCare": [
+        "Wash the wound thoroughly with soap and water while arranging urgent care"
+      ],
+      "doNot": [
+        "Do not wait for symptoms",
+        "Do not invent rabies vaccine or immunoglobulin regimens"
+      ]
+    },
+    "fr": {
+      "summary": "La rage est presque toujours mortelle une fois les symptômes apparus, mais évitable avec une prise en charge rapide. Soins immédiats après morsure/griffe à l'étranger ou chauve-souris au Royaume-Uni. Pas de schémas inventés.",
+      "emergencyIf": [
+        "Exposition possible à la rage",
+        "Morsure/griffe de chauve-souris"
+      ],
+      "seeDoctorIf": [
+        "Traitement commencé à l'étranger — suivi au retour"
+      ],
+      "selfCare": [
+        "Laver la plaie au savon en organisant les soins"
+      ],
+      "doNot": [
+        "Ne pas attendre les symptômes",
+        "Pas de vaccins/immunoglobulines inventés"
+      ]
+    },
+    "he": {
+      "summary": "כלבת כמעט תמיד קטלנית אחרי הופעת תסמינים אך ניתנת למניעה בטיפול מהיר. עזרה מיידית אחרי נשיכה/שריטה בחו\"ל או עטלף. אין לוחות מומצאים.",
+      "emergencyIf": [
+        "חשיפה אפשרית לכלבת",
+        "נשיכה/שריטת עטלף"
+      ],
+      "seeDoctorIf": [
+        "טיפול שהתחיל בחו\"ל — מעקב בחזרה"
+      ],
+      "selfCare": [
+        "לשטוף את הפצע בסבון תוך ארגון טיפול"
+      ],
+      "doNot": [
+        "לא לחכות לתסמינים",
+        "אין חיסון/אימונוגלובולין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Бешенство почти всегда смертельно после симптомов, но предотвратимо быстрым постконтактным лечением. Немедленно после укуса/царапины за границей или летучей мыши. Схемы не выдумывать.",
+      "emergencyIf": [
+        "Возможный контакт с бешенством",
+        "Укус/царапина летучей мыши"
+      ],
+      "seeDoctorIf": [
+        "Лечение начато за границей — контроль по возвращении"
+      ],
+      "selfCare": [
+        "Промыть рану мылом, организуя помощь"
+      ],
+      "doNot": [
+        "Не ждать симптомов",
+        "Не изобретать схемы вакцины/иммуноглобулина"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-rabies",
+      "name": "NHS — Rabies",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/rabies/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

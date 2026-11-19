@@ -1,0 +1,104 @@
+{
+  "id": "eating-disorders",
+  "category": "mental-health",
+  "urgencyDefault": "consultation",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "eating disorder",
+      "anorexia bulimia binge eating",
+      "restricting food purging"
+    ],
+    "fr": [
+      "trouble alimentaire",
+      "anorexie boulimie",
+      "restriction alimentaire vomissements"
+    ],
+    "he": [
+      "הפרעת אכילה",
+      "אנורקסיה בולימיה",
+      "הגבלת אוכל טיהור"
+    ],
+    "ru": [
+      "расстройство пищевого поведения",
+      "анорексия булимия",
+      "ограничение еды очищение"
+    ]
+  },
+  "titles": {
+    "en": "Eating disorders — orientation",
+    "fr": "Troubles alimentaires — orientation",
+    "he": "הפרעות אכילה — התמצאות",
+    "ru": "Расстройства пищевого поведения — ориентир"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Eating disorders are serious mental and physical health conditions. NHS: early help improves outcomes; specialist pathways exist. Emergency: fainting, chest pain, severe weakness, suicidal crisis, or inability to keep fluids down — urgent medical care. Never invent refeeding or laxative regimens.",
+      "emergencyIf": [
+        "Fainting, chest pain, severe weakness",
+        "Cannot keep fluids down",
+        "Suicidal plans",
+        "Very rapid weight loss with medical instability signs"
+      ],
+      "seeDoctorIf": [
+        "Restricting, bingeing or purging affecting health",
+        "Distress about weight/shape dominating life"
+      ],
+      "doNot": [
+        "Do not invent calorie/refeeding plans or laxative advice",
+        "Do not praise extreme restriction"
+      ]
+    },
+    "fr": {
+      "summary": "Troubles alimentaires: graves. Urgences si malaise, douleur thoracique, impossibilité de boire, crise suicidaire. Pas de régimes inventés.",
+      "emergencyIf": [
+        "Malaise, douleur thoracique, faiblesse sévère",
+        "Impossible de garder les liquides",
+        "Idées suicidaires"
+      ],
+      "seeDoctorIf": [
+        "Restriction / crises / purges"
+      ],
+      "doNot": [
+        "Pas de plans de renutrition inventés"
+      ]
+    },
+    "he": {
+      "summary": "הפרעות אכילה: מסוכנות. חירום בהתעלפות, כאב חזה, אי יכולת לשתות, משבר אובדני. אין תוכניות הזנה מומצאות.",
+      "emergencyIf": [
+        "התעלפות, כאב חזה, חולשה קשה",
+        "לא מחזיק נוזלים",
+        "תוכניות אובדניות"
+      ],
+      "seeDoctorIf": [
+        "הגבלה / זלילה / טיהור"
+      ],
+      "doNot": [
+        "אין תוכניות קלוריות מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "РПП: серьёзны. Неотложка при обмороке, боли в груди, невозможности пить, суицидальном кризисе. Схемы не выдумывать.",
+      "emergencyIf": [
+        "Обморок, боль в груди, тяжёлая слабость",
+        "Не удерживает жидкости",
+        "Суицидальные планы"
+      ],
+      "seeDoctorIf": [
+        "Ограничение / срывы / очищение"
+      ],
+      "doNot": [
+        "Не изобретать планы питания"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-eating-disorders",
+      "name": "NHS — Eating disorders",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/eating-disorders/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

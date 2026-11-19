@@ -1,0 +1,106 @@
+{
+  "id": "measles",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "measles",
+      "measles rash",
+      "Koplik",
+      "fever cough rash eyes"
+    ],
+    "fr": [
+      "rougeole",
+      "éruption rougeole",
+      "fièvre toux éruption yeux"
+    ],
+    "he": [
+      "חצבת",
+      "פריחת חצבת",
+      "חום שיעול פריחה עיניים"
+    ],
+    "ru": [
+      "корь",
+      "сыпь кори",
+      "жар кашель сыпь глаза"
+    ]
+  },
+  "titles": {
+    "en": "Measles — seek care",
+    "fr": "Rougeole — consulter",
+    "he": "חצבת — לפנות לטיפול",
+    "ru": "Корь — обратиться за помощью"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Measles is highly contagious and can be serious. WHO/NHS: fever, cough, runny nose, red eyes, then blotchy rash. Call for urgent advice — do not sit in a crowded waiting room without phoning first. Vaccination (MMR) prevents measles; this pack does not replace public health guidance.",
+      "emergencyIf": [
+        "Breathing difficulty, seizures, extreme drowsiness, or stiff neck with suspected measles"
+      ],
+      "seeDoctorIf": [
+        "Suspected measles symptoms — phone ahead",
+        "Contact with measles if pregnant, infant, or immunocompromised"
+      ],
+      "doNot": [
+        "Do not delay calling for advice",
+        "Do not invent vitamin A or antiviral regimens"
+      ]
+    },
+    "fr": {
+      "summary": "La rougeole est très contagieuse et peut être grave. Fièvre, toux, rhinite, yeux rouges puis éruption. Appeler avant de se présenter. Vaccination ROR.",
+      "emergencyIf": [
+        "Détresse respiratoire, convulsions, somnolence extrême, raideur de nuque"
+      ],
+      "seeDoctorIf": [
+        "Suspicion de rougeole — téléphoner avant",
+        "Contact si grossesse, nourrisson, immunodépression"
+      ],
+      "doNot": [
+        "Ne pas retarder l'appel"
+      ]
+    },
+    "he": {
+      "summary": "חצבת מדבקת מאוד ועלולה להיות חמורה. חום, שיעול, נזלת, עיניים אדומות ואז פריחה. להתקשר לפני הגעה. חיסון MMR.",
+      "emergencyIf": [
+        "קושי נשימה, פרכוסים, ישנוניות קיצונית, נוקשות עורף"
+      ],
+      "seeDoctorIf": [
+        "חשד לחצבת — להתקשר מראש",
+        "מגע בהריון/תינוק/דיכוי חיסוני"
+      ],
+      "doNot": [
+        "לא לדחות ייעוץ"
+      ]
+    },
+    "ru": {
+      "summary": "Корь очень заразна и может быть тяжёлой. Лихорадка, кашель, насморк, красные глаза, затем сыпь. Позвонить до визита. Вакцинация КПК.",
+      "emergencyIf": [
+        "Одышка, судороги, крайняя сонливость, ригидность шеи"
+      ],
+      "seeDoctorIf": [
+        "Подозрение на корь — позвонить заранее",
+        "Контакт при беременности/младенце/иммунодефиците"
+      ],
+      "doNot": [
+        "Не откладывать звонок"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-measles",
+      "name": "NHS — Measles",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/measles/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "who-measles",
+      "name": "WHO — Measles fact sheet",
+      "org": "WHO",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/measles",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

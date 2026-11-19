@@ -1,0 +1,100 @@
+{
+  "id": "crohns-disease",
+  "category": "gi",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "Crohn's",
+      "Crohns disease",
+      "inflammatory bowel diarrhoea blood"
+    ],
+    "fr": [
+      "Crohn",
+      "maladie de Crohn",
+      "MICI diarrhée sang"
+    ],
+    "he": [
+      "קרוהן",
+      "מחלת מעי דלקתית שלשול דם"
+    ],
+    "ru": [
+      "болезнь Крона",
+      "ВЗК понос кровь"
+    ]
+  },
+  "titles": {
+    "en": "Crohn's disease (orientation)",
+    "fr": "Maladie de Crohn (orientation)",
+    "he": "מחלת קרוהן (הכוונה)",
+    "ru": "Болезнь Крона (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Crohn's is an inflammatory bowel disease causing diarrhoea, abdominal pain, weight loss, sometimes blood/mucus. NHS: GP/gastroenterology for diagnosis. Flare with severe pain, high fever, persistent vomiting, or heavy bleeding needs urgent care. Immunosuppressants/biologics are specialist-prescribed only.",
+      "emergencyIf": [
+        "Severe abdominal pain with fever/vomiting",
+        "Heavy rectal bleeding",
+        "Signs of obstruction (severe bloating, no stool/gas, vomiting)"
+      ],
+      "seeDoctorIf": [
+        "Persistent diarrhoea, pain, weight loss, blood in stool"
+      ],
+      "doNot": [
+        "Do not invent steroid/biologic regimens",
+        "Do not stop prescribed IBD medicines without advice"
+      ]
+    },
+    "fr": {
+      "summary": "La maladie de Crohn est une MICI. Médecin/gastro. Urgence si douleur sévère, fièvre, vomissements, saignement abondant. Pas de biothérapies inventées.",
+      "emergencyIf": [
+        "Douleur sévère + fièvre/vomissements",
+        "Saignement abondant",
+        "Signes d'occlusion"
+      ],
+      "seeDoctorIf": [
+        "Diarrhée/douleur/amaigrissement/sang persistants"
+      ],
+      "doNot": [
+        "Pas de corticoïdes/biologiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "קרוהן היא מחלת מעי דלקתית. רופא/גסטרו. חירום בכאב חזק, חום, הקאות, דימום כבד. אין ביולוגיים מומצאים.",
+      "emergencyIf": [
+        "כאב חזק + חום/הקאות",
+        "דימום כבד",
+        "סימני חסימה"
+      ],
+      "seeDoctorIf": [
+        "שלשול/כאב/ירידה במשקל/דם מתמשכים"
+      ],
+      "doNot": [
+        "אין סטרואידים/ביולוגיים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Болезнь Крона — ВЗК. К врачу/гастро. Неотложка при сильной боли, лихорадке, рвоте, обильном кровотечении. Биопрепараты не выдумывать.",
+      "emergencyIf": [
+        "Сильная боль + лихорадка/рвота",
+        "Обильное кровотечение",
+        "Признаки непроходимости"
+      ],
+      "seeDoctorIf": [
+        "Стойкие диарея/боль/похудение/кровь"
+      ],
+      "doNot": [
+        "Не изобретать стероиды/биопрепараты"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-crohns",
+      "name": "NHS — Crohn's disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/crohns-disease/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "restless-legs",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "restless legs",
+      "RLS urge to move legs at night"
+    ],
+    "fr": [
+      "jambes sans repos",
+      "besoin de bouger les jambes la nuit"
+    ],
+    "he": [
+      "תסמונת רגליים חסרות מנוחה",
+      "דחף להזיז רגליים בלילה"
+    ],
+    "ru": [
+      "синдром беспокойных ног",
+      "желание двигать ногами ночью"
+    ]
+  },
+  "titles": {
+    "en": "Restless legs syndrome",
+    "fr": "Syndrome des jambes sans repos",
+    "he": "תסמונת רגליים חסרות מנוחה",
+    "ru": "Синдром беспокойных ног"
+  },
+  "guidance": {
+    "en": {
+      "summary": "RLS causes an urge to move the legs, often worse at rest/night. NHS: see a GP for assessment (iron studies sometimes relevant). Lifestyle measures may help; medicines are clinician-prescribed — no invented dopamine-agonist doses.",
+      "seeDoctorIf": [
+        "Symptoms disrupting sleep",
+        "Worsening or new onset"
+      ],
+      "selfCare": [
+        "Regular sleep schedule; moderate exercise; avoid excess caffeine/alcohol late; discuss iron checks with GP"
+      ],
+      "doNot": [
+        "Do not invent RLS drug regimens",
+        "Do not ignore severe sleep disruption"
+      ]
+    },
+    "fr": {
+      "summary": "Le SJSR donne une envie irrépressible de bouger les jambes, surtout la nuit. Avis médical ; pas de médicaments inventés.",
+      "seeDoctorIf": [
+        "Perturbation du sommeil",
+        "Aggravation"
+      ],
+      "selfCare": [
+        "Horaires de sommeil réguliers ; activité modérée ; limiter caféine"
+      ],
+      "doNot": [
+        "Pas d'agonistes dopaminergiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "RLS: דחף להזיז רגליים, לרוב במנוחה/לילה. ייעוץ רפואי; אין תרופות מומצאות.",
+      "seeDoctorIf": [
+        "הפרעת שינה",
+        "החמרה"
+      ],
+      "selfCare": [
+        "שגרת שינה; פעילות מתונה; להגביל קפאין"
+      ],
+      "doNot": [
+        "אין אגוניסטים דופמינרגיים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "СБН: желание двигать ногами, хуже в покое/ночью. К врачу; лекарства не выдумывать.",
+      "seeDoctorIf": [
+        "Нарушение сна",
+        "Ухудшение"
+      ],
+      "selfCare": [
+        "Режим сна; умеренная активность; меньше кофеина"
+      ],
+      "doNot": [
+        "Не изобретать дозы дофаминовых агонистов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-restless-legs",
+      "name": "NHS — Restless legs syndrome",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/restless-legs-syndrome/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

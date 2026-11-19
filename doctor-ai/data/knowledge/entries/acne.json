@@ -1,0 +1,103 @@
+{
+  "id": "acne",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "acne",
+      "pimples blackheads",
+      "spots on face teenager"
+    ],
+    "fr": [
+      "acné",
+      "boutons points noirs",
+      "acné visage ado"
+    ],
+    "he": [
+      "אקנה",
+      "פצעונים",
+      "שחורים בפנים"
+    ],
+    "ru": [
+      "акне",
+      "прыщи угри",
+      "чёрные точки на лице"
+    ]
+  },
+  "titles": {
+    "en": "Acne",
+    "fr": "Acné",
+    "he": "אקנה",
+    "ru": "Акне"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Acne is common. NHS: gentle cleansing; pharmacy gels; GP for moderate/severe or scarring risk. Oral isotretinoin and antibiotics are specialist/GP-prescribed only — never invent doses. Avoid picking.",
+      "seeDoctorIf": [
+        "Moderate/severe acne",
+        "Scarring or pigmentation",
+        "Not improving with pharmacy care",
+        "Sudden adult acne with other hormonal symptoms"
+      ],
+      "selfCare": [
+        "Gentle cleanse; non-comedogenic moisturiser; pharmacy topical treatments as labeled; do not squeeze aggressively"
+      ],
+      "doNot": [
+        "Do not invent isotretinoin or oral antibiotic regimens",
+        "Do not use someone else's prescription creams"
+      ]
+    },
+    "fr": {
+      "summary": "L'acné est fréquente. Soins doux ; pharmacie ; médecin si modérée/sévère. Isotrétinoïne/antibiotiques = prescription. Pas de doses inventées.",
+      "seeDoctorIf": [
+        "Acné modérée/sévère",
+        "Cicatrices",
+        "Échec pharmacie"
+      ],
+      "selfCare": [
+        "Nettoyage doux ; traitements pharmacie"
+      ],
+      "doNot": [
+        "Pas d'isotrétinoïne inventée"
+      ]
+    },
+    "he": {
+      "summary": "אקנה נפוצה. ניקוי עדין; בית מרקחת; רופא בבינוני/חמור. איזוטרטינואין/אנטיביוטיקה — מרשם בלבד.",
+      "seeDoctorIf": [
+        "אקנה בינונית/חמורה",
+        "צלקות",
+        "אין שיפור"
+      ],
+      "selfCare": [
+        "ניקוי עדין; טיפולי בית מרקחת"
+      ],
+      "doNot": [
+        "אין איזוטרטינואין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Акне часто. Мягкое очищение; аптека; врач при средней/тяжёлой. Изотретиноин/антибиотики — по рецепту. Дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Среднее/тяжёлое акне",
+        "Рубцы",
+        "Нет улучшения"
+      ],
+      "selfCare": [
+        "Мягкое очищение; аптечные средства"
+      ],
+      "doNot": [
+        "Не изобретать изотретиноин"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-acne",
+      "name": "NHS — Acne",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/acne/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

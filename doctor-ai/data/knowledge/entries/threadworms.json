@@ -1,0 +1,100 @@
+{
+  "id": "threadworms",
+  "category": "peds",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "threadworms",
+      "pinworms",
+      "itchy bottom at night worms"
+    ],
+    "fr": [
+      "oxyures",
+      "vers intestinaux démangeaisons anus nuit"
+    ],
+    "he": [
+      "תולעי סיכה",
+      "גרד בישבן בלילה תולעים"
+    ],
+    "ru": [
+      "острицы",
+      "зуд в заднем проходе ночью глисты"
+    ]
+  },
+  "titles": {
+    "en": "Threadworms (pinworms)",
+    "fr": "Oxyures",
+    "he": "תולעי סיכה",
+    "ru": "Острицы"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Threadworms cause anal itching, often worse at night. NHS: pharmacy treatment for most; treat whole household; strict hygiene for 2 weeks. Children under 2 / pregnancy need GP advice. No inventing mebendazole doses.",
+      "seeDoctorIf": [
+        "Child under 2",
+        "Pregnant",
+        "Not improving after pharmacy treatment",
+        "Unsure of diagnosis"
+      ],
+      "selfCare": [
+        "Pharmacy worming treatment when suitable; wash hands; morning shower; change underwear daily; wash bedding"
+      ],
+      "doNot": [
+        "Do not invent worming tablet doses for infants",
+        "Do not treat only one person if household treatment is advised"
+      ]
+    },
+    "fr": {
+      "summary": "Les oxyures démangent l'anus, surtout la nuit. Traitement pharmacie ; foyer entier ; hygiène. <2 ans / grossesse = médecin. Pas de doses inventées.",
+      "seeDoctorIf": [
+        "Enfant < 2 ans",
+        "Grossesse",
+        "Échec du traitement"
+      ],
+      "selfCare": [
+        "Traitement pharmacie adapté ; hygiène stricte"
+      ],
+      "doNot": [
+        "Pas de doses inventées pour nourrissons"
+      ]
+    },
+    "he": {
+      "summary": "תולעי סיכה גורמות לגרד בפי הטבעת בלילה. טיפול בבית מרקחת; כל הבית; היגיינה. מתחת לגיל 2/הריון — רופא. אין מינון מומצא.",
+      "seeDoctorIf": [
+        "ילד מתחת לגיל 2",
+        "הריון",
+        "אין שיפור"
+      ],
+      "selfCare": [
+        "טיפול בית מרקחת מתאים; היגיינה"
+      ],
+      "doNot": [
+        "אין מינון לתינוקות מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Острицы вызывают зуд ануса ночью. Аптечное лечение; весь дом; гигиена. <2 лет/беременность — врач. Дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Ребёнок <2 лет",
+        "Беременность",
+        "Нет улучшения"
+      ],
+      "selfCare": [
+        "Аптечное средство при уместности; гигиена"
+      ],
+      "doNot": [
+        "Не изобретать дозы для младенцев"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-threadworms",
+      "name": "NHS — Threadworms",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/threadworms/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

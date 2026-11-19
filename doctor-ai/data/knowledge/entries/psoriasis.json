@@ -1,0 +1,103 @@
+{
+  "id": "psoriasis",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "psoriasis",
+      "silvery scaly plaques",
+      "psoriatic plaques"
+    ],
+    "fr": [
+      "psoriasis",
+      "plaques squameuses argentées"
+    ],
+    "he": [
+      "פסוריאזיס",
+      "לוחות קשקשיים כסופים"
+    ],
+    "ru": [
+      "псориаз",
+      "серебристые чешуйчатые бляшки"
+    ]
+  },
+  "titles": {
+    "en": "Psoriasis (orientation)",
+    "fr": "Psoriasis (orientation)",
+    "he": "פסוריאזיס (הכוונה)",
+    "ru": "Псориаз (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Psoriasis causes scaly plaques, often on elbows, knees, scalp. NHS: GP/dermatology for diagnosis and treatment plans. Widespread redness, severe pain, or pustules with fever need urgent care (possible unstable/pustular forms). No inventing systemic immunosuppressant doses.",
+      "seeDoctorIf": [
+        "New suspected psoriasis",
+        "Flare not responding to usual plan",
+        "Joint pain with psoriasis (possible psoriatic arthritis)"
+      ],
+      "emergencyIf": [
+        "Widespread painful red skin",
+        "Pustules with fever/feeling very unwell"
+      ],
+      "doNot": [
+        "Do not invent methotrexate/biologic doses",
+        "Do not stop prescribed systemic therapy without advice"
+      ]
+    },
+    "fr": {
+      "summary": "Le psoriasis forme des plaques squameuses. Avis médical. Rougeur extensive, pustules fébriles = urgence. Pas d'immunosuppresseurs inventés.",
+      "seeDoctorIf": [
+        "Suspicion de psoriasis",
+        "Poussée non contrôlée",
+        "Douleurs articulaires associées"
+      ],
+      "emergencyIf": [
+        "Rougeur étendue douloureuse",
+        "Pustules avec fièvre"
+      ],
+      "doNot": [
+        "Pas de méthotrexate/biologiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "פסוריאזיס: לוחות קשקשיים. ייעוץ רפואי. אודם נרחב/פוסטולות עם חום — חירום. אין מדכאי חיסון מומצאים.",
+      "seeDoctorIf": [
+        "חשד לפסוריאזיס",
+        "התלקחות לא נשלטת",
+        "כאבי מפרקים נלווים"
+      ],
+      "emergencyIf": [
+        "עור אדום כואב נרחב",
+        "פוסטולות עם חום"
+      ],
+      "doNot": [
+        "אין מתוטרקסט/ביולוגיים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Псориаз — чешуйчатые бляшки. К врачу. Обширное покраснение/пустулы с лихорадкой — неотложка. Иммунодепрессанты не выдумывать.",
+      "seeDoctorIf": [
+        "Подозрение на псориаз",
+        "Обострение вне контроля",
+        "Боль в суставах"
+      ],
+      "emergencyIf": [
+        "Обширная болезненная красная кожа",
+        "Пустулы с лихорадкой"
+      ],
+      "doNot": [
+        "Не изобретать дозы метотрексата/биопрепаратов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-psoriasis",
+      "name": "NHS — Psoriasis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/psoriasis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

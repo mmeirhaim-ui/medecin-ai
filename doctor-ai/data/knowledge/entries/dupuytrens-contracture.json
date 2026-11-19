@@ -1,0 +1,98 @@
+{
+  "id": "dupuytrens-contracture",
+  "category": "msk",
+  "urgencyDefault": "consultation",
+  "priority": 2,
+  "keywords": {
+    "en": [
+      "Dupuytren contracture",
+      "Dupuytren fingers bent",
+      "palmar fascia cords"
+    ],
+    "fr": [
+      "maladie de Dupuytren",
+      "Dupuytren doigts fléchis",
+      "brides palmaires"
+    ],
+    "he": [
+      "דופויטרן",
+      "כיווץ דופויטרן באצבעות",
+      "מיתרים בכף היד"
+    ],
+    "ru": [
+      "контрактура Дюпюитрена",
+      "Дюпюитрен пальцы согнуты",
+      "тяжи ладони"
+    ]
+  },
+  "titles": {
+    "en": "Dupuytren's contracture",
+    "fr": "Maladie de Dupuytren",
+    "he": "קונטרקטורת דופויטרן",
+    "ru": "Контрактура Дюпюитрена"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Dupuytren's causes thickened palm cords that gradually bend fingers. NHS: observation or specialist procedures when function is limited — never invent injection doses. Emergency uncommon; seek care for rapidly painful red hand (infection) or trauma.",
+      "emergencyIf": [
+        "Painful red swollen hand with fever",
+        "Hand trauma with loss of sensation"
+      ],
+      "seeDoctorIf": [
+        "Cannot lay the hand flat on a table",
+        "Progressive finger contracture"
+      ],
+      "doNot": [
+        "Do not invent collagenase injection regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Dupuytren: brides fléchissant les doigts. Rarement urgent; avis si infection ou traumatisme. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Main rouge douloureuse fébrile",
+        "Traumatisme avec anesthésie"
+      ],
+      "seeDoctorIf": [
+        "Impossible de poser la main à plat"
+      ],
+      "doNot": [
+        "Pas d'injections inventées"
+      ]
+    },
+    "he": {
+      "summary": "דופויטרן: מיתרים שמכופפים אצבעות. חירום נדיר; פנה בזיהום או חבלה. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "כף יד אדומה כואבת עם חום",
+        "חבלה עם אובדן תחושה"
+      ],
+      "seeDoctorIf": [
+        "לא ניתן להשטיח את כף היד"
+      ],
+      "doNot": [
+        "אין הזרקות מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Дюпюитрен: тяжи сгибающие пальцы. Неотложка редка; при инфекции или травме. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Красная болезненная кисть с лихорадкой",
+        "Травма с потерей чувствительности"
+      ],
+      "seeDoctorIf": [
+        "Нельзя положить ладонь плоско"
+      ],
+      "doNot": [
+        "Не изобретать инъекции"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-dupuytrens",
+      "name": "NHS — Dupuytren's contracture",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dupuytrens-contracture/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

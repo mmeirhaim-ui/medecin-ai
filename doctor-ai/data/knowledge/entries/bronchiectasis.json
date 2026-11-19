@@ -1,0 +1,104 @@
+{
+  "id": "bronchiectasis",
+  "category": "respiratory",
+  "urgencyDefault": "consultation",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "bronchiectasis",
+      "chronic cough sputum bronchiectasis",
+      "recurrent chest infections bronchiectasis"
+    ],
+    "fr": [
+      "dilatation des bronches",
+      "bronchiectasies toux chroniques",
+      "infections respiratoires à répétition"
+    ],
+    "he": [
+      "ברונכיאקטזיות",
+      "שיעול כרוני ליחה",
+      "דלקות ריאה חוזרות"
+    ],
+    "ru": [
+      "бронхоэктазы",
+      "хронический кашель мокрота",
+      "повторные инфекции лёгких"
+    ]
+  },
+  "titles": {
+    "en": "Bronchiectasis",
+    "fr": "Bronchiectasies",
+    "he": "ברונכיאקטזיות",
+    "ru": "Бронхоэктазы"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Bronchiectasis causes chronic cough with sputum and recurrent chest infections. NHS: airway clearance and specialist review; antibiotics are clinician-prescribed — never invent doses. Emergency: severe breathlessness, coughing blood in large amounts, high fever with confusion, or chest pain with collapse.",
+      "emergencyIf": [
+        "Severe breathlessness at rest",
+        "Large-volume coughing of blood",
+        "High fever with confusion",
+        "Chest pain with collapse"
+      ],
+      "seeDoctorIf": [
+        "Chronic productive cough",
+        "Repeated chest infections"
+      ],
+      "doNot": [
+        "Do not invent antibiotic regimens",
+        "Do not ignore coughing blood"
+      ]
+    },
+    "fr": {
+      "summary": "Bronchiectasies: toux productive chronique. Urgences si dyspnée sévère, hémoptysie abondante, fièvre avec confusion. Pas d'antibiotiques inventés.",
+      "emergencyIf": [
+        "Dyspnée sévère",
+        "Hémoptysie abondante",
+        "Forte fièvre avec confusion"
+      ],
+      "seeDoctorIf": [
+        "Toux productive chronique"
+      ],
+      "doNot": [
+        "Pas d'antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "ברונכיאקטזיות: שיעול עם ליחה. חירום בקוצר נשימה קשה, שיעול דם רב, חום עם בלבול. אין אנטיביוטיקה מומצאת.",
+      "emergencyIf": [
+        "קוצר נשימה קשה",
+        "שיעול דם בכמות גדולה",
+        "חום גבוה עם בלבול"
+      ],
+      "seeDoctorIf": [
+        "שיעול פרודוקטיבי כרוני"
+      ],
+      "doNot": [
+        "אין משטרי אנטיביוטיקה מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Бронхоэктазы: хронический продуктивный кашель. Неотложка при тяжёлой одышке, обильном кровохарканье. Антибиотики не выдумывать.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Обильное кровохарканье",
+        "Высокая лихорадка со спутанностью"
+      ],
+      "seeDoctorIf": [
+        "Хронический продуктивный кашель"
+      ],
+      "doNot": [
+        "Не изобретать антибиотики"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-bronchiectasis",
+      "name": "NHS — Bronchiectasis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/bronchiectasis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

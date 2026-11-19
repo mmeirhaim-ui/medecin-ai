@@ -1,0 +1,99 @@
+{
+  "id": "trigeminal-neuralgia",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "trigeminal neuralgia",
+      "electric shock face pain",
+      "stabbing facial pain trigger"
+    ],
+    "fr": [
+      "névralgie du trijumeau",
+      "douleur électrique visage",
+      "éclair douloureux face"
+    ],
+    "he": [
+      "נוירלגיה של העצב המשולש",
+      "כאב חשמלי בפנים"
+    ],
+    "ru": [
+      "невралгия тройничного нерва",
+      "электрическая боль в лице"
+    ]
+  },
+  "titles": {
+    "en": "Trigeminal neuralgia",
+    "fr": "Névralgie du trijumeau",
+    "he": "נוירלגיה טריגמינלית",
+    "ru": "Невралгия тройничного нерва"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Trigeminal neuralgia causes brief electric-shock facial pain triggered by touch/chewing. NHS: see a GP for assessment; medicines are clinician-prescribed (e.g. certain anticonvulsants) — never invent carbamazepine doses. Sudden different 'worst headache' or stroke signs need emergency pathways.",
+      "emergencyIf": [
+        "Sudden worst headache of life",
+        "Facial weakness, speech difficulty, or other stroke signs with facial pain"
+      ],
+      "seeDoctorIf": [
+        "Recurrent electric-shock facial pain",
+        "Pain preventing eating/drinking"
+      ],
+      "doNot": [
+        "Do not invent carbamazepine or other neuralgia drug regimens"
+      ]
+    },
+    "fr": {
+      "summary": "La névralgie du trijumeau provoque des éclairs douloureux. Médecin ; pas de carbamazépine inventée. Urgence si céphalée maximale/signes d'AVC.",
+      "emergencyIf": [
+        "Céphalée maximale brutale",
+        "Signes d'AVC"
+      ],
+      "seeDoctorIf": [
+        "Douleurs électriques récurrentes",
+        "Impossibilité de manger/boire"
+      ],
+      "doNot": [
+        "Pas de carbamazépine inventée"
+      ]
+    },
+    "he": {
+      "summary": "נוירלגיה טריגמינלית: כאב חשמלי קצר בפנים. רופא; אין קרבמזפין מומצא. חירום בכאב ראש מקסימלי/שבץ.",
+      "emergencyIf": [
+        "כאב ראש מקסימלי פתאומי",
+        "דגלי שבץ"
+      ],
+      "seeDoctorIf": [
+        "כאבים חשמליים חוזרים",
+        "לא יכול לאכול/לשתות"
+      ],
+      "doNot": [
+        "אין קרבמזפין מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Невралгия тройничного нерва: короткие электрические боли в лице. Врач; карбамазепин не выдумывать. Неотложка при максимальной головной боли/инсульте.",
+      "emergencyIf": [
+        "Внезапная максимальная головная боль",
+        "Признаки инсульта"
+      ],
+      "seeDoctorIf": [
+        "Повторяющиеся электрические боли",
+        "Нельзя есть/пить"
+      ],
+      "doNot": [
+        "Не изобретать карбамазепин"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-trigeminal-neuralgia",
+      "name": "NHS — Trigeminal neuralgia",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/trigeminal-neuralgia/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

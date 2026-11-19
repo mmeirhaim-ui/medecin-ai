@@ -1,0 +1,127 @@
+{
+  "id": "depression-low-mood",
+  "category": "psych",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "depression",
+      "low mood for weeks",
+      "feeling hopeless",
+      "cannot enjoy anything",
+      "sad for two weeks"
+    ],
+    "fr": [
+      "dépression",
+      "moral bas depuis des semaines",
+      "sentiment de désespoir",
+      "plus de plaisir",
+      "triste depuis deux semaines"
+    ],
+    "he": [
+      "דיכאון",
+      "מצב רוח ירוד שבועות",
+      "תחושת ייאוש",
+      "אין הנאה מכלום",
+      "עצוב שבועיים"
+    ],
+    "ru": [
+      "депрессия",
+      "плохое настроение неделями",
+      "безнадёжность",
+      "нет радости",
+      "грусть две недели"
+    ]
+  },
+  "titles": {
+    "en": "Low mood / depression (non-crisis)",
+    "fr": "Moral bas / dépression (hors crise)",
+    "he": "מצב רוח ירוד / דיכאון (לא משבר)",
+    "ru": "Пониженное настроение / депрессия (не кризис)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Low mood lasting ≥2 weeks, loss of enjoyment, hopelessness, or trouble concentrating may be depression (NHS/WHO). See a GP or self-refer to talking therapies where available. Urgent crisis help if suicidal. This pack never starts antidepressants.",
+      "emergencyIf": [
+        "Thoughts of suicide or self-harm — emergency/crisis services now"
+      ],
+      "seeDoctorIf": [
+        "Low mood >2 weeks",
+        "Struggling to cope",
+        "Self-help steps not enough"
+      ],
+      "selfCare": [
+        "Talk to someone trusted; regular meals/sleep/exercise if able; peer support",
+        "Avoid alcohol/drugs to 'numb' mood"
+      ],
+      "doNot": [
+        "Do not invent antidepressant doses",
+        "Do not dismiss prolonged low mood as weakness"
+      ]
+    },
+    "fr": {
+      "summary": "Un moral bas ≥2 semaines, anhédonie, désespoir peuvent indiquer une dépression. Voir un médecin / thérapies. Crise suicidaire = urgence. Pas d'antidépresseurs inventés.",
+      "emergencyIf": [
+        "Idées suicidaires ou d'automutilation"
+      ],
+      "seeDoctorIf": [
+        "Moral bas > 2 semaines",
+        "Difficulté à faire face"
+      ],
+      "selfCare": [
+        "Parler à quelqu'un de confiance ; repas/sommeil/activité réguliers"
+      ],
+      "doNot": [
+        "Pas d'antidépresseurs inventés"
+      ]
+    },
+    "he": {
+      "summary": "מצב רוח ירוד ≥שבועיים, אובדן הנאה או ייאוש עלולים להיות דיכאון. רופא/טיפול בשיחה. משבר אובדני — חירום. אין נוגדי דיכאון מומצאים.",
+      "emergencyIf": [
+        "מחשבות אובדניות או פגיעה עצמית"
+      ],
+      "seeDoctorIf": [
+        "מצב רוח ירוד מעל שבועיים",
+        "קושי להתמודד"
+      ],
+      "selfCare": [
+        "לדבר עם מישהו; ארוחות/שינה/פעילות סדירים"
+      ],
+      "doNot": [
+        "אין מינון נוגדי דיכאון מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Пониженное настроение ≥2 недель, ангедония, безнадёжность могут быть депрессией. К врачу/терапии. Суицидальный кризис — неотложка. Антидепрессанты не выдумывать.",
+      "emergencyIf": [
+        "Суицидальные мысли или самоповреждение"
+      ],
+      "seeDoctorIf": [
+        "Плохое настроение >2 недель",
+        "Трудно справляться"
+      ],
+      "selfCare": [
+        "Поговорить с близким; регулярные еда/сон/активность"
+      ],
+      "doNot": [
+        "Не изобретать дозы антидепрессантов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-depression-low-mood",
+      "name": "NHS — Low mood, sadness or depression",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/low-mood-sadness-depression/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "who-depression",
+      "name": "WHO — Depression fact sheet",
+      "org": "WHO",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

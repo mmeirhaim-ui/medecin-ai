@@ -1,0 +1,99 @@
+{
+  "id": "carpal-tunnel",
+  "category": "msk",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "carpal tunnel",
+      "numb fingers at night",
+      "tingling thumb index middle"
+    ],
+    "fr": [
+      "canal carpien",
+      "engourdissement doigts la nuit",
+      "fourmillements pouce index médius"
+    ],
+    "he": [
+      "תעלת שורש כף היד",
+      "נימול אצבעות בלילה",
+      "עקצוץ אגודל אצבע אמה"
+    ],
+    "ru": [
+      "синдром запястного канала",
+      "онемение пальцев ночью",
+      "покалывание большого указательного среднего"
+    ]
+  },
+  "titles": {
+    "en": "Carpal tunnel syndrome",
+    "fr": "Syndrome du canal carpien",
+    "he": "תסמונת תעלת השורש",
+    "ru": "Синдром запястного канала"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Carpal tunnel causes tingling/numbness in thumb, index, middle fingers, often worse at night. NHS: wrist splints, activity modification; GP for persistent symptoms. Surgery/steroid injection are clinician decisions — no invented injection doses. Urgent review for sudden severe weakness or progressive hand weakness.",
+      "seeDoctorIf": [
+        "Persistent night tingling/numbness",
+        "Dropping objects / weakness",
+        "Symptoms not helped by splints"
+      ],
+      "selfCare": [
+        "Night wrist splint if advised; avoid repetitive strain; short breaks"
+      ],
+      "doNot": [
+        "Do not invent steroid injection regimens",
+        "Do not ignore progressive weakness"
+      ]
+    },
+    "fr": {
+      "summary": "Le canal carpien engourdit pouce/index/médius, surtout la nuit. Attelle ; médecin si persistant. Pas d'injections inventées.",
+      "seeDoctorIf": [
+        "Fourmillements nocturnes persistants",
+        "Faiblesse / objets qui tombent"
+      ],
+      "selfCare": [
+        "Attelle nocturne si conseillée ; pauses"
+      ],
+      "doNot": [
+        "Pas d'injections de corticoïdes inventées"
+      ]
+    },
+    "he": {
+      "summary": "תעלת שורש: נימול באגודל/אצבע/אמה, לרוב בלילה. סד; רופא אם נמשך. אין זריקות מומצאות.",
+      "seeDoctorIf": [
+        "נימול לילי מתמשך",
+        "חולשה / נפילת חפצים"
+      ],
+      "selfCare": [
+        "סד לילה לפי ייעוץ; הפסקות"
+      ],
+      "doNot": [
+        "אין זריקות סטרואידים מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Запястный канал: онемение большого/указательного/среднего пальцев, хуже ночью. Шина; врач если длится. Инъекции не выдумывать.",
+      "seeDoctorIf": [
+        "Стойкое ночное онемение",
+        "Слабость / падение предметов"
+      ],
+      "selfCare": [
+        "Ночная шина по совету; перерывы"
+      ],
+      "doNot": [
+        "Не изобретать инъекции стероидов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-carpal-tunnel",
+      "name": "NHS — Carpal tunnel syndrome",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/carpal-tunnel-syndrome/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

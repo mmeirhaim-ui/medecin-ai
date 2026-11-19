@@ -1,0 +1,127 @@
+{
+  "id": "allergy-hives-mild",
+  "category": "allergy",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "hives",
+      "urticaria",
+      "itchy welts",
+      "allergic rash mild",
+      "hay fever"
+    ],
+    "fr": [
+      "urticaire",
+      "plaques qui démangent",
+      "allergie cutanée légère",
+      "rhume des foins"
+    ],
+    "he": [
+      "סרפדת",
+      "אורטיקריה",
+      "פריחה אלרגית מגרדת",
+      "קדחת השחת"
+    ],
+    "ru": [
+      "крапивница",
+      "зудящие волдыри",
+      "лёгкая аллергическая сыпь",
+      "сенная лихорадка"
+    ]
+  },
+  "titles": {
+    "en": "Hives / mild allergic symptoms (non-anaphylaxis)",
+    "fr": "Urticaire / symptômes allergiques légers (hors anaphylaxie)",
+    "he": "סרפדת / אלרגיה קלה (לא אנפילקסיס)",
+    "ru": "Крапивница / лёгкая аллергия (не анафилаксия)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Itchy hives without breathing/swallowing trouble are often managed with clinician/pharmacist advice. Any sudden airway swelling, severe breathing difficulty, collapse → treat as anaphylaxis emergency (see anaphylaxis entry). Antihistamines are not first-line for severe anaphylaxis (HAS message).",
+      "emergencyIf": [
+        "Sudden lip/tongue/throat swelling, severe wheeze/gasping, collapse, confusion — anaphylaxis pathway"
+      ],
+      "seeDoctorIf": [
+        "Hives affecting daily life, widespread, persistent, or uncertain trigger",
+        "Recurrent urticaria"
+      ],
+      "selfCare": [
+        "Avoid known triggers when identified",
+        "Pharmacist advice on non-drowsy antihistamines when appropriate — follow label"
+      ],
+      "doNot": [
+        "Do not treat possible anaphylaxis with antihistamines alone",
+        "Do not invent epinephrine dosing"
+      ]
+    },
+    "fr": {
+      "summary": "Urticaire sans gêne respiratoire : souvent conseil pharmacien/médecin. Gonflement des voies aériennes / détresse = anaphylaxie. Les antihistaminiques ne sont pas le 1er traitement de l'anaphylaxie (HAS).",
+      "emergencyIf": [
+        "Gonflement lèvres/gorge, dyspnée sévère, malaise — voie anaphylaxie"
+      ],
+      "seeDoctorIf": [
+        "Urticaire invalidante, étendue, persistante"
+      ],
+      "selfCare": [
+        "Éviter déclencheurs connus ; conseil pharmacien"
+      ],
+      "doNot": [
+        "Pas d'antihistaminique seul en anaphylaxie"
+      ]
+    },
+    "he": {
+      "summary": "סרפדת ללא קושי נשימה — לרוב ייעוץ רוקח/רופא. נפיחות נתיב אוויר / מצוקה = אנפילקסיס. אנטי־היסטמינים אינם קו ראשון באנפילקסיס.",
+      "emergencyIf": [
+        "נפיחות שפתיים/גרון, מצוקה נשימתית, התמוטטות"
+      ],
+      "seeDoctorIf": [
+        "סרפדת מפריעה/נרחבת/מתמשכת"
+      ],
+      "selfCare": [
+        "הימנעות מטריגרים; ייעוץ רוקח"
+      ],
+      "doNot": [
+        "לא לטפל באנפילקסיס באנטי־היסטמין בלבד"
+      ]
+    },
+    "ru": {
+      "summary": "Крапивница без дыхательных проблем — обычно совет фармацевта/врача. Отёк дыхательных путей / тяжёлая одышка = анафилаксия. Антигистамины не первая линия при анафилаксии.",
+      "emergencyIf": [
+        "Отёк губ/горла, тяжёлая одышка, коллапс"
+      ],
+      "seeDoctorIf": [
+        "Крапивница мешает жизни, распространённая, стойкая"
+      ],
+      "selfCare": [
+        "Избегать известных триггеров; совет фармацевта"
+      ],
+      "doNot": [
+        "Не лечить анафилаксию только антигистаминными"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-itchy-skin",
+      "name": "NHS — Itchy skin",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/itchy-skin/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-anaphylaxis",
+      "name": "NHS — Anaphylaxis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "has-allergy-messages",
+      "name": "HAS — Allergologie & immunologie (5 messages)",
+      "org": "HAS",
+      "url": "https://www.has-sante.fr/jcms/pprd_2974199/fr/allergologie-immunologie-5-messages-pour-des-soins-pertinents",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

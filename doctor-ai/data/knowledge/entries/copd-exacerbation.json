@@ -1,0 +1,127 @@
+{
+  "id": "copd-exacerbation",
+  "category": "respiratory",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "COPD",
+      "chronic obstructive",
+      "COPD breathless",
+      "emphysema flare",
+      "chronic bronchitis flare"
+    ],
+    "fr": [
+      "BPCO",
+      "bronchopneumopathie chronique",
+      "BPCO essoufflement",
+      "exacerbation BPCO"
+    ],
+    "he": [
+      "COPD",
+      "מחלת ריאות חסימתית",
+      "החמרת COPD",
+      "קוצר נשימה COPD"
+    ],
+    "ru": [
+      "ХОБЛ",
+      "обострение ХОБЛ",
+      "эмфизема одышка",
+      "хронический бронхит обострение"
+    ]
+  },
+  "titles": {
+    "en": "COPD — worsening breathlessness",
+    "fr": "BPCO — essoufflement qui empire",
+    "he": "COPD — החמרת קוצר נשימה",
+    "ru": "ХОБЛ — усиление одышки"
+  },
+  "guidance": {
+    "en": {
+      "summary": "COPD causes persistent cough with phlegm and breathlessness. NHS: urgent advice if more short of breath than usual, coughing blood, one-leg pain/swelling, or palpitations; emergency if severe breathing difficulty, tight/heavy chest, pain spreading to arms/back/neck/jaw, blue/grey colour, or sudden confusion. Inhalers/steroids/antibiotics are clinician-prescribed only.",
+      "emergencyIf": [
+        "Severe difficulty breathing — gasping, choking, unable to speak",
+        "Chest tight or heavy",
+        "Pain spreading to arms, back, neck or jaw",
+        "Lips/skin pale, blue or grey",
+        "Sudden confusion"
+      ],
+      "seeDoctorIf": [
+        "More short of breath than usual",
+        "Coughing up blood",
+        "Pain or swelling in one leg",
+        "Heart palpitations"
+      ],
+      "doNot": [
+        "Do not invent inhaler, steroid, or antibiotic regimens",
+        "Do not delay if struggling to breathe"
+      ]
+    },
+    "fr": {
+      "summary": "La BPCO provoque toux chronique et dyspnée. Avis urgent si dyspnée accrue, hémoptysie, douleur/gonflement d'une jambe, palpitations ; urgence si détresse, oppression, douleur irradiée, cyanose, confusion.",
+      "emergencyIf": [
+        "Détresse respiratoire sévère",
+        "Oppression thoracique",
+        "Douleur vers bras/dos/cou/mâchoire",
+        "Lèvres/peau bleues ou grises",
+        "Confusion brutale"
+      ],
+      "seeDoctorIf": [
+        "Plus essoufflé que d'habitude",
+        "Crachats de sang",
+        "Jambe douloureuse/gonflée",
+        "Palpitations"
+      ],
+      "doNot": [
+        "Pas de schémas d'inhalateurs/corticoïdes/antibiotiques inventés"
+      ]
+    },
+    "he": {
+      "summary": "COPD גורמת לשיעול כרוני וקוצר נשימה. ייעוץ דחוף אם קוצר נשימה מוגבר, שיעול דם, כאב/נפיחות ברגל אחת, דפיקות לב; חירום אם מצוקה נשימתית, לחץ בחזה, כאב מקרין, כחלחלות, בלבול.",
+      "emergencyIf": [
+        "קושי נשימה חמור",
+        "לחץ בחזה",
+        "כאב לידיים/גב/צוואר/לסת",
+        "שפתיים/עור כחולים או אפורים",
+        "בלבול פתאומי"
+      ],
+      "seeDoctorIf": [
+        "יותר קוצר נשימה מהרגיל",
+        "שיעול דם",
+        "כאב/נפיחות ברגל אחת",
+        "דפיקות לב"
+      ],
+      "doNot": [
+        "אין מינון משאפים/סטרואידים/אנטיביוטיקה מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "ХОБЛ даёт хронический кашель с мокротой и одышку. Срочно при усилении одышки, кровохарканье, боли/отёке одной ноги, пальпитациях; неотложка при тяжёлой одышке, тяжести в груди, иррадиирующей боли, цианозе, спутанности.",
+      "emergencyIf": [
+        "Тяжёлая одышка",
+        "Тяжесть в груди",
+        "Боль в руки/спину/шею/челюсть",
+        "Синие/серые губы/кожа",
+        "Внезапная спутанность"
+      ],
+      "seeDoctorIf": [
+        "Одышка сильнее обычного",
+        "Кровь при кашле",
+        "Боль/отёк одной ноги",
+        "Сердцебиение"
+      ],
+      "doNot": [
+        "Не изобретать схемы ингаляторов/стероидов/антибиотиков"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-copd",
+      "name": "NHS — Chronic obstructive pulmonary disease (COPD)",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

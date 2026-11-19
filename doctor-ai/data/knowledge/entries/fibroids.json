@@ -1,0 +1,96 @@
+{
+  "id": "fibroids",
+  "category": "womens-health",
+  "urgencyDefault": "consultation",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "fibroids",
+      "uterine fibroids heavy periods"
+    ],
+    "fr": [
+      "fibromes utérins",
+      "fibromes règles abondantes"
+    ],
+    "he": [
+      "שרירנים ברחם",
+      "פיברואידים",
+      "דימום כבד שרירנים"
+    ],
+    "ru": [
+      "миома матки",
+      "фибромиома",
+      "обильные месячные миома"
+    ]
+  },
+  "titles": {
+    "en": "Uterine fibroids",
+    "fr": "Fibromes utérins",
+    "he": "שרירנים ברחם",
+    "ru": "Миома матки"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Fibroids are non-cancerous uterine growths that can cause heavy periods, pelvic pressure and anaemia. NHS: GP review; treatment depends on size/symptoms. Emergency: soaking pads hourly with dizziness, or sudden severe pelvic pain. Never invent hormone or surgical plans.",
+      "emergencyIf": [
+        "Soaking through pads hourly with dizziness/fainting",
+        "Sudden severe pelvic pain"
+      ],
+      "seeDoctorIf": [
+        "Heavy periods lasting many days",
+        "Pelvic pressure or frequent urination with periods"
+      ],
+      "doNot": [
+        "Do not invent hormone or iron doses without clinician advice"
+      ]
+    },
+    "fr": {
+      "summary": "Fibromes: règles abondantes, pression pelvienne. Urgences si hémorragie avec malaise. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Serviettes saturées chaque heure avec malaise",
+        "Douleur pelvienne brutale"
+      ],
+      "seeDoctorIf": [
+        "Règles très abondantes"
+      ],
+      "doNot": [
+        "Pas de posologies inventées"
+      ]
+    },
+    "he": {
+      "summary": "שרירנים: דימום כבד, לחץ באגן. חירום בדימום עם סחרחורת. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "החלפת תחבושות כל שעה עם סחרחורת",
+        "כאב אגן פתאומי"
+      ],
+      "seeDoctorIf": [
+        "וסת כבדה מאוד"
+      ],
+      "doNot": [
+        "אין מינונים מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Миома: обильные месячные, давление в тазу. Неотложка при кровотечении с обмороком. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Прокладки каждый час с головокружением",
+        "Внезапная тазовая боль"
+      ],
+      "seeDoctorIf": [
+        "Очень обильные месячные"
+      ],
+      "doNot": [
+        "Не изобретать дозы"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-fibroids",
+      "name": "NHS — Fibroids",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/fibroids/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

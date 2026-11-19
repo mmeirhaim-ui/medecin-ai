@@ -1,0 +1,146 @@
+{
+  "id": "gi-stomach-vomiting",
+  "category": "gi",
+  "urgencyDefault": "auto_soins",
+  "priority": 5,
+  "keywords": {
+    "en": ["stomach ache", "vomiting", "diarrhoea", "diarrhea", "gastro", "nausea", "dehydration", "food poisoning"],
+    "fr": ["mal au ventre", "douleur abdominale", "vomissements", "diarrhée", "gastro", "nausées", "déshydratation", "intoxication alimentaire"],
+    "he": ["כאב בטן", "הקאות", "שלשול", "גסטרו", "בחילה", "התייבשות", "הרעלת מזון"],
+    "ru": ["боль в животе", "рвота", "диарея", "понос", "гастроэнтерит", "тошнота", "обезвоживание", "пищевое отравление"]
+  },
+  "titles": {
+    "en": "Stomach ache / diarrhoea / vomiting",
+    "fr": "Douleur abdominale / diarrhée / vomissements",
+    "he": "כאב בטן / שלשול / הקאות",
+    "ru": "Боль в животе / диарея / рвота"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Most diarrhoea/vomiting episodes are short-lived; the priority is preventing dehydration with small frequent sips of fluid. Bloody vomit, green vomit, severe sudden pain, or shock-like signs need emergency care. Not a diagnosis.",
+      "selfCare": [
+        "Rest; drink lots of fluids (water/squash); small sips if nauseated",
+        "Continue breast/bottle feeding babies; small extra water sips if on formula/solids as appropriate",
+        "Eat when able; avoid fatty/spicy foods if they worsen symptoms",
+        "Pharmacist may advise oral rehydration solutions; avoid alcohol/caffeine which can worsen dehydration"
+      ],
+      "seeDoctorIf": [
+        "Worried about a baby under 12 months; child stops feeding; under-5 dehydration signs",
+        "Cannot keep fluids down; dehydration persists after oral rehydration",
+        "Bloody diarrhoea or bleeding from the bottom",
+        "Diarrhoea >7 days or vomiting >2 days",
+        "Stomach pain that suddenly gets worse, pregnancy, blood in stool, unusual vaginal bleeding, diarrhoea/vomiting lasting days"
+      ],
+      "emergencyIf": [
+        "Vomit blood or coffee-ground vomit; green vomit (adults) / yellow-green or green (children)",
+        "Possible poisoning",
+        "Stiff neck + light pain; sudden severe headache",
+        "Sudden severe tummy pain",
+        "Blue/grey/pale/blotchy skin; severe breathing difficulty; confused or not responding",
+        "Dehydration with cold skin, confusion, difficulty breathing (possible shock)"
+      ],
+      "doNot": [
+        "Do not give antidiarrhoeal medicines to young children without professional advice (e.g. loperamide unsuitable under 12 per NHS framing)",
+        "Do not invent prescription regimens"
+      ]
+    },
+    "fr": {
+      "summary": "La plupart des gastro-entérites sont brèves ; l’enjeu est d’éviter la déshydratation (petites gorgées fréquentes). Vomissements sanglants/verts, douleur brutale sévère ou signes de choc = urgence. Pas un diagnostic.",
+      "selfCare": [
+        "Repos ; boire beaucoup ; petites gorgées si nausée",
+        "Poursuivre allaitement/biberon ; solutions de réhydratation orale via pharmacien si besoin",
+        "Éviter alcool et caféine"
+      ],
+      "seeDoctorIf": [
+        "Nourrisson < 12 mois inquiétant ; arrêt des prises ; signes de déshydratation < 5 ans",
+        "Impossible de garder les liquides ; diarrhée sanglante",
+        "Diarrhée > 7 jours ou vomissements > 2 jours",
+        "Douleur qui s’aggrave soudainement ; grossesse ; sang dans les selles"
+      ],
+      "emergencyIf": [
+        "Vomissements de sang / aspect marc de café ; vomissements verts",
+        "Suspicion d’intoxication",
+        "Raideur de nuque / céphalée brutale",
+        "Douleur abdominale brutale sévère",
+        "Peau marbrée/bleue ; détresse respiratoire ; confusion"
+      ],
+      "doNot": [
+        "Pas d’antidiarrhéiques chez le jeune enfant sans avis",
+        "Pas d’ordonnance ici"
+      ]
+    },
+    "he": {
+      "summary": "רוב מקרי השלשול/ההקאות קצרים; העיקר למנוע התייבשות בלגימות תכופות. הקאה דמית/ירוקה, כאב בטן פתאומי חזק או סימני הלם — חירום. לא אבחנה.",
+      "selfCare": [
+        "מנוחה ושתייה מרובה בלגימות קטנות",
+        "המשך הנקה/בקבוק; תמיסות להחזרת נוזלים לפי ייעוץ",
+        "להימנע מאלכוהול וקפאין"
+      ],
+      "seeDoctorIf": [
+        "תינוק מתחת לגיל שנה מדאיג; הפסקת אכילה; סימני התייבשות בילדים קטנים",
+        "לא מצליחים להחזיק נוזלים; שלשול דמי",
+        "שלשול מעל 7 ימים או הקאות מעל יומיים",
+        "כאב שמחמיר בפתאומיות; הריון; דם בצואה"
+      ],
+      "emergencyIf": [
+        "הקאת דם או הקאה ירוקה",
+        "חשד להרעלה",
+        "נוקשות עורף / כאב ראש פתאומי חזק",
+        "כאב בטן פתאומי חמור",
+        "עור חיוור/כחלחל; מצוקה נשימתית; בלבול"
+      ],
+      "doNot": [
+        "לא לתת תרופות נגד שלשול לילדים קטנים ללא ייעוץ",
+        "אין מרשם כאן"
+      ]
+    },
+    "ru": {
+      "summary": "Большинство эпизодов диареи/рвоты короткоживущие; главное — не допустить обезвоживания небольшими частыми глотками. Кровавая/зелёная рвота, внезапная сильная боль или признаки шока — неотложная помощь. Не диагноз.",
+      "selfCare": [
+        "Покой; много жидкости маленькими глотками",
+        "Продолжать грудное/бутылочное кормление; растворы для регидратации по совету фармацевта",
+        "Избегать алкоголя и кофеина"
+      ],
+      "seeDoctorIf": [
+        "Беспокойство за младенца <12 месяцев; отказ от кормления; признаки обезвоживания у детей <5 лет",
+        "Не удерживается жидкость; кровавая диарея",
+        "Диарея >7 дней или рвота >2 дней",
+        "Боль внезапно усиливается; беременность; кровь в стуле"
+      ],
+      "emergencyIf": [
+        "Рвота кровью или «кофейной гущей»; зелёная рвота",
+        "Возможное отравление",
+        "Ригидность затылка / внезапная сильная головная боль",
+        "Внезапная сильная боль в животе",
+        "Синюшная/пятнистая кожа; тяжёлая одышка; спутанность"
+      ],
+      "doNot": [
+        "Не давайте противодиарейные средства маленьким детям без совета специалиста",
+        "Здесь нет рецептов"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-diarrhoea-vomiting",
+      "name": "NHS — Diarrhoea and vomiting",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/diarrhoea-and-vomiting/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-dehydration",
+      "name": "NHS — Dehydration",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/dehydration/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-stomach-ache",
+      "name": "NHS — Stomach ache",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/symptoms/stomach-ache/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

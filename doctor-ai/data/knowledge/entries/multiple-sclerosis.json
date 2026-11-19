@@ -1,0 +1,105 @@
+{
+  "id": "multiple-sclerosis",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "multiple sclerosis",
+      "MS relapse numbness vision",
+      "optic neuritis MS"
+    ],
+    "fr": [
+      "sclérose en plaques",
+      "poussée SEP engourdissement vision",
+      "névrite optique"
+    ],
+    "he": [
+      "טרשת נפוצה",
+      "התקף MS נימול ראייה",
+      "דלקת עצב הראייה"
+    ],
+    "ru": [
+      "рассеянный склероз",
+      "обострение РС онемение зрение",
+      "неврит зрительного нерва"
+    ]
+  },
+  "titles": {
+    "en": "Multiple sclerosis (orientation)",
+    "fr": "Sclérose en plaques (orientation)",
+    "he": "טרשת נפוצה (הכוונה)",
+    "ru": "Рассеянный склероз (ориентация)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "MS can cause episodic neurological symptoms (numbness, weakness, vision changes, balance problems). NHS: neurology pathways. New/worsening symptoms need prompt clinical contact; sudden severe deficits use stroke/emergency pathways when appropriate. DMTs/steroids for relapses are specialist-prescribed only.",
+      "emergencyIf": [
+        "Sudden face/arm/speech stroke signs",
+        "Sudden severe vision loss",
+        "Inability to walk suddenly with other red flags"
+      ],
+      "seeDoctorIf": [
+        "New neurological symptoms lasting days",
+        "Known MS relapse symptoms"
+      ],
+      "doNot": [
+        "Do not invent MS drug or relapse steroid regimens"
+      ]
+    },
+    "fr": {
+      "summary": "La SEP provoque des symptômes neurologiques épisodiques. Neurologue. Urgence si signes d'AVC/perte visuelle brutale. Pas de traitements inventés.",
+      "emergencyIf": [
+        "Signes d'AVC",
+        "Perte visuelle brutale",
+        "Impotence motrice brutale avec alarmes"
+      ],
+      "seeDoctorIf": [
+        "Nouveaux symptômes neurologiques",
+        "Poussée connue"
+      ],
+      "doNot": [
+        "Pas de schémas de poussée inventés"
+      ]
+    },
+    "he": {
+      "summary": "טרשת נפוצה: תסמינים נוירולוגיים התקפיים. נוירולוג. חירום בדגלי שבץ/אובדן ראייה פתאומי. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "דגלי שבץ",
+        "אובדן ראייה פתאומי",
+        "אי יכולת ללכת פתאומית עם אזעקות"
+      ],
+      "seeDoctorIf": [
+        "תסמינים נוירולוגיים חדשים",
+        "התקף ידוע"
+      ],
+      "doNot": [
+        "אין מינון להתקף מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "РС даёт эпизодические неврологические симптомы. Невролог. Неотложка при признаках инсульта/внезапной потере зрения. Схемы не выдумывать.",
+      "emergencyIf": [
+        "Признаки инсульта",
+        "Внезапная потеря зрения",
+        "Внезапная невозможность ходить с красными флагами"
+      ],
+      "seeDoctorIf": [
+        "Новые неврологические симптомы",
+        "Известное обострение"
+      ],
+      "doNot": [
+        "Не изобретать схемы при обострении"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-multiple-sclerosis",
+      "name": "NHS — Multiple sclerosis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

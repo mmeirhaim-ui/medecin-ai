@@ -1,0 +1,103 @@
+{
+  "id": "scabies",
+  "category": "derm",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "scabies",
+      "intense itch at night mites",
+      "itchy burrows fingers"
+    ],
+    "fr": [
+      "gale",
+      "démangeaisons nocturnes intensives",
+      "sillons entre les doigts"
+    ],
+    "he": [
+      "גרדת",
+      "גרד חזק בלילה",
+      "מחילות בין האצבעות"
+    ],
+    "ru": [
+      "чесотка",
+      "сильный зуд ночью",
+      "ходы между пальцами"
+    ]
+  },
+  "titles": {
+    "en": "Scabies",
+    "fr": "Gale",
+    "he": "גרדת (סקביאס)",
+    "ru": "Чесотка"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Scabies causes intense itching (often worse at night) and a raised rash. NHS: pharmacist treatment for most; whole household treated at the same time; repeat after 7 days. Children under 2 and pregnancy/breastfeeding need tailored advice. Crusted scabies (flaky crusts in immunocompromised) needs clinical care. No inventing permethrin regimens beyond pharmacist/GP guidance.",
+      "seeDoctorIf": [
+        "Child under 2 with suspected scabies",
+        "Pregnant or breastfeeding",
+        "Crusted/flaky rash or immunocompromised",
+        "Not improving after pharmacy treatment"
+      ],
+      "selfCare": [
+        "Treat all household members together when advised; wash bedding/clothes as instructed by pharmacist"
+      ],
+      "doNot": [
+        "Do not invent scabicide doses for infants",
+        "Do not treat only the itchy person if household treatment is advised"
+      ]
+    },
+    "fr": {
+      "summary": "La gale démange fort (souvent la nuit). Traitement pharmacien ; tout le foyer en même temps ; rappel à J7. <2 ans / grossesse = avis adapté. Pas de posologies inventées.",
+      "seeDoctorIf": [
+        "Enfant < 2 ans",
+        "Grossesse / allaitement",
+        "Gale croûteuse / immunodépression"
+      ],
+      "selfCare": [
+        "Traiter le foyer ensemble selon conseil"
+      ],
+      "doNot": [
+        "Pas de doses inventées pour nourrissons"
+      ]
+    },
+    "he": {
+      "summary": "גרדת גורמת לגרד חזק (לרוב בלילה). טיפול ברוקח; כל הבית יחד; חזרה אחרי 7 ימים. מתחת לגיל 2/הריון — ייעוץ מותאם. אין מינון מומצא.",
+      "seeDoctorIf": [
+        "ילד מתחת לגיל 2",
+        "הריון / הנקה",
+        "גרדת קרוסטית / דיכוי חיסוני"
+      ],
+      "selfCare": [
+        "לטפל בכל בני הבית יחד לפי ייעוץ"
+      ],
+      "doNot": [
+        "אין מינון לתינוקות מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "Чесотка даёт сильный зуд (часто ночью). Лечение у фармацевта; весь дом одновременно; повтор через 7 дней. <2 лет/беременность — особый совет. Дозы не выдумывать.",
+      "seeDoctorIf": [
+        "Ребёнок <2 лет",
+        "Беременность / кормление",
+        "Корковая чесотка / иммунодефицит"
+      ],
+      "selfCare": [
+        "Лечить всех в доме вместе по совету"
+      ],
+      "doNot": [
+        "Не изобретать дозы для младенцев"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-scabies",
+      "name": "NHS — Scabies",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/scabies/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "osteoarthritis",
+  "category": "msk",
+  "urgencyDefault": "consultation",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "osteoarthritis",
+      "OA joint wear pain",
+      "wear and tear arthritis"
+    ],
+    "fr": [
+      "arthrose",
+      "usure articulaire arthrose",
+      "douleur articulaire arthrose"
+    ],
+    "he": [
+      "אוסטיאוארתריטיס",
+      "שחיקת מפרקים",
+      "דלקת מפרקים ניוונית"
+    ],
+    "ru": [
+      "остеоартрит",
+      "артроз износ суставов",
+      "боль в суставе артроз"
+    ]
+  },
+  "titles": {
+    "en": "Osteoarthritis",
+    "fr": "Arthrose",
+    "he": "אוסטיאוארתריטיס",
+    "ru": "Остеоартрит / артроз"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Osteoarthritis causes joint pain and stiffness from cartilage wear. NHS: activity, weight management, physiotherapy, and clinician-advised pain relief — never invent opioid or injection doses. Emergency: hot swollen joint with fever (possible septic arthritis), or sudden inability to bear weight after trauma.",
+      "emergencyIf": [
+        "Hot swollen joint with fever",
+        "Sudden inability to walk after injury",
+        "Joint redness with severe systemic illness"
+      ],
+      "seeDoctorIf": [
+        "Persistent joint pain limiting activity",
+        "Night pain or progressive deformity"
+      ],
+      "doNot": [
+        "Do not invent opioid or steroid-injection regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Arthrose: douleur/raideur. Urgences si articulation chaude fébrile (arthrite septique) ou impotence brutale. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Articulation chaude avec fièvre",
+        "Impotence brutale après traumatisme"
+      ],
+      "seeDoctorIf": [
+        "Douleur articulaire persistante"
+      ],
+      "doNot": [
+        "Pas d'opioïdes/injections inventés"
+      ]
+    },
+    "he": {
+      "summary": "אוסטיאוארתריטיס: כאב/נוקשות. חירום במפרק חם עם חום או אי יכולת לדרוך אחרי חבלה. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "מפרק חם עם חום",
+        "אי יכולת לדרוך אחרי חבלה"
+      ],
+      "seeDoctorIf": [
+        "כאב מפרקים מתמשך"
+      ],
+      "doNot": [
+        "אין אופיאטים/הזרקות מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Артроз: боль/скованность. Неотложка при горячем суставе с лихорадкой или внезапной невозможности наступать. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Горячий сустав с лихорадкой",
+        "Внезапная невозможность ходить после травмы"
+      ],
+      "seeDoctorIf": [
+        "Стойкая боль в суставе"
+      ],
+      "doNot": [
+        "Не изобретать опиоиды/инъекции"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-osteoarthritis",
+      "name": "NHS — Osteoarthritis",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

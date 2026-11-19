@@ -1,0 +1,119 @@
+{
+  "id": "red-flags-stroke",
+  "category": "neuro",
+  "urgencyDefault": "urgent",
+  "priority": 10,
+  "keywords": {
+    "en": ["stroke", "face droop", "arm weakness", "slurred speech", "FAST", "sudden numbness one side", "sudden vision loss", "sudden severe headache"],
+    "fr": ["AVC", "AIT", "paralysie visage", "faiblesse bras", "trouble parole", "FAST", "engourdissement soudain", "perte vision soudaine", "céphalée brutale"],
+    "he": ["שבץ", "אירוע מוחי", "צניחת פנים", "חולשת זרוע", "דיבור משובש", "FAST", "נימול פתאומי", "אובדן ראייה פתאומי"],
+    "ru": ["инсульт", "перекос лица", "слабость руки", "смазанная речь", "FAST", "внезапное онемение", "внезапная потеря зрения", "внезапная сильная головная боль"]
+  },
+  "titles": {
+    "en": "Stroke / TIA warning signs (FAST)",
+    "fr": "Signes d’alerte AVC / AIT (FAST)",
+    "he": "סימני אזהרה לשבץ / TIA (FAST)",
+    "ru": "Признаки инсульта / ТИА (FAST)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Stroke symptoms often start suddenly: face drooping, arm weakness, speech difficulty (FAST), one-sided numbness, vision loss, severe headache, or balance problems. Even if symptoms stop quickly (possible TIA), emergency care is still needed. Not a diagnosis.",
+      "emergencyIf": [
+        "Face drooping on one side when smiling",
+        "Arm weakness — one arm drifts down when both are raised",
+        "Speech slurred or strange; sudden trouble speaking or understanding",
+        "Sudden numbness/weakness of face, arm or leg (especially one side)",
+        "Sudden trouble seeing in one or both eyes",
+        "Sudden severe headache with no known cause",
+        "Sudden dizziness, loss of balance or coordination",
+        "Any stroke-like signs in the last 24 hours even if they have stopped"
+      ],
+      "doNot": [
+        "Do not wait to see if symptoms improve",
+        "Do not drive yourself to hospital if possible — call emergency services",
+        "Do not invent a diagnosis; seek urgent clinical assessment"
+      ]
+    },
+    "fr": {
+      "summary": "Les signes d’AVC apparaissent souvent brutalement : visage asymétrique, faiblesse d’un bras, trouble de la parole (FAST), engourdissement unilatéral, perte de vision, céphalée très brutale, trouble de l’équilibre. Même si les signes disparaissent (AIT possible), appelez le 15. Pas un diagnostic.",
+      "emergencyIf": [
+        "Paralysie ou faiblesse d’un côté du visage (coin de bouche qui tombe)",
+        "Faiblesse d’un bras ou d’une jambe / hémiplégie",
+        "Difficulté à parler ou à trouver les mots",
+        "Perte de sensation d’un côté",
+        "Perte de la vue d’un œil",
+        "Mal de tête très fort et brutal",
+        "Trouble de l’équilibre ou de la marche",
+        "Signes transitoires — appeler quand même le 15"
+      ],
+      "doNot": [
+        "N’attendez pas que ça passe",
+        "Ne conduisez pas vous-même si possible — 15 / 112",
+        "Pas de diagnostic définitif ici"
+      ]
+    },
+    "he": {
+      "summary": "סימני שבץ מופיעים לרוב בפתאומיות: צניחת פנים, חולשת זרוע, קושי בדיבור (FAST), נימול חד־צדדי, הפרעת ראייה, כאב ראש חזק פתאומי או הפרעת שיווי משקל. גם אם הסימנים חולפים — פנו בדחיפות. לא אבחנה.",
+      "emergencyIf": [
+        "צניחת צד אחד של הפנים",
+        "חולשת זרוע או רגל בצד אחד",
+        "דיבור משובש או קושי להבין/למצוא מילים",
+        "הפרעת ראייה פתאומית",
+        "כאב ראש חד וחזק ללא סיבה ידועה",
+        "סימנים שחלפו — עדיין דורשים הערכה דחופה"
+      ],
+      "doNot": [
+        "אל תמתינו לראות אם יעבור",
+        "התקשרו ל־101 / פנו לחדר מיון",
+        "אין כאן אבחנה"
+      ]
+    },
+    "ru": {
+      "summary": "Симптомы инсульта часто возникают внезапно: перекос лица, слабость руки, нарушение речи (FAST), одностороннее онемение, потеря зрения, внезапная сильная головная боль, нарушение равновесия. Даже если симптомы прошли (возможна ТИА) — нужна неотложная помощь. Не диагноз.",
+      "emergencyIf": [
+        "Опущение одной стороны лица",
+        "Слабость руки — одна рука опускается",
+        "Смазанная или странная речь; внезапные трудности говорить/понимать",
+        "Внезапное онемение/слабость лица, руки или ноги (особенно с одной стороны)",
+        "Внезапные проблемы со зрением",
+        "Внезапная сильная головная боль без известной причины",
+        "Признаки за последние 24 часа, даже если прошли"
+      ],
+      "doNot": [
+        "Не ждите улучшения",
+        "По возможности не ездите сами — вызывайте скорую",
+        "Это не диагноз"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "medlineplus-stroke",
+      "name": "MedlinePlus — Stroke",
+      "org": "MedlinePlus / NLM / NIH",
+      "url": "https://medlineplus.gov/stroke.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-stroke",
+      "name": "NHS — Stroke symptoms",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "has-avc-alert",
+      "name": "HAS — AVC signes d’alerte",
+      "org": "Haute Autorité de Santé",
+      "url": "https://www.has-sante.fr/jcms/p_3701212/fr/accident-vasculaire-cerebral-des-signes-d-alerte-a-votre-retour-a-domicile",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "il-moh-stroke",
+      "name": "Israeli MoH — Stroke",
+      "org": "Israel Ministry of Health",
+      "url": "https://me.health.gov.il/en/older-adult/keep-me-healthy/common-conditions/stroke/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

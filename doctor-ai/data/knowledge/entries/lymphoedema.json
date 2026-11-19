@@ -1,0 +1,99 @@
+{
+  "id": "lymphoedema",
+  "category": "vascular",
+  "urgencyDefault": "consultation",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "lymphoedema",
+      "lymphedema swollen arm leg",
+      "chronic lymph swelling"
+    ],
+    "fr": [
+      "lymphœdème",
+      "bras jambe enflé lymphœdème",
+      "gonflement lymphatique"
+    ],
+    "he": [
+      "לימפאדמה",
+      "נפיחות לימפה ביד רגל",
+      "בצקת לימפטית"
+    ],
+    "ru": [
+      "лимфедема",
+      "отёк руки ноги лимфа",
+      "лимфатический отёк"
+    ]
+  },
+  "titles": {
+    "en": "Lymphoedema",
+    "fr": "Lymphœdème",
+    "he": "לימפאדמה",
+    "ru": "Лимфедема"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Lymphoedema is long-term swelling from lymph drainage problems. NHS: specialist pathways, skin care, compression as advised — never invent garment prescriptions. Emergency: sudden painful red hot swelling with fever (possible cellulitis), or acute unilateral leg swelling with breathlessness (consider clot — see clot-dvt-pe).",
+      "emergencyIf": [
+        "Sudden red hot painful swelling with fever",
+        "Acute one-sided leg swelling with chest pain/breathlessness"
+      ],
+      "seeDoctorIf": [
+        "Persistent limb swelling",
+        "Skin thickening or recurrent infections"
+      ],
+      "doNot": [
+        "Do not invent compression class or diuretic doses",
+        "Do not ignore cellulitis signs"
+      ]
+    },
+    "fr": {
+      "summary": "Lymphœdème: gonflement chronique. Urgences si cellulite fébrile ou suspicion de thrombose. Pas de posologies inventées.",
+      "emergencyIf": [
+        "Gonflement rouge chaud douloureux avec fièvre",
+        "Œdème unilatéral aigu avec dyspnée"
+      ],
+      "seeDoctorIf": [
+        "Gonflement persistant"
+      ],
+      "doNot": [
+        "Pas de classes de compression inventées"
+      ]
+    },
+    "he": {
+      "summary": "לימפאדמה: נפיחות כרונית. חירום בתאית עם חום או חשד לקריש. אין מינונים מומצאים.",
+      "emergencyIf": [
+        "נפיחות אדומה חמה כואבת עם חום",
+        "בצקת חד-צדדית חדה עם קוצר נשימה"
+      ],
+      "seeDoctorIf": [
+        "נפיחות מתמשכת"
+      ],
+      "doNot": [
+        "אין דרגות לחץ מומצאות"
+      ]
+    },
+    "ru": {
+      "summary": "Лимфедема: хронический отёк. Неотложка при целлюлите с лихорадкой или подозрении на тромб. Дозы не выдумывать.",
+      "emergencyIf": [
+        "Красный горячий болезненный отёк с лихорадкой",
+        "Острый односторонний отёк с одышкой"
+      ],
+      "seeDoctorIf": [
+        "Стойкий отёк"
+      ],
+      "doNot": [
+        "Не изобретать класс компрессии"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-lymphoedema",
+      "name": "NHS — Lymphoedema",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/lymphoedema/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

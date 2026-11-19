@@ -1,0 +1,102 @@
+{
+  "id": "addisons-disease",
+  "category": "endocrine",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "Addison's",
+      "Addisons disease",
+      "adrenal insufficiency crisis",
+      "steroid dependent adrenal"
+    ],
+    "fr": [
+      "Addison",
+      "insuffisance surrénale",
+      "crise surrénalienne"
+    ],
+    "he": [
+      "אדיסון",
+      "אי ספיקת אדרנל",
+      "משבר אדרנלי"
+    ],
+    "ru": [
+      "болезнь Аддисона",
+      "надпочечниковая недостаточность",
+      "адреналовый криз"
+    ]
+  },
+  "titles": {
+    "en": "Addison's / adrenal insufficiency cues",
+    "fr": "Addison / insuffisance surrénale",
+    "he": "אדיסון / אי־ספיקת אדרנל",
+    "ru": "Аддисон / недостаточность надпочечников"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Addison's disease is adrenal hormone deficiency. Crisis (severe vomiting, dehydration, shock, collapse) is an emergency — people on replacement steroids often have a sick-day / injection plan from their team. This pack never invents hydrocortisone doses; follow the person's prescribed emergency plan and call services.",
+      "emergencyIf": [
+        "Known Addison's with vomiting, severe weakness, collapse, confusion — emergency + follow prescribed crisis plan",
+        "Suspected adrenal crisis: severe dehydration, low blood pressure symptoms, collapse"
+      ],
+      "seeDoctorIf": [
+        "Unexplained fatigue, weight loss, dizziness, salt craving, darkening skin — GP assessment"
+      ],
+      "doNot": [
+        "Do not invent steroid replacement doses",
+        "Do not stop prescribed steroids abruptly"
+      ]
+    },
+    "fr": {
+      "summary": "L'insuffisance surrénale peut mener à une crise = urgence. Suivre le plan prescrit ; pas de doses inventées.",
+      "emergencyIf": [
+        "Addison connu + vomissements/collapsus — urgence + plan de crise",
+        "Suspicion de crise surrénalienne"
+      ],
+      "seeDoctorIf": [
+        "Fatigue, amaigrissement, vertiges, envie de sel, pigmentation"
+      ],
+      "doNot": [
+        "Pas de doses d'hydrocortisone inventées",
+        "Ne pas arrêter les corticoïdes brusquement"
+      ]
+    },
+    "he": {
+      "summary": "אי־ספיקת אדרנל עלולה לגרום למשבר — חירום. לפי תוכנית אישית שנרשמה; אין מינונים מומצאים.",
+      "emergencyIf": [
+        "אדיסון ידוע + הקאות/התמוטטות — חירום + תוכנית משבר",
+        "חשד למשבר אדרנלי"
+      ],
+      "seeDoctorIf": [
+        "עייפות, ירידה במשקל, סחרחורת, תשוקה למלח, פיגמנטציה"
+      ],
+      "doNot": [
+        "אין מינון הידרוקורטיזון מומצא",
+        "לא להפסיק סטרואידים בבת אחת"
+      ]
+    },
+    "ru": {
+      "summary": "Недостаточность надпочечников может дать криз — неотложка. Следовать личному плану; дозы не выдумывать.",
+      "emergencyIf": [
+        "Известный Аддисон + рвота/коллапс — неотложка + кризисный план",
+        "Подозрение на адреналовый криз"
+      ],
+      "seeDoctorIf": [
+        "Усталость, похудение, головокружение, тяга к соли, пигментация"
+      ],
+      "doNot": [
+        "Не изобретать дозы гидрокортизона",
+        "Не резко отменять стероиды"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-addisons",
+      "name": "NHS — Addison's disease",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/addisons-disease/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

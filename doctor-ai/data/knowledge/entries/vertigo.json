@@ -1,0 +1,113 @@
+{
+  "id": "vertigo",
+  "category": "neuro",
+  "urgencyDefault": "voir_medecin",
+  "priority": 4,
+  "keywords": {
+    "en": [
+      "vertigo",
+      "room spinning",
+      "spinning dizziness",
+      "BPPV"
+    ],
+    "fr": [
+      "vertige",
+      "pièce qui tourne",
+      "vertige rotatoire",
+      "VPPB"
+    ],
+    "he": [
+      "ורטיגו",
+      "החדר מסתובב",
+      "סחרחורת סיבובית"
+    ],
+    "ru": [
+      "вертиго",
+      "комната кружится",
+      "вращательное головокружение"
+    ]
+  },
+  "titles": {
+    "en": "Vertigo (spinning dizziness)",
+    "fr": "Vertige (impression que tout tourne)",
+    "he": "ורטיגו (סחרחורת סיבובית)",
+    "ru": "Вертиго (вращательное головокружение)"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Vertigo is a spinning sensation. Many causes are inner-ear related; sudden vertigo with stroke red flags needs emergency care. NHS: GP if persistent or recurrent. Do not drive while symptomatic.",
+      "emergencyIf": [
+        "Sudden vertigo with face droop, arm weakness, speech trouble, severe headache, double vision, or new weakness"
+      ],
+      "seeDoctorIf": [
+        "Vertigo lasting days or recurring",
+        "Hearing loss, tinnitus, or ear discharge with vertigo",
+        "Falls due to spinning"
+      ],
+      "selfCare": [
+        "Sit or lie still during attacks; move slowly; hydration"
+      ],
+      "doNot": [
+        "Do not drive or operate machinery while spinning",
+        "Do not invent vestibular suppressant regimens"
+      ]
+    },
+    "fr": {
+      "summary": "Le vertige donne l'impression que tout tourne. Avec signes d'AVC = urgence. Médecin si persistant. Ne pas conduire pendant les symptômes.",
+      "emergencyIf": [
+        "Vertige brutal avec signes d'AVC (face, bras, parole, céphalée sévère, diplopie)"
+      ],
+      "seeDoctorIf": [
+        "Vertige persistant ou récidivant",
+        "Surdité/acouphènes/otorrhée associés"
+      ],
+      "selfCare": [
+        "S'asseoir/s'allonger ; mouvements lents"
+      ],
+      "doNot": [
+        "Ne pas conduire pendant les symptômes"
+      ]
+    },
+    "he": {
+      "summary": "ורטיגו הוא תחושת סיבוב. עם דגלי שבץ — חירום. רופא אם נמשך/חוזר. לא לנהוג בזמן תסמינים.",
+      "emergencyIf": [
+        "ורטיגו פתאומי עם דגלי שבץ"
+      ],
+      "seeDoctorIf": [
+        "ורטיגו ממושך או חוזר",
+        "ירידת שמיעה/טיניטוס/הפרשות"
+      ],
+      "selfCare": [
+        "לשבת/לשכב; תנועות איטיות"
+      ],
+      "doNot": [
+        "לא לנהוג בזמן סחרחורת"
+      ]
+    },
+    "ru": {
+      "summary": "Вертиго — ощущение вращения. Со красными флагами инсульта — неотложка. К врачу если длится/повторяется. Не водить при симптомах.",
+      "emergencyIf": [
+        "Внезапное вертиго с признаками инсульта"
+      ],
+      "seeDoctorIf": [
+        "Длительное или повторяющееся вертиго",
+        "Снижение слуха/тиннитус/отделяемое"
+      ],
+      "selfCare": [
+        "Сесть/лечь; медленные движения"
+      ],
+      "doNot": [
+        "Не водить при симптомах"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-vertigo",
+      "name": "NHS — Vertigo",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/vertigo/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

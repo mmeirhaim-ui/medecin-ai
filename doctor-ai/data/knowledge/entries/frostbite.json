@@ -1,0 +1,117 @@
+{
+  "id": "frostbite",
+  "category": "trauma",
+  "urgencyDefault": "urgent",
+  "priority": 7,
+  "keywords": {
+    "en": [
+      "frostbite",
+      "frozen fingers white hard",
+      "frost bitten toes"
+    ],
+    "fr": [
+      "engelure grave",
+      "frostbite",
+      "doigts gelés blancs durs"
+    ],
+    "he": [
+      "כוויית קור",
+      "אצבעות קפואות לבנות קשות"
+    ],
+    "ru": [
+      "отморожение",
+      "замёрзшие белые твёрдые пальцы"
+    ]
+  },
+  "titles": {
+    "en": "Frostbite",
+    "fr": "Gelure (frostbite)",
+    "he": "כוויית קור (פרוסטבייט)",
+    "ru": "Отморожение"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Frostbite injures skin/tissues from freezing cold. NHS: get out of the cold; warm gradually with body heat/warm (not hot) water if advised; do not rub with snow or use direct heat; seek medical care for white/hard/numb areas, blisters, or severe pain on rewarming. Emergency for extensive injury or hypothermia signs.",
+      "emergencyIf": [
+        "Extensive frostbite",
+        "Signs of hypothermia (confusion, severe shivering then stopping, drowsiness)",
+        "Blackened tissue or loss of sensation over large area"
+      ],
+      "seeDoctorIf": [
+        "White, hard, numb skin after cold exposure",
+        "Blisters after rewarming"
+      ],
+      "selfCare": [
+        "Move to warmth; remove wet clothes; warm gradually; protect from refreezing"
+      ],
+      "doNot": [
+        "Do not rub with snow",
+        "Do not use direct fire/heaters on the area",
+        "Do not walk on frostbitten feet if avoidable"
+      ]
+    },
+    "fr": {
+      "summary": "La gelure : sortir du froid ; réchauffer progressivement ; ne pas frotter avec de la neige ni chaleur directe. Soins médicaux si zones blanches/dures. Urgence si étendu/hypothermie.",
+      "emergencyIf": [
+        "Gelure étendue",
+        "Signes d'hypothermie"
+      ],
+      "seeDoctorIf": [
+        "Peau blanche/dure/insensible",
+        "Cloques au réchauffement"
+      ],
+      "selfCare": [
+        "Se mettre au chaud ; vêtements secs ; réchauffement progressif"
+      ],
+      "doNot": [
+        "Ne pas frotter avec de la neige",
+        "Pas de chaleur directe"
+      ]
+    },
+    "he": {
+      "summary": "כוויית קור: לצאת מהקור; לחמם בהדרגה; לא לשפשף בשלג ולא חום ישיר. טיפול רפואי באזורים לבנים/קשים. חירום אם נרחב/היפותרמיה.",
+      "emergencyIf": [
+        "כוויה נרחבת",
+        "סימני היפותרמיה"
+      ],
+      "seeDoctorIf": [
+        "עור לבן/קשה/חסר תחושה",
+        "שלפוחיות אחרי חימום"
+      ],
+      "selfCare": [
+        "לחום; בגדים יבשים; חימום הדרגתי"
+      ],
+      "doNot": [
+        "לא לשפשף בשלג",
+        "לא חום ישיר"
+      ]
+    },
+    "ru": {
+      "summary": "Отморожение: уйти с холода; согревать постепенно; не тереть снегом и не греть напрямую. Врач при белых/твёрдых участках. Неотложка при обширном поражении/гипотермии.",
+      "emergencyIf": [
+        "Обширное отморожение",
+        "Признаки гипотермии"
+      ],
+      "seeDoctorIf": [
+        "Белая/твёрдая/онемевшая кожа",
+        "Пузыри после согревания"
+      ],
+      "selfCare": [
+        "В тепло; сухая одежда; постепенное согревание"
+      ],
+      "doNot": [
+        "Не тереть снегом",
+        "Не прямой огонь/обогреватель"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-frostbite",
+      "name": "NHS — Frostbite",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/frostbite/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

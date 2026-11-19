@@ -1,0 +1,122 @@
+{
+  "id": "malaria-travel-fever",
+  "category": "travel",
+  "urgencyDefault": "urgent",
+  "priority": 8,
+  "keywords": {
+    "en": [
+      "malaria",
+      "fever after travel",
+      "tropical fever",
+      "mosquito fever travel",
+      "returned from Africa fever"
+    ],
+    "fr": [
+      "paludisme",
+      "fièvre après voyage",
+      "fièvre tropicaux",
+      "moustique voyage fièvre",
+      "retour Afrique fièvre"
+    ],
+    "he": [
+      "מלריה",
+      "חום אחרי טיול",
+      "חום טרופי",
+      "קדחת יתושים נסיעה",
+      "חזרתי מאפריקה עם חום"
+    ],
+    "ru": [
+      "малярия",
+      "лихорадка после поездки",
+      "тропическая лихорадка",
+      "комары путешествие жар",
+      "вернулся из Африки с температурой"
+    ]
+  },
+  "titles": {
+    "en": "Fever after travel / malaria concern",
+    "fr": "Fièvre après voyage / suspicion de paludisme",
+    "he": "חום אחרי נסיעה / חשד למלריה",
+    "ru": "Лихорадка после поездки / подозрение на малярию"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Fever during or after travel to malaria-risk areas is a medical emergency until proven otherwise. Seek urgent care and say where you travelled. Prevention (bite avoidance, chemoprophylaxis when advised) is clinician-guided — this pack does not prescribe antimalarials.",
+      "emergencyIf": [
+        "Fever, chills, headache, muscle pain, vomiting after travel to a malaria area",
+        "Symptoms can appear weeks after return"
+      ],
+      "seeDoctorIf": [
+        "Any fever after tropical/subtropical travel — same-day assessment",
+        "Travel clinic advice before trips to risk areas"
+      ],
+      "doNot": [
+        "Do not wait for 'just a cold' if recently in a malaria zone",
+        "Do not invent antimalarial doses"
+      ]
+    },
+    "fr": {
+      "summary": "Une fièvre pendant ou après un séjour en zone de paludisme est une urgence jusqu'à preuve du contraire. Dire où vous avez voyagé. Pas de posologie d'antipaludéens ici.",
+      "emergencyIf": [
+        "Fièvre, frissons, céphalées, myalgies, vomissements après voyage en zone à risque"
+      ],
+      "seeDoctorIf": [
+        "Toute fièvre après voyage tropical — avis le jour même",
+        "Consultation voyage avant le départ"
+      ],
+      "doNot": [
+        "Ne pas attendre",
+        "Pas de doses d'antipaludéens inventées"
+      ]
+    },
+    "he": {
+      "summary": "חום במהלך או אחרי שהייה באזור מלריה הוא חירום עד שיוכח אחרת. ציינו לאן נסעתם. אין מינון תרופות נגד מלריה כאן.",
+      "emergencyIf": [
+        "חום, צמרמורת, כאב ראש, כאבי שרירים, הקאות אחרי נסיעה לאזור מלריה"
+      ],
+      "seeDoctorIf": [
+        "כל חום אחרי נסיעה טרופית — הערכה באותו יום"
+      ],
+      "doNot": [
+        "לא לחכות",
+        "אין מינון תרופות נגד מלריה"
+      ]
+    },
+    "ru": {
+      "summary": "Лихорадка во время или после поездки в зону малярии — неотложное состояние, пока не доказано иное. Сообщите куда ездили. Доз противомалярийных здесь нет.",
+      "emergencyIf": [
+        "Лихорадка, озноб, головная боль, миалгии, рвота после поездки в зону риска"
+      ],
+      "seeDoctorIf": [
+        "Любая лихорадка после тропической поездки — в тот же день"
+      ],
+      "doNot": [
+        "Не ждать",
+        "Не изобретать дозы противомалярийных"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-malaria",
+      "name": "NHS — Malaria",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/malaria/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-malaria",
+      "name": "CDC — Malaria",
+      "org": "CDC",
+      "url": "https://www.cdc.gov/malaria/index.html",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "cdc-travelers-health",
+      "name": "CDC — Travelers' Health",
+      "org": "CDC",
+      "url": "https://wwwnc.cdc.gov/travel",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

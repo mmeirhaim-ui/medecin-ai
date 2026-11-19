@@ -1,0 +1,98 @@
+{
+  "id": "polymyalgia-rheumatica",
+  "category": "rheum",
+  "urgencyDefault": "voir_medecin",
+  "priority": 5,
+  "keywords": {
+    "en": [
+      "polymyalgia rheumatica",
+      "PMR",
+      "morning stiffness shoulders hips",
+      "stiffness shoulders neck hips"
+    ],
+    "fr": [
+      "pseudopolyarthrite rhizomélique",
+      "PPR",
+      "raideur matinale épaules hanches",
+      "raideur épaules cou hanches"
+    ],
+    "he": [
+      "פולימיאלגיה ראומטיקה",
+      "PMR",
+      "נוקשות בוקר כתפיים ירכיים"
+    ],
+    "ru": [
+      "ревматическая полимиалгия",
+      "ПМР",
+      "утренняя скованность плечи бёдра"
+    ]
+  },
+  "titles": {
+    "en": "Polymyalgia rheumatica (PMR)",
+    "fr": "Pseudopolyarthrite rhizomélique (PPR)",
+    "he": "פולימיאלגיה ראומטיקה",
+    "ru": "Ревматическая полимиалгия"
+  },
+  "guidance": {
+    "en": {
+      "summary": "PMR causes pain and stiffness around shoulders, neck and hips, often worse in the morning for >45 minutes, both sides. NHS: see a GP if pain/stiffness lasts >1 week. Immediate advice if new sudden headache, scalp tenderness, jaw pain when eating/talking, or vision problems (possible temporal arteritis). Steroids are clinician-prescribed — no invented prednisolone doses.",
+      "emergencyIf": [
+        "Sudden vision loss with suspected PMR/temporal arteritis"
+      ],
+      "seeDoctorIf": [
+        "Pain and stiffness lasting more than a week",
+        "Diagnosed/suspected PMR with new sudden headache, scalp tenderness, jaw pain when eating/talking, or vision problems — urgent advice"
+      ],
+      "doNot": [
+        "Do not invent steroid regimens",
+        "Do not ignore temporal arteritis red flags"
+      ]
+    },
+    "fr": {
+      "summary": "La PPR provoque douleur et raideur des ceintures, souvent >45 min le matin. Médecin si >1 semaine. Avis immédiat si céphalée, cuir chevelu douloureux, claudication de mâchoire, trouble visuel (artérite temporale). Pas de corticoïdes inventés.",
+      "seeDoctorIf": [
+        "Douleur/raideur > 1 semaine",
+        "Céphalée/tempes/mâchoire/vision — avis urgent"
+      ],
+      "doNot": [
+        "Pas de prednisolone inventée"
+      ]
+    },
+    "he": {
+      "summary": "PMR: כאב ונוקשות בכתפיים/צוואר/ירכיים, לרוב בבוקר מעל 45 דק'. רופא אם מעל שבוע. ייעוץ מיידי בכאב ראש חדש, רגישות קרקפת, כאב לסת, הפרעת ראייה. אין סטרואידים מומצאים.",
+      "seeDoctorIf": [
+        "כאב/נוקשות מעל שבוע",
+        "כאב ראש/קרקפת/לסת/ראייה — דחוף"
+      ],
+      "doNot": [
+        "אין פרדניזולון מומצא"
+      ]
+    },
+    "ru": {
+      "summary": "ПМР: боль и скованность плеч/шеи/бёдер, часто утром >45 мин. К врачу если >1 недели. Срочно при головной боли, болезненной коже головы, боли в челюсти, нарушении зрения. Стероиды не выдумывать.",
+      "seeDoctorIf": [
+        "Боль/скованность >1 недели",
+        "Головная боль/кожа головы/челюсть/зрение — срочно"
+      ],
+      "doNot": [
+        "Не изобретать преднизолон"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-pmr",
+      "name": "NHS — Polymyalgia rheumatica",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/polymyalgia-rheumatica/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-pmr-symptoms",
+      "name": "NHS — Polymyalgia rheumatica symptoms",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/polymyalgia-rheumatica/symptoms/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "anal-fissure",
+  "category": "gi",
+  "urgencyDefault": "auto_soins",
+  "priority": 3,
+  "keywords": {
+    "en": [
+      "anal fissure",
+      "tear anus pain pooing",
+      "painful bowel movement crack"
+    ],
+    "fr": [
+      "fissure anale",
+      "déchirure anus douleur selles"
+    ],
+    "he": [
+      "סדק אנאלי",
+      "קרע בפי הטבעת",
+      "כאב ביציאות סדק"
+    ],
+    "ru": [
+      "анальная трещина",
+      "трещина заднего прохода",
+      "боль при дефекации трещина"
+    ]
+  },
+  "titles": {
+    "en": "Anal fissure",
+    "fr": "Fissure anale",
+    "he": "סדק אנאלי",
+    "ru": "Анальная трещина"
+  },
+  "guidance": {
+    "en": {
+      "summary": "An anal fissure is a small tear causing sharp pain on passing stools and sometimes bright red blood on paper. NHS: soften stools (fluids/fibre), gentle hygiene; pharmacy/GP options exist — never invent GTN ointment doses. Emergency: heavy rectal bleeding, black stools, severe abdominal pain, or fever with anal swelling (abscess).",
+      "emergencyIf": [
+        "Heavy rectal bleeding or black stools",
+        "Severe abdominal pain",
+        "Fever with painful anal swelling"
+      ],
+      "seeDoctorIf": [
+        "Pain lasting more than a couple of weeks",
+        "Recurrent bleeding",
+        "Difficulty passing stools"
+      ],
+      "doNot": [
+        "Do not invent GTN/diltiazem ointment doses",
+        "Do not ignore heavy bleeding"
+      ]
+    },
+    "fr": {
+      "summary": "Fissure anale: douleur vive aux selles. Adoucir selles; pas de posologies de pommades inventées. Urgences si hémorragie abondante/abcès.",
+      "emergencyIf": [
+        "Hémorragie rectale abondante",
+        "Douleur abdominale sévère",
+        "Fièvre avec tuméfaction anale"
+      ],
+      "seeDoctorIf": [
+        "Douleur > quelques semaines"
+      ],
+      "doNot": [
+        "Pas de posologies de pommades inventées"
+      ]
+    },
+    "he": {
+      "summary": "סדק אנאלי: כאב חד ביציאות. ריכוך צואה; אין מינוני משחות מומצאים. חירום בדימום כבד/מורסה.",
+      "emergencyIf": [
+        "דימום רקטלי כבד",
+        "כאב בטן קשה",
+        "חום עם נפיחות אנאלית"
+      ],
+      "seeDoctorIf": [
+        "כאב מעל שבועיים"
+      ],
+      "doNot": [
+        "אין מינוני משחות מומצאים"
+      ]
+    },
+    "ru": {
+      "summary": "Анальная трещина: острая боль при стуле. Размягчать стул; дозы мазей не выдумывать. Неотложка при обильном кровотечении/абсцессе.",
+      "emergencyIf": [
+        "Обильное ректальное кровотечение",
+        "Сильная боль в животе",
+        "Лихорадка с анальным отёком"
+      ],
+      "seeDoctorIf": [
+        "Боль дольше пары недель"
+      ],
+      "doNot": [
+        "Не изобретать дозы мазей"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-anal-fissure",
+      "name": "NHS — Anal fissure",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/anal-fissure/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

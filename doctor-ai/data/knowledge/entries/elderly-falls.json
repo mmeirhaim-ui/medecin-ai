@@ -1,0 +1,134 @@
+{
+  "id": "elderly-falls",
+  "category": "elderly",
+  "urgencyDefault": "voir_medecin",
+  "priority": 6,
+  "keywords": {
+    "en": [
+      "elderly fall",
+      "fallen and cannot get up",
+      "older person fell",
+      "fall in elderly"
+    ],
+    "fr": [
+      "chute personne âgée",
+      "tombé et ne peut se relever",
+      "chute sujet âgé",
+      "chute chez le vieux"
+    ],
+    "he": [
+      "נפילת קשיש",
+      "נפל ולא יכול לקום",
+      "קשיש נפל",
+      "נפילה בגיל מבוגר"
+    ],
+    "ru": [
+      "падение пожилого",
+      "упал и не может встать",
+      "пожилой упал",
+      "падение у стариков"
+    ]
+  },
+  "titles": {
+    "en": "Falls in older adults",
+    "fr": "Chutes chez la personne âgée",
+    "he": "נפילות בקשישים",
+    "ru": "Падения у пожилых"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Falls are common in older adults and can cause serious injury (hip fracture, head injury). NHS: get help if cannot get up, severe pain, head injury red flags, or new confusion. Recurrent falls need medical review for causes (medicines, vision, balance).",
+      "emergencyIf": [
+        "Cannot get up after a fall",
+        "Severe hip/back/head pain",
+        "Head injury red flags (see head injury guidance)",
+        "New confusion or loss of consciousness"
+      ],
+      "seeDoctorIf": [
+        "Recurrent falls",
+        "Near-falls / unsteady gait",
+        "Fear of falling limiting activity"
+      ],
+      "selfCare": [
+        "Keep pathways clear; good lighting; sturdy footwear; consider pendant alarm if alone"
+      ],
+      "doNot": [
+        "Do not leave someone who cannot rise unattended",
+        "Do not ignore anticoagulation + head bump"
+      ]
+    },
+    "fr": {
+      "summary": "Les chutes sont fréquentes et peuvent être graves. Aide si impossible de se relever, douleur forte, signes de traumatisme crânien, confusion nouvelle.",
+      "emergencyIf": [
+        "Impossible de se relever",
+        "Douleur hanche/dos/tête sévère",
+        "Signes de traumatisme crânien",
+        "Confusion nouvelle"
+      ],
+      "seeDoctorIf": [
+        "Chutes répétées",
+        "Instabilité"
+      ],
+      "selfCare": [
+        "Passages dégagés ; éclairage ; chaussures stables"
+      ],
+      "doNot": [
+        "Ne pas laisser seul quelqu'un qui ne peut se relever"
+      ]
+    },
+    "he": {
+      "summary": "נפילות נפוצות בקשישים ועלולות לגרום לפציעה קשה. עזרה אם לא יכול לקום, כאב חזק, דגלי חבלת ראש, בלבול חדש.",
+      "emergencyIf": [
+        "לא יכול לקום",
+        "כאב ירך/גב/ראש חזק",
+        "דגלי חבלת ראש",
+        "בלבול חדש"
+      ],
+      "seeDoctorIf": [
+        "נפילות חוזרות",
+        "חוסר יציבות"
+      ],
+      "selfCare": [
+        "מעברים פנויים; תאורה; נעליים יציבות"
+      ],
+      "doNot": [
+        "לא להשאיר לבד מי שלא יכול לקום"
+      ]
+    },
+    "ru": {
+      "summary": "Падения у пожилых часты и могут быть тяжёлыми. Помощь если не встаёт, сильная боль, признаки ЧМТ, новая спутанность.",
+      "emergencyIf": [
+        "Не может встать",
+        "Сильная боль в бедре/спине/голове",
+        "Красные флаги ЧМТ",
+        "Новая спутанность"
+      ],
+      "seeDoctorIf": [
+        "Повторные падения",
+        "Неустойчивость"
+      ],
+      "selfCare": [
+        "Свободные проходы; освещение; устойчивая обувь"
+      ],
+      "doNot": [
+        "Не оставлять одного того, кто не встаёт"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-falls",
+      "name": "NHS — Falls",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/falls/",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "id": "nhs-head-injury",
+      "name": "NHS — Head injury and concussion",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "ectopic-pregnancy",
+  "category": "gyn",
+  "urgencyDefault": "urgent",
+  "priority": 9,
+  "keywords": {
+    "en": [
+      "ectopic pregnancy",
+      "ectopic",
+      "pregnant one sided pain",
+      "shoulder tip pain pregnant",
+      "positive pregnancy test severe pain"
+    ],
+    "fr": [
+      "grossesse extra utérine",
+      "GEU",
+      "douleur unilatérale enceinte",
+      "douleur épaule grossesse",
+      "test grossesse positif douleur forte"
+    ],
+    "he": [
+      "הריון חוץ רחמי",
+      "כאב חד צדדי בהריון",
+      "כאב כתף בהריון",
+      "בדיקת הריון חיובית וכאב חזק"
+    ],
+    "ru": [
+      "внематочная беременность",
+      "боль с одной стороны беременна",
+      "боль в плече при беременности",
+      "положительный тест и сильная боль"
+    ]
+  },
+  "titles": {
+    "en": "Ectopic pregnancy — emergency cues",
+    "fr": "Grossesse extra-utérine — signes d'urgence",
+    "he": "הריון חוץ־רחמי — סימני חירום",
+    "ru": "Внематочная беременность — признаки неотложности"
+  },
+  "guidance": {
+    "en": {
+      "summary": "Ectopic pregnancy can be life-threatening. NHS: get emergency help for sudden sharp abdominal pain (often one-sided), pain in shoulder tip, dizziness/fainting with possible pregnancy, or heavy bleeding with pain. A positive pregnancy test with severe pain needs urgent assessment. Educational only — not diagnosis.",
+      "emergencyIf": [
+        "Sudden severe abdominal or pelvic pain (often one-sided) with possible pregnancy",
+        "Shoulder-tip pain with pregnancy symptoms",
+        "Dizziness, fainting, looking very pale with abdominal pain and possible pregnancy",
+        "Heavy vaginal bleeding with severe pain"
+      ],
+      "seeDoctorIf": [
+        "Missed period / positive test with any worrying pain or spotting — same-day care"
+      ],
+      "doNot": [
+        "Do not wait at home if severe pain and possible pregnancy",
+        "Do not assume miscarriage only"
+      ]
+    },
+    "fr": {
+      "summary": "La GEU peut menacer le pronostic vital. Douleur abdominale unilatérale brutale, douleur d'épaule, malaise/pâleur avec grossesse possible = urgence.",
+      "emergencyIf": [
+        "Douleur abdominale/pelvienne brutale souvent unilatérale",
+        "Douleur d'épaule",
+        "Vertige/syncope/pâleur",
+        "Saignement abondant avec douleur"
+      ],
+      "seeDoctorIf": [
+        "Test positif ou règles en retard avec douleur — avis le jour même"
+      ],
+      "doNot": [
+        "Ne pas attendre si douleur sévère et grossesse possible"
+      ]
+    },
+    "he": {
+      "summary": "הריון חוץ־רחמי עלול לסכן חיים. כאב בטן חד־צדדי פתאומי, כאב כתף, סחרחורת/התעלפות עם אפשרות להריון — חירום.",
+      "emergencyIf": [
+        "כאב בטן/אגן חזק פתאומי לרוב חד־צדדי",
+        "כאב קצה כתף",
+        "סחרחורת/התעלפות/חיוורון",
+        "דימום כבד עם כאב"
+      ],
+      "seeDoctorIf": [
+        "בדיקה חיובית או איחור עם כאב — טיפול באותו יום"
+      ],
+      "doNot": [
+        "לא לחכות בבית אם כאב חזק ואפשרות להריון"
+      ]
+    },
+    "ru": {
+      "summary": "Внематочная беременность опасна для жизни. Внезапная односторонняя боль, боль в плече, головокружение/обморок при возможной беременности — неотложка.",
+      "emergencyIf": [
+        "Внезапная сильная боль в животе/тазу часто с одной стороны",
+        "Боль в плече",
+        "Головокружение/обморок/бледность",
+        "Обильное кровотечение с болью"
+      ],
+      "seeDoctorIf": [
+        "Положительный тест или задержка с болью — в тот же день"
+      ],
+      "doNot": [
+        "Не ждать дома при сильной боли и возможной беременности"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "nhs-ectopic",
+      "name": "NHS — Ectopic pregnancy",
+      "org": "NHS",
+      "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
+      "retrievedAt": "2026-11-18"
+    }
+  ]
+}
