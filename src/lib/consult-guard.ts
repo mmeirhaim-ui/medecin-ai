@@ -241,7 +241,7 @@ function isLocalDevHost(host: string): boolean {
   return name === "localhost" || name === "127.0.0.1" || name === "[::1]" || name === "::1";
 }
 
-/** Cursor-published apps (e.g. medecin-ai.apps.grok.bot). */
+/** Cursor-published apps (e.g. doctor-ai.apps.grok.bot, legacy medecin-ai). */
 function isCursorAppsHost(host: string): boolean {
   const name = hostnameOnly(host);
   return name === "apps.grok.bot" || name.endsWith(".apps.grok.bot");
