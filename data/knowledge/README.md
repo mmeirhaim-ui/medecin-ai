@@ -1,4 +1,4 @@
-# Doctor IA — public medical knowledge pack
+# Doctor AI — public medical knowledge pack
 
 Curated **symptom → guidance** maps used to accelerate non-diagnostic triage replies.
 

@@ -258,7 +258,7 @@ function buildUserParts(req: ConsultRequest, knowledgeBlock: string): Part[] {
       ? `\n\nConversation:\n${req.history
           .map(
             (h) =>
-              `${h.role === "user" ? "Patient" : "Doctor IA"}: ${h.content}`,
+              `${h.role === "user" ? "Patient" : "Doctor AI"}: ${h.content}`,
           )
           .join("\n")}`
       : "";
